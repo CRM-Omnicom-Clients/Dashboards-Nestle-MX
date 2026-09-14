@@ -409,7 +409,7 @@ const DATA={
 {"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"AC","audiencia":"AC LAL","resultados":152436.0,"inversion":1145.51,"impresiones":154924.0,"alcance":152436.0,"frecuencia":1.02,"clics":493.0,"cpa":0.0075146946915426805,"cvr":0.9839405127675506,"cpm":7.394012548088095,"ctr":0.0031822054684877746,"cpc":2.323549695740365,"bau_ctr":0.006304028513650007,"bau_cpc":5.6132851944507625,"bau_cpm":35.386309921067024},
 {"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Video Views","tipo_audiencia":"CDP","audiencia":"CDP","resultados":9597.0,"inversion":3347.69,"impresiones":126026.0,"alcance":30435.0,"frecuencia":4.14,"clics":850.0,"cpa":0.34882671668229653,"cvr":0.07615095297795693,"cpm":26.563486899528666,"ctr":0.0067446399949216826,"cpc":3.938458823529412,"bau_ctr":0.011686709904780926,"bau_cpc":0.8943649023186642,"bau_cpm":10.452183162415958},
 {"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Video Views","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":241658.0,"inversion":83192.07,"impresiones":3047262.0,"alcance":1681174.0,"frecuencia":1.81,"clics":19892.0,"cpa":0.344255393986543,"cvr":0.07930332212983328,"cpm":27.300596404247486,"ctr":0.006527827275764276,"cpc":4.182187311482003,"bau_ctr":0.011686709904780926,"bau_cpc":0.8943649023186642,"bau_cpm":10.452183162415958},
-{"mes":"Agosto","campaign":"The Freshers F1","marca":"ICE","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"AC","audiencia":"AC+LAL","resultados":206949.0,"inversion":10914.59,"impresiones":360226.0,"alcance":340406.0,"frecuencia":1.058225,"clics":1314.0,"cpa":0.050364830492388296,"cvr":0.601605591019653,"cpm":30.299763614977905,"ctr":0.0039625895008507574,"cpc":7.646455331412104,"bau_ctr":0.004318538957071776,"bau_cpc":4.45516203322915,"bau_cpm":19.239790800567185}
+{"mes":"Agosto","campaign":"F1","marca":"Clásico","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"AC","audiencia":"AC+LAL","resultados":206949.0,"inversion":10914.59,"impresiones":360226.0,"alcance":340406.0,"frecuencia":1.058225,"clics":1314.0,"cpa":0.050364830492388296,"cvr":0.601605591019653,"cpm":30.299763614977905,"ctr":0.0039625895008507574,"cpc":7.646455331412104,"bau_ctr":0.004318538957071776,"bau_cpc":4.45516203322915,"bau_cpm":19.239790800567185}
 ],
 "crm":[
 {"mes":"Junio","campaign":"Tercer Tiempo","marca":"Masterbrand","medio":"email","objetivo":"Purchase","touchpoint":"E-P1","segmento":"Amazon","p_sends":467714.0,"p_del":463241.0,"p_opens":179960.0,"p_clicks":549.0,"p_unsubs":3306.0,"p_or":0.388,"p_ctor":0.003,"p_cr":0.001,"p_utor":null,"f_sends":314029.0,"f_del":310795.0,"f_opens":64233.0,"f_clicks":607.0,"f_unsubs":2341.0,"f_or":0.207,"f_ctor":0.009,"f_cr":0.002,"f_utor":null,"t_sends":null,"t_del":null,"t_opens":null,"t_clicks":null,"t_unsubs":null,"t_or":null,"t_ctor":null,"t_cr":null,"t_utor":null,"wa_env":0,"wa_ent":0,"wa_nent":0,"wa_lei":0,"wa_cli":null,"wa_pent":null,"wa_pnent":null,"wa_pread":null,"wa_pclr":null},
@@ -527,7 +527,7 @@ function mkTriLine(id,labels,barLbl,barData,lines){
 }
 
 /* ═══════════════ CHART ═══════════════ */
-const CC={'CFM Liquido':'#f59e0b','Hackea Tu Café':'#c4a06a','Tercer Tiempo':'#818cf8','The Freshers':'#34d399','Detrás de un gran café':'#22d3ee','Ponle Corazón':'#fb923c','The Freshers F1':'#4ade80'};
+const CC={'CFM Liquido':'#f59e0b','Hackea Tu Café':'#c4a06a','Tercer Tiempo':'#818cf8','The Freshers':'#34d399','Detrás de un gran café':'#22d3ee','Ponle Corazón':'#fb923c','F1':'#d97706'};
 Chart.defaults.color='#666';
 Chart.defaults.borderColor='rgba(255,255,255,.05)';
 function mkC(id,type,labels,datasets,opts){
@@ -595,7 +595,7 @@ class MS{
 function rS2(){
   const el=document.getElementById('s2');
   const camps=ALL_CAMPS.filter(c=>S.camps.has(c));
-  const bmap={'CFM Liquido':'Coffe Mate','Hackea Tu Café':'Concentrate','Tercer Tiempo':'Masterbrand','The Freshers':'ICE','Detrás de un gran café':"Taster's Choice",'Ponle Corazón':'Coffe Mate','The Freshers F1':'ICE'};
+  const bmap={'CFM Liquido':'Coffe Mate','Hackea Tu Café':'Concentrate','Tercer Tiempo':'Masterbrand','The Freshers':'ICE','Detrás de un gran café':"Taster's Choice",'Ponle Corazón':'Coffe Mate','F1':'Clásico'};
   const visMonths=ALL_MONTHS.filter(m=>S.period.has(m));
   let h=`<div style="overflow-x:auto"><div class="tl-grid" style="grid-template-columns:180px repeat(${visMonths.length},minmax(90px,1fr))">
     <div class="tl-head">Campaña / Marca</div>
