@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Dashboard Nescafé v3 — CRM + Paid Media 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 :root{
@@ -13,21 +15,32 @@
   --good:#4ade80;--bad:#f87171;
   --border:rgba(255,255,255,.07);
   --r:8px;
-  --font:'Inter',system-ui,-apple-system,sans-serif;
+  --font:'Gotham','Montserrat',system-ui,-apple-system,sans-serif;
+  --max-w:1600px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
 
 /* ─── PAGE HEADER ─── */
 #hdr{
-  background:linear-gradient(135deg,#111 0%,#1a1208 100%);
-  padding:22px 32px;border-bottom:1px solid var(--border);
-  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  background:linear-gradient(135deg,#0f0f0f 0%,#1a1208 100%);
+  padding:20px 40px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  max-width:var(--max-w);margin:0 auto;width:100%;
 }
-#hdr h1{font-size:22px;font-weight:800;letter-spacing:-.02em}
+#hdr-wrap{background:linear-gradient(135deg,#0f0f0f 0%,#1a1208 100%);border-bottom:1px solid var(--border);}
+.brand-logo{display:flex;align-items:center;gap:14px}
+.brand-nescafe{
+  font-size:28px;font-weight:900;letter-spacing:-.02em;color:#fff;
+  text-shadow:0 0 30px rgba(220,38,38,.3);
+}
+.brand-nescafe span{color:#dc2626}
+.brand-tagline{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-top:1px}
+.hdr-right{text-align:right}
+#hdr h1{font-size:18px;font-weight:700;letter-spacing:-.01em;color:var(--text2)}
 #hdr h1 em{font-style:normal;color:var(--gold)}
-#hdr .meta{font-size:13px;color:var(--text3)}
+#hdr .meta{font-size:12px;color:var(--text3);margin-top:2px}
 .badge{
   font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
   padding:3px 10px;border-radius:20px;border:1px solid var(--gold-dim);
@@ -38,9 +51,10 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15
 #fbar{
   position:sticky;top:0;z-index:300;
   background:rgba(17,17,17,.97);backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--border);padding:10px 32px;
+  border-bottom:1px solid var(--border);
   box-shadow:0 4px 24px rgba(0,0,0,.4);
 }
+#fbar-inner{max-width:var(--max-w);margin:0 auto;padding:10px 40px}
 .frow{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:3px 0}
 .frow+.frow{border-top:1px solid var(--border);margin-top:6px;padding-top:9px}
 .flbl{
@@ -97,15 +111,16 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15
 .ms-opt input{width:14px;height:14px;accent-color:var(--gold);cursor:pointer;flex-shrink:0}
 
 /* ─── SECTIONS ─── */
-.sec{padding:36px 32px;border-bottom:1px solid var(--border)}
+.sec{padding:40px 40px;border-bottom:1px solid var(--border);max-width:var(--max-w);margin:0 auto}
 .sec:last-child{border-bottom:none}
 .sec-hdr{display:flex;align-items:center;gap:14px;margin-bottom:6px}
 .sec-n{
   font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--gold-dim);padding:3px 8px;border:1px solid var(--gold-dim);border-radius:4px;
+  color:var(--gold);padding:4px 10px;background:var(--gold-pale);border-radius:20px;
+  border:1px solid var(--gold-dim);
 }
-.sec-title{font-size:21px;font-weight:700;letter-spacing:-.01em}
-.sec-sub{font-size:13px;color:var(--text3);margin-bottom:22px;margin-top:4px}
+.sec-title{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.sec-sub{font-size:14px;color:var(--text3);margin-bottom:24px;margin-top:4px}
 
 /* ─── TIMELINE ─── */
 .tl-grid{display:grid;grid-template-columns:180px repeat(2,1fr);gap:6px 10px;align-items:center}
@@ -156,8 +171,9 @@ th.sort-asc .sort-ico::after{content:'▲';color:var(--gold)}
 th.sort-desc .sort-ico::after{content:'▼';color:var(--gold)}
 th:not(.sort-asc):not(.sort-desc) .sort-ico::after{content:'⇅'}
 tbody tr{border-bottom:1px solid var(--border)}
-tbody tr:hover td{background:var(--s2)}
-td{padding:10px 12px;font-size:14px;vertical-align:middle;color:var(--text2)}
+tbody tr:nth-child(even) td{background:rgba(255,255,255,.015)}
+tbody tr:hover td{background:var(--s2)!important}
+td{padding:10px 14px;font-size:14px;vertical-align:middle;color:var(--text2)}
 td strong{color:var(--text);font-weight:600}
 td.num{text-align:right;font-variant-numeric:tabular-nums;color:var(--text)}
 .col-sep{border-left:1px solid var(--s4)!important}
@@ -212,33 +228,57 @@ canvas{max-height:280px}
 .empty{text-align:center;padding:48px;color:var(--text3);font-size:14px}
 
 /* ─── RESPONSIVE ─── */
-@media(max-width:900px){
+@media(max-width:1100px){
   .two-col{grid-template-columns:1fr}
-  #hdr{padding:16px 20px}
-  .sec{padding:24px 20px}
-  #fbar{padding:8px 20px}
+  #hdr{padding:16px 24px}
+  .sec{padding:28px 24px}
+  #fbar-inner{padding:8px 24px}
+  .tl-grid{grid-template-columns:140px repeat(2,1fr)}
+}
+@media(max-width:680px){
+  .tl-grid{grid-template-columns:120px repeat(2,1fr);gap:4px 6px}
+  .score-grid{grid-template-columns:1fr}
+  #hdr{padding:14px 16px}
+  .sec{padding:20px 16px}
+  #fbar-inner{padding:8px 16px}
+  .brand-nescafe{font-size:22px}
+}
   .tl-grid{grid-template-columns:110px 1fr 1fr;font-size:13px}
 }
 @media(max-width:600px){
   .score-grid{grid-template-columns:1fr}
   .tl-grid{grid-template-columns:80px 1fr 1fr;font-size:12px}
-  #hdr h1{font-size:17px}
+  #hdr h1{font-size:16px}
 }
 </style>
 </head>
 <body>
 
 <!-- PAGE HEADER -->
+<div id="hdr-wrap">
 <div id="hdr">
-  <div>
-    <h1>Nescafé — <em>CRM + Paid Media</em></h1>
-    <div class="meta">Junio–Julio 2026 · Nestlé MX · Actualizado: 14 Sep 2026</div>
+  <div class="brand-logo">
+    <!-- Nescafé logo mark -->
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+      <circle cx="22" cy="22" r="22" fill="#dc2626"/>
+      <text x="22" y="29" text-anchor="middle" font-family="Gotham,Montserrat,system-ui,sans-serif"
+            font-weight="900" font-size="18" fill="white">N</text>
+    </svg>
+    <div>
+      <div class="brand-nescafe">Nes<span>ca</span>fé</div>
+      <div class="brand-tagline">Nestlé México · CRM &amp; Paid Media</div>
+    </div>
   </div>
-  <span class="badge">v3</span>
+  <div class="hdr-right">
+    <h1><em>Dashboard 2026</em></h1>
+    <div class="meta">Junio–Julio · Actualizado: 14 Sep 2026 &nbsp;<span class="badge">v3</span></div>
+  </div>
+</div>
 </div>
 
 <!-- STICKY FILTER BAR -->
 <div id="fbar">
+<div id="fbar-inner">
   <div class="frow">
     <span class="flbl">General</span>
     <div class="fgroup">
@@ -268,10 +308,10 @@ canvas{max-height:280px}
       <div class="ms-wrap" id="ms-paid-aud"></div>
     </div>
   </div>
-</div>
+</div><!-- /fbar-inner -->
+</div><!-- /fbar -->
 
 <!-- S2: TIMELINE -->
-<div class="sec">
   <div class="sec-hdr"><span class="sec-n">Sec 2</span><span class="sec-title">Mapa de Campañas</span></div>
   <p class="sec-sub">Presencia por campaña, período y canal</p>
   <div id="s2"></div>
@@ -424,6 +464,47 @@ function TH(lbl,col,tid,cls=''){return`<th class="${cls}" onclick="thC('${tid}',
 /* ═══════════════ COND FORMAT ═══════════════ */
 const ctrCls=(v,b)=>b==null||v==null?'':(v>=b?'good':'bad');
 const cpcCls=(v,b)=>b==null||v==null?'':(v<=b?'good':'bad');
+
+/* mkTriLine: bar (left Y, volumes) + up to 3 pct lines (right Y) — for CRM charts */
+function mkTriLine(id,labels,barLbl,barData,lines){
+  const el2=document.getElementById(id);if(!el2)return;
+  const c2=el2.getContext('2d');
+  if(CH[id])CH[id].destroy();
+  const LC=['#c4a06a','#34d399','#f87171'];
+  const bgC=labels.map(l=>CC[l]?CC[l]+'b0':'#c4a06ab0');
+  const brC=labels.map(l=>CC[l]||'#c4a06a');
+  const ds=[
+    {type:'bar',label:barLbl,data:barData,backgroundColor:bgC,borderColor:brC,
+     borderWidth:1,borderRadius:5,yAxisID:'yL',order:lines.length+1}
+  ];
+  lines.forEach((ln,i)=>{
+    ds.push({type:'line',label:ln.label,data:ln.data,borderColor:LC[i],
+     backgroundColor:LC[i]+'14',fill:false,
+     pointBackgroundColor:brC,pointBorderColor:'#0d0d0d',pointBorderWidth:1.5,
+     pointRadius:4,pointHoverRadius:6,borderWidth:2,tension:.3,
+     yAxisID:'yR',order:lines.length-i});
+  });
+  CH[id]=new Chart(c2,{type:'bar',data:{labels,datasets:ds},options:{
+    responsive:true,maintainAspectRatio:true,
+    interaction:{mode:'index',intersect:false},
+    plugins:{
+      legend:{display:true,position:'top',labels:{color:'#777',boxWidth:10,
+        padding:14,font:{size:11},usePointStyle:true,pointStyleWidth:8}},
+      tooltip:{callbacks:{label:ctx=>{
+        const v=ctx.raw,l=ctx.dataset.label||'';
+        if(ctx.dataset.yAxisID==='yL')return` ${l}: ${Math.round(v||0).toLocaleString('es-MX')}`;
+        return` ${l}: ${v!=null?v:'—'}%`;
+      }}}
+    },
+    scales:{
+      x:{ticks:{color:'#777',font:{size:10},maxRotation:20},grid:{color:'rgba(255,255,255,.03)'}},
+      yL:{type:'linear',position:'left',grid:{color:'rgba(255,255,255,.04)'},
+        ticks:{color:'#555',font:{size:10},callback:v=>v>=1e6?(v/1e6).toFixed(1)+'M':v>=1e3?(v/1e3).toFixed(0)+'K':String(v)}},
+      yR:{type:'linear',position:'right',grid:{drawOnChartArea:false},min:0,
+        ticks:{color:'#999',font:{size:10},callback:v=>v+'%'}}
+    }
+  }});
+}
 
 /* ═══════════════ CHART ═══════════════ */
 const CC={'CFM Liquido':'#f59e0b','Hackea Tu Café':'#c4a06a','Tercer Tiempo':'#818cf8','The Freshers':'#34d399'};
@@ -579,11 +660,11 @@ function rS4(){
   // Volumes first, then rates
   let h=`<div class="tbl-wrap"><table>
     <thead>
-      <tr class="tbl-section-hdr"><td colspan="4"></td><td colspan="5" style="color:var(--gold-dim)">▼ Volúmenes</td><td colspan="4" style="color:var(--gold-dim)">▼ Tasas</td></tr>
+      <tr class="tbl-section-hdr"><td colspan="4"></td><td colspan="5" style="color:var(--gold-dim)">▼ Volúmenes</td><td colspan="3" style="color:var(--gold-dim)">▼ Tasas</td></tr>
       <tr>
         ${TH('Campaña','campaign',tid)}${TH('Marca','marca',tid)}${TH('Objetivo','objetivo',tid)}${TH('Período','mes',tid)}
         ${TH('Envíos','s',tid,'col-sep')}${TH('Entregas','d',tid)}${TH('Aperturas','o',tid)}${TH('Clics','c',tid)}${TH('Unsubs','u',tid)}
-        ${TH('Open Rate','or',tid,'col-sep')}${TH('CTOR','ctor',tid)}${TH('Click Rate','cr',tid)}${TH('UTOR %','utor',tid)}
+        ${TH('Open Rate','or',tid,'col-sep')}${TH('CTOR','ctor',tid)}${TH('UTOR %','utor',tid)}
       </tr>
     </thead><tbody>`;
   ar.forEach(r=>{
@@ -592,14 +673,25 @@ function rS4(){
       <td class="num col-sep">${fN(r.s)}</td><td class="num">${fN(r.d)}</td>
       <td class="num">${fN(r.o)}</td><td class="num">${fN(r.c)}</td><td class="num">${r.u?fN(r.u):'—'}</td>
       <td class="num col-sep">${fP(r.or)}</td><td class="num">${fP(r.ctor)}</td>
-      <td class="num">${fP(r.cr)}</td><td class="num">${fP(r.utor)}</td>
+      <td class="num">${fP(r.utor)}</td>
     </tr>`;
   });
   h+=`</tbody></table></div>
-  <div class="chart-box"><div class="chart-box-hdr">Open Rate por Campaña</div><canvas id="ch-s4" height="160"></canvas></div>`;
+  <div class="chart-box" style="margin-top:20px">
+    <div class="chart-box-hdr">Envíos · Open Rate · CTOR · UTOR — por Campaña</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Envíos totales · Líneas = OR · CTOR · UTOR (eje der., %)</div>
+    <canvas id="ch-s4" height="220"></canvas>
+  </div>`;
   el.innerHTML=h;
   const cs=[...new Set(ar.map(r=>r.campaign))];
-  mkC('ch-s4','bar',cs,[{label:'Open Rate %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const tot={o:0,d:0};rr.forEach(x=>{tot.o+=x.o;tot.d+=x.d;});return tot.d>0?parseFloat((tot.o/tot.d*100).toFixed(1)):0;}),backgroundColor:cs.map(c=>CC[c]||'#c4a06a'),borderRadius:4}],{scales:{y:{ticks:{callback:v=>v+'%'}}}});
+  mkTriLine('ch-s4',cs,'Envíos',
+    cs.map(c=>ar.filter(x=>x.campaign===c).reduce((a,x)=>a+(x.s||0),0)),
+    [
+      {label:'OR %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const t={o:0,d:0};rr.forEach(x=>{t.o+=x.o;t.d+=x.d;});return t.d>0?parseFloat((t.o/t.d*100).toFixed(1)):0;})},
+      {label:'CTOR %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const t={c:0,o:0};rr.forEach(x=>{t.c+=x.c;t.o+=x.o;});return t.o>0?parseFloat((t.c/t.o*100).toFixed(1)):0;})},
+      {label:'UTOR %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const t={u:0,o:0};rr.forEach(x=>{t.u+=(x.u||0);t.o+=x.o;});return t.o>0?parseFloat((t.u/t.o*100).toFixed(1)):0;})}
+    ]
+  );
 }
 
 /* ═══════════════ S5: PRINCIPAL vs FUP ═══════════════ */
@@ -608,16 +700,16 @@ function rS5(){
   const rows=fCRM().filter(r=>r.medio==='email');
   if(!rows.length){el.innerHTML='<div class="empty">Sin datos con los filtros actuales</div>';return;}
 
-  function mkT(title,badge,tid,ks){
+  function mkT(title,badge,tid,ks,chartId){
     const sorted=sRows(rows,tid);
     return`<div class="tbl-title">${title}<span class="tbl-badge">${badge}</span></div>
     <div class="tbl-wrap"><table>
       <thead>
-        <tr class="tbl-section-hdr"><td colspan="5"></td><td colspan="5" style="color:var(--gold-dim)">▼ Volúmenes</td><td colspan="4" style="color:var(--gold-dim)">▼ Tasas</td></tr>
+        <tr class="tbl-section-hdr"><td colspan="5"></td><td colspan="5" style="color:var(--gold-dim)">▼ Volúmenes</td><td colspan="3" style="color:var(--gold-dim)">▼ Tasas</td></tr>
         <tr>
           ${TH('Campaña','campaign',tid)}${TH('Marca','marca',tid)}${TH('Objetivo','objetivo',tid)}${TH('Período','mes',tid)}${TH('Touchpoint','touchpoint',tid)}
           ${TH('Envíos',ks.s,tid,'col-sep')}${TH('Entregas',ks.d,tid)}${TH('Aperturas',ks.o,tid)}${TH('Clics',ks.c,tid)}${TH('Unsubs',ks.u,tid)}
-          ${TH('Open Rate',ks.or,tid,'col-sep')}${TH('CTOR',ks.ctor,tid)}${TH('Click Rate',ks.cr,tid)}${TH('UTOR %',ks.utor,tid)}
+          ${TH('Open Rate',ks.or,tid,'col-sep')}${TH('CTOR',ks.ctor,tid)}${TH('UTOR %',ks.utor,tid)}
         </tr>
       </thead><tbody>
       ${sorted.map(r=>`<tr>
@@ -627,26 +719,38 @@ function rS5(){
         <td class="num">${fN(r[ks.o])}</td><td class="num">${fN(r[ks.c])}</td>
         <td class="num">${r[ks.u]!=null?fN(r[ks.u]):'—'}</td>
         <td class="num col-sep">${fP(r[ks.or])}</td><td class="num">${fP(r[ks.ctor])}</td>
-        <td class="num">${fP(r[ks.cr])}</td><td class="num">${fP(r[ks.utor])}</td>
+        <td class="num">${fP(r[ks.utor])}</td>
       </tr>`).join('')}
-      </tbody></table></div>`;
+      </tbody></table></div>
+    <div class="chart-box" style="margin-top:16px">
+      <div class="chart-box-hdr">${badge==='principal'?'Principal':'Follow-up'} — Envíos · OR · CTOR · UTOR por Campaña</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Envíos totales · Líneas = OR · CTOR · UTOR (%)</div>
+      <canvas id="${chartId}" height="200"></canvas>
+    </div>`;
   }
 
-  let h=mkT('Envío Principal','principal','s5p',{s:'p_sends',d:'p_del',o:'p_opens',c:'p_clicks',u:'p_unsubs',or:'p_or',ctor:'p_ctor',cr:'p_cr',utor:'p_utor'});
-  h+=`<div style="height:28px"></div>`;
-  h+=mkT('Follow-up — envío de seguimiento a usuarios que no abrieron el correo principal','follow-up','s5f',{s:'f_sends',d:'f_del',o:'f_opens',c:'f_clicks',u:'f_unsubs',or:'f_or',ctor:'f_ctor',cr:'f_cr',utor:'f_utor'});
-  h+=`<div class="chart-box" style="margin-top:24px">
-    <div class="chart-box-hdr">Open Rate Promedio: Principal vs Follow-up por Campaña</div>
-    <canvas id="ch-s5" height="160"></canvas>
-  </div>`;
+  let h=mkT('Envío Principal','principal','s5p',{s:'p_sends',d:'p_del',o:'p_opens',c:'p_clicks',u:'p_unsubs',or:'p_or',ctor:'p_ctor',utor:'p_utor'},'ch-s5p');
+  h+=`<div style="height:32px"></div>`;
+  h+=mkT('Follow-up — envío de seguimiento a usuarios que no abrieron el correo principal','follow-up','s5f',{s:'f_sends',d:'f_del',o:'f_opens',c:'f_clicks',u:'f_unsubs',or:'f_or',ctor:'f_ctor',utor:'f_utor'},'ch-s5f');
   el.innerHTML=h;
+
   const cs=[...new Set(rows.map(r=>r.campaign))];
-  const pOR=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_or,0)/rr.length*100).toFixed(1)):0;});
-  const fOR=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_or,0)/rr.length*100).toFixed(1)):0;});
-  mkC('ch-s5','bar',cs,[
-    {label:'Principal',data:pOR,backgroundColor:'#c4a06a',borderRadius:4},
-    {label:'Follow-up',data:fOR,backgroundColor:'#3d3020',borderRadius:4,borderColor:'#8a6d3b',borderWidth:1}
-  ],{scales:{y:{ticks:{callback:v=>v+'%'}}}});
+  mkTriLine('ch-s5p',cs,'Envíos P',
+    cs.map(c=>rows.filter(r=>r.campaign===c).reduce((a,r)=>a+(r.p_sends||0),0)),
+    [
+      {label:'OR P%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_or,0)/rr.length*100).toFixed(1)):0;})},
+      {label:'CTOR P%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_ctor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_ctor,0)/rr.length*100).toFixed(1)):0;})},
+      {label:'UTOR P%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_utor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_utor,0)/rr.length*100).toFixed(1)):0;})}
+    ]
+  );
+  mkTriLine('ch-s5f',cs,'Envíos FUP',
+    cs.map(c=>rows.filter(r=>r.campaign===c).reduce((a,r)=>a+(r.f_sends||0),0)),
+    [
+      {label:'OR FUP%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_or,0)/rr.length*100).toFixed(1)):0;})},
+      {label:'CTOR FUP%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_ctor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_ctor,0)/rr.length*100).toFixed(1)):0;})},
+      {label:'UTOR FUP%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_utor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_utor,0)/rr.length*100).toFixed(1)):0;})}
+    ]
+  );
 }
 
 /* ═══════════════ S6: WHATSAPP ═══════════════ */
@@ -674,13 +778,19 @@ function rS6(){
       <td class="num">${fP(r.wa_pread)}</td><td class="num">${fP(r.wa_pclr)}</td>
     </tr>`).join('')}
     </tbody></table></div>
-  <div class="chart-box"><div class="chart-box-hdr">WhatsApp: % Entrega y % Leído por envío</div><canvas id="ch-s6" height="160"></canvas></div>`;
+  <div class="chart-box"><div class="chart-box-hdr">WhatsApp — Envíos · % Entrega · % Leído · % Click/Leído</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Envíos · Líneas = % Entrega · % Leído · % Click/Leído (%)</div>
+    <canvas id="ch-s6" height="220"></canvas></div>`;
   el.innerHTML=h;
   const lbs=sorted.map(r=>`${r.campaign} · ${r.touchpoint}`);
-  mkC('ch-s6','bar',lbs,[
-    {label:'% Entrega',data:sorted.map(r=>r.wa_pent!=null?parseFloat((r.wa_pent*100).toFixed(1)):null),backgroundColor:'#34d399',borderRadius:4},
-    {label:'% Leído',data:sorted.map(r=>r.wa_pread!=null?parseFloat((r.wa_pread*100).toFixed(1)):null),backgroundColor:'#0d4c3a',borderRadius:4,borderColor:'#34d399',borderWidth:1}
-  ],{scales:{y:{ticks:{callback:v=>v+'%'}}}});
+  mkTriLine('ch-s6',lbs,'Envíos',
+    sorted.map(r=>r.wa_env||0),
+    [
+      {label:'% Entrega',data:sorted.map(r=>r.wa_pent!=null?parseFloat((r.wa_pent*100).toFixed(1)):null)},
+      {label:'% Leído',data:sorted.map(r=>r.wa_pread!=null?parseFloat((r.wa_pread*100).toFixed(1)):null)},
+      {label:'% Click/Leído',data:sorted.map(r=>r.wa_pclr!=null?parseFloat((r.wa_pclr*100).toFixed(1)):null)}
+    ]
+  );
 }
 
 /* ═══════════════ S7: PAID UNIFIED ═══════════════ */
@@ -716,6 +826,7 @@ function rS7(){
       ${TH('Resultados','resultados',tid,'col-sep')}${TH('Inversión','inversion',tid)}${TH('Impresiones','impresiones',tid)}
       ${TH('Alcance','alcance',tid)}${TH('Frecuencia','frecuencia',tid)}${TH('Clics','clics',tid)}
       ${TH('CTR','ctr',tid,'col-sep')}${TH('CPC','cpc',tid)}${TH('CPM','cpm',tid)}${TH('CPA','cpa',tid)}
+      ${TH('BAU CTR','bau_ctr',tid,'col-sep')}${TH('BAU CPC','bau_cpc',tid)}
     </tr></thead>
     <tbody>
     ${sorted.map(r=>`<tr>
@@ -728,6 +839,8 @@ function rS7(){
       <td class="num col-sep ${ctrCls(r.ctr,r.bau_ctr)}">${fP(r.ctr)}</td>
       <td class="num ${cpcCls(r.cpc,r.bau_cpc)}">${fC(r.cpc)}</td>
       <td class="num">${fC(r.cpm)}</td><td class="num">${fC(r.cpa)}</td>
+      <td class="num col-sep" style="color:var(--gold-dim)">${r.bau_ctr!=null?fP(r.bau_ctr):'—'}</td>
+      <td class="num" style="color:var(--gold-dim)">${r.bau_cpc!=null?fC(r.bau_cpc):'—'}</td>
     </tr>`).join('')}
     </tbody></table></div>`;
 
