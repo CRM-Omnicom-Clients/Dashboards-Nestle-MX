@@ -228,6 +228,19 @@ canvas{max-height:280px}
 /* ─── EMPTY ─── */
 .empty{text-align:center;padding:48px;color:var(--text3);font-size:14px}
 
+/* ─── GRADIENTS ─── */
+.sec:nth-child(odd){background:linear-gradient(180deg,#0d0d0d 0%,var(--bg) 100%)}
+.sc{background:linear-gradient(145deg,var(--s1) 0%,rgba(20,15,5,.9) 100%)}
+.chart-box{background:linear-gradient(145deg,var(--s1) 0%,rgba(14,12,8,.95) 100%)}
+.score-grid .sc-kpi{background:linear-gradient(135deg,var(--s2) 0%,rgba(30,25,15,.8) 100%)}
+.bau{background:linear-gradient(90deg,rgba(196,160,106,.08) 0%,rgba(196,160,106,.03) 100%)}
+
+/* ─── STICKY TABLE ─── */
+tbody td:first-child{position:sticky;left:0;z-index:1;background:var(--bg)}
+thead th:first-child{position:sticky;left:0;z-index:2;background:var(--s2)}
+tbody tr:nth-child(even) td:first-child{background:#0e0e0e}
+tbody tr:hover td:first-child{background:var(--s2)!important}
+
 /* ─── RESPONSIVE ─── */
 @media(max-width:1100px){
   .two-col{grid-template-columns:1fr}
@@ -263,8 +276,7 @@ canvas{max-height:280px}
     <div class="brand-tagline" style="margin-left:4px">Nestlé México · CRM &amp; Paid Media</div>
   </div>
   <div class="hdr-right">
-    <h1><em>Dashboard 2026</em></h1>
-    <div class="meta">Junio–Julio · Actualizado: 14 Sep 2026 &nbsp;<span class="badge">v3</span></div>
+    <div class="meta">Actualizado: 14 Sep 2026 &nbsp;<span class="badge">v3</span></div>
   </div>
 </div>
 </div>
@@ -276,6 +288,10 @@ canvas{max-height:280px}
     <span class="flbl">General</span>
     <div class="fgroup">
       <div class="ms-wrap" id="ms-camps"></div>
+    </div>
+    <div class="fgroup" style="margin-left:6px">
+      <span class="fsep">Marca:</span>
+      <div class="ms-wrap" id="ms-marca"></div>
     </div>
     <div class="fgroup" style="margin-left:6px">
       <span class="fsep">Período:</span>
@@ -301,6 +317,7 @@ canvas{max-height:280px}
 </div><!-- /fbar -->
 
 <!-- S2: TIMELINE -->
+<div class="sec">
   <div class="sec-hdr"><span class="sec-n">Sec 2</span><span class="sec-title">Mapa de Campañas</span></div>
   <p class="sec-sub">Presencia por campaña, período y canal</p>
   <div id="s2"></div>
@@ -430,8 +447,9 @@ const DATA={
 /* ═══════════════ STATE ═══════════════ */
 const ALL_CAMPS=[...new Set(DATA.paid.map(r=>r.campaign).concat(DATA.crm.map(r=>r.campaign)))].sort();
 const ALL_MONTHS=['Marzo','Abril','Mayo','Junio','Julio','Agosto'];
+const ALL_MARCAS=[...new Set(DATA.paid.map(r=>r.marca).concat(DATA.crm.map(r=>r.marca)))].sort();
 const S={
-  camps:new Set(ALL_CAMPS),period:new Set(ALL_MONTHS),
+  camps:new Set(ALL_CAMPS),marcas:new Set(ALL_MARCAS),period:new Set(ALL_MONTHS),
   crm_obj:new Set([...new Set(DATA.crm.map(r=>r.objetivo))]),
   p_plat:new Set(['Meta','Tiktok']),
   p_obj:new Set([...new Set(DATA.paid.map(r=>r.objetivo))]),
@@ -450,6 +468,7 @@ const f2=v=>v==null?'—':v.toFixed(2);
 /* ═══════════════ FILTERS ═══════════════ */
 function fPaid(){return DATA.paid.filter(r=>
   S.camps.has(r.campaign)&&
+  S.marcas.has(r.marca)&&
   S.period.has(r.mes)&&
   S.p_plat.has(r.plataforma)&&
   S.p_obj.has(r.objetivo)&&
@@ -458,6 +477,7 @@ function fPaid(){return DATA.paid.filter(r=>
 );}
 function fCRM(){return DATA.crm.filter(r=>
   S.camps.has(r.campaign)&&
+  S.marcas.has(r.marca)&&
   S.period.has(r.mes)&&
   S.crm_obj.has(r.objetivo)
 );}
@@ -485,45 +505,57 @@ function TH(lbl,col,tid,cls=''){return`<th class="${cls}" onclick="thC('${tid}',
 const ctrCls=(v,b)=>b==null||v==null?'':(v>=b?'good':'bad');
 const cpcCls=(v,b)=>b==null||v==null?'':(v<=b?'good':'bad');
 
-/* mkTriLine: bar (left Y, volumes) + up to 3 pct lines (right Y) — for CRM charts */
-function mkTriLine(id,labels,barLbl,barData,lines){
+/* mkRateBars: pure grouped bar chart for % metrics (CRM sections) */
+function mkRateBars(id,labels,datasets){
   const el2=document.getElementById(id);if(!el2)return;
   const c2=el2.getContext('2d');
   if(CH[id])CH[id].destroy();
-  const LC=['#c4a06a','#34d399','#f87171'];
-  const bgC=labels.map(l=>CC[l]?CC[l]+'b0':'#c4a06ab0');
-  const brC=labels.map(l=>CC[l]||'#c4a06a');
-  const ds=[
-    {type:'bar',label:barLbl,data:barData,backgroundColor:bgC,borderColor:brC,
-     borderWidth:1,borderRadius:5,yAxisID:'yL',order:lines.length+1}
-  ];
-  lines.forEach((ln,i)=>{
-    ds.push({type:'line',label:ln.label,data:ln.data,borderColor:LC[i],
-     backgroundColor:LC[i]+'14',fill:false,
-     pointBackgroundColor:brC,pointBorderColor:'#0d0d0d',pointBorderWidth:1.5,
-     pointRadius:4,pointHoverRadius:6,borderWidth:2,tension:.3,
-     yAxisID:'yR',order:lines.length-i});
-  });
-  CH[id]=new Chart(c2,{type:'bar',data:{labels,datasets:ds},options:{
-    responsive:true,maintainAspectRatio:true,
-    interaction:{mode:'index',intersect:false},
-    plugins:{
-      legend:{display:true,position:'top',labels:{color:'#777',boxWidth:10,
-        padding:14,font:{size:11},usePointStyle:true,pointStyleWidth:8}},
-      tooltip:{callbacks:{label:ctx=>{
-        const v=ctx.raw,l=ctx.dataset.label||'';
-        if(ctx.dataset.yAxisID==='yL')return` ${l}: ${Math.round(v||0).toLocaleString('es-MX')}`;
-        return` ${l}: ${v!=null?v:'—'}%`;
-      }}}
-    },
-    scales:{
-      x:{ticks:{color:'#777',font:{size:10},maxRotation:20},grid:{color:'rgba(255,255,255,.03)'}},
-      yL:{type:'linear',position:'left',grid:{color:'rgba(255,255,255,.04)'},
-        ticks:{color:'#555',font:{size:10},callback:v=>v>=1e6?(v/1e6).toFixed(1)+'M':v>=1e3?(v/1e3).toFixed(0)+'K':String(v)}},
-      yR:{type:'linear',position:'right',grid:{drawOnChartArea:false},min:0,
-        ticks:{color:'#999',font:{size:10},callback:v=>v+'%'}}
+  const palette=['#c4a06a','#34d399','#22d3ee','#f87171'];
+  CH[id]=new Chart(c2,{
+    type:'bar',
+    data:{labels,datasets:datasets.map((ds,i)=>({
+      label:ds.label,data:ds.data,
+      backgroundColor:(ds.color||palette[i])+'99',
+      borderColor:ds.color||palette[i],
+      borderWidth:1,borderRadius:4
+    }))},
+    options:{
+      responsive:true,maintainAspectRatio:true,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{display:true,position:'top',labels:{color:'#777',boxWidth:10,padding:14,font:{size:11}}},
+        tooltip:{callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.raw!=null?ctx.raw:'—'}%`}}
+      },
+      scales:{
+        x:{ticks:{color:'#777',font:{size:10},maxRotation:20},grid:{color:'rgba(255,255,255,.03)'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#777',font:{size:10},callback:v=>v+'%'},min:0}
+      }
     }
-  }});
+  });
+}
+/* mkVolBars: simple bar chart for volume metric (Envíos) */
+function mkVolBars(id,labels,data,label){
+  const el2=document.getElementById(id);if(!el2)return;
+  const c2=el2.getContext('2d');
+  if(CH[id])CH[id].destroy();
+  const bgC=labels.map(l=>CC[l]?CC[l]+'99':'#c4a06a99');
+  const brC=labels.map(l=>CC[l]||'#c4a06a');
+  CH[id]=new Chart(c2,{
+    type:'bar',
+    data:{labels,datasets:[{label:label||'Envíos',data,backgroundColor:bgC,borderColor:brC,borderWidth:1,borderRadius:5}]},
+    options:{
+      responsive:true,maintainAspectRatio:true,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{display:true,position:'top',labels:{color:'#777',boxWidth:10,padding:14,font:{size:11}}},
+        tooltip:{callbacks:{label:ctx=>` ${ctx.dataset.label}: ${Math.round(ctx.raw||0).toLocaleString('es-MX')}`}}
+      },
+      scales:{
+        x:{ticks:{color:'#777',font:{size:10},maxRotation:20},grid:{color:'rgba(255,255,255,.03)'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#777',font:{size:10},callback:v=>v>=1e6?(v/1e6).toFixed(1)+'M':v>=1e3?(v/1e3).toFixed(0)+'K':String(v)},min:0}
+      }
+    }
+  });
 }
 
 /* ═══════════════ CHART ═══════════════ */
@@ -624,7 +656,7 @@ function rS3(){
   const el=document.getElementById('s3');
   const camps=ALL_CAMPS.filter(c=>S.camps.has(c));
   const paid=fPaid(),crm=fCRM();
-  const bmap={'CFM Liquido':'Coffe Mate','Hackea Tu Café':'Concentrate','Tercer Tiempo':'Masterbrand','The Freshers':'ICE'};
+  const bmap={'CFM Liquido':'Coffe Mate','Hackea Tu Café':'Concentrate','Tercer Tiempo':'Masterbrand','The Freshers':'ICE','Detrás de un gran café':"Taster's Choice",'Ponle Corazón':'Coffe Mate','F1':'Clásico'};
   let h='<div class="score-grid">';
   camps.forEach(c=>{
     const pr=paid.filter(r=>r.campaign===c);
@@ -633,10 +665,10 @@ function rS3(){
     const pImp=pr.reduce((a,r)=>a+(r.impresiones||0),0);
     const avgCTR=pr.length?pr.reduce((a,r)=>a+(r.ctr||0),0)/pr.length:null;
     const avgCPC=pr.filter(r=>r.cpc!=null).reduce((a,r,i,arr)=>a+r.cpc/arr.length,0)||null;
-    const cS=ce.reduce((a,r)=>a+(r.t_sends||0),0);
-    const cO=ce.reduce((a,r)=>a+(r.t_opens||0),0);
+    const cS=ce.reduce((a,r)=>a+(r.p_sends||0)+(r.f_sends||0),0);
+    const cO=ce.reduce((a,r)=>a+(r.p_opens||0)+(r.f_opens||0),0);
     const cOR=cS>0?cO/cS:null;
-    const cC=ce.reduce((a,r)=>a+(r.t_clicks||0),0);
+    const cC=ce.reduce((a,r)=>a+(r.p_clicks||0)+(r.f_clicks||0),0);
     const cCTOR=cO>0?cC/cO:null;
     const col=CC[c]||'#c4a06a';
     h+=`<div class="sc" style="border-top-color:${col}">
@@ -669,8 +701,11 @@ function rS4(){
   rows.forEach(r=>{
     const k=`${r.campaign}|${r.marca}|${r.objetivo}|${r.mes}`;
     if(!agg[k])agg[k]={campaign:r.campaign,marca:r.marca,objetivo:r.objetivo,mes:r.mes,s:0,d:0,o:0,c:0,u:0};
-    agg[k].s+=r.t_sends||0;agg[k].d+=r.t_del||0;agg[k].o+=r.t_opens||0;
-    agg[k].c+=r.t_clicks||0;agg[k].u+=r.t_unsubs||0;
+    agg[k].s+=(r.p_sends||0)+(r.f_sends||0);
+    agg[k].d+=(r.p_del||0)+(r.f_del||0);
+    agg[k].o+=(r.p_opens||0)+(r.f_opens||0);
+    agg[k].c+=(r.p_clicks||0)+(r.f_clicks||0);
+    agg[k].u+=(r.p_unsubs||0)+(r.f_unsubs||0);
   });
   let ar=Object.values(agg).map(r=>({...r,
     or:r.d>0?r.o/r.d:null,ctor:r.o>0?r.c/r.o:null,cr:r.d>0?r.c/r.d:null,utor:r.o>0?r.u/r.o:null
@@ -697,21 +732,23 @@ function rS4(){
     </tr>`;
   });
   h+=`</tbody></table></div>
-  <div class="chart-box" style="margin-top:20px">
-    <div class="chart-box-hdr">Envíos · Open Rate · CTOR · UTOR — por Campaña</div>
-    <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Envíos totales · Líneas = OR · CTOR · UTOR (eje der., %)</div>
-    <canvas id="ch-s4" height="220"></canvas>
+  <div class="two-col" style="margin-top:20px">
+    <div class="chart-box" style="margin-top:0">
+      <div class="chart-box-hdr">Envíos Totales (P + FUP) — por Campaña</div>
+      <canvas id="ch-s4v" height="220"></canvas>
+    </div>
+    <div class="chart-box" style="margin-top:0">
+      <div class="chart-box-hdr">Open Rate · CTOR — por Campaña (%)</div>
+      <canvas id="ch-s4r" height="220"></canvas>
+    </div>
   </div>`;
   el.innerHTML=h;
   const cs=[...new Set(ar.map(r=>r.campaign))];
-  mkTriLine('ch-s4',cs,'Envíos',
-    cs.map(c=>ar.filter(x=>x.campaign===c).reduce((a,x)=>a+(x.s||0),0)),
-    [
-      {label:'OR %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const t={o:0,d:0};rr.forEach(x=>{t.o+=x.o;t.d+=x.d;});return t.d>0?parseFloat((t.o/t.d*100).toFixed(1)):0;})},
-      {label:'CTOR %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const t={c:0,o:0};rr.forEach(x=>{t.c+=x.c;t.o+=x.o;});return t.o>0?parseFloat((t.c/t.o*100).toFixed(1)):0;})},
-      {label:'UTOR %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const t={u:0,o:0};rr.forEach(x=>{t.u+=(x.u||0);t.o+=x.o;});return t.o>0?parseFloat((t.u/t.o*100).toFixed(1)):0;})}
-    ]
-  );
+  mkVolBars('ch-s4v',cs,cs.map(c=>ar.filter(x=>x.campaign===c).reduce((a,x)=>a+(x.s||0),0)),'Envíos');
+  mkRateBars('ch-s4r',cs,[
+    {label:'OR %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const t={o:0,d:0};rr.forEach(x=>{t.o+=x.o;t.d+=x.d;});return t.d>0?parseFloat((t.o/t.d*100).toFixed(1)):0;})},
+    {label:'CTOR %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const t={c:0,o:0};rr.forEach(x=>{t.c+=x.c;t.o+=x.o;});return t.o>0?parseFloat((t.c/t.o*100).toFixed(1)):0;})}
+  ]);
 }
 
 /* ═══════════════ S5: PRINCIPAL vs FUP ═══════════════ */
@@ -746,6 +783,16 @@ function rS5(){
       <div class="chart-box-hdr">${badge==='principal'?'Principal':'Follow-up'} — Envíos · OR · CTOR · UTOR por Campaña</div>
       <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Envíos totales · Líneas = OR · CTOR · UTOR (%)</div>
       <canvas id="${chartId}" height="200"></canvas>
+    </div>
+    <div class="two-col" style="margin-top:16px">
+      <div class="chart-box" style="margin-top:0">
+        <div class="chart-box-hdr">${badge==='principal'?'Principal':'Follow-up'} — Envíos por Campaña</div>
+        <canvas id="${chartId}v" height="200"></canvas>
+      </div>
+      <div class="chart-box" style="margin-top:0">
+        <div class="chart-box-hdr">${badge==='principal'?'Principal':'Follow-up'} — OR · CTOR por Campaña (%)</div>
+        <canvas id="${chartId}r" height="200"></canvas>
+      </div>
     </div>`;
   }
 
@@ -755,22 +802,16 @@ function rS5(){
   el.innerHTML=h;
 
   const cs=[...new Set(rows.map(r=>r.campaign))];
-  mkTriLine('ch-s5p',cs,'Envíos P',
-    cs.map(c=>rows.filter(r=>r.campaign===c).reduce((a,r)=>a+(r.p_sends||0),0)),
-    [
-      {label:'OR P%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_or,0)/rr.length*100).toFixed(1)):0;})},
-      {label:'CTOR P%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_ctor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_ctor,0)/rr.length*100).toFixed(1)):0;})},
-      {label:'UTOR P%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_utor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_utor,0)/rr.length*100).toFixed(1)):0;})}
-    ]
-  );
-  mkTriLine('ch-s5f',cs,'Envíos FUP',
-    cs.map(c=>rows.filter(r=>r.campaign===c).reduce((a,r)=>a+(r.f_sends||0),0)),
-    [
-      {label:'OR FUP%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_or,0)/rr.length*100).toFixed(1)):0;})},
-      {label:'CTOR FUP%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_ctor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_ctor,0)/rr.length*100).toFixed(1)):0;})},
-      {label:'UTOR FUP%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_utor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_utor,0)/rr.length*100).toFixed(1)):0;})}
-    ]
-  );
+  mkVolBars('ch-s5pv',cs,cs.map(c=>rows.filter(r=>r.campaign===c).reduce((a,r)=>a+(r.p_sends||0),0)),'Envíos P');
+  mkRateBars('ch-s5pr',cs,[
+    {label:'OR P%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_or,0)/rr.length*100).toFixed(1)):0;})},
+    {label:'CTOR P%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_ctor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_ctor,0)/rr.length*100).toFixed(1)):0;})}
+  ]);
+  mkVolBars('ch-s5fv',cs,cs.map(c=>rows.filter(r=>r.campaign===c).reduce((a,r)=>a+(r.f_sends||0),0)),'Envíos FUP');
+  mkRateBars('ch-s5fr',cs,[
+    {label:'OR FUP%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_or,0)/rr.length*100).toFixed(1)):0;})},
+    {label:'CTOR FUP%',data:cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_ctor!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_ctor,0)/rr.length*100).toFixed(1)):0;})}
+  ]);
 }
 
 /* ═══════════════ S6: WHATSAPP ═══════════════ */
@@ -798,19 +839,17 @@ function rS6(){
       <td class="num">${fP(r.wa_pread)}</td><td class="num">${fP(r.wa_pclr)}</td>
     </tr>`).join('')}
     </tbody></table></div>
-  <div class="chart-box"><div class="chart-box-hdr">WhatsApp — Envíos · % Entrega · % Leído · % Click/Leído</div>
-    <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Envíos · Líneas = % Entrega · % Leído · % Click/Leído (%)</div>
-    <canvas id="ch-s6" height="220"></canvas></div>`;
+  <div class="chart-box" style="margin-top:20px">
+    <div class="chart-box-hdr">WhatsApp — % Entrega · % Leído · % Click/Leído por Campaña (%)</div>
+    <canvas id="ch-s6" height="220"></canvas>
+  </div>`;
   el.innerHTML=h;
   const lbs=sorted.map(r=>`${r.campaign} · ${r.touchpoint}`);
-  mkTriLine('ch-s6',lbs,'Envíos',
-    sorted.map(r=>r.wa_env||0),
-    [
-      {label:'% Entrega',data:sorted.map(r=>r.wa_pent!=null?parseFloat((r.wa_pent*100).toFixed(1)):null)},
-      {label:'% Leído',data:sorted.map(r=>r.wa_pread!=null?parseFloat((r.wa_pread*100).toFixed(1)):null)},
-      {label:'% Click/Leído',data:sorted.map(r=>r.wa_pclr!=null?parseFloat((r.wa_pclr*100).toFixed(1)):null)}
-    ]
-  );
+  mkRateBars('ch-s6',lbs,[
+    {label:'% Entrega',data:sorted.map(r=>r.wa_pent!=null?parseFloat((r.wa_pent*100).toFixed(1)):0)},
+    {label:'% Leído',data:sorted.map(r=>r.wa_pread!=null?parseFloat((r.wa_pread*100).toFixed(1)):0)},
+    {label:'% Click/Leído',data:sorted.map(r=>r.wa_pclr!=null?parseFloat((r.wa_pclr*100).toFixed(1)):0)}
+  ]);
 }
 
 /* ═══════════════ S7: PAID UNIFIED ═══════════════ */
@@ -874,71 +913,57 @@ function rS7(){
 
   h+=`<div class="two-col" style="margin-top:24px">
     <div class="chart-box" style="margin-top:0">
-      <div class="chart-box-hdr">Inversión (MXN) &amp; CTR — por Campaña</div>
-      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Inversión total · Línea = CTR promedio · Punteado = BAU CTR</div>
+      <div class="chart-box-hdr">Inversión Total (MXN) — por Campaña</div>
       <canvas id="ch-s7a" height="240"></canvas>
     </div>
     <div class="chart-box" style="margin-top:0">
-      <div class="chart-box-hdr">Impresiones &amp; CPC — por Campaña</div>
-      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Impresiones totales · Línea = CPC promedio · Punteado = BAU CPC</div>
+      <div class="chart-box-hdr">CTR · CPC Promedio — por Campaña</div>
       <canvas id="ch-s7b" height="240"></canvas>
     </div>
   </div>`;
   el.innerHTML=h;
 
-  /* mkDual — combo chart: bars (left Y) + line (right Y) + optional BAU dash */
-  function mkDual(id,labels,barLbl,barData,lineLbl,lineData,lColor,bauVal,yLFmt,yRFmt){
-    const el2=document.getElementById(id);if(!el2)return;
+  /* Pure bar: Inversión by campaign */
+  (function(){
+    const el2=document.getElementById('ch-s7a');if(!el2)return;
     const c2=el2.getContext('2d');
-    if(CH[id])CH[id].destroy();
-    const ds=[
-      {type:'bar',label:barLbl,data:barData,backgroundColor:bgA,borderColor:bg,
-       borderWidth:1,borderRadius:6,yAxisID:'yL',order:2},
-      {type:'line',label:lineLbl,data:lineData,borderColor:lColor,
-       backgroundColor:lColor+'14',fill:false,
-       pointBackgroundColor:bg,pointBorderColor:'#0d0d0d',pointBorderWidth:1.5,
-       pointRadius:5,pointHoverRadius:8,borderWidth:2.5,tension:.3,yAxisID:'yR',order:1}
-    ];
-    if(bauVal!=null)ds.push({type:'line',label:'BAU',data:Array(labels.length).fill(bauVal),
-      borderColor:lColor+'50',borderDash:[6,4],borderWidth:1.5,pointRadius:0,yAxisID:'yR',order:0});
-    CH[id]=new Chart(c2,{type:'bar',data:{labels,datasets:ds},options:{
+    if(CH['ch-s7a'])CH['ch-s7a'].destroy();
+    CH['ch-s7a']=new Chart(c2,{type:'bar',data:{labels:cs,datasets:[{
+      label:'Inversión $',data:invData,
+      backgroundColor:bg.map(c=>c+'99'),borderColor:bg,borderWidth:1,borderRadius:5
+    }]},options:{
       responsive:true,maintainAspectRatio:true,
       interaction:{mode:'index',intersect:false},
-      plugins:{
-        legend:{display:true,position:'top',labels:{color:'#777',boxWidth:10,padding:14,
-          font:{size:11},usePointStyle:true,pointStyleWidth:8}},
-        tooltip:{callbacks:{label:ctx=>{
-          const v=ctx.raw,l=ctx.dataset.label||'';
-          if(l.includes('Inversión'))return ' Inversión: $'+Math.round(v).toLocaleString('es-MX');
-          if(l.includes('Impresiones'))return ' Impresiones: '+Math.round(v).toLocaleString('es-MX');
-          if(l.includes('CTR')||l==='BAU')return ' '+l+': '+v+'%';
-          if(l.includes('CPC'))return ' '+l+': $'+v;
-          return ' '+l+': '+v;
-        }}}
-      },
+      plugins:{legend:{position:'top',labels:{color:'#777',font:{size:11}}},
+        tooltip:{callbacks:{label:ctx=>` Inversión: $${Math.round(ctx.raw).toLocaleString('es-MX')}`}}},
       scales:{
-        x:{ticks:{color:'#777',font:{size:11},maxRotation:20},
-           grid:{color:'rgba(255,255,255,.03)'}},
-        yL:{type:'linear',position:'left',
-            grid:{color:'rgba(255,255,255,.04)'},
-            ticks:{color:'#555',font:{size:10},callback:yLFmt}},
-        yR:{type:'linear',position:'right',
-            grid:{drawOnChartArea:false},
-            ticks:{color:lColor+'cc',font:{size:10},callback:yRFmt}}
+        x:{ticks:{color:'#777',font:{size:10},maxRotation:20},grid:{color:'rgba(255,255,255,.03)'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#777',font:{size:10},callback:v=>v>=1e6?'$'+(v/1e6).toFixed(1)+'M':'$'+(v/1e3).toFixed(0)+'K'},min:0}
       }
     }});
-  }
+  })();
 
-  mkDual('ch-s7a',cs,'Inversión $',invData,'CTR %',ctrData,'#c4a06a',
-    bauCTR!=null?parseFloat((bauCTR*100).toFixed(2)):null,
-    v=>v>=1e6?'$'+(v/1e6).toFixed(1)+'M':'$'+(v/1e3).toFixed(0)+'K',
-    v=>v+'%'
-  );
-  mkDual('ch-s7b',cs,'Impresiones',impData,'CPC $',cpcData,'#34d399',
-    bauCPC!=null?parseFloat(bauCPC.toFixed(2)):null,
-    v=>v>=1e6?(v/1e6).toFixed(1)+'M':v>=1e3?(v/1e3).toFixed(0)+'K':String(v),
-    v=>'$'+v
-  );
+  /* Pure grouped bar: CTR + BAU CTR, CPC + BAU CPC by campaign */
+  (function(){
+    const el2=document.getElementById('ch-s7b');if(!el2)return;
+    const c2=el2.getContext('2d');
+    if(CH['ch-s7b'])CH['ch-s7b'].destroy();
+    const bauCTRArr=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.bau_ctr!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.bau_ctr,0)/rr.length*100).toFixed(2)):null;});
+    const bauCPCArr=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.bau_cpc!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.bau_cpc,0)/rr.length).toFixed(2)):null;});
+    CH['ch-s7b']=new Chart(c2,{type:'bar',data:{labels:cs,datasets:[
+      {label:'CTR % (real)',data:ctrData,backgroundColor:'#c4a06a99',borderColor:'#c4a06a',borderWidth:1,borderRadius:4},
+      {label:'BAU CTR %',data:bauCTRArr,backgroundColor:'#c4a06a33',borderColor:'#c4a06a55',borderWidth:1,borderRadius:4,borderDash:[4,4]}
+    ]},options:{
+      responsive:true,maintainAspectRatio:true,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{position:'top',labels:{color:'#777',font:{size:11}}},
+        tooltip:{callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.raw!=null?ctx.raw:'—'}%`}}},
+      scales:{
+        x:{ticks:{color:'#777',font:{size:10},maxRotation:20},grid:{color:'rgba(255,255,255,.03)'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#777',font:{size:10},callback:v=>v+'%'},min:0}
+      }
+    }});
+  })();
 }
 
 /* ═══════════════ RENDER ALL ═══════════════ */
@@ -948,6 +973,7 @@ function render(){rS2();rS3();rS4();rS5();rS6();rS7();}
 (function(){
   // Multi-selects
   new MS(document.getElementById('ms-camps'),ALL_CAMPS,'Campaña',render,S.camps);
+  new MS(document.getElementById('ms-marca'),ALL_MARCAS,'Marca',render,S.marcas);
   new MS(document.getElementById('ms-period'),ALL_MONTHS,'Período',render,S.period);
   new MS(document.getElementById('ms-crm-obj'),[...new Set(DATA.crm.map(r=>r.objetivo))].sort(),'Objetivo CRM',render,S.crm_obj);
   new MS(document.getElementById('ms-paid-plat'),['Meta','Tiktok'],'Plataforma',render,S.p_plat);
