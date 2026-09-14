@@ -3,781 +3,832 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nescafé BU · Dashboard 2026</title>
+<title>Dashboard Nescafé v3 — CRM + Paid Media 2026</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 :root{
-  --gold:#c4a06a;--gold-light:#e8d5a8;--gold-dark:#9a7a4a;
-  --bg:#ffffff;--bg2:#f5f5f5;--bg3:#eeeeee;
-  --text:#1a1a1a;--text2:#555555;--text3:#888888;
-  --border:#dddddd;--border2:#cccccc;
-  --positive:#1a7a3a;--positive-bg:#e8f5ec;
-  --negative:#b02020;--negative-bg:#faeaea;
-  --neutral-bg:#f0f0f0;
-  --radius:6px;--shadow:0 2px 8px rgba(0,0,0,.08);
-  --font:'Segoe UI',Arial,sans-serif;
+  --bg:#090909;--s1:#111;--s2:#181818;--s3:#222;--s4:#2a2a2a;
+  --gold:#c4a06a;--gold-dim:#8a6d3b;--gold-pale:#2a1f0e;
+  --text:#f0f0f0;--text2:#aaa;--text3:#666;
+  --good:#4ade80;--bad:#f87171;
+  --border:rgba(255,255,255,.07);
+  --r:8px;
+  --font:'Inter',system-ui,-apple-system,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--font);font-size:15px;color:var(--text);background:var(--bg);line-height:1.5}
-/* ── Sticky filter bar ────────────────────────────────────────── */
-#filter-bar{
-  position:sticky;top:0;z-index:100;background:#fff;
-  border-bottom:2px solid var(--gold);
-  box-shadow:0 2px 12px rgba(0,0,0,.1);
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* ─── PAGE HEADER ─── */
+#hdr{
+  background:linear-gradient(135deg,#111 0%,#1a1208 100%);
+  padding:22px 32px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
 }
-.filter-row{
-  display:flex;align-items:center;flex-wrap:wrap;gap:8px;
-  padding:6px 20px;font-size:14px;
+#hdr h1{font-size:22px;font-weight:800;letter-spacing:-.02em}
+#hdr h1 em{font-style:normal;color:var(--gold)}
+#hdr .meta{font-size:13px;color:var(--text3)}
+.badge{
+  font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 10px;border-radius:20px;border:1px solid var(--gold-dim);
+  color:var(--gold);background:var(--gold-pale);
 }
-.filter-row+.filter-row{border-top:1px solid var(--bg3)}
-.filter-section-tag{
-  font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em;
-  color:#fff;background:var(--gold);border-radius:3px;padding:2px 8px;white-space:nowrap;
+
+/* ─── FILTER BAR ─── */
+#fbar{
+  position:sticky;top:0;z-index:300;
+  background:rgba(17,17,17,.97);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);padding:10px 32px;
+  box-shadow:0 4px 24px rgba(0,0,0,.4);
 }
-.filter-section-tag.crm{background:#3a7ae8}
-.filter-section-tag.paid{background:#e83a7a}
-.filter-label{font-weight:600;font-size:13px;color:var(--text2);white-space:nowrap}
-.chip-label{cursor:pointer}
-.chip-label input{display:none}
-.chip{
-  display:inline-block;padding:3px 10px;border-radius:12px;
-  border:1.5px solid var(--border);font-size:13px;
-  background:#fff;color:var(--text2);transition:all .15s;
+.frow{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:3px 0}
+.frow+.frow{border-top:1px solid var(--border);margin-top:6px;padding-top:9px}
+.flbl{
+  font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gold-dim);min-width:72px;
 }
-.chip-label input:checked+.chip{
-  background:var(--gold);border-color:var(--gold-dark);color:#fff;font-weight:600;
+.fgroup{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fsep{font-size:12px;color:var(--text3);font-weight:600}
+
+/* ─── PERIOD PILLS ─── */
+.pill-grp{display:flex;gap:4px}
+.pill{
+  font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;cursor:pointer;
+  border:1px solid var(--s4);color:var(--text3);background:transparent;transition:all .15s;
 }
-.chip-label.crm-chip input:checked+.chip{background:#3a7ae8;border-color:#2a60c8;color:#fff}
-.chip-label.paid-chip input:checked+.chip{background:#e83a7a;border-color:#c02060;color:#fff}
-select.filter-select{
-  border:1.5px solid var(--border);border-radius:4px;
-  padding:3px 6px;font-size:13px;font-family:var(--font);
-  background:#fff;color:var(--text);max-height:120px;min-width:130px;
+.pill:hover{border-color:var(--gold-dim);color:var(--gold)}
+.pill.active{border-color:var(--gold);color:var(--gold);background:var(--gold-pale)}
+
+/* ─── MULTI-SELECT ─── */
+.ms-wrap{position:relative;display:inline-block}
+.ms-btn{
+  display:flex;align-items:center;gap:8px;
+  background:var(--s2);border:1px solid var(--s4);border-radius:6px;
+  padding:5px 12px;cursor:pointer;color:var(--text2);font-size:13px;
+  transition:border-color .15s;white-space:nowrap;min-width:120px;
 }
-select.filter-select option{padding:2px 4px}
-/* ── Layout ───────────────────────────────────────────────────── */
-.page-header{
-  background:var(--bg2);border-bottom:1px solid var(--border);
-  padding:18px 28px 14px;
+.ms-btn:hover{border-color:var(--gold-dim)}
+.ms-btn strong{color:var(--text);font-weight:600}
+.ms-btn .arrow{margin-left:auto;color:var(--text3);font-size:11px;transition:transform .15s}
+.ms-wrap.open .ms-btn{border-color:var(--gold)}
+.ms-wrap.open .ms-btn .arrow{transform:rotate(180deg)}
+.ms-panel{
+  display:none;position:absolute;top:calc(100% + 4px);left:0;min-width:200px;max-width:280px;
+  background:var(--s2);border:1px solid var(--s4);border-radius:8px;
+  box-shadow:0 8px 32px rgba(0,0,0,.6);z-index:400;overflow:hidden;
 }
-.page-header h1{font-size:22px;font-weight:700;color:var(--text)}
-.page-header .subtitle{font-size:14px;color:var(--text2);margin-top:2px}
-main{padding:24px 28px;max-width:1400px;margin:0 auto}
-section{margin-bottom:40px}
-.section-header{
-  display:flex;align-items:baseline;gap:12px;
-  margin-bottom:14px;padding-bottom:8px;
-  border-bottom:2px solid var(--gold);
+.ms-wrap.open .ms-panel{display:block}
+.ms-acts{display:flex;border-bottom:1px solid var(--border);padding:6px 10px;gap:6px}
+.ms-ac{
+  font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;cursor:pointer;
+  border:1px solid var(--s4);color:var(--text3);background:transparent;
+  transition:all .12s;
 }
-.section-num{
-  font-size:13px;font-weight:700;color:#fff;background:var(--gold);
-  border-radius:3px;padding:2px 8px;
+.ms-ac:hover{border-color:var(--gold);color:var(--gold)}
+.ms-list{max-height:200px;overflow-y:auto;padding:6px 0}
+.ms-list::-webkit-scrollbar{width:4px}
+.ms-list::-webkit-scrollbar-track{background:transparent}
+.ms-list::-webkit-scrollbar-thumb{background:var(--s4);border-radius:2px}
+.ms-opt{
+  display:flex;align-items:center;gap:8px;padding:6px 12px;cursor:pointer;
+  font-size:13px;color:var(--text2);transition:background .1s;
 }
-.section-title{font-size:18px;font-weight:700;color:var(--text)}
-.section-subtitle{font-size:13px;color:var(--text2)}
-/* ── KPI Cards ────────────────────────────────────────────────── */
-.kpi-grid{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:8px}
-.kpi-card{
-  background:#fff;border:1px solid var(--border);border-radius:var(--radius);
-  padding:14px 18px;min-width:150px;flex:1;box-shadow:var(--shadow);
+.ms-opt:hover{background:var(--s3);color:var(--text)}
+.ms-opt input{width:14px;height:14px;accent-color:var(--gold);cursor:pointer;flex-shrink:0}
+
+/* ─── SECTIONS ─── */
+.sec{padding:36px 32px;border-bottom:1px solid var(--border)}
+.sec:last-child{border-bottom:none}
+.sec-hdr{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.sec-n{
+  font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gold-dim);padding:3px 8px;border:1px solid var(--gold-dim);border-radius:4px;
 }
-.kpi-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text3)}
-.kpi-value{font-size:24px;font-weight:700;color:var(--text);margin:2px 0}
-.kpi-sub{font-size:12px;color:var(--text2)}
-.kpi-card.accent{border-top:3px solid var(--gold)}
-.kpi-card.crm-card{border-top:3px solid #3a7ae8}
-.kpi-card.paid-card{border-top:3px solid #e83a7a}
-/* ── Tables ───────────────────────────────────────────────────── */
-.table-wrap{overflow-x:auto;margin-bottom:18px;border-radius:var(--radius);border:1px solid var(--border);}
-table.dt{
-  width:100%;border-collapse:collapse;font-size:14px;
+.sec-title{font-size:21px;font-weight:700;letter-spacing:-.01em}
+.sec-sub{font-size:13px;color:var(--text3);margin-bottom:22px;margin-top:4px}
+
+/* ─── TIMELINE ─── */
+.tl-grid{display:grid;grid-template-columns:180px repeat(2,1fr);gap:6px 10px;align-items:center}
+.tl-head{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);text-align:center;padding:2px 0}
+.tl-camp{font-size:14px;font-weight:600;color:var(--text2);padding:2px 0;line-height:1.3}
+.tl-camp small{font-size:11px;color:var(--text3);font-weight:400;display:block}
+.tl-bar{
+  border-radius:6px;padding:7px 14px;font-size:12px;font-weight:700;
+  text-align:center;display:flex;align-items:center;justify-content:center;min-height:34px;
 }
-table.dt th{
-  background:var(--bg2);padding:9px 12px;text-align:left;
-  font-size:13px;font-weight:600;color:var(--text);
-  border-bottom:2px solid var(--border);white-space:nowrap;
+.tl-crm{background:rgba(59,130,246,.15);color:#60a5fa;border:1px solid rgba(59,130,246,.3)}
+.tl-paid{background:rgba(245,158,11,.1);color:#fbbf24;border:1px solid rgba(245,158,11,.25)}
+.tl-both{background:rgba(52,211,153,.1);color:#34d399;border:1px solid rgba(52,211,153,.25)}
+.tl-empty{background:var(--s2);color:var(--text3);border:1px solid var(--border);font-size:11px}
+.tl-legend{display:flex;gap:20px;margin-top:14px;flex-wrap:wrap}
+.tl-leg-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text3)}
+.tl-dot{width:12px;height:12px;border-radius:3px;flex-shrink:0}
+
+/* ─── SCORECARD ─── */
+.score-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.sc{
+  background:var(--s1);border:1px solid var(--border);border-radius:10px;
+  padding:18px;border-top:3px solid var(--gold);
 }
-table.dt th.sortable{cursor:pointer;user-select:none}
-table.dt th.sortable:hover{background:var(--bg3)}
-table.dt td{
-  padding:8px 12px;border-bottom:1px solid var(--border);
-  vertical-align:middle;white-space:nowrap;
+.sc-name{font-size:14px;font-weight:700;margin-bottom:2px}
+.sc-brand{font-size:12px;color:var(--text3);margin-bottom:14px}
+.sc-kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sc-kpi{background:var(--s2);border-radius:6px;padding:10px 12px}
+.sc-kpi-lbl{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text3)}
+.sc-kpi-val{font-size:18px;font-weight:800;color:var(--text);margin-top:3px;font-variant-numeric:tabular-nums}
+.sc-kpi-src{font-size:10px;color:var(--text3);margin-top:1px}
+
+/* ─── TABLES ─── */
+.tbl-wrap{overflow-x:auto}
+.tbl-wrap::-webkit-scrollbar{height:4px}
+.tbl-wrap::-webkit-scrollbar-track{background:var(--s1)}
+.tbl-wrap::-webkit-scrollbar-thumb{background:var(--s4);border-radius:2px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:600px}
+thead th{
+  background:var(--s2);padding:10px 12px;text-align:left;
+  font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--text3);white-space:nowrap;cursor:pointer;user-select:none;
+  border-bottom:1px solid var(--s4);position:sticky;top:0;
 }
-table.dt tr:last-child td{border-bottom:none}
-table.dt tr:hover td{background:var(--bg2)}
-.bau-pos{color:var(--positive);font-weight:600}
-.bau-neg{color:var(--negative);font-weight:600}
-.bau-pos-cell{background:var(--positive-bg)!important;color:var(--positive);font-weight:600}
-.bau-neg-cell{background:var(--negative-bg)!important;color:var(--negative);font-weight:600}
-.tag{
-  display:inline-block;padding:2px 8px;border-radius:10px;font-size:12px;font-weight:600;
+thead th:hover{color:var(--gold);background:var(--s3)}
+.sort-ico{margin-left:4px;color:var(--s4);font-size:10px}
+th.sort-asc .sort-ico::after{content:'▲';color:var(--gold)}
+th.sort-desc .sort-ico::after{content:'▼';color:var(--gold)}
+th:not(.sort-asc):not(.sort-desc) .sort-ico::after{content:'⇅'}
+tbody tr{border-bottom:1px solid var(--border)}
+tbody tr:hover td{background:var(--s2)}
+td{padding:10px 12px;font-size:14px;vertical-align:middle;color:var(--text2)}
+td strong{color:var(--text);font-weight:600}
+td.num{text-align:right;font-variant-numeric:tabular-nums;color:var(--text)}
+.col-sep{border-left:1px solid var(--s4)!important}
+.good{color:var(--good)!important;font-weight:700}
+.bad{color:var(--bad)!important;font-weight:700}
+
+/* ─── TABLE DIVIDER LABEL ─── */
+.tbl-section-hdr{
+  background:linear-gradient(90deg,var(--gold-pale),transparent);
+  padding:6px 12px;
+  font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold-dim);border-bottom:1px solid var(--border);
 }
-.tag-crm{background:#e0eaff;color:#2a60c8}
-.tag-paid{background:#ffe0ec;color:#c02060}
-.tag-both{background:#f5e6ff;color:#6a00b0}
-.table-section-title{
-  font-size:15px;font-weight:700;margin:18px 0 8px;padding:8px 0;
-  border-bottom:1px solid var(--border);color:var(--text)
+
+/* ─── TABLE TITLE ─── */
+.tbl-title{
+  font-size:14px;font-weight:700;color:var(--text2);
+  margin-bottom:10px;margin-top:24px;padding-bottom:8px;
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:8px;
 }
-/* ── Gantt ────────────────────────────────────────────────────── */
-.gantt-wrap{overflow-x:auto;margin-bottom:18px}
-table.gantt{width:100%;border-collapse:collapse;font-size:14px}
-table.gantt th{
-  padding:8px 12px;text-align:center;font-size:12px;font-weight:600;
-  background:var(--bg2);border:1px solid var(--border);color:var(--text2);
+.tbl-title:first-child{margin-top:0}
+.tbl-badge{
+  font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:2px 8px;border-radius:4px;background:var(--s2);color:var(--text3);
 }
-table.gantt th.camp-col{text-align:left}
-table.gantt td{border:1px solid var(--border);padding:4px}
-.gantt-cell-inner{
-  border-radius:4px;padding:4px 8px;font-size:12px;font-weight:600;
-  text-align:center;white-space:nowrap;min-height:26px;line-height:1.3;
+
+/* ─── BAU STRIP ─── */
+.bau{
+  background:var(--gold-pale);border:1px solid rgba(196,160,106,.2);border-radius:8px;
+  padding:12px 18px;margin:14px 0;display:flex;flex-wrap:wrap;gap:28px;align-items:center;
 }
-.gc-crm{background:#dbeafe;color:#1e3a8a}
-.gc-paid{background:#fce7f3;color:#9d174d}
-.gc-both{background:#f3e8ff;color:#4c1d95}
-/* ── Charts ───────────────────────────────────────────────────── */
-.chart-container{
-  background:#fff;border:1px solid var(--border);border-radius:var(--radius);
-  padding:16px;margin-bottom:18px;position:relative;
+.bau-lbl{
+  font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold-dim);width:100%;margin-bottom:2px;
 }
-.chart-container canvas{max-height:320px}
-/* ── BAU Bench panel ──────────────────────────────────────────── */
-.bau-panel{
-  background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);
-  padding:14px 18px;margin-top:8px;
+.bau-kpi{text-align:center}
+.bau-kpi-l{font-size:11px;color:var(--gold-dim);font-weight:600}
+.bau-kpi-v{font-size:16px;font-weight:800;color:var(--gold)}
+.bau-note{font-size:12px;color:var(--gold-dim);margin-left:auto;align-self:center}
+
+/* ─── CHARTS ─── */
+.chart-box{
+  background:var(--s1);border:1px solid var(--border);border-radius:10px;
+  padding:18px;margin-top:20px;
 }
-.bau-panel-title{font-size:13px;font-weight:700;color:var(--text2);margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
-.bau-grid{display:flex;flex-wrap:wrap;gap:10px}
-.bau-item{
-  background:#fff;border:1px solid var(--border);border-radius:4px;
-  padding:8px 14px;min-width:120px;text-align:center;
-}
-.bau-item-label{font-size:11px;color:var(--text3);font-weight:600;text-transform:uppercase}
-.bau-item-val{font-size:18px;font-weight:700;color:var(--text)}
-.bau-item-ctx{font-size:11px;color:var(--text2)}
-/* ── Empty / no-data ──────────────────────────────────────────── */
-.no-data{
-  text-align:center;padding:32px;color:var(--text3);font-size:14px;
-  background:var(--bg2);border-radius:var(--radius);
-}
-/* ── Responsive ───────────────────────────────────────────────── */
+.chart-box-hdr{font-size:12px;font-weight:700;color:var(--text3);margin-bottom:14px;letter-spacing:.04em;text-transform:uppercase}
+canvas{max-height:280px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+
+/* ─── EMPTY ─── */
+.empty{text-align:center;padding:48px;color:var(--text3);font-size:14px}
+
+/* ─── RESPONSIVE ─── */
 @media(max-width:900px){
-  main{padding:14px 12px}
-  .filter-row{padding:6px 10px}
-  .kpi-card{min-width:130px}
+  .two-col{grid-template-columns:1fr}
+  #hdr{padding:16px 20px}
+  .sec{padding:24px 20px}
+  #fbar{padding:8px 20px}
+  .tl-grid{grid-template-columns:110px 1fr 1fr;font-size:13px}
 }
 @media(max-width:600px){
-  .page-header h1{font-size:17px}
-  .section-title{font-size:15px}
-  table.dt{font-size:13px}
+  .score-grid{grid-template-columns:1fr}
+  .tl-grid{grid-template-columns:80px 1fr 1fr;font-size:12px}
+  #hdr h1{font-size:17px}
 }
 </style>
 </head>
 <body>
 
-<div class="page-header">
-  <h1>Nescafé BU · Dashboard de Campañas 2026</h1>
-  <div class="subtitle">Nescafé México · Actualizado: 14 Sep 2026 · Fuente: Seguimiento &amp; Monitoreo</div>
+<!-- PAGE HEADER -->
+<div id="hdr">
+  <div>
+    <h1>Nescafé — <em>CRM + Paid Media</em></h1>
+    <div class="meta">Junio–Julio 2026 · Nestlé MX · Actualizado: 14 Sep 2026</div>
+  </div>
+  <span class="badge">v3</span>
 </div>
 
-<!-- ── STICKY FILTER BAR ──────────────────────────────────────────────── -->
-<div id="filter-bar">
-  <div class="filter-row filter-general">
-    <span class="filter-section-tag">General</span>
-    <span class="filter-label">Período</span>
-    <label class="chip-label"><input type="checkbox" class="filter-month" value="Marzo" checked><span class="chip">Mar</span></label>
-<label class="chip-label"><input type="checkbox" class="filter-month" value="Abril" checked><span class="chip">Abr</span></label>
-<label class="chip-label"><input type="checkbox" class="filter-month" value="Mayo" checked><span class="chip">May</span></label>
-<label class="chip-label"><input type="checkbox" class="filter-month" value="Junio" checked><span class="chip">Jun</span></label>
-<label class="chip-label"><input type="checkbox" class="filter-month" value="Julio" checked><span class="chip">Jul</span></label>
-<label class="chip-label"><input type="checkbox" class="filter-month" value="Agosto" checked><span class="chip">Ago</span></label>
-    <span class="filter-label" style="margin-left:8px">Campaña</span>
-    <select id="f-campaign" class="filter-select" multiple size="3">
-      <option value="CFM Liquido">CFM Liquido</option>
-<option value="Detrás de un gran café">Detrás de un gran café</option>
-<option value="F1">F1</option>
-<option value="Hackea Tu Café">Hackea Tu Café</option>
-<option value="Ponle Corazon">Ponle Corazon</option>
-<option value="Tercer Tiempo">Tercer Tiempo</option>
-<option value="The Freshers">The Freshers</option>
-    </select>
-    <span class="filter-label">Marca</span>
-    <select id="f-brand" class="filter-select" multiple size="3">
-      <option value="Concentrate">Concentrate</option>
-<option value="ICE">ICE</option>
-<option value="Masterbrand">Masterbrand</option>
-<option value="Nescafe">Nescafe</option>
-    </select>
+<!-- STICKY FILTER BAR -->
+<div id="fbar">
+  <div class="frow">
+    <span class="flbl">General</span>
+    <div class="fgroup">
+      <div class="ms-wrap" id="ms-camps"></div>
+    </div>
+    <div class="fgroup" style="margin-left:6px">
+      <span class="fsep">Período:</span>
+      <div class="pill-grp">
+        <button class="pill active" data-period="ambos">Ambos</button>
+        <button class="pill" data-period="Junio">Junio</button>
+        <button class="pill" data-period="Julio">Julio</button>
+      </div>
+    </div>
   </div>
-  <div class="filter-row filter-crm">
-    <span class="filter-section-tag crm">CRM</span>
-    <span class="filter-label">Medio</span>
-    <label class="chip-label crm-chip"><input type="checkbox" class="filter-crm-medio" value="email" checked><span class="chip">Email</span></label>
-    <label class="chip-label crm-chip"><input type="checkbox" class="filter-crm-medio" value="whatsapp" checked><span class="chip">WhatsApp</span></label>
-    <span class="filter-label" style="margin-left:8px">Objetivo CRM</span>
-    <select id="f-crm-obj" class="filter-select" multiple size="3">
-      <option value="Awareness">Awareness</option>
-      <option value="Purchase">Purchase</option>
-    </select>
+  <div class="frow">
+    <span class="flbl">CRM</span>
+    <div class="fgroup">
+      <div class="ms-wrap" id="ms-crm-obj"></div>
+    </div>
   </div>
-  <div class="filter-row filter-paid">
-    <span class="filter-section-tag paid">Paid</span>
-    <span class="filter-label">Objetivo</span>
-    <select id="f-paid-obj" class="filter-select" multiple size="3">
-      <option value="Brand Consideration ">Brand Consideration </option>
-<option value="Clics">Clics</option>
-<option value="Clics en el enlace">Clics en el enlace</option>
-<option value="Reach">Reach</option>
-<option value="Thruplays">Thruplays</option>
-<option value="Video Views">Video Views</option>
-<option value="views">views</option>
-    </select>
-    <span class="filter-label" style="margin-left:8px">Audiencia</span>
-    <label class="chip-label paid-chip"><input type="checkbox" class="filter-paid-aud" value="Semilla" checked><span class="chip">Semilla</span></label>
-    <label class="chip-label paid-chip"><input type="checkbox" class="filter-paid-aud" value="Lookalike" checked><span class="chip">Lookalike</span></label>
-    <span class="filter-label" style="margin-left:8px">Plataforma</span>
-    <label class="chip-label paid-chip"><input type="checkbox" class="filter-paid-plat" value="Meta" checked><span class="chip">Meta</span></label>
-<label class="chip-label paid-chip"><input type="checkbox" class="filter-paid-plat" value="Meta " checked><span class="chip">Meta </span></label>
-<label class="chip-label paid-chip"><input type="checkbox" class="filter-paid-plat" value="Tiktok" checked><span class="chip">Tiktok</span></label>
+  <div class="frow">
+    <span class="flbl">Paid Media</span>
+    <div class="fgroup">
+      <div class="ms-wrap" id="ms-paid-plat"></div>
+      <div class="ms-wrap" id="ms-paid-obj"></div>
+      <div class="ms-wrap" id="ms-paid-tipo"></div>
+      <div class="ms-wrap" id="ms-paid-aud"></div>
+    </div>
   </div>
 </div>
 
-<!-- ── MAIN ──────────────────────────────────────────────────────────── -->
-<main>
+<!-- S2: TIMELINE -->
+<div class="sec">
+  <div class="sec-hdr"><span class="sec-n">Sec 2</span><span class="sec-title">Mapa de Campañas</span></div>
+  <p class="sec-sub">Presencia por campaña, período y canal</p>
+  <div id="s2"></div>
+</div>
 
-<!-- S1: MAPA DE CAMPAÑAS -->
-<section id="s1">
-  <div class="section-header">
-    <span class="section-num">01</span>
-    <span class="section-title">Mapa de Campañas Activas</span>
-    <span class="section-subtitle">Presencia por medio y período</span>
-  </div>
-  <div class="gantt-wrap" id="gantt-container">Cargando...</div>
-</section>
+<!-- S3: SCORECARD -->
+<div class="sec">
+  <div class="sec-hdr"><span class="sec-n">Sec 3</span><span class="sec-title">Semáforo de Portafolio</span></div>
+  <p class="sec-sub">Todas las campañas · Todos los objetivos — KPIs clave por campaña</p>
+  <div id="s3"></div>
+</div>
 
-<!-- S2: SEMÁFORO -->
-<section id="s2">
-  <div class="section-header">
-    <span class="section-num">02</span>
-    <span class="section-title">Semáforo de Portafolio</span>
-    <span class="section-subtitle">Todas las campañas · Todos los objetivos</span>
-  </div>
-  <div id="scorecard-container">Cargando...</div>
-</section>
+<!-- S4: CRM COMPARATIVE -->
+<div class="sec">
+  <div class="sec-hdr"><span class="sec-n">Sec 4</span><span class="sec-title">CRM — Vista Comparativa</span></div>
+  <p class="sec-sub">Email · Totales (Principal + FUP) agrupados por campaña y objetivo · Volúmenes → Tasas</p>
+  <div id="s4"></div>
+</div>
 
-<!-- S3: CRM COMPARATIVO -->
-<section id="s3">
-  <div class="section-header">
-    <span class="section-num">03</span>
-    <span class="section-title">CRM — Vista Comparativa por Campaña</span>
-    <span class="section-subtitle">Email · Agregado por campaña y objetivo</span>
-  </div>
-  <div class="table-wrap" id="t-crm-comp-wrap"><table class="dt"><tbody><tr><td class="no-data">Cargando...</td></tr></tbody></table></div>
-  <div class="chart-container"><canvas id="chart-crm-comp"></canvas></div>
-</section>
+<!-- S5: PRINCIPAL vs FUP -->
+<div class="sec">
+  <div class="sec-hdr"><span class="sec-n">Sec 5</span><span class="sec-title">CRM — Principal vs Follow-up</span></div>
+  <p class="sec-sub">
+    <strong style="color:var(--text)">Envío Principal</strong>
+    <span style="color:var(--text3)"> vs </span>
+    <strong style="color:var(--text)">Follow-up</strong>
+    <em style="color:var(--text3)"> — reenvío a usuarios que no abrieron el correo principal</em>
+  </p>
+  <div id="s5"></div>
+</div>
 
-<!-- S4: PRINCIPAL vs FUP -->
-<section id="s4">
-  <div class="section-header">
-    <span class="section-num">04</span>
-    <span class="section-title">CRM — Principal vs Follow-up</span>
-    <span class="section-subtitle">Envío principal vs envío de seguimiento a usuarios que no abrieron el correo</span>
-  </div>
-  <div class="table-section-title">Envío Principal</div>
-  <div class="table-wrap" id="t-crm-ep-wrap"></div>
-  <div class="chart-container"><canvas id="chart-crm-ep"></canvas></div>
-  <div class="table-section-title">Follow-up <small style="font-weight:400;color:var(--text2)">(Enviado a usuarios que NO abrieron el correo principal)</small></div>
-  <div class="table-wrap" id="t-crm-fup-wrap"></div>
-  <div class="chart-container"><canvas id="chart-crm-fup"></canvas></div>
-</section>
+<!-- S6: WHATSAPP -->
+<div class="sec">
+  <div class="sec-hdr"><span class="sec-n">Sec 6</span><span class="sec-title">CRM — WhatsApp</span></div>
+  <p class="sec-sub">Métricas completas · % Entrega · % Leído · % Click vs Leído</p>
+  <div id="s6"></div>
+</div>
 
-<!-- S5: CRM WHATSAPP -->
-<section id="s5">
-  <div class="section-header">
-    <span class="section-num">05</span>
-    <span class="section-title">CRM — WhatsApp</span>
-    <span class="section-subtitle">Métricas completas de envíos por WhatsApp</span>
-  </div>
-  <div class="table-wrap" id="t-crm-wa-wrap"></div>
-  <div class="chart-container"><canvas id="chart-crm-wa"></canvas></div>
-</section>
-
-<!-- S6: PAID UNIFIED -->
-<section id="s6">
-  <div class="section-header">
-    <span class="section-num">06</span>
-    <span class="section-title">Paid Media — Tabla Unificada</span>
-    <span class="section-subtitle">Meta + TikTok · Totales mensuales · CTR y CPC con semáforo vs BAU</span>
-  </div>
-  <div class="table-wrap" id="t-paid-wrap"></div>
-  <div class="chart-container"><canvas id="chart-paid"></canvas></div>
-</section>
-
-<!-- S7: BAU BENCHMARK -->
-<section id="s7">
-  <div class="section-header">
-    <span class="section-num">07</span>
-    <span class="section-title">Paid Media — Benchmarks BAU</span>
-    <span class="section-subtitle">Valores de referencia Business as Usual por plataforma y objetivo</span>
-  </div>
-  <div id="bau-container">Cargando...</div>
-</section>
-
-</main>
+<!-- S7: PAID UNIFIED -->
+<div class="sec">
+  <div class="sec-hdr"><span class="sec-n">Sec 7</span><span class="sec-title">Paid Media — Vista Unificada</span></div>
+  <p class="sec-sub">Meta + TikTok · Todas las campañas ·
+    <span class="good">CTR verde</span> = sobre BAU ·
+    <span class="bad">CPC rojo</span> = sobre BAU
+  </p>
+  <div id="s7"></div>
+</div>
 
 <script>
-const DATA = {"meta": {"updated": "2026-09-14", "months": ["Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"], "months_paid": ["Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"], "months_crm": ["Junio", "Julio", "Agosto"]}, "crm": [{"campaign": "Tercer Tiempo", "brand": "Masterbrand", "objective": "Purchase", "touchpoint": "E-P1", "medio": "email", "mes": "Junio", "ep_sends": 467714.0, "ep_deliveries": 463241.0, "ep_opens": 179960.0, "ep_clicks": 549.0, "ep_unsubs": 3306, "ep_open_rate": 0.388, "ep_ctor": 0.003, "ep_ctr": 0.001, "ep_utor": 0.018, "fup_sends": 314029.0, "fup_deliveries": 310795.0, "fup_opens": 64233.0, "fup_clicks": 607.0, "fup_unsubs": 2341, "fup_open_rate": 0.207, "fup_ctor": 0.009, "fup_ctr": 0.002, "fup_utor": 0.036, "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}, {"campaign": "Tercer Tiempo", "brand": "Masterbrand", "objective": "Purchase", "touchpoint": "E-P1", "medio": "email", "mes": "Junio", "ep_sends": 316037.0, "ep_deliveries": 309184.0, "ep_opens": 121594.0, "ep_clicks": 11462.0, "ep_unsubs": 4535, "ep_open_rate": 0.393, "ep_ctor": 0.094, "ep_ctr": 0.037, "ep_utor": 0.037, "fup_sends": 203839.0, "fup_deliveries": 198552.0, "fup_opens": 20390.0, "fup_clicks": 1723.0, "fup_unsubs": 2304, "fup_open_rate": 0.103, "fup_ctor": 0.085, "fup_ctr": 0.009, "fup_utor": 0.113, "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}, {"campaign": "Tercer Tiempo", "brand": "Masterbrand", "objective": "Purchase", "touchpoint": "E-P1", "medio": "email", "mes": "Junio", "ep_sends": 467660.0, "ep_deliveries": 463233.0, "ep_opens": 179262.0, "ep_clicks": 539.0, "ep_unsubs": 3316, "ep_open_rate": 0.387, "ep_ctor": 0.003, "ep_ctr": 0.001, "ep_utor": 0.018, "fup_sends": 314661.0, "fup_deliveries": 311455.0, "fup_opens": 43360.0, "fup_clicks": 399.0, "fup_unsubs": 2274, "fup_open_rate": 0.139, "fup_ctor": 0.009, "fup_ctr": 0.001, "fup_utor": 0.052, "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}, {"campaign": "Tercer Tiempo", "brand": "Masterbrand", "objective": "Purchase", "touchpoint": "WA-1", "medio": "whatsapp", "mes": "Junio", "ep_sends": 0.0, "ep_deliveries": 0.0, "ep_opens": 0.0, "ep_clicks": 0.0, "ep_unsubs": " ", "ep_open_rate": " ", "ep_ctor": " ", "ep_ctr": " ", "ep_utor": " ", "fup_sends": 0.0, "fup_deliveries": 0.0, "fup_opens": 0.0, "fup_clicks": 0.0, "fup_unsubs": " ", "fup_open_rate": " ", "fup_ctor": " ", "fup_ctr": " ", "fup_utor": " ", "wa_sends": 1817.0, "wa_delivered": 1817.0, "wa_undelivered": 183.0, "wa_reads": 1124.0, "wa_clicks": " ", "wa_pct_delivery": 1, "wa_pct_read": 0.619, "wa_pct_click_vs_read": " "}, {"campaign": "Tercer Tiempo", "brand": "Masterbrand", "objective": "Purchase", "touchpoint": "WA-2", "medio": "whatsapp", "mes": "Junio", "ep_sends": 0.0, "ep_deliveries": 0.0, "ep_opens": 0.0, "ep_clicks": 0.0, "ep_unsubs": " ", "ep_open_rate": " ", "ep_ctor": " ", "ep_ctr": " ", "ep_utor": " ", "fup_sends": 0.0, "fup_deliveries": 0.0, "fup_opens": 0.0, "fup_clicks": 0.0, "fup_unsubs": " ", "fup_open_rate": " ", "fup_ctor": " ", "fup_ctr": " ", "fup_utor": " ", "wa_sends": 3996.0, "wa_delivered": 3949.0, "wa_undelivered": 1059.0, "wa_reads": 2405.0, "wa_clicks": " ", "wa_pct_delivery": 0.988, "wa_pct_read": 0.609, "wa_pct_click_vs_read": " "}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Awareness", "touchpoint": "E-Hack1", "medio": "email", "mes": "Julio", "ep_sends": 47271.0, "ep_deliveries": 47144.0, "ep_opens": 19603.0, "ep_clicks": 315.0, "ep_unsubs": 291, "ep_open_rate": 0.416, "ep_ctor": 0.016, "ep_ctr": 0.007, "ep_utor": 0.015, "fup_sends": 30047.0, "fup_deliveries": 29923.0, "fup_opens": 4266.0, "fup_clicks": 114.0, "fup_unsubs": 176, "fup_open_rate": 0.143, "fup_ctor": 0.027, "fup_ctr": 0.004, "fup_utor": 0.041, "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Awareness", "touchpoint": "E-Hack2", "medio": "email", "mes": "Julio", "ep_sends": 46199.0, "ep_deliveries": 46121.0, "ep_opens": 19541.0, "ep_clicks": 213.0, "ep_unsubs": 263, "ep_open_rate": 0.424, "ep_ctor": 0.011, "ep_ctr": 0.005, "ep_utor": 0.013, "fup_sends": 28970.0, "fup_deliveries": 28871.0, "fup_opens": 4328.0, "fup_clicks": 80.0, "fup_unsubs": 172, "fup_open_rate": 0.15, "fup_ctor": 0.018, "fup_ctr": 0.003, "fup_utor": 0.04, "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Awareness", "touchpoint": "E-A1", "medio": "email", "mes": "Julio", "ep_sends": 125393.0, "ep_deliveries": 123863.0, "ep_opens": 51298.0, "ep_clicks": 426.0, "ep_unsubs": 1048, "ep_open_rate": 0.414, "ep_ctor": 0.008, "ep_ctr": 0.003, "ep_utor": 0.02, "fup_sends": 79054.0, "fup_deliveries": 77941.0, "fup_opens": 10049.0, "fup_clicks": 130.0, "fup_unsubs": 638, "fup_open_rate": 0.129, "fup_ctor": 0.013, "fup_ctr": 0.002, "fup_utor": 0.063, "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Awareness", "touchpoint": "WA-A1", "medio": "whatsapp", "mes": "Julio", "ep_sends": 0.0, "ep_deliveries": 0.0, "ep_opens": 0.0, "ep_clicks": 0.0, "ep_unsubs": " ", "ep_open_rate": " ", "ep_ctor": " ", "ep_ctr": " ", "ep_utor": " ", "fup_sends": 0.0, "fup_deliveries": 0.0, "fup_opens": 0.0, "fup_clicks": 0.0, "fup_unsubs": " ", "fup_open_rate": " ", "fup_ctor": " ", "fup_ctr": " ", "fup_utor": " ", "wa_sends": 2000.0, "wa_delivered": 1599.0, "wa_undelivered": 401.0, "wa_reads": 893.0, "wa_clicks": 171, "wa_pct_delivery": 0.8, "wa_pct_read": 0.558, "wa_pct_click_vs_read": 0.191}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Purchase", "touchpoint": "E-Rit1", "medio": "email", "mes": "Agosto", "ep_sends": 44582.0, "ep_deliveries": 44423.0, "ep_opens": 19133.0, "ep_clicks": 193.0, "ep_unsubs": 209, "ep_open_rate": 0.431, "ep_ctor": 0.01, "ep_ctr": 0.004, "ep_utor": 0.011, "fup_sends": 26603.0, "fup_deliveries": 26486.0, "fup_opens": 3483.0, "fup_clicks": 83.0, "fup_unsubs": 123, "fup_open_rate": 0.132, "fup_ctor": 0.024, "fup_ctr": 0.003, "fup_utor": 0.035, "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Purchase", "touchpoint": "E-Rit2", "medio": "email", "mes": "Agosto", "ep_sends": 41998.0, "ep_deliveries": 41946.0, "ep_opens": 18761.0, "ep_clicks": 156.0, "ep_unsubs": 150, "ep_open_rate": 0.447, "ep_ctor": 0.008, "ep_ctr": 0.004, "ep_utor": 0.008, "fup_sends": 0.0, "fup_deliveries": 0.0, "fup_opens": 0.0, "fup_clicks": 0.0, "fup_unsubs": " ", "fup_open_rate": " ", "fup_ctor": " ", "fup_ctr": " ", "fup_utor": " ", "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Awareness", "touchpoint": "E-ENRICH1", "medio": "email", "mes": "Agosto", "ep_sends": 114358.0, "ep_deliveries": 113557.0, "ep_opens": 48941.0, "ep_clicks": 172.0, "ep_unsubs": 690, "ep_open_rate": 0.431, "ep_ctor": 0.004, "ep_ctr": 0.002, "ep_utor": 0.014, "fup_sends": 72464.0, "fup_deliveries": 71927.0, "fup_opens": 11775.0, "fup_clicks": 96.0, "fup_unsubs": 421, "fup_open_rate": 0.164, "fup_ctor": 0.008, "fup_ctr": 0.001, "fup_utor": 0.036, "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Purchase", "touchpoint": "E-P1", "medio": "email", "mes": "Agosto", "ep_sends": 104701.0, "ep_deliveries": 104452.0, "ep_opens": 48746.0, "ep_clicks": 381.0, "ep_unsubs": 502, "ep_open_rate": 0.467, "ep_ctor": 0.008, "ep_ctr": 0.004, "ep_utor": 0.01, "fup_sends": 0.0, "fup_deliveries": 0.0, "fup_opens": 0.0, "fup_clicks": 0.0, "fup_unsubs": " ", "fup_open_rate": " ", "fup_ctor": " ", "fup_ctr": " ", "fup_utor": " ", "wa_sends": 0.0, "wa_delivered": 0.0, "wa_undelivered": 0.0, "wa_reads": 0.0, "wa_clicks": 0, "wa_pct_delivery": " ", "wa_pct_read": " ", "wa_pct_click_vs_read": " "}], "paid": [{"campaign": "Ponle Corazon", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Tiktok", "mes": "Marzo", "audience_raw": "", "audience_type": "Semilla", "results": 44970.0, "spend": 38031.12, "impressions": 2229078.0, "reach": 731349.0, "frequency": 3.05, "clicks": 47143.0, "cpa": 0.8456997998665777, "cvr": 0.020174260389273054, "cpm": 17.06136797366445, "ctr": 0.02114910290263508, "cpc": 0.8067182826718707, "bau_ctr": 0.1552628959292701, "bau_cpc": 0.1055713600463528, "bau_cpm": 16.39131508798838, "bau_cpa": 0.10561750773280372, "bau_results": 210467.0, "bau_spend": 22229.0, "bau_impressions": 1356145.0, "bau_reach": null, "bau_clicks": 210559.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Ponle Corazon", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Marzo", "audience_raw": "", "audience_type": "Semilla", "results": 310.0, "spend": 204.06, "impressions": 9262.0, "reach": 5539.0, "frequency": 1.672143, "clicks": 357.0, "cpa": 0.658258064516129, "cvr": 0.033470092852515655, "cpm": 22.031958540272083, "ctr": 0.038544590801122866, "cpc": 0.5715966386554622, "bau_ctr": 0.03272040452036581, "bau_cpc": 0.5263784970847961, "bau_cpm": 17.223317355436723, "bau_cpa": 0.6222332723948812, "bau_results": 109400.0, "bau_spend": 68072.32, "bau_impressions": 3952335.0, "bau_reach": 2668366.0, "bau_clicks": 129322.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Ponle Corazon", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Marzo", "audience_raw": "", "audience_type": "Semilla", "results": 1426.0, "spend": 854.08, "impressions": 46017.0, "reach": 34028.0, "frequency": 1.352328, "clicks": 1678.0, "cpa": 0.5989340813464236, "cvr": 0.03098854771062868, "cpm": 18.560097355325208, "ctr": 0.036464784753460676, "cpc": 0.5089868891537545, "bau_ctr": 0.03272040452036581, "bau_cpc": 0.5263784970847961, "bau_cpm": 17.223317355436723, "bau_cpa": 0.6222332723948812, "bau_results": 109400.0, "bau_spend": 68072.32, "bau_impressions": 3952335.0, "bau_reach": 2668366.0, "bau_clicks": 129322.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Ponle Corazon", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Tiktok", "mes": "Marzo", "audience_raw": "", "audience_type": "Semilla", "results": 988.0, "spend": 1100.82, "impressions": 60045.0, "reach": 22271.0, "frequency": 2.7, "clicks": 1035.0, "cpa": 1.1141902834008097, "cvr": 0.016454325922224997, "cpm": 18.33325006245316, "ctr": 0.01723707219585311, "cpc": 1.0635942028985506, "bau_ctr": 0.1552628959292701, "bau_cpc": 0.1055713600463528, "bau_cpm": 16.39131508798838, "bau_cpa": 0.10561750773280372, "bau_results": 210467.0, "bau_spend": 22229.0, "bau_impressions": 1356145.0, "bau_reach": null, "bau_clicks": 210559.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Ponle Corazon", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Tiktok", "mes": "Marzo", "audience_raw": "", "audience_type": "Semilla", "results": 38578.0, "spend": 27635.99, "impressions": 1456483.0, "reach": 571673.0, "frequency": 2.55, "clicks": 39821.0, "cpa": 0.7163665819897351, "cvr": 0.026487092537297037, "cpm": 18.9744679477893, "ctr": 0.02734051822094731, "cpc": 0.6940054242736245, "bau_ctr": 0.1552628959292701, "bau_cpc": 0.1055713600463528, "bau_cpm": 16.39131508798838, "bau_cpa": 0.10561750773280372, "bau_results": 210467.0, "bau_spend": 22229.0, "bau_impressions": 1356145.0, "bau_reach": null, "bau_clicks": 210559.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Detrás de un gran café", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta ", "mes": "Marzo", "audience_raw": "", "audience_type": "Semilla", "results": 205653.0, "spend": 148844.13, "impressions": 7590886.0, "reach": 2202126.0, "frequency": 3.447072, "clicks": 268389.0, "cpa": 0.7237634753687037, "cvr": 0.02709209438792784, "cpm": 19.608268389223603, "ctr": 0.03535674228278491, "cpc": 0.5545835708616971, "bau_ctr": 0.0281395773149893, "bau_cpc": 0.5825744645909238, "bau_cpm": 16.393399188094797, "bau_cpa": 0.7031171405289933, "bau_results": 136221.0, "bau_spend": 95779.32, "bau_impressions": 5842554.0, "bau_reach": 1358127.0, "bau_clicks": 164407.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Detrás de un gran café", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta ", "mes": "Marzo", "audience_raw": "", "audience_type": "Semilla", "results": 339489.0, "spend": 238343.03, "impressions": 11281910.0, "reach": 2160760.0, "frequency": 5.221269, "clicks": 423063.0, "cpa": 0.7020640727681898, "cvr": 0.030091447281533002, "cpm": 21.126124033962338, "ctr": 0.03749923550179003, "cpc": 0.5633747928795475, "bau_ctr": 0.0281395773149893, "bau_cpc": 0.5825744645909238, "bau_cpm": 16.393399188094797, "bau_cpa": 0.7031171405289933, "bau_results": 136221.0, "bau_spend": 95779.32, "bau_impressions": 5842554.0, "bau_reach": 1358127.0, "bau_clicks": 164407.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Detrás de un gran café", "brand": "Nescafe", "objective": "Clics", "platform": "Tiktok", "mes": "Marzo", "audience_raw": "", "audience_type": "Semilla", "results": 69678.0, "spend": 93195.77, "impressions": 3510511.0, "reach": 995213.0, "frequency": 3.53, "clicks": 102885.0, "cpa": 1.3375207382531071, "cvr": 0.019848392442012003, "cpm": 26.547636512177288, "ctr": 0.029307699078567194, "cpc": 0.9058246585994072, "bau_ctr": 0.017865727346624827, "bau_cpc": 0.8332637475538159, "bau_cpm": 14.886862921623297, "bau_cpa": 1.26806669446223, "bau_results": 134314.0, "bau_spend": 170319.11, "bau_impressions": 11440900.0, "bau_reach": 2377523.0, "bau_clicks": 204400.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta ", "mes": "Abril", "audience_raw": "", "audience_type": "Semilla", "results": 134276.0, "spend": 110450.41, "impressions": 4853231.0, "reach": 1912938.0, "frequency": 2.537056, "clicks": 161693.0, "cpa": 0.8225625577169412, "cvr": 0.027667341612216685, "cpm": 22.758119281773318, "ctr": 0.033316567869940666, "cpc": 0.6830871466297243, "bau_ctr": 0.024864745233168072, "bau_cpc": 0.8064852485430459, "bau_cpm": 20.053050239331068, "bau_cpa": 0.9240671619569425, "bau_results": 134332.0, "bau_spend": 124131.79, "bau_impressions": 6190170.0, "bau_reach": 3352489.0, "bau_clicks": 153917.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta ", "mes": "Abril", "audience_raw": "", "audience_type": "Semilla", "results": 30639.0, "spend": 25354.0, "impressions": 1197758.0, "reach": 268348.0, "frequency": 4.46345, "clicks": 36701.0, "cpa": 0.8275074251770619, "cvr": 0.02558029251317879, "cpm": 21.167881992856653, "ctr": 0.03064141504377345, "cpc": 0.6908258630555025, "bau_ctr": 0.024864745233168072, "bau_cpc": 0.8064852485430459, "bau_cpm": 20.053050239331068, "bau_cpa": 0.9240671619569425, "bau_results": 134332.0, "bau_spend": 124131.79, "bau_impressions": 6190170.0, "bau_reach": 3352489.0, "bau_clicks": 153917.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta ", "mes": "Mayo", "audience_raw": "", "audience_type": "Semilla", "results": 191051.0, "spend": 151107.16, "impressions": 6571593.0, "reach": 1578922.0, "frequency": 4.162076, "clicks": 228026.0, "cpa": 0.7909257737462771, "cvr": 0.029072250822593546, "cpm": 22.993992476405644, "ctr": 0.03469874047281991, "cpc": 0.6626751335374036, "bau_ctr": 0.024864745233168072, "bau_cpc": 0.8064852485430459, "bau_cpm": 20.053050239331068, "bau_cpa": 0.9240671619569425, "bau_results": 134332.0, "bau_spend": 124131.79, "bau_impressions": 6190170.0, "bau_reach": 3352489.0, "bau_clicks": 153917.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta ", "mes": "Mayo", "audience_raw": "", "audience_type": "Semilla", "results": 12068.0, "spend": 9063.22, "impressions": 482488.0, "reach": 101678.0, "frequency": 4.745255, "clicks": 14794.0, "cpa": 0.7510125952933377, "cvr": 0.02501202102435708, "cpm": 18.78434282303394, "ctr": 0.030661902472185837, "cpc": 0.6126280924699202, "bau_ctr": 0.024864745233168072, "bau_cpc": 0.8064852485430459, "bau_cpm": 20.053050239331068, "bau_cpa": 0.9240671619569425, "bau_results": 134332.0, "bau_spend": 124131.79, "bau_impressions": 6190170.0, "bau_reach": 3352489.0, "bau_clicks": 153917.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Brand Consideration ", "platform": "Tiktok", "mes": "Mayo", "audience_raw": "", "audience_type": "Semilla", "results": 208031.0, "spend": 347569.31, "impressions": 16445080.0, "reach": 3111035.0, "frequency": 5.29, "clicks": 120684.0, "cpa": 1.6707572909806712, "cvr": 0.012650044876643956, "cpm": 21.135154708885576, "ctr": 0.007338608264599504, "cpc": 2.879994945477445, "bau_ctr": 0.016995237733944776, "bau_cpc": 0.6404415239431779, "bau_cpm": 10.884455954104194, "bau_cpa": 1.4626634725055496, "bau_results": 244613.0, "bau_spend": 357786.5, "bau_impressions": 32871326.0, "bau_reach": 4450775.0, "bau_clicks": 558656.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Brand Consideration ", "platform": "Tiktok", "mes": "Mayo", "audience_raw": "", "audience_type": "Semilla", "results": 34856.0, "spend": 71482.55, "impressions": 2612643.0, "reach": 212227.0, "frequency": 12.31, "clicks": 12168.0, "cpa": 2.0507961326600874, "cvr": 0.013341279309878924, "cpm": 27.360244013437736, "ctr": 0.004657352726721561, "cpc": 5.874634286653517, "bau_ctr": 0.016995237733944776, "bau_cpc": 0.6404415239431779, "bau_cpm": 10.884455954104194, "bau_cpa": 1.4626634725055496, "bau_results": 244613.0, "bau_spend": 357786.5, "bau_impressions": 32871326.0, "bau_reach": 4450775.0, "bau_clicks": 558656.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 199072.0, "spend": 153553.44, "impressions": 7685235.0, "reach": 1426418.0, "frequency": 5.387786, "clicks": 229579.0, "cpa": 0.7713462465841505, "cvr": 0.02590317667579456, "cpm": 19.980318103480247, "ctr": 0.02987273648756349, "cpc": 0.66884793469786, "bau_ctr": 0.024864745233168072, "bau_cpc": 0.8064852485430459, "bau_cpm": 20.053050239331068, "bau_cpa": 0.9240671619569425, "bau_results": 134332.0, "bau_spend": 124131.79, "bau_impressions": 6190170.0, "bau_reach": 3352489.0, "bau_clicks": 153917.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 8117.0, "spend": 6646.07, "impressions": 379226.0, "reach": 90507.0, "frequency": 4.190018, "clicks": 9978.0, "cpa": 0.8187840335099175, "cvr": 0.021404123135017113, "cpm": 17.525354274232253, "ctr": 0.026311487081581958, "cpc": 0.6660723591902185, "bau_ctr": 0.024864745233168072, "bau_cpc": 0.8064852485430459, "bau_cpm": 20.053050239331068, "bau_cpa": 0.9240671619569425, "bau_results": 134332.0, "bau_spend": 124131.79, "bau_impressions": 6190170.0, "bau_reach": 3352489.0, "bau_clicks": 153917.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Brand Consideration ", "platform": "Tiktok", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 406259.0, "spend": 402777.64, "impressions": 26640742.0, "reach": 4419444.0, "frequency": 6.03, "clicks": 110878.0, "cpa": 0.9914306883047515, "cvr": 0.015249537719332292, "cpm": 15.118859677406885, "ctr": 0.004161971164316669, "cpc": 3.6326199967531885, "bau_ctr": 0.016995237733944776, "bau_cpc": 0.6404415239431779, "bau_cpm": 10.884455954104194, "bau_cpa": 1.4626634725055496, "bau_results": 244613.0, "bau_spend": 357786.5, "bau_impressions": 32871326.0, "bau_reach": 4450775.0, "bau_clicks": 558656.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "CFM Liquido", "brand": "Nescafe", "objective": "Brand Consideration ", "platform": "Tiktok", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 13482.0, "spend": 16691.43, "impressions": 913233.0, "reach": 79878.0, "frequency": 11.43, "clicks": 3609.0, "cpa": 1.2380529595015577, "cvr": 0.014762935636360053, "cpm": 18.277296155526574, "ctr": 0.003951893985434166, "cpc": 4.624945968412303, "bau_ctr": 0.016995237733944776, "bau_cpc": 0.6404415239431779, "bau_cpm": 10.884455954104194, "bau_cpa": 1.4626634725055496, "bau_results": 244613.0, "bau_spend": 357786.5, "bau_impressions": 32871326.0, "bau_reach": 4450775.0, "bau_clicks": 558656.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Mayo", "audience_raw": "", "audience_type": "Semilla", "results": 14200.0, "spend": 11439.9, "impressions": 697207.0, "reach": 540045.0, "frequency": 1.291016, "clicks": 25013.0, "cpa": 0.8056267605633802, "cvr": 0.020366978530049182, "cpm": 16.408182935627437, "ctr": 0.03587600239240283, "cpc": 0.45735817374965015, "bau_ctr": null, "bau_cpc": null, "bau_cpm": null, "bau_cpa": null, "bau_results": null, "bau_spend": null, "bau_impressions": null, "bau_reach": null, "bau_clicks": null, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Mayo", "audience_raw": "", "audience_type": "Semilla", "results": 71952.0, "spend": 106560.34, "impressions": 3754226.0, "reach": 594745.0, "frequency": 6.312329, "clicks": 99809.0, "cpa": 1.480992050255726, "cvr": 0.019165601644653252, "cpm": 28.384103674099535, "ctr": 0.02658577293961525, "cpc": 1.0676425973609593, "bau_ctr": null, "bau_cpc": null, "bau_cpm": null, "bau_cpa": null, "bau_results": null, "bau_spend": null, "bau_impressions": null, "bau_reach": null, "bau_clicks": null, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Thruplays", "platform": "Meta", "mes": "Mayo", "audience_raw": "", "audience_type": "Semilla", "results": 109690.0, "spend": 6477.82, "impressions": 181503.0, "reach": 113311.0, "frequency": 1.601813, "clicks": 2248.0, "cpa": 0.05905570243413255, "cvr": 0.6043426279455436, "cpm": 35.68987840421371, "ctr": 0.012385470212613565, "cpc": 2.8815925266903912, "bau_ctr": null, "bau_cpc": null, "bau_cpm": null, "bau_cpa": null, "bau_results": null, "bau_spend": null, "bau_impressions": null, "bau_reach": null, "bau_clicks": null, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Reach", "platform": "Tiktok", "mes": "Mayo", "audience_raw": "", "audience_type": "Semilla", "results": 387767.0, "spend": 26123.2, "impressions": 2683090.0, "reach": 387767.0, "frequency": 6.92, "clicks": 8024.0, "cpa": 0.06736829075192062, "cvr": 0.14452254676511037, "cpm": 9.73623695068, "ctr": 0.002990581754618742, "cpc": 3.2556331006979065, "bau_ctr": null, "bau_cpc": null, "bau_cpm": null, "bau_cpa": null, "bau_results": null, "bau_spend": null, "bau_impressions": null, "bau_reach": null, "bau_clicks": null, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "views", "platform": "Tiktok", "mes": "Mayo", "audience_raw": "", "audience_type": "Semilla", "results": 54158.0, "spend": 45747.72, "impressions": 1303206.0, "reach": 253901.0, "frequency": 5.13, "clicks": 10473.0, "cpa": 0.8447084456589977, "cvr": 0.04155751278002096, "cpm": 35.10398202586544, "ctr": 0.00803633500766571, "cpc": 4.368158120882269, "bau_ctr": null, "bau_cpc": null, "bau_cpm": null, "bau_cpa": null, "bau_results": null, "bau_spend": null, "bau_impressions": null, "bau_reach": null, "bau_clicks": null, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 137405.0, "spend": 106564.36, "impressions": 3740149.0, "reach": 2559963.0, "frequency": 1.461017, "clicks": 162286.0, "cpa": 0.7755493613769514, "cvr": 0.036737841192957824, "cpm": 28.492009275566293, "ctr": 0.04339024996062991, "cpc": 0.6566454284411471, "bau_ctr": 0.012121486734769944, "bau_cpc": 1.9740500020097271, "bau_cpm": 23.928420913133486, "bau_cpa": 0.04766929736099073, "bau_results": 2060546.0, "bau_spend": 98224.78, "bau_impressions": 4104942.0, "bau_reach": null, "bau_clicks": 49758.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 14233.0, "spend": 11444.44, "impressions": 395722.0, "reach": 139900.0, "frequency": 2.828606, "clicks": 17575.0, "cpa": 0.8040778472563761, "cvr": 0.035967168871076156, "cpm": 28.92040371776146, "ctr": 0.04441249159763672, "cpc": 0.6511772403982931, "bau_ctr": 0.012121486734769944, "bau_cpc": 1.9740500020097271, "bau_cpm": 23.928420913133486, "bau_cpa": 0.04766929736099073, "bau_results": 2060546.0, "bau_spend": 98224.78, "bau_impressions": 4104942.0, "bau_reach": null, "bau_clicks": 49758.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Thruplays", "platform": "Meta", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 611795.0, "spend": 34117.8, "impressions": 1078032.0, "reach": 491416.0, "frequency": 2.193726, "clicks": 14377.0, "cpa": 0.05576671924419128, "cvr": 0.5675109829763866, "cpm": 31.64822565563917, "ctr": 0.013336338809979666, "cpc": 2.3730820059817765, "bau_ctr": 0.012121486734769944, "bau_cpc": 1.9740500020097271, "bau_cpm": 23.928420913133486, "bau_cpa": 0.04766929736099073, "bau_results": 2060546.0, "bau_spend": 98224.78, "bau_impressions": 4104942.0, "bau_reach": null, "bau_clicks": 49758.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Reach", "platform": "Tiktok", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 421647.0, "spend": 44500.0, "impressions": 4511630.0, "reach": 421647.0, "frequency": 10.7, "clicks": 13752.0, "cpa": 0.10553851918785145, "cvr": 0.0934577968494757, "cpm": 9.863397486052714, "ctr": 0.003048122297262852, "cpc": 3.235892961023851, "bau_ctr": 0.0022244350441466003, "bau_cpc": 2.212598955208592, "bau_cpm": 4.921782654608147, "bau_cpa": 0.013025209106795967, "bau_results": 11608781.0, "bau_spend": 151206.8, "bau_impressions": 30721958.0, "bau_reach": null, "bau_clicks": 68339.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "views", "platform": "Tiktok", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 64939.0, "spend": 45779.42, "impressions": 1562725.0, "reach": 192306.0, "frequency": 8.13, "clicks": 8465.0, "cpa": 0.7049603474029473, "cvr": 0.04155497608344398, "cpm": 29.29461037610584, "ctr": 0.005416819977923179, "cpc": 5.408082693443591, "bau_ctr": 0.004401741504034265, "bau_cpc": 4.444452761727623, "bau_cpm": 19.563332184016186, "bau_cpa": 0.24465455891263518, "bau_results": 1191578.0, "bau_spend": 291524.99, "bau_impressions": 14901602.0, "bau_reach": 6665441.0, "bau_clicks": 65593.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 161755.0, "spend": 111569.09, "impressions": 4110626.0, "reach": 2373507.0, "frequency": 1.731879, "clicks": 186043.0, "cpa": 0.6897412135637229, "cvr": 0.03935045416440221, "cpm": 27.141630009638433, "ctr": 0.04525904326980854, "cpc": 0.5996951779964846, "bau_ctr": 0.0022244350441466003, "bau_cpc": 2.212598955208592, "bau_cpm": 4.921782654608147, "bau_cpa": 0.013025209106795967, "bau_results": 11608781.0, "bau_spend": 151206.8, "bau_impressions": 30721958.0, "bau_reach": null, "bau_clicks": 68339.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 29571.0, "spend": 22886.94, "impressions": 862204.0, "reach": 198973.0, "frequency": 4.333271, "clicks": 35744.0, "cpa": 0.7739657096479658, "cvr": 0.03429698771984356, "cpm": 26.544692439376295, "ctr": 0.041456546246595935, "cpc": 0.6403015890778871, "bau_ctr": 0.0022244350441466003, "bau_cpc": 2.212598955208592, "bau_cpm": 4.921782654608147, "bau_cpa": 0.013025209106795967, "bau_results": 11608781.0, "bau_spend": 151206.8, "bau_impressions": 30721958.0, "bau_reach": null, "bau_clicks": 68339.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Thruplays", "platform": "Meta", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 963646.0, "spend": 45696.27, "impressions": 1685272.0, "reach": 641224.0, "frequency": 2.628211, "clicks": 21614.0, "cpa": 0.9118512623887723, "cvr": 0.02861851435480498, "cpm": 26.095828442120126, "ctr": 0.03655004358096847, "cpc": 0.713975303047468, "bau_ctr": 0.01095902542161806, "bau_cpc": 1.9189823232323233, "bau_cpm": 21.03017606393872, "bau_cpa": 0.04693163290513834, "bau_results": 1992465.0, "bau_spend": 83820.37, "bau_impressions": 4368434.0, "bau_reach": 2003769.0, "bau_clicks": 47674.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Reach", "platform": "Tiktok", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 433151.0, "spend": 44899.28, "impressions": 4792163.0, "reach": 433151.0, "frequency": 11.06, "clicks": 15585.0, "cpa": 0.10365733889567379, "cvr": 0.09038736787542494, "cpm": 9.36931402375086, "ctr": 0.003252184869337708, "cpc": 2.88092909849214, "bau_ctr": 0.001980379062907679, "bau_cpc": 2.0777796544565255, "bau_cpm": 4.1147913250212556, "bau_cpa": 0.01648420126394355, "bau_results": 3582122.0, "bau_spend": 59048.42, "bau_impressions": 14350283.0, "bau_reach": 3582122.0, "bau_clicks": 28419.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Reach", "platform": "Tiktok", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 263182.0, "spend": 38853.38, "impressions": 2682254.0, "reach": 263182.0, "frequency": 10.19, "clicks": 10913.0, "cpa": 0.14762932115418226, "cvr": 0.09811971573161975, "cpm": 14.485347025300362, "ctr": 0.004068593056436863, "cpc": 3.560284064876752, "bau_ctr": 0.0018619901549401135, "bau_cpc": 2.0921665777266942, "bau_cpm": 3.895593570221854, "bau_cpa": 0.014966233874538831, "bau_results": 3405484.0, "bau_spend": 50967.27, "bau_impressions": 13083313.0, "bau_reach": 3405484.0, "bau_clicks": 24361.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Reach", "platform": "Tiktok", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 16063807.0, "spend": 426829.64, "impressions": 74468795.0, "reach": 16063807.0, "frequency": 4.64, "clicks": 228215.0, "cpa": 0.026570889453539876, "cvr": 0.21571192336333628, "cpm": 5.7316576694976735, "ctr": 0.0030645722144423044, "cpc": 1.8702961680871109, "bau_ctr": 0.0018619901549401135, "bau_cpc": 2.0921665777266942, "bau_cpm": 3.895593570221854, "bau_cpa": 0.014966233874538831, "bau_results": 3405484.0, "bau_spend": 50967.27, "bau_impressions": 13083313.0, "bau_reach": 3405484.0, "bau_clicks": 24361.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Thruplays", "platform": "Meta", "mes": "Agosto", "audience_raw": "", "audience_type": "Semilla", "results": 48177.0, "spend": 35509.16, "impressions": 1358055.0, "reach": 598967.0, "frequency": 2.267329, "clicks": 48177.0, "cpa": 0.7370562716649024, "cvr": 0.0354749991716094, "cpm": 26.147070626741925, "ctr": 0.0354749991716094, "cpc": 0.7370562716649024, "bau_ctr": 0.020766930108964122, "bau_cpc": 1.016503465727803, "bau_cpm": 21.109656428289085, "bau_cpa": 1.016503465727803, "bau_results": 9089.0, "bau_spend": 9239.0, "bau_impressions": 437667.0, "bau_reach": null, "bau_clicks": 9089.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Agosto", "audience_raw": "", "audience_type": "Semilla", "results": 7206.0, "spend": 5129.87, "impressions": 191653.0, "reach": 69156.0, "frequency": 2.771314, "clicks": 7206.0, "cpa": 0.7118887038578962, "cvr": 0.037599202725759576, "cpm": 26.766447694531262, "ctr": 0.037599202725759576, "cpc": 0.7118887038578962, "bau_ctr": 0.020766930108964122, "bau_cpc": 1.016503465727803, "bau_cpm": 21.109656428289085, "bau_cpa": 1.016503465727803, "bau_results": 9089.0, "bau_spend": 9239.0, "bau_impressions": 437667.0, "bau_reach": null, "bau_clicks": 9089.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Clics en el enlace", "platform": "Meta", "mes": "Agosto", "audience_raw": "", "audience_type": "Semilla", "results": 487617.0, "spend": 22239.26, "impressions": 878573.0, "reach": 466434.0, "frequency": 1.883596, "clicks": 8247.0, "cpa": 0.04560804894004926, "cvr": 0.5550102268109764, "cpm": 25.31293358662285, "ctr": 0.009386812478871989, "cpc": 2.6966484782345095, "bau_ctr": 0.011569755112443602, "bau_cpc": 1.6818577374195989, "bau_cpm": 19.458682155913234, "bau_cpa": 0.04158175806791926, "bau_results": 962113.0, "bau_spend": 40006.35, "bau_impressions": 2055964.0, "bau_reach": 1207041.0, "bau_clicks": 23787.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Reach", "platform": "Tiktok", "mes": "Agosto", "audience_raw": "", "audience_type": "Semilla", "results": 416118.0, "spend": 21763.74, "impressions": 2483025.0, "reach": 416118.0, "frequency": 5.97, "clicks": 8595.0, "cpa": 0.05230184707222471, "cvr": 0.16758510284834022, "cpm": 8.76501042075694, "ctr": 0.0034615036095085633, "cpc": 2.5321396160558467, "bau_ctr": 0.0025677077654037857, "bau_cpc": 1.3671178263552555, "bau_cpm": 3.510359058954334, "bau_cpa": 0.0130072229771732, "bau_results": 5620674.0, "bau_spend": 73109.36, "bau_impressions": 20826747.0, "bau_reach": 5620674.0, "bau_clicks": 53477.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Reach", "platform": "Tiktok", "mes": "Agosto", "audience_raw": "", "audience_type": "Semilla", "results": 270472.0, "spend": 27468.61, "impressions": 1956648.0, "reach": 270472.0, "frequency": 7.23, "clicks": 8150.0, "cpa": 0.10155805406844332, "cvr": 0.13823232385181186, "cpm": 14.038605819748877, "ctr": 0.00416528675571692, "cpc": 3.3703815950920246, "bau_ctr": 0.0026612788405768915, "bau_cpc": 1.3959453196372467, "bau_cpm": 3.71499974175295, "bau_cpa": 0.012011692914978554, "bau_results": 5215637.0, "bau_spend": 62648.63, "bau_impressions": 16863697.0, "bau_reach": 5215637.0, "bau_clicks": 44879.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Hackea Tu Café", "brand": "Concentrate", "objective": "Reach", "platform": "Tiktok", "mes": "Agosto", "audience_raw": "", "audience_type": "Semilla", "results": 15917671.0, "spend": 332023.61, "impressions": 59618339.0, "reach": 15917671.0, "frequency": 3.75, "clicks": 201390.0, "cpa": 0.020858805914508474, "cvr": 0.26699286271628603, "cpm": 5.569152303958015, "ctr": 0.003377987434369817, "cpc": 1.648659863945578, "bau_ctr": 0.0026612788405768915, "bau_cpc": 1.3959453196372467, "bau_cpm": 3.71499974175295, "bau_cpa": 0.012011692914978554, "bau_results": 5215637.0, "bau_spend": 62648.63, "bau_impressions": 16863697.0, "bau_reach": 5215637.0, "bau_clicks": 44879.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "Tercer Tiempo", "brand": "Masterbrand", "objective": "Reach", "platform": "Tiktok", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 903426.0, "spend": 22721.3, "impressions": 3439866.0, "reach": 903426.0, "frequency": 3.81, "clicks": 10293.0, "cpa": 0.025150150648752638, "cvr": 0.26263406772240544, "cpm": 6.6052863687132, "ctr": 0.002992267722056615, "cpc": 2.2074516661808996, "bau_ctr": 0.005156743512177936, "bau_cpc": 6.918321003911848, "bau_cpm": 35.676006952086766, "bau_cpa": 0.06801976876402765, "bau_results": 2626062.0, "bau_spend": 178624.13, "bau_impressions": 5006842.0, "bau_reach": 2626062.0, "bau_clicks": 25819.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": -0.8148535407119926, "delta_cpa": -0.6302523353761631}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Thruplays", "platform": "Meta", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 1434071.0, "spend": 53724.34, "impressions": 2435392.0, "reach": 607010.0, "frequency": 4.01, "clicks": 39258.0, "cpa": 0.03746281739188645, "cvr": 0.5888460666701706, "cpm": 22.059832667595195, "ctr": 0.016119786876198985, "cpc": 1.3684940649039685, "bau_ctr": 0.013152859477753177, "bau_cpc": 2.919132321041215, "bau_cpm": 38.39493721562257, "bau_cpa": 0.09230225539679568, "bau_results": 918508.0, "bau_spend": 84780.36, "bau_impressions": 2208113.0, "bau_reach": 1126081.0, "bau_clicks": 29043.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": -0.4254494402814327, "delta_cpa": -0.5941289058340065}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Thruplays", "platform": "Meta", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 157391.0, "spend": 12586.45, "impressions": 778254.0, "reach": 566217.0, "frequency": 1.37448, "clicks": 8939.0, "cpa": 0.07729419234975247, "cvr": 0.21933222605071492, "cpm": 16.95310726886335, "ctr": 0.0106928425526647, "cpc": 1.5854630969609262, "bau_ctr": null, "bau_cpc": null, "bau_cpm": null, "bau_cpa": null, "bau_results": null, "bau_spend": null, "bau_impressions": null, "bau_reach": null, "bau_clicks": null, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Thruplays", "platform": "Meta", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 97434.0, "spend": 7788.32, "impressions": 225559.0, "reach": 173034.0, "frequency": 1.303553, "clicks": 2713.0, "cpa": 0.0799343145103352, "cvr": 0.4319668024774006, "cpm": 34.528970247252374, "ctr": 0.012027895140517558, "cpc": 2.8707408772576484, "bau_ctr": 0.013304349407382229, "bau_cpc": 2.92866680685522, "bau_cpm": 38.964006496204256, "bau_cpa": 0.08196540653791715, "bau_results": 339833.0, "bau_spend": 27854.55, "bau_impressions": 714879.0, "bau_reach": 520346.0, "bau_clicks": 9511.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Reach", "platform": "Tiktok", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 1062058.0, "spend": 62105.1, "impressions": 8062767.0, "reach": 1062058.0, "frequency": 7.59, "clicks": 22967.0, "cpa": 0.058476184916454656, "cvr": 0.13172376183015086, "cpm": 7.702703054670933, "ctr": 0.0028485258224626854, "cpc": 2.704101536987852, "bau_ctr": 0.521372765585492, "bau_cpc": 0.028164074575026038, "bau_cpm": 14.683981451337363, "bau_cpa": 0.028164074575026038, "bau_results": 9708183.0, "bau_spend": 273421.99, "bau_impressions": 18620426.0, "bau_reach": 9708183.0, "bau_clicks": 9708183.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": -0.4754349778908636, "delta_cpa": 1.0762686436112234}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Reach", "platform": "Tiktok", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 1114690.0, "spend": 12607.83, "impressions": 1824705.0, "reach": 1114690.0, "frequency": 2.92, "clicks": 4407.0, "cpa": 0.011310615507450501, "cvr": 0.6108877873409675, "cpm": 6.9095168808108705, "ctr": 0.002415184920302186, "cpc": 2.8608645336963923, "bau_ctr": 0.0047771934171553935, "bau_cpc": 3.0736613137539757, "bau_cpm": 14.683474594630688, "bau_cpa": 0.0203002335161095, "bau_results": 3856265.0, "bau_spend": 78283.08, "bau_impressions": 5331373.0, "bau_reach": 3856265.0, "bau_clicks": 25469.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Video Views", "platform": "Tiktok", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 85005.0, "spend": 27501.11, "impressions": 1228898.0, "reach": 816953.0, "frequency": 1.5, "clicks": 7101.0, "cpa": 0.32352343979765896, "cvr": 0.0691717294681902, "cpm": 22.378675854301985, "ctr": 0.005778347755468721, "cpc": 3.8728503027742573, "bau_ctr": 0.008108816074331456, "bau_cpc": 1.6617558194774347, "bau_cpm": 13.474872300592462, "bau_cpa": 0.07198766865054865, "bau_results": 242958.0, "bau_spend": 17489.98, "bau_impressions": 1297970.0, "bau_reach": 1024620.0, "bau_clicks": 10525.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Video Views", "platform": "Tiktok", "mes": "Junio", "audience_raw": "", "audience_type": "Semilla", "results": 45794.0, "spend": 20094.69, "impressions": 586197.0, "reach": 437188.0, "frequency": 1.34, "clicks": 3852.0, "cpa": 0.4388061754815041, "cvr": 0.07812049532836231, "cpm": 34.27975578175938, "ctr": 0.006571169760336542, "cpc": 5.216690031152647, "bau_ctr": 0.008110185847225731, "bau_cpc": 1.6280856423173804, "bau_cpm": 13.204077134393833, "bau_cpa": 0.06785901764351589, "bau_results": 180973.0, "bau_spend": 12280.65, "bau_impressions": 930065.0, "bau_reach": 759894.0, "bau_clicks": 7543.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Thruplays", "platform": "Meta", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 39721.0, "spend": 1456.61, "impressions": 66027.0, "reach": 52986.0, "frequency": 1.25, "clicks": 1025.0, "cpa": 0.03667103043730017, "cvr": 0.6015872294667333, "cpm": 22.060823602465657, "ctr": 0.01552395232253472, "cpc": 1.4210829268292682, "bau_ctr": 0.015680648694060637, "bau_cpc": 1.4004353129708915, "bau_cpm": 21.95973416145341, "bau_cpa": 0.036316068912133063, "bau_results": 1612256.0, "bau_spend": 58550.8, "bau_impressions": 2666280.0, "bau_reach": 1112547.0, "bau_clicks": 41809.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Thruplays", "platform": "Meta", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 913.0, "spend": 44.42, "impressions": 1395.0, "reach": 1331.0, "frequency": 1.048084, "clicks": 22.0, "cpa": 0.04865279299014239, "cvr": 0.6544802867383512, "cpm": 31.84229390681004, "ctr": 0.015770609318996417, "cpc": 2.019090909090909, "bau_ctr": 0.015695443687021485, "bau_cpc": 1.3991150727329, "bau_cpm": 21.959731835742204, "bau_cpa": 0.03471641845605066, "bau_results": 6510667.0, "bau_spend": 226027.04, "bau_impressions": 10292796.0, "bau_reach": 1786988.0, "bau_clicks": 161550.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Thruplays", "platform": "Meta", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 677274.0, "spend": 36970.41, "impressions": 1596522.0, "reach": 739019.0, "frequency": 2.160326, "clicks": 18681.0, "cpa": 0.05458707997058798, "cvr": 0.4242183947355564, "cpm": 23.156843438424275, "ctr": 0.01170106017956533, "cpc": 1.9790380600610247, "bau_ctr": 0.015695443687021485, "bau_cpc": 1.3991150727329, "bau_cpm": 21.959731835742204, "bau_cpa": 0.03471641845605066, "bau_results": 6510667.0, "bau_spend": 226027.04, "bau_impressions": 10292796.0, "bau_reach": 1786988.0, "bau_clicks": 161550.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Reach", "platform": "Tiktok", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 203403.0, "spend": 1189.01, "impressions": 204305.0, "reach": 203403.0, "frequency": 1.0, "clicks": 610.0, "cpa": 0.0058455873315536155, "cvr": 0.9955850321822765, "cpm": 5.819779251609114, "ctr": 0.0029857321161988206, "cpc": 1.9491967213114754, "bau_ctr": 0.006304028513650007, "bau_cpc": 5.6132851944507625, "bau_cpm": 35.386309921067024, "bau_cpa": 0.03975727580610737, "bau_results": 1241615.0, "bau_spend": 49363.23, "bau_impressions": 1394981.0, "bau_reach": 1241615.0, "bau_clicks": 8794.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Reach", "platform": "Tiktok", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 152436.0, "spend": 1145.51, "impressions": 154924.0, "reach": 152436.0, "frequency": 1.02, "clicks": 493.0, "cpa": 0.0075146946915426805, "cvr": 0.9839405127675506, "cpm": 7.394012548088095, "ctr": 0.0031822054684877746, "cpc": 2.323549695740365, "bau_ctr": 0.006304028513650007, "bau_cpc": 5.6132851944507625, "bau_cpm": 35.386309921067024, "bau_cpa": 0.03975727580610737, "bau_results": 1241615.0, "bau_spend": 49363.23, "bau_impressions": 1394981.0, "bau_reach": 1241615.0, "bau_clicks": 8794.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Video Views", "platform": "Tiktok", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 9597.0, "spend": 3347.69, "impressions": 126026.0, "reach": 30435.0, "frequency": 4.14, "clicks": 850.0, "cpa": 0.34882671668229653, "cvr": 0.07615095297795693, "cpm": 26.563486899528666, "ctr": 0.0067446399949216826, "cpc": 3.938458823529412, "bau_ctr": 0.011686709904780926, "bau_cpc": 0.8943649023186642, "bau_cpm": 10.452183162415958, "bau_cpa": 0.11475346419922701, "bau_results": 576468.0, "bau_spend": 66151.7, "bau_impressions": 6328984.0, "bau_reach": 4534882.0, "bau_clicks": 73965.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "The Freshers", "brand": "ICE", "objective": "Video Views", "platform": "Tiktok", "mes": "Julio", "audience_raw": "", "audience_type": "Semilla", "results": 241658.0, "spend": 83192.07, "impressions": 3047262.0, "reach": 1681174.0, "frequency": 1.81, "clicks": 19892.0, "cpa": 0.344255393986543, "cvr": 0.07930332212983328, "cpm": 27.300596404247486, "ctr": 0.006527827275764276, "cpc": 4.182187311482003, "bau_ctr": 0.011686709904780926, "bau_cpc": 0.8943649023186642, "bau_cpm": 10.452183162415958, "bau_cpa": 0.11475346419922701, "bau_results": 576468.0, "bau_spend": 66151.7, "bau_impressions": 6328984.0, "bau_reach": 4534882.0, "bau_clicks": 73965.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}, {"campaign": "F1", "brand": "Nescafe", "objective": "Thruplays", "platform": "Meta", "mes": "Agosto", "audience_raw": "", "audience_type": "Semilla", "results": 206949.0, "spend": 10914.59, "impressions": 360226.0, "reach": 340406.0, "frequency": 1.058225, "clicks": 1314.0, "cpa": 0.050364830492388296, "cvr": 0.601605591019653, "cpm": 30.299763614977905, "ctr": 0.0039625895008507574, "cpc": 7.646455331412104, "bau_ctr": 0.004318538957071776, "bau_cpc": 4.45516203322915, "bau_cpm": 19.239790800567185, "bau_cpa": 0.035022268028438934, "bau_results": 3093224.0, "bau_spend": 108331.72, "bau_impressions": 5630608.0, "bau_reach": 5078265.0, "bau_clicks": 24316.0, "delta_ctr": null, "delta_cpc": null, "delta_cpm": null, "delta_cpa": null}]};
-const CAMP_COLORS = {"Hackea Tu Caf\u00e9": "#e8803a", "The Freshers": "#3ab8e8", "The freshers": "#3ab8e8", "Tercer Tiempo": "#8e3ae8", "Ponle Corazon": "#e83a6a", "Ponle Coraz\u00f3n": "#e83a6a", "Detr\u00e1s de un gran caf\u00e9": "#3ae8a0", "F1": "#e8d03a", "CFM Liquido": "#3a6ae8"};
-const MONTHS_ORDER = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+/* ═══════════════ DATA ═══════════════ */
+const DATA={
+"meta":{"updated":"2026-09-14"},
+"paid":[
+{"mes":"Junio","campaign":"CFM Liquido","marca":"Coffe Mate","plataforma":"Meta","objetivo":"Clics en el enlace","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":199072,"inversion":153553.44,"impresiones":7685235,"alcance":1426418,"frecuencia":5.3878,"clics":229579,"cpa":0.7713,"cvr":0.0259,"cpm":19.9803,"ctr":0.0299,"cpc":0.6688,"bau_ctr":0.0249,"bau_cpc":0.8065,"bau_cpm":20.0531},
+{"mes":"Junio","campaign":"CFM Liquido","marca":"Coffe Mate","plataforma":"Meta","objetivo":"Clics en el enlace","tipo_audiencia":"CDP","audiencia":"CDP","resultados":8117,"inversion":6646.07,"impresiones":379226,"alcance":90507,"frecuencia":4.19,"clics":9978,"cpa":0.8188,"cvr":0.0214,"cpm":17.5254,"ctr":0.0263,"cpc":0.6661,"bau_ctr":0.0249,"bau_cpc":0.8065,"bau_cpm":20.0531},
+{"mes":"Junio","campaign":"CFM Liquido","marca":"Coffe Mate","plataforma":"Tiktok","objetivo":"Brand Consideration","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":406259,"inversion":402777.64,"impresiones":26640742,"alcance":4419444,"frecuencia":6.03,"clics":110878,"cpa":0.9914,"cvr":0.0152,"cpm":15.1189,"ctr":0.0042,"cpc":3.6326,"bau_ctr":0.017,"bau_cpc":0.6404,"bau_cpm":10.8845},
+{"mes":"Junio","campaign":"CFM Liquido","marca":"Coffe Mate","plataforma":"Tiktok","objetivo":"Brand Consideration","tipo_audiencia":"CDP","audiencia":"CDP","resultados":13482,"inversion":16691.43,"impresiones":913233,"alcance":79878,"frecuencia":11.43,"clics":3609,"cpa":1.2381,"cvr":0.0148,"cpm":18.2773,"ctr":0.004,"cpc":4.6249,"bau_ctr":0.017,"bau_cpc":0.6404,"bau_cpm":10.8845},
+{"mes":"Junio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Meta","objetivo":"Clics en el enlace","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":137405,"inversion":106564.36,"impresiones":3740149,"alcance":2559963,"frecuencia":1.461,"clics":162286,"cpa":0.7755,"cvr":0.0367,"cpm":28.492,"ctr":0.0434,"cpc":0.6566,"bau_ctr":0.0121,"bau_cpc":1.9741,"bau_cpm":23.9284},
+{"mes":"Junio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Meta","objetivo":"Clics en el enlace","tipo_audiencia":"CDP","audiencia":"CDP","resultados":14233,"inversion":11444.44,"impresiones":395722,"alcance":139900,"frecuencia":2.8286,"clics":17575,"cpa":0.8041,"cvr":0.036,"cpm":28.9204,"ctr":0.0444,"cpc":0.6512,"bau_ctr":0.0121,"bau_cpc":1.9741,"bau_cpm":23.9284},
+{"mes":"Junio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"AC","audiencia":"AC","resultados":611795,"inversion":34117.8,"impresiones":1078032,"alcance":491416,"frecuencia":2.1937,"clics":14377,"cpa":0.0558,"cvr":0.5675,"cpm":31.6482,"ctr":0.0133,"cpc":2.3731,"bau_ctr":0.0121,"bau_cpc":1.9741,"bau_cpm":23.9284},
+{"mes":"Junio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"AC","audiencia":"AC","resultados":421647,"inversion":44500,"impresiones":4511630,"alcance":421647,"frecuencia":10.7,"clics":13752,"cpa":0.1055,"cvr":0.0935,"cpm":9.8634,"ctr":0.003,"cpc":3.2359,"bau_ctr":0.0022,"bau_cpc":2.2126,"bau_cpm":4.9218},
+{"mes":"Junio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Tiktok","objetivo":"views","tipo_audiencia":"CDP","audiencia":"CDP","resultados":64939,"inversion":45779.42,"impresiones":1562725,"alcance":192306,"frecuencia":8.13,"clics":8465,"cpa":0.705,"cvr":0.0416,"cpm":29.2946,"ctr":0.0054,"cpc":5.4081,"bau_ctr":0.0044,"bau_cpc":4.4445,"bau_cpm":19.5633},
+{"mes":"Julio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Meta","objetivo":"Clics en el enlace","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":161755,"inversion":111569.09,"impresiones":4110626,"alcance":2373507,"frecuencia":1.7319,"clics":186043,"cpa":0.6897,"cvr":0.0394,"cpm":27.1416,"ctr":0.0453,"cpc":0.5997,"bau_ctr":0.0022,"bau_cpc":2.2126,"bau_cpm":4.9218},
+{"mes":"Julio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Meta","objetivo":"Clics en el enlace","tipo_audiencia":"CDP","audiencia":"CDP","resultados":29571,"inversion":22886.94,"impresiones":862204,"alcance":198973,"frecuencia":4.3333,"clics":35744,"cpa":0.774,"cvr":0.0343,"cpm":26.5447,"ctr":0.0415,"cpc":0.6403,"bau_ctr":0.0022,"bau_cpc":2.2126,"bau_cpm":4.9218},
+{"mes":"Julio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"AC","audiencia":"AC","resultados":963646,"inversion":45696.27,"impresiones":1685272,"alcance":641224,"frecuencia":2.6282,"clics":21614,"cpa":0.9119,"cvr":0.0286,"cpm":26.0958,"ctr":0.0366,"cpc":0.714,"bau_ctr":0.011,"bau_cpc":1.919,"bau_cpm":21.0302},
+{"mes":"Julio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"AC","audiencia":"AC","resultados":433151,"inversion":44899.28,"impresiones":4792163,"alcance":433151,"frecuencia":11.06,"clics":15585,"cpa":0.1037,"cvr":0.0904,"cpm":9.3693,"ctr":0.0033,"cpc":2.8809,"bau_ctr":0.002,"bau_cpc":2.0778,"bau_cpm":4.1148},
+{"mes":"Julio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"CDP","audiencia":"CDP","resultados":263182,"inversion":38853.38,"impresiones":2682254,"alcance":263182,"frecuencia":10.19,"clics":10913,"cpa":0.1476,"cvr":0.0981,"cpm":14.4853,"ctr":0.0041,"cpc":3.5603,"bau_ctr":0.0019,"bau_cpc":2.0922,"bau_cpm":3.8956},
+{"mes":"Julio","campaign":"Hackea Tu Café","marca":"Concentrate","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":16063807,"inversion":426829.64,"impresiones":74468795,"alcance":16063807,"frecuencia":4.64,"clics":228215,"cpa":0.0266,"cvr":0.2157,"cpm":5.7317,"ctr":0.0031,"cpc":1.8703,"bau_ctr":0.0019,"bau_cpc":2.0922,"bau_cpm":3.8956},
+{"mes":"Junio","campaign":"Tercer Tiempo","marca":"Masterbrand","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"AC","audiencia":"AC","resultados":903426,"inversion":22721.3,"impresiones":3439866,"alcance":903426,"frecuencia":3.81,"clics":10293,"cpa":0.0252,"cvr":0.2626,"cpm":6.6053,"ctr":0.003,"cpc":2.2075,"bau_ctr":0.0052,"bau_cpc":6.9183,"bau_cpm":35.676},
+{"mes":"Junio","campaign":"The Freshers","marca":"ICE","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"AC","audiencia":"AC","resultados":1434071,"inversion":53724.34,"impresiones":2435392,"alcance":607010,"frecuencia":4.01,"clics":39258,"cpa":0.0375,"cvr":0.5888,"cpm":22.0598,"ctr":0.0161,"cpc":1.3685,"bau_ctr":0.0132,"bau_cpc":2.9191,"bau_cpm":38.3949},
+{"mes":"Junio","campaign":"The Freshers","marca":"ICE","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"CDP","audiencia":"CDP","resultados":157391,"inversion":12586.45,"impresiones":778254,"alcance":566217,"frecuencia":1.3745,"clics":8939,"cpa":0.0773,"cvr":0.2193,"cpm":16.9531,"ctr":0.0107,"cpc":1.5855,"bau_ctr":null,"bau_cpc":null,"bau_cpm":null},
+{"mes":"Junio","campaign":"The Freshers","marca":"ICE","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":97434,"inversion":7788.32,"impresiones":225559,"alcance":173034,"frecuencia":1.3036,"clics":2713,"cpa":0.0799,"cvr":0.432,"cpm":34.529,"ctr":0.012,"cpc":2.8707,"bau_ctr":0.0133,"bau_cpc":2.9287,"bau_cpm":38.964},
+{"mes":"Junio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"AC","audiencia":"AC","resultados":1062058,"inversion":62105.1,"impresiones":8062767,"alcance":1062058,"frecuencia":7.59,"clics":22967,"cpa":0.0585,"cvr":0.1317,"cpm":7.7027,"ctr":0.0028,"cpc":2.7041,"bau_ctr":0.5214,"bau_cpc":0.0282,"bau_cpm":14.684},
+{"mes":"Junio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"AC","audiencia":"AC LAL","resultados":1114690,"inversion":12607.83,"impresiones":1824705,"alcance":1114690,"frecuencia":2.92,"clics":4407,"cpa":0.0113,"cvr":0.6109,"cpm":6.9095,"ctr":0.0024,"cpc":2.8609,"bau_ctr":0.0048,"bau_cpc":3.0737,"bau_cpm":14.6835},
+{"mes":"Junio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Video Views","tipo_audiencia":"CDP","audiencia":"CDP","resultados":85005,"inversion":27501.11,"impresiones":1228898,"alcance":816953,"frecuencia":1.5,"clics":7101,"cpa":0.3235,"cvr":0.0692,"cpm":22.3787,"ctr":0.0058,"cpc":3.8729,"bau_ctr":0.0081,"bau_cpc":1.6618,"bau_cpm":13.4749},
+{"mes":"Junio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Video Views","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":45794,"inversion":20094.69,"impresiones":586197,"alcance":437188,"frecuencia":1.34,"clics":3852,"cpa":0.4388,"cvr":0.0781,"cpm":34.2798,"ctr":0.0066,"cpc":5.2167,"bau_ctr":0.0081,"bau_cpc":1.6281,"bau_cpm":13.2041},
+{"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"AC","audiencia":"AC","resultados":39721,"inversion":1456.61,"impresiones":66027,"alcance":52986,"frecuencia":1.25,"clics":1025,"cpa":0.0367,"cvr":0.6016,"cpm":22.0608,"ctr":0.0155,"cpc":1.4211,"bau_ctr":0.0157,"bau_cpc":1.4004,"bau_cpm":21.9597},
+{"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"CDP","audiencia":"CDP","resultados":913,"inversion":44.42,"impresiones":1395,"alcance":1331,"frecuencia":1.0481,"clics":22,"cpa":0.0487,"cvr":0.6545,"cpm":31.8423,"ctr":0.0158,"cpc":2.0191,"bau_ctr":0.0157,"bau_cpc":1.3991,"bau_cpm":21.9597},
+{"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Meta","objetivo":"Thruplays","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":677274,"inversion":36970.41,"impresiones":1596522,"alcance":739019,"frecuencia":2.1603,"clics":18681,"cpa":0.0546,"cvr":0.4242,"cpm":23.1568,"ctr":0.0117,"cpc":1.979,"bau_ctr":0.0157,"bau_cpc":1.3991,"bau_cpm":21.9597},
+{"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"AC","audiencia":"AC","resultados":203403,"inversion":1189.01,"impresiones":204305,"alcance":203403,"frecuencia":1.0,"clics":610,"cpa":0.0058,"cvr":0.9956,"cpm":5.8198,"ctr":0.003,"cpc":1.9492,"bau_ctr":0.0063,"bau_cpc":5.6133,"bau_cpm":35.3863},
+{"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Reach","tipo_audiencia":"AC","audiencia":"AC LAL","resultados":152436,"inversion":1145.51,"impresiones":154924,"alcance":152436,"frecuencia":1.02,"clics":493,"cpa":0.0075,"cvr":0.9839,"cpm":7.394,"ctr":0.0032,"cpc":2.3235,"bau_ctr":0.0063,"bau_cpc":5.6133,"bau_cpm":35.3863},
+{"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Video Views","tipo_audiencia":"CDP","audiencia":"CDP","resultados":9597,"inversion":3347.69,"impresiones":126026,"alcance":30435,"frecuencia":4.14,"clics":850,"cpa":0.3488,"cvr":0.0762,"cpm":26.5635,"ctr":0.0067,"cpc":3.9385,"bau_ctr":0.0117,"bau_cpc":0.8944,"bau_cpm":10.4522},
+{"mes":"Julio","campaign":"The Freshers","marca":"ICE","plataforma":"Tiktok","objetivo":"Video Views","tipo_audiencia":"CDP","audiencia":"CDP LAL","resultados":241658,"inversion":83192.07,"impresiones":3047262,"alcance":1681174,"frecuencia":1.81,"clics":19892,"cpa":0.3443,"cvr":0.0793,"cpm":27.3006,"ctr":0.0065,"cpc":4.1822,"bau_ctr":0.0117,"bau_cpc":0.8944,"bau_cpm":10.4522}
+],
+"crm":[
+{"mes":"Junio","campaign":"Tercer Tiempo","marca":"Masterbrand","medio":"email","objetivo":"Purchase","touchpoint":"E-P1","segmento":"Amazon","p_sends":467714,"p_del":463241,"p_opens":179960,"p_clicks":549,"p_unsubs":3306,"p_or":0.388,"p_ctor":0.003,"p_cr":0.001,"p_utor":0.018,"f_sends":314029,"f_del":310795,"f_opens":64233,"f_clicks":607,"f_unsubs":2341,"f_or":0.207,"f_ctor":0.009,"f_cr":0.002,"f_utor":0.036,"t_sends":781743,"t_del":774036,"t_opens":244193,"t_clicks":1156,"t_unsubs":5647,"t_or":0.315,"t_ctor":0.005,"t_cr":0.001,"t_utor":0.023,"wa_env":0,"wa_ent":0,"wa_nent":0,"wa_lei":0,"wa_cli":0,"wa_pent":null,"wa_pnent":null,"wa_pread":null,"wa_pclr":null},
+{"mes":"Junio","campaign":"Tercer Tiempo","marca":"Masterbrand","medio":"email","objetivo":"Purchase","touchpoint":"E-P1","segmento":"Futboleros","p_sends":316037,"p_del":309184,"p_opens":121594,"p_clicks":11462,"p_unsubs":4535,"p_or":0.393,"p_ctor":0.094,"p_cr":0.037,"p_utor":0.037,"f_sends":203839,"f_del":198552,"f_opens":20390,"f_clicks":1723,"f_unsubs":2304,"f_or":0.103,"f_ctor":0.085,"f_cr":0.009,"f_utor":0.113,"t_sends":519876,"t_del":507736,"t_opens":141984,"t_clicks":13185,"t_unsubs":6839,"t_or":0.28,"t_ctor":0.093,"t_cr":0.026,"t_utor":0.048,"wa_env":0,"wa_ent":0,"wa_nent":0,"wa_lei":0,"wa_cli":0,"wa_pent":null,"wa_pnent":null,"wa_pread":null,"wa_pclr":null},
+{"mes":"Junio","campaign":"Tercer Tiempo","marca":"Masterbrand","medio":"email","objetivo":"Purchase","touchpoint":"E-P1","segmento":"Walmart","p_sends":467660,"p_del":463233,"p_opens":179262,"p_clicks":539,"p_unsubs":3316,"p_or":0.387,"p_ctor":0.003,"p_cr":0.001,"p_utor":0.018,"f_sends":314661,"f_del":311455,"f_opens":43360,"f_clicks":399,"f_unsubs":2274,"f_or":0.139,"f_ctor":0.009,"f_cr":0.001,"f_utor":0.052,"t_sends":782321,"t_del":774688,"t_opens":222622,"t_clicks":938,"t_unsubs":5590,"t_or":0.287,"t_ctor":0.004,"t_cr":0.001,"t_utor":0.025,"wa_env":0,"wa_ent":0,"wa_nent":0,"wa_lei":0,"wa_cli":0,"wa_pent":null,"wa_pnent":null,"wa_pread":null,"wa_pclr":null},
+{"mes":"Junio","campaign":"Tercer Tiempo","marca":"Masterbrand","medio":"whatsapp","objetivo":"Purchase","touchpoint":"WA-1","segmento":"Combinado","p_sends":0,"p_del":0,"p_opens":0,"p_clicks":0,"p_unsubs":null,"p_or":null,"p_ctor":null,"p_cr":null,"p_utor":null,"f_sends":0,"f_del":0,"f_opens":0,"f_clicks":0,"f_unsubs":null,"f_or":null,"f_ctor":null,"f_cr":null,"f_utor":null,"t_sends":0,"t_del":0,"t_opens":0,"t_clicks":0,"t_unsubs":null,"t_or":null,"t_ctor":null,"t_cr":null,"t_utor":null,"wa_env":1817,"wa_ent":1817,"wa_nent":183,"wa_lei":1124,"wa_cli":null,"wa_pent":1.0,"wa_pnent":0.101,"wa_pread":0.619,"wa_pclr":null},
+{"mes":"Junio","campaign":"Tercer Tiempo","marca":"Masterbrand","medio":"whatsapp","objetivo":"Purchase","touchpoint":"WA-2","segmento":"Combinado","p_sends":0,"p_del":0,"p_opens":0,"p_clicks":0,"p_unsubs":null,"p_or":null,"p_ctor":null,"p_cr":null,"p_utor":null,"f_sends":0,"f_del":0,"f_opens":0,"f_clicks":0,"f_unsubs":null,"f_or":null,"f_ctor":null,"f_cr":null,"f_utor":null,"t_sends":0,"t_del":0,"t_opens":0,"t_clicks":0,"t_unsubs":null,"t_or":null,"t_ctor":null,"t_cr":null,"t_utor":null,"wa_env":3996,"wa_ent":3949,"wa_nent":1059,"wa_lei":2405,"wa_cli":null,"wa_pent":0.988,"wa_pnent":0.265,"wa_pread":0.609,"wa_pclr":null},
+{"mes":"Julio","campaign":"Hackea Tu Café","marca":"Concentrate","medio":"email","objetivo":"Awareness","touchpoint":"E-Hack1","segmento":"Premium Cafés","p_sends":47271,"p_del":47144,"p_opens":19603,"p_clicks":315,"p_unsubs":291,"p_or":0.416,"p_ctor":0.016,"p_cr":0.007,"p_utor":0.015,"f_sends":30047,"f_del":29923,"f_opens":4266,"f_clicks":114,"f_unsubs":176,"f_or":0.143,"f_ctor":0.027,"f_cr":0.004,"f_utor":0.041,"t_sends":77318,"t_del":77067,"t_opens":23869,"t_clicks":429,"t_unsubs":467,"t_or":0.31,"t_ctor":0.018,"t_cr":0.006,"t_utor":0.02,"wa_env":0,"wa_ent":0,"wa_nent":0,"wa_lei":0,"wa_cli":0,"wa_pent":null,"wa_pnent":null,"wa_pread":null,"wa_pclr":null},
+{"mes":"Julio","campaign":"Hackea Tu Café","marca":"Concentrate","medio":"email","objetivo":"Awareness","touchpoint":"E-Hack2","segmento":"Premium Cafés","p_sends":46199,"p_del":46121,"p_opens":19541,"p_clicks":213,"p_unsubs":263,"p_or":0.424,"p_ctor":0.011,"p_cr":0.005,"p_utor":0.013,"f_sends":28970,"f_del":28871,"f_opens":4328,"f_clicks":80,"f_unsubs":172,"f_or":0.15,"f_ctor":0.018,"f_cr":0.003,"f_utor":0.04,"t_sends":75169,"t_del":74992,"t_opens":23869,"t_clicks":293,"t_unsubs":435,"t_or":0.318,"t_ctor":0.012,"t_cr":0.004,"t_utor":0.018,"wa_env":0,"wa_ent":0,"wa_nent":0,"wa_lei":0,"wa_cli":0,"wa_pent":null,"wa_pnent":null,"wa_pread":null,"wa_pclr":null},
+{"mes":"Julio","campaign":"The Freshers","marca":"ICE","medio":"email","objetivo":"Awareness","touchpoint":"E-A1","segmento":"Gen Z Cafés","p_sends":125393,"p_del":123863,"p_opens":51298,"p_clicks":426,"p_unsubs":1048,"p_or":0.414,"p_ctor":0.008,"p_cr":0.003,"p_utor":0.02,"f_sends":79054,"f_del":77941,"f_opens":10049,"f_clicks":130,"f_unsubs":638,"f_or":0.129,"f_ctor":0.013,"f_cr":0.002,"f_utor":0.063,"t_sends":204447,"t_del":201804,"t_opens":61347,"t_clicks":556,"t_unsubs":1686,"t_or":0.304,"t_ctor":0.009,"t_cr":0.003,"t_utor":0.027,"wa_env":0,"wa_ent":0,"wa_nent":0,"wa_lei":0,"wa_cli":0,"wa_pent":null,"wa_pnent":null,"wa_pread":null,"wa_pclr":null},
+{"mes":"Julio","campaign":"The Freshers","marca":"ICE","medio":"whatsapp","objetivo":"Awareness","touchpoint":"WA-A1","segmento":"Wa-opt-in","p_sends":0,"p_del":0,"p_opens":0,"p_clicks":0,"p_unsubs":null,"p_or":null,"p_ctor":null,"p_cr":null,"p_utor":null,"f_sends":0,"f_del":0,"f_opens":0,"f_clicks":0,"f_unsubs":null,"f_or":null,"f_ctor":null,"f_cr":null,"f_utor":null,"t_sends":0,"t_del":0,"t_opens":0,"t_clicks":0,"t_unsubs":null,"t_or":null,"t_ctor":null,"t_cr":null,"t_utor":null,"wa_env":2000,"wa_ent":1599,"wa_nent":401,"wa_lei":893,"wa_cli":171,"wa_pent":0.8,"wa_pnent":0.201,"wa_pread":0.558,"wa_pclr":0.191}
+]};
 
-function campColor(c){return CAMP_COLORS[c]||'#999'}
-function monthIdx(m){return MONTHS_ORDER.indexOf(m)}
-
-// ── Format helpers ─────────────────────────────────────────────────────────
-function fNum(v,dec=0){if(v==null||isNaN(v))return'—';return(+v).toLocaleString('es-MX',{minimumFractionDigits:dec,maximumFractionDigits:dec})}
-function fPct(v,dec=2){if(v==null||isNaN(v))return'—';return((+v)*100).toFixed(dec)+'%'}
-function fMXN(v){if(v==null||isNaN(v))return'—';return'$'+fNum(v,2)}
-function fUTOR(v){if(v==null||isNaN(v))return'—';return(+v).toFixed(4)}
-
-// ── Filter state ──────────────────────────────────────────────────────────
-const S = {
-  periods: new Set(Array.from(document.querySelectorAll('.filter-month')).filter(x=>x.checked).map(x=>x.value)),
-  campaigns: new Set(),
-  brands: new Set(),
-  crm_medios: new Set(['email','whatsapp']),
-  crm_objs: new Set(),
-  paid_objs: new Set(),
-  paid_auds: new Set(['Semilla','Lookalike']),
-  paid_plats: new Set(),
+/* ═══════════════ STATE ═══════════════ */
+const ALL_CAMPS=[...new Set(DATA.paid.map(r=>r.campaign).concat(DATA.crm.map(r=>r.campaign)))].sort();
+const S={
+  camps:new Set(ALL_CAMPS),period:'ambos',
+  crm_obj:new Set(['Purchase','Awareness']),
+  p_plat:new Set(['Meta','Tiktok']),
+  p_obj:new Set([...new Set(DATA.paid.map(r=>r.objetivo))]),
+  p_tipo:new Set(['CDP','AC']),
+  p_aud:new Set([...new Set(DATA.paid.map(r=>r.audiencia))])
 };
+const SS={};const CH={};
 
-// ── Sort state ─────────────────────────────────────────────────────────────
-const SORT = {};
+/* ═══════════════ FORMATTERS ═══════════════ */
+const fN=v=>v==null?'—':v>=1e6?(v/1e6).toFixed(1)+'M':v>=1e3?(v/1e3).toFixed(1)+'K':Number.isInteger(v)?String(v):v.toFixed(0);
+const fP=v=>v==null?'—':(v*100).toFixed(1)+'%';
+const fC=v=>v==null?'—':'$'+v.toFixed(2);
+const fCi=v=>v==null?'—':'$'+Math.round(v).toLocaleString('es-MX');
+const f2=v=>v==null?'—':v.toFixed(2);
 
-// ── Chart registry ─────────────────────────────────────────────────────────
-const CHARTS = {};
+/* ═══════════════ FILTERS ═══════════════ */
+function fPaid(){return DATA.paid.filter(r=>
+  S.camps.has(r.campaign)&&
+  (S.period==='ambos'||r.mes===S.period)&&
+  S.p_plat.has(r.plataforma)&&
+  S.p_obj.has(r.objetivo)&&
+  S.p_tipo.has(r.tipo_audiencia)&&
+  S.p_aud.has(r.audiencia)
+);}
+function fCRM(){return DATA.crm.filter(r=>
+  S.camps.has(r.campaign)&&
+  (S.period==='ambos'||r.mes===S.period)&&
+  S.crm_obj.has(r.objetivo)
+);}
 
-function getChart(id, cfg){
-  if(CHARTS[id]){ CHARTS[id].destroy(); delete CHARTS[id]; }
-  const canvas = document.getElementById(id);
-  if(!canvas)return null;
-  CHARTS[id] = new Chart(canvas, cfg);
-  return CHARTS[id];
-}
-
-// ── Filtering ──────────────────────────────────────────────────────────────
-function fPaid(){
-  return DATA.paid.filter(r=>{
-    if(S.periods.size&&!S.periods.has(r.mes))return false;
-    if(S.campaigns.size&&!S.campaigns.has(r.campaign))return false;
-    if(S.brands.size&&!S.brands.has(r.brand))return false;
-    if(S.paid_objs.size&&!S.paid_objs.has(r.objective))return false;
-    if(S.paid_auds.size&&!S.paid_auds.has(r.audience_type))return false;
-    if(S.paid_plats.size&&!S.paid_plats.has(r.platform))return false;
-    return true;
-  });
-}
-
-function fCRM(medio){
-  return DATA.crm.filter(r=>{
-    if(medio&&r.medio!==medio)return false;
-    if(S.periods.size&&!S.periods.has(r.mes))return false;
-    if(S.campaigns.size&&!S.campaigns.has(r.campaign))return false;
-    if(S.brands.size&&!S.brands.has(r.brand))return false;
-    if(S.crm_medios.size&&!S.crm_medios.has(r.medio))return false;
-    if(S.crm_objs.size&&!S.crm_objs.has(r.objective))return false;
-    return true;
-  });
-}
-
-// ── Aggregation ────────────────────────────────────────────────────────────
-function sum(rows,k){return rows.reduce((a,r)=>a+(r[k]||0),0)}
-function avg(rows,k){const v=rows.filter(r=>r[k]!=null);return v.length?v.reduce((a,r)=>a+r[k],0)/v.length:null}
-
-function groupBy(rows,keys){
-  const map={};
-  rows.forEach(r=>{
-    const k=keys.map(x=>r[x]).join('||');
-    if(!map[k]){map[k]={_keys:{},_rows:[]};keys.forEach(x=>map[k]._keys[x]=r[x]);}
-    map[k]._rows.push(r);
-  });
-  return Object.values(map);
-}
-
-function aggEmailRows(rows){
-  const groups=groupBy(rows,['campaign','brand','objective','mes']);
-  return groups.map(g=>{
-    const r=g._rows;
-    const ep_s=sum(r,'ep_sends'),ep_d=sum(r,'ep_deliveries'),ep_o=sum(r,'ep_opens'),ep_c=sum(r,'ep_clicks'),ep_u=sum(r,'ep_unsubs');
-    const fu_s=sum(r,'fup_sends'),fu_d=sum(r,'fup_deliveries'),fu_o=sum(r,'fup_opens'),fu_c=sum(r,'fup_clicks'),fu_u=sum(r,'fup_unsubs');
-    return {
-      ...g._keys,
-      ep_sends:ep_s,ep_deliveries:ep_d,ep_opens:ep_o,ep_clicks:ep_c,ep_unsubs:ep_u,
-      ep_open_rate:ep_d>0?ep_o/ep_d:null,
-      ep_ctor:ep_o>0?ep_c/ep_o:null,
-      ep_ctr:ep_s>0?ep_c/ep_s:null,
-      ep_utor:ep_o>0?ep_u/ep_o:null,
-      fup_sends:fu_s,fup_deliveries:fu_d,fup_opens:fu_o,fup_clicks:fu_c,fup_unsubs:fu_u,
-      fup_open_rate:fu_d>0?fu_o/fu_d:null,
-      fup_ctor:fu_o>0?fu_c/fu_o:null,
-      fup_ctr:fu_s>0?fu_c/fu_s:null,
-      fup_utor:fu_o>0?fu_u/fu_o:null,
-    };
-  });
-}
-
-// ── Sort helper ────────────────────────────────────────────────────────────
-function sortRows(rows,tableId,defaultCol){
-  if(!SORT[tableId])SORT[tableId]={col:defaultCol,dir:'asc'};
-  const {col,dir}=SORT[tableId];
+/* ═══════════════ SORT ═══════════════ */
+function sRows(rows,tid){
+  const st=SS[tid];if(!st)return rows;
   return[...rows].sort((a,b)=>{
-    let va=a[col],vb=b[col];
-    if(va==null&&vb==null)return 0;
-    if(va==null)return 1;
-    if(vb==null)return-1;
-    if(typeof va==='string')return dir==='asc'?va.localeCompare(vb,'es'):vb.localeCompare(va,'es');
-    return dir==='asc'?va-vb:vb-va;
+    let va=a[st.c],vb=b[st.c];
+    if(va==null&&vb==null)return 0;if(va==null)return 1;if(vb==null)return-1;
+    const d=st.d==='a'?1:-1;
+    return typeof va==='number'?(va-vb)*d:String(va).localeCompare(String(vb))*d;
   });
 }
+function thC(tid,col,el){
+  const c=SS[tid]||{};
+  SS[tid]={c:col,d:c.c===col&&c.d==='a'?'d':'a'};
+  el.closest('table').querySelectorAll('th').forEach(t=>t.classList.remove('sort-asc','sort-desc'));
+  el.classList.add(SS[tid].d==='a'?'sort-asc':'sort-desc');
+  render();
+}
+function TH(lbl,col,tid,cls=''){return`<th class="${cls}" onclick="thC('${tid}','${col}',this)">${lbl}<span class="sort-ico"></span></th>`;}
 
-function sortArrow(tableId,col){
-  if(!SORT[tableId]||SORT[tableId].col!==col)return'<span style="color:#ccc;font-size:11px"> ↕</span>';
-  return SORT[tableId].dir==='asc'?'<span style="font-size:11px"> ↑</span>':'<span style="font-size:11px"> ↓</span>';
+/* ═══════════════ COND FORMAT ═══════════════ */
+const ctrCls=(v,b)=>b==null||v==null?'':(v>=b?'good':'bad');
+const cpcCls=(v,b)=>b==null||v==null?'':(v<=b?'good':'bad');
+
+/* ═══════════════ CHART ═══════════════ */
+const CC={'CFM Liquido':'#f59e0b','Hackea Tu Café':'#c4a06a','Tercer Tiempo':'#818cf8','The Freshers':'#34d399'};
+Chart.defaults.color='#666';
+Chart.defaults.borderColor='rgba(255,255,255,.05)';
+function mkC(id,type,labels,datasets,opts){
+  if(CH[id]){CH[id].destroy();delete CH[id];}
+  const ctx=document.getElementById(id);if(!ctx)return;
+  CH[id]=new Chart(ctx,{type,data:{labels,datasets},options:{
+    responsive:true,maintainAspectRatio:true,
+    plugins:{legend:{position:'bottom',labels:{color:'#888',font:{size:12},padding:10,boxWidth:12}}},
+    scales:type==='pie'||type==='doughnut'?{}:{
+      y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#666',font:{size:11}}},
+      x:{grid:{display:false},ticks:{color:'#666',font:{size:11}}}
+    },...(opts||{})
+  }});
 }
 
-function thSort(tableId,col,label){
-  return`<th class="sortable" onclick="onSort('${tableId}','${col}')">${label}${sortArrow(tableId,col)}</th>`;
-}
-
-function onSort(tableId,col){
-  if(!SORT[tableId])SORT[tableId]={col,dir:'asc'};
-  else if(SORT[tableId].col===col)SORT[tableId].dir=SORT[tableId].dir==='asc'?'desc':'asc';
-  else SORT[tableId]={col,dir:'asc'};
-  renderAll();
-}
-
-// BAU cell class
-function bauCls(val,bau,lowerBetter){
-  if(val==null||bau==null)return'';
-  return(lowerBetter?val<bau:val>bau)?'bau-pos-cell':'bau-neg-cell';
-}
-
-// ── RENDER: S1 Gantt ───────────────────────────────────────────────────────
-function renderGantt(paidRows,crmRows){
-  const months=DATA.meta.months.filter(m=>S.periods.size===0||S.periods.has(m));
-  const camps=[...new Set([...paidRows.map(r=>r.campaign),...crmRows.map(r=>r.campaign)])].filter(Boolean).sort();
-  if(!camps.length){document.getElementById('gantt-container').innerHTML='<div class="no-data">Sin datos con los filtros seleccionados</div>';return;}
-  let html='<table class="gantt"><thead><tr><th class="camp-col" style="min-width:160px">Campaña / Marca</th>';
-  months.forEach(m=>html+=`<th>${m}</th>`);
-  html+='</tr></thead><tbody>';
-  camps.forEach(c=>{
-    const brand=[...new Set([...paidRows.filter(r=>r.campaign===c).map(r=>r.brand),...crmRows.filter(r=>r.campaign===c).map(r=>r.brand)])].filter(Boolean).join(', ');
-    html+=`<tr><td><strong>${c}</strong><br><span style="font-size:12px;color:var(--text2)">${brand}</span></td>`;
-    months.forEach(m=>{
-      const hp=paidRows.some(r=>r.campaign===c&&r.mes===m);
-      const hc=crmRows.some(r=>r.campaign===c&&r.mes===m);
-      if(hp&&hc)html+=`<td><div class="gantt-cell-inner gc-both">CRM + Paid</div></td>`;
-      else if(hp)html+=`<td><div class="gantt-cell-inner gc-paid">Paid</div></td>`;
-      else if(hc)html+=`<td><div class="gantt-cell-inner gc-crm">CRM</div></td>`;
-      else html+=`<td></td>`;
+/* ═══════════════ MULTI-SELECT CLASS ═══════════════ */
+class MS{
+  constructor(el,opts,lbl,cb,stateSet){
+    this.el=el;this.opts=opts;this.lbl=lbl;this.cb=cb;this.sel=stateSet;this.open=false;
+    document.addEventListener('click',e=>{if(!this.el.contains(e.target)&&this.open){this.open=false;this.render();}});
+    this.render();
+  }
+  get count(){return this.sel.size;}
+  get total(){return this.opts.length;}
+  get summary(){
+    if(this.count===0)return'<span style="color:var(--bad)">Ninguno</span>';
+    if(this.count===this.total)return'<strong>Todos</strong>';
+    return`<strong>${this.count}</strong> sel.`;
+  }
+  render(){
+    this.el.classList.toggle('open',this.open);
+    this.el.innerHTML=`
+      <button class="ms-btn">
+        <span>${this.lbl}: ${this.summary}</span>
+        <span class="arrow">▾</span>
+      </button>
+      <div class="ms-panel">
+        <div class="ms-acts">
+          <button class="ms-ac" data-a="all">Todos</button>
+          <button class="ms-ac" data-a="none">Ninguno</button>
+        </div>
+        <div class="ms-list">
+          ${this.opts.map(o=>`
+            <label class="ms-opt">
+              <input type="checkbox" value="${o}" ${this.sel.has(o)?'checked':''}>
+              ${o}
+            </label>`).join('')}
+        </div>
+      </div>`;
+    this.el.querySelector('.ms-btn').onclick=e=>{e.stopPropagation();this.open=!this.open;this.render();};
+    this.el.querySelectorAll('.ms-ac').forEach(b=>b.onclick=e=>{
+      e.stopPropagation();
+      if(b.dataset.a==='all')this.opts.forEach(o=>this.sel.add(o));
+      else this.sel.clear();
+      this.open=true;this.render();this.cb();
     });
-    html+='</tr>';
-  });
-  html+='</tbody></table>';
-  document.getElementById('gantt-container').innerHTML=html;
-}
-
-// ── RENDER: S2 Scorecard ───────────────────────────────────────────────────
-function renderScorecard(paidRows,crmEmailRows){
-  const emailAgg=aggEmailRows(crmEmailRows);
-  const totEpSends=sum(emailAgg,'ep_sends'),totEpOpens=sum(emailAgg,'ep_opens'),totEpClicks=sum(emailAgg,'ep_clicks');
-  const avgOR=totEpSends>0?totEpOpens/totEpSends:null;
-  const avgCTOR=totEpOpens>0?totEpClicks/totEpOpens:null;
-  const totSpend=sum(paidRows,'spend'),totImpr=sum(paidRows,'impressions');
-  const avgCTR=paidRows.length?avg(paidRows,'ctr'):null;
-  const avgCPC=paidRows.length?avg(paidRows,'cpc'):null;
-  const totInv=sum(paidRows,'spend');
-
-  let html='<div class="kpi-grid">';
-  html+=`<div class="kpi-card crm-card"><div class="kpi-label">CRM · Enviados (Email)</div><div class="kpi-value">${fNum(totEpSends)}</div><div class="kpi-sub">Total envíos principales</div></div>`;
-  html+=`<div class="kpi-card crm-card"><div class="kpi-label">CRM · Open Rate promedio</div><div class="kpi-value">${fPct(avgOR,1)}</div><div class="kpi-sub">Aperturas / Entregados</div></div>`;
-  html+=`<div class="kpi-card crm-card"><div class="kpi-label">CRM · CTOR promedio</div><div class="kpi-value">${fPct(avgCTOR,2)}</div><div class="kpi-sub">Clics / Aperturas</div></div>`;
-  html+=`<div class="kpi-card paid-card"><div class="kpi-label">Paid · Inversión total</div><div class="kpi-value">${fMXN(totInv)}</div><div class="kpi-sub">MXN · Todos los meses</div></div>`;
-  html+=`<div class="kpi-card paid-card"><div class="kpi-label">Paid · Impresiones</div><div class="kpi-value">${fNum(totImpr)}</div><div class="kpi-sub">Total impresiones</div></div>`;
-  html+=`<div class="kpi-card paid-card"><div class="kpi-label">Paid · CTR promedio</div><div class="kpi-value">${fPct(avgCTR,2)}</div><div class="kpi-sub">Promedio campañas</div></div>`;
-  html+=`<div class="kpi-card paid-card"><div class="kpi-label">Paid · CPC promedio</div><div class="kpi-value">${fMXN(avgCPC)}</div><div class="kpi-sub">Costo por clic promedio</div></div>`;
-  html+='</div>';
-  document.getElementById('scorecard-container').innerHTML=html;
-}
-
-// ── RENDER: S3 CRM Comparative ─────────────────────────────────────────────
-function renderCRMComp(emailRows){
-  const agg=aggEmailRows(emailRows);
-  const sorted=sortRows(agg,'t-crm-comp','campaign');
-  const tid='t-crm-comp';
-
-  if(!agg.length){
-    document.getElementById('t-crm-comp-wrap').innerHTML='<div class="no-data">Sin datos de email con los filtros seleccionados</div>';
-    return;
+    this.el.querySelectorAll('.ms-list input').forEach(inp=>inp.onchange=()=>{
+      if(inp.checked)this.sel.add(inp.value);else this.sel.delete(inp.value);
+      this.render();this.cb();
+    });
   }
+}
 
-  let html=`<table class="dt" id="${tid}"><thead><tr>
-    ${thSort(tid,'campaign','Campaña')}
-    ${thSort(tid,'brand','Marca')}
-    ${thSort(tid,'objective','Objetivo')}
-    ${thSort(tid,'mes','Período')}
-    ${thSort(tid,'ep_sends','Enviados')}
-    ${thSort(tid,'ep_deliveries','Entregados')}
-    ${thSort(tid,'ep_opens','Aperturas')}
-    ${thSort(tid,'ep_open_rate','Open Rate')}
-    ${thSort(tid,'ep_clicks','Clics')}
-    ${thSort(tid,'ep_ctor','CTOR')}
-    ${thSort(tid,'ep_ctr','CTR')}
-    ${thSort(tid,'ep_utor','UTOR (Unsubs/Opens)')}
-  </tr></thead><tbody>`;
+/* ═══════════════ S2: TIMELINE ═══════════════ */
+function rS2(){
+  const el=document.getElementById('s2');
+  const camps=ALL_CAMPS.filter(c=>S.camps.has(c));
+  const bmap={'CFM Liquido':'Coffe Mate','Hackea Tu Café':'Concentrate','Tercer Tiempo':'Masterbrand','The Freshers':'ICE'};
+  let h=`<div class="tl-grid">
+    <div class="tl-head">Campaña / Marca</div>
+    <div class="tl-head">Junio</div>
+    <div class="tl-head">Julio</div>`;
+  camps.forEach(c=>{
+    h+=`<div class="tl-camp">${c}<small>${bmap[c]||''}</small></div>`;
+    ['Junio','Julio'].forEach(m=>{
+      const hC=DATA.crm.some(r=>r.campaign===c&&r.mes===m);
+      const hP=DATA.paid.some(r=>r.campaign===c&&r.mes===m);
+      if(hC&&hP)h+=`<div class="tl-bar tl-both">CRM + Paid</div>`;
+      else if(hC)h+=`<div class="tl-bar tl-crm">CRM</div>`;
+      else if(hP)h+=`<div class="tl-bar tl-paid">Paid Media</div>`;
+      else h+=`<div class="tl-bar tl-empty">—</div>`;
+    });
+  });
+  h+=`</div><div class="tl-legend">
+    <div class="tl-leg-item"><div class="tl-dot" style="background:rgba(52,211,153,.3);border:1px solid #34d399"></div>CRM + Paid</div>
+    <div class="tl-leg-item"><div class="tl-dot" style="background:rgba(59,130,246,.2);border:1px solid #60a5fa"></div>Solo CRM</div>
+    <div class="tl-leg-item"><div class="tl-dot" style="background:rgba(245,158,11,.15);border:1px solid #fbbf24"></div>Solo Paid</div>
+  </div>`;
+  el.innerHTML=h;
+}
 
-  sorted.forEach(r=>{
-    html+=`<tr>
-      <td><strong>${r.campaign||'—'}</strong></td>
-      <td>${r.brand||'—'}</td>
-      <td>${r.objective||'—'}</td>
-      <td>${r.mes||'—'}</td>
-      <td>${fNum(r.ep_sends)}</td>
-      <td>${fNum(r.ep_deliveries)}</td>
-      <td>${fNum(r.ep_opens)}</td>
-      <td>${fPct(r.ep_open_rate,1)}</td>
-      <td>${fNum(r.ep_clicks)}</td>
-      <td>${fPct(r.ep_ctor,2)}</td>
-      <td>${fPct(r.ep_ctr,2)}</td>
-      <td>${fUTOR(r.ep_utor)}</td>
+/* ═══════════════ S3: SCORECARD ═══════════════ */
+function rS3(){
+  const el=document.getElementById('s3');
+  const camps=ALL_CAMPS.filter(c=>S.camps.has(c));
+  const paid=fPaid(),crm=fCRM();
+  const bmap={'CFM Liquido':'Coffe Mate','Hackea Tu Café':'Concentrate','Tercer Tiempo':'Masterbrand','The Freshers':'ICE'};
+  let h='<div class="score-grid">';
+  camps.forEach(c=>{
+    const pr=paid.filter(r=>r.campaign===c);
+    const ce=crm.filter(r=>r.campaign===c&&r.medio==='email');
+    const pInv=pr.reduce((a,r)=>a+(r.inversion||0),0);
+    const pImp=pr.reduce((a,r)=>a+(r.impresiones||0),0);
+    const avgCTR=pr.length?pr.reduce((a,r)=>a+(r.ctr||0),0)/pr.length:null;
+    const avgCPC=pr.filter(r=>r.cpc!=null).reduce((a,r,i,arr)=>a+r.cpc/arr.length,0)||null;
+    const cS=ce.reduce((a,r)=>a+(r.t_sends||0),0);
+    const cO=ce.reduce((a,r)=>a+(r.t_opens||0),0);
+    const cOR=cS>0?cO/cS:null;
+    const cC=ce.reduce((a,r)=>a+(r.t_clicks||0),0);
+    const cCTOR=cO>0?cC/cO:null;
+    const col=CC[c]||'#c4a06a';
+    h+=`<div class="sc" style="border-top-color:${col}">
+      <div class="sc-name">${c}</div>
+      <div class="sc-brand">${bmap[c]||''}</div>
+      <div class="sc-kpis">`;
+    if(pr.length){
+      h+=`<div class="sc-kpi"><div class="sc-kpi-lbl">Inversión</div><div class="sc-kpi-val" style="color:${col}">${fCi(pInv)}</div><div class="sc-kpi-src">Paid</div></div>
+      <div class="sc-kpi"><div class="sc-kpi-lbl">Impresiones</div><div class="sc-kpi-val">${fN(pImp)}</div><div class="sc-kpi-src">Paid</div></div>
+      <div class="sc-kpi"><div class="sc-kpi-lbl">CTR Prom.</div><div class="sc-kpi-val">${fP(avgCTR)}</div><div class="sc-kpi-src">Paid</div></div>
+      <div class="sc-kpi"><div class="sc-kpi-lbl">CPC Prom.</div><div class="sc-kpi-val">${fC(avgCPC)}</div><div class="sc-kpi-src">Paid</div></div>`;
+    }
+    if(cS>0){
+      h+=`<div class="sc-kpi"><div class="sc-kpi-lbl">Envíos</div><div class="sc-kpi-val">${fN(cS)}</div><div class="sc-kpi-src">CRM Email</div></div>
+      <div class="sc-kpi"><div class="sc-kpi-lbl">Open Rate</div><div class="sc-kpi-val">${fP(cOR)}</div><div class="sc-kpi-src">CRM Email</div></div>
+      <div class="sc-kpi"><div class="sc-kpi-lbl">CTOR</div><div class="sc-kpi-val">${fP(cCTOR)}</div><div class="sc-kpi-src">CRM Email</div></div>`;
+    }
+    if(!pr.length&&!cS)h+=`<div style="grid-column:1/-1;text-align:center;color:var(--text3);padding:12px;font-size:13px">Sin datos</div>`;
+    h+=`</div></div>`;
+  });
+  el.innerHTML=h+'</div>';
+}
+
+/* ═══════════════ S4: CRM COMPARATIVE ═══════════════ */
+function rS4(){
+  const el=document.getElementById('s4');
+  const rows=fCRM().filter(r=>r.medio==='email');
+  if(!rows.length){el.innerHTML='<div class="empty">Sin datos con los filtros actuales</div>';return;}
+  const agg={};
+  rows.forEach(r=>{
+    const k=`${r.campaign}|${r.marca}|${r.objetivo}|${r.mes}`;
+    if(!agg[k])agg[k]={campaign:r.campaign,marca:r.marca,objetivo:r.objetivo,mes:r.mes,s:0,d:0,o:0,c:0,u:0};
+    agg[k].s+=r.t_sends||0;agg[k].d+=r.t_del||0;agg[k].o+=r.t_opens||0;
+    agg[k].c+=r.t_clicks||0;agg[k].u+=r.t_unsubs||0;
+  });
+  let ar=Object.values(agg).map(r=>({...r,
+    or:r.d>0?r.o/r.d:null,ctor:r.o>0?r.c/r.o:null,cr:r.d>0?r.c/r.d:null,utor:r.o>0?r.u/r.o:null
+  }));
+  ar=sRows(ar,'s4');
+  const tid='s4';
+  // Volumes first, then rates
+  let h=`<div class="tbl-wrap"><table>
+    <thead>
+      <tr class="tbl-section-hdr"><td colspan="4"></td><td colspan="5" style="color:var(--gold-dim)">▼ Volúmenes</td><td colspan="4" style="color:var(--gold-dim)">▼ Tasas</td></tr>
+      <tr>
+        ${TH('Campaña','campaign',tid)}${TH('Marca','marca',tid)}${TH('Objetivo','objetivo',tid)}${TH('Período','mes',tid)}
+        ${TH('Envíos','s',tid,'col-sep')}${TH('Entregas','d',tid)}${TH('Aperturas','o',tid)}${TH('Clics','c',tid)}${TH('Unsubs','u',tid)}
+        ${TH('Open Rate','or',tid,'col-sep')}${TH('CTOR','ctor',tid)}${TH('Click Rate','cr',tid)}${TH('UTOR %','utor',tid)}
+      </tr>
+    </thead><tbody>`;
+  ar.forEach(r=>{
+    h+=`<tr>
+      <td><strong>${r.campaign}</strong></td><td>${r.marca}</td><td>${r.objetivo}</td><td>${r.mes}</td>
+      <td class="num col-sep">${fN(r.s)}</td><td class="num">${fN(r.d)}</td>
+      <td class="num">${fN(r.o)}</td><td class="num">${fN(r.c)}</td><td class="num">${r.u?fN(r.u):'—'}</td>
+      <td class="num col-sep">${fP(r.or)}</td><td class="num">${fP(r.ctor)}</td>
+      <td class="num">${fP(r.cr)}</td><td class="num">${fP(r.utor)}</td>
     </tr>`;
   });
-  html+='</tbody></table>';
-  document.getElementById('t-crm-comp-wrap').innerHTML=html;
-
-  // Chart: grouped bar — Open Rate / CTOR per campaign
-  const camps=[...new Set(sorted.map(r=>r.campaign))];
-  const datasets=[
-    {label:'Open Rate',data:camps.map(c=>{const rws=sorted.filter(x=>x.campaign===c);const o=sum(rws,'ep_opens'),d=sum(rws,'ep_deliveries');return d>0?+(o/d*100).toFixed(2):null})  ,backgroundColor:'#3a7ae880',borderColor:'#3a7ae8',borderWidth:1.5},
-    {label:'CTOR',data:camps.map(c=>{const rws=sorted.filter(x=>x.campaign===c);const c2=sum(rws,'ep_clicks'),o=sum(rws,'ep_opens');return o>0?+(c2/o*100).toFixed(2):null}),backgroundColor:'#e8803a80',borderColor:'#e8803a',borderWidth:1.5},
-  ];
-  getChart('chart-crm-comp',{type:'bar',data:{labels:camps,datasets},options:{responsive:true,plugins:{legend:{position:'top'},title:{display:true,text:'CRM Email — Open Rate vs CTOR por campaña (%)'}},scales:{y:{ticks:{callback:v=>v+'%'}}}}});
+  h+=`</tbody></table></div>
+  <div class="chart-box"><div class="chart-box-hdr">Open Rate por Campaña</div><canvas id="ch-s4" height="160"></canvas></div>`;
+  el.innerHTML=h;
+  const cs=[...new Set(ar.map(r=>r.campaign))];
+  mkC('ch-s4','bar',cs,[{label:'Open Rate %',data:cs.map(c=>{const rr=ar.filter(x=>x.campaign===c);const tot={o:0,d:0};rr.forEach(x=>{tot.o+=x.o;tot.d+=x.d;});return tot.d>0?parseFloat((tot.o/tot.d*100).toFixed(1)):0;}),backgroundColor:cs.map(c=>CC[c]||'#c4a06a'),borderRadius:4}],{scales:{y:{ticks:{callback:v=>v+'%'}}}});
 }
 
-// ── RENDER: S4 Principal vs FUP ────────────────────────────────────────────
-function renderCRMPvF(emailRows){
-  const agg=aggEmailRows(emailRows);
-  if(!agg.length){
-    ['t-crm-ep-wrap','t-crm-fup-wrap'].forEach(id=>document.getElementById(id).innerHTML='<div class="no-data">Sin datos</div>');
-    return;
+/* ═══════════════ S5: PRINCIPAL vs FUP ═══════════════ */
+function rS5(){
+  const el=document.getElementById('s5');
+  const rows=fCRM().filter(r=>r.medio==='email');
+  if(!rows.length){el.innerHTML='<div class="empty">Sin datos con los filtros actuales</div>';return;}
+
+  function mkT(title,badge,tid,ks){
+    const sorted=sRows(rows,tid);
+    return`<div class="tbl-title">${title}<span class="tbl-badge">${badge}</span></div>
+    <div class="tbl-wrap"><table>
+      <thead>
+        <tr class="tbl-section-hdr"><td colspan="5"></td><td colspan="5" style="color:var(--gold-dim)">▼ Volúmenes</td><td colspan="4" style="color:var(--gold-dim)">▼ Tasas</td></tr>
+        <tr>
+          ${TH('Campaña','campaign',tid)}${TH('Marca','marca',tid)}${TH('Objetivo','objetivo',tid)}${TH('Período','mes',tid)}${TH('Touchpoint','touchpoint',tid)}
+          ${TH('Envíos',ks.s,tid,'col-sep')}${TH('Entregas',ks.d,tid)}${TH('Aperturas',ks.o,tid)}${TH('Clics',ks.c,tid)}${TH('Unsubs',ks.u,tid)}
+          ${TH('Open Rate',ks.or,tid,'col-sep')}${TH('CTOR',ks.ctor,tid)}${TH('Click Rate',ks.cr,tid)}${TH('UTOR %',ks.utor,tid)}
+        </tr>
+      </thead><tbody>
+      ${sorted.map(r=>`<tr>
+        <td><strong>${r.campaign}</strong></td><td>${r.marca}</td><td>${r.objetivo}</td><td>${r.mes}</td>
+        <td style="color:var(--text3);font-size:13px">${r.touchpoint}</td>
+        <td class="num col-sep">${fN(r[ks.s])}</td><td class="num">${fN(r[ks.d])}</td>
+        <td class="num">${fN(r[ks.o])}</td><td class="num">${fN(r[ks.c])}</td>
+        <td class="num">${r[ks.u]!=null?fN(r[ks.u]):'—'}</td>
+        <td class="num col-sep">${fP(r[ks.or])}</td><td class="num">${fP(r[ks.ctor])}</td>
+        <td class="num">${fP(r[ks.cr])}</td><td class="num">${fP(r[ks.utor])}</td>
+      </tr>`).join('')}
+      </tbody></table></div>`;
   }
 
-  // Principal table
-  const tepid='t-crm-ep';
-  const sorted_ep=sortRows(agg,tepid,'campaign');
-  let html_ep=`<table class="dt" id="${tepid}"><thead><tr>
-    ${thSort(tepid,'campaign','Campaña')}${thSort(tepid,'brand','Marca')}${thSort(tepid,'objective','Objetivo')}${thSort(tepid,'mes','Período')}
-    ${thSort(tepid,'ep_sends','Enviados')}${thSort(tepid,'ep_deliveries','Entregados')}${thSort(tepid,'ep_opens','Aperturas')}
-    ${thSort(tepid,'ep_open_rate','Open Rate')}${thSort(tepid,'ep_clicks','Clics')}${thSort(tepid,'ep_ctor','CTOR')}${thSort(tepid,'ep_ctr','CTR')}
-    ${thSort(tepid,'ep_unsubs','Unsubs')}${thSort(tepid,'ep_utor','UTOR (Unsubs/Opens)')}
-  </tr></thead><tbody>`;
-  sorted_ep.forEach(r=>{
-    html_ep+=`<tr><td><strong>${r.campaign||'—'}</strong></td><td>${r.brand||'—'}</td><td>${r.objective||'—'}</td><td>${r.mes||'—'}</td>
-    <td>${fNum(r.ep_sends)}</td><td>${fNum(r.ep_deliveries)}</td><td>${fNum(r.ep_opens)}</td>
-    <td>${fPct(r.ep_open_rate,1)}</td><td>${fNum(r.ep_clicks)}</td><td>${fPct(r.ep_ctor,2)}</td><td>${fPct(r.ep_ctr,2)}</td>
-    <td>${fNum(r.ep_unsubs)}</td><td>${fUTOR(r.ep_utor)}</td></tr>`;
-  });
-  html_ep+='</tbody></table>';
-  document.getElementById('t-crm-ep-wrap').innerHTML=html_ep;
-
-  // FUP table
-  const tfid='t-crm-fup';
-  const sorted_fup=sortRows(agg,tfid,'campaign');
-  let html_fup=`<table class="dt" id="${tfid}"><thead><tr>
-    ${thSort(tfid,'campaign','Campaña')}${thSort(tfid,'brand','Marca')}${thSort(tfid,'objective','Objetivo')}${thSort(tfid,'mes','Período')}
-    ${thSort(tfid,'fup_sends','Enviados FUP')}${thSort(tfid,'fup_deliveries','Entregados')}${thSort(tfid,'fup_opens','Aperturas')}
-    ${thSort(tfid,'fup_open_rate','Open Rate')}${thSort(tfid,'fup_clicks','Clics')}${thSort(tfid,'fup_ctor','CTOR')}${thSort(tfid,'fup_ctr','CTR')}
-    ${thSort(tfid,'fup_unsubs','Unsubs')}${thSort(tfid,'fup_utor','UTOR (Unsubs/Opens)')}
-  </tr></thead><tbody>`;
-  sorted_fup.forEach(r=>{
-    html_fup+=`<tr><td><strong>${r.campaign||'—'}</strong></td><td>${r.brand||'—'}</td><td>${r.objective||'—'}</td><td>${r.mes||'—'}</td>
-    <td>${fNum(r.fup_sends)}</td><td>${fNum(r.fup_deliveries)}</td><td>${fNum(r.fup_opens)}</td>
-    <td>${fPct(r.fup_open_rate,1)}</td><td>${fNum(r.fup_clicks)}</td><td>${fPct(r.fup_ctor,2)}</td><td>${fPct(r.fup_ctr,2)}</td>
-    <td>${fNum(r.fup_unsubs)}</td><td>${fUTOR(r.fup_utor)}</td></tr>`;
-  });
-  html_fup+='</tbody></table>';
-  document.getElementById('t-crm-fup-wrap').innerHTML=html_fup;
-
-  // Charts
-  const camps=[...new Set(agg.map(r=>r.campaign))];
-  function mkCRMChart(id,prefix,title){
-    const datasets=[
-      {label:'Enviados',data:camps.map(c=>{const rws=agg.filter(x=>x.campaign===c);return sum(rws,prefix+'sends')})  ,backgroundColor:'#3a7ae840',borderColor:'#3a7ae8',borderWidth:1.5,yAxisID:'y'},
-      {label:'Aperturas',data:camps.map(c=>{const rws=agg.filter(x=>x.campaign===c);return sum(rws,prefix+'opens')})  ,backgroundColor:'#e8803a80',borderColor:'#e8803a',borderWidth:1.5,yAxisID:'y'},
-      {label:'Clics',data:camps.map(c=>{const rws=agg.filter(x=>x.campaign===c);return sum(rws,prefix+'clicks')})  ,backgroundColor:'#8e3ae880',borderColor:'#8e3ae8',borderWidth:1.5,yAxisID:'y'},
-    ];
-    getChart(id,{type:'bar',data:{labels:camps,datasets},options:{responsive:true,plugins:{legend:{position:'top'},title:{display:true,text:title}},scales:{y:{beginAtZero:true,ticks:{callback:v=>v>=1e6?+(v/1e6).toFixed(1)+'M':v>=1e3?+(v/1e3).toFixed(0)+'K':v}}}}});
-  }
-  mkCRMChart('chart-crm-ep','ep_','Email Principal — Enviados / Aperturas / Clics');
-  mkCRMChart('chart-crm-fup','fup_','Follow-up — Enviados / Aperturas / Clics');
+  let h=mkT('Envío Principal','principal','s5p',{s:'p_sends',d:'p_del',o:'p_opens',c:'p_clicks',u:'p_unsubs',or:'p_or',ctor:'p_ctor',cr:'p_cr',utor:'p_utor'});
+  h+=`<div style="height:28px"></div>`;
+  h+=mkT('Follow-up — envío de seguimiento a usuarios que no abrieron el correo principal','follow-up','s5f',{s:'f_sends',d:'f_del',o:'f_opens',c:'f_clicks',u:'f_unsubs',or:'f_or',ctor:'f_ctor',cr:'f_cr',utor:'f_utor'});
+  h+=`<div class="chart-box" style="margin-top:24px">
+    <div class="chart-box-hdr">Open Rate Promedio: Principal vs Follow-up por Campaña</div>
+    <canvas id="ch-s5" height="160"></canvas>
+  </div>`;
+  el.innerHTML=h;
+  const cs=[...new Set(rows.map(r=>r.campaign))];
+  const pOR=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.p_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.p_or,0)/rr.length*100).toFixed(1)):0;});
+  const fOR=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.f_or!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.f_or,0)/rr.length*100).toFixed(1)):0;});
+  mkC('ch-s5','bar',cs,[
+    {label:'Principal',data:pOR,backgroundColor:'#c4a06a',borderRadius:4},
+    {label:'Follow-up',data:fOR,backgroundColor:'#3d3020',borderRadius:4,borderColor:'#8a6d3b',borderWidth:1}
+  ],{scales:{y:{ticks:{callback:v=>v+'%'}}}});
 }
 
-// ── RENDER: S5 WhatsApp ────────────────────────────────────────────────────
-function renderWA(waRows){
-  const tid='t-crm-wa';
-  if(!waRows.length){document.getElementById('t-crm-wa-wrap').innerHTML='<div class="no-data">Sin datos de WhatsApp con los filtros seleccionados</div>';return;}
-  const sorted=sortRows(waRows,tid,'campaign');
-  let html=`<table class="dt" id="${tid}"><thead><tr>
-    ${thSort(tid,'campaign','Campaña')}${thSort(tid,'brand','Marca')}${thSort(tid,'objective','Objetivo')}${thSort(tid,'mes','Período')}
-    ${thSort(tid,'wa_sends','Enviados')}${thSort(tid,'wa_delivered','Entregados')}${thSort(tid,'wa_pct_delivery','% Entrega')}
-    ${thSort(tid,'wa_reads','Leídos')}${thSort(tid,'wa_pct_read','% Leídos/Entregados')}
-    ${thSort(tid,'wa_clicks','Clics')}${thSort(tid,'wa_pct_click_vs_read','CTOR (Clics/Leídos)')}
-  </tr></thead><tbody>`;
-  sorted.forEach(r=>{
-    html+=`<tr>
-      <td><strong>${r.campaign||'—'}</strong></td><td>${r.brand||'—'}</td><td>${r.objective||'—'}</td><td>${r.mes||'—'}</td>
-      <td>${fNum(r.wa_sends)}</td><td>${fNum(r.wa_delivered)}</td><td>${fPct(r.wa_pct_delivery,1)}</td>
-      <td>${fNum(r.wa_reads)}</td><td>${fPct(r.wa_pct_read,1)}</td>
-      <td>${fNum(r.wa_clicks)}</td><td>${fPct(r.wa_pct_click_vs_read,2)}</td>
-    </tr>`;
-  });
-  html+='</tbody></table>';
-  document.getElementById('t-crm-wa-wrap').innerHTML=html;
-
-  const camps=[...new Set(sorted.map(r=>r.campaign))];
-  const datasets=[
-    {label:'Enviados',data:camps.map(c=>sorted.filter(x=>x.campaign===c).reduce((a,r)=>a+(r.wa_sends||0),0)),backgroundColor:'#3a7ae840',borderColor:'#3a7ae8',borderWidth:1.5},
-    {label:'Entregados',data:camps.map(c=>sorted.filter(x=>x.campaign===c).reduce((a,r)=>a+(r.wa_delivered||0),0)),backgroundColor:'#e8803a80',borderColor:'#e8803a',borderWidth:1.5},
-    {label:'Leídos',data:camps.map(c=>sorted.filter(x=>x.campaign===c).reduce((a,r)=>a+(r.wa_reads||0),0)),backgroundColor:'#2ecc7180',borderColor:'#2ecc71',borderWidth:1.5},
-    {label:'Clics',data:camps.map(c=>sorted.filter(x=>x.campaign===c).reduce((a,r)=>a+(r.wa_clicks||0),0)),backgroundColor:'#8e3ae880',borderColor:'#8e3ae8',borderWidth:1.5},
-  ];
-  getChart('chart-crm-wa',{type:'bar',data:{labels:camps,datasets},options:{responsive:true,plugins:{legend:{position:'top'},title:{display:true,text:'WhatsApp — Funnel por campaña'}},scales:{y:{beginAtZero:true}}}});
+/* ═══════════════ S6: WHATSAPP ═══════════════ */
+function rS6(){
+  const el=document.getElementById('s6');
+  const rows=fCRM().filter(r=>r.medio==='whatsapp');
+  if(!rows.length){el.innerHTML='<div class="empty">Sin datos de WhatsApp con los filtros actuales</div>';return;}
+  const tid='s6';const sorted=sRows(rows,tid);
+  let h=`<div class="tbl-wrap"><table>
+    <thead>
+      <tr class="tbl-section-hdr"><td colspan="5"></td><td colspan="5" style="color:var(--gold-dim)">▼ Volúmenes</td><td colspan="4" style="color:var(--gold-dim)">▼ Tasas</td></tr>
+      <tr>
+        ${TH('Campaña','campaign',tid)}${TH('Marca','marca',tid)}${TH('Objetivo','objetivo',tid)}${TH('Período','mes',tid)}${TH('Touchpoint','touchpoint',tid)}
+        ${TH('Envíos','wa_env',tid,'col-sep')}${TH('Entregados','wa_ent',tid)}${TH('No Entregados','wa_nent',tid)}${TH('Leídos','wa_lei',tid)}${TH('Clicks','wa_cli',tid)}
+        ${TH('% Entrega','wa_pent',tid,'col-sep')}${TH('% No Entrega','wa_pnent',tid)}${TH('% Leído','wa_pread',tid)}${TH('% Click/Leído','wa_pclr',tid)}
+      </tr>
+    </thead><tbody>
+    ${sorted.map(r=>`<tr>
+      <td><strong>${r.campaign}</strong></td><td>${r.marca}</td><td>${r.objetivo}</td><td>${r.mes}</td>
+      <td style="color:var(--text3);font-size:13px">${r.touchpoint}</td>
+      <td class="num col-sep">${fN(r.wa_env)}</td><td class="num">${fN(r.wa_ent)}</td>
+      <td class="num">${fN(r.wa_nent)}</td><td class="num">${fN(r.wa_lei)}</td>
+      <td class="num">${r.wa_cli!=null?fN(r.wa_cli):'—'}</td>
+      <td class="num col-sep">${fP(r.wa_pent)}</td><td class="num">${fP(r.wa_pnent)}</td>
+      <td class="num">${fP(r.wa_pread)}</td><td class="num">${fP(r.wa_pclr)}</td>
+    </tr>`).join('')}
+    </tbody></table></div>
+  <div class="chart-box"><div class="chart-box-hdr">WhatsApp: % Entrega y % Leído por envío</div><canvas id="ch-s6" height="160"></canvas></div>`;
+  el.innerHTML=h;
+  const lbs=sorted.map(r=>`${r.campaign} · ${r.touchpoint}`);
+  mkC('ch-s6','bar',lbs,[
+    {label:'% Entrega',data:sorted.map(r=>r.wa_pent!=null?parseFloat((r.wa_pent*100).toFixed(1)):null),backgroundColor:'#34d399',borderRadius:4},
+    {label:'% Leído',data:sorted.map(r=>r.wa_pread!=null?parseFloat((r.wa_pread*100).toFixed(1)):null),backgroundColor:'#0d4c3a',borderRadius:4,borderColor:'#34d399',borderWidth:1}
+  ],{scales:{y:{ticks:{callback:v=>v+'%'}}}});
 }
 
-// ── RENDER: S6 Paid Unified ────────────────────────────────────────────────
-function renderPaid(paidRows){
-  const tid='t-paid';
-  if(!paidRows.length){document.getElementById('t-paid-wrap').innerHTML='<div class="no-data">Sin datos de Paid Media con los filtros seleccionados</div>';return;}
-  const sorted=sortRows(paidRows,tid,'campaign');
+/* ═══════════════ S7: PAID UNIFIED ═══════════════ */
+function rS7(){
+  const el=document.getElementById('s7');
+  const rows=fPaid();
+  if(!rows.length){el.innerHTML='<div class="empty">Sin datos con los filtros actuales</div>';return;}
+  const tid='s7';const sorted=sRows(rows,tid);
 
-  let html=`<table class="dt" id="${tid}"><thead><tr>
-    ${thSort(tid,'campaign','Campaña')}${thSort(tid,'brand','Marca')}${thSort(tid,'objective','Objetivo')}
-    ${thSort(tid,'platform','Plataforma')}${thSort(tid,'audience_type','Audiencia')}${thSort(tid,'mes','Período')}
-    ${thSort(tid,'results','Resultados')}${thSort(tid,'spend','Inversión (MXN)')}
-    ${thSort(tid,'impressions','Impresiones')}${thSort(tid,'reach','Alcance')}${thSort(tid,'frequency','Frec.')}
-    ${thSort(tid,'clicks','Clics')}${thSort(tid,'cpa','CPA')}${thSort(tid,'cvr','CVR')}
-    ${thSort(tid,'cpm','CPM')}
-    <th title="CTR vs BAU — Verde si CTR > BAU">CTR ↕ BAU</th>
-    <th title="CPC vs BAU — Verde si CPC &lt; BAU">CPC ↕ BAU</th>
-  </tr></thead><tbody>`;
+  const bauR=rows.filter(r=>r.bau_ctr!=null&&r.bau_cpc!=null);
+  const bauCTR=bauR.length?bauR.reduce((a,r)=>a+r.bau_ctr,0)/bauR.length:null;
+  const bauCPC=bauR.length?bauR.reduce((a,r)=>a+r.bau_cpc,0)/bauR.length:null;
+  const bauCPM=bauR.filter(r=>r.bau_cpm!=null).reduce((a,r,i,arr)=>a+(r.bau_cpm/arr.length),0)||null;
 
-  sorted.forEach(r=>{
-    const ctrCls=bauCls(r.ctr,r.bau_ctr,false);
-    const cpcCls=bauCls(r.cpc,r.bau_cpc,true);
-    html+=`<tr>
-      <td><strong>${r.campaign||'—'}</strong></td><td>${r.brand||'—'}</td><td>${r.objective||'—'}</td>
-      <td>${r.platform||'—'}</td><td>${r.audience_type||'—'}</td><td>${r.mes||'—'}</td>
-      <td>${fNum(r.results)}</td><td>${fMXN(r.spend)}</td>
-      <td>${fNum(r.impressions)}</td><td>${fNum(r.reach)}</td><td>${fNum(r.frequency,1)}</td>
-      <td>${fNum(r.clicks)}</td><td>${fMXN(r.cpa)}</td><td>${fPct(r.cvr,2)}</td><td>${fMXN(r.cpm)}</td>
-      <td class="${ctrCls}">${fPct(r.ctr,2)}${r.bau_ctr!=null?'<br><small style="font-weight:400">BAU: '+fPct(r.bau_ctr,2)+'</small>':''}</td>
-      <td class="${cpcCls}">${fMXN(r.cpc)}${r.bau_cpc!=null?'<br><small style="font-weight:400">BAU: '+fMXN(r.bau_cpc)+'</small>':''}</td>
-    </tr>`;
-  });
-  html+='</tbody></table>';
-  document.getElementById('t-paid-wrap').innerHTML=html;
-
-  // Chart: Inversión by campaign+platform (stacked bars)
-  const camps=[...new Set(sorted.map(r=>r.campaign))].sort();
-  const plats=[...new Set(sorted.map(r=>r.platform))].filter(Boolean).sort();
-  const platColors={'Meta':'#1877f240','TikTok':'#ee1d5240','Tiktok':'#ee1d5240'};
-  const datasets2=plats.map((p,i)=>{
-    const col=platColors[p]||`hsl(${i*60},60%,60%)`;
-    return{
-      label:p,
-      data:camps.map(c=>sorted.filter(r=>r.campaign===c&&r.platform===p).reduce((a,r)=>a+(r.spend||0),0)),
-      backgroundColor:col,
-      borderColor:col.replace('40','ff'),borderWidth:1.5,
-    };
-  });
-  getChart('chart-paid',{type:'bar',data:{labels:camps,datasets:datasets2},options:{responsive:true,plugins:{legend:{position:'top'},title:{display:true,text:'Inversión por campaña y plataforma (MXN)'}},scales:{x:{stacked:true},y:{stacked:true,ticks:{callback:v=>'$'+fNum(v)}}}}});
-}
-
-// ── RENDER: S7 BAU Benchmark ───────────────────────────────────────────────
-function renderBAU(paidRows){
-  if(!paidRows.length){document.getElementById('bau-container').innerHTML='<div class="no-data">Sin datos</div>';return;}
-  // Group by platform+objective, show BAU values
-  const groups=groupBy(paidRows,['platform','objective']);
-  let html='';
-  groups.forEach(g=>{
-    const r=g._rows[0];// BAU values same for all rows in same platform+objective
-    if(!r.bau_ctr&&!r.bau_cpc)return;
-    html+=`<div class="bau-panel" style="margin-bottom:12px">
-      <div class="bau-panel-title">${r.platform||'—'} · ${r.objective||'—'}</div>
-      <div class="bau-grid">
-        ${r.bau_ctr!=null?`<div class="bau-item"><div class="bau-item-label">BAU CTR</div><div class="bau-item-val">${fPct(r.bau_ctr,2)}</div></div>`:''}
-        ${r.bau_cpc!=null?`<div class="bau-item"><div class="bau-item-label">BAU CPC</div><div class="bau-item-val">${fMXN(r.bau_cpc)}</div></div>`:''}
-        ${r.bau_cpm!=null?`<div class="bau-item"><div class="bau-item-label">BAU CPM</div><div class="bau-item-val">${fMXN(r.bau_cpm)}</div></div>`:''}
-        ${r.bau_cpa!=null?`<div class="bau-item"><div class="bau-item-label">BAU CPA</div><div class="bau-item-val">${fMXN(r.bau_cpa)}</div></div>`:''}
-        ${r.bau_results!=null?`<div class="bau-item"><div class="bau-item-label">BAU Resultados</div><div class="bau-item-val">${fNum(r.bau_results,0)}</div></div>`:''}
-        ${r.bau_impressions!=null?`<div class="bau-item"><div class="bau-item-label">BAU Impresiones</div><div class="bau-item-val">${fNum(r.bau_impressions,0)}</div></div>`:''}
+  let h='';
+  if(bauCTR!=null){
+    h+=`<div class="bau">
+      <div class="bau-lbl">Benchmark BAU — Promedio histórico de la misma campaña</div>
+      <div class="bau-kpi"><div class="bau-kpi-l">BAU CTR</div><div class="bau-kpi-v">${fP(bauCTR)}</div></div>
+      <div class="bau-kpi"><div class="bau-kpi-l">BAU CPC</div><div class="bau-kpi-v">${fC(bauCPC)}</div></div>
+      <div class="bau-kpi"><div class="bau-kpi-l">BAU CPM</div><div class="bau-kpi-v">${fC(bauCPM)}</div></div>
+      <div class="bau-note">
+        <span style="color:var(--good)">■</span> Verde = mejor que BAU &nbsp;
+        <span style="color:var(--bad)">■</span> Rojo = peor que BAU
       </div>
     </div>`;
-  });
-  document.getElementById('bau-container').innerHTML=html||'<div class="no-data">Sin valores BAU disponibles con los filtros actuales</div>';
-}
-
-// ── MAIN RENDER ────────────────────────────────────────────────────────────
-function renderAll(){
-  const paid=fPaid();
-  const crmAll=fCRM(null);
-  const crmEmail=fCRM('email');
-  const crmWA=fCRM('whatsapp');
-  renderGantt(paid,crmAll);
-  renderScorecard(paid,crmEmail);
-  renderCRMComp(crmEmail);
-  renderCRMPvF(crmEmail);
-  renderWA(crmWA);
-  renderPaid(paid);
-  renderBAU(paid);
-}
-
-// ── EVENT LISTENERS ────────────────────────────────────────────────────────
-function bindFilters(){
-  document.querySelectorAll('.filter-month').forEach(el=>el.addEventListener('change',()=>{
-    S.periods=new Set(Array.from(document.querySelectorAll('.filter-month:checked')).map(x=>x.value));
-    renderAll();
-  }));
-  document.querySelectorAll('.filter-crm-medio').forEach(el=>el.addEventListener('change',()=>{
-    S.crm_medios=new Set(Array.from(document.querySelectorAll('.filter-crm-medio:checked')).map(x=>x.value));
-    renderAll();
-  }));
-  document.querySelectorAll('.filter-paid-aud').forEach(el=>el.addEventListener('change',()=>{
-    S.paid_auds=new Set(Array.from(document.querySelectorAll('.filter-paid-aud:checked')).map(x=>x.value));
-    renderAll();
-  }));
-  document.querySelectorAll('.filter-paid-plat').forEach(el=>el.addEventListener('change',()=>{
-    S.paid_plats=new Set(Array.from(document.querySelectorAll('.filter-paid-plat:checked')).map(x=>x.value));
-    renderAll();
-  }));
-
-  function bindSelect(id,stateKey){
-    const sel=document.getElementById(id);
-    if(!sel)return;
-    sel.addEventListener('change',()=>{
-      const vals=Array.from(sel.selectedOptions).map(o=>o.value);
-      S[stateKey]=new Set(vals.length?vals:[]);
-      renderAll();
-    });
   }
-  bindSelect('f-campaign','campaigns');
-  bindSelect('f-brand','brands');
-  bindSelect('f-paid-obj','paid_objs');
-  bindSelect('f-crm-obj','crm_objs');
+
+  h+=`<div class="tbl-wrap"><table>
+    <thead><tr>
+      ${TH('Campaña','campaign',tid)}${TH('Marca','marca',tid)}${TH('Objetivo','objetivo',tid)}${TH('Plataforma','plataforma',tid)}${TH('Período','mes',tid)}
+      ${TH('Tipo Aud.','tipo_audiencia',tid)}${TH('Audiencia','audiencia',tid)}
+      ${TH('Resultados','resultados',tid,'col-sep')}${TH('Inversión','inversion',tid)}${TH('Impresiones','impresiones',tid)}
+      ${TH('Alcance','alcance',tid)}${TH('Frecuencia','frecuencia',tid)}${TH('Clics','clics',tid)}
+      ${TH('CTR','ctr',tid,'col-sep')}${TH('CPC','cpc',tid)}${TH('CPM','cpm',tid)}${TH('CPA','cpa',tid)}
+    </tr></thead>
+    <tbody>
+    ${sorted.map(r=>`<tr>
+      <td><strong>${r.campaign}</strong></td><td>${r.marca}</td>
+      <td style="font-size:13px">${r.objetivo}</td><td>${r.plataforma}</td><td>${r.mes}</td>
+      <td style="font-size:13px;color:var(--text3)">${r.tipo_audiencia}</td><td style="font-size:13px;color:var(--text3)">${r.audiencia}</td>
+      <td class="num col-sep">${fN(r.resultados)}</td><td class="num">${fCi(r.inversion)}</td>
+      <td class="num">${fN(r.impresiones)}</td><td class="num">${fN(r.alcance)}</td>
+      <td class="num">${f2(r.frecuencia)}</td><td class="num">${fN(r.clics)}</td>
+      <td class="num col-sep ${ctrCls(r.ctr,r.bau_ctr)}">${fP(r.ctr)}</td>
+      <td class="num ${cpcCls(r.cpc,r.bau_cpc)}">${fC(r.cpc)}</td>
+      <td class="num">${fC(r.cpm)}</td><td class="num">${fC(r.cpa)}</td>
+    </tr>`).join('')}
+    </tbody></table></div>`;
+
+  const cs=[...new Set(rows.map(r=>r.campaign))];
+  const bg=cs.map(c=>CC[c]||'#c4a06a');
+  const bgA=cs.map(c=>(CC[c]||'#c4a06a')+'b0');
+  const invData=cs.map(c=>Math.round(rows.filter(r=>r.campaign===c).reduce((a,r)=>a+(r.inversion||0),0)));
+  const impData=cs.map(c=>Math.round(rows.filter(r=>r.campaign===c).reduce((a,r)=>a+(r.impresiones||0),0)));
+  const ctrData=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c);return rr.length?parseFloat((rr.reduce((a,r)=>a+(r.ctr||0),0)/rr.length*100).toFixed(2)):0;});
+  const cpcData=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.cpc!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.cpc,0)/rr.length).toFixed(2)):0;});
+
+  h+=`<div class="two-col" style="margin-top:24px">
+    <div class="chart-box" style="margin-top:0">
+      <div class="chart-box-hdr">Inversión (MXN) &amp; CTR — por Campaña</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Inversión total · Línea = CTR promedio · Punteado = BAU CTR</div>
+      <canvas id="ch-s7a" height="240"></canvas>
+    </div>
+    <div class="chart-box" style="margin-top:0">
+      <div class="chart-box-hdr">Impresiones &amp; CPC — por Campaña</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Impresiones totales · Línea = CPC promedio · Punteado = BAU CPC</div>
+      <canvas id="ch-s7b" height="240"></canvas>
+    </div>
+  </div>`;
+  el.innerHTML=h;
+
+  /* mkDual — combo chart: bars (left Y) + line (right Y) + optional BAU dash */
+  function mkDual(id,labels,barLbl,barData,lineLbl,lineData,lColor,bauVal,yLFmt,yRFmt){
+    const el2=document.getElementById(id);if(!el2)return;
+    const c2=el2.getContext('2d');
+    if(CH[id])CH[id].destroy();
+    const ds=[
+      {type:'bar',label:barLbl,data:barData,backgroundColor:bgA,borderColor:bg,
+       borderWidth:1,borderRadius:6,yAxisID:'yL',order:2},
+      {type:'line',label:lineLbl,data:lineData,borderColor:lColor,
+       backgroundColor:lColor+'14',fill:false,
+       pointBackgroundColor:bg,pointBorderColor:'#0d0d0d',pointBorderWidth:1.5,
+       pointRadius:5,pointHoverRadius:8,borderWidth:2.5,tension:.3,yAxisID:'yR',order:1}
+    ];
+    if(bauVal!=null)ds.push({type:'line',label:'BAU',data:Array(labels.length).fill(bauVal),
+      borderColor:lColor+'50',borderDash:[6,4],borderWidth:1.5,pointRadius:0,yAxisID:'yR',order:0});
+    CH[id]=new Chart(c2,{type:'bar',data:{labels,datasets:ds},options:{
+      responsive:true,maintainAspectRatio:true,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{display:true,position:'top',labels:{color:'#777',boxWidth:10,padding:14,
+          font:{size:11},usePointStyle:true,pointStyleWidth:8}},
+        tooltip:{callbacks:{label:ctx=>{
+          const v=ctx.raw,l=ctx.dataset.label||'';
+          if(l.includes('Inversión'))return ' Inversión: $'+Math.round(v).toLocaleString('es-MX');
+          if(l.includes('Impresiones'))return ' Impresiones: '+Math.round(v).toLocaleString('es-MX');
+          if(l.includes('CTR')||l==='BAU')return ' '+l+': '+v+'%';
+          if(l.includes('CPC'))return ' '+l+': $'+v;
+          return ' '+l+': '+v;
+        }}}
+      },
+      scales:{
+        x:{ticks:{color:'#777',font:{size:11},maxRotation:20},
+           grid:{color:'rgba(255,255,255,.03)'}},
+        yL:{type:'linear',position:'left',
+            grid:{color:'rgba(255,255,255,.04)'},
+            ticks:{color:'#555',font:{size:10},callback:yLFmt}},
+        yR:{type:'linear',position:'right',
+            grid:{drawOnChartArea:false},
+            ticks:{color:lColor+'cc',font:{size:10},callback:yRFmt}}
+      }
+    }});
+  }
+
+  mkDual('ch-s7a',cs,'Inversión $',invData,'CTR %',ctrData,'#c4a06a',
+    bauCTR!=null?parseFloat((bauCTR*100).toFixed(2)):null,
+    v=>v>=1e6?'$'+(v/1e6).toFixed(1)+'M':'$'+(v/1e3).toFixed(0)+'K',
+    v=>v+'%'
+  );
+  mkDual('ch-s7b',cs,'Impresiones',impData,'CPC $',cpcData,'#34d399',
+    bauCPC!=null?parseFloat(bauCPC.toFixed(2)):null,
+    v=>v>=1e6?(v/1e6).toFixed(1)+'M':v>=1e3?(v/1e3).toFixed(0)+'K':String(v),
+    v=>'$'+v
+  );
 }
 
-bindFilters();
-renderAll();
+/* ═══════════════ RENDER ALL ═══════════════ */
+function render(){rS2();rS3();rS4();rS5();rS6();rS7();}
+
+/* ═══════════════ INIT ═══════════════ */
+(function(){
+  // Multi-selects
+  new MS(document.getElementById('ms-camps'),ALL_CAMPS,'Campaña',render,S.camps);
+  new MS(document.getElementById('ms-crm-obj'),['Purchase','Awareness'],'Objetivo CRM',render,S.crm_obj);
+  new MS(document.getElementById('ms-paid-plat'),['Meta','Tiktok'],'Plataforma',render,S.p_plat);
+  new MS(document.getElementById('ms-paid-obj'),[...new Set(DATA.paid.map(r=>r.objetivo))].sort(),'Objetivo Paid',render,S.p_obj);
+  new MS(document.getElementById('ms-paid-tipo'),['CDP','AC'],'Tipo Audiencia',render,S.p_tipo);
+  new MS(document.getElementById('ms-paid-aud'),[...new Set(DATA.paid.map(r=>r.audiencia))].sort(),'Audiencia',render,S.p_aud);
+
+  // Period pills
+  document.querySelectorAll('[data-period]').forEach(btn=>btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-period]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');S.period=btn.dataset.period;render();
+  }));
+
+  render();
+})();
 </script>
 </body>
 </html>
