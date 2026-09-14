@@ -779,11 +779,6 @@ function rS5(){
         <td class="num">${fP(r[ks.utor])}</td>
       </tr>`).join('')}
       </tbody></table></div>
-    <div class="chart-box" style="margin-top:16px">
-      <div class="chart-box-hdr">${badge==='principal'?'Principal':'Follow-up'} — Envíos · OR · CTOR · UTOR por Campaña</div>
-      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Barras = Envíos totales · Líneas = OR · CTOR · UTOR (%)</div>
-      <canvas id="${chartId}" height="200"></canvas>
-    </div>
     <div class="two-col" style="margin-top:16px">
       <div class="chart-box" style="margin-top:0">
         <div class="chart-box-hdr">${badge==='principal'?'Principal':'Follow-up'} — Envíos por Campaña</div>
@@ -820,6 +815,11 @@ function rS6(){
   const rows=fCRM().filter(r=>r.medio==='whatsapp');
   if(!rows.length){el.innerHTML='<div class="empty">Sin datos de WhatsApp con los filtros actuales</div>';return;}
   const tid='s6';const sorted=sRows(rows,tid);
+  const hasWAData=rows.some(r=>r.wa_env>0);
+  if(!hasWAData){
+    el.innerHTML='<div class="empty">Sin envíos de WhatsApp registrados en los períodos seleccionados — los touchpoints WA existen pero aún sin volumen de envío.</div>';
+    return;
+  }
   let h=`<div class="tbl-wrap"><table>
     <thead>
       <tr class="tbl-section-hdr"><td colspan="5"></td><td colspan="5" style="color:var(--gold-dim)">▼ Volúmenes</td><td colspan="4" style="color:var(--gold-dim)">▼ Tasas</td></tr>
@@ -917,9 +917,13 @@ function rS7(){
       <canvas id="ch-s7a" height="240"></canvas>
     </div>
     <div class="chart-box" style="margin-top:0">
-      <div class="chart-box-hdr">CTR · CPC Promedio — por Campaña</div>
+      <div class="chart-box-hdr">CTR % Real vs BAU CTR % — por Campaña</div>
       <canvas id="ch-s7b" height="240"></canvas>
     </div>
+  </div>
+  <div class="chart-box" style="margin-top:16px">
+    <div class="chart-box-hdr">CPC $ Real vs BAU CPC $ — por Campaña</div>
+    <canvas id="ch-s7c" height="220"></canvas>
   </div>`;
   el.innerHTML=h;
 
@@ -943,16 +947,15 @@ function rS7(){
     }});
   })();
 
-  /* Pure grouped bar: CTR + BAU CTR, CPC + BAU CPC by campaign */
+  /* Grouped bars: CTR real vs BAU CTR */
   (function(){
     const el2=document.getElementById('ch-s7b');if(!el2)return;
     const c2=el2.getContext('2d');
     if(CH['ch-s7b'])CH['ch-s7b'].destroy();
     const bauCTRArr=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.bau_ctr!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.bau_ctr,0)/rr.length*100).toFixed(2)):null;});
-    const bauCPCArr=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.bau_cpc!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.bau_cpc,0)/rr.length).toFixed(2)):null;});
     CH['ch-s7b']=new Chart(c2,{type:'bar',data:{labels:cs,datasets:[
-      {label:'CTR % (real)',data:ctrData,backgroundColor:'#c4a06a99',borderColor:'#c4a06a',borderWidth:1,borderRadius:4},
-      {label:'BAU CTR %',data:bauCTRArr,backgroundColor:'#c4a06a33',borderColor:'#c4a06a55',borderWidth:1,borderRadius:4,borderDash:[4,4]}
+      {label:'CTR % real',data:ctrData,backgroundColor:'#c4a06a99',borderColor:'#c4a06a',borderWidth:1,borderRadius:4},
+      {label:'BAU CTR %',data:bauCTRArr,backgroundColor:'#c4a06a2a',borderColor:'#c4a06a55',borderWidth:1,borderRadius:4}
     ]},options:{
       responsive:true,maintainAspectRatio:true,
       interaction:{mode:'index',intersect:false},
@@ -961,6 +964,27 @@ function rS7(){
       scales:{
         x:{ticks:{color:'#777',font:{size:10},maxRotation:20},grid:{color:'rgba(255,255,255,.03)'}},
         y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#777',font:{size:10},callback:v=>v+'%'},min:0}
+      }
+    }});
+  })();
+
+  /* Grouped bars: CPC real vs BAU CPC */
+  (function(){
+    const el2=document.getElementById('ch-s7c');if(!el2)return;
+    const c2=el2.getContext('2d');
+    if(CH['ch-s7c'])CH['ch-s7c'].destroy();
+    const bauCPCArr=cs.map(c=>{const rr=rows.filter(r=>r.campaign===c&&r.bau_cpc!=null);return rr.length?parseFloat((rr.reduce((a,r)=>a+r.bau_cpc,0)/rr.length).toFixed(2)):null;});
+    CH['ch-s7c']=new Chart(c2,{type:'bar',data:{labels:cs,datasets:[
+      {label:'CPC $ real',data:cpcData,backgroundColor:'#34d39999',borderColor:'#34d399',borderWidth:1,borderRadius:4},
+      {label:'BAU CPC $',data:bauCPCArr,backgroundColor:'#34d3992a',borderColor:'#34d39955',borderWidth:1,borderRadius:4}
+    ]},options:{
+      responsive:true,maintainAspectRatio:true,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{position:'top',labels:{color:'#777',font:{size:11}}},
+        tooltip:{callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.raw!=null?'$'+ctx.raw:'—'}`}}},
+      scales:{
+        x:{ticks:{color:'#777',font:{size:10},maxRotation:20},grid:{color:'rgba(255,255,255,.03)'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#777',font:{size:10},callback:v=>'$'+v},min:0}
       }
     }});
   })();
