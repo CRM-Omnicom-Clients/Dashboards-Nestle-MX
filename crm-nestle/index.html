@@ -456,6 +456,42 @@ const waRows = arr => arr.filter(r=>n(r['WA-Envíos'])>0);
 const hasFup = r => n(r['FUP_Sends'])>0;
 const MES_ORD = {'Enero':1,'Febrero':2,'Marzo':3,'Abril':4,'Mayo':5,'Junio':6,'Julio':7,'Agosto':8,'Septiembre':9,'Octubre':10,'Noviembre':11,'Diciembre':12};
 const MES_NAME = ['','enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+
+// ── Gradient helpers ──────────────────────────────────────────
+function hexRgb(hex){
+  return[parseInt(hex.slice(1,3),16),parseInt(hex.slice(3,5),16),parseInt(hex.slice(5,7),16)];
+}
+function vGrad(c2d,ca,hex,a0=0.92,a1=0.18){
+  const[r,g,b]=hexRgb(hex);
+  const gr=c2d.createLinearGradient(0,ca.top,0,ca.bottom);
+  gr.addColorStop(0,`rgba(${r},${g},${b},${a0})`);
+  gr.addColorStop(1,`rgba(${r},${g},${b},${a1})`);
+  return gr;
+}
+function hGrad(c2d,ca,hex,a0=0.92,a1=0.18){
+  const[r,g,b]=hexRgb(hex);
+  const gr=c2d.createLinearGradient(ca.left,0,ca.right,0);
+  gr.addColorStop(0,`rgba(${r},${g},${b},${a0})`);
+  gr.addColorStop(1,`rgba(${r},${g},${b},${a1})`);
+  return gr;
+}
+function bgFn(hex,mode='v'){
+  return (ctx)=>{
+    const{ctx:c,chartArea}=ctx.chart;
+    if(!chartArea) return hex+'CC';
+    return mode==='v'?vGrad(c,chartArea,hex):hGrad(c,chartArea,hex);
+  };
+}
+function bgFnArr(hexArr,mode='v'){
+  return (ctx)=>{
+    const hex=hexArr[ctx.dataIndex]||'#64748B';
+    const{ctx:c,chartArea}=ctx.chart;
+    if(!chartArea) return hex+'CC';
+    return mode==='v'?vGrad(c,chartArea,hex):hGrad(c,chartArea,hex);
+  };
+}
+// ─────────────────────────────────────────────────────────────
+
 const buColor = bu => bu==='RN'?'#2563EB':bu==='Nescafé'?'#C2410C':bu==='Purina'?'#7C3AED':'#64748B';
 const buClass = bu => bu==='RN'?'rn':bu==='Nescafé'?'nestle':bu==='Purina'?'purina':'';
 
@@ -641,10 +677,10 @@ function renderVolChart(){
   chVol=new Chart(document.getElementById('ch-vol'),{
     type:'bar',
     data:{labels:keys,datasets:[
-      {label:'Envíos',data:data.map(d=>d.s),backgroundColor:'#2563EB99',borderColor:'#2563EB',borderWidth:1},
-      {label:'Entregados',data:data.map(d=>d.d),backgroundColor:'#0891B299',borderColor:'#0891B2',borderWidth:1},
-      {label:'Opens',data:data.map(d=>d.o),backgroundColor:'#16A34A99',borderColor:'#16A34A',borderWidth:1},
-      {label:'Clicks',data:data.map(d=>d.cl),backgroundColor:'#EA580C99',borderColor:'#EA580C',borderWidth:1}
+      {label:'Envíos',data:data.map(d=>d.s),backgroundColor:bgFn('#2563EB','v'),borderColor:'#2563EB',borderWidth:1},
+      {label:'Entregados',data:data.map(d=>d.d),backgroundColor:bgFn('#0891B2','v'),borderColor:'#0891B2',borderWidth:1},
+      {label:'Opens',data:data.map(d=>d.o),backgroundColor:bgFn('#16A34A','v'),borderColor:'#16A34A',borderWidth:1},
+      {label:'Clicks',data:data.map(d=>d.cl),backgroundColor:bgFn('#EA580C','v'),borderColor:'#EA580C',borderWidth:1}
     ]},
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},
@@ -658,11 +694,11 @@ function renderRatesChart(){
   chRates=new Chart(document.getElementById('ch-rates'),{
     type:'line',
     data:{labels:keys,datasets:[
-      {label:'Tasa de entrega',data:data.map(d=>d.d>0?+(d.d/d.s*100).toFixed(2):null),borderColor:'#0891B2',backgroundColor:'#0891B220',tension:.3,fill:false,borderWidth:2,pointRadius:4},
-      {label:'Open Rate',data:data.map(d=>d.d>0?+(d.o/d.d*100).toFixed(2):null),borderColor:'#16A34A',backgroundColor:'#16A34A20',tension:.3,fill:false,borderWidth:2,pointRadius:4},
-      {label:'Click Rate',data:data.map(d=>d.d>0?+(d.cl/d.d*100).toFixed(2):null),borderColor:'#EA580C',backgroundColor:'#EA580C20',tension:.3,fill:false,borderWidth:2,pointRadius:4},
-      {label:'CTOR',data:data.map(d=>d.o>0?+(d.cl/d.o*100).toFixed(2):null),borderColor:'#F97316',backgroundColor:'#F9731620',tension:.3,fill:false,borderWidth:2,pointRadius:4},
-      {label:'Unsub Rate',data:data.map(d=>d.d>0?+(d.u/d.d*100).toFixed(2):null),borderColor:'#DC2626',backgroundColor:'#DC262620',tension:.3,fill:false,borderWidth:2,pointRadius:4}
+      {label:'Tasa de entrega',data:data.map(d=>d.d>0?+(d.d/d.s*100).toFixed(2):null),borderColor:'#0891B2',backgroundColor:bgFn('#0891B2','v'),tension:.3,fill:'origin',borderWidth:2,pointRadius:4},
+      {label:'Open Rate',data:data.map(d=>d.d>0?+(d.o/d.d*100).toFixed(2):null),borderColor:'#16A34A',backgroundColor:bgFn('#16A34A','v'),tension:.3,fill:'origin',borderWidth:2,pointRadius:4},
+      {label:'Click Rate',data:data.map(d=>d.d>0?+(d.cl/d.d*100).toFixed(2):null),borderColor:'#EA580C',backgroundColor:bgFn('#EA580C','v'),tension:.3,fill:'origin',borderWidth:2,pointRadius:4},
+      {label:'CTOR',data:data.map(d=>d.o>0?+(d.cl/d.o*100).toFixed(2):null),borderColor:'#F97316',backgroundColor:bgFn('#F97316','v'),tension:.3,fill:'origin',borderWidth:2,pointRadius:4},
+      {label:'Unsub Rate',data:data.map(d=>d.d>0?+(d.u/d.d*100).toFixed(2):null),borderColor:'#DC2626',backgroundColor:bgFn('#DC2626','v'),tension:.3,fill:'origin',borderWidth:2,pointRadius:4}
     ]},
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},
@@ -791,7 +827,7 @@ function renderBUChart(){
   if(chBU)chBU.destroy();
   chBU=new Chart(document.getElementById('ch-bu'),{
     type:'bar',
-    data:{labels:BUS,datasets:[{label:buMetric,data:vals,backgroundColor:BUS.map(b=>buColor(b)+'CC'),borderColor:BUS.map(b=>buColor(b)),borderWidth:1}]},
+    data:{labels:BUS,datasets:[{label:buMetric,data:vals,backgroundColor:bgFnArr(BUS.map(b=>buColor(b)),'v'),borderColor:BUS.map(b=>buColor(b)),borderWidth:2}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
       tooltip:{callbacks:{label:ctx=>isRate?ctx.parsed.y.toFixed(1)+'%':fmt(ctx.parsed.y)}}},
       scales:{y:{ticks:{callback:v=>isRate?v+'%':v>=1e6?(v/1e6).toFixed(1)+'M':v>=1000?(v/1000).toFixed(0)+'K':v}}}}
@@ -824,7 +860,7 @@ function renderS3(){
   if(chMarca)chMarca.destroy();
   chMarca=new Chart(document.getElementById('ch-marca'),{
     type:'bar',
-    data:{labels:marcas,datasets:[{label:marcaMetric,data:vals,backgroundColor:marcas.map(m=>buColor(marcaBU[m]||'')+'CC'),borderColor:marcas.map(m=>buColor(marcaBU[m]||'')),borderWidth:1}]},
+    data:{labels:marcas,datasets:[{label:marcaMetric,data:vals,backgroundColor:bgFnArr(marcas.map(m=>buColor(marcaBU[m]||'')),'h'),borderColor:marcas.map(m=>buColor(marcaBU[m]||'')),borderWidth:2}]},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>isRate?ctx.parsed.x.toFixed(1)+'%':fmt(ctx.parsed.x)}}},
       scales:{x:{ticks:{callback:v=>isRate?v+'%':v>=1e6?(v/1e6).toFixed(1)+'M':v>=1000?(v/1000).toFixed(0)+'K':v}}}}
@@ -877,7 +913,7 @@ function renderCampRank(){
   if(chCampRank)chCampRank.destroy();
   chCampRank=new Chart(document.getElementById('ch-camp-rank'),{
     type:'bar',
-    data:{labels:camps,datasets:[{label:campMetric,data:vals,backgroundColor:colors}]},
+    data:{labels:camps,datasets:[{label:campMetric,data:vals,backgroundColor:bgFnArr(camps.map(c=>buColor(g[c].bu)),'h'),borderColor:camps.map(c=>buColor(g[c].bu)),borderWidth:1}]},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>isRate?ctx.parsed.x.toFixed(1)+'%':isMXN?mxn(ctx.parsed.x):fmt(ctx.parsed.x)}}},
       scales:{x:{ticks:{callback:v=>isRate?v+'%':isMXN?'$'+v.toLocaleString('es-MX'):v>=1e6?(v/1e6).toFixed(1)+'M':v>=1000?(v/1000).toFixed(0)+'K':v}}}}
@@ -1186,10 +1222,10 @@ function renderWATab(){
     chWATrend=new Chart(document.getElementById('ch-wa-trend'),{
       type:'bar',
       data:{labels:mesLabels,datasets:[
-        {label:'Envíos',data:mesKeys.map(k=>byMes[k].es),backgroundColor:'#15803D99'},
-        {label:'Entregados',data:mesKeys.map(k=>byMes[k].ed),backgroundColor:'#16A34ACC'},
-        {label:'Leídos',data:mesKeys.map(k=>byMes[k].le),backgroundColor:'#4ADE80CC'},
-        {label:'Clicks',data:mesKeys.map(k=>byMes[k].cl),backgroundColor:'#EA580CCC'}
+        {label:'Envíos',data:mesKeys.map(k=>byMes[k].es),backgroundColor:bgFn('#15803D','v'),borderColor:'#15803D',borderWidth:1},
+        {label:'Entregados',data:mesKeys.map(k=>byMes[k].ed),backgroundColor:bgFn('#16A34A','v'),borderColor:'#16A34A',borderWidth:1},
+        {label:'Leídos',data:mesKeys.map(k=>byMes[k].le),backgroundColor:bgFn('#4ADE80','v'),borderColor:'#4ADE80',borderWidth:1},
+        {label:'Clicks',data:mesKeys.map(k=>byMes[k].cl),backgroundColor:bgFn('#EA580C','v'),borderColor:'#EA580C',borderWidth:1}
       ]},
       options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:{size:11}}}}}
     });
@@ -1204,8 +1240,8 @@ function renderWATab(){
     chWARank=new Chart(document.getElementById('ch-wa-camp'),{
       type:'bar',
       data:{labels:cs,datasets:[
-        {label:'Read Rate (%)',data:cs.map(c=>byCamp[c].d>0?+(byCamp[c].l/byCamp[c].d*100).toFixed(1):0),backgroundColor:'#16A34ACC'},
-        {label:'Click/Leídos (%)',data:cs.map(c=>byCamp[c].l>0?+(byCamp[c].c/byCamp[c].l*100).toFixed(1):0),backgroundColor:'#EA580CCC'}
+        {label:'Read Rate (%)',data:cs.map(c=>byCamp[c].d>0?+(byCamp[c].l/byCamp[c].d*100).toFixed(1):0),backgroundColor:bgFn('#16A34A','v'),borderColor:'#16A34A',borderWidth:1},
+        {label:'Click/Leídos (%)',data:cs.map(c=>byCamp[c].l>0?+(byCamp[c].c/byCamp[c].l*100).toFixed(1):0),backgroundColor:bgFn('#EA580C','v'),borderColor:'#EA580C',borderWidth:1}
       ]},
       options:{responsive:true,maintainAspectRatio:false,
         plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.parsed.y.toFixed(1)+'%'}}},
@@ -1256,7 +1292,7 @@ function renderQCartTab(){
 
   requestAnimationFrame(()=>{
     new Chart(document.getElementById('ch-qcart-camp'),{
-      type:'bar',data:{labels:camps,datasets:[{label:'Intención Nestlé MXN',data:camps.map(c=>byC[c].inn),backgroundColor:'#7C3AEDCC'}]},
+      type:'bar',data:{labels:camps,datasets:[{label:'Intención Nestlé MXN',data:camps.map(c=>byC[c].inn),backgroundColor:bgFn('#7C3AED','h'),borderColor:'#7C3AED',borderWidth:1}]},
       options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>mxn(ctx.parsed.x)}}},
         scales:{x:{ticks:{callback:v=>v>=1e6?(v/1e6).toFixed(1)+'M':'$'+v.toLocaleString('es-MX')}}}}
     });
