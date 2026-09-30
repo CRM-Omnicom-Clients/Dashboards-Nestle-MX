@@ -18,13 +18,12 @@ body {
   font-family: 'DM Sans', system-ui, sans-serif;
   color: #111111;
   background: #FFFFFF;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
 /* ── Utilidades de gradiente Maggi ── */
-/* En light mode: rojo→dark gold — ambos visibles sobre blanco */
 .g-text {
   background: linear-gradient(90deg, #DB0032 0%, #C58500 100%);
   -webkit-background-clip: text;
@@ -71,7 +70,7 @@ body {
   border-radius: 3px;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -82,13 +81,13 @@ body {
 h1 {
   margin: 0;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(36px, 5vw, 60px);
+  font-size: clamp(39px, 5vw, 63px);
   letter-spacing: 0.03em;
   line-height: 1;
 }
 .meta {
   margin-top: 12px;
-  font-size: 14px;
+  font-size: 17px;
   color: #777777;
   display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
 }
@@ -97,7 +96,7 @@ h1 {
   padding: 2px 8px;
   border-radius: 3px;
   font-family: 'Space Grotesk', monospace;
-  font-size: 14px;
+  font-size: 17px;
   color: #111111;
 }
 .stale { color: #C58500; font-weight: 600; }
@@ -116,21 +115,21 @@ h1 {
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   flex-shrink: 0;
   box-shadow: 0 0 16px rgba(255,32,64,.35);
 }
 h2 {
   margin: 0 0 3px 0;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(18px, 2.5vw, 24px);
+  font-size: clamp(21px, 2.5vw, 27px);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .s-q {
   margin: 0;
-  font-size: 14px;
+  font-size: 17px;
   color: #777777;
   font-style: italic;
 }
@@ -142,8 +141,6 @@ h2 {
   border-radius: 10px;
   backdrop-filter: blur(8px);
 }
-.glass-glow-gold { box-shadow: 0 0 32px rgba(255,184,0,.07), inset 0 1px 0 rgba(255,184,0,.08); }
-.glass-glow-red  { box-shadow: 0 0 32px rgba(255,32,64,.07),  inset 0 1px 0 rgba(255,32,64,.08); }
 
 /* ── Sección 1 · Contexto ── */
 .ctx-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -160,13 +157,13 @@ h2 {
 .ctx-card h3 {
   margin: 0 0 10px 0;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   color: #777777;
 }
-.ctx-card p, .ctx-card ul, .ctx-card ol { margin: 0; font-size: 14px; color: #111111; }
+.ctx-card p, .ctx-card ul, .ctx-card ol { margin: 0; font-size: 17px; color: #111111; }
 .ctx-card ul.tight, .ctx-card ol.tight { padding-left: 18px; }
 .ctx-card ul.tight li, .ctx-card ol.tight li { margin-bottom: 5px; }
 
@@ -184,24 +181,24 @@ h2 {
   padding-bottom: 14px;
   border-bottom: 1px solid #E0DFDB;
 }
-.bench-head .ico { font-size: 20px; }
+.bench-head .ico { font-size: 23px; }
 .bench-head h3 {
   margin: 0;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 22px;
+  font-size: 25px;
   letter-spacing: 0.06em;
   color: #DB0032;
 }
 .bench-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 24px; }
 .col-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em;
+  font-size: 17px; text-transform: uppercase; letter-spacing: 0.08em;
   color: #777777; font-weight: 700; margin-bottom: 12px;
   padding-bottom: 8px;
   border-bottom: 1px solid #E0DFDB;
 }
 .kvs { display: flex; flex-direction: column; gap: 8px; }
-.kv { display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; gap: 8px; }
+.kv { display: flex; justify-content: space-between; align-items: baseline; font-size: 17px; gap: 8px; }
 .kv .k { color: #777777; flex-shrink: 0; }
 .kv .v {
   font-family: 'Space Grotesk', sans-serif;
@@ -216,21 +213,21 @@ h2 {
   border-radius: 8px;
   overflow: hidden;
   display: flex; align-items: center; justify-content: center;
-  text-align: center; color: #777777; font-size: 14px; padding: 8px;
+  text-align: center; color: #777777; font-size: 17px; padding: 8px;
   background: #EFEFED;
 }
 .bal-info .bal-name {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700; font-size: 14px; margin-bottom: 5px;
+  font-weight: 700; font-size: 17px; margin-bottom: 5px;
   color: #C58500;
 }
 .bal-info .bal-criterio {
-  font-size: 14px; color: #777777; font-style: italic; margin-bottom: 12px; line-height: 1.4;
+  font-size: 17px; color: #777777; font-style: italic; margin-bottom: 12px; line-height: 1.4;
 }
-.pend-small { font-size: 14px; color: #777777; font-style: italic; }
+.pend-small { font-size: 17px; color: #777777; font-style: italic; }
 
-/* ── Sección 3 · Titulares ── */
-.hero-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+/* ── Sección 3 · Resultados Liga MX ── */
+.hero-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .hero {
   background: #F7F7F5;
   border: 1px solid #E0DFDB;
@@ -249,24 +246,24 @@ h2 {
 .hero-mxn::before { background: linear-gradient(90deg, #C58500 0%, #FFF33E 100%); }
 .hero-lbl {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 14px; font-weight: 700;
+  font-size: 17px; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.08em;
   color: #777777;
   margin-bottom: 6px;
 }
 .hero-val {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(44px, 6vw, 72px);
+  font-size: clamp(47px, 6vw, 75px);
   letter-spacing: 0.02em;
   line-height: 1;
   margin: 8px 0;
   font-variant-numeric: tabular-nums;
 }
 .hero-val.g-text, .hero-val.g-text-red { display: block; }
-.hero-sub { font-size: 14px; color: #777777; margin-bottom: 10px; }
+.hero-sub { font-size: 17px; color: #777777; margin-bottom: 10px; }
 .hero-refs {
   display: flex; flex-direction: column; gap: 5px;
-  font-size: 14px; margin-top: 12px;
+  font-size: 17px; margin-top: 12px;
   padding-top: 12px;
   border-top: 1px solid #E0DFDB;
 }
@@ -276,10 +273,21 @@ h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700; font-variant-numeric: tabular-nums;
 }
-.delta { font-weight: 900; font-size: 16px; line-height: 1; }
+/* Valor de referencia Mundial en deltas inline */
+.ref-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #DB0032;
+  font-size: 17px;
+}
+.delta { font-weight: 900; font-size: 19px; line-height: 1; }
 .delta.good { color: #0B7A3B; }
 .delta.bad  { color: #DB0032; }
-.delta.pend { color: #777777; font-size: 14px; font-weight: 400; }
+.delta.pend { color: #777777; font-size: 17px; font-weight: 400; }
+/* Colores semánticos para accionables */
+.good { color: #0B7A3B; font-weight: 700; }
+.bad  { color: #DB0032; font-weight: 700; }
 
 /* ── Sección 4 · Jornadas ── */
 .tl-block {
@@ -299,9 +307,9 @@ h2 {
 .tl-block h3 {
   margin: 0 0 4px 0;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 16px; font-weight: 700;
+  font-size: 19px; font-weight: 700;
 }
-.tl-sub { margin: 0 0 20px 0; font-size: 14px; color: #777777; }
+.tl-sub { margin: 0 0 20px 0; font-size: 17px; color: #777777; }
 .tl-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
 .tl-card {
   background: #EFEFED;
@@ -311,7 +319,7 @@ h2 {
 }
 .tl-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 14px; font-weight: 700;
+  font-size: 17px; font-weight: 700;
   margin-bottom: 8px;
   text-transform: uppercase; letter-spacing: 0.05em;
   color: #777777;
@@ -342,19 +350,35 @@ svg.tl { width: 100%; height: auto; display: block; }
 .j-num {
   background: linear-gradient(135deg, #DB0032 0%, #C58500 100%);
   color: #FFFFFF;
-  width: 48px; height: 48px; border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
+  min-width: 74px; height: 56px; border-radius: 8px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 20px;
   flex-shrink: 0;
   box-shadow: 0 0 18px rgba(255,32,64,.3);
+  padding: 4px 10px;
+  gap: 1px;
 }
+.j-num-lbl { font-size: 11px; letter-spacing: 0.12em; opacity: 0.85; line-height: 1; text-transform: uppercase; }
+.j-num-n   { font-size: 28px; line-height: 1; }
 .j-title h3 {
   margin: 0;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 15px; font-weight: 700;
+  font-size: 18px; font-weight: 700;
 }
-.j-title .j-hip { margin: 3px 0 0 0; font-size: 14px; color: #777777; }
+.j-hip-wrap { display: flex; align-items: baseline; gap: 8px; margin-top: 5px; flex-wrap: wrap; }
+.j-prueba-badge {
+  display: inline-block;
+  background: #DB0032;
+  color: #FFFFFF;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px; font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 3px 10px 2px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.j-hip { margin: 0; font-size: 17px; color: #777777; }
 .j-body { display: grid; grid-template-columns: 280px 1fr; gap: 22px; padding: 20px; }
 .j-left { display: flex; flex-direction: column; gap: 12px; }
 .jimg {
@@ -364,7 +388,7 @@ svg.tl { width: 100%; height: auto; display: block; }
 }
 .jimg img { width: 100%; height: auto; display: block; }
 .jimg span {
-  font-size: 14px; text-align: center; padding: 5px;
+  font-size: 17px; text-align: center; padding: 5px;
   color: #777777; background: #EFEFED;
   border-top: 1px solid #E0DFDB;
   font-family: 'Space Grotesk', sans-serif;
@@ -374,13 +398,13 @@ svg.tl { width: 100%; height: auto; display: block; }
   border: 1px dashed #C8C6C0;
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  text-align: center; color: #777777; font-size: 14px; padding: 12px;
+  text-align: center; color: #777777; font-size: 17px; padding: 12px;
   background: #EFEFED;
 }
 .j-context { margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px solid #E0DFDB; }
-.j-subject { margin: 0 0 5px; font-size: 14px; font-weight: 600; }
-.j-content { margin: 0 0 6px; font-size: 14px; color: #777777; }
-.j-narr { margin: 0; font-size: 14px; line-height: 1.55; }
+.j-subject { margin: 0 0 5px; font-size: 17px; font-weight: 600; }
+.j-content { margin: 0 0 6px; font-size: 17px; color: #777777; }
+.j-narr { margin: 0; font-size: 17px; line-height: 1.55; }
 .piezas { display: flex; flex-direction: column; gap: 14px; }
 .pza {
   border: 1px solid #E0DFDB;
@@ -396,13 +420,13 @@ svg.tl { width: 100%; height: auto; display: block; }
 }
 .tag {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 14px; font-weight: 700; letter-spacing: 0.08em;
+  font-size: 17px; font-weight: 700; letter-spacing: 0.08em;
   padding: 3px 10px; border-radius: 3px;
   text-transform: uppercase;
 }
 .tag.email { background: #C58500; color: #FFFFFF; }
 .tag.wa    { background: #0B7A3B;     color: #FFFFFF; }
-.pza-seg { font-size: 14px; color: #777777; }
+.pza-seg { font-size: 17px; color: #777777; }
 .pza-body { padding: 14px; }
 .pza-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 10px; }
 .metric {
@@ -412,28 +436,29 @@ svg.tl { width: 100%; height: auto; display: block; }
 .pza-wa .metric { border-left-color: #0B7A3B; }
 .m-lbl {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 14px; text-transform: uppercase;
-  color: #777777; font-weight: 700; letter-spacing: 0.05em;
+  font-size: 17px; text-transform: uppercase;
+  color: #111111; font-weight: 700; letter-spacing: 0.05em;
 }
 .m-val {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 28px;
+  font-size: 31px;
   letter-spacing: 0.02em;
   line-height: 1.1;
   color: #111111;
   font-variant-numeric: tabular-nums;
 }
-.m-delta { font-size: 14px; color: #777777; margin-top: 2px; }
+.m-pen { font-size: 15px; color: #0B7A3B; font-weight: 700; margin-top: 2px; }
+.m-delta { font-size: 17px; color: #777777; margin-top: 2px; }
 .m-delta.muted { font-style: italic; }
 .pza-detail { margin-top: 10px; }
 .pza-detail summary {
-  cursor: pointer; font-size: 14px; color: #777777;
+  cursor: pointer; font-size: 17px; color: #777777;
   padding: 6px 0; font-family: 'Space Grotesk', sans-serif;
   list-style: none;
 }
 .pza-detail summary::before { content: '▸ '; }
 .pza-detail[open] summary::before { content: '▾ '; }
-.ptbl { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 6px; }
+.ptbl { width: 100%; border-collapse: collapse; font-size: 17px; margin-top: 6px; }
 .ptbl td { padding: 5px 10px; border-bottom: 1px solid #E0DFDB; }
 .ptbl td:first-child { color: #777777; width: 60%; }
 .ptbl td:last-child { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; font-family: 'Space Grotesk', sans-serif; }
@@ -452,21 +477,111 @@ svg.tl { width: 100%; height: auto; display: block; }
   border-left: 3px solid #0B7A3B;
   border-radius: 0 6px 6px 0;
   padding: 12px 16px;
-  font-size: 14px;
+  font-size: 17px;
   margin-bottom: 20px;
   color: #777777;
 }
+
+/* Totals block */
+.vs-totals {
+  background: #F7F7F5;
+  border: 1px solid #E0DFDB;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.vs-totals::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, #C58500 0%, #0B7A3B 100%);
+}
+.vs-totals-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: #777777;
+  margin-bottom: 16px;
+}
+.vs-totals-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.vs-totals-col {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #E0DFDB;
+}
+.vs-totals-email {
+  border-top: 3px solid #C58500;
+  background: rgba(197,133,0,.04);
+}
+.vs-totals-wa {
+  border-top: 3px solid #0B7A3B;
+  background: rgba(11,122,59,.04);
+}
+.vs-totals-ch {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 19px;
+  margin-bottom: 8px;
+}
+.vs-totals-email .vs-totals-ch { color: #C58500; }
+.vs-totals-wa    .vs-totals-ch { color: #0B7A3B; }
+.vs-totals-ctor {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.vs-totals-email .vs-totals-ctor { color: #C58500; }
+.vs-totals-wa    .vs-totals-ctor { color: #0B7A3B; }
+.vs-totals-ctor-lbl {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: #777777;
+  margin-bottom: 4px;
+}
+.vs-totals-ref {
+  font-size: 17px; color: #777777;
+  margin-bottom: 12px;
+}
+.vs-totals-sep {
+  height: 1px; background: #E0DFDB;
+  margin: 12px 0;
+}
+.vs-totals-row {
+  display: flex; justify-content: space-between;
+  font-size: 17px;
+  padding: 4px 0;
+  border-bottom: 1px solid #E0DFDB;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.vs-totals-row span:first-child { color: #777777; }
+.vs-totals-row span:last-child { font-weight: 700; font-variant-numeric: tabular-nums; }
+.vs-totals-hi { background: #EFEFED; padding: 6px 8px; border-radius: 4px; margin: 2px 0; }
+.vs-totals-hi span:last-child { font-size: 19px; }
+
+.vs-jornadas-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 19px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: #777777;
+  margin: 24px 0 12px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #E0DFDB;
+}
+
 .vs-row {
-  display: grid; grid-template-columns: 64px 1fr 1fr; gap: 14px;
+  display: grid; grid-template-columns: 100px 1fr 1fr; gap: 14px;
   margin-bottom: 16px; align-items: stretch;
 }
 .vs-j {
   background: linear-gradient(135deg, #DB0032 0%, #C58500 100%);
   color: #FFFFFF;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 22px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px; font-weight: 700;
+  letter-spacing: 0.04em;
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: 10px 6px;
   box-shadow: 0 0 18px rgba(255,32,64,.2);
 }
 .vs-col {
@@ -475,25 +590,72 @@ svg.tl { width: 100%; height: auto; display: block; }
   border-radius: 8px;
   padding: 14px;
 }
-.vs-email { border-top: 2px solid #C58500; }
-.vs-wa    { border-top: 2px solid #0B7A3B; }
+.vs-email { border-top: 3px solid #C58500; background: rgba(197,133,0,.03); }
+.vs-wa    { border-top: 3px solid #0B7A3B;     background: rgba(11,122,59,.03); }
 .vs-tag {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 14px; font-weight: 700;
+  font-size: 17px; font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
 .vs-email .vs-tag { color: #C58500; }
 .vs-wa    .vs-tag { color: #0B7A3B; }
-.vs-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-size: 14px; }
-.vs-metrics > div { display: flex; justify-content: space-between; padding: 4px 0; }
+.vs-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-size: 17px; }
+.vs-metrics > div { display: flex; justify-content: space-between; padding: 4px 0; flex-wrap: wrap; gap: 4px; }
 .vs-metrics .vsk { color: #777777; }
 .vs-metrics .vsv { font-weight: 700; font-variant-numeric: tabular-nums; font-family: 'Space Grotesk', sans-serif; }
+.vsv-ctor {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.vs-email .vsv-ctor { color: #C58500; }
+.vs-wa    .vsv-ctor { color: #0B7A3B; }
+.vsv-ref {
+  width: 100%; font-size: 17px; color: #777777;
+  padding-top: 2px;
+}
 .vs-metrics .vshi {
   background: #EFEFED;
   padding: 5px 8px; border-radius: 4px;
   grid-column: 1 / -1;
+}
+
+/* ── Sección 6 · Accionables ── */
+.accion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.accion-card {
+  display: flex; gap: 16px;
+  background: #F7F7F5;
+  border: 1px solid #E0DFDB;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: flex-start;
+}
+.accion-card-wide { grid-column: 1 / -1; }
+.accion-icon { font-size: 28px; flex-shrink: 0; }
+.accion-body { flex: 1; }
+.accion-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: #777777;
+  margin-bottom: 6px;
+}
+.accion-val {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px; line-height: 1.1;
+  color: #111111;
+  margin-bottom: 8px;
+}
+.accion-desc {
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.55;
 }
 
 /* ── Barras divergentes ── */
@@ -519,7 +681,7 @@ svg.db { display: block; }
 .topnav::-webkit-scrollbar { display: none; }
 .topnav-brand {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   letter-spacing: 0.06em;
   background: linear-gradient(90deg, #DB0032 0%, #C58500 100%);
   -webkit-background-clip: text;
@@ -532,7 +694,7 @@ svg.db { display: block; }
 }
 .topnav a {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -550,15 +712,16 @@ svg.db { display: block; }
 }
 
 /* compensar altura del nav en anclas */
-.s { scroll-margin-top: 56px; }
+.s { scroll-margin-top: 60px; }
+.tl-block { scroll-margin-top: 60px; }
 
 /* ── Móvil ── */
 @media (max-width: 860px) {
   .container { padding: 16px 14px 48px; }
-  h1 { font-size: 32px; }
+  h1 { font-size: 35px; }
   .ctx-grid { grid-template-columns: 1fr; }
-  .hero-row { grid-template-columns: 1fr; }
-  .hero-val { font-size: 52px; }
+  .hero-row { grid-template-columns: 1fr 1fr; }
+  .hero-val { font-size: 55px; }
   .bench-grid { grid-template-columns: 1fr; }
   .bal-pieza { grid-template-columns: 1fr; }
   .j-body { grid-template-columns: 1fr; }
@@ -568,6 +731,9 @@ svg.db { display: block; }
   .tl-row { grid-template-columns: 1fr; }
   .vs-row { grid-template-columns: 1fr; }
   .vs-j { padding: 10px; min-height: 52px; }
+  .vs-totals-grid { grid-template-columns: 1fr; }
+  .accion-grid { grid-template-columns: 1fr; }
+  .accion-card-wide { grid-column: 1; }
 }
 </style>
 </head>
@@ -576,9 +742,11 @@ svg.db { display: block; }
       <span class="topnav-brand">MAGGI · Liga MX</span>
       <a href="#s1">Contexto</a>
       <a href="#s2">Benchmarks Mundial</a>
-      <a href="#s3">Titulares</a>
-      <a href="#s4">Evolución Jornadas</a>
+      <a href="#s3">Resultados Liga MX</a>
+      <a href="#s4-timeline">Timeline Evolución</a>
+      <a href="#s4">Resultados Jornadas</a>
       <a href="#s5">Email vs WA</a>
+      <a href="#s6">Accionables</a>
     </nav>
 <div class="container">
 <div class="head">
@@ -637,11 +805,11 @@ svg.db { display: block; }
       </div>
       
     <div class="bench-card">
-      <div class="bench-head"><span class="ico">📧</span><h3>EMAIL</h3></div>
+      <div class="bench-head"><span class="ico">📧</span><h3>EMAIL MUNDIAL</h3></div>
       <div class="bench-grid">
         <div class="bench-col">
           <div class="col-title">Agregado ponderado Mundial</div>
-          <div class="kvs"><div class="kv"><span class="k">Open Rate</span><span class="v">37.6%</span></div><div class="kv"><span class="k">CTOR</span><span class="v">1.13%</span></div><div class="kv"><span class="k">Click Rate</span><span class="v">0.43%</span></div><div class="kv"><span class="k">Unsub</span><span class="v">0.70%</span></div><div class="kv"><span class="k">Intención Nestlé total</span><span class="v">$15,472</span></div><div class="kv"><span class="k">Intención total campaña</span><span class="v">$203,842</span></div><div class="kv"><span class="k">Carritos</span><span class="v">429</span></div><div class="kv"><span class="k">Sends totales</span><span class="v">549,851</span></div></div>
+          <div class="kvs"><div class="kv"><span class="k">Open Rate</span><span class="v">37.6%</span></div><div class="kv"><span class="k">CTOR</span><span class="v">1.13%</span></div><div class="kv"><span class="k">Click Rate</span><span class="v">0.43%</span></div><div class="kv"><span class="k">Unsub</span><span class="v">0.70%</span></div><div class="kv"><span class="k">Intención Nestlé total</span><span class="v">$15,472</span></div><div class="kv"><span class="k">Intención total campaña</span><span class="v">$203,842</span></div><div class="kv"><span class="k">Penetración Nestlé</span><span class="v">7.6%</span></div><div class="kv"><span class="k">Carritos</span><span class="v">429</span></div><div class="kv"><span class="k">Sends totales</span><span class="v">549,851</span></div></div>
         </div>
         <div class="bench-col">
           <div class="col-title">Pieza más equilibrada Mundial</div>
@@ -652,7 +820,7 @@ svg.db { display: block; }
             <div class="bal-info">
               <div class="bal-name">E-P1 · Modern Cooking</div>
               <div class="bal-criterio">cumple las tres medianas (volumen · OR/%Read · CTOR/%Click)</div>
-              <div class="kvs"><div class="kv"><span class="k">Volumen envíos</span><span class="v">133,898</span></div><div class="kv"><span class="k">Open Rate</span><span class="v">37.6%</span></div><div class="kv"><span class="k">CTOR</span><span class="v">2.08%</span></div><div class="kv"><span class="k">Click Rate</span><span class="v">0.78%</span></div><div class="kv"><span class="k">Intención Nestlé</span><span class="v">$4,602</span></div></div>
+              <div class="kvs"><div class="kv"><span class="k">Open Rate</span><span class="v">37.6%</span></div><div class="kv"><span class="k">CTOR</span><span class="v">2.08%</span></div><div class="kv"><span class="k">Click Rate</span><span class="v">0.78%</span></div><div class="kv"><span class="k">Unsub</span><span class="v">0.70%</span></div><div class="kv"><span class="k">Intención Nestlé</span><span class="v">$4,602</span></div><div class="kv"><span class="k">Intención total</span><span class="v">$48,480</span></div><div class="kv"><span class="k">Penetración Nestlé</span><span class="v">9.5%</span></div><div class="kv"><span class="k">Carritos</span><span class="v">98</span></div><div class="kv"><span class="k">Volumen envíos</span><span class="v">133,898</span></div></div>
             </div>
           </div>
         </div>
@@ -660,11 +828,11 @@ svg.db { display: block; }
     </div>
       
     <div class="bench-card">
-      <div class="bench-head"><span class="ico">💬</span><h3>WHATSAPP</h3></div>
+      <div class="bench-head"><span class="ico">💬</span><h3>WHATSAPP MUNDIAL</h3></div>
       <div class="bench-grid">
         <div class="bench-col">
           <div class="col-title">Agregado ponderado Mundial</div>
-          <div class="kvs"><div class="kv"><span class="k">%Entrega</span><span class="v">76.2%</span></div><div class="kv"><span class="k">%Read / entrega</span><span class="v">59.6%</span></div><div class="kv"><span class="k">%Click / Read</span><span class="v">7.60%</span></div><div class="kv"><span class="k">Intención Nestlé total</span><span class="v">$4,059</span></div><div class="kv"><span class="k">Intención total campaña</span><span class="v">$292,739</span></div><div class="kv"><span class="k">Carritos</span><span class="v">139</span></div><div class="kv"><span class="k">Envíos totales</span><span class="v">5,269</span></div></div>
+          <div class="kvs"><div class="kv"><span class="k">%Entrega</span><span class="v">76.2%</span></div><div class="kv"><span class="k">%Read / entrega</span><span class="v">59.6%</span></div><div class="kv"><span class="k">%Click / Read</span><span class="v">7.60%</span></div><div class="kv"><span class="k">Intención Nestlé total</span><span class="v">$4,059</span></div><div class="kv"><span class="k">Intención total campaña</span><span class="v">$292,739</span></div><div class="kv"><span class="k">Penetración Nestlé</span><span class="v">1.4%</span></div><div class="kv"><span class="k">Carritos</span><span class="v">139</span></div><div class="kv"><span class="k">Envíos totales</span><span class="v">5,269</span></div></div>
         </div>
         <div class="bench-col">
           <div class="col-title">Pieza más equilibrada Mundial</div>
@@ -675,7 +843,7 @@ svg.db { display: block; }
             <div class="bal-info">
               <div class="bal-name">Semifinal B · Wa-opt-in-allsegments</div>
               <div class="bal-criterio">ninguna pieza cumple las tres medianas · se muestra la de mejor CTOR en el top de volumen</div>
-              <div class="kvs"><div class="kv"><span class="k">Volumen envíos</span><span class="v">999</span></div><div class="kv"><span class="k">%Entrega</span><span class="v">72.3%</span></div><div class="kv"><span class="k">%Read / entrega</span><span class="v">56.9%</span></div><div class="kv"><span class="k">%Click / Read</span><span class="v">10.22%</span></div><div class="kv"><span class="k">Intención Nestlé</span><span class="v">$1,368</span></div></div>
+              <div class="kvs"><div class="kv"><span class="k">%Entrega</span><span class="v">72.3%</span></div><div class="kv"><span class="k">%Read / entrega</span><span class="v">56.9%</span></div><div class="kv"><span class="k">%Click / Read</span><span class="v">10.22%</span></div><div class="kv"><span class="k">Intención Nestlé</span><span class="v">$1,368</span></div><div class="kv"><span class="k">Intención total</span><span class="v">$97,397</span></div><div class="kv"><span class="k">Penetración Nestlé</span><span class="v">1.4%</span></div><div class="kv"><span class="k">Carritos</span><span class="v">42</span></div><div class="kv"><span class="k">Envíos totales</span><span class="v">999</span></div></div>
             </div>
           </div>
         </div>
@@ -686,57 +854,64 @@ svg.db { display: block; }
       <div class="s-head">
         <div class="s-num">3</div>
         <div>
-          <h2>Titulares Liga MX hoy</h2>
-          <p class="s-q">¿Dónde estamos en CTOR e Intención Nestlé frente al benchmark?</p>
+          <h2>Resultados Liga MX</h2>
+          <p class="s-q">¿Dónde estamos en CTOR e Intención Nestlé frente al benchmark Mundial?</p>
         </div>
       </div>
       <div class="hero-row">
         <div class="hero">
           <div class="hero-lbl">CTOR Email · Liga MX</div>
-          <div class="hero-val">0.71%</div>
+          <div class="hero-val g-text">0.71%</div>
           <div class="hero-refs">
             <div class="ref">
               <span class="ref-lbl">vs Mundial pond.</span>
               <span class="ref-val">1.13%</span>
               <span class="delta bad">▼</span>
             </div>
-            <div class="ref">
-              <span class="ref-lbl">vs Mundial equilib.</span>
-              <span class="ref-val">2.08%</span>
-              <span class="delta bad">▼</span>
-            </div>
           </div>
         </div>
         <div class="hero">
           <div class="hero-lbl">%Click WA · Liga MX</div>
-          <div class="hero-val">2.32%</div>
+          <div class="hero-val g-text">2.32%</div>
           <div class="hero-refs">
             <div class="ref">
               <span class="ref-lbl">vs Mundial pond.</span>
               <span class="ref-val">7.60%</span>
               <span class="delta bad">▼</span>
             </div>
-            <div class="ref">
-              <span class="ref-lbl">vs Mundial equilib.</span>
-              <span class="ref-val">10.22%</span>
-              <span class="delta bad">▼</span>
-            </div>
           </div>
         </div>
         <div class="hero hero-mxn">
-          <div class="hero-lbl">Intención Nestlé · Liga MX (total)</div>
+          <div class="hero-lbl">Intención Nestlé · Liga MX total</div>
           <div class="hero-val">$8,146</div>
           <div class="hero-sub">
             Email $7,684 · WA $462
           </div>
           <div class="hero-refs">
             <div class="ref">
-              <span class="ref-lbl">Mundial Email</span>
+              <span class="ref-lbl">Mundial Email pond.</span>
               <span class="ref-val">$15,472</span>
             </div>
             <div class="ref">
-              <span class="ref-lbl">Mundial WA</span>
+              <span class="ref-lbl">Mundial WA pond.</span>
               <span class="ref-val">$4,059</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="hero-lbl">Penetración Nestlé · Liga MX</div>
+          <div class="hero-val g-text-red">4.4%</div>
+          <div class="hero-sub">Email · WA 2.2%</div>
+          <div class="hero-refs">
+            <div class="ref">
+              <span class="ref-lbl">vs Mundial Email pond.</span>
+              <span class="ref-val">7.6%</span>
+              <span class="delta bad">▼</span>
+            </div>
+            <div class="ref">
+              <span class="ref-lbl">vs Mundial WA pond.</span>
+              <span class="ref-val">1.4%</span>
+              <span class="delta good">▲</span>
             </div>
           </div>
         </div>
@@ -746,7 +921,7 @@ svg.db { display: block; }
       <div class="s-head">
         <div class="s-num">4</div>
         <div>
-          <h2>La evolución, jornada a jornada</h2>
+          <h2>Resultados Jornadas</h2>
           <p class="s-q">¿Cómo se movieron CTOR, Intención Nestlé y Unsub conforme cambiaron audiencia y canal?</p>
         </div>
       </div>
@@ -755,10 +930,13 @@ svg.db { display: block; }
         
     <article class="jornada" id="j-J4">
       <header class="j-head">
-        <div class="j-num">J4</div>
+        <div class="j-num"><span class="j-num-lbl">JORNADA</span><span class="j-num-n">4</span></div>
         <div class="j-title">
           <h3>15-Ago-2026</h3>
-          <p class="j-hip"><b>Prueba:</b> Prueba de audiencia por región (CON vs SIN región).</p>
+          <div class="j-hip-wrap">
+            <span class="j-prueba-badge">PRUEBA</span>
+            <p class="j-hip">Prueba de audiencia por región (CON vs SIN región).</p>
+          </div>
         </div>
       </header>
       <div class="j-body">
@@ -783,21 +961,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">CTOR</div>
             <div class="m-val">0.63%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">1.13%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Open Rate</div>
             <div class="m-val">43.8%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▲</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">37.6%</span> <span class="delta good">▲</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Unsub Rate</div>
             <div class="m-val">0.21%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">0.70%</span> <span class="delta good">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$334</div>
+            <div class="m-pen">Penetración: 4.5%</div>
             <div class="m-delta muted">Sends 7,995</div>
           </div>
         </div>
@@ -817,21 +996,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">CTOR</div>
             <div class="m-val">0.61%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">1.13%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Open Rate</div>
             <div class="m-val">43.0%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▲</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">37.6%</span> <span class="delta good">▲</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Unsub Rate</div>
             <div class="m-val">0.35%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">0.70%</span> <span class="delta good">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$5,276</div>
+            <div class="m-pen">Penetración: 4.2%</div>
             <div class="m-delta muted">Sends 128,759</div>
           </div>
         </div>
@@ -847,10 +1027,13 @@ svg.db { display: block; }
     </article>
     <article class="jornada" id="j-J5">
       <header class="j-head">
-        <div class="j-num">J5</div>
+        <div class="j-num"><span class="j-num-lbl">JORNADA</span><span class="j-num-n">5</span></div>
         <div class="j-title">
           <h3>22-Ago-2026</h3>
-          <p class="j-hip"><b>Prueba:</b> Confirmar o descartar el aprendizaje de J4 con el mismo split.</p>
+          <div class="j-hip-wrap">
+            <span class="j-prueba-badge">PRUEBA</span>
+            <p class="j-hip">Confirmar o descartar el aprendizaje de J4 con el mismo split.</p>
+          </div>
         </div>
       </header>
       <div class="j-body">
@@ -875,21 +1058,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">CTOR</div>
             <div class="m-val">0.79%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">1.13%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Open Rate</div>
             <div class="m-val">42.5%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▲</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">37.6%</span> <span class="delta good">▲</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Unsub Rate</div>
             <div class="m-val">0.11%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">0.70%</span> <span class="delta good">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$22</div>
+            <div class="m-pen">Penetración: 3.6%</div>
             <div class="m-delta muted">Sends 2,708</div>
           </div>
         </div>
@@ -909,21 +1093,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">CTOR</div>
             <div class="m-val">0.82%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">1.13%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Open Rate</div>
             <div class="m-val">42.9%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▲</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">37.6%</span> <span class="delta good">▲</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Unsub Rate</div>
             <div class="m-val">0.27%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">0.70%</span> <span class="delta good">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$0</div>
+            <div class="m-pen">Penetración: <span class="pend">pendiente</span></div>
             <div class="m-delta muted">Sends 43,188</div>
           </div>
         </div>
@@ -939,10 +1124,13 @@ svg.db { display: block; }
     </article>
     <article class="jornada" id="j-J6">
       <header class="j-head">
-        <div class="j-num">J6</div>
+        <div class="j-num"><span class="j-num-lbl">JORNADA</span><span class="j-num-n">6</span></div>
         <div class="j-title">
           <h3>28-Ago-2026</h3>
-          <p class="j-hip"><b>Prueba:</b> Unificar audiencia. Error de brief: salió solo CON región (Sur · Partición C).</p>
+          <div class="j-hip-wrap">
+            <span class="j-prueba-badge">PRUEBA</span>
+            <p class="j-hip">Unificar audiencia. Error de brief: salió solo CON región (Sur · Partición C).</p>
+          </div>
         </div>
       </header>
       <div class="j-body">
@@ -967,21 +1155,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">CTOR</div>
             <div class="m-val">0.98%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">1.13%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Open Rate</div>
             <div class="m-val">44.9%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▲</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">37.6%</span> <span class="delta good">▲</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Unsub Rate</div>
             <div class="m-val">0.26%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">0.70%</span> <span class="delta good">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$110</div>
+            <div class="m-pen">Penetración: 20.6%</div>
             <div class="m-delta muted">Sends 2,733</div>
           </div>
         </div>
@@ -997,10 +1186,13 @@ svg.db { display: block; }
     </article>
     <article class="jornada" id="j-J7">
       <header class="j-head">
-        <div class="j-num">J7</div>
+        <div class="j-num"><span class="j-num-lbl">JORNADA</span><span class="j-num-n">7</span></div>
         <div class="j-title">
           <h3>04-Sep-2026</h3>
-          <p class="j-hip"><b>Prueba:</b> Audiencia unificada (región unificada).</p>
+          <div class="j-hip-wrap">
+            <span class="j-prueba-badge">PRUEBA</span>
+            <p class="j-hip">Audiencia unificada (región unificada).</p>
+          </div>
         </div>
       </header>
       <div class="j-body">
@@ -1025,21 +1217,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">CTOR</div>
             <div class="m-val">0.83%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">1.13%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Open Rate</div>
             <div class="m-val">41.6%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▲</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">37.6%</span> <span class="delta good">▲</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Unsub Rate</div>
             <div class="m-val">0.16%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">0.70%</span> <span class="delta good">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$755</div>
+            <div class="m-pen">Penetración: 10.2%</div>
             <div class="m-delta muted">Sends 91,580</div>
           </div>
         </div>
@@ -1055,10 +1248,13 @@ svg.db { display: block; }
     </article>
     <article class="jornada" id="j-J8">
       <header class="j-head">
-        <div class="j-num">J8</div>
+        <div class="j-num"><span class="j-num-lbl">JORNADA</span><span class="j-num-n">8</span></div>
         <div class="j-title">
           <h3>12-Sep-2026</h3>
-          <p class="j-hip"><b>Prueba:</b> Email vs WhatsApp: comparar CTOR entre canales y contra Mundial.</p>
+          <div class="j-hip-wrap">
+            <span class="j-prueba-badge">PRUEBA</span>
+            <p class="j-hip">Email vs WhatsApp: comparar CTOR entre canales y contra Mundial.</p>
+          </div>
         </div>
       </header>
       <div class="j-body">
@@ -1083,21 +1279,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">CTOR</div>
             <div class="m-val">0.75%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">1.13%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Open Rate</div>
             <div class="m-val">40.1%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▲</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">37.6%</span> <span class="delta good">▲</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Unsub Rate</div>
             <div class="m-val">0.08%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">0.70%</span> <span class="delta good">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$44</div>
+            <div class="m-pen">Penetración: 3.2%</div>
             <div class="m-delta muted">Sends 38,168</div>
           </div>
         </div>
@@ -1117,21 +1314,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">% Click / Read</div>
             <div class="m-val">0.53%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">7.60%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">% Entrega</div>
             <div class="m-val">81.5%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▲</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">76.2%</span> <span class="delta good">▲</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">% Read / entrega</div>
             <div class="m-val">59.3%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">59.6%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$22</div>
+            <div class="m-pen">Penetración: 0.4%</div>
             <div class="m-delta muted">Envíos 1,962</div>
           </div>
         </div>
@@ -1147,10 +1345,13 @@ svg.db { display: block; }
     </article>
     <article class="jornada" id="j-J9">
       <header class="j-head">
-        <div class="j-num">J9</div>
+        <div class="j-num"><span class="j-num-lbl">JORNADA</span><span class="j-num-n">9</span></div>
         <div class="j-title">
           <h3>16 y 19-Sep-2026</h3>
-          <p class="j-hip"><b>Prueba:</b> Continuidad Email vs WhatsApp con Partición B.</p>
+          <div class="j-hip-wrap">
+            <span class="j-prueba-badge">PRUEBA</span>
+            <p class="j-hip">Continuidad Email vs WhatsApp con Partición B.</p>
+          </div>
         </div>
       </header>
       <div class="j-body">
@@ -1175,21 +1376,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">CTOR</div>
             <div class="m-val">0.57%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta bad">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">1.13%</span> <span class="delta bad">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Open Rate</div>
             <div class="m-val">37.9%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▲</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">37.6%</span> <span class="delta good">▲</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Unsub Rate</div>
             <div class="m-val">0.07%</div>
-            <div class="m-delta">vs Mundial pond. <span class="delta good">▼</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">0.70%</span> <span class="delta good">▼</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$1,143</div>
+            <div class="m-pen">Penetración: 3.9%</div>
             <div class="m-delta muted">Sends 40,130</div>
           </div>
         </div>
@@ -1209,21 +1411,22 @@ svg.db { display: block; }
           <div class="metric">
             <div class="m-lbl">% Click / Read</div>
             <div class="m-val"><span class="pend">pendiente</span></div>
-            <div class="m-delta">vs Mundial pond. <span class="delta pend">—</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">7.60%</span> <span class="delta pend">—</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">% Entrega</div>
             <div class="m-val"><span class="pend">pendiente</span></div>
-            <div class="m-delta">vs Mundial pond. <span class="delta pend">—</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">76.2%</span> <span class="delta pend">—</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">% Read / entrega</div>
             <div class="m-val"><span class="pend">pendiente</span></div>
-            <div class="m-delta">vs Mundial pond. <span class="delta pend">—</span></div>
+            <div class="m-delta">vs M.pond. <span class="ref-num">59.6%</span> <span class="delta pend">—</span></div>
           </div>
           <div class="metric">
             <div class="m-lbl">Intención Nestlé</div>
             <div class="m-val">$440</div>
+            <div class="m-pen">Penetración: 2.9%</div>
             <div class="m-delta muted">Envíos <span class="pend">pendiente</span></div>
           </div>
         </div>
@@ -1239,10 +1442,13 @@ svg.db { display: block; }
     </article>
     <article class="jornada" id="j-J10">
       <header class="j-head">
-        <div class="j-num">J10</div>
+        <div class="j-num"><span class="j-num-lbl">JORNADA</span><span class="j-num-n">10</span></div>
         <div class="j-title">
           <h3>por definir</h3>
-          <p class="j-hip"><b>Prueba:</b> Continuidad Email vs WhatsApp.</p>
+          <div class="j-hip-wrap">
+            <span class="j-prueba-badge">PRUEBA</span>
+            <p class="j-hip">Continuidad Email vs WhatsApp.</p>
+          </div>
         </div>
       </header>
       <div class="j-body">
@@ -1287,10 +1493,13 @@ svg.db { display: block; }
     </article>
     <article class="jornada" id="j-SNM1">
       <header class="j-head">
-        <div class="j-num">SNM1</div>
+        <div class="j-num"><span class="j-num-lbl">SNM</span><span class="j-num-n">1</span></div>
         <div class="j-title">
           <h3>por definir</h3>
-          <p class="j-hip"><b>Prueba:</b> Solo WhatsApp, al no observar resultados suficientes en Email.</p>
+          <div class="j-hip-wrap">
+            <span class="j-prueba-badge">PRUEBA</span>
+            <p class="j-hip">Solo WhatsApp, al no observar resultados suficientes en Email.</p>
+          </div>
         </div>
       </header>
       <div class="j-body">
@@ -1323,40 +1532,40 @@ svg.db { display: block; }
     </article>
       </div>
 
-      <div class="tl-block">
-        <h3>Timeline de evolución</h3>
+      <div class="tl-block" id="s4-timeline">
+        <h3>Timeline de Evolución</h3>
         <p class="tl-sub">Cada punto es el agregado de la jornada (cociente de totales). Líneas rojas: benchmark Mundial · continua = ponderado · punteada = pieza equilibrada.</p>
 
         <div class="tl-row">
           <div class="tl-card">
             <div class="tl-title">CTOR · Email</div>
-            <svg class="tl" width="680" height="140" viewBox="0 0 680 140"><rect width="680" height="140" fill="#EFEFED" rx="4"/><line x1="50" y1="18" x2="50" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="50" y1="110" x2="640" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="47" y1="110.0" x2="50" y2="110.0" stroke="#777777" stroke-width="1"/><text x="44" y="113.0" text-anchor="end" font-size="9" fill="#777777">0.0%</text><line x1="47" y1="64.0" x2="50" y2="64.0" stroke="#777777" stroke-width="1"/><text x="44" y="67.0" text-anchor="end" font-size="9" fill="#777777">1.2%</text><line x1="47" y1="18.0" x2="50" y2="18.0" stroke="#777777" stroke-width="1"/><text x="44" y="21.0" text-anchor="end" font-size="9" fill="#777777">2.4%</text><line x1="50" y1="66.49607016730177" x2="640" y2="66.49607016730177" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="644" y="69.49607016730177" font-size="9" fill="#DB0032">Mundial pond. 1.1%</text><line x1="50" y1="30.0" x2="640" y2="30.0" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="644" y="33.0" font-size="9" fill="#DB0032" opacity="0.85">equilib. 2.1%</text><line x1="50.0" y1="86.48936723568642" x2="148.33333333333331" y2="78.7354660048395" stroke="#C58500" stroke-width="2"/><line x1="148.33333333333331" y1="78.7354660048395" x2="246.66666666666666" y2="72.24230920072162" stroke="#C58500" stroke-width="2"/><line x1="246.66666666666666" y1="72.24230920072162" x2="345.0" y2="78.1805826329216" stroke="#C58500" stroke-width="2"/><line x1="345.0" y1="78.1805826329216" x2="443.3333333333333" y2="81.19270381386107" stroke="#C58500" stroke-width="2"/><line x1="443.3333333333333" y1="81.19270381386107" x2="541.6666666666667" y2="88.108217735078" stroke="#C58500" stroke-width="2"/><circle cx="50.0" cy="86.48936723568642" r="4" fill="#C58500"/><text x="50.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J4</text><circle cx="148.33333333333331" cy="78.7354660048395" r="4" fill="#C58500"/><text x="148.33333333333331" y="132" text-anchor="middle" font-size="10" fill="#111111">J5</text><circle cx="246.66666666666666" cy="72.24230920072162" r="4" fill="#C58500"/><text x="246.66666666666666" y="64.24230920072162" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">1.0%</text><text x="246.66666666666666" y="132" text-anchor="middle" font-size="10" fill="#111111">J6</text><circle cx="345.0" cy="78.1805826329216" r="4" fill="#C58500"/><text x="345.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J7</text><circle cx="443.3333333333333" cy="81.19270381386107" r="4" fill="#C58500"/><text x="443.3333333333333" y="132" text-anchor="middle" font-size="10" fill="#111111">J8</text><circle cx="541.6666666666667" cy="88.108217735078" r="4" fill="#C58500"/><text x="541.6666666666667" y="104.108217735078" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">0.6%</text><text x="541.6666666666667" y="132" text-anchor="middle" font-size="10" fill="#111111">J9</text><circle cx="640.0" cy="104" r="4" fill="#FFFFFF" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/><text x="640.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J10</text></svg>
+            <svg class="tl" width="680" height="160" viewBox="0 0 680 160"><rect width="680" height="160" fill="#EFEFED" rx="4"/><line x1="58" y1="22" x2="58" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="58" y1="124" x2="630" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="54" y1="124.0" x2="58" y2="124.0" stroke="#777777" stroke-width="1"/><text x="51" y="128.0" text-anchor="end" font-size="12" fill="#777777">0.0%</text><line x1="54" y1="73.0" x2="58" y2="73.0" stroke="#777777" stroke-width="1"/><text x="51" y="77.0" text-anchor="end" font-size="12" fill="#777777">1.2%</text><line x1="54" y1="22.0" x2="58" y2="22.0" stroke="#777777" stroke-width="1"/><text x="51" y="26.0" text-anchor="end" font-size="12" fill="#777777">2.4%</text><line x1="58" y1="75.76738214200847" x2="630" y2="75.76738214200847" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="635" y="79.76738214200847" font-size="12" fill="#DB0032">M.pond. 1.1%</text><line x1="58" y1="35.30434782608695" x2="630" y2="35.30434782608695" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="635" y="39.30434782608695" font-size="12" fill="#DB0032" opacity="0.85">M.equilib. 2.1%</text><line x1="58.0" y1="97.93386367434798" x2="153.33333333333331" y2="89.33714709232204" stroke="#C58500" stroke-width="2.5"/><line x1="153.33333333333331" y1="89.33714709232204" x2="248.66666666666666" y2="82.1382123747131" stroke="#C58500" stroke-width="2.5"/><line x1="248.66666666666666" y1="82.1382123747131" x2="344.0" y2="88.72195031041309" stroke="#C58500" stroke-width="2.5"/><line x1="344.0" y1="88.72195031041309" x2="439.3333333333333" y2="92.06147596754163" stroke="#C58500" stroke-width="2.5"/><line x1="439.3333333333333" y1="92.06147596754163" x2="534.6666666666667" y2="99.72867618454299" stroke="#C58500" stroke-width="2.5"/><circle cx="58.0" cy="97.93386367434798" r="5" fill="#C58500"/><text x="58.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J4</text><circle cx="153.33333333333331" cy="89.33714709232204" r="5" fill="#C58500"/><text x="153.33333333333331" y="152" text-anchor="middle" font-size="13" fill="#111111">J5</text><circle cx="248.66666666666666" cy="82.1382123747131" r="5" fill="#C58500"/><text x="248.66666666666666" y="72.1382123747131" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">1.0%</text><text x="248.66666666666666" y="152" text-anchor="middle" font-size="13" fill="#111111">J6</text><circle cx="344.0" cy="88.72195031041309" r="5" fill="#C58500"/><text x="344.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J7</text><circle cx="439.3333333333333" cy="92.06147596754163" r="5" fill="#C58500"/><text x="439.3333333333333" y="152" text-anchor="middle" font-size="13" fill="#111111">J8</text><circle cx="534.6666666666667" cy="99.72867618454299" r="5" fill="#C58500"/><text x="534.6666666666667" y="118.72867618454299" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">0.6%</text><text x="534.6666666666667" y="152" text-anchor="middle" font-size="13" fill="#111111">J9</text><circle cx="630.0" cy="116" r="5" fill="#FFFFFF" stroke="#777777" stroke-width="1.5" stroke-dasharray="2,2"/><text x="630.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J10</text></svg>
           </div>
           <div class="tl-card">
             <div class="tl-title">% Click / Read · WhatsApp</div>
-            <svg class="tl" width="680" height="140" viewBox="0 0 680 140"><rect width="680" height="140" fill="#EFEFED" rx="4"/><line x1="50" y1="18" x2="50" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="50" y1="110" x2="640" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="47" y1="110.0" x2="50" y2="110.0" stroke="#777777" stroke-width="1"/><text x="44" y="113.0" text-anchor="end" font-size="9" fill="#777777">0.0%</text><line x1="47" y1="64.0" x2="50" y2="64.0" stroke="#777777" stroke-width="1"/><text x="44" y="67.0" text-anchor="end" font-size="9" fill="#777777">5.9%</text><line x1="47" y1="18.0" x2="50" y2="18.0" stroke="#777777" stroke-width="1"/><text x="44" y="21.0" text-anchor="end" font-size="9" fill="#777777">11.8%</text><line x1="50" y1="50.50939457202505" x2="640" y2="50.50939457202505" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="644" y="53.50939457202505" font-size="9" fill="#DB0032">Mundial pond. 7.6%</text><line x1="50" y1="30.0" x2="640" y2="30.0" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="644" y="33.0" font-size="9" fill="#DB0032" opacity="0.85">equilib. 10.2%</text><circle cx="50.0" cy="105.87535751919313" r="4" fill="#C58500"/><text x="50.0" y="97.87535751919313" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">0.5%</text><text x="50.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J8</text><circle cx="246.66666666666666" cy="104" r="4" fill="#FFFFFF" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/><text x="246.66666666666666" y="132" text-anchor="middle" font-size="10" fill="#111111">J9</text><circle cx="443.3333333333333" cy="104" r="4" fill="#FFFFFF" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/><text x="443.3333333333333" y="132" text-anchor="middle" font-size="10" fill="#111111">J10</text><circle cx="640.0" cy="104" r="4" fill="#FFFFFF" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/><text x="640.0" y="132" text-anchor="middle" font-size="10" fill="#111111">SNM1</text></svg>
+            <svg class="tl" width="680" height="160" viewBox="0 0 680 160"><rect width="680" height="160" fill="#EFEFED" rx="4"/><line x1="58" y1="22" x2="58" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="58" y1="124" x2="630" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="54" y1="124.0" x2="58" y2="124.0" stroke="#777777" stroke-width="1"/><text x="51" y="128.0" text-anchor="end" font-size="12" fill="#777777">0.0%</text><line x1="54" y1="73.0" x2="58" y2="73.0" stroke="#777777" stroke-width="1"/><text x="51" y="77.0" text-anchor="end" font-size="12" fill="#777777">5.9%</text><line x1="54" y1="22.0" x2="58" y2="22.0" stroke="#777777" stroke-width="1"/><text x="51" y="26.0" text-anchor="end" font-size="12" fill="#777777">11.8%</text><line x1="58" y1="58.04302441681038" x2="630" y2="58.04302441681038" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="635" y="62.04302441681038" font-size="12" fill="#DB0032">M.pond. 7.6%</text><line x1="58" y1="35.30434782608695" x2="630" y2="35.30434782608695" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="635" y="39.30434782608695" font-size="12" fill="#DB0032" opacity="0.85">M.equilib. 10.2%</text><circle cx="58.0" cy="119.42702681475761" r="5" fill="#C58500"/><text x="58.0" y="109.42702681475761" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">0.5%</text><text x="58.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J8</text><circle cx="248.66666666666666" cy="116" r="5" fill="#FFFFFF" stroke="#777777" stroke-width="1.5" stroke-dasharray="2,2"/><text x="248.66666666666666" y="152" text-anchor="middle" font-size="13" fill="#111111">J9</text><circle cx="439.3333333333333" cy="116" r="5" fill="#FFFFFF" stroke="#777777" stroke-width="1.5" stroke-dasharray="2,2"/><text x="439.3333333333333" y="152" text-anchor="middle" font-size="13" fill="#111111">J10</text><circle cx="630.0" cy="116" r="5" fill="#FFFFFF" stroke="#777777" stroke-width="1.5" stroke-dasharray="2,2"/><text x="630.0" y="152" text-anchor="middle" font-size="13" fill="#111111">SNM1</text></svg>
           </div>
         </div>
 
         <div class="tl-row">
           <div class="tl-card">
             <div class="tl-title">Intención Nestlé · Email (MXN)</div>
-            <svg class="tl" width="680" height="140" viewBox="0 0 680 140"><rect width="680" height="140" fill="#EFEFED" rx="4"/><line x1="50" y1="18" x2="50" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="50" y1="110" x2="640" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="47" y1="110.0" x2="50" y2="110.0" stroke="#777777" stroke-width="1"/><text x="44" y="113.0" text-anchor="end" font-size="9" fill="#777777">$0</text><line x1="47" y1="64.0" x2="50" y2="64.0" stroke="#777777" stroke-width="1"/><text x="44" y="67.0" text-anchor="end" font-size="9" fill="#777777">$8,896</text><line x1="47" y1="18.0" x2="50" y2="18.0" stroke="#777777" stroke-width="1"/><text x="44" y="21.0" text-anchor="end" font-size="9" fill="#777777">$17,792</text><line x1="50" y1="29.999999999999986" x2="640" y2="29.999999999999986" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="644" y="32.999999999999986" font-size="9" fill="#DB0032">Mundial pond. $15,472</text><line x1="50" y1="86.20398797789483" x2="640" y2="86.20398797789483" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="644" y="89.20398797789483" font-size="9" fill="#DB0032" opacity="0.85">equilib. $4,602</text><line x1="50.0" y1="80.99182367579097" x2="148.33333333333331" y2="109.88624244578742" stroke="#C58500" stroke-width="2"/><line x1="148.33333333333331" y1="109.88624244578742" x2="246.66666666666666" y2="109.43121222893708" stroke="#C58500" stroke-width="2"/><line x1="246.66666666666666" y1="109.43121222893708" x2="345.0" y2="106.09604757134085" stroke="#C58500" stroke-width="2"/><line x1="345.0" y1="106.09604757134085" x2="443.3333333333333" y2="109.77248489157483" stroke="#C58500" stroke-width="2"/><line x1="443.3333333333333" y1="109.77248489157483" x2="541.6666666666667" y2="104.08977797886436" stroke="#C58500" stroke-width="2"/><circle cx="50.0" cy="80.99182367579097" r="4" fill="#C58500"/><text x="50.0" y="72.99182367579097" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">$5,610</text><text x="50.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J4</text><circle cx="148.33333333333331" cy="109.88624244578742" r="4" fill="#C58500"/><text x="148.33333333333331" y="125.88624244578742" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">$22</text><text x="148.33333333333331" y="132" text-anchor="middle" font-size="10" fill="#111111">J5</text><circle cx="246.66666666666666" cy="109.43121222893708" r="4" fill="#C58500"/><text x="246.66666666666666" y="132" text-anchor="middle" font-size="10" fill="#111111">J6</text><circle cx="345.0" cy="106.09604757134085" r="4" fill="#C58500"/><text x="345.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J7</text><circle cx="443.3333333333333" cy="109.77248489157483" r="4" fill="#C58500"/><text x="443.3333333333333" y="132" text-anchor="middle" font-size="10" fill="#111111">J8</text><circle cx="541.6666666666667" cy="104.08977797886436" r="4" fill="#C58500"/><text x="541.6666666666667" y="132" text-anchor="middle" font-size="10" fill="#111111">J9</text><circle cx="640.0" cy="104" r="4" fill="#FFFFFF" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/><text x="640.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J10</text></svg>
+            <svg class="tl" width="680" height="160" viewBox="0 0 680 160"><rect width="680" height="160" fill="#EFEFED" rx="4"/><line x1="58" y1="22" x2="58" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="58" y1="124" x2="630" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="54" y1="124.0" x2="58" y2="124.0" stroke="#777777" stroke-width="1"/><text x="51" y="128.0" text-anchor="end" font-size="12" fill="#777777">$0</text><line x1="54" y1="73.0" x2="58" y2="73.0" stroke="#777777" stroke-width="1"/><text x="51" y="77.0" text-anchor="end" font-size="12" fill="#777777">$8,896</text><line x1="54" y1="22.0" x2="58" y2="22.0" stroke="#777777" stroke-width="1"/><text x="51" y="26.0" text-anchor="end" font-size="12" fill="#777777">$17,792</text><line x1="58" y1="35.30434782608695" x2="630" y2="35.30434782608695" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="635" y="39.30434782608695" font-size="12" fill="#DB0032">M.pond. $15,472</text><line x1="58" y1="97.61746493201383" x2="630" y2="97.61746493201383" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="635" y="101.61746493201383" font-size="12" fill="#DB0032" opacity="0.85">M.equilib. $4,602</text><line x1="58.0" y1="91.8387610318552" x2="153.33333333333331" y2="123.87387749424256" stroke="#C58500" stroke-width="2.5"/><line x1="153.33333333333331" y1="123.87387749424256" x2="248.66666666666666" y2="123.36938747121285" stroke="#C58500" stroke-width="2.5"/><line x1="248.66666666666666" y1="123.36938747121285" x2="344.0" y2="119.67170491605181" stroke="#C58500" stroke-width="2.5"/><line x1="344.0" y1="119.67170491605181" x2="439.3333333333333" y2="123.74775498848514" stroke="#C58500" stroke-width="2.5"/><line x1="439.3333333333333" y1="123.74775498848514" x2="534.6666666666667" y2="117.4473625417844" stroke="#C58500" stroke-width="2.5"/><circle cx="58.0" cy="91.8387610318552" r="5" fill="#C58500"/><text x="58.0" y="81.8387610318552" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">$5,610</text><text x="58.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J4</text><circle cx="153.33333333333331" cy="123.87387749424256" r="5" fill="#C58500"/><text x="153.33333333333331" y="142.87387749424255" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">$22</text><text x="153.33333333333331" y="152" text-anchor="middle" font-size="13" fill="#111111">J5</text><circle cx="248.66666666666666" cy="123.36938747121285" r="5" fill="#C58500"/><text x="248.66666666666666" y="152" text-anchor="middle" font-size="13" fill="#111111">J6</text><circle cx="344.0" cy="119.67170491605181" r="5" fill="#C58500"/><text x="344.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J7</text><circle cx="439.3333333333333" cy="123.74775498848514" r="5" fill="#C58500"/><text x="439.3333333333333" y="152" text-anchor="middle" font-size="13" fill="#111111">J8</text><circle cx="534.6666666666667" cy="117.4473625417844" r="5" fill="#C58500"/><text x="534.6666666666667" y="152" text-anchor="middle" font-size="13" fill="#111111">J9</text><circle cx="630.0" cy="116" r="5" fill="#FFFFFF" stroke="#777777" stroke-width="1.5" stroke-dasharray="2,2"/><text x="630.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J10</text></svg>
           </div>
           <div class="tl-card">
             <div class="tl-title">Intención Nestlé · WhatsApp (MXN)</div>
-            <svg class="tl" width="680" height="140" viewBox="0 0 680 140"><rect width="680" height="140" fill="#EFEFED" rx="4"/><line x1="50" y1="18" x2="50" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="50" y1="110" x2="640" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="47" y1="110.0" x2="50" y2="110.0" stroke="#777777" stroke-width="1"/><text x="44" y="113.0" text-anchor="end" font-size="9" fill="#777777">$0</text><line x1="47" y1="64.0" x2="50" y2="64.0" stroke="#777777" stroke-width="1"/><text x="44" y="67.0" text-anchor="end" font-size="9" fill="#777777">$2,334</text><line x1="47" y1="18.0" x2="50" y2="18.0" stroke="#777777" stroke-width="1"/><text x="44" y="21.0" text-anchor="end" font-size="9" fill="#777777">$4,668</text><line x1="50" y1="30.0" x2="640" y2="30.0" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="644" y="33.0" font-size="9" fill="#DB0032">Mundial pond. $4,059</text><line x1="50" y1="83.03769401330376" x2="640" y2="83.03769401330376" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="644" y="86.03769401330376" font-size="9" fill="#DB0032" opacity="0.85">equilib. $1,368</text><line x1="50.0" y1="109.56639566395664" x2="246.66666666666666" y2="101.32791327913279" stroke="#C58500" stroke-width="2"/><circle cx="50.0" cy="109.56639566395664" r="4" fill="#C58500"/><text x="50.0" y="125.56639566395664" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">$22</text><text x="50.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J8</text><circle cx="246.66666666666666" cy="101.32791327913279" r="4" fill="#C58500"/><text x="246.66666666666666" y="93.32791327913279" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">$440</text><text x="246.66666666666666" y="132" text-anchor="middle" font-size="10" fill="#111111">J9</text><circle cx="443.3333333333333" cy="104" r="4" fill="#FFFFFF" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/><text x="443.3333333333333" y="132" text-anchor="middle" font-size="10" fill="#111111">J10</text><circle cx="640.0" cy="104" r="4" fill="#FFFFFF" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/><text x="640.0" y="132" text-anchor="middle" font-size="10" fill="#111111">SNM1</text></svg>
+            <svg class="tl" width="680" height="160" viewBox="0 0 680 160"><rect width="680" height="160" fill="#EFEFED" rx="4"/><line x1="58" y1="22" x2="58" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="58" y1="124" x2="630" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="54" y1="124.0" x2="58" y2="124.0" stroke="#777777" stroke-width="1"/><text x="51" y="128.0" text-anchor="end" font-size="12" fill="#777777">$0</text><line x1="54" y1="73.0" x2="58" y2="73.0" stroke="#777777" stroke-width="1"/><text x="51" y="77.0" text-anchor="end" font-size="12" fill="#777777">$2,334</text><line x1="54" y1="22.0" x2="58" y2="22.0" stroke="#777777" stroke-width="1"/><text x="51" y="26.0" text-anchor="end" font-size="12" fill="#777777">$4,668</text><line x1="58" y1="35.30434782608695" x2="630" y2="35.30434782608695" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="635" y="39.30434782608695" font-size="12" fill="#DB0032">M.pond. $4,059</text><line x1="58" y1="94.10700857996723" x2="630" y2="94.10700857996723" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="635" y="98.10700857996723" font-size="12" fill="#DB0032" opacity="0.85">M.equilib. $1,368</text><line x1="58.0" y1="123.51926475786497" x2="248.66666666666666" y2="114.3852951572994" stroke="#C58500" stroke-width="2.5"/><circle cx="58.0" cy="123.51926475786497" r="5" fill="#C58500"/><text x="58.0" y="142.51926475786496" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">$22</text><text x="58.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J8</text><circle cx="248.66666666666666" cy="114.3852951572994" r="5" fill="#C58500"/><text x="248.66666666666666" y="104.3852951572994" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">$440</text><text x="248.66666666666666" y="152" text-anchor="middle" font-size="13" fill="#111111">J9</text><circle cx="439.3333333333333" cy="116" r="5" fill="#FFFFFF" stroke="#777777" stroke-width="1.5" stroke-dasharray="2,2"/><text x="439.3333333333333" y="152" text-anchor="middle" font-size="13" fill="#111111">J10</text><circle cx="630.0" cy="116" r="5" fill="#FFFFFF" stroke="#777777" stroke-width="1.5" stroke-dasharray="2,2"/><text x="630.0" y="152" text-anchor="middle" font-size="13" fill="#111111">SNM1</text></svg>
           </div>
         </div>
 
         <div class="tl-row">
           <div class="tl-card">
             <div class="tl-title">Unsub Rate · Email</div>
-            <svg class="tl" width="680" height="140" viewBox="0 0 680 140"><rect width="680" height="140" fill="#EFEFED" rx="4"/><line x1="50" y1="18" x2="50" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="50" y1="110" x2="640" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="47" y1="110.0" x2="50" y2="110.0" stroke="#777777" stroke-width="1"/><text x="44" y="113.0" text-anchor="end" font-size="9" fill="#777777">0.0%</text><line x1="47" y1="64.0" x2="50" y2="64.0" stroke="#777777" stroke-width="1"/><text x="44" y="67.0" text-anchor="end" font-size="9" fill="#777777">0.4%</text><line x1="47" y1="18.0" x2="50" y2="18.0" stroke="#777777" stroke-width="1"/><text x="44" y="21.0" text-anchor="end" font-size="9" fill="#777777">0.8%</text><line x1="50" y1="30.0" x2="640" y2="30.0" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="644" y="33.0" font-size="9" fill="#DB0032">Mundial pond. 0.7%</text><line x1="50" y1="30.443238067982918" x2="640" y2="30.443238067982918" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="644" y="33.44323806798292" font-size="9" fill="#DB0032" opacity="0.85">equilib. 0.7%</text><line x1="50.0" y1="71.36312203975162" x2="148.33333333333331" y2="80.06677883475896" stroke="#C58500" stroke-width="2"/><line x1="148.33333333333331" y1="80.06677883475896" x2="246.66666666666666" y2="80.53416396764406" stroke="#C58500" stroke-width="2"/><line x1="246.66666666666666" y1="80.53416396764406" x2="345.0" y2="91.17942847174447" stroke="#C58500" stroke-width="2"/><line x1="345.0" y1="91.17942847174447" x2="443.3333333333333" y2="100.94579521616052" stroke="#C58500" stroke-width="2"/><line x1="443.3333333333333" y1="100.94579521616052" x2="541.6666666666667" y2="102.24489754107726" stroke="#C58500" stroke-width="2"/><circle cx="50.0" cy="71.36312203975162" r="4" fill="#C58500"/><text x="50.0" y="63.363122039751616" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">0.3%</text><text x="50.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J4</text><circle cx="148.33333333333331" cy="80.06677883475896" r="4" fill="#C58500"/><text x="148.33333333333331" y="132" text-anchor="middle" font-size="10" fill="#111111">J5</text><circle cx="246.66666666666666" cy="80.53416396764406" r="4" fill="#C58500"/><text x="246.66666666666666" y="132" text-anchor="middle" font-size="10" fill="#111111">J6</text><circle cx="345.0" cy="91.17942847174447" r="4" fill="#C58500"/><text x="345.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J7</text><circle cx="443.3333333333333" cy="100.94579521616052" r="4" fill="#C58500"/><text x="443.3333333333333" y="132" text-anchor="middle" font-size="10" fill="#111111">J8</text><circle cx="541.6666666666667" cy="102.24489754107726" r="4" fill="#C58500"/><text x="541.6666666666667" y="118.24489754107726" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">0.1%</text><text x="541.6666666666667" y="132" text-anchor="middle" font-size="10" fill="#111111">J9</text><circle cx="640.0" cy="104" r="4" fill="#FFFFFF" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/><text x="640.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J10</text></svg>
+            <svg class="tl" width="680" height="160" viewBox="0 0 680 160"><rect width="680" height="160" fill="#EFEFED" rx="4"/><line x1="58" y1="22" x2="58" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="58" y1="124" x2="630" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="54" y1="124.0" x2="58" y2="124.0" stroke="#777777" stroke-width="1"/><text x="51" y="128.0" text-anchor="end" font-size="12" fill="#777777">0.0%</text><line x1="54" y1="73.0" x2="58" y2="73.0" stroke="#777777" stroke-width="1"/><text x="51" y="77.0" text-anchor="end" font-size="12" fill="#777777">0.4%</text><line x1="54" y1="22.0" x2="58" y2="22.0" stroke="#777777" stroke-width="1"/><text x="51" y="26.0" text-anchor="end" font-size="12" fill="#777777">0.8%</text><line x1="58" y1="35.30434782608695" x2="630" y2="35.30434782608695" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="635" y="39.30434782608695" font-size="12" fill="#DB0032">M.pond. 0.7%</text><line x1="58" y1="35.79576394493759" x2="630" y2="35.79576394493759" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="635" y="39.79576394493759" font-size="12" fill="#DB0032" opacity="0.85">M.equilib. 0.7%</text><line x1="58.0" y1="81.16346139189852" x2="153.33333333333331" y2="90.81316783853711" stroke="#C58500" stroke-width="2.5"/><line x1="153.33333333333331" y1="90.81316783853711" x2="248.66666666666666" y2="91.33135570325754" stroke="#C58500" stroke-width="2.5"/><line x1="248.66666666666666" y1="91.33135570325754" x2="344.0" y2="103.13371417519495" stroke="#C58500" stroke-width="2.5"/><line x1="344.0" y1="103.13371417519495" x2="439.3333333333333" y2="113.96164252226492" stroke="#C58500" stroke-width="2.5"/><line x1="439.3333333333333" y1="113.96164252226492" x2="534.6666666666667" y2="115.40195162162914" stroke="#C58500" stroke-width="2.5"/><circle cx="58.0" cy="81.16346139189852" r="5" fill="#C58500"/><text x="58.0" y="71.16346139189852" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">0.3%</text><text x="58.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J4</text><circle cx="153.33333333333331" cy="90.81316783853711" r="5" fill="#C58500"/><text x="153.33333333333331" y="152" text-anchor="middle" font-size="13" fill="#111111">J5</text><circle cx="248.66666666666666" cy="91.33135570325754" r="5" fill="#C58500"/><text x="248.66666666666666" y="152" text-anchor="middle" font-size="13" fill="#111111">J6</text><circle cx="344.0" cy="103.13371417519495" r="5" fill="#C58500"/><text x="344.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J7</text><circle cx="439.3333333333333" cy="113.96164252226492" r="5" fill="#C58500"/><text x="439.3333333333333" y="152" text-anchor="middle" font-size="13" fill="#111111">J8</text><circle cx="534.6666666666667" cy="115.40195162162914" r="5" fill="#C58500"/><text x="534.6666666666667" y="134.40195162162914" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">0.1%</text><text x="534.6666666666667" y="152" text-anchor="middle" font-size="13" fill="#111111">J9</text><circle cx="630.0" cy="116" r="5" fill="#FFFFFF" stroke="#777777" stroke-width="1.5" stroke-dasharray="2,2"/><text x="630.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J10</text></svg>
           </div>
           <div class="tl-card">
             <div class="tl-title">Open Rate · Email</div>
-            <svg class="tl" width="680" height="140" viewBox="0 0 680 140"><rect width="680" height="140" fill="#EFEFED" rx="4"/><line x1="50" y1="18" x2="50" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="50" y1="110" x2="640" y2="110" stroke="#E0DFDB" stroke-width="1"/><line x1="47" y1="110.0" x2="50" y2="110.0" stroke="#777777" stroke-width="1"/><text x="44" y="113.0" text-anchor="end" font-size="9" fill="#777777">0.0%</text><line x1="47" y1="64.0" x2="50" y2="64.0" stroke="#777777" stroke-width="1"/><text x="44" y="67.0" text-anchor="end" font-size="9" fill="#777777">25.8%</text><line x1="47" y1="18.0" x2="50" y2="18.0" stroke="#777777" stroke-width="1"/><text x="44" y="21.0" text-anchor="end" font-size="9" fill="#777777">51.7%</text><line x1="50" y1="43.08970474077755" x2="640" y2="43.08970474077755" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="644" y="46.08970474077755" font-size="9" fill="#DB0032">Mundial pond. 37.6%</text><line x1="50" y1="42.962608577407536" x2="640" y2="42.962608577407536" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="644" y="45.962608577407536" font-size="9" fill="#DB0032" opacity="0.85">equilib. 37.6%</text><line x1="50.0" y1="33.25806906346551" x2="148.33333333333331" y2="33.663249294570136" stroke="#C58500" stroke-width="2"/><line x1="148.33333333333331" y1="33.663249294570136" x2="246.66666666666666" y2="30.0" stroke="#C58500" stroke-width="2"/><line x1="246.66666666666666" y1="30.0" x2="345.0" y2="35.95897672274718" stroke="#C58500" stroke-width="2"/><line x1="345.0" y1="35.95897672274718" x2="443.3333333333333" y2="38.579176982621604" stroke="#C58500" stroke-width="2"/><line x1="443.3333333333333" y1="38.579176982621604" x2="541.6666666666667" y2="42.52629688753582" stroke="#C58500" stroke-width="2"/><circle cx="50.0" cy="33.25806906346551" r="4" fill="#C58500"/><text x="50.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J4</text><circle cx="148.33333333333331" cy="33.663249294570136" r="4" fill="#C58500"/><text x="148.33333333333331" y="132" text-anchor="middle" font-size="10" fill="#111111">J5</text><circle cx="246.66666666666666" cy="30.0" r="4" fill="#C58500"/><text x="246.66666666666666" y="22.0" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">44.9%</text><text x="246.66666666666666" y="132" text-anchor="middle" font-size="10" fill="#111111">J6</text><circle cx="345.0" cy="35.95897672274718" r="4" fill="#C58500"/><text x="345.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J7</text><circle cx="443.3333333333333" cy="38.579176982621604" r="4" fill="#C58500"/><text x="443.3333333333333" y="132" text-anchor="middle" font-size="10" fill="#111111">J8</text><circle cx="541.6666666666667" cy="42.52629688753582" r="4" fill="#C58500"/><text x="541.6666666666667" y="58.52629688753582" text-anchor="middle" font-size="9" font-weight="600" fill="#111111">37.9%</text><text x="541.6666666666667" y="132" text-anchor="middle" font-size="10" fill="#111111">J9</text><circle cx="640.0" cy="104" r="4" fill="#FFFFFF" stroke="#777777" stroke-width="1" stroke-dasharray="2,2"/><text x="640.0" y="132" text-anchor="middle" font-size="10" fill="#111111">J10</text></svg>
+            <svg class="tl" width="680" height="160" viewBox="0 0 680 160"><rect width="680" height="160" fill="#EFEFED" rx="4"/><line x1="58" y1="22" x2="58" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="58" y1="124" x2="630" y2="124" stroke="#E0DFDB" stroke-width="1"/><line x1="54" y1="124.0" x2="58" y2="124.0" stroke="#777777" stroke-width="1"/><text x="51" y="128.0" text-anchor="end" font-size="12" fill="#777777">0.0%</text><line x1="54" y1="73.0" x2="58" y2="73.0" stroke="#777777" stroke-width="1"/><text x="51" y="77.0" text-anchor="end" font-size="12" fill="#777777">25.8%</text><line x1="54" y1="22.0" x2="58" y2="22.0" stroke="#777777" stroke-width="1"/><text x="51" y="26.0" text-anchor="end" font-size="12" fill="#777777">51.7%</text><line x1="58" y1="49.81684656042728" x2="630" y2="49.81684656042728" stroke="#DB0032" stroke-width="1.5" stroke-dasharray="6,3"/><text x="635" y="53.81684656042728" font-size="12" fill="#DB0032">M.pond. 37.6%</text><line x1="58" y1="49.67593559669096" x2="630" y2="49.67593559669096" stroke="#DB0032" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/><text x="635" y="53.67593559669096" font-size="12" fill="#DB0032" opacity="0.85">M.equilib. 37.6%</text><line x1="58.0" y1="38.91655483123351" x2="153.33333333333331" y2="39.36577639180602" stroke="#C58500" stroke-width="2.5"/><line x1="153.33333333333331" y1="39.36577639180602" x2="248.66666666666666" y2="35.30434782608695" stroke="#C58500" stroke-width="2.5"/><line x1="248.66666666666666" y1="35.30434782608695" x2="344.0" y2="41.9110394100023" stroke="#C58500" stroke-width="2.5"/><line x1="344.0" y1="41.9110394100023" x2="439.3333333333333" y2="44.816044045950036" stroke="#C58500" stroke-width="2.5"/><line x1="439.3333333333333" y1="44.816044045950036" x2="534.6666666666667" y2="49.19219872313754" stroke="#C58500" stroke-width="2.5"/><circle cx="58.0" cy="38.91655483123351" r="5" fill="#C58500"/><text x="58.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J4</text><circle cx="153.33333333333331" cy="39.36577639180602" r="5" fill="#C58500"/><text x="153.33333333333331" y="152" text-anchor="middle" font-size="13" fill="#111111">J5</text><circle cx="248.66666666666666" cy="35.30434782608695" r="5" fill="#C58500"/><text x="248.66666666666666" y="25.304347826086953" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">44.9%</text><text x="248.66666666666666" y="152" text-anchor="middle" font-size="13" fill="#111111">J6</text><circle cx="344.0" cy="41.9110394100023" r="5" fill="#C58500"/><text x="344.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J7</text><circle cx="439.3333333333333" cy="44.816044045950036" r="5" fill="#C58500"/><text x="439.3333333333333" y="152" text-anchor="middle" font-size="13" fill="#111111">J8</text><circle cx="534.6666666666667" cy="49.19219872313754" r="5" fill="#C58500"/><text x="534.6666666666667" y="68.19219872313754" text-anchor="middle" font-size="13" font-weight="700" fill="#111111">37.9%</text><text x="534.6666666666667" y="152" text-anchor="middle" font-size="13" fill="#111111">J9</text><circle cx="630.0" cy="116" r="5" fill="#FFFFFF" stroke="#777777" stroke-width="1.5" stroke-dasharray="2,2"/><text x="630.0" y="152" text-anchor="middle" font-size="13" fill="#111111">J10</text></svg>
           </div>
         </div>
       </div>
@@ -1365,14 +1574,47 @@ svg.db { display: block; }
       <div class="s-head">
         <div class="s-num">5</div>
         <div>
-          <h2>Email vs WhatsApp (desde J8)</h2>
+          <h2>Email vs WhatsApp</h2>
           <p class="s-q">¿Qué canal rinde mejor en cada etapa del funnel hacia Qcart?</p>
         </div>
       </div>
-      <div class="vs-note">Las tasas Email y WhatsApp <b>no se suman ni se promedian entre canales</b> (miden eventos distintos). Se muestran pareadas por jornada.</div>
+      <div class="vs-note">Las tasas Email y WhatsApp <b>no se suman ni se promedian entre canales</b> (miden eventos distintos). Se muestran pareadas por jornada. Los totales de campaña incluyen todas las jornadas (J4–J9 Email · J8–J9 WA).</div>
+      
+    <div class="vs-totals">
+      <div class="vs-totals-title">TOTALES CAMPAÑA LIGA MX</div>
+      <div class="vs-totals-grid">
+        <div class="vs-totals-col vs-totals-email">
+          <div class="vs-totals-ch">📧 EMAIL</div>
+          <div class="vs-totals-ctor">0.71%</div>
+          <div class="vs-totals-ctor-lbl">CTOR</div>
+          <div class="vs-totals-ref">vs M.pond. <span class="ref-num">1.13%</span> <span class="delta bad">▼</span></div>
+          <div class="vs-totals-sep"></div>
+          <div class="vs-totals-row"><span>Envíos</span><span>355,261</span></div>
+          <div class="vs-totals-row"><span>Open Rate</span><span>41.8%</span></div>
+          <div class="vs-totals-row"><span>Unsub</span><span>0.22%</span></div>
+          <div class="vs-totals-row vs-totals-hi"><span>Intención Nestlé</span><span>$7,684</span></div>
+          <div class="vs-totals-row vs-totals-hi"><span>  vs Mundial pond.</span><span>$15,472</span></div>
+          <div class="vs-totals-row"><span>Penetración</span><span>4.4%</span></div>
+        </div>
+        <div class="vs-totals-col vs-totals-wa">
+          <div class="vs-totals-ch">💬 WHATSAPP</div>
+          <div class="vs-totals-ctor">2.32%</div>
+          <div class="vs-totals-ctor-lbl">% CLICK / READ</div>
+          <div class="vs-totals-ref">vs M.pond. <span class="ref-num">7.60%</span> <span class="delta bad">▼</span></div>
+          <div class="vs-totals-sep"></div>
+          <div class="vs-totals-row"><span>Envíos</span><span>1,962</span></div>
+          <div class="vs-totals-row"><span>% Entrega</span><span>81.5%</span></div>
+          <div class="vs-totals-row"><span>% Read / entrega</span><span>59.3%</span></div>
+          <div class="vs-totals-row vs-totals-hi"><span>Intención Nestlé</span><span>$462</span></div>
+          <div class="vs-totals-row vs-totals-hi"><span>  vs Mundial pond.</span><span>$4,059</span></div>
+          <div class="vs-totals-row"><span>Penetración</span><span>2.2%</span></div>
+        </div>
+      </div>
+    </div>
+      <div class="vs-jornadas-title">DETALLE POR JORNADA (desde J8)</div>
       
         <div class="vs-row">
-          <div class="vs-j">J8</div>
+          <div class="vs-j">JORNADA 8</div>
           <div class="vs-col vs-email">
             <div class="vs-tag">📧 Email</div>
             <div class="vs-metrics">
@@ -1380,10 +1622,11 @@ svg.db { display: block; }
               <div><span class="vsk">Entregados</span><span class="vsv">37,881</span></div>
               <div><span class="vsk">Opens</span><span class="vsv">15,191</span></div>
               <div><span class="vsk">Open Rate</span><span class="vsv">40.1%</span></div>
-              <div class="vshi"><span class="vsk">CTOR</span><span class="vsv">0.75%</span></div>
+              <div class="vshi"><span class="vsk">CTOR</span><span class="vsv vsv-ctor">0.75%</span><span class="vsv-ref">vs M.pond. 1.13% <span class="delta bad">▼</span></span></div>
               <div><span class="vsk">Unsub</span><span class="vsv">0.08%</span></div>
               <div><span class="vsk">Carritos</span><span class="vsv">5</span></div>
               <div class="vshi"><span class="vsk">Intención Nestlé</span><span class="vsv">$44</span></div>
+              <div><span class="vsk">Penetración</span><span class="vsv">3.2%</span></div>
             </div>
           </div>
           <div class="vs-col vs-wa">
@@ -1393,15 +1636,16 @@ svg.db { display: block; }
               <div><span class="vsk">Entregados</span><span class="vsv">1,599</span></div>
               <div><span class="vsk">Leídos</span><span class="vsv">949</span></div>
               <div><span class="vsk">% Entrega</span><span class="vsv">81.5%</span></div>
-              <div class="vshi"><span class="vsk">% Click / Read</span><span class="vsv">0.53%</span></div>
+              <div class="vshi"><span class="vsk">% Click / Read</span><span class="vsv vsv-ctor">0.53%</span><span class="vsv-ref">vs M.pond. 7.60% <span class="delta bad">▼</span></span></div>
               <div><span class="vsk">% Read / entrega</span><span class="vsv">59.3%</span></div>
               <div><span class="vsk">Carritos</span><span class="vsv">5</span></div>
               <div class="vshi"><span class="vsk">Intención Nestlé</span><span class="vsv">$22</span></div>
+              <div><span class="vsk">Penetración</span><span class="vsv">0.4%</span></div>
             </div>
           </div>
         </div>
         <div class="vs-row">
-          <div class="vs-j">J9</div>
+          <div class="vs-j">JORNADA 9</div>
           <div class="vs-col vs-email">
             <div class="vs-tag">📧 Email</div>
             <div class="vs-metrics">
@@ -1409,10 +1653,11 @@ svg.db { display: block; }
               <div><span class="vsk">Entregados</span><span class="vsv">39,804</span></div>
               <div><span class="vsk">Opens</span><span class="vsv">15,080</span></div>
               <div><span class="vsk">Open Rate</span><span class="vsv">37.9%</span></div>
-              <div class="vshi"><span class="vsk">CTOR</span><span class="vsv">0.57%</span></div>
+              <div class="vshi"><span class="vsk">CTOR</span><span class="vsv vsv-ctor">0.57%</span><span class="vsv-ref">vs M.pond. 1.13% <span class="delta bad">▼</span></span></div>
               <div><span class="vsk">Unsub</span><span class="vsv">0.07%</span></div>
               <div><span class="vsk">Carritos</span><span class="vsv">31</span></div>
               <div class="vshi"><span class="vsk">Intención Nestlé</span><span class="vsv">$1,143</span></div>
+              <div><span class="vsk">Penetración</span><span class="vsv">3.9%</span></div>
             </div>
           </div>
           <div class="vs-col vs-wa">
@@ -1422,15 +1667,16 @@ svg.db { display: block; }
               <div><span class="vsk">Entregados</span><span class="vsv">0</span></div>
               <div><span class="vsk">Leídos</span><span class="vsv">0</span></div>
               <div><span class="vsk">% Entrega</span><span class="vsv"><span class="pend">pendiente</span></span></div>
-              <div class="vshi"><span class="vsk">% Click / Read</span><span class="vsv"><span class="pend">pendiente</span></span></div>
+              <div class="vshi"><span class="vsk">% Click / Read</span><span class="vsv vsv-ctor"><span class="pend">pendiente</span></span><span class="vsv-ref">vs M.pond. 7.60% <span class="delta pend">—</span></span></div>
               <div><span class="vsk">% Read / entrega</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Carritos</span><span class="vsv">17</span></div>
               <div class="vshi"><span class="vsk">Intención Nestlé</span><span class="vsv">$440</span></div>
+              <div><span class="vsk">Penetración</span><span class="vsv">2.9%</span></div>
             </div>
           </div>
         </div>
         <div class="vs-row">
-          <div class="vs-j">J10</div>
+          <div class="vs-j">JORNADA 10</div>
           <div class="vs-col vs-email">
             <div class="vs-tag">📧 Email</div>
             <div class="vs-metrics">
@@ -1438,10 +1684,11 @@ svg.db { display: block; }
               <div><span class="vsk">Entregados</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Opens</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Open Rate</span><span class="vsv"><span class="pend">pendiente</span></span></div>
-              <div class="vshi"><span class="vsk">CTOR</span><span class="vsv"><span class="pend">pendiente</span></span></div>
+              <div class="vshi"><span class="vsk">CTOR</span><span class="vsv vsv-ctor"><span class="pend">pendiente</span></span><span class="vsv-ref">vs M.pond. 1.13% <span class="delta pend">—</span></span></div>
               <div><span class="vsk">Unsub</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Carritos</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div class="vshi"><span class="vsk">Intención Nestlé</span><span class="vsv"><span class="pend">pendiente</span></span></div>
+              <div><span class="vsk">Penetración</span><span class="vsv"><span class="pend">pendiente</span></span></div>
             </div>
           </div>
           <div class="vs-col vs-wa">
@@ -1451,10 +1698,11 @@ svg.db { display: block; }
               <div><span class="vsk">Entregados</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Leídos</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">% Entrega</span><span class="vsv"><span class="pend">pendiente</span></span></div>
-              <div class="vshi"><span class="vsk">% Click / Read</span><span class="vsv"><span class="pend">pendiente</span></span></div>
+              <div class="vshi"><span class="vsk">% Click / Read</span><span class="vsv vsv-ctor"><span class="pend">pendiente</span></span><span class="vsv-ref">vs M.pond. 7.60% <span class="delta pend">—</span></span></div>
               <div><span class="vsk">% Read / entrega</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Carritos</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div class="vshi"><span class="vsk">Intención Nestlé</span><span class="vsv"><span class="pend">pendiente</span></span></div>
+              <div><span class="vsk">Penetración</span><span class="vsv"><span class="pend">pendiente</span></span></div>
             </div>
           </div>
         </div>
@@ -1467,10 +1715,11 @@ svg.db { display: block; }
               <div><span class="vsk">Entregados</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Opens</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Open Rate</span><span class="vsv"><span class="pend">pendiente</span></span></div>
-              <div class="vshi"><span class="vsk">CTOR</span><span class="vsv"><span class="pend">pendiente</span></span></div>
+              <div class="vshi"><span class="vsk">CTOR</span><span class="vsv vsv-ctor"><span class="pend">pendiente</span></span><span class="vsv-ref">vs M.pond. 1.13% <span class="delta pend">—</span></span></div>
               <div><span class="vsk">Unsub</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Carritos</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div class="vshi"><span class="vsk">Intención Nestlé</span><span class="vsv"><span class="pend">pendiente</span></span></div>
+              <div><span class="vsk">Penetración</span><span class="vsv"><span class="pend">pendiente</span></span></div>
             </div>
           </div>
           <div class="vs-col vs-wa">
@@ -1480,13 +1729,73 @@ svg.db { display: block; }
               <div><span class="vsk">Entregados</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Leídos</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">% Entrega</span><span class="vsv"><span class="pend">pendiente</span></span></div>
-              <div class="vshi"><span class="vsk">% Click / Read</span><span class="vsv"><span class="pend">pendiente</span></span></div>
+              <div class="vshi"><span class="vsk">% Click / Read</span><span class="vsv vsv-ctor"><span class="pend">pendiente</span></span><span class="vsv-ref">vs M.pond. 7.60% <span class="delta pend">—</span></span></div>
               <div><span class="vsk">% Read / entrega</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div><span class="vsk">Carritos</span><span class="vsv"><span class="pend">pendiente</span></span></div>
               <div class="vshi"><span class="vsk">Intención Nestlé</span><span class="vsv"><span class="pend">pendiente</span></span></div>
+              <div><span class="vsk">Penetración</span><span class="vsv"><span class="pend">pendiente</span></span></div>
             </div>
           </div>
         </div>
+    </section>
+    <section class="s s6" id="s6">
+      <div class="s-head">
+        <div class="s-num">6</div>
+        <div>
+          <h2>Accionables</h2>
+          <p class="s-q">¿Qué aprendemos y qué hacer con ello?</p>
+        </div>
+      </div>
+      <div class="accion-grid">
+        <div class="accion-card">
+          <div class="accion-icon">📧</div>
+          <div class="accion-body">
+            <div class="accion-title">Email: mejor jornada por CTOR</div>
+            <div class="accion-val">JORNADA 6 · 0.98%</div>
+            <div class="accion-desc">Revisar la pieza, audiencia e hipótesis de JORNADA 6 para replicar los elementos que impulsaron el CTOR más alto de la campaña.</div>
+          </div>
+        </div>
+        <div class="accion-card">
+          <div class="accion-icon">💬</div>
+          <div class="accion-body">
+            <div class="accion-title">WA: mejor jornada por %Click/Read</div>
+            <div class="accion-val">JORNADA 8 · 0.53%</div>
+            <div class="accion-desc">El contenido de JORNADA 8 logró el mayor porcentaje de clicks sobre lecturas en WA. Analizar copy y CTA para aplicar en siguientes envíos.</div>
+          </div>
+        </div>
+        <div class="accion-card">
+          <div class="accion-icon">🎯</div>
+          <div class="accion-body">
+            <div class="accion-title">Email vs benchmark Mundial</div>
+            <div class="accion-val"><span class="bad">▼ por debajo</span></div>
+            <div class="accion-desc">CTOR Liga MX Email (0.71%) ▼ por debajo del benchmark Mundial ponderado (1.13%). Revisar segmentación, subject y CTA para cerrar la brecha con el nivel de Mundial.</div>
+          </div>
+        </div>
+        <div class="accion-card">
+          <div class="accion-icon">💬</div>
+          <div class="accion-body">
+            <div class="accion-title">WA vs benchmark Mundial</div>
+            <div class="accion-val"><span class="bad">▼ por debajo</span></div>
+            <div class="accion-desc">%Click/Read WA Liga MX (2.32%) ▼ por debajo del benchmark Mundial ponderado (7.60%). Optimizar contenido WA: probar formatos más interactivos y CTA directo a Qcart.</div>
+          </div>
+        </div>
+        <div class="accion-card accion-card-wide">
+          <div class="accion-icon">⚡</div>
+          <div class="accion-body">
+            <div class="accion-title">Canal con mejor CTOR en J8–J9 (canales pareados)</div>
+            <div class="accion-val">Email lidera con 0.66% vs 0.53%</div>
+            <div class="accion-desc">En las jornadas donde Email y WhatsApp corrieron en paralelo (J8 y J9), <b>Email</b> mostró mayor engagement. Considerar balancear presupuesto hacia Email y aumentar frecuencia en ese canal en J10+.</div>
+          </div>
+        </div>
+        <div class="accion-card accion-card-wide">
+          <div class="accion-icon">🛒</div>
+          <div class="accion-body">
+            <div class="accion-title">Intención Nestlé: volumen Email vs WA</div>
+            <div class="accion-val">Email $7,684 · WA $462</div>
+            <div class="accion-desc">Email genera más valor absoluto de intención de compra Nestlé. La penetración en carrito (Nestlé/total): Email 4.4% vs WA 2.2%. Optimizar contenido de recetas para aumentar ticket Nestlé en ambos canales.</div>
+          </div>
+        </div>
+      </div>
     </section>
 </div>
 </body>
