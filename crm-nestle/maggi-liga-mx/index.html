@@ -680,17 +680,24 @@ svg.db { display: block; }
 }
 .topnav::-webkit-scrollbar { display: none; }
 .topnav-brand {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 21px;
-  letter-spacing: 0.06em;
-  background: linear-gradient(90deg, #DB0032 0%, #C58500 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  display: flex; align-items: center; gap: 8px;
   margin-right: 24px;
   white-space: nowrap;
   flex-shrink: 0;
-  padding: 14px 0;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.nav-logo {
+  height: 34px; width: auto; display: block;
+  flex-shrink: 0;
+}
+.nav-liga {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px; font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777777;
+  white-space: nowrap;
 }
 .topnav a {
   font-family: 'Space Grotesk', sans-serif;
@@ -739,7 +746,7 @@ svg.db { display: block; }
 </head>
 <body>
 <nav class="topnav">
-      <span class="topnav-brand">MAGGI · Liga MX</span>
+      <span class="topnav-brand"><img src="data:image/png;base64,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" alt="Maggi" class="nav-logo"><span class="nav-liga">Liga MX 2026</span></span>
       <a href="#s1">Contexto</a>
       <a href="#s2">Benchmarks Mundial</a>
       <a href="#s3">Resultados Liga MX</a>
