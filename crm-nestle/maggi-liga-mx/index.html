@@ -125,7 +125,8 @@ h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(18px, 2.5vw, 24px);
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 .s-q {
   margin: 0;
@@ -498,6 +499,59 @@ svg.tl { width: 100%; height: auto; display: block; }
 /* ── Barras divergentes ── */
 svg.db { display: block; }
 
+/* ── Nav fijo ── */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, #DB0032 0%, #C58500 100%) 1;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.topnav::-webkit-scrollbar { display: none; }
+.topnav-brand {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  background: linear-gradient(90deg, #DB0032 0%, #C58500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-right: 24px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 14px 0;
+}
+.topnav a {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #777777;
+  text-decoration: none;
+  padding: 14px 16px;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color .15s, border-color .15s;
+  flex-shrink: 0;
+}
+.topnav a:hover {
+  color: #111111;
+  border-bottom-color: #C58500;
+}
+
+/* compensar altura del nav en anclas */
+.s { scroll-margin-top: 56px; }
+
 /* ── Móvil ── */
 @media (max-width: 860px) {
   .container { padding: 16px 14px 48px; }
@@ -518,6 +572,14 @@ svg.db { display: block; }
 </style>
 </head>
 <body>
+<nav class="topnav">
+      <span class="topnav-brand">MAGGI · Liga MX</span>
+      <a href="#s1">Contexto</a>
+      <a href="#s2">Benchmarks Mundial</a>
+      <a href="#s3">Titulares</a>
+      <a href="#s4">Evolución Jornadas</a>
+      <a href="#s5">Email vs WA</a>
+    </nav>
 <div class="container">
 <div class="head">
       <div class="head-inner">
@@ -533,7 +595,7 @@ svg.db { display: block; }
         </div>
       </div>
     </div>
-    <section class="s s1">
+    <section class="s s1" id="s1">
       <div class="s-head">
         <div class="s-num">1</div>
         <div>
@@ -565,7 +627,7 @@ svg.db { display: block; }
         </div>
       </div>
     </section>
-    <section class="s s2">
+    <section class="s s2" id="s2">
       <div class="s-head">
         <div class="s-num">2</div>
         <div>
@@ -620,7 +682,7 @@ svg.db { display: block; }
       </div>
     </div>
     </section>
-    <section class="s s3">
+    <section class="s s3" id="s3">
       <div class="s-head">
         <div class="s-num">3</div>
         <div>
@@ -680,7 +742,7 @@ svg.db { display: block; }
         </div>
       </div>
     </section>
-    <section class="s s4">
+    <section class="s s4" id="s4">
       <div class="s-head">
         <div class="s-num">4</div>
         <div>
@@ -1299,7 +1361,7 @@ svg.db { display: block; }
         </div>
       </div>
     </section>
-    <section class="s s5">
+    <section class="s s5" id="s5">
       <div class="s-head">
         <div class="s-num">5</div>
         <div>
