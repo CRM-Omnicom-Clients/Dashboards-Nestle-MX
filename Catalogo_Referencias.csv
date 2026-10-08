@@ -1,0 +1,269 @@
+﻿Tipo,Dimension,Valor_Crudo,Valor_Canonico,Contexto,Dato_1,Dato_2,Fuente,Notas,N_Piezas,Pieza_IDs
+vocabulario,Bu,N/A,RN,N/A,N/A,N/A,lista cerrada,N/A,77,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P007 001-P008 001-P009 001-P010 001-P011 001-P012 … (+65)
+vocabulario,Bu,N/A,Nescafé,N/A,N/A,N/A,lista cerrada,N/A,14,008-P001 008-P002 008-P003 008-P004 008-P005 008-P006 006-P001 006-P002 007-P001 007-P002 007-P003 007-P004 … (+2)
+vocabulario,Bu,N/A,Family Nes,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Bu,N/A,Purina,N/A,N/A,N/A,lista cerrada,N/A,5,009-P001 009-P002 009-P003 009-P004 009-P005
+vocabulario,Marca,N/A,Carnation,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Marca,N/A,La Lechera,N/A,N/A,N/A,lista cerrada,N/A,2,003-P001 003-P002
+vocabulario,Marca,N/A,"Carnation, La Lechera",N/A,N/A,N/A,lista cerrada,N/A,24,002-P001 002-P002 002-P003 002-P004 002-P005 002-P006 002-P007 002-P008 002-P009 002-P010 002-P011 002-P012 … (+12)
+vocabulario,Marca,N/A,Maggi,N/A,N/A,N/A,lista cerrada,N/A,23,004-P001 004-P002 004-P003 004-P004 004-P005 004-P006 004-P007 004-P008 004-P009 004-P010 004-P011 004-P012 … (+11)
+vocabulario,Marca,N/A,Masterbrand,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Marca,N/A,NIDO,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Marca,N/A,NAN,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Marca,N/A,Pro Plan,N/A,N/A,N/A,lista cerrada,N/A,5,009-P001 009-P002 009-P003 009-P004 009-P005
+vocabulario,Marca,N/A,Recetas Nestlé,N/A,N/A,N/A,lista cerrada,N/A,28,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P007 001-P008 001-P009 001-P010 001-P011 001-P012 … (+16)
+vocabulario,Marca,N/A,Recetario Gamer,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Marca,N/A,"NIN, Purina",N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Marca,N/A,ICE,N/A,N/A,N/A,lista cerrada,N/A,2,006-P001 006-P002
+vocabulario,Marca,N/A,Concentrate,N/A,N/A,N/A,lista cerrada,N/A,4,007-P001 007-P002 007-P003 007-P004
+vocabulario,Marca,N/A,Taster Choice,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Marca,N/A,Clásico,N/A,N/A,N/A,lista cerrada,N/A,8,008-P001 008-P002 008-P003 008-P004 008-P005 008-P006 008-P007 008-P008
+vocabulario,Marca,N/A,CoffeMatte,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Hotcakes,N/A,N/A,N/A,lista cerrada,N/A,24,002-P001 002-P002 002-P003 002-P004 002-P005 002-P006 002-P007 002-P008 002-P009 002-P010 002-P011 002-P012 … (+12)
+vocabulario,Campana,N/A,AON,N/A,N/A,N/A,lista cerrada,N/A,28,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P007 001-P008 001-P009 001-P010 001-P011 001-P012 … (+16)
+vocabulario,Campana,N/A,Mundial,N/A,N/A,N/A,lista cerrada,N/A,19,004-P001 004-P002 004-P003 004-P004 004-P005 004-P006 004-P007 004-P008 004-P009 004-P010 004-P011 004-P012 … (+7)
+vocabulario,Campana,N/A,Liga MX,N/A,N/A,N/A,lista cerrada,N/A,8,005-P005 005-P006 005-P007 005-P008 005-P009 005-P010 005-P011 005-P012
+vocabulario,Campana,N/A,The Freshers,N/A,N/A,N/A,lista cerrada,N/A,2,006-P001 006-P002
+vocabulario,Campana,N/A,Hackea tu café,N/A,N/A,N/A,lista cerrada,N/A,4,007-P001 007-P002 007-P003 007-P004
+vocabulario,Campana,N/A,Tercer Tiempo,N/A,N/A,N/A,lista cerrada,N/A,8,008-P001 008-P002 008-P003 008-P004 008-P005 008-P006 008-P007 008-P008
+vocabulario,Campana,N/A,Checo,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Navidad,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,La Lechera,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Carnation,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Antojo Infinito,N/A,N/A,N/A,lista cerrada,N/A,2,003-P001 003-P002
+vocabulario,Campana,N/A,AON NAN,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Fuel for life,N/A,N/A,N/A,lista cerrada,N/A,5,009-P001 009-P002 009-P003 009-P004 009-P005
+vocabulario,Campana,N/A,Winback,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Prevensión Churn,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Perfilamiento Growth Drivers,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Especializados NAN,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Crossbrand NIN+Purina,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,You Can,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Marvel,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Art by Choice,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Campana,N/A,Por confirmar,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Objetivo,N/A,Awareness,N/A,N/A,N/A,lista cerrada,N/A,8,009-P001 006-P001 006-P002 007-P001 007-P002 007-P003 007-P004 009-P005
+vocabulario,Objetivo,N/A,Consider,N/A,N/A,N/A,lista cerrada,N/A,2,003-P001 003-P002
+vocabulario,Objetivo,N/A,Purchase,N/A,N/A,N/A,lista cerrada,N/A,65,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P011 001-P012 002-P001 002-P002 002-P003 002-P004 … (+53)
+vocabulario,Objetivo,N/A,Loyalty,N/A,N/A,N/A,lista cerrada,N/A,10,001-P013 001-P014 002-P009 002-P010 002-P011 002-P012 002-P013 002-P014 002-P015 002-P016
+vocabulario,Objetivo,N/A,Enrichment,N/A,N/A,N/A,lista cerrada,N/A,3,009-P002 009-P003 009-P004
+vocabulario,Objetivo,N/A,Reactivación pre-churn,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Objetivo,N/A,Premios,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Objetivo,N/A,Inspiration,N/A,N/A,N/A,lista cerrada,N/A,4,002-P017 002-P018 002-P019 002-P020
+vocabulario,Objetivo,N/A,Recaptación,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Objetivo,N/A,Descarga App,N/A,N/A,N/A,lista cerrada,N/A,4,001-P007 001-P008 001-P009 001-P010
+vocabulario,Objetivo,N/A,Por definir,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Canal,N/A,Email,N/A,N/A,N/A,lista cerrada,N/A,80,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P007 001-P008 001-P009 001-P010 001-P011 001-P012 … (+68)
+vocabulario,Canal,N/A,WhatsApp,N/A,N/A,N/A,lista cerrada,N/A,16,002-P021 002-P022 002-P023 002-P024 008-P007 008-P008 004-P010 004-P011 004-P012 004-P013 004-P014 004-P015 … (+4)
+vocabulario,Segmento,N/A,Activos,N/A,N/A,N/A,lista cerrada,N/A,10,001-P007 001-P008 001-P009 001-P010 009-P001 009-P005 004-P016 004-P017 004-P018 004-P019
+vocabulario,Segmento,N/A,Amazon,N/A,N/A,N/A,lista cerrada,N/A,4,008-P003 008-P004 008-P007 008-P008
+vocabulario,Segmento,N/A,Bebidas,N/A,N/A,N/A,lista cerrada,N/A,6,004-P003 004-P004 004-P006 004-P009 004-P011 004-P013
+vocabulario,Segmento,N/A,Botana,N/A,N/A,N/A,lista cerrada,N/A,5,004-P001 004-P005 004-P008 004-P010 004-P014
+vocabulario,Segmento,N/A,Career Focused,N/A,N/A,N/A,lista cerrada,N/A,6,001-P001 001-P002 003-P001 003-P002 001-P023 001-P028
+vocabulario,Segmento,N/A,Combinado,N/A,N/A,N/A,lista cerrada,N/A,4,003-P001 003-P002 008-P007 008-P008
+vocabulario,Segmento,N/A,Dinkies y Empty Nesters,N/A,N/A,N/A,lista cerrada,N/A,2,001-P011 001-P012
+vocabulario,Segmento,N/A,FamilyKids,N/A,N/A,N/A,lista cerrada,N/A,5,002-P004 002-P008 002-P012 002-P016 002-P024
+vocabulario,Segmento,N/A,Futboleros,N/A,N/A,N/A,lista cerrada,N/A,4,008-P001 008-P002 008-P007 008-P008
+vocabulario,Segmento,N/A,Futboleros Liga MX,N/A,N/A,N/A,lista cerrada,N/A,0,
+vocabulario,Segmento,N/A,Gen Z Indulgentes,N/A,N/A,N/A,lista cerrada,N/A,2,006-P001 006-P002
+vocabulario,Segmento,N/A,Indulgentes,N/A,N/A,N/A,lista cerrada,N/A,5,002-P003 002-P007 002-P011 002-P015 002-P023
+vocabulario,Segmento,N/A,Interés Salado,N/A,N/A,N/A,lista cerrada,N/A,4,002-P017 002-P018 002-P019 002-P020
+vocabulario,Segmento,N/A,Modern Cooking,N/A,N/A,N/A,lista cerrada,N/A,4,004-P002 004-P007 004-P012 004-P015
+vocabulario,Segmento,N/A,New Parents,N/A,N/A,N/A,lista cerrada,N/A,6,001-P003 001-P004 003-P001 003-P002 001-P024 001-P026
+vocabulario,Segmento,N/A,Premium,N/A,N/A,N/A,lista cerrada,N/A,4,007-P001 007-P002 007-P003 007-P004
+vocabulario,Segmento,N/A,Pro Plan Aspiracionales,N/A,N/A,N/A,lista cerrada,N/A,1,009-P002
+vocabulario,Segmento,N/A,Pro Plan Educated Pet Owners,N/A,N/A,N/A,lista cerrada,N/A,1,009-P004
+vocabulario,Segmento,N/A,Pro Plan Pet Parents,N/A,N/A,N/A,lista cerrada,N/A,1,009-P003
+vocabulario,Segmento,N/A,Productive Adults,N/A,N/A,N/A,lista cerrada,N/A,2,001-P015 001-P016
+vocabulario,Segmento,N/A,Prácticos,N/A,N/A,N/A,lista cerrada,N/A,5,002-P002 002-P006 002-P010 002-P014 002-P022
+vocabulario,Segmento,N/A,Reposteros,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Segmento,N/A,Saludables,N/A,N/A,N/A,lista cerrada,N/A,5,002-P001 002-P005 002-P009 002-P013 002-P021
+vocabulario,Segmento,N/A,Sin Cluster,N/A,N/A,N/A,lista cerrada,N/A,2,001-P021 001-P022
+vocabulario,Segmento,N/A,Traditional Parents,N/A,N/A,N/A,lista cerrada,N/A,6,001-P005 001-P006 003-P001 003-P002 001-P025 001-P027
+vocabulario,Segmento,N/A,Usuarios con Engagement,N/A,N/A,N/A,lista cerrada,N/A,2,001-P013 001-P014
+vocabulario,Segmento,N/A,Walmart,N/A,N/A,N/A,lista cerrada,N/A,4,008-P005 008-P006 008-P007 008-P008
+vocabulario,Segmento,N/A,Wellness Navigators,N/A,N/A,N/A,lista cerrada,N/A,2,001-P019 001-P020
+vocabulario,Segmento,N/A,Young Creatives,N/A,N/A,N/A,lista cerrada,N/A,2,001-P017 001-P018
+vocabulario,Touchpoint,N/A,E-A1,N/A,N/A,N/A,lista cerrada,N/A,5,009-P001 006-P001 006-P002 007-P001 007-P002
+vocabulario,Touchpoint,N/A,E-A2,N/A,N/A,N/A,lista cerrada,N/A,3,007-P003 007-P004 009-P005
+vocabulario,Touchpoint,N/A,E-C1,N/A,N/A,N/A,lista cerrada,N/A,2,003-P001 003-P002
+vocabulario,Touchpoint,N/A,E-D1,N/A,N/A,N/A,lista cerrada,N/A,2,001-P007 001-P008
+vocabulario,Touchpoint,N/A,E-D2,N/A,N/A,N/A,lista cerrada,N/A,2,001-P009 001-P010
+vocabulario,Touchpoint,N/A,E-E3,N/A,N/A,N/A,lista cerrada,N/A,3,009-P002 009-P003 009-P004
+vocabulario,Touchpoint,N/A,E-I1,N/A,N/A,N/A,lista cerrada,N/A,2,002-P019 002-P020
+vocabulario,Touchpoint,N/A,E-I2,N/A,N/A,N/A,lista cerrada,N/A,2,002-P017 002-P018
+vocabulario,Touchpoint,N/A,E-L1,N/A,N/A,N/A,lista cerrada,N/A,4,001-P013 001-P014 002-P009 002-P013
+vocabulario,Touchpoint,N/A,E-L2,N/A,N/A,N/A,lista cerrada,N/A,2,002-P010 002-P014
+vocabulario,Touchpoint,N/A,E-L3,N/A,N/A,N/A,lista cerrada,N/A,2,002-P011 002-P015
+vocabulario,Touchpoint,N/A,E-L4,N/A,N/A,N/A,lista cerrada,N/A,2,002-P012 002-P016
+vocabulario,Touchpoint,N/A,E-P1,N/A,N/A,N/A,lista cerrada,N/A,18,001-P005 001-P006 002-P001 002-P005 004-P001 004-P002 004-P003 008-P001 008-P002 008-P003 008-P004 008-P005 … (+6)
+vocabulario,Touchpoint,N/A,E-P2,N/A,N/A,N/A,lista cerrada,N/A,9,001-P011 001-P012 002-P002 002-P006 004-P004 004-P005 001-P017 001-P018 004-P020
+vocabulario,Touchpoint,N/A,E-P3,N/A,N/A,N/A,lista cerrada,N/A,11,001-P003 001-P004 002-P003 002-P007 004-P006 004-P007 004-P008 001-P019 001-P020 001-P024 001-P026
+vocabulario,Touchpoint,N/A,E-P4,N/A,N/A,N/A,lista cerrada,N/A,9,001-P001 001-P002 002-P004 002-P008 004-P009 001-P021 001-P022 001-P023 001-P028
+vocabulario,Touchpoint,N/A,E-P6,N/A,N/A,N/A,lista cerrada,N/A,0,
+vocabulario,Touchpoint,N/A,WA-1,N/A,N/A,N/A,lista cerrada,N/A,1,008-P007
+vocabulario,Touchpoint,N/A,WA-2,N/A,N/A,N/A,lista cerrada,N/A,1,008-P008
+vocabulario,Touchpoint,N/A,WA-C1,N/A,N/A,N/A,lista cerrada,N/A,1,002-P021
+vocabulario,Touchpoint,N/A,WA-C2,N/A,N/A,N/A,lista cerrada,N/A,1,002-P022
+vocabulario,Touchpoint,N/A,WA-C3,N/A,N/A,N/A,lista cerrada,N/A,1,002-P023
+vocabulario,Touchpoint,N/A,WA-C4,N/A,N/A,N/A,lista cerrada,N/A,1,002-P024
+vocabulario,Touchpoint,N/A,WA-P2,N/A,N/A,N/A,lista cerrada,N/A,3,004-P010 004-P011 004-P012
+vocabulario,Touchpoint,N/A,WA-P3,N/A,N/A,N/A,lista cerrada,N/A,4,004-P013 004-P014 004-P015 004-P016
+vocabulario,Touchpoint,N/A,WA-P6,N/A,N/A,N/A,lista cerrada,N/A,1,004-P017
+vocabulario,Touchpoint,N/A,WA-P7,N/A,N/A,N/A,lista cerrada,N/A,1,004-P018
+vocabulario,Touchpoint,N/A,WA-P8,N/A,N/A,N/A,lista cerrada,N/A,1,004-P019
+vocabulario,Tienda,N/A,Walmart,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+vocabulario,Tienda,N/A,Chedraui,N/A,N/A,N/A,lista cerrada,N/A,0,N/A
+alias,Campaña,ao-recetasnestlé,AON,utm_campaign,N/A,N/A,declarado,N/A,28,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P007 001-P008 001-P009 001-P010 001-P011 001-P012 … (+16)
+alias,Campaña,aon_crm_marzo,AON,utm_campaign,N/A,N/A,declarado,N/A,28,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P007 001-P008 001-P009 001-P010 001-P011 001-P012 … (+16)
+alias,Campaña,aon-rn-marzo-purchase,AON,utm_campaign,N/A,N/A,declarado,N/A,28,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P007 001-P008 001-P009 001-P010 001-P011 001-P012 … (+16)
+alias,Campaña,aon-rn-abril-purchase,AON,utm_campaign,N/A,N/A,declarado,N/A,28,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P007 001-P008 001-P009 001-P010 001-P011 001-P012 … (+16)
+alias,Campaña,aon-rn-julio26,AON,utm_campaign,N/A,N/A,declarado,N/A,28,001-P001 001-P002 001-P003 001-P004 001-P005 001-P006 001-P007 001-P008 001-P009 001-P010 001-P011 001-P012 … (+16)
+alias,Campaña,lechera-junio,Antojo Infinito,utm_campaign,N/A,N/A,declarado,N/A,2,003-P001 003-P002
+alias,Campaña,hotcakes-abril,Hotcakes,utm_campaign,N/A,N/A,declarado,N/A,24,002-P001 002-P002 002-P003 002-P004 002-P005 002-P006 002-P007 002-P008 002-P009 002-P010 002-P011 002-P012 … (+12)
+alias,Campaña,hotcakes-mayo,Hotcakes,utm_campaign,N/A,N/A,declarado,N/A,24,002-P001 002-P002 002-P003 002-P004 002-P005 002-P006 002-P007 002-P008 002-P009 002-P010 002-P011 002-P012 … (+12)
+alias,Campaña,maggi-junio24,Mundial,utm_campaign,N/A,N/A,declarado,N/A,19,004-P001 004-P002 004-P003 004-P004 004-P005 004-P006 004-P007 004-P008 004-P009 004-P010 004-P011 004-P012 … (+7)
+alias,Campaña,maggi-junio26,Mundial,utm_campaign,N/A,N/A,declarado,N/A,19,004-P001 004-P002 004-P003 004-P004 004-P005 004-P006 004-P007 004-P008 004-P009 004-P010 004-P011 004-P012 … (+7)
+alias,Campaña,maggi-julio,Mundial,utm_campaign,N/A,N/A,declarado,N/A,19,004-P001 004-P002 004-P003 004-P004 004-P005 004-P006 004-P007 004-P008 004-P009 004-P010 004-P011 004-P012 … (+7)
+alias,Campaña,maggi-julio14,Mundial,utm_campaign,N/A,N/A,declarado,N/A,19,004-P001 004-P002 004-P003 004-P004 004-P005 004-P006 004-P007 004-P008 004-P009 004-P010 004-P011 004-P012 … (+7)
+alias,Campaña,maggi-julio15,Mundial,utm_campaign,N/A,N/A,declarado,N/A,19,004-P001 004-P002 004-P003 004-P004 004-P005 004-P006 004-P007 004-P008 004-P009 004-P010 004-P011 004-P012 … (+7)
+alias,Campaña,maggi-julio26,Mundial,utm_campaign,N/A,N/A,declarado,N/A,19,004-P001 004-P002 004-P003 004-P004 004-P005 004-P006 004-P007 004-P008 004-P009 004-P010 004-P011 004-P012 … (+7)
+alias,Campaña,maggi-ligamx-agosto26,Liga MX,utm_campaign,N/A,N/A,declarado,N/A,8,005-P005 005-P006 005-P007 005-P008 005-P009 005-P010 005-P011 005-P012
+alias,Segmento,bebidas,Bebidas,utm_term,N/A,N/A,declarado,N/A,6,004-P003 004-P004 004-P006 004-P009 004-P011 004-P013
+alias,Segmento,botanas,Botana,utm_term,N/A,N/A,declarado,N/A,5,004-P001 004-P005 004-P008 004-P010 004-P014
+alias,Segmento,new-cooking,Modern Cooking,utm_term,N/A,N/A,declarado,N/A,4,004-P002 004-P007 004-P012 004-P015
+alias,Segmento,general-sin-cluster,Sin Cluster,utm_term,N/A,N/A,declarado,N/A,2,001-P021 001-P022
+alias,Segmento,ligamx,Futboleros Liga MX,utm_term,N/A,N/A,declarado,N/A,0,N/A
+alias,Segmento,productive-adults,Productive Adults,utm_term,N/A,N/A,declarado,N/A,2,001-P015 001-P016
+alias,Segmento,wellness-navigators,Wellness Navigators,utm_term,N/A,N/A,declarado,N/A,2,001-P019 001-P020
+alias,Segmento,young-creatives,Young Creatives,utm_term,N/A,N/A,declarado,N/A,2,001-P017 001-P018
+alias,Segmento,career-focused-parents,Career Focused,utm_term,N/A,N/A,declarado,N/A,6,001-P001 001-P002 003-P001 003-P002 001-P023 001-P028
+alias,Segmento,new-parents,New Parents,utm_term,N/A,N/A,declarado,N/A,6,001-P003 001-P004 003-P001 003-P002 001-P024 001-P026
+alias,Segmento,traditional-parents,Traditional Parents,utm_term,N/A,N/A,declarado,N/A,6,001-P005 001-P006 003-P001 003-P002 001-P025 001-P027
+alias,Segmento,tradicional parents,Traditional Parents,utm_term,N/A,N/A,declarado,N/A,6,001-P005 001-P006 003-P001 003-P002 001-P025 001-P027
+alias,Segmento,reposteros,Reposteros,utm_term,N/A,N/A,declarado,N/A,0,N/A
+alias,Segmento,inpiration,Interés Salado,utm_term,N/A,N/A,declarado,N/A,4,002-P017 002-P018 002-P019 002-P020
+alias,Segmento,saludables (segmento de td),Saludables,utm_term,N/A,N/A,declarado,N/A,5,002-P001 002-P005 002-P009 002-P013 002-P021
+alias,Segmento,practicos,Prácticos,utm_term,N/A,N/A,declarado,N/A,5,002-P002 002-P006 002-P010 002-P014 002-P022
+alias,Segmento,indulgentes,Indulgentes,utm_term,N/A,N/A,declarado,N/A,5,002-P003 002-P007 002-P011 002-P015 002-P023
+alias,Segmento,familias,FamilyKids,utm_term,N/A,N/A,declarado,N/A,5,002-P004 002-P008 002-P012 002-P016 002-P024
+alias,Segmento,careerfocused,Career Focused,utm_term,N/A,N/A,declarado,N/A,6,001-P001 001-P002 003-P001 003-P002 001-P023 001-P028
+alias,Segmento,dinkys,Dinkies y Empty Nesters,utm_term,N/A,N/A,declarado,N/A,2,001-P011 001-P012
+alias,Segmento,newparentes,New Parents,utm_term,N/A,N/A,declarado,N/A,6,001-P003 001-P004 003-P001 003-P002 001-P024 001-P026
+alias,Segmento,familyfocused,Traditional Parents,utm_term,N/A,N/A,declarado,"Corregido 27-ago-2026 (era «FamilyKids»). Rick, 27-ago: «¿FamilyFocused de abril es Traditional Parents? Sí, queda en referencias». FamilyKids es un segmento de HOTCAKES; FamilyFocused solo aparece en AON abril, donde la audiencia es Traditional Parents. El alias cruzaba dos campañas.",5,002-P004 002-P008 002-P012 002-P016 002-P024
+alias,Segmento,career focused parents,Career Focused,utm_term,N/A,N/A,declarado,N/A,6,001-P001 001-P002 003-P001 003-P002 001-P023 001-P028
+alias,Segmento,new parents,New Parents,utm_term,N/A,N/A,declarado,N/A,6,001-P003 001-P004 003-P001 003-P002 001-P024 001-P026
+alias,Objetivo,consider,Consider,utm_term,N/A,N/A,declarado,N/A,2,003-P001 003-P002
+alias,Partido,final,Final,utm_term,N/A,N/A,declarado,N/A,0,N/A
+alias,Touchpoint,Email 1,E-P1,AON,N/A,N/A,"Marzo: ""Email n""",N/A,6,001-P005 001-P006 001-P015 001-P016 001-P025 001-P027
+alias,Touchpoint,Email 2,E-P3,AON,N/A,N/A,"Marzo: ""Email n""","Corregido 27-ago-2026 (era «E-P2»). el doc de marzo declara Email 2 = New Parents, y en AON New Parents es E-P3. El alias deducía el touchpoint del NÚMERO del correo: por eso 58 carritos de New Parents acabaron en Dinkies (001-P011).",4,001-P011 001-P012 001-P017 001-P018
+alias,Touchpoint,Email 3,E-P4,AON,N/A,N/A,"Marzo: ""Email n""","Corregido 27-ago-2026 (era «E-P3»). el doc de marzo declara Email 3 = Career Focused, y en AON Career Focused es E-P4. Mismo defecto: 133 carritos de Career Focused acabaron en New Parents (001-P003).",6,001-P003 001-P004 001-P019 001-P020 001-P024 001-P026
+alias,Touchpoint,E-I1,E-I1,Hotcakes,N/A,N/A,patrón E-{etapa}{n},N/A,2,002-P019 002-P020
+alias,Touchpoint,E-I2,E-I2,Hotcakes,N/A,N/A,patrón E-{etapa}{n},N/A,2,002-P017 002-P018
+alias,Touchpoint,E-P1,E-P1,AON,N/A,N/A,patrón E-{etapa}{n},N/A,6,001-P005 001-P006 001-P015 001-P016 001-P025 001-P027
+alias,Touchpoint,E-P2,E-P2,AON,N/A,N/A,patrón E-{etapa}{n},N/A,4,001-P011 001-P012 001-P017 001-P018
+alias,Touchpoint,E-P3,E-P3,AON,N/A,N/A,patrón E-{etapa}{n},N/A,6,001-P003 001-P004 001-P019 001-P020 001-P024 001-P026
+alias,Touchpoint,E-P4,E-P4,AON,N/A,N/A,patrón E-{etapa}{n},N/A,6,001-P001 001-P002 001-P021 001-P022 001-P023 001-P028
+alias,Touchpoint,E-P1,E-P1,Hotcakes,N/A,N/A,patrón E-{etapa}{n},N/A,2,002-P001 002-P005
+alias,Touchpoint,E-P2,E-P2,Hotcakes,N/A,N/A,patrón E-{etapa}{n},N/A,2,002-P002 002-P006
+alias,Touchpoint,E-P3,E-P3,Hotcakes,N/A,N/A,patrón E-{etapa}{n},N/A,2,002-P003 002-P007
+alias,Touchpoint,E-P4,E-P4,Hotcakes,N/A,N/A,patrón E-{etapa}{n},N/A,2,002-P004 002-P008
+alias,Touchpoint,e-botana1,E-P1,Mundial,N/A,N/A,Data_Maggi: Partido 1,N/A,3,004-P001 004-P002 004-P003
+alias,Touchpoint,e-bebida1,E-P1,Mundial,N/A,N/A,Data_Maggi: Partido 1,N/A,3,004-P001 004-P002 004-P003
+alias,Touchpoint,e-cooking1,E-P1,Mundial,N/A,N/A,Data_Maggi: Partido 1,N/A,3,004-P001 004-P002 004-P003
+alias,Touchpoint,e-cooking2,E-P2,Mundial,N/A,N/A,Data_Maggi: Partido 2,N/A,2,004-P004 004-P005
+alias,Touchpoint,e-bebida2,E-P2,Mundial,N/A,N/A,Data_Maggi: Partido 2,N/A,2,004-P004 004-P005
+alias,Touchpoint,e-botana2,E-P2,Mundial,N/A,N/A,Data_Maggi: Partido 2,N/A,2,004-P004 004-P005
+alias,Touchpoint,e-c1,E-C1,Antojo Infinito,N/A,N/A,patrón E-{etapa}{n},N/A,2,003-P001 003-P002
+alias,Touchpoint,e-cooking-alitas,E-P2,Mundial,N/A,N/A,"Data_Maggi: ""Alitas"" fue Partido 2",N/A,2,004-P004 004-P005
+alias,Touchpoint,wa-botana1,E-P1,Mundial,N/A,N/A,Data_Maggi: Partido 1,N/A,3,004-P001 004-P002 004-P003
+alias,Touchpoint,wa-bebida1,E-P1,Mundial,N/A,N/A,Data_Maggi: Partido 1,N/A,3,004-P001 004-P002 004-P003
+alias,Touchpoint,wa-cooking1,E-P1,Mundial,N/A,N/A,Data_Maggi: Partido 1,N/A,3,004-P001 004-P002 004-P003
+alias,Touchpoint,e-bebida3,E-P3,Mundial,N/A,N/A,Data_Maggi: Partido 3,N/A,3,004-P006 004-P007 004-P008
+alias,Touchpoint,e-botanas3,E-P3,Mundial,N/A,N/A,Data_Maggi: Partido 3,N/A,3,004-P006 004-P007 004-P008
+alias,Touchpoint,e-cooking3,E-P3,Mundial,N/A,N/A,Data_Maggi: Partido 3,N/A,3,004-P006 004-P007 004-P008
+alias,Touchpoint,e-p1,E-P1,AON,N/A,N/A,patrón E-{etapa}{n},N/A,6,001-P005 001-P006 001-P015 001-P016 001-P025 001-P027
+alias,Touchpoint,e-p2,E-P2,AON,N/A,N/A,patrón E-{etapa}{n},N/A,4,001-P011 001-P012 001-P017 001-P018
+alias,Touchpoint,e-p3,E-P3,AON,N/A,N/A,patrón E-{etapa}{n},N/A,6,001-P003 001-P004 001-P019 001-P020 001-P024 001-P026
+alias,Touchpoint,e-p4,E-P4,AON,N/A,N/A,patrón E-{etapa}{n},N/A,6,001-P001 001-P002 001-P021 001-P022 001-P023 001-P028
+alias,Touchpoint,e-botanas6,WA-P6,Mundial,N/A,N/A,Data_Maggi: Semifinal A,N/A,1,004-P017
+alias,Touchpoint,e-botanas7,WA-P7,Mundial,N/A,N/A,Data_Maggi: Semifinal B,N/A,1,004-P018
+alias,Touchpoint,wa-final-aceitunas,WA-P8,Mundial,N/A,N/A,Data_Maggi: Final,N/A,1,004-P019
+alias,Touchpoint,wa-final-empanadas,WA-P8,Mundial,N/A,N/A,Data_Maggi: Final,N/A,1,004-P019
+alias,Touchpoint,wa-final-botana-salsa,WA-P8,Mundial,N/A,N/A,Data_Maggi: Final,N/A,1,004-P019
+alias,Touchpoint,Partido 2 - Corea,WA-P2,Mundial,N/A,N/A,Data_Maggi,N/A,3,004-P010 004-P011 004-P012
+alias,Touchpoint,Partido 3 - Checa,WA-P3,Mundial,N/A,N/A,Data_Maggi,N/A,4,004-P013 004-P014 004-P015 004-P016
+alias,Touchpoint,Semifinal A,WA-P6,Mundial,N/A,N/A,Data_Maggi,N/A,1,004-P017
+alias,Touchpoint,Semifinal B - argentina vs ingla,WA-P7,Mundial,N/A,N/A,Data_Maggi,N/A,1,004-P018
+alias,Touchpoint,Final - españa vs aregentica,WA-P8,Mundial,N/A,N/A,Data_Maggi,N/A,1,004-P019
+alias,Touchpoint,N/A,E-P4,AON · Career Focused,N/A,N/A,depende del segmento,N/A,4,001-P001 001-P002 001-P023 001-P028
+alias,Touchpoint,N/A,E-P3,AON · New Parents,N/A,N/A,depende del segmento,N/A,4,001-P003 001-P004 001-P024 001-P026
+alias,Touchpoint,N/A,E-P1,AON · Traditional Parents,N/A,N/A,depende del segmento,N/A,4,001-P005 001-P006 001-P025 001-P027
+alias,Touchpoint,Único,WA-C1,Hotcakes · Saludables,N/A,N/A,depende del segmento,N/A,1,002-P021
+alias,Touchpoint,Único,WA-C2,Hotcakes · Prácticos,N/A,N/A,depende del segmento,N/A,1,002-P022
+alias,Touchpoint,Único,WA-C3,Hotcakes · Indulgentes,N/A,N/A,depende del segmento,N/A,1,002-P023
+alias,Touchpoint,Único,WA-C4,Hotcakes · FamilyKids,N/A,N/A,depende del segmento,N/A,1,002-P024
+alias,Touchpoint,1,E-D1,AON,N/A,N/A,Data_Email,N/A,2,001-P007 001-P008
+alias,Touchpoint,2,E-D2,AON,N/A,N/A,Data_Email,N/A,2,001-P009 001-P010
+alias,Touchpoint,EP4,E-P4,AON,N/A,N/A,Data_Email,N/A,6,001-P001 001-P002 001-P021 001-P022 001-P023 001-P028
+alias,Touchpoint,EP2,E-P2,AON,N/A,N/A,Data_Email,N/A,4,001-P011 001-P012 001-P017 001-P018
+alias,Touchpoint,EP3,E-P3,AON,N/A,N/A,Data_Email,N/A,6,001-P003 001-P004 001-P019 001-P020 001-P024 001-P026
+alias,Touchpoint,EP1,E-P1,AON,N/A,N/A,Data_Email,N/A,6,001-P005 001-P006 001-P015 001-P016 001-P025 001-P027
+alias,Touchpoint,TP1,E-L1,AON,N/A,N/A,Data_Email,N/A,2,001-P013 001-P014
+alias,Touchpoint,V1,E-P1,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P001 002-P005
+alias,Touchpoint,V2,E-P2,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P002 002-P006
+alias,Touchpoint,V3,E-P3,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P003 002-P007
+alias,Touchpoint,V4,E-P4,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P004 002-P008
+alias,Touchpoint,EL1,E-L1,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P009 002-P013
+alias,Touchpoint,EL2,E-L2,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P010 002-P014
+alias,Touchpoint,EL3,E-L3,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P011 002-P015
+alias,Touchpoint,EL4,E-L4,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P012 002-P016
+alias,Touchpoint,TP2,E-I2,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P017 002-P018
+alias,Touchpoint,TP1,E-I1,Hotcakes,N/A,N/A,Data_Email,N/A,2,002-P019 002-P020
+alias,Touchpoint,Partido 1,E-P1,Mundial,N/A,N/A,Data_Email,N/A,3,004-P001 004-P002 004-P003
+alias,Touchpoint,Partido 2,E-P2,Mundial,N/A,N/A,Data_Email,N/A,2,004-P004 004-P005
+alias,Touchpoint,Partido 3,E-P3,Mundial,N/A,N/A,Data_Email,N/A,3,004-P006 004-P007 004-P008
+alias,Touchpoint,V1,E-P1,Tercer Tiempo,N/A,N/A,Data_Email,N/A,6,008-P001 008-P002 008-P003 008-P004 008-P005 008-P006
+alias,Touchpoint,E-C1,E-C1,Antojo Infinito,N/A,N/A,Data_Email,N/A,2,003-P001 003-P002
+alias,Touchpoint,TP1,E-A1,Fuel for life,N/A,N/A,Data_Email,N/A,1,009-P001
+alias,Touchpoint,TP3,E-E3,Fuel for life,N/A,N/A,Data_Email,N/A,3,009-P002 009-P003 009-P004
+alias,Touchpoint,Partido 4,E-P4,Mundial,N/A,N/A,Data_Email,N/A,1,004-P009
+alias,Touchpoint,E-A1,E-A1,The Freshers,N/A,N/A,Data_Email,N/A,2,006-P001 006-P002
+alias,Touchpoint,E-Hack1,E-A1,Hackea tu café,N/A,N/A,Data_Email,N/A,2,007-P001 007-P002
+alias,Touchpoint,E-Hack2,E-A2,Hackea tu café,N/A,N/A,Data_Email,N/A,2,007-P003 007-P004
+alias,Touchpoint,TP2,E-A2,Fuel for life,N/A,N/A,Data_Email,N/A,1,009-P005
+alias,Touchpoint,Envío 1,WA-1,Tercer Tiempo,N/A,N/A,Data_Email,N/A,1,008-P007
+alias,Touchpoint,Envío 2,WA-2,Tercer Tiempo,N/A,N/A,Data_Email,N/A,1,008-P008
+alias,Objetivo,AON-APP,Descarga App,N/A,N/A,N/A,Data_Email,N/A,4,001-P007 001-P008 001-P009 001-P010
+alias,Objetivo,AON-LOYALTY,Loyalty,N/A,N/A,N/A,Data_Email,N/A,10,001-P013 001-P014 002-P009 002-P010 002-P011 002-P012 002-P013 002-P014 002-P015 002-P016
+alias,Objetivo,Purchase,Consider,Antojo Infinito,N/A,N/A,Data_Email,N/A,2,003-P001 003-P002
+alias,Objetivo,Welcome,Awareness,N/A,N/A,N/A,Data_Email,N/A,8,009-P001 006-P001 006-P002 007-P001 007-P002 007-P003 007-P004 009-P005
+alias,Objetivo,Enriquecimiento,Enrichment,N/A,N/A,N/A,Data_Email,N/A,3,009-P002 009-P003 009-P004
+excluido,Link Qcart,P8IcwfWJ,N/A,Mundial » e-bebida5,0,N/A,Data_Qcart,link de un envío que NO se realizó (Data_Maggi),0,N/A
+excluido,Link Qcart,znjG7J6r,N/A,Mundial » e-botanas5,0,N/A,Data_Qcart,link de un envío que NO se realizó (Data_Maggi),0,N/A
+excluido,Link Qcart,5NnTxarc,N/A,Mundial » e-cooking5,0,N/A,Data_Qcart,link de un envío que NO se realizó (Data_Maggi),0,N/A
+excluido,Link Qcart,lfFYbUfy,N/A,N/A,4,N/A,Data_Qcart,link de la hoja Reagendar · fuera del alcance del documento vigente,0,N/A
+excluido,Link Qcart,3Lb6FbAa,N/A,N/A,12,N/A,Data_Qcart,link de la hoja Reagendar · fuera del alcance del documento vigente,0,N/A
+excluido,Link Qcart,M67vOg1g,N/A,N/A,6,N/A,Data_Qcart,link de la hoja Reagendar · fuera del alcance del documento vigente,0,N/A
+excluido,Link Qcart,AwsreGWs,N/A,N/A,1,N/A,Data_Qcart,link de la hoja Reagendar · fuera del alcance del documento vigente,0,N/A
+excluido,Link Qcart,aPFwXeaG,N/A,N/A,1,N/A,Data_Qcart,link de la hoja Reagendar · fuera del alcance del documento vigente,0,N/A
+excluido,Link Qcart,oJclpobS,N/A,N/A,15,N/A,Data_Qcart,link de la hoja Reagendar · fuera del alcance del documento vigente,0,N/A
+excluido,Link Qcart,TMECSIho,N/A,N/A,13,N/A,Data_Qcart,link de la hoja Reagendar · fuera del alcance del documento vigente,0,N/A
+excluido,Link Qcart,y6hReRB5,N/A,N/A,12,N/A,Data_Qcart,link de la hoja Reagendar · fuera del alcance del documento vigente,0,N/A
+excluido,Link Qcart,tErzItBY,N/A,N/A,15,N/A,Data_Qcart,link de la hoja Reagendar · fuera del alcance del documento vigente,0,N/A
+excluido,Link Qcart,LJQsq5T9,N/A,Mundial » Envío Federación,0,N/A,Data_Qcart,"Envío Federación · no está cargado en Data_Email, no hay pieza que lo reclame",0,N/A
+excluido,Link Qcart,L5rqwrzD,N/A,Mundial » wa-botana1,0,N/A,Data_Qcart,"el maestro marca ""No enviado""",0,N/A
+excluido,Link Qcart,JPrNSrwn,N/A,Mundial » wa-bebida1,0,N/A,Data_Qcart,"el maestro marca ""No enviado""",0,N/A
+excluido,Link Qcart,yj8PKdRr,N/A,Mundial » wa-cooking1,0,N/A,Data_Qcart,"el maestro marca ""No enviado""",0,N/A
+excluido,Tienda,jumbo-cl,N/A,Hotcakes,0,N/A,Data_Qcart,tienda fuera de México · no lanzamos ahí,0,N/A
+excluido,Tienda,santaisabel-cl,N/A,Hotcakes,0,N/A,Data_Qcart,tienda fuera de México · no lanzamos ahí,0,N/A
+excluido,Touchpoint,e-bebida5,N/A,Mundial,0,N/A,Data_Maggi,Data_Maggi declara que ese envío no se realizó,0,N/A
+excluido,Touchpoint,e-botanas5,N/A,Mundial,0,N/A,Data_Maggi,Data_Maggi declara que ese envío no se realizó,0,N/A
+excluido,Touchpoint,e-cooking5,N/A,Mundial,0,N/A,Data_Maggi,Data_Maggi declara que ese envío no se realizó,0,N/A
+alias,Touchpoint,Segundo Partido,Partido 2,Mundial,N/A,N/A,declarado 24-ago,La fuente de WhatsApp nombra el journey «Segundo Partido»; el catálogo usa «Partido 2». Sin este alias el envío de 162 no encuentra su pieza (004-P010) y la Puerta 1 cierra.,N/A,N/A
+alias,Touchpoint,Tercer Partido,Partido 3,Mundial,N/A,N/A,declarado 24-ago,"Idem para 004-P013. Los dos envíos tienen los MISMOS sends (162), así que la cifra no los desambigua: solo el journey.",N/A,N/A
+alias,Campaña,ICE,The Freshers,N/A,N/A,N/A,declarado 24-ago,"La hoja de WhatsApp titula la campaña «ICE», pero ICE es la MARCA (Nescafé ICE) y The Freshers la campaña — lo decidió Rick el 20-ago. Sin el alias, sus 2,000 envíos quedan sin pieza.",N/A,N/A
+alias,Segmento,conregion,Usuarios CON región,utm_term,N/A,N/A,"Rick en chat, 27-ago-2026","Alta 27-ago-2026. Liga MX manda E-J4 y E-J5 a DOS audiencias diferenciadas y el doc las llama conregion/sinregion. Sin el alias, sus bloques no resolvían y 13 carritos se quedaban sin pieza.",N/A,N/A
+alias,Segmento,sinregion,Usuarios sin región,utm_term,N/A,N/A,"Rick en chat, 27-ago-2026","Alta 27-ago-2026. la otra audiencia de Liga MX. Sin el alias, 108 carritos se quedaban sin pieza.",N/A,N/A
+alias,Touchpoint,e-j4,E-J4,Liga MX,N/A,N/A,"Rick en chat, 27-ago-2026",Alta 27-ago-2026. el touchpoint del doc de agosto para Liga MX. No existía y por eso el bloque no resolvía.,N/A,N/A
+alias,Touchpoint,e-j5,E-J5,Liga MX,N/A,N/A,"Rick en chat, 27-ago-2026","Alta 27-ago-2026. Rick, 27-ago: «Es J5 · son dos audiencias · no las confundas para qcart». El doc lo trae como e-j5.",N/A,N/A
