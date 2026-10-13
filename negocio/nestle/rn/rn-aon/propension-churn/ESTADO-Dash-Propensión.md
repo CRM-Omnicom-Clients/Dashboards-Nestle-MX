@@ -11,12 +11,16 @@
 
 ---
 
-## Cambios de esta iteración (13-oct-2026)
+## Cambios de esta iteración (13-oct-2026 · iter 3)
 
-- **Rediseño §1 Resultados en tres capas (método del skill de dashboards):**
-  - **Capa A — Scorecards por segmento** (Re-enganchables, Tibios, Fríos). Dos hero figures: Open Rate y CTOR de septiembre, con flecha + "pp por debajo/por encima de Agosto" en texto (nunca solo color). Mini-tira al pie con Sends, Deliveries, Clicks, Unsubs y su variación %. Fríos declara "Sin activar en Agosto – Septiembre".
-  - **Capa B — Barras divergentes mes a mes.** Open Rate y CTOR, Septiembre contra Agosto. Cero dibujado y rotulado "0 = Agosto". Verde a la derecha, rojo a la izquierda, con la etiqueta en puntos porcentuales fuera de la barra.
-  - **Capa C — Tabla completa colapsable** dentro de `<details>` (▸ "Ver tabla completa (Agosto · Septiembre · Total)"). Permite revisar los conteos originales sin dominar la pantalla.
+- **§1 Resultados, orden definitivo:** tabla detalle completa (visible, no colapsada) → scorecards por segmento → barras divergentes mes a mes. Primero el detalle que el usuario quiere ver, después las comparativas que resaltan lo importante.
+- **§1 Resultados rediseñado en tres capas (método del skill de dashboards):**
+  - **Scorecards por segmento** (Re-enganchables, Tibios, Fríos). Dos hero figures: Open Rate y CTOR de septiembre, con flecha + "pp por debajo/por encima de Agosto" en texto (nunca solo color). Mini-tira al pie con Sends, Deliveries, Clicks, Unsubs y su variación %. Fríos declara "Sin activar en Agosto – Septiembre".
+  - **Barras divergentes mes a mes.** Open Rate y CTOR, Septiembre contra Agosto. Cero dibujado y rotulado "0 = Agosto". Verde a la derecha, rojo a la izquierda, con la etiqueta en puntos porcentuales fuera de la barra.
+- **§4 Resumen rediseñado:** se quitaron los dos cuadros "Sin datos cargados" (CLTV, Churn Model). En su lugar, tres bloques nuevos construidos con los datos reales de la CDP:
+  - **Foto actual del modelo de Churn (1-oct-2026):** scorecards con la distribución (Mid 2.54M · High 12.1K · Low 1.66M · null 6.72M) y, para Mid y High, cuántos usuarios abrieron durante Ago-Sep y cuántos abrieron por primera vez (rescate). Total rescatados: 12,842.
+  - **Dónde vive el modelo:** rejilla con las 4 tablas que lo sostienen (`prod_churn_ml.prod_unification_customers_churn_prediction_recetas`, `..._table_recetas`, `model_log_table_recetas`, `cdp_audience_686576.customers.churn_probability_label_recetas`), el algoritmo (regresión logística, sklearn, accuracy 0.78 el 1-oct) y la cadencia (quincenal · días 1 y 16 ~18:25 UTC).
+  - **Accionables:** (1) snapshot pre/post campaña, (2) métrica de rescate operativa, (3) tamaño de segmentos en el tiempo, (4) documentar la receta del modelo.
 - **Rediseño visual:** fondo blanco (antes oscuro `#1C0A07`). Paleta de entidades reequilibrada para AA sobre blanco: Re `#D99100`, Tibios `#C76A00`, Fríos `#2A7FB8`. Estado por encima `#4F8F00` / por debajo `#C8355A`. Degradado de marca conservado solo en filetes y barra de progreso.
 - **Tipografía:** H1 bajó de `max 136px` a `max 88px`. H2 de `68px` a `54px`. Piso de encabezados de tabla subió de 13 px a 14 px.
 - **Interactividad agregada:**
@@ -32,6 +36,23 @@
 | Comparación de modelos ML en §4 | Antes vs después de la campaña |
 | Granularidad de modelos | Solo el promedio por segmento |
 | Modelos a mostrar | **CLTV** (en CDP) y **Churn Propensity** (en CDP) |
+| Churn: foto actual + accionable para snapshot | Mostrar la foto 1-oct-2026 y declarar accionable: "necesitamos snapshot para ver el cambio" |
+| Métrica alternativa mientras no hay snapshot | "Rescate": usuarios Mid/High que abrieron por primera vez en Ago-Sep |
+
+## Dónde vive el modelo de Churn Recetas (hallazgo 13-oct · tdx)
+
+| Qué | Dónde |
+|---|---|
+| Predicciones por usuario (se **sobre-escriben** cada corrida) | `prod_churn_ml.prod_unification_customers_churn_prediction_recetas` (10.94M filas, 1 timestamp) |
+| Dataset de entrenamiento | `prod_churn_ml.prod_unification_customers_churn_table_recetas` |
+| Log del modelo (features, coeficientes, accuracy) | `prod_churn_ml.model_log_table_recetas` (51 corridas desde 2024-11-06) |
+| Etiqueta publicada al perfil | `cdp_audience_686576.customers.churn_probability_label_recetas` ∈ {Low, Mid, High, null} |
+| Algoritmo | Regresión logística (sklearn) · features arrancan con `opted_out, sfmc_unsubscribed, total_pageviews, …` |
+| Cadencia | **Quincenal — días 1 y 16 de cada mes (~18:25 UTC).** Última corrida: 1-oct-2026, accuracy 0.78 |
+| Distribución actual (10.94M total) | Mid 2.54M · Low 1.66M · High 12.1K · null 6.72M |
+| Segmentos que usan la etiqueta | Tibios = Mid Probability · Fríos = High Probability (ambos filtran además por comportamiento y suscripción) |
+| Métrica de rescate Ago-Sep (universo = etiqueta actual) | Mid: 2.54M → 31,399 abrieron → **11,571 primera vez** · High: 12.1K → 6,669 abrieron → **1,271 primera vez** |
+| Nota | No hay histórico guardado. Para comparar antes/después hay que programar snapshot antes del siguiente retrain (16-oct-2026, ~18:25 UTC) |
 
 ## Pendientes abiertos con Rick (siguen pendientes)
 
@@ -42,7 +63,8 @@
 | Umbral de "más de lo habitual" para notificaciones | Rick + TD |
 | Hipótesis para Fríos (hoy no activos) | Rick |
 | Datos CDP para §2 "¿Quiénes eran esos usuarios?" (envío masivo Tibios 2-sep): cortes sugeridos — enviados vs no enviados, recencia 7-12m, comportamiento post-envío | Rick / consulta en CDP |
-| Datos CDP para §4: scores de CLTV y Churn Propensity, promedio por segmento, **antes y después de la campaña**. Requiere confirmación de que los modelos guardan histórico (snapshot pre-ago y post-sep) | Rick → confirma tabla/columna; luego se corre query |
+| **Snapshot pre-Ago del modelo de Churn:** no hay histórico guardado; el próximo retrain es el 16-oct-2026 ~18:25 UTC. Para comparar antes/después hay que programar un job diario que copie `prod_churn_ml.prod_unification_customers_churn_prediction_recetas` a una tabla particionada por fecha | TD · programar antes del próximo retrain |
+| **CLTV**: existe `cltv_tier`, `pcltv_3month`, `ltv_pred` en `cdp_audience_686576.customers`. Mismo problema de histórico — toca verificar si CLTV sí guarda snapshot | Consulta en CDP |
 
 ---
 
