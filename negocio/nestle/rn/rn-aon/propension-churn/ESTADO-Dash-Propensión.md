@@ -13,6 +13,10 @@
 
 ## Cambios de esta iteración (13-oct-2026)
 
+- **Rediseño §1 Resultados en tres capas (método del skill de dashboards):**
+  - **Capa A — Scorecards por segmento** (Re-enganchables, Tibios, Fríos). Dos hero figures: Open Rate y CTOR de septiembre, con flecha + "pp por debajo/por encima de Agosto" en texto (nunca solo color). Mini-tira al pie con Sends, Deliveries, Clicks, Unsubs y su variación %. Fríos declara "Sin activar en Agosto – Septiembre".
+  - **Capa B — Barras divergentes mes a mes.** Open Rate y CTOR, Septiembre contra Agosto. Cero dibujado y rotulado "0 = Agosto". Verde a la derecha, rojo a la izquierda, con la etiqueta en puntos porcentuales fuera de la barra.
+  - **Capa C — Tabla completa colapsable** dentro de `<details>` (▸ "Ver tabla completa (Agosto · Septiembre · Total)"). Permite revisar los conteos originales sin dominar la pantalla.
 - **Rediseño visual:** fondo blanco (antes oscuro `#1C0A07`). Paleta de entidades reequilibrada para AA sobre blanco: Re `#D99100`, Tibios `#C76A00`, Fríos `#2A7FB8`. Estado por encima `#4F8F00` / por debajo `#C8355A`. Degradado de marca conservado solo en filetes y barra de progreso.
 - **Tipografía:** H1 bajó de `max 136px` a `max 88px`. H2 de `68px` a `54px`. Piso de encabezados de tabla subió de 13 px a 14 px.
 - **Interactividad agregada:**
