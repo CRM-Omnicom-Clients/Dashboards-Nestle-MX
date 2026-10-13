@@ -1,6 +1,6 @@
 # ESTADO · Propensión (Prevención de Churn) · AON Recetas Nestlé
 
-> **Punto de retome.** Última revisión: 13-oct-2026 (iteración 2).
+> **Punto de retome.** Última revisión: 13-oct-2026 (iteración 4).
 > Este documento tiene dos partes.
 > **Parte A: para continuar en TD AI Studio.** Está escrita para poder pegarse sola, sin el resto del repo.
 > **Parte B: para continuar desde una sesión de Claude** (regenerar y validar el HTML de referencia).
@@ -11,7 +11,13 @@
 
 ---
 
-## Cambios de esta iteración (13-oct-2026 · iter 3)
+## Cambios de esta iteración (13-oct-2026 · iter 4)
+
+- **§1 Perfiles de audiencia (nuevo bloque antes de Hipótesis):** tres tarjetas (Re-enganchables, Tibios, Fríos) con icono, nombre, touchpoint y descripción de la regla ("Adquiridos en el último año sin interacción en los últimos 6 meses", etc.), más el tamaño de audiencia abajo (Re 79.5K · Ti 2.54M Mid Probability · Fr 12.1K High Probability). Responde a la pregunta "¿quiénes eran estos usuarios?" antes de pedir las metas.
+- **§2 ¿Qué pasó? audiencia Tibios corregida:** la cifra de 1,955,293 que venía de la hoja no reflejaba el tamaño real del segmento en agosto. Se reemplazó por la reconstrucción desde CDP (Mid Probability actual proyectada hacia atrás usando los flags de etiqueta): Ago 3,024,049 · Sep 3,060,455 · Variación +1.20%. Principal / Audiencia recalculada: 5.39% (Ago) · 38.47% (Sep) · +33.08 pts. Debajo de la tabla, aviso aclarando que la etiqueta se sobre-escribe y que la cifra exacta queda pendiente del snapshot pre-campaña.
+- **Iconografía:** iconos SVG (stroke) en los 4 encabezados H2 (Resultados · Anomalía · Plan · Resumen) y en los H3 de §1 (Hipótesis · Resultados · Realidad · ¿Quiénes eran estos usuarios?). Tono tostado único (`#C87A2A`), tamaño 22 px en H2 y 18 px en H3. Las ilustraciones del Plan de acción ya existentes se mantuvieron.
+
+## Cambios de iteración 3 (13-oct-2026)
 
 - **§1 Resultados, orden definitivo:** tabla detalle completa (visible, no colapsada) → scorecards por segmento → barras divergentes mes a mes. Primero el detalle que el usuario quiere ver, después las comparativas que resaltan lo importante.
 - **§1 Resultados rediseñado en tres capas (método del skill de dashboards):**
