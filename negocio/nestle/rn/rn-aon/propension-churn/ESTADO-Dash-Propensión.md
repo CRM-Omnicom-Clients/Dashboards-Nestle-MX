@@ -1,15 +1,44 @@
 # ESTADO · Propensión (Prevención de Churn) · AON Recetas Nestlé
 
-> **Punto de retome.** Última revisión: 13-oct-2026.
+> **Punto de retome.** Última revisión: 13-oct-2026 (iteración 2).
 > Este documento tiene dos partes.
 > **Parte A: para continuar en TD AI Studio.** Está escrita para poder pegarse sola, sin el resto del repo.
 > **Parte B: para continuar desde una sesión de Claude** (regenerar y validar el HTML de referencia).
 
-**Dónde está el entregable.** En el repositorio `NUBE-CLAUD`, en `negocio/nestle/rn/rn-aon/propension-churn/`:
+**Dónde está el entregable.** En el repositorio `CRM-Omnicom-Clients/Dashboards-Nestle-MX`, en `negocio/nestle/rn/rn-aon/propension-churn/`:
 - `(Interno) Dashboard-Propension-AON-RN.html`: la estructura y los números, para abrir en cualquier navegador.
-- `Referencia-Conciliacion.md`: las cifras contra las que TD debe conciliar la CDP.
-- `CANON.md`: reglas de cifras, definiciones y sistema visual.
-- GitHub: `https://github.com/RickAguilarOmnicom/NUBE-CLAUD/tree/main/negocio/nestle/rn/rn-aon/propension-churn`
+- GitHub: `https://github.com/CRM-Omnicom-Clients/Dashboards-Nestle-MX/tree/main/negocio/nestle/rn/rn-aon/propension-churn`
+
+---
+
+## Cambios de esta iteración (13-oct-2026)
+
+- **Rediseño visual:** fondo blanco (antes oscuro `#1C0A07`). Paleta de entidades reequilibrada para AA sobre blanco: Re `#D99100`, Tibios `#C76A00`, Fríos `#2A7FB8`. Estado por encima `#4F8F00` / por debajo `#C8355A`. Degradado de marca conservado solo en filetes y barra de progreso.
+- **Tipografía:** H1 bajó de `max 136px` a `max 88px`. H2 de `68px` a `54px`. Piso de encabezados de tabla subió de 13 px a 14 px.
+- **Interactividad agregada:**
+  - Filtro por segmento (sticky bajo la nav): "Todos / Re-enganchables / Tibios / Fríos" oculta filas que no corresponden.
+  - Tooltips sobre cada valor crudo: hover muestra la llave `data-k` y el valor crudo `data-raw`.
+  - Barra de progreso de scroll en el borde superior con el degradado de marca.
+  - Focus visible en teclado (accesibilidad).
+
+## Decisiones confirmadas por Rick
+
+| Pendiente | Decisión (13-oct) |
+|---|---|
+| Comparación de modelos ML en §4 | Antes vs después de la campaña |
+| Granularidad de modelos | Solo el promedio por segmento |
+| Modelos a mostrar | **CLTV** (en CDP) y **Churn Propensity** (en CDP) |
+
+## Pendientes abiertos con Rick (siguen pendientes)
+
+| Pendiente | Lo desbloquea |
+|---|---|
+| Base de la meta de CTOR: `Clicks / Opens` (literal) vs `Clicks / Deliveries` | Rick |
+| Rótulo final: "Churn Model" o "Churn Rate" | Rick |
+| Umbral de "más de lo habitual" para notificaciones | Rick + TD |
+| Hipótesis para Fríos (hoy no activos) | Rick |
+| Datos CDP para §2 "¿Quiénes eran esos usuarios?" (envío masivo Tibios 2-sep): cortes sugeridos — enviados vs no enviados, recencia 7-12m, comportamiento post-envío | Rick / consulta en CDP |
+| Datos CDP para §4: scores de CLTV y Churn Propensity, promedio por segmento, **antes y después de la campaña**. Requiere confirmación de que los modelos guardan histórico (snapshot pre-ago y post-sep) | Rick → confirma tabla/columna; luego se corre query |
 
 ---
 
