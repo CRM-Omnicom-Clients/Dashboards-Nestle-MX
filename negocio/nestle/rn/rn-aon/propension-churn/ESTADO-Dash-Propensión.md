@@ -1,6 +1,6 @@
 # ESTADO · Propensión (Prevención de Churn) · AON Recetas Nestlé
 
-> **Punto de retome.** Última revisión: 13-oct-2026 (iteración 4).
+> **Punto de retome.** Última revisión: 14-oct-2026 (iteración 5).
 > Este documento tiene dos partes.
 > **Parte A: para continuar en TD AI Studio.** Está escrita para poder pegarse sola, sin el resto del repo.
 > **Parte B: para continuar desde una sesión de Claude** (regenerar y validar el HTML de referencia).
@@ -11,7 +11,23 @@
 
 ---
 
-## Cambios de esta iteración (13-oct-2026 · iter 4)
+## Cambios de esta iteración (14-oct-2026 · iter 5) — Rediseño estructural completo
+
+Basado en propuesta de manager. Nueva estructura de 5 secciones (vs las 4 previas):
+
+| Sección | Qué contiene |
+|---|---|
+| **§0 Contexto** | Estrategia (3.6M inactivos, 1M Propensión, objetivo 30%), segmentos + objetivos (OR/CTOR) |
+| **§1 Resultados** | 3 bloques separados por segmento: tabla Ago/Sep/Total con columnas comparativa vs objetivo (color+flecha inline) |
+| **§2 Aportación** | Hero: 12,842 rescatados. KPIs: 1.28% vs universo Propensión (1M), 0.86% vs usuarios con envío (1.49M), 0.36% vs inactivos totales (3.6M). Snapshot modelo churn |
+| **§3 Anomalía** | Contexto + ¿Qué pasó? (2 causas) + Impacto Tibios únicamente (no mezcla performance general) |
+| **§4 Plan** | 3 acciones con responsable IBS, imagen de reglas |
+
+**Dato nuevo confirmado:** usuarios únicos E-PROP1 (Tibios) con envío = **1,340,573** (verificado con n_rows en `raw_sfmc_global.raw_sfmc_global_emailevents_sends`; coincide exactamente con la suma de Principal Ago + Sep del dashboard). Re-eng = 153,243. **Total único = 1,493,816**.
+
+**Dato nuevo:** contexto corregido = 3.6M usuarios inactivos totales · 1M con Propensión de Churn medidos en mayo 2026.
+
+## Cambios de iteración 4 (13-oct-2026)
 
 - **§1 Perfiles de audiencia (nuevo bloque antes de Hipótesis):** tres tarjetas (Re-enganchables, Tibios, Fríos) con icono, nombre, touchpoint y descripción de la regla ("Adquiridos en el último año sin interacción en los últimos 6 meses", etc.), más el tamaño de audiencia abajo (Re 79.5K · Ti 2.54M Mid Probability · Fr 12.1K High Probability). Responde a la pregunta "¿quiénes eran estos usuarios?" antes de pedir las metas.
 - **§2 ¿Qué pasó? audiencia Tibios corregida:** la cifra de 1,955,293 que venía de la hoja no reflejaba el tamaño real del segmento en agosto. Se reemplazó por la reconstrucción desde CDP (Mid Probability actual proyectada hacia atrás usando los flags de etiqueta): Ago 3,024,049 · Sep 3,060,455 · Variación +1.20%. Principal / Audiencia recalculada: 5.39% (Ago) · 38.47% (Sep) · +33.08 pts. Debajo de la tabla, aviso aclarando que la etiqueta se sobre-escribe y que la cifra exacta queda pendiente del snapshot pre-campaña.
