@@ -1,6 +1,6 @@
 # ESTADO · Propensión (Prevención de Churn) · AON Recetas Nestlé
 
-> **Punto de retome.** Última revisión: 14-oct-2026 (iteración 5).
+> **Punto de retome.** Última revisión: 14-oct-2026 (iteración 5.1).
 > Este documento tiene dos partes.
 > **Parte A: para continuar en TD AI Studio.** Está escrita para poder pegarse sola, sin el resto del repo.
 > **Parte B: para continuar desde una sesión de Claude** (regenerar y validar el HTML de referencia).
@@ -11,7 +11,16 @@
 
 ---
 
-## Cambios de esta iteración (14-oct-2026 · iter 5) — Rediseño estructural completo
+## Correcciones iter 5.1 (14-oct-2026)
+
+- **Objetivo:** "Activar una parte de los usuarios inactivos antes de que lleguen a ser Zombies."
+- **§0 Segmentos:** descripción de cada segmento debajo de su nombre en la tabla de objetivos.
+- **§1 Resultados:** chip de Churn Propensity eliminado; se muestra Touchpoint (E-PROP1/E-PROP2) + Subject principal y FUP por bloque. Columnas renombradas: Envíos totales · Entregados · Aperturas únicas · Open Rate · vs Obj. · Clicks únicos · CTOR · vs Obj. · Conversiones · Bajas. Columna Conversiones (CR%) agregada.
+- **§2 Aportación:** tarjetas con título descriptivo + volúmenes explícitos (12.842 de X). Bloque de distribución del modelo eliminado (no era parte de la estructura solicitada).
+- **§3 Anomalía:** contexto (¿Qué pasó?) e impacto (tabla Tibios) en bloques visualmente separados.
+- **§4 Plan:** imagen JPEG eliminada; ícono de campanita para acción de notificaciones. Color verde extraño resuelto (venía de la imagen).
+
+## Cambios iter 5 (14-oct-2026) — Rediseño estructural completo
 
 Basado en propuesta de manager. Nueva estructura de 5 secciones (vs las 4 previas):
 
