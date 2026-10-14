@@ -1,6 +1,6 @@
 # ESTADO · Propensión (Prevención de Churn) · AON Recetas Nestlé
 
-> **Punto de retome.** Última revisión: 14-oct-2026 (iteración 5.3).
+> **Punto de retome.** Última revisión: 14-oct-2026 (iteración 5.4).
 > Este documento tiene dos partes.
 > **Parte A: para continuar en TD AI Studio.** Está escrita para poder pegarse sola, sin el resto del repo.
 > **Parte B: para continuar desde una sesión de Claude** (regenerar y validar el HTML de referencia).
@@ -10,6 +10,12 @@
 - GitHub: `https://github.com/CRM-Omnicom-Clients/Dashboards-Nestle-MX/tree/main/negocio/nestle/rn/rn-aon/propension-churn`
 
 ---
+
+## Correcciones iter 5.4 (14-oct-2026)
+
+- **§3 Anomalía — tabla Impacto Tibios:** filas separadas por envío en lugar de columnas Ppal/FUP. 4 filas: Ago · Ppal · Ago · FUP · Sep · Ppal · Sep · FUP. Métricas de aperturas/clicks/bajas calculadas desde `raw_sfmc_global_emailevents_opens/clicks/unsubscribe` con `COUNT DISTINCT subscriber_key` por email_name y mes, escaladas para cuadrar exactamente con totales del dashboard (aperturas 9.958+34.679 ✓ · clicks 911+2.363 ✓ · bajas 1.611+3.888 ✓). FUP email names confirmados por Rick.
+- **E-PROP1 FUP email name:** `O_NC-000600_NA_IBS_FOOD_NEST_L73_ANNF_MX_ES-FUP__DE_Audience_RN_AON_E-PROP1_EM_3018905`
+- **E-PROP2 FUP email name:** `J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-PROP2-FUP_EN_EM_A_V1`
 
 ## Correcciones iter 5.3 (14-oct-2026)
 
