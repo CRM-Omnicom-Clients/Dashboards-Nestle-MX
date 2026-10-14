@@ -311,8 +311,8 @@ td.dif{text-align:left;min-width:206px}
 .card-info .info-d{font-size:14px;color:var(--sec);line-height:1.5}
 .card-info .info-d strong{color:var(--texto);font-weight:600}
 .plan-grupo{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:14px}
-.plan-item{background:var(--surface);border:1px solid var(--borde);border-radius:16px;padding:18px 22px;border-left:3px solid var(--enc);display:flex;flex-direction:column;gap:6px}
-.plan-item .pi-k{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--enc);font-weight:600}
+.plan-item{background:var(--surface);border:1px solid var(--borde);border-radius:16px;padding:18px 22px;border-left:3px solid var(--deb);display:flex;flex-direction:column;gap:6px}
+.plan-item .pi-k{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--deb);font-weight:600}
 .plan-item .pi-v{font-size:15px;line-height:1.55;color:var(--sec)}
 .plan-item .pi-v .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:13px;background:rgba(28,10,7,.04);padding:2px 6px;border-radius:6px}
 .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
@@ -347,8 +347,8 @@ h3 .ico-h3 svg{width:18px;height:18px}
 
 /* ── EXTRA ITER 5 ──────────────────────────────────────────────────── */
 /* Context section */
-.ctx-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:16px}
-@media(max-width:900px){.ctx-grid{grid-template-columns:1fr}}
+.ctx-col{display:flex;flex-direction:column;gap:16px;margin-top:16px}
+
 .ctx-bloque{background:var(--card);border:1px solid var(--borde);border-radius:16px;padding:20px}
 .ctx-lista{margin:10px 0 0 0;padding-left:20px;color:var(--sec);font-size:15px;line-height:1.7}
 .ctx-lista strong{color:var(--texto)}
@@ -421,11 +421,11 @@ h3 .ico-h3 svg{width:18px;height:18px}
 .plan-item{display:grid;grid-template-columns:36px 44px 1fr;gap:12px;align-items:center;padding:18px 20px;background:var(--card);border-bottom:1px solid var(--borde)}
 .plan-item:last-child{border-bottom:none}
 .pi-num{font-size:11px;font-weight:700;color:var(--apagado);text-align:center}
-.pi-ico{width:40px;height:40px;border-radius:10px;background:rgba(200,122,42,.15);display:flex;align-items:center;justify-content:center;color:#C87A2A}
+.pi-ico{width:40px;height:40px;border-radius:10px;background:rgba(200,53,74,.15);display:flex;align-items:center;justify-content:center;color:var(--deb)}
 .pi-tit{font-weight:600;font-size:15px;color:var(--texto)}
 .pi-desc{font-size:13px;color:var(--sec);margin-top:4px;line-height:1.5}
 .pi-resp{font-size:12px;color:var(--apagado);margin-top:6px}
-.resp-lab{background:rgba(200,122,42,.15);color:#C87A2A;border-radius:4px;padding:1px 6px;margin-right:6px;font-weight:600;font-size:11px;text-transform:uppercase}
+.resp-lab{background:rgba(200,53,74,.15);color:var(--deb);border-radius:4px;padding:1px 6px;margin-right:6px;font-weight:600;font-size:11px;text-transform:uppercase}
 
 
 /* iter-5 fixes */
@@ -437,11 +437,24 @@ h3 .ico-h3 svg{width:18px;height:18px}
 .t-perf th.vs-th{width:40px;font-size:11px;color:var(--apagado)}
 .anom-col{display:flex;flex-direction:column;gap:20px;margin-top:12px}
 .anom-ctx-bloque,.anom-imp-bloque{background:var(--card);border:1px solid var(--borde);border-radius:16px;padding:20px 24px}
-.anom-imp-bloque .tabla{overflow-x:auto}
+.anom-imp-bloque{overflow-x:auto}.anom-imp-bloque .tabla,.anom-imp-bloque table{width:100%;min-width:600px}
 .ac-tit{font-size:13px;color:var(--texto);font-weight:600;margin-bottom:6px;line-height:1.4}
 .ac-vol{font-size:12px;color:var(--apagado);margin-top:6px;line-height:1.4}
 .plan-wrap-col{margin-top:12px}
 .plan-acciones-full{width:100%}
+
+
+/* iter-5.2 */
+.ctx-bloque.ctx-sep{background:var(--card);border:1px solid var(--borde);border-radius:16px;padding:20px}
+.aport-card-table{padding:14px 16px}
+.ac-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.ac-table th{font-size:11px;color:var(--apagado);text-transform:uppercase;letter-spacing:.4px;padding:4px 8px;text-align:left;border-bottom:1px solid var(--borde)}
+.ac-table td{padding:6px 8px;border-bottom:1px solid var(--borde);color:var(--sec);vertical-align:middle}
+.ac-table td:first-child{display:flex;align-items:center;gap:6px}
+.ac-table .ac-total td{font-weight:600;color:var(--texto);border-bottom:none}
+.ac-table .ac-metric{font-weight:600;color:var(--texto)}
+.aport-card-right .ac-cifra{font-size:36px}
+.ac-opens{font-weight:600;color:var(--texto)}
 
 </style></style>
 </head><body>
@@ -473,8 +486,8 @@ h3 .ico-h3 svg{width:18px;height:18px}
     <h2 id="h-ctx"><span class="ico-h2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>Contexto</h2>
   </div><div class="sec-fil"></div>
 
-  <div class="ctx-grid">
-    <div class="ctx-bloque">
+  <div class="ctx-col">
+    <div class="ctx-bloque ctx-sep">
       <h3><span class="ico-h3"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>¿De qué trata esta estrategia?</h3>
       <ul class="ctx-lista">
         <li><strong>Objetivo:</strong> Activar una parte de los usuarios inactivos antes de que lleguen a ser Zombies.</li>
@@ -484,7 +497,7 @@ h3 .ico-h3 svg{width:18px;height:18px}
       </ul>
     </div>
 
-    <div class="ctx-bloque">
+    <div class="ctx-bloque ctx-sep">
       <h3><span class="ico-h3"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>Segmentos y objetivos</h3>
       <div class="tabla corta">
         <table>
@@ -668,16 +681,22 @@ h3 .ico-h3 svg{width:18px;height:18px}
         <div class="ac-vol">12.842 usuarios rescatados de 1.000.000 en Propensión (mayo 2026)</div>
       </div>
 
-      <div class="aport-card">
-        <div class="ac-tit">Tasa de rescate sobre enviados</div>
-        <div class="ac-cifra">0.86%</div>
-        <div class="ac-vol">12.842 rescatados de 1.493.816 con al menos un envío en la campaña</div>
+      <div class="aport-card aport-card-table">
+        <div class="ac-tit">Activación sobre envíos</div>
+        <table class="ac-table">
+          <thead><tr><th>Segmento</th><th>Envíos totales</th><th>Open Rate</th></tr></thead>
+          <tbody>
+            <tr><td><i class="pt re"></i>Re-enganchables</td><td>153.243</td><td class="ac-metric">7.86%</td></tr>
+            <tr><td><i class="pt ti"></i>Tibios</td><td>2.627.267</td><td class="ac-metric">1.75%</td></tr>
+            <tr class="ac-total"><td>Campaña total</td><td>2.780.510</td><td class="ac-metric">2.08%</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="aport-card">
-        <div class="ac-tit">Activación sobre inactivos totales</div>
-        <div class="ac-cifra">0.36%</div>
-        <div class="ac-vol">12.842 usuarios rescatados de 3.600.000 inactivos totales</div>
+      <div class="aport-card aport-card-right">
+        <div class="ac-tit">Tasa de activación sobre enviados</div>
+        <div class="ac-cifra">3.76%</div>
+        <div class="ac-vol"><span class="ac-opens">56.208 aperturas únicas</span> de 1.493.816 usuarios con al menos un envío en la campaña</div>
       </div>
 
     </div>
@@ -710,7 +729,7 @@ h3 .ico-h3 svg{width:18px;height:18px}
       </ol>
     </div>
 
-    <div class="bloque rev anom-imp-bloque">
+    <div class="bloque rev anom-imp-bloque" style="overflow:auto">
       <h3><span class="ico-h3"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Impacto en Tibios</h3>
       <p class="anom-ctx">El volumen de envíos en septiembre se multiplicó ×7.2 respecto a agosto — las métricas de engagement cayeron en consecuencia.</p>
       <div class="tabla corta">
