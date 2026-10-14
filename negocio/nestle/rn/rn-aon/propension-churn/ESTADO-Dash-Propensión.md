@@ -1,6 +1,6 @@
 # ESTADO · Propensión (Prevención de Churn) · AON Recetas Nestlé
 
-> **Punto de retome.** Última revisión: 14-oct-2026 (iteración 5.1).
+> **Punto de retome.** Última revisión: 14-oct-2026 (iteración 5.3).
 > Este documento tiene dos partes.
 > **Parte A: para continuar en TD AI Studio.** Está escrita para poder pegarse sola, sin el resto del repo.
 > **Parte B: para continuar desde una sesión de Claude** (regenerar y validar el HTML de referencia).
@@ -10,6 +10,21 @@
 - GitHub: `https://github.com/CRM-Omnicom-Clients/Dashboards-Nestle-MX/tree/main/negocio/nestle/rn/rn-aon/propension-churn`
 
 ---
+
+## Correcciones iter 5.3 (14-oct-2026)
+
+- **Card 1:** "12.842 usuarios **únicos** rescatados de 1.000.000"
+- **Card 2 (Activación sobre envíos principales):** tabla muestra solo envíos principales (no totales); columnas: Segmento · Envíos principales · Aperturas · Open Rate. Datos: Re-eng 80,626 enviados / 11,571 aperturas / OR 14.35%; Tibios 1,340,566 / 44,637 / 3.33%; Total 1,421,192 / 56,208 / 3.95%.
+- **Tabla Anomalía:** ahora ocupa el ancho completo como las tablas de resultados (clase `.t-perf`, sin contenedor scrollable). Columnas expandidas: Mes · Envíos Ppal · Envíos FUP · Envíos Total · Entregados · Aperturas · OR · Clicks · CTOR · Bajas · UTOR · DR.
+- **Subject E-PROP2 corregido:** Principal = "Te perdiste estas recetas nuevas..." · FUP = "Las recetas favoritas de estos días, para ti"
+
+## Correcciones iter 5.2 (14-oct-2026)
+
+- **§3 Anomalía — impacto Tibios:** tabla completa a ancho completo (`.anom-imp-full`). Columnas: Mes · Envíos Ppal · Envíos FUP · Envíos Total · Entregados · Aperturas · OR · Clicks · CTOR · Bajas · UTOR · DR. Agosto y Septiembre con filas de datos reales.
+- **§3 Anomalía — contexto:** separado en dos bloques apilados: uno de contexto del segmento (qué es Tibios, cuándo se activó) y uno de hipótesis/hallazgo (¿qué pasó?), con fondo diferenciado.
+- **§2 Aportación — Card 2:** tabla OR (Segmento · Aperturas · Enviados · OR), datos Re-eng y Tibios.
+- **§2 Aportación — Card 3:** porcentaje 3.76% opens/enviados alineado a la derecha con descripción.
+- **§4 Plan de acción:** colores de acciones cambiados de verde a rojo (`var(--deb)`, `#C8355A`) en `border-left` de ítems del plan.
 
 ## Correcciones iter 5.1 (14-oct-2026)
 

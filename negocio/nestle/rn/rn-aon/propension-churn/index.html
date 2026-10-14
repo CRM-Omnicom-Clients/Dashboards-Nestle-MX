@@ -456,6 +456,12 @@ h3 .ico-h3 svg{width:18px;height:18px}
 .aport-card-right .ac-cifra{font-size:36px}
 .ac-opens{font-weight:600;color:var(--texto)}
 
+
+/* iter-5.3 */
+.anom-imp-full{background:var(--card);border:1px solid var(--borde);border-radius:16px;padding:20px 24px}
+.anom-imp-full .tabla-perf{overflow-x:auto}
+.anom-imp-full .t-perf{min-width:750px}
+
 </style></style>
 </head><body>
 
@@ -539,7 +545,7 @@ h3 .ico-h3 svg{width:18px;height:18px}
         <div class="bs-ico bs-re"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
         <div>
           <div class="bs-nom">Re-enganchables</div>
-          <div class="bs-meta"><span class="bs-tp"><strong>Touchpoint:</strong> E-PROP2</span><span class="bs-subj"><strong>Subject:</strong> Cocina más fácil: tus recetas en una app 📲 &nbsp;<span class="subj-fup">FUP: Descárgala gratis</span></span></div>
+          <div class="bs-meta"><span class="bs-tp"><strong>Touchpoint:</strong> E-PROP2</span><span class="bs-subj"><strong>Subject:</strong> Te perdiste estas recetas nuevas &nbsp;<span class="subj-fup">FUP: Las recetas favoritas de estos días, para ti</span></span></div>
         </div>
         <div class="bs-desc">Adquiridos en el último año sin ninguna interacción en los últimos 6 meses</div>
       </div>
@@ -678,17 +684,17 @@ h3 .ico-h3 svg{width:18px;height:18px}
       <div class="aport-card">
         <div class="ac-tit">Activación sobre universo Propensión</div>
         <div class="ac-cifra">1.28%</div>
-        <div class="ac-vol">12.842 usuarios rescatados de 1.000.000 en Propensión (mayo 2026)</div>
+        <div class="ac-vol">12.842 usuarios únicos rescatados de 1.000.000 en Propensión (mayo 2026)</div>
       </div>
 
       <div class="aport-card aport-card-table">
-        <div class="ac-tit">Activación sobre envíos</div>
+        <div class="ac-tit">Activación sobre envíos principales</div>
         <table class="ac-table">
-          <thead><tr><th>Segmento</th><th>Envíos totales</th><th>Open Rate</th></tr></thead>
+          <thead><tr><th>Segmento</th><th>Envíos principales</th><th>Aperturas</th><th>Open Rate</th></tr></thead>
           <tbody>
-            <tr><td><i class="pt re"></i>Re-enganchables</td><td>153.243</td><td class="ac-metric">7.86%</td></tr>
-            <tr><td><i class="pt ti"></i>Tibios</td><td>2.627.267</td><td class="ac-metric">1.75%</td></tr>
-            <tr class="ac-total"><td>Campaña total</td><td>2.780.510</td><td class="ac-metric">2.08%</td></tr>
+            <tr><td><i class="pt re"></i>Re-enganchables</td><td>80.626</td><td>11.571</td><td class="ac-metric">14.35%</td></tr>
+            <tr><td><i class="pt ti"></i>Tibios</td><td>1.340.566</td><td>44.637</td><td class="ac-metric">3.33%</td></tr>
+            <tr class="ac-total"><td>Campaña total</td><td>1.421.192</td><td>56.208</td><td class="ac-metric">3.95%</td></tr>
           </tbody>
         </table>
       </div>
@@ -729,20 +735,33 @@ h3 .ico-h3 svg{width:18px;height:18px}
       </ol>
     </div>
 
-    <div class="bloque rev anom-imp-bloque" style="overflow:auto">
-      <h3><span class="ico-h3"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Impacto en Tibios</h3>
-      <p class="anom-ctx">El volumen de envíos en septiembre se multiplicó ×7.2 respecto a agosto — las métricas de engagement cayeron en consecuencia.</p>
-      <div class="tabla corta">
-        <table>
-          <caption class="sr">Impacto de la anomalía en Tibios</caption>
+    <div class="anom-imp-full">
+      <h3><span class="ico-h3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Impacto en Tibios</h3>
+      <p class="anom-ctx" style="margin-top:8px">El volumen de envíos en septiembre se multiplicó ×7.2 respecto a agosto — las métricas de engagement cayeron en consecuencia.</p>
+      <div class="tabla-perf" style="margin-top:12px">
+        <table class="t-perf">
           <thead><tr>
-            <th>Mes</th><th>Envíos totales</th><th>Open Rate</th><th>Clicks únicos</th>
-            <th>CTOR</th><th>Bajas</th><th>%UTOR</th><th>DR</th>
+            <th>Mes</th>
+            <th>Envíos Ppal</th>
+            <th>Envíos FUP</th>
+            <th>Envíos Total</th>
+            <th>Entregados</th>
+            <th>Aperturas</th>
+            <th>Open Rate</th>
+            <th>Clicks</th>
+            <th>CTOR</th>
+            <th>Bajas</th>
+            <th>%UTOR</th>
+            <th>DR</th>
           </tr></thead>
           <tbody>
             <tr>
               <td>Agosto</td>
+              <td>163.085</td>
+              <td>156.008</td>
               <td>319.093</td>
+              <td>314.820</td>
+              <td>9.958</td>
               <td class="verde">3.16%</td>
               <td>911</td>
               <td class="verde">9.15%</td>
@@ -752,7 +771,11 @@ h3 .ico-h3 svg{width:18px;height:18px}
             </tr>
             <tr>
               <td>Septiembre</td>
+              <td class="rojo">1.177.481</td>
+              <td class="rojo">1.130.693</td>
               <td class="rojo">2.308.174</td>
+              <td>2.235.503</td>
+              <td>34.679</td>
               <td class="rojo">1.55%</td>
               <td>2.363</td>
               <td>6.81%</td>
@@ -763,6 +786,10 @@ h3 .ico-h3 svg{width:18px;height:18px}
             <tr class="total-row">
               <td>Variación</td>
               <td class="rojo">×7.2</td>
+              <td class="rojo">×7.2</td>
+              <td class="rojo">×7.2</td>
+              <td>×7.1</td>
+              <td>+24.721</td>
               <td class="rojo">−1.61 pts</td>
               <td>+1.452</td>
               <td>−2.33 pts</td>
