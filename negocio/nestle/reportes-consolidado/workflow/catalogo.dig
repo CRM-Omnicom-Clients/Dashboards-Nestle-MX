@@ -1,0 +1,117 @@
+timezone: America/Mexico_City
+
+_export:
+  td:
+    engine: presto
+
+# ── Gate 1: validar insumos antes de reconstruir ──────
++gate1:
+  td>: queries/gate1_catalogo.sql
+  database: nmx_insumos
+  store_last_results: true
+
++check_gate1:
+  if>: ${td.last_results.errores > 0}
+  _do:
+    +fail:
+      fail>: "Gate 1 falló: ${td.last_results.errores} error(es) en nmx_insumos. Revisar antes de continuar."
+
+# ── Reconstruir dims (independientes — corren en paralelo) ──
++rebuild_dims:
+  _parallel: true
+
+  +dim_bu:
+    td_ddl>:
+      drop_tables: [dim_bu]
+      database: nmx_catalogo
+  +dim_bu_create:
+    td>: queries/rebuild_dim_bu.sql
+    database: nmx_catalogo
+    create_table: dim_bu
+
+  +dim_marca:
+    td_ddl>:
+      drop_tables: [dim_marca]
+      database: nmx_catalogo
+  +dim_marca_create:
+    td>: queries/rebuild_dim_marca.sql
+    database: nmx_catalogo
+    create_table: dim_marca
+
+  +dim_campana:
+    td_ddl>:
+      drop_tables: [dim_campana]
+      database: nmx_catalogo
+  +dim_campana_create:
+    td>: queries/rebuild_dim_campana.sql
+    database: nmx_catalogo
+    create_table: dim_campana
+
+  +dim_objetivo:
+    td_ddl>:
+      drop_tables: [dim_objetivo]
+      database: nmx_catalogo
+  +dim_objetivo_create:
+    td>: queries/rebuild_dim_objetivo.sql
+    database: nmx_catalogo
+    create_table: dim_objetivo
+
+  +dim_touchpoint_brief:
+    td_ddl>:
+      drop_tables: [dim_touchpoint_brief]
+      database: nmx_catalogo
+  +dim_touchpoint_brief_create:
+    td>: queries/rebuild_dim_touchpoint_brief.sql
+    database: nmx_catalogo
+    create_table: dim_touchpoint_brief
+
+  +dim_segmento:
+    td_ddl>:
+      drop_tables: [dim_segmento]
+      database: nmx_catalogo
+  +dim_segmento_create:
+    td>: queries/rebuild_dim_segmento.sql
+    database: nmx_catalogo
+    create_table: dim_segmento
+
+# ── Reconstruir lookup tables (dependen de dims) ──────
++rebuild_tabla_piezas:
+  td_ddl>:
+    drop_tables: [tabla_piezas]
+    database: nmx_catalogo
++rebuild_tabla_piezas_create:
+  td>: queries/rebuild_tabla_piezas.sql
+  database: nmx_catalogo
+  create_table: tabla_piezas
+
++rebuild_pieza_segmento:
+  td_ddl>:
+    drop_tables: [pieza_segmento]
+    database: nmx_catalogo
++rebuild_pieza_segmento_create:
+  td>: queries/rebuild_pieza_segmento.sql
+  database: nmx_catalogo
+  create_table: pieza_segmento
+
++rebuild_tabla_nombres:
+  td_ddl>:
+    drop_tables: [tabla_nombres]
+    database: nmx_catalogo
++rebuild_tabla_nombres_create:
+  td>: queries/rebuild_tabla_nombres.sql
+  database: nmx_catalogo
+  create_table: tabla_nombres
+
++rebuild_dim_shortlink:
+  td_ddl>:
+    drop_tables: [dim_shortlink]
+    database: nmx_catalogo
++rebuild_dim_shortlink_create:
+  td>: queries/rebuild_dim_shortlink.sql
+  database: nmx_catalogo
+  create_table: dim_shortlink
+
+_error:
+  mail>: Reporte Consolidado — workflow catalogo falló
+  subject: "[nmx_crm_reporte] catalogo.dig FALLÓ — ${session_date}"
+  to: [rick@omnicommediagroup.com]
