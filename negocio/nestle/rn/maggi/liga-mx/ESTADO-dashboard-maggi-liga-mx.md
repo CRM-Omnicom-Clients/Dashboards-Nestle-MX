@@ -1,6 +1,6 @@
 # ESTADO · Dashboard Liga MX 2026
 
-> Documento vivo. Última actualización: 2026-10-29 (v4 · iteración feedback cliente).
+> Documento vivo. Última actualización: 2026-10-30 (v4 · nueva iteración: notas internas eliminadas, columnas sticky, top-3 verde, flechas ↑↓, S4 removida).
 
 ---
 
@@ -29,6 +29,7 @@ Más una síntesis **📋 Accionables** con 5 bullets.
 
 | Hash | Descripción |
 |---|---|
+| `d685fa8` | **feat**: V4 nueva iteración — notas internas eliminadas · insights+accionables antes de cada tabla · S4 removida · columna sticky izquierda · top-3 CTOR verde · flechas ↑↓ · columnas "Insight creativo" y "Patrón de copy" en S1 |
 | `bab9f7c` | **style**: encabezados de tabla fijos (sticky) al hacer scroll |
 | `e3dcfc5` | **feat**: imágenes E-SNM3/E-SNF-1/WA-SNF1 agregadas; clicks email unificados como CTA; quitar notas "único CTA" WA |
 | `0724239` | **feat**: separar email/WA en S1/S2/S3; volúmenes en celdas; chips de destino; tabla WA antes de gráfica; insights y accionables en bullets |
@@ -50,25 +51,26 @@ Más una síntesis **📋 Accionables** con 5 bullets.
 ## Arquitectura de secciones (vigente)
 
 ### S1 · CONTENIDO
-- **Email**: tabla receta + OR (con aperturas) + CTOR (con clicks) + CTR — 11 piezas
-- **WhatsApp**: tabla receta + %Lectura (con leídos) + CTOR (con clicks) — 5 piezas
-- **Copy Email**: patrón de subject → resultado
-- **Copy WA**: patrón de card → resultado
-- Insights y accionables en bullet points
+- **Email**: tabla unificada con Pieza · Imagen · Receta · OR · CTOR ↑↓ · CTR · **Insight creativo** · **Patrón de copy** — 11 piezas
+- **WhatsApp**: tabla unificada con Pieza · Imagen · Receta · %Lectura · CTOR ↑↓ · **Insight creativo** · **Patrón de copy** — 5 piezas
+- Insights y accionables **antes** de las tablas
+- Top 3 CTOR resaltado en verde (1°=fuerte · 2°=mediano · 3°=claro)
+- Flechas ↑↓ comparando cada pieza vs la anterior cronológicamente
+- **E-SNM-Femenil = única pieza con jugadora en el creativo** (confirmado cliente)
 
 ### S2 · DESTINO
-- **Email**: tabla por pieza con chips de destino · columna "Clicks" (todos los clicks a destino cuentan como CTA) · CTOR
-- **WhatsApp**: tabla con Clicks QCart / Clicks Recetas / CTOR · nota solo para WA-J10 (YouTube no medido)
-- Sin separación por subgrupos — todo email junto, todo WA junto
-- Insights y accionables en bullet points
+- **Email**: tabla con chips de destino · Clicks · CTOR ↑↓ · columna "Insight destino"
+- **WhatsApp**: tabla con Clicks QCart / Clicks Recetas / CTOR ↑↓ · columna "Insight destino"
+- Insights y accionables antes de las tablas
 
 ### S3 · AUDIENCIA
-- **Email**: tabla unificada cronológica con jornadas J4–J10 + E-SNM-3 varonil + E-SNM-Femenil — todo en la misma tabla
-- **WhatsApp**: tabla de evolución del segmento primero, luego gráfica SVG de desgaste CTOR
-- Insights y accionables en bullet points
+- **Email**: tabla cronológica J4–J10 + SNM/SNF con segmento · OR ↑↓ · CTOR ↑↓
+- **WhatsApp**: tabla de evolución del segmento + gráfica SVG de desgaste CTOR
+- Insights y accionables antes de las tablas
+- **WA-SNM-2 segmento = "Región unificada"** (actualizado)
 
-### S4 · ACCIONABLES
-- 5 bullets con ícono + título corto + evidencia numérica
+### ~~S4 · ACCIONABLES~~
+- **Eliminada** — los accionables quedaron integrados en cada sección
 
 ---
 
@@ -104,15 +106,16 @@ RN/Dashboard Maggi/
 ### Visual
 - Imágenes como CSS classes (`.img-xxx{background-image:url(...)}`) — cada data URL aparece una sola vez
 - Encabezados de tabla `position: sticky; top: 62px` — se quedan visibles al hacer scroll
+- **Primera columna sticky** `position: sticky; left: 0` — pieza visible al scroll horizontal
+- **Top 3 CTOR** resaltado: verde fuerte (#1) · verde mediano (#2) · verde claro (#3)
+- **Flechas ↑↓** en verde/rojo comparando CTOR de cada pieza vs la anterior
 - Paleta: `#FFB800` gold · `#00D45A` verde · `#FF2040` rojo · `#080808` fondo
 
-### Qué se eliminó vs V3
-- Mundial como benchmark
-- 5 agrupaciones de contenido → S1 email/WA separados con tablas por pieza
-- 6 sub-bloques de destino → S2 email junto / WA junto con chips de destino
-- Mini-grid de diseño
-- Penetración Nestlé en S1
-- Notas de "cortes crudos" y particiones en S3
+### Qué se eliminó vs iteración anterior
+- Todas las notas internas (hero disclaimer "Tres lecturas accionables...", bloque `.decl` con SNM-1/WA-SNM-3/limitaciones y cualquier patrón similar)
+- Tablas separadas de patrón de copy → columnas integradas en tabla principal
+- S4 Accionables → accionables en cada sección
+- Mini-grid de diseño, penetración Nestlé, notas de cortes crudos
 
 ---
 
