@@ -31,35 +31,37 @@ h1,h2,h3,h4{font-family:'Bebas Neue',sans-serif;letter-spacing:.03em;line-height
 .hero h1{font-size:72px;line-height:1;background:linear-gradient(90deg,#FFB800,#FFD866);
          -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
          margin-bottom:14px}
-.hero p{font-size:21px;color:#8A8A8A;max-width:820px}
-
-.decl{background:#111111;border:1px dashed #2A2A2A;border-radius:4px;padding:22px 26px;margin:40px 0;
-       font-family:'Space Grotesk',sans-serif;font-size:14px;color:#8A8A8A}
-.decl b{color:#F2F2F2}
-.decl ul{margin:10px 0 0 20px}
 
 .s{margin:60px 0;padding:48px 0;border-top:1px solid #2A2A2A}
-.s-head{display:flex;align-items:baseline;gap:18px;margin-bottom:30px;flex-wrap:wrap}
+.s-head{display:flex;align-items:baseline;gap:18px;margin-bottom:20px;flex-wrap:wrap}
 .s-num{font-family:'Bebas Neue';font-size:88px;line-height:.9;color:#FFB800;opacity:.4}
 .s-title{font-size:46px;line-height:1}
 .s-icon{font-size:40px}
 .s-sub{font-family:'Space Grotesk';font-size:16px;color:#8A8A8A;
-        text-transform:uppercase;letter-spacing:.14em;margin-bottom:30px}
+        text-transform:uppercase;letter-spacing:.14em;margin-bottom:20px}
 
 .sub-head{font-size:28px;margin:36px 0 10px;color:#FFB800}
 .sub-sub{font-family:'Space Grotesk';font-size:14px;color:#8A8A8A;
           text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
 
-table.a{width:100%;border-collapse:collapse;margin:14px 0 8px;font-size:14px;
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0 8px}
+table.a{width:100%;border-collapse:collapse;font-size:14px;
         background:#111111;border:1px solid #2A2A2A}
 table.a th{background:#1A1A1A;color:#FFB800;font-family:'Space Grotesk';
             font-weight:500;text-transform:uppercase;letter-spacing:.08em;font-size:12px;
             padding:10px 12px;text-align:left;border-bottom:1px solid #2A2A2A;
-            position:sticky;top:62px;z-index:10}
-table.a td{padding:10px 12px;border-bottom:1px solid #2A2A2A;color:#F2F2F2;vertical-align:middle}
-table.a td.n{text-align:right;font-variant-numeric:tabular-nums}
+            position:sticky;top:62px;z-index:10;white-space:nowrap}
+table.a th:first-child{position:sticky;top:62px;left:0;z-index:20;background:#1A1A1A}
+table.a td{padding:10px 12px;border-bottom:1px solid #2A2A2A;color:#F2F2F2;
+            vertical-align:middle}
+table.a td:first-child{position:sticky;left:0;z-index:4;background:#111111}
 table.a tr:last-child td{border-bottom:none}
-table.a tr.hi td{background:rgba(255,184,0,.06)}
+table.a tr.top-1 td{background:rgba(0,212,90,.18)}
+table.a tr.top-2 td{background:rgba(0,212,90,.10)}
+table.a tr.top-3 td{background:rgba(0,212,90,.05)}
+table.a tr.top-1 td:first-child{background:rgba(0,212,90,.18)}
+table.a tr.top-2 td:first-child{background:rgba(0,212,90,.10)}
+table.a tr.top-3 td:first-child{background:rgba(0,212,90,.05)}
 
 .vol{color:#8A8A8A;font-size:11px;display:block;margin-top:2px;font-family:'Space Grotesk'}
 
@@ -70,13 +72,13 @@ table.a tr.hi td{background:rgba(255,184,0,.06)}
 .dest-chips{display:flex;flex-wrap:wrap;gap:3px}
 
 .piece-frame{width:120px;height:160px;background:#1A1A1A;border:1px solid #2A2A2A;
-              overflow:hidden;display:flex;align-items:center;justify-content:center}
+              overflow:hidden;display:flex;align-items:center;justify-content:center;
+              flex-shrink:0}
 .piece-frame.empty{color:#8A8A8A;font-size:11px;font-family:'Space Grotesk'}
 .piece-frame.piece-bg{background-size:cover;background-position:center top;background-repeat:no-repeat}
-.piece-frame.wa{width:140px;height:140px}
 
 .insight{background:rgba(255,184,0,.08);border:1px solid #FFB800;border-left:4px solid #FFB800;
-          padding:22px 26px;margin:28px 0;border-radius:3px}
+          padding:22px 26px;margin:20px 0;border-radius:3px}
 .insight .lbl{font-family:'Space Grotesk';font-size:12px;color:#FFB800;
                text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px;display:block}
 .insight p,.insight li{color:#F2F2F2;font-size:15px;line-height:1.6}
@@ -84,7 +86,7 @@ table.a tr.hi td{background:rgba(255,184,0,.06)}
 .insight li{margin-bottom:6px}
 
 .action{background:rgba(0,212,90,.06);border:1px solid #00D45A;border-left:4px solid #00D45A;
-         padding:22px 26px;margin:16px 0 32px;border-radius:3px}
+         padding:22px 26px;margin:16px 0 24px;border-radius:3px}
 .action .lbl{font-family:'Space Grotesk';font-size:12px;color:#00D45A;
               text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px;display:block}
 .action p,.action li{color:#F2F2F2;font-size:15px;line-height:1.6}
@@ -96,17 +98,6 @@ table.a tr.hi td{background:rgba(255,184,0,.06)}
 .warn b{color:#FF2040}
 
 .timeline-svg{width:100%;background:#111111;border:1px solid #2A2A2A;padding:20px;margin:20px 0}
-.synth{background:linear-gradient(135deg,#111111 0%,#1A1A1A 100%);
-        border:1px solid #FFB800;padding:40px;margin:40px 0}
-.synth h2{font-size:46px;color:#FFB800;margin-bottom:28px}
-.synth .item{display:flex;gap:16px;align-items:flex-start;margin:18px 0;padding:16px 20px;
-              background:rgba(0,0,0,.3);border-left:3px solid #FFB800}
-.synth .icon{font-size:28px;flex-shrink:0}
-.synth .body{flex:1}
-.synth .body b{color:#FFB800;font-family:'Space Grotesk';font-size:14px;
-                text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:4px}
-.synth .body p{font-size:15px;color:#F2F2F2}
-.synth .evid{color:#8A8A8A;font-size:12px;margin-top:4px;font-style:italic}
 
 footer{text-align:center;color:#8A8A8A;padding:40px 24px;font-family:'Space Grotesk';
         font-size:12px;text-transform:uppercase;letter-spacing:.14em;border-top:1px solid #2A2A2A}
@@ -142,7 +133,6 @@ footer{text-align:center;color:#8A8A8A;padding:40px 24px;font-family:'Space Grot
   <a href='#contenido'>🍳 Contenido</a>
   <a href='#destino'>🔗 Destino</a>
   <a href='#audiencia'>👥 Audiencia</a>
-  <a href='#accionables'>📋 Accionables</a>
 </div></nav>
 
 <div class='container'>
@@ -155,22 +145,7 @@ footer{text-align:center;color:#8A8A8A;padding:40px 24px;font-family:'Space Grot
     <span class='chip'>v4 · insights</span>
   </div>
   <h1>¿Qué cambiamos<br>para las próximas campañas?</h1>
-  <p>Tres lecturas accionables a partir de 16 piezas medidas en email y
-     WhatsApp — qué contenido performa, a qué destino conviene mandar al
-     usuario y cómo evoluciona la audiencia.</p>
 </section>
-
-  
-<div class='decl'>
-  <b>Alcance del reporte:</b> 16 piezas con medición completa.
-  <ul><li>SNM-1 Mex vs Perú (29-sep) — no se lanzó. Brief existente y hay imagen, pero no hubo envío medido.</li><li>WA-SNM-3 (6-oct) — excluida: CTOR derivado por supuesto, no medido en la fuente.</li></ul>
-  <br><b>Limitaciones declaradas:</b>
-  <ul>
-    <li>Fuera de QCart la fuente no mide conversión. Los clicks a video (YouTube/TikTok) en email no se categorizan como "CTA" en el tracking — por eso aparece diferencia entre Clicks Totales y Clicks CTA.</li>
-    <li>El split WA QCart vs Recetas solo está completo en WA-J8 y WA-J9. En el resto, la pieza tenía un único CTA o la fuente no desglosa por destino.</li>
-    <li>En WhatsApp, el volumen de la Data Extension no está poblado — se reporta solo "Envíos".</li>
-  </ul>
-</div>
 
   
 <section class='s' id='contenido'>
@@ -181,50 +156,40 @@ footer{text-align:center;color:#8A8A8A;padding:40px 24px;font-family:'Space Grot
   </div>
   <p class='s-sub'>¿Qué receta y qué copy conectan mejor?</p>
 
-  <h3 class='sub-head'>Receta protagonista — Email</h3>
-  <p class='sub-sub'>11 piezas · OR, CTOR y CTR con volumen en cada celda</p>
-  <table class='a'>
-    <tr><th>Pieza</th><th>Imagen</th><th>Receta</th><th>Formato</th><th>OR (aperturas)</th><th>CTOR (clicks)</th><th>CTR</th></tr>
-    <tr class=''><td><b>E-J4 CON</b><br><span class='vol'>Agosto · 7,995 env.</span></td><td><div class='piece-frame piece-bg img-e-j4-png' role='img' aria-label='E-J4 CON'></div></td><td>Botana de Jamaica</td><td><span style='color:#8A8A8A'>snack</span></td><td><b>44.1%</b><br><span class='vol'>(3,517 ap.)</span></td><td><b>0.74%</b><br><span class='vol'>(26 clicks)</span></td><td><b>0.33%</b><br><span class='vol'>(26 )</span></td></tr><tr class=''><td><b>E-J4 SIN</b><br><span class='vol'>Agosto · 128,759 env.</span></td><td><div class='piece-frame piece-bg img-e-j4-png' role='img' aria-label='E-J4 SIN'></div></td><td>Nachos con Carne</td><td><span style='color:#8A8A8A'>snack</span></td><td><b>43.4%</b><br><span class='vol'>(55,734 ap.)</span></td><td><b>0.61%</b><br><span class='vol'>(342 clicks)</span></td><td><b>0.27%</b><br><span class='vol'>(342 )</span></td></tr><tr class=''><td><b>E-J5 CON · Part B</b><br><span class='vol'>Agosto · 2,708 env.</span></td><td><div class='piece-frame piece-bg img-e-j5-png' role='img' aria-label='E-J5 CON · Part B'></div></td><td>DIP de pimiento rostizado</td><td><span style='color:#8A8A8A'>snack</span></td><td><b>42.8%</b><br><span class='vol'>(1,155 ap.)</span></td><td><b>0.87%</b><br><span class='vol'>(10 clicks)</span></td><td><b>0.37%</b><br><span class='vol'>(10 )</span></td></tr><tr class=''><td><b>E-J5 SIN · Part B</b><br><span class='vol'>Agosto · 43,188 env.</span></td><td><div class='piece-frame piece-bg img-e-j5-png' role='img' aria-label='E-J5 SIN · Part B'></div></td><td>MAGGI® Shots / Cerdito enchilado</td><td><span style='color:#8A8A8A'>plato</span></td><td><b>43.5%</b><br><span class='vol'>(18,749 ap.)</span></td><td><b>0.83%</b><br><span class='vol'>(155 clicks)</span></td><td><b>0.36%</b><br><span class='vol'>(155 )</span></td></tr><tr class=''><td><b>E-J6 Sur · Part C</b><br><span class='vol'>Agosto · 2,733 env.</span></td><td><div class='piece-frame piece-bg img-e-j6-png' role='img' aria-label='E-J6 Sur · Part C'></div></td><td>Brochetas de pollo con salsa de piña</td><td><span style='color:#8A8A8A'>plato</span></td><td><b>45.7%</b><br><span class='vol'>(1,242 ap.)</span></td><td><b>0.97%</b><br><span class='vol'>(12 clicks)</span></td><td><b>0.44%</b><br><span class='vol'>(12 )</span></td></tr><tr class=''><td><b>E-J7</b><br><span class='vol'>Septiembre · 91,580 env.</span></td><td><div class='piece-frame piece-bg img-e-j7-png' role='img' aria-label='E-J7'></div></td><td>Aceitunas Toreadas / Papas Nacho</td><td><span style='color:#8A8A8A'>snack</span></td><td><b>43.1%</b><br><span class='vol'>(39,274 ap.)</span></td><td><b>0.87%</b><br><span class='vol'>(343 clicks)</span></td><td><b>0.37%</b><br><span class='vol'>(343 )</span></td></tr><tr class=''><td><b>E-J8 · Part A</b><br><span class='vol'>Septiembre · 38,168 env.</span></td><td><div class='piece-frame piece-bg img-e-j8-png' role='img' aria-label='E-J8 · Part A'></div></td><td>Nachos con Carne / Sartén queso jalapeño</td><td><span style='color:#8A8A8A'>plato+snack</span></td><td><b>46.3%</b><br><span class='vol'>(17,528 ap.)</span></td><td><b>0.87%</b><br><span class='vol'>(152 clicks)</span></td><td><b>0.40%</b><br><span class='vol'>(152 )</span></td></tr><tr class=''><td><b>E-J9 · Part B</b><br><span class='vol'>Septiembre · 40,130 env.</span></td><td><div class='piece-frame piece-bg img-e-j9-png' role='img' aria-label='E-J9 · Part B'></div></td><td>Alitas mango habanero / Tropi MAGGI® Shot</td><td><span style='color:#8A8A8A'>plato+bebida</span></td><td><b>44.0%</b><br><span class='vol'>(17,517 ap.)</span></td><td><b>0.70%</b><br><span class='vol'>(122 clicks)</span></td><td><b>0.30%</b><br><span class='vol'>(122 )</span></td></tr><tr class=''><td><b>E-J10 · Part C</b><br><span class='vol'>Septiembre · 39,735 env.</span></td><td><div class='piece-frame piece-bg img-e-j10-png' role='img' aria-label='E-J10 · Part C'></div></td><td>Papitas con elote / Dips Botaneros / Pepimiche</td><td><span style='color:#8A8A8A'>snack+bebida</span></td><td><b>44.3%</b><br><span class='vol'>(17,449 ap.)</span></td><td><b>0.69%</b><br><span class='vol'>(120 clicks)</span></td><td><b>0.30%</b><br><span class='vol'>(120 )</span></td></tr><tr class=''><td><b>E-SNM-3 vs Chile</b><br><span class='vol'>Octubre · 37,046 env.</span></td><td><div class='piece-frame piece-bg img-e-snm3-png' role='img' aria-label='E-SNM-3 vs Chile'></div></td><td>Papas Nacho / Queso Asado Picante</td><td><span style='color:#8A8A8A'>snack</span></td><td><b>46.6%</b><br><span class='vol'>(17,169 ap.)</span></td><td><b>0.55%</b><br><span class='vol'>(95 clicks)</span></td><td><b>0.26%</b><br><span class='vol'>(95 )</span></td></tr><tr class=''><td><b>E-SNM-Femenil vs Jamaica</b><br><span class='vol'>Octubre · 7,242 env.</span></td><td><div class='piece-frame piece-bg img-e-snf-1-png' role='img' aria-label='E-SNM-Femenil vs Jamaica'></div></td><td>Tostiesquites / Papas Flamin Parmesano</td><td><span style='color:#8A8A8A'>plato+snack</span></td><td><b>36.5%</b><br><span class='vol'>(2,627 ap.)</span></td><td><b>1.29%</b><br><span class='vol'>(34 clicks)</span></td><td><b>0.47%</b><br><span class='vol'>(34 )</span></td></tr>
-  </table>
-
-  <h3 class='sub-head'>Receta protagonista — WhatsApp</h3>
-  <p class='sub-sub'>5 piezas · %Lectura y %Click vs Read (CTOR WA) con volumen</p>
-  <table class='a'>
-    <tr><th>Pieza</th><th>Imagen</th><th>Receta</th><th>Formato</th><th>%Lectura (leídos)</th><th>CTOR (clicks)</th></tr>
-    <tr class=''><td><b>WA-J8 · Part A</b><br><span class='vol'>Septiembre · 1,962 env.</span></td><td><div class='piece-frame piece-bg img-wa-j8-png' role='img' aria-label='WA-J8 · Part A'></div></td><td>Sartén de queso con jalapeño</td><td><span style='color:#8A8A8A'>plato</span></td><td><b>59.3%</b><br><span class='vol'>(949 leídos)</span></td><td><b>5.58%</b><br><span class='vol'>(60 clicks)</span></td></tr><tr class=''><td><b>WA-J9</b><br><span class='vol'>Septiembre · 2,560 env.</span></td><td><div class='piece-frame piece-bg img-wa-j9-png' role='img' aria-label='WA-J9'></div></td><td>Alitas mango habanero</td><td><span style='color:#8A8A8A'>plato</span></td><td><b>55.9%</b><br><span class='vol'>(1,207 leídos)</span></td><td><b>4.39%</b><br><span class='vol'>(67 clicks)</span></td></tr><tr class=''><td><b>WA-J10</b><br><span class='vol'>Septiembre · 2,798 env.</span></td><td><div class='piece-frame piece-bg img-wa-j10-png' role='img' aria-label='WA-J10'></div></td><td>Papitas con elote</td><td><span style='color:#8A8A8A'>snack</span></td><td><b>46.3%</b><br><span class='vol'>(1,054 leídos)</span></td><td><b>3.98%</b><br><span class='vol'>(42 clicks)</span></td></tr><tr class=''><td><b>WA-SNM-2 vs Chile</b><br><span class='vol'>Octubre · 2,178 env.</span></td><td><div class='piece-frame piece-bg img-wa-snm1-png' role='img' aria-label='WA-SNM-2 vs Chile'></div></td><td>Recetas de ceviche de pescado</td><td><span style='color:#8A8A8A'>plato</span></td><td><b>49.8%</b><br><span class='vol'>(871 leídos)</span></td><td><b>6.77%</b><br><span class='vol'>(59 clicks)</span></td></tr><tr class=''><td><b>WA-SNF-1 vs Jamaica</b><br><span class='vol'>Octubre · 2,889 env.</span></td><td><div class='piece-frame piece-bg img-wa-snf1-jpg' role='img' aria-label='WA-SNF-1 vs Jamaica'></div></td><td>Tostiesquites</td><td><span style='color:#8A8A8A'>plato</span></td><td><b>46.5%</b><br><span class='vol'>(1,079 leídos)</span></td><td><b>10.10%</b><br><span class='vol'>(109 clicks)</span></td></tr>
-  </table>
-
-  <h3 class='sub-head'>Patrón de copy — Email</h3>
-  <table class='a'>
-    <tr><th>Patrón</th><th>Subject representativo</th><th>Volumen</th><th>Resultado observado</th></tr>
-    <tr class=''><td>Jugoso / riqui</td><td><i>'El sábado se antoja fútbol jugoso' · 'algo riqui' · 'Lo más jugosooo' · 'delicia jugocita'</i></td><td>J4–J7 · 4 env.</td><td>OR 42.8–45.7% · CTOR 0.61–0.97%</td></tr><tr class=''><td>Clásico</td><td><i>'Un clásico delicioso en tu mesa' · 'El clásico de clásicos también se juega en la mesa'</i></td><td>J8–J9 · 2 env.</td><td>OR 44.0–46.3% · CTOR 0.70–0.87%</td></tr><tr class=''><td>Alineación / jugada</td><td><i>'Tu alineación para hoy: fútbol + algo deli' · 'Tu jugada para México vs Chile'</i></td><td>J10 + SNM-3 · 2 env.</td><td>OR 43.1–46.6% · CTOR 0.55–0.69%</td></tr><tr class=''><td>Femenil ← mejor CTOR</td><td><i>'El fútbol también es nuestro. ¿Lista para apoyar? ⚽'</i></td><td>SNF-1 · 1 env.</td><td>OR 36.5% · CTOR 1.29%</td></tr>
-  </table>
-
-  <h3 class='sub-head'>Patrón de copy — WhatsApp</h3>
-  <table class='a'>
-    <tr><th>Patrón</th><th>Contenido de la card</th><th>Volumen</th><th>Resultado observado</th></tr>
-    <tr class=''><td>Liga MX regular</td><td><i>Sartén queso jalapeño · alitas mango habanero · papitas con elote</i></td><td>J8–J10 · 3 env.</td><td>%Click 3.98–5.58%</td></tr><tr class=''><td>SNM vs Chile</td><td><i>Ceviche de pescado · pool no tocada en Mundial</i></td><td>WA-SNM-2 · 1 env.</td><td>%Click 6.77% — recuperación vs J10</td></tr><tr class=''><td>SNF vs Jamaica ← máximo</td><td><i>Tostiesquites · audiencia Femenil exclusiva</i></td><td>WA-SNF-1 · 1 env.</td><td>%Click 10.10%</td></tr>
-  </table>
-
   <div class='insight'>
-    <span class='lbl'>💡 Insight · Contenido</span>
+    <span class='lbl'>💡 Conclusión · Contenido</span>
     <ul>
-      <li>Las recetas-plato con MAGGI protagónico superan a los snacks genéricos: WA-SNF-1 (tostiesquites) llegó al <b>10.10%</b> CTOR WA y WA-SNM-2 (ceviche) a <b>6.77%</b>, vs 3.98–5.58% de las tres jornadas regulares.</li>
-      <li>La pieza Femenil tuvo el mejor CTOR email del periodo: <b>1.29%</b>, con el subject diferenciado "El fútbol también es nuestro".</li>
-      <li>El copy "jugoso / riqui" (J4–J7) sostuvo las OR más altas del periodo: 42.8–45.7%.</li>
-      <li>El subject Femenil tuvo la OR más baja (36.5%) pero el mayor engagement posterior — inversión en la apertura menor, conversión mayor.</li>
+      <li>La pieza con mayor CTOR del periodo es <b>E-SNM-Femenil (1.29%)</b>: única pieza con jugadora en el creativo, copy de empoderamiento y MAGGI protagonista.</li>
+      <li>En email, las piezas con MAGGI visible como ingrediente sostienen CTOR por encima del promedio. Las que usan snack genérico sin MAGGI quedan en el rango bajo (0.61–0.74%).</li>
+      <li>El lenguaje emocional ("jugoso", empoderamiento Femenil) supera en CTOR al copy deportivo puro ("jugada", "alineación").</li>
+      <li>En WA, WA-SNF-1 (jugadora + tostiesquites) alcanzó <b>10.10%</b> CTOR — máximo del periodo.</li>
     </ul>
   </div>
-
   <div class='action'>
     <span class='lbl'>✅ Accionable · Contenido</span>
     <ul>
-      <li>Priorizar recetas-plato con MAGGI protagónico (sartén, brocheta, ceviche, tostiesquites) sobre snacks de bolsa en próximas campañas.</li>
-      <li>Mantener mención explícita de MAGGI/Nestlé en el ingrediente estrella del hero.</li>
-      <li>Replicar copy diferencial para audiencia Femenil — mejor CTOR email del periodo (1.29%).</li>
-      <li>Conservar "hero + 2 bloques con par Receta + QCart" como base de diseño.</li>
+      <li>Incorporar jugadora o jugador en el hero cuando corresponda a la audiencia.</li>
+      <li>Mantener MAGGI como ingrediente protagonista visible en el creativo.</li>
+      <li>Continuar con lenguaje emocional ("jugoso", empoderamiento) sobre copy deportivo genérico.</li>
     </ul>
+  </div>
+
+  <h3 class='sub-head'>Email</h3>
+  <p class='sub-sub'>Top 3 CTOR en verde · ↑↓ vs pieza anterior · primera columna y encabezado fijos</p>
+  <div class='table-wrap'>
+  <table class='a'>
+    <tr><th>Pieza</th><th>Imagen</th><th>Receta</th><th>OR (aperturas)</th><th>CTOR ↑↓ (clicks)</th><th>CTR</th><th>Insight creativo</th><th>Patrón de copy</th></tr>
+    <tr class=''><td><b>E-J4 CON</b><br><span class='vol'>Agosto</span></td><td><div class='piece-frame piece-bg img-e-j4-png' role='img' aria-label='E-J4 CON'></div></td><td>Botana de Jamaica</td><td><b>44.1%</b><br><span class='vol'>(3,517 ap.)</span></td><td><b>0.74%</b><br><span class='vol'>(26 clicks)</span></td><td><b>0.33%</b></td><td>Sin MAGGI visible · sin jugador</td><td>Jugoso / riqui</td></tr><tr class=''><td><b>E-J4 SIN</b><br><span class='vol'>Agosto</span></td><td><div class='piece-frame piece-bg img-e-j4-png' role='img' aria-label='E-J4 SIN'></div></td><td>Nachos con Carne</td><td><b>43.4%</b><br><span class='vol'>(55,734 ap.)</span></td><td><b>0.61% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(342 clicks)</span></td><td><b>0.27%</b></td><td>Sin MAGGI visible · sin jugador</td><td>Jugoso / riqui</td></tr><tr class='top-3'><td><b>E-J5 CON · Part B</b><br><span class='vol'>Agosto</span></td><td><div class='piece-frame piece-bg img-e-j5-png' role='img' aria-label='E-J5 CON · Part B'></div></td><td>DIP de pimiento rostizado</td><td><b>42.8%</b><br><span class='vol'>(1,155 ap.)</span></td><td><b>0.87% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(10 clicks)</span></td><td><b>0.37%</b></td><td>MAGGI® Shots como ingrediente</td><td>Jugoso / riqui</td></tr><tr class=''><td><b>E-J5 SIN · Part B</b><br><span class='vol'>Agosto</span></td><td><div class='piece-frame piece-bg img-e-j5-png' role='img' aria-label='E-J5 SIN · Part B'></div></td><td>MAGGI® Shots / Cerdito enchilado</td><td><b>43.5%</b><br><span class='vol'>(18,749 ap.)</span></td><td><b>0.83% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(155 clicks)</span></td><td><b>0.36%</b></td><td>MAGGI® Shots protagonista</td><td>Jugoso / riqui</td></tr><tr class='top-2'><td><b>E-J6 Sur · Part C</b><br><span class='vol'>Agosto</span></td><td><div class='piece-frame piece-bg img-e-j6-png' role='img' aria-label='E-J6 Sur · Part C'></div></td><td>Brochetas de pollo con salsa de piña</td><td><b>45.7%</b><br><span class='vol'>(1,242 ap.)</span></td><td><b>0.97% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(12 clicks)</span></td><td><b>0.44%</b></td><td>MAGGI en la receta (brochetas)</td><td>Jugoso (superlativo)</td></tr><tr class='top-3'><td><b>E-J7</b><br><span class='vol'>Septiembre</span></td><td><div class='piece-frame piece-bg img-e-j7-png' role='img' aria-label='E-J7'></div></td><td>Aceitunas Toreadas / Papas Nacho</td><td><b>43.1%</b><br><span class='vol'>(39,274 ap.)</span></td><td><b>0.87% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(343 clicks)</span></td><td><b>0.37%</b></td><td>Sin MAGGI visible · snack mixto</td><td>Jugoso / riqui</td></tr><tr class='top-3'><td><b>E-J8 · Part A</b><br><span class='vol'>Septiembre</span></td><td><div class='piece-frame piece-bg img-e-j8-png' role='img' aria-label='E-J8 · Part A'></div></td><td>Nachos / Sartén queso jalapeño</td><td><b>46.3%</b><br><span class='vol'>(17,528 ap.)</span></td><td><b>0.87%</b><br><span class='vol'>(152 clicks)</span></td><td><b>0.40%</b></td><td>Sin MAGGI visible</td><td>Clásico</td></tr><tr class=''><td><b>E-J9 · Part B</b><br><span class='vol'>Septiembre</span></td><td><div class='piece-frame piece-bg img-e-j9-png' role='img' aria-label='E-J9 · Part B'></div></td><td>Alitas mango habanero / MAGGI® Shot</td><td><b>44.0%</b><br><span class='vol'>(17,517 ap.)</span></td><td><b>0.70% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(122 clicks)</span></td><td><b>0.30%</b></td><td>MAGGI® Shot en bebida</td><td>Clásico</td></tr><tr class=''><td><b>E-J10 · Part C</b><br><span class='vol'>Septiembre</span></td><td><div class='piece-frame piece-bg img-e-j10-png' role='img' aria-label='E-J10 · Part C'></div></td><td>Papitas con elote / Dips / Pepimiche</td><td><b>44.3%</b><br><span class='vol'>(17,449 ap.)</span></td><td><b>0.69% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(120 clicks)</span></td><td><b>0.30%</b></td><td>Sin MAGGI visible</td><td>Alineación / jugada</td></tr><tr class=''><td><b>E-SNM-3 vs Chile</b><br><span class='vol'>Octubre</span></td><td><div class='piece-frame piece-bg img-e-snm3-png' role='img' aria-label='E-SNM-3 vs Chile'></div></td><td>Papas Nacho / Queso Asado Picante</td><td><b>46.6%</b><br><span class='vol'>(17,169 ap.)</span></td><td><b>0.55% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(95 clicks)</span></td><td><b>0.26%</b></td><td>Sin MAGGI · sin jugador</td><td>Alineación / jugada</td></tr><tr class='top-1'><td><b>E-SNM-Femenil vs Jamaica</b><br><span class='vol'>Octubre</span></td><td><div class='piece-frame piece-bg img-e-snf-1-png' role='img' aria-label='E-SNM-Femenil vs Jamaica'></div></td><td>Tostiesquites / Papas Flamin Parmesano</td><td><b>36.5%</b><br><span class='vol'>(2,627 ap.)</span></td><td><b>1.29% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(34 clicks)</span></td><td><b>0.47%</b></td><td>Jugadora en creativo · MAGGI protagonista</td><td>Empoderamiento Femenil</td></tr>
+  </table>
+  </div>
+
+  <h3 class='sub-head'>WhatsApp</h3>
+  <p class='sub-sub'>Top 3 CTOR en verde · ↑↓ vs pieza anterior</p>
+  <div class='table-wrap'>
+  <table class='a'>
+    <tr><th>Pieza</th><th>Imagen</th><th>Receta</th><th>%Lectura (leídos)</th><th>CTOR ↑↓ (clicks)</th><th>Insight creativo</th><th>Patrón de copy</th></tr>
+    <tr class='top-3'><td><b>WA-J8 · Part A</b><br><span class='vol'>Septiembre</span></td><td><div class='piece-frame piece-bg img-wa-j8-png' role='img' aria-label='WA-J8 · Part A'></div></td><td>Sartén de queso con jalapeño</td><td><b>59.3%</b><br><span class='vol'>(949 leídos)</span></td><td><b>5.58%</b><br><span class='vol'>(60 clicks)</span></td><td>Plato con MAGGI</td><td>Receta de temporada</td></tr><tr class=''><td><b>WA-J9</b><br><span class='vol'>Septiembre</span></td><td><div class='piece-frame piece-bg img-wa-j9-png' role='img' aria-label='WA-J9'></div></td><td>Alitas mango habanero</td><td><b>55.9%</b><br><span class='vol'>(1,207 leídos)</span></td><td><b>4.39% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(67 clicks)</span></td><td>Plato con MAGGI</td><td>Receta de temporada</td></tr><tr class=''><td><b>WA-J10</b><br><span class='vol'>Septiembre</span></td><td><div class='piece-frame piece-bg img-wa-j10-png' role='img' aria-label='WA-J10'></div></td><td>Papitas con elote</td><td><b>46.3%</b><br><span class='vol'>(1,054 leídos)</span></td><td><b>3.98% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(42 clicks)</span></td><td>Snack · sin MAGGI visible</td><td>Receta de temporada</td></tr><tr class='top-2'><td><b>WA-SNM-2 vs Chile</b><br><span class='vol'>Octubre</span></td><td><div class='piece-frame piece-bg img-wa-snm1-png' role='img' aria-label='WA-SNM-2 vs Chile'></div></td><td>Ceviche de pescado</td><td><b>49.8%</b><br><span class='vol'>(871 leídos)</span></td><td><b>6.77% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(59 clicks)</span></td><td>Sin jugador</td><td>Receta + SNM</td></tr><tr class='top-1'><td><b>WA-SNF-1 vs Jamaica</b><br><span class='vol'>Octubre</span></td><td><div class='piece-frame piece-bg img-wa-snf1-jpg' role='img' aria-label='WA-SNF-1 vs Jamaica'></div></td><td>Tostiesquites</td><td><b>46.5%</b><br><span class='vol'>(1,079 leídos)</span></td><td><b>10.10% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(109 clicks)</span></td><td>Jugadora · MAGGI protagonista</td><td>Empoderamiento Femenil</td></tr>
+  </table>
   </div>
 </section>
 
@@ -235,39 +200,43 @@ footer{text-align:center;color:#8A8A8A;padding:40px 24px;font-family:'Space Grot
     <div class='s-icon'>🔗</div>
     <h2 class='s-title'>DESTINO DE URL</h2>
   </div>
-  <p class='s-sub'>¿A dónde conviene mandar al usuario y qué podemos saber de verdad?</p>
-
-  <h3 class='sub-head'>Email — Destino por pieza</h3>
-  <p class='sub-sub'>11 piezas email · todos los clicks a destino se contabilizan como CTA</p>
-  <table class='a'>
-    <tr><th>Pieza</th><th>Imagen</th><th>Destinos</th><th>Envíos (DE)</th><th>Clicks</th><th>CTOR</th></tr>
-    <tr class=''><td><b>E-J4 CON</b></td><td><div class='piece-frame piece-bg img-e-j4-png' role='img' aria-label='E-J4 CON'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>7,995<br><span class='vol'>DE: 10,412</span></td><td>26</td><td><b>0.74%</b></td></tr><tr class=''><td><b>E-J4 SIN</b></td><td><div class='piece-frame piece-bg img-e-j4-png' role='img' aria-label='E-J4 SIN'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>128,759<br><span class='vol'>DE: 207,730</span></td><td>342</td><td><b>0.61%</b></td></tr><tr class=''><td><b>E-J5 CON · Part B</b></td><td><div class='piece-frame piece-bg img-e-j5-png' role='img' aria-label='E-J5 CON · Part B'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>2,708<br><span class='vol'>DE: 3,527</span></td><td>10</td><td><b>0.87%</b></td></tr><tr class=''><td><b>E-J5 SIN · Part B</b></td><td><div class='piece-frame piece-bg img-e-j5-png' role='img' aria-label='E-J5 SIN · Part B'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>43,188<br><span class='vol'>DE: 69,601</span></td><td>155</td><td><b>0.83%</b></td></tr><tr class=''><td><b>E-J6 Sur · Part C</b></td><td><div class='piece-frame piece-bg img-e-j6-png' role='img' aria-label='E-J6 Sur · Part C'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>2,733<br><span class='vol'>DE: 3,527</span></td><td>12</td><td><b>0.97%</b></td></tr><tr class=''><td><b>E-J7</b></td><td><div class='piece-frame piece-bg img-e-j7-png' role='img' aria-label='E-J7'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>91,580<br><span class='vol'>DE: 146,213</span></td><td>343</td><td><b>0.87%</b></td></tr><tr class=''><td><b>E-J8 · Part A</b></td><td><div class='piece-frame piece-bg img-e-j8-png' role='img' aria-label='E-J8 · Part A'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>38,168<br><span class='vol'>DE: 64,068</span></td><td>152</td><td><b>0.87%</b></td></tr><tr class=''><td><b>E-J9 · Part B</b></td><td><div class='piece-frame piece-bg img-e-j9-png' role='img' aria-label='E-J9 · Part B'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span><span class='chip-dest'>TikTok</span></div></td><td>40,130<br><span class='vol'>DE: 66,635</span></td><td>122</td><td><b>0.70%</b></td></tr><tr class=''><td><b>E-J10 · Part C</b></td><td><div class='piece-frame piece-bg img-e-j10-png' role='img' aria-label='E-J10 · Part C'></div></td><td><div class='dest-chips'><span class='chip-dest'>YouTube</span><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>39,735<br><span class='vol'>DE: 66,070</span></td><td>120</td><td><b>0.69%</b></td></tr><tr class=''><td><b>E-SNM-3 vs Chile</b></td><td><div class='piece-frame piece-bg img-e-snm3-png' role='img' aria-label='E-SNM-3 vs Chile'></div></td><td><div class='dest-chips'><span class='chip-dest'>TikTok</span><span class='chip-dest'>YouTube</span></div></td><td>37,046<br><span class='vol'>DE: 61,784</span></td><td>95</td><td><b>0.55%</b></td></tr><tr class=''><td><b>E-SNM-Femenil vs Jamaica</b></td><td><div class='piece-frame piece-bg img-e-snf-1-png' role='img' aria-label='E-SNM-Femenil vs Jamaica'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span></div></td><td>7,242<br><span class='vol'>DE: 13,476</span></td><td>34</td><td><b>1.29%</b></td></tr>
-  </table>
-
-  <h3 class='sub-head'>WhatsApp — Destino por pieza</h3>
-  <p class='sub-sub'>5 piezas WA · split QCart vs Recetas solo disponible en WA-J8 y WA-J9</p>
-  <table class='a'>
-    <tr><th>Pieza</th><th>Imagen</th><th>Destinos</th><th>Envíos</th><th>Clicks QCart</th><th>Clicks Recetas</th><th>CTOR</th><th>Nota</th></tr>
-    <tr class=''><td><b>WA-J8 · Part A</b></td><td><div class='piece-frame piece-bg img-wa-j8-png' role='img' aria-label='WA-J8 · Part A'></div></td><td><div class='dest-chips'><span class='chip-dest'>QCart</span><span class='chip-dest'>Recetas Nestlé</span></div></td><td>1,962</td><td>53</td><td>7</td><td><b>5.58%</b></td><td>—</td></tr><tr class=''><td><b>WA-J9</b></td><td><div class='piece-frame piece-bg img-wa-j9-png' role='img' aria-label='WA-J9'></div></td><td><div class='dest-chips'><span class='chip-dest'>QCart</span><span class='chip-dest'>Recetas Nestlé</span></div></td><td>2,560</td><td>53</td><td>14</td><td><b>4.39%</b></td><td>—</td></tr><tr class=''><td><b>WA-J10</b></td><td><div class='piece-frame piece-bg img-wa-j10-png' role='img' aria-label='WA-J10'></div></td><td><div class='dest-chips'><span class='chip-dest'>YouTube</span><span class='chip-dest'>QCart</span></div></td><td>2,798</td><td>42</td><td><span class='vol'>sin dato</span></td><td><b>3.98%</b></td><td><span style='color:#FF2040;font-size:12px'>⚠ Clicks a YouTube no medidos — fuente no desglosa destino video.</span></td></tr><tr class=''><td><b>WA-SNM-2 vs Chile</b></td><td><div class='piece-frame piece-bg img-wa-snm1-png' role='img' aria-label='WA-SNM-2 vs Chile'></div></td><td><div class='dest-chips'><span class='chip-dest'>QCart (único CTA)</span></div></td><td>2,178</td><td>59</td><td><span class='vol'>sin dato</span></td><td><b>6.77%</b></td><td>—</td></tr><tr class=''><td><b>WA-SNF-1 vs Jamaica</b></td><td><div class='piece-frame piece-bg img-wa-snf1-jpg' role='img' aria-label='WA-SNF-1 vs Jamaica'></div></td><td><div class='dest-chips'><span class='chip-dest'>QCart (único CTA)</span></div></td><td>2,889</td><td>109</td><td><span class='vol'>sin dato</span></td><td><b>10.10%</b></td><td>—</td></tr>
-  </table>
-  <div class='warn'>⚠ El split WA QCart vs Recetas solo está medido en <b>WA-J8 (53 QCart · 7 Recetas)</b> y <b>WA-J9 (53 QCart · 14 Recetas)</b>. En WA-J10, WA-SNM-2 y WA-SNF-1 la pieza ofrecía un solo CTA o la fuente no desglosa por destino.</div>
+  <p class='s-sub'>¿A dónde conviene mandar al usuario?</p>
 
   <div class='insight'>
-    <span class='lbl'>💡 Insight · Destino</span>
+    <span class='lbl'>💡 Conclusión · Destino</span>
     <ul>
-      <li>Donde hay par limpio en WhatsApp (J8 y J9), <b>QCart capta 79–88% del click</b> cuando compite con Recetas Nestlé (53 vs 7 en J8 · 53 vs 14 en J9).</li>
-      <li>En email, E-SNM-3 (sin QCart, destinos TikTok + YouTube) registró 95 clicks — sin split por destino en la fuente.</li>
-      <li>Las piezas con QCart como destino principal concentran el mayor volumen de carritos medidos.</li>
+      <li>Las piezas con <b>1–2 destinos claros</b> (QCart + Recetas Nestlé) tienen CTOR consistente: 0.70–1.29%.</li>
+      <li>Al agregar un <b>tercer destino de video</b> (TikTok o YouTube), el CTOR cae: 0.70% (J9) y 0.69% (J10).</li>
+      <li>La pieza <b>solo video sin QCart</b> (E-SNM-3: TikTok + YouTube) registra el CTOR email más bajo: 0.55%.</li>
+      <li>En WA, donde se pudo medir el split (J8/J9), <b>QCart captura 79–88% del click</b> frente a Recetas Nestlé.</li>
+      <li>El email funciona como canal de inspiración — agregar video como único destino no mejora la conversión medida.</li>
     </ul>
   </div>
-
   <div class='action'>
     <span class='lbl'>✅ Accionable · Destino</span>
     <ul>
-      <li>Mantener QCart como destino principal en WA cuando el objetivo sea compra — donde pudimos medir, capta 79–88% del click.</li>
-      <li>Antes de escalar YouTube/TikTok, habilitar UTMs únicas o shortlinks dedicados por destino para poder comparar.</li>
-      <li>En piezas con un solo CTA (SNF-1, SNM-2), agregar un segundo destino en próximos envíos para medir preferencia real del usuario.</li>
+      <li>Mantener QCart como destino principal cuando el objetivo sea compra.</li>
+      <li>No agregar YouTube/TikTok como destino adicional en email si el objetivo es maximizar CTOR.</li>
+      <li>Habilitar UTMs únicas por destino para poder comparar video vs QCart en futuros envíos.</li>
     </ul>
+  </div>
+
+  <h3 class='sub-head'>Email</h3>
+  <p class='sub-sub'>Top 3 CTOR en verde · ↑↓ vs pieza anterior</p>
+  <div class='table-wrap'>
+  <table class='a'>
+    <tr><th>Pieza</th><th>Imagen</th><th>Destinos</th><th>Envíos (DE)</th><th>Clicks</th><th>CTOR ↑↓</th><th>Insight</th></tr>
+    <tr class=''><td><b>E-J4 CON</b></td><td><div class='piece-frame piece-bg img-e-j4-png' role='img' aria-label='E-J4 CON'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>7,995<br><span class='vol'>DE: 10,412</span></td><td>26</td><td><b>0.74%</b><br><span class='vol'>(26 clicks)</span></td><td>2 destinos · split limpio · base J4</td></tr><tr class=''><td><b>E-J4 SIN</b></td><td><div class='piece-frame piece-bg img-e-j4-png' role='img' aria-label='E-J4 SIN'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>128,759<br><span class='vol'>DE: 207,730</span></td><td>342</td><td><b>0.61% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(342 clicks)</span></td><td>2 destinos · variante sin región</td></tr><tr class='top-3'><td><b>E-J5 CON · Part B</b></td><td><div class='piece-frame piece-bg img-e-j5-png' role='img' aria-label='E-J5 CON · Part B'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>2,708<br><span class='vol'>DE: 3,527</span></td><td>10</td><td><b>0.87% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(10 clicks)</span></td><td>2 destinos · CTOR sube vs J4</td></tr><tr class=''><td><b>E-J5 SIN · Part B</b></td><td><div class='piece-frame piece-bg img-e-j5-png' role='img' aria-label='E-J5 SIN · Part B'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>43,188<br><span class='vol'>DE: 69,601</span></td><td>155</td><td><b>0.83% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(155 clicks)</span></td><td>2 destinos · volumen alto</td></tr><tr class='top-2'><td><b>E-J6 Sur · Part C</b></td><td><div class='piece-frame piece-bg img-e-j6-png' role='img' aria-label='E-J6 Sur · Part C'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>2,733<br><span class='vol'>DE: 3,527</span></td><td>12</td><td><b>0.97% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(12 clicks)</span></td><td>2 destinos · mejor CTOR de jornadas</td></tr><tr class='top-3'><td><b>E-J7</b></td><td><div class='piece-frame piece-bg img-e-j7-png' role='img' aria-label='E-J7'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>91,580<br><span class='vol'>DE: 146,213</span></td><td>343</td><td><b>0.87% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(343 clicks)</span></td><td>2 destinos · región unificada</td></tr><tr class='top-3'><td><b>E-J8 · Part A</b></td><td><div class='piece-frame piece-bg img-e-j8-png' role='img' aria-label='E-J8 · Part A'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>38,168<br><span class='vol'>DE: 64,068</span></td><td>152</td><td><b>0.87%</b><br><span class='vol'>(152 clicks)</span></td><td>2 destinos · consistente</td></tr><tr class=''><td><b>E-J9 · Part B</b></td><td><div class='piece-frame piece-bg img-e-j9-png' role='img' aria-label='E-J9 · Part B'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span><span class='chip-dest'>TikTok</span></div></td><td>40,130<br><span class='vol'>DE: 66,635</span></td><td>122</td><td><b>0.70% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(122 clicks)</span></td><td>3 destinos (+TikTok) · CTOR cae</td></tr><tr class=''><td><b>E-J10 · Part C</b></td><td><div class='piece-frame piece-bg img-e-j10-png' role='img' aria-label='E-J10 · Part C'></div></td><td><div class='dest-chips'><span class='chip-dest'>YouTube</span><span class='chip-dest'>Recetas Nestlé</span><span class='chip-dest'>QCart</span></div></td><td>39,735<br><span class='vol'>DE: 66,070</span></td><td>120</td><td><b>0.69% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(120 clicks)</span></td><td>3 destinos (+YouTube) · CTOR mínimo regular</td></tr><tr class=''><td><b>E-SNM-3 vs Chile</b></td><td><div class='piece-frame piece-bg img-e-snm3-png' role='img' aria-label='E-SNM-3 vs Chile'></div></td><td><div class='dest-chips'><span class='chip-dest'>TikTok</span><span class='chip-dest'>YouTube</span></div></td><td>37,046<br><span class='vol'>DE: 61,784</span></td><td>95</td><td><b>0.55% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(95 clicks)</span></td><td>Solo video, sin QCart · CTOR más bajo</td></tr><tr class='top-1'><td><b>E-SNM-Femenil vs Jamaica</b></td><td><div class='piece-frame piece-bg img-e-snf-1-png' role='img' aria-label='E-SNM-Femenil vs Jamaica'></div></td><td><div class='dest-chips'><span class='chip-dest'>Recetas Nestlé</span></div></td><td>7,242<br><span class='vol'>DE: 13,476</span></td><td>34</td><td><b>1.29% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(34 clicks)</span></td><td>Solo Recetas Nestlé · mejor CTOR</td></tr>
+  </table>
+  </div>
+
+  <h3 class='sub-head'>WhatsApp</h3>
+  <p class='sub-sub'>Split QCart vs Recetas medido solo en WA-J8 y WA-J9 · Top 3 en verde</p>
+  <div class='table-wrap'>
+  <table class='a'>
+    <tr><th>Pieza</th><th>Imagen</th><th>Destinos</th><th>Envíos</th><th>Clicks QCart</th><th>Clicks Recetas</th><th>CTOR ↑↓</th><th>Insight</th><th>Nota</th></tr>
+    <tr class='top-3'><td><b>WA-J8 · Part A</b></td><td><div class='piece-frame piece-bg img-wa-j8-png' role='img' aria-label='WA-J8 · Part A'></div></td><td><div class='dest-chips'><span class='chip-dest'>QCart</span><span class='chip-dest'>Recetas Nestlé</span></div></td><td>1,962</td><td>53</td><td>7</td><td><b>5.58%</b><br><span class='vol'>(60 clicks)</span></td><td>QCart capta 88% del click (53/60)</td><td>—</td></tr><tr class=''><td><b>WA-J9</b></td><td><div class='piece-frame piece-bg img-wa-j9-png' role='img' aria-label='WA-J9'></div></td><td><div class='dest-chips'><span class='chip-dest'>QCart</span><span class='chip-dest'>Recetas Nestlé</span></div></td><td>2,560</td><td>53</td><td>14</td><td><b>4.39% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(67 clicks)</span></td><td>QCart capta 79% del click (53/67)</td><td>—</td></tr><tr class=''><td><b>WA-J10</b></td><td><div class='piece-frame piece-bg img-wa-j10-png' role='img' aria-label='WA-J10'></div></td><td><div class='dest-chips'><span class='chip-dest'>YouTube</span><span class='chip-dest'>QCart</span></div></td><td>2,798</td><td>42</td><td><span class='vol'>sin dato</span></td><td><b>3.98% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(42 clicks)</span></td><td>QCart único medido · YouTube no rastreado</td><td><span style='color:#FF2040;font-size:12px'>⚠ YouTube no medido</span></td></tr><tr class='top-2'><td><b>WA-SNM-2 vs Chile</b></td><td><div class='piece-frame piece-bg img-wa-snm1-png' role='img' aria-label='WA-SNM-2 vs Chile'></div></td><td><div class='dest-chips'><span class='chip-dest'>QCart</span></div></td><td>2,178</td><td>59</td><td><span class='vol'>sin dato</span></td><td><b>6.77% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(59 clicks)</span></td><td>QCart único destino</td><td>—</td></tr><tr class='top-1'><td><b>WA-SNF-1 vs Jamaica</b></td><td><div class='piece-frame piece-bg img-wa-snf1-jpg' role='img' aria-label='WA-SNF-1 vs Jamaica'></div></td><td><div class='dest-chips'><span class='chip-dest'>QCart</span></div></td><td>2,889</td><td>109</td><td><span class='vol'>sin dato</span></td><td><b>10.10% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(109 clicks)</span></td><td>QCart único · mayor CTOR WA</td><td>—</td></tr>
+  </table>
   </div>
 </section>
 
@@ -278,96 +247,54 @@ footer{text-align:center;color:#8A8A8A;padding:40px 24px;font-family:'Space Grot
     <div class='s-icon'>👥</div>
     <h2 class='s-title'>AUDIENCIA</h2>
   </div>
-  <p class='s-sub'>¿A quién tocamos, cómo cambió el segmento y con qué resultado?</p>
-  <p style='color:#8A8A8A;font-size:14px;margin-bottom:20px'>
-    <b>DE</b> = volumen de la Data Extension en SFMC · <b>Envíos</b> = cuántos recibieron efectivamente. En WhatsApp el DE no está poblado en la fuente.
-  </p>
+  <p class='s-sub'>¿A quién tocamos y cómo evolucionó el segmento?</p>
 
-  <h3 class='sub-head'>Email — Evolución del segmento · Jornadas + Selección Nacional</h3>
-  <p class='sub-sub'>11 piezas email en orden cronológico · incluye SNM varonil (oct) y SNF femenil (oct)</p>
+  <div class='insight'>
+    <span class='lbl'>💡 Conclusión · Audiencia</span>
+    <ul>
+      <li>La OR email se mantuvo estable en 43–46% durante todo el periodo — el cambio de segmentación no la afectó.</li>
+      <li>La base activa de WhatsApp se saturó: 3 envíos a la misma pool (J8→J10) bajaron el CTOR de <b>5.58%</b> a <b>3.98%</b> (−29%).</li>
+      <li>Cada vez que se tocó una pool nueva, el CTOR WA recuperó: SNM-2 llegó a <b>6.77%</b>, Femenil a <b>10.10%</b>.</li>
+      <li>La audiencia Femenil, con 1/8 del volumen varonil, generó 6× más intención de compra Nestlé en el mismo bloque de octubre.</li>
+    </ul>
+  </div>
+  <div class='action'>
+    <span class='lbl'>✅ Accionable · Audiencia</span>
+    <ul>
+      <li>Ampliar base opt-in WhatsApp desde Recetas Nestlé para rotar sub-pools y evitar saturar la misma audiencia.</li>
+      <li>Mantener audiencia Femenil con inversión y copy dedicados.</li>
+      <li>Consolidar Región unificada como default en email; particionar solo cuando el objetivo lo requiera.</li>
+    </ul>
+  </div>
+
+  <h3 class='sub-head'>Email — Evolución del segmento · Jornadas + Selección</h3>
+  <p class='sub-sub'>Top 3 CTOR en verde · ↑↓ OR y CTOR vs pieza anterior</p>
+  <div class='table-wrap'>
   <table class='a'>
-    <tr><th>Pieza</th><th>Fecha</th><th>Segmento</th><th>Envíos (DE)</th><th>OR (aperturas)</th><th>CTOR (clicks)</th></tr>
-    <tr class=''><td><b>E-J4 CON</b></td><td>2026-08-15</td><td>Con región</td><td>7,995<br><span class='vol'>DE: 10,412</span></td><td><b>44.1%</b><br><span class='vol'>(3,517 ap.)</span></td><td><b>0.74%</b><br><span class='vol'>(26 clicks)</span></td></tr><tr class=''><td><b>E-J4 SIN</b></td><td>2026-08-15</td><td>Sin región</td><td>128,759<br><span class='vol'>DE: 207,730</span></td><td><b>43.4%</b><br><span class='vol'>(55,734 ap.)</span></td><td><b>0.61%</b><br><span class='vol'>(342 clicks)</span></td></tr><tr class=''><td><b>E-J5 CON · Part B</b></td><td>2026-08-22</td><td>Con región</td><td>2,708<br><span class='vol'>DE: 3,527</span></td><td><b>42.8%</b><br><span class='vol'>(1,155 ap.)</span></td><td><b>0.87%</b><br><span class='vol'>(10 clicks)</span></td></tr><tr class=''><td><b>E-J5 SIN · Part B</b></td><td>2026-08-22</td><td>Sin región</td><td>43,188<br><span class='vol'>DE: 69,601</span></td><td><b>43.5%</b><br><span class='vol'>(18,749 ap.)</span></td><td><b>0.83%</b><br><span class='vol'>(155 clicks)</span></td></tr><tr class=''><td><b>E-J6 Sur · Part C</b></td><td>2026-08-28</td><td>Sur</td><td>2,733<br><span class='vol'>DE: 3,527</span></td><td><b>45.7%</b><br><span class='vol'>(1,242 ap.)</span></td><td><b>0.97%</b><br><span class='vol'>(12 clicks)</span></td></tr><tr class=''><td><b>E-J7</b></td><td>2026-09-04</td><td>Región unificada</td><td>91,580<br><span class='vol'>DE: 146,213</span></td><td><b>43.1%</b><br><span class='vol'>(39,274 ap.)</span></td><td><b>0.87%</b><br><span class='vol'>(343 clicks)</span></td></tr><tr class=''><td><b>E-J8 · Part A</b></td><td>2026-09-12</td><td>Región unificada</td><td>38,168<br><span class='vol'>DE: 64,068</span></td><td><b>46.3%</b><br><span class='vol'>(17,528 ap.)</span></td><td><b>0.87%</b><br><span class='vol'>(152 clicks)</span></td></tr><tr class=''><td><b>E-J9 · Part B</b></td><td>2026-09-19</td><td>Región unificada</td><td>40,130<br><span class='vol'>DE: 66,635</span></td><td><b>44.0%</b><br><span class='vol'>(17,517 ap.)</span></td><td><b>0.70%</b><br><span class='vol'>(122 clicks)</span></td></tr><tr class=''><td><b>E-J10 · Part C</b></td><td>2026-09-26</td><td>Región unificada</td><td>39,735<br><span class='vol'>DE: 66,070</span></td><td><b>44.3%</b><br><span class='vol'>(17,449 ap.)</span></td><td><b>0.69%</b><br><span class='vol'>(120 clicks)</span></td></tr><tr class=''><td><b>E-SNM-3 vs Chile</b></td><td>2026-10-06</td><td>Región unificada</td><td>37,046<br><span class='vol'>DE: 61,784</span></td><td><b>46.6%</b><br><span class='vol'>(17,169 ap.)</span></td><td><b>0.55%</b><br><span class='vol'>(95 clicks)</span></td></tr><tr class=''><td><b>E-SNM-Femenil vs Jamaica</b></td><td>2026-10-13</td><td>Femenil</td><td>7,242<br><span class='vol'>DE: 13,476</span></td><td><b>36.5%</b><br><span class='vol'>(2,627 ap.)</span></td><td><b>1.29%</b><br><span class='vol'>(34 clicks)</span></td></tr>
+    <tr><th>Pieza</th><th>Fecha</th><th>Segmento</th><th>Envíos (DE)</th><th>OR ↑↓ (aperturas)</th><th>CTOR ↑↓ (clicks)</th></tr>
+    <tr class=''><td><b>E-J4 CON</b></td><td>2026-08-15</td><td>Con región</td><td>7,995<br><span class='vol'>DE: 10,412</span></td><td><b>44.1%</b><br><span class='vol'>(3,517 ap.)</span></td><td><b>0.74%</b><br><span class='vol'>(26 clicks)</span></td></tr><tr class=''><td><b>E-J4 SIN</b></td><td>2026-08-15</td><td>Sin región</td><td>128,759<br><span class='vol'>DE: 207,730</span></td><td><b>43.4% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(55,734 ap.)</span></td><td><b>0.61% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(342 clicks)</span></td></tr><tr class='top-3'><td><b>E-J5 CON · Part B</b></td><td>2026-08-22</td><td>Con región</td><td>2,708<br><span class='vol'>DE: 3,527</span></td><td><b>42.8% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(1,155 ap.)</span></td><td><b>0.87% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(10 clicks)</span></td></tr><tr class=''><td><b>E-J5 SIN · Part B</b></td><td>2026-08-22</td><td>Sin región</td><td>43,188<br><span class='vol'>DE: 69,601</span></td><td><b>43.5% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(18,749 ap.)</span></td><td><b>0.83% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(155 clicks)</span></td></tr><tr class='top-2'><td><b>E-J6 Sur · Part C</b></td><td>2026-08-28</td><td>Sur</td><td>2,733<br><span class='vol'>DE: 3,527</span></td><td><b>45.7% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(1,242 ap.)</span></td><td><b>0.97% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(12 clicks)</span></td></tr><tr class='top-3'><td><b>E-J7</b></td><td>2026-09-04</td><td>Región unificada</td><td>91,580<br><span class='vol'>DE: 146,213</span></td><td><b>43.1% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(39,274 ap.)</span></td><td><b>0.87% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(343 clicks)</span></td></tr><tr class='top-3'><td><b>E-J8 · Part A</b></td><td>2026-09-12</td><td>Región unificada</td><td>38,168<br><span class='vol'>DE: 64,068</span></td><td><b>46.3% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(17,528 ap.)</span></td><td><b>0.87%</b><br><span class='vol'>(152 clicks)</span></td></tr><tr class=''><td><b>E-J9 · Part B</b></td><td>2026-09-19</td><td>Región unificada</td><td>40,130<br><span class='vol'>DE: 66,635</span></td><td><b>44.0% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(17,517 ap.)</span></td><td><b>0.70% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(122 clicks)</span></td></tr><tr class=''><td><b>E-J10 · Part C</b></td><td>2026-09-26</td><td>Región unificada</td><td>39,735<br><span class='vol'>DE: 66,070</span></td><td><b>44.3% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(17,449 ap.)</span></td><td><b>0.69% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(120 clicks)</span></td></tr><tr class=''><td><b>E-SNM-3 vs Chile</b></td><td>2026-10-06</td><td>Región unificada</td><td>37,046<br><span class='vol'>DE: 61,784</span></td><td><b>46.6% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(17,169 ap.)</span></td><td><b>0.55% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(95 clicks)</span></td></tr><tr class='top-1'><td><b>E-SNM-Femenil vs Jamaica</b></td><td>2026-10-13</td><td>Femenil</td><td>7,242<br><span class='vol'>DE: 13,476</span></td><td><b>36.5% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(2,627 ap.)</span></td><td><b>1.29% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(34 clicks)</span></td></tr>
   </table>
+  </div>
 
   <h3 class='sub-head'>WhatsApp — Evolución del segmento</h3>
-  <p class='sub-sub'>5 piezas WA · en gold = pool nueva</p>
+  <p class='sub-sub'>Top 3 CTOR en verde · ↑↓ vs pieza anterior</p>
+  <div class='table-wrap'>
   <table class='a'>
-    <tr><th>Pieza</th><th>Fecha</th><th>Segmento</th><th>Envíos</th><th>%Lectura (leídos)</th><th>CTOR (clicks)</th><th>Pool</th></tr>
-    <tr class=''><td><b>WA-J8 · Part A</b></td><td>2026-09-12</td><td>Región unificada</td><td>1,962</td><td><b>59.3%</b><br><span class='vol'>(949 leídos)</span></td><td><b>5.58%</b><br><span class='vol'>(60 clicks)</span></td><td>misma</td></tr><tr class=''><td><b>WA-J9</b></td><td>2026-09-19</td><td>Región unificada</td><td>2,560</td><td><b>55.9%</b><br><span class='vol'>(1,207 leídos)</span></td><td><b>4.39%</b><br><span class='vol'>(67 clicks)</span></td><td>misma</td></tr><tr class=''><td><b>WA-J10</b></td><td>2026-09-26</td><td>Región unificada</td><td>2,798</td><td><b>46.3%</b><br><span class='vol'>(1,054 leídos)</span></td><td><b>3.98%</b><br><span class='vol'>(42 clicks)</span></td><td>misma</td></tr><tr class='hi'><td><b>WA-SNM-2 vs Chile</b></td><td>2026-10-06</td><td>No tocados en Mundial</td><td>2,178</td><td><b>49.8%</b><br><span class='vol'>(871 leídos)</span></td><td><b>6.77%</b><br><span class='vol'>(59 clicks)</span></td><td>nueva</td></tr><tr class='hi'><td><b>WA-SNF-1 vs Jamaica</b></td><td>2026-10-13</td><td>Femenil</td><td>2,889</td><td><b>46.5%</b><br><span class='vol'>(1,079 leídos)</span></td><td><b>10.10%</b><br><span class='vol'>(109 clicks)</span></td><td>nueva</td></tr>
+    <tr><th>Pieza</th><th>Fecha</th><th>Segmento</th><th>Envíos</th><th>%Lectura ↑↓ (leídos)</th><th>CTOR ↑↓ (clicks)</th></tr>
+    <tr class='top-3'><td><b>WA-J8 · Part A</b></td><td>2026-09-12</td><td>Región unificada</td><td>1,962</td><td><b>59.3%</b><br><span class='vol'>(949 leídos)</span></td><td><b>5.58%</b><br><span class='vol'>(60 clicks)</span></td></tr><tr class=''><td><b>WA-J9</b></td><td>2026-09-19</td><td>Región unificada</td><td>2,560</td><td><b>55.9% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(1,207 leídos)</span></td><td><b>4.39% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(67 clicks)</span></td></tr><tr class=''><td><b>WA-J10</b></td><td>2026-09-26</td><td>Región unificada</td><td>2,798</td><td><b>46.3% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(1,054 leídos)</span></td><td><b>3.98% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(42 clicks)</span></td></tr><tr class='top-2'><td><b>WA-SNM-2 vs Chile</b></td><td>2026-10-06</td><td>Región unificada</td><td>2,178</td><td><b>49.8% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(871 leídos)</span></td><td><b>6.77% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(59 clicks)</span></td></tr><tr class='top-1'><td><b>WA-SNF-1 vs Jamaica</b></td><td>2026-10-13</td><td>Femenil</td><td>2,889</td><td><b>46.5% <span style='color:#FF2040'>↓</span></b><br><span class='vol'>(1,079 leídos)</span></td><td><b>10.10% <span style='color:#00D45A'>↑</span></b><br><span class='vol'>(109 clicks)</span></td></tr>
   </table>
+  </div>
 
-  <h3 class='sub-head'>Desgaste de la base WhatsApp · %Click vs Read</h3>
-  <p class='sub-sub'>Misma pool (J8→J10) baja · pools nuevas (SNM-2, SNF-1) recuperan</p>
+  <h3 class='sub-head'>Desgaste de la base WhatsApp</h3>
+  <p class='sub-sub'>%Click vs Read · misma pool vs pool nueva</p>
   
 <svg viewBox='0 0 900 300' class='timeline-svg'>
   <line x1='50' y1='216.7' x2='850' y2='216.7' stroke='#2A2A2A' stroke-width='.5'/><text x='42' y='220.7' fill='#8A8A8A' font-size='11' text-anchor='end' font-family='Space Grotesk'>2%</text><line x1='50' y1='183.3' x2='850' y2='183.3' stroke='#2A2A2A' stroke-width='.5'/><text x='42' y='187.3' fill='#8A8A8A' font-size='11' text-anchor='end' font-family='Space Grotesk'>4%</text><line x1='50' y1='150.0' x2='850' y2='150.0' stroke='#2A2A2A' stroke-width='.5'/><text x='42' y='154.0' fill='#8A8A8A' font-size='11' text-anchor='end' font-family='Space Grotesk'>6%</text><line x1='50' y1='116.7' x2='850' y2='116.7' stroke='#2A2A2A' stroke-width='.5'/><text x='42' y='120.7' fill='#8A8A8A' font-size='11' text-anchor='end' font-family='Space Grotesk'>8%</text><line x1='50' y1='83.3' x2='850' y2='83.3' stroke='#2A2A2A' stroke-width='.5'/><text x='42' y='87.3' fill='#8A8A8A' font-size='11' text-anchor='end' font-family='Space Grotesk'>10%</text><line x1='50' y1='50.0' x2='850' y2='50.0' stroke='#2A2A2A' stroke-width='.5'/><text x='42' y='54.0' fill='#8A8A8A' font-size='11' text-anchor='end' font-family='Space Grotesk'>12%</text>
   <polyline points='50.0,157.0 250.0,176.8 450.0,183.7 650.0,137.2 850.0,81.7' fill='none' stroke='#FFB800' stroke-width='3'/>
-  <circle cx='50.0' cy='157.0' r='7' fill='#FFB800' stroke='#080808' stroke-width='2'/><circle cx='250.0' cy='176.8' r='7' fill='#FFB800' stroke='#080808' stroke-width='2'/><circle cx='450.0' cy='183.7' r='7' fill='#FFB800' stroke='#080808' stroke-width='2'/><circle cx='650.0' cy='137.2' r='7' fill='#00D45A' stroke='#080808' stroke-width='2'/><circle cx='850.0' cy='81.7' r='7' fill='#00D45A' stroke='#080808' stroke-width='2'/>
-  <text x='50.0' y='141.0' fill='#FFB800' font-size='15' text-anchor='middle' font-family='Space Grotesk'>5.58%</text><text x='50.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-J8</text><text x='250.0' y='160.8' fill='#FFB800' font-size='15' text-anchor='middle' font-family='Space Grotesk'>4.39%</text><text x='250.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-J9</text><text x='450.0' y='167.7' fill='#FFB800' font-size='15' text-anchor='middle' font-family='Space Grotesk'>3.98%</text><text x='450.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-J10</text><text x='650.0' y='121.2' fill='#00D45A' font-size='15' text-anchor='middle' font-family='Space Grotesk'>6.77%</text><text x='650.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-SNM-2</text><text x='850.0' y='65.7' fill='#00D45A' font-size='15' text-anchor='middle' font-family='Space Grotesk'>10.1%</text><text x='850.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-SNF-1</text>
-  <text x='50' y='24' fill='#8A8A8A' font-size='12' font-family="Space Grotesk">CTOR WHATSAPP · %CLICK VS READ · misma pool (gold) vs pool nueva (verde)</text>
+  <circle cx='50.0' cy='157.0' r='7' fill='#FFB800' stroke='#080808' stroke-width='2'/><circle cx='250.0' cy='176.8' r='7' fill='#FFB800' stroke='#080808' stroke-width='2'/><circle cx='450.0' cy='183.7' r='7' fill='#FFB800' stroke='#080808' stroke-width='2'/><circle cx='650.0' cy='137.2' r='7' fill='#00D45A' stroke='#080808' stroke-width='2'/><circle cx='850.0' cy='81.7' r='7' fill='#00D45A' stroke='#080808' stroke-width='2'/><text x='50.0' y='141.0' fill='#FFB800' font-size='15' text-anchor='middle' font-family='Space Grotesk'>5.58%</text><text x='50.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-J8</text><text x='250.0' y='160.8' fill='#FFB800' font-size='15' text-anchor='middle' font-family='Space Grotesk'>4.39%</text><text x='250.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-J9</text><text x='450.0' y='167.7' fill='#FFB800' font-size='15' text-anchor='middle' font-family='Space Grotesk'>3.98%</text><text x='450.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-J10</text><text x='650.0' y='121.2' fill='#00D45A' font-size='15' text-anchor='middle' font-family='Space Grotesk'>6.77%</text><text x='650.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-SNM-2</text><text x='850.0' y='65.7' fill='#00D45A' font-size='15' text-anchor='middle' font-family='Space Grotesk'>10.1%</text><text x='850.0' y='270.0' fill='#8A8A8A' font-size='12' text-anchor='middle' font-family='Space Grotesk'>WA-SNF-1</text>
+  <text x='50' y='24' fill='#8A8A8A' font-size='12' font-family='Space Grotesk'>CTOR WA · %Click vs Read · pool regular (gold) — pool nueva (verde)</text>
 </svg>
 
-
-  <div class='insight'>
-    <span class='lbl'>💡 Insight · Audiencia</span>
-    <ul>
-      <li>OR email se mantuvo estable en 43–46% durante todo el periodo — el cambio de segmentación no la afectó.</li>
-      <li>La base activa de WhatsApp se saturó: tres envíos consecutivos (J8→J10) bajaron el CTOR de <b>5.58%</b> a <b>3.98%</b> (−29% relativo, −1.60pp).</li>
-      <li>Cada vez que se tocó una pool nueva, el CTOR WA recuperó: SNM-2 llegó a <b>6.77%</b>; Femenil a <b>10.10%</b>.</li>
-      <li>La audiencia Femenil, con 1/8 del volumen varonil, generó 6× más intención Nestlé en el mismo bloque de octubre.</li>
-    </ul>
-  </div>
-
-  <div class='action'>
-    <span class='lbl'>✅ Accionable · Audiencia</span>
-    <ul>
-      <li>Ampliar base de opt-in WhatsApp desde Recetas Nestlé para rotar sub-pools y no tocar la misma audiencia dos veces en dos semanas.</li>
-      <li>Mantener audiencia dedicada Femenil con copy diferenciado — la respuesta justifica el presupuesto independiente.</li>
-      <li>Consolidar Región unificada como segmentación email default; particionar solo cuando el objetivo lo requiera.</li>
-    </ul>
-  </div>
-</section>
-
-  
-<section class='synth' id='accionables'>
-  <h2>📋 Accionables para la próxima campaña</h2>
-  
-<div class='item'>
-  <div class='icon'>🍳</div>
-  <div class='body'>
-    <b>Receta-plato con MAGGI protagónico sobre snacks genéricos</b>
-    <p class='evid'>CTOR WA 6.77–10.10% (plato) vs 3.98–5.58% (snack). Mejor CTOR email también fue plato: Femenil 1.29%.</p>
-  </div>
-</div>
-<div class='item'>
-  <div class='icon'>🔗</div>
-  <div class='body'>
-    <b>QCart como destino principal en WhatsApp</b>
-    <p class='evid'>Donde se pudo medir (J8/J9), QCart captó 79–88% del click vs Recetas Nestlé.</p>
-  </div>
-</div>
-<div class='item'>
-  <div class='icon'>🧪</div>
-  <div class='body'>
-    <b>Habilitar UTMs únicas por destino antes de escalar video</b>
-    <p class='evid'>Sin shortlinks dedicados no podemos comparar YouTube/TikTok vs QCart. J9, J10 y E-SNM-3 no son evaluables con el tracking actual.</p>
-  </div>
-</div>
-<div class='item'>
-  <div class='icon'>👥</div>
-  <div class='body'>
-    <b>Mantener audiencia Femenil con inversión y copy dedicados</b>
-    <p class='evid'>+0.74pp CTOR email y +3.33pp CTOR WA vs varonil. Con 1/8 del volumen generó 6× más intención Nestlé.</p>
-  </div>
-</div>
-<div class='item'>
-  <div class='icon'>📈</div>
-  <div class='body'>
-    <b>Ampliar base opt-in WA desde Recetas Nestlé</b>
-    <p class='evid'>3 envíos seguidos a la misma pool bajaron el CTOR −29%. Pools nuevas recuperaron a 6.77–10.10%.</p>
-  </div>
-</div>
 </section>
 
 </div>
