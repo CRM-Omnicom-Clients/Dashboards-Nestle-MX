@@ -1,0 +1,18 @@
+timezone: America/Mexico_City
+
+_export:
+  td:
+    engine: presto
+
+# ── 1. Cargar catálogo de GitHub a nmx_insumos ────────────
++landing:
+  call>: landing.dig
+
+# ── 2. Reconstruir nmx_catalogo desde nmx_insumos ─────────
++catalogo:
+  call>: catalogo.dig
+
+_error:
+  mail>: Reporte Consolidado — pipeline falló
+  subject: "[nmx_crm_reporte] nmx_crm_reporte.dig FALLÓ — ${session_date}"
+  to: [rick@omnicommediagroup.com]

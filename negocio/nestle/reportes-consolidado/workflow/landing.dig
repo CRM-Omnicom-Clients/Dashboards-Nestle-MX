@@ -1,0 +1,56 @@
+timezone: America/Mexico_City
+
+_export:
+  td:
+    engine: presto
+
+# ── Limpiar tablas de insumos antes de recargar ────────────
++drop_insumos:
+  _parallel: true
+
+  +drop_land_vocab_bu:
+    td_ddl>:
+    drop_tables: [land_vocab_bu]
+    database: nmx_insumos
+  +drop_land_vocab_marcas:
+    td_ddl>:
+    drop_tables: [land_vocab_marcas]
+    database: nmx_insumos
+  +drop_land_vocab_campanas:
+    td_ddl>:
+    drop_tables: [land_vocab_campanas]
+    database: nmx_insumos
+  +drop_land_vocab_objetivos:
+    td_ddl>:
+    drop_tables: [land_vocab_objetivos]
+    database: nmx_insumos
+  +drop_land_vocab_touchpoints_brief:
+    td_ddl>:
+    drop_tables: [land_vocab_touchpoints_brief]
+    database: nmx_insumos
+  +drop_land_vocab_segmentos:
+    td_ddl>:
+    drop_tables: [land_vocab_segmentos]
+    database: nmx_insumos
+  +drop_land_piezas:
+    td_ddl>:
+    drop_tables: [land_piezas]
+    database: nmx_insumos
+  +drop_land_pieza_segmento:
+    td_ddl>:
+    drop_tables: [land_pieza_segmento]
+    database: nmx_insumos
+  +drop_land_nombres:
+    td_ddl>:
+    drop_tables: [land_nombres]
+    database: nmx_insumos
+  +drop_land_shortlinks:
+    td_ddl>:
+    drop_tables: [land_shortlinks]
+    database: nmx_insumos
+
+# ── Descargar XLSX de GitHub, parsear y cargar a nmx_insumos ──
++load_catalogo:
+  sh>: python3 scripts/load_catalogo.py
+  _env:
+    GITHUB_TOKEN: ${secret:github_pat_dashboards}
