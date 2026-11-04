@@ -4,11 +4,8 @@ _export:
   td:
     engine: presto
 
-# ── 1. Cargar catálogo de GitHub a nmx_insumos ────────────
-+landing:
-  call>: landing.dig
-
-# ── 2. Reconstruir nmx_catalogo desde nmx_insumos ─────────
+# ── Reconstruir nmx_catalogo desde nmx_insumos ─────────
+# Pre-requisito: correr scripts/reload_catalog.py si el catálogo cambió
 +catalogo:
   call>: catalogo.dig
 
