@@ -1,0 +1,31 @@
+timezone: America/Mexico_City
+
+_export:
+  td:
+    engine: presto
+
+# hechos.dig — reconstruye nmx_hechos desde nmx_catalogo + prod_sfmc_* + insumos WA/Qcart
+# Prerequisito: catalogo.dig debe haber corrido exitosamente
+
+# ── fact_envio_email ──────────────────────────────────────────────
++drop_fact_envio_email:
+  td_ddl>:
+  drop_tables: [fact_envio_email]
+  database: nmx_hechos
+
++rebuild_fact_envio_email:
+  td>: queries/hechos/rebuild_fact_envio_email.sql
+  database: nmx_hechos
+  create_table: fact_envio_email
+
+# ── fact_envio_whatsapp ── (Etapa 4b — pendiente datos WA en nmx_insumos)
+# +rebuild_fact_envio_whatsapp:
+#   td>: queries/hechos/rebuild_fact_envio_whatsapp.sql
+#   database: nmx_hechos
+#   create_table: fact_envio_whatsapp
+
+# ── fact_evento_qcart_* ── (Etapa 4c — pendiente datos Qcart en nmx_insumos)
+# +rebuild_fact_qcart_carritos:
+#   td>: queries/hechos/rebuild_fact_evento_qcart_carritos.sql
+#   database: nmx_hechos
+#   create_table: fact_evento_qcart_carritos
