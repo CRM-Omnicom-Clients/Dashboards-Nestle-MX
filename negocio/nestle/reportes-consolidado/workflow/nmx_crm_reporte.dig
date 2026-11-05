@@ -4,10 +4,12 @@ _export:
   td:
     engine: presto
 
-# ── Reconstruir nmx_catalogo desde nmx_insumos ─────────
 # Pre-requisito: correr scripts/reload_catalog.py si el catálogo cambió
 +catalogo:
   call>: catalogo.dig
+
++hechos:
+  call>: hechos.dig
 
 _error:
   mail>: Reporte Consolidado — pipeline falló
