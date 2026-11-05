@@ -1,7 +1,7 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-04
-status: "reload_catalog.py FUNCIONAL (10/10 tablas) + nmx_crm_reporte SUCCESS. Siguiente: Etapa 4 Hechos workflow (email attribution + WA + Qcart)"
+updated: 2026-11-05
+status: "Etapa 4a COMPLETA — fact_envio_email en nmx_hechos (141 jobs, 135 piezas, 34.6M sends). Siguiente: 4b WA, 4c Qcart, luego Etapa 5 rpt_email"
 owner: Rick Aguilar
 ---
 
@@ -20,7 +20,9 @@ owner: Rick Aguilar
 | **2** | **Repositorio** | **✓ COMPLETA** | `negocio/nestle/reportes-consolidado/` en GitHub con CSVs v8, workflow y queries |
 | **catalogo.dig** | **Catálogo (subtarea)** | **✓ COMPLETA** | nmx_insumos → nmx_catalogo: 10 tablas, idempotente, 24/24 tareas exitosas |
 | **3** | **Landing / Recarga catálogo** | **✓ COMPLETA** | `reload_catalog.py` carga 10/10 tablas en nmx_insumos; `nmx_crm_reporte` SUCCESS |
-| 4 | Hechos workflow | Pendiente | `04_hechos.dig` + Gate 2: email + WA + Qcart → nmx_hechos |
+| **4a** | **Email attribution** | **✓ COMPLETA** | `fact_envio_email`: 141 jobs, 135 piezas, 34.6M sends, 3.2M opens, 47.8K clicks |
+| 4b | WA hechos | Pendiente datos | `fact_envio_whatsapp`: necesita archivo WA en nmx_insumos |
+| 4c | Qcart hechos | Pendiente datos | `fact_evento_qcart_*`: necesita archivos Qcart en nmx_insumos |
 | 5 | Reporte workflow | Pendiente | `06_reporte.dig`: nmx_hechos → nmx_reporte (3 secciones, validado vs Excel) |
 | 6 | Dashboard | Pendiente | Studio dashboard con diseño fijo; schedule semanal activado |
 | 7 | Operabilidad | Pendiente | Cold run por teammate; OPERACIONES.md; traspaso |
