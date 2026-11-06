@@ -53,7 +53,9 @@ SHEET_TABLE = {
 
 
 def tdx(sql: str):
-    result = subprocess.run(["tdx", "query", sql], capture_output=True, text=True)
+    # Use stdin (-) to avoid "Argument list too long" for large queries
+    result = subprocess.run(["tdx", "query", "-"],
+                            input=sql, capture_output=True, text=True)
     if result.returncode != 0:
         print(f"  ERROR: {result.stderr[:400]}", file=sys.stderr)
         raise RuntimeError(f"tdx query falló: {result.stderr[:200]}")
@@ -114,6 +116,9 @@ def fetch_raw(path_suffix: str) -> bytes:
         return resp.read()
 
 
+BATCH_SIZE = 800  # rows per INSERT batch (keeps SQL < 1M chars for wide tables)
+
+
 def load_csv(url_suffix: str, table: str, db: str):
     print(f"  Descargando {url_suffix.split('/')[-1]}...")
     try:
@@ -130,8 +135,10 @@ def load_csv(url_suffix: str, table: str, db: str):
         return
 
     headers = rows[0]
+    # Sanitize headers for Presto: replace special chars with ASCII equivalents
+    _replacements = str.maketrans('áéíóúüñÁÉÍÓÚÜÑ', 'aeiouunAEIOUUN')
+    headers = [h.translate(_replacements) for h in headers]
     data_rows = [r for r in rows[1:] if any(c.strip() for c in r)]
-    # Pad rows to header width
     n_cols = len(headers)
     padded = [
         tuple(row[i] if i < len(row) else None for i in range(n_cols))
@@ -140,12 +147,29 @@ def load_csv(url_suffix: str, table: str, db: str):
 
     print(f"  Cargando {db}.{table} ({len(padded)} filas, {n_cols} cols)...")
     tdx(f"DROP TABLE IF EXISTS {db}.{table}")
+
     cols_sql = ", ".join(headers)
-    values_sql = ", ".join(
-        f"({', '.join(escape(cell) for cell in row)})"
-        for row in padded
-    )
-    tdx(f"CREATE TABLE {db}.{table} AS SELECT * FROM (VALUES {values_sql}) AS t({cols_sql})")
+    # Chunk into batches to stay under TD's 1M-char query limit
+    for i in range(0, len(padded), BATCH_SIZE):
+        batch = padded[i:i + BATCH_SIZE]
+        values_sql = ", ".join(
+            f"({', '.join(escape(cell) for cell in row)})"
+            for row in batch
+        )
+        if i == 0:
+            # First batch: CTAS — auto-creates table including TD's time column
+            tdx(
+                f"CREATE TABLE {db}.{table} AS "
+                f"SELECT * FROM (VALUES {values_sql}) AS t({cols_sql})"
+            )
+        else:
+            # Subsequent batches: INSERT using explicit column list
+            tdx(
+                f"INSERT INTO {db}.{table} ({cols_sql}) "
+                f"SELECT {cols_sql} FROM (VALUES {values_sql}) AS t({cols_sql})"
+            )
+        print(f"    batch {i // BATCH_SIZE + 1}/{-(-len(padded) // BATCH_SIZE)}: {len(batch)} filas")
+
     print(f"  ✓ {table}: {len(padded)} filas")
 
 
