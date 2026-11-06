@@ -1,100 +1,176 @@
 #!/usr/bin/env python3
 """
-Descarga Catalogo-Nestle-MX.xlsx de GitHub y carga cada hoja a nmx_insumos.
-Corre como sh> task en Digdag. Requiere: openpyxl (pip install openpyxl).
+Recarga el catálogo y los insumos (WA, Qcart) desde GitHub a nmx_insumos en TD.
+Corre desde TD Studio cuando el XLSX o los CSVs de insumos fueron actualizados en el repo.
+
+Uso:
+  uv run --with openpyxl /home/agent/work/2026-09-10_gp5b06/my/scripts/reload_catalog.py
 """
+# /// script
+# requires-python = ">=3.9"
+# dependencies = ["openpyxl"]
+# ///
 import csv
-import os
+import io
 import subprocess
 import sys
-import tempfile
 import urllib.request
 
 REPO_RAW = "https://raw.githubusercontent.com/CRM-Omnicom-Clients/Dashboards-Nestle-MX/main"
-XLSX_PATH = "negocio/nestle/reportes-consolidado/catalogo/Catalogo-Nestle-MX.xlsx"
-XLSX_URL  = f"{REPO_RAW}/{XLSX_PATH}"
+REPO_BASE = "negocio/nestle/reportes-consolidado"
+XLSX_URL  = f"{REPO_RAW}/{REPO_BASE}/catalogo/Catalogo-Nestle-MX.xlsx"
+
+# Token leído del archivo (no se guarda en el repo)
+_TOKEN_FILE = "/home/agent/work/2026-09-10_gp5b06/my/TOKEN DASHBOARDS 1.txt"
+def _load_token() -> str:
+    with open(_TOKEN_FILE, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith("github_pat_"):
+                return line
+    raise RuntimeError(f"Token no encontrado en {_TOKEN_FILE}")
+GITHUB_TOKEN = _load_token()
+
+# CSV insumos: (url_suffix, table, db)
+CSV_INSUMOS = [
+    (f"{REPO_BASE}/insumos/wa_envios.csv",           "land_wa_envios",          "nmx_insumos"),
+    (f"{REPO_BASE}/insumos/qcart_carritos.csv",      "land_qcart_carritos",     "nmx_insumos"),
+    (f"{REPO_BASE}/insumos/qcart_productos.csv",     "land_qcart_productos",    "nmx_insumos"),
+]
 
 SHEET_TABLE = {
-    "Vocab_BU":          "land_vocab_bu",
-    "Vocab_Marcas":      "land_vocab_marcas",
-    "Vocab_Campanas":    "land_vocab_campanas",
-    "Vocab_Objetivos":   "land_vocab_objetivos",
-    "Vocab_Touchpoints": "land_vocab_touchpoints_brief",
-    "Vocab_Segmentos":   "land_vocab_segmentos",
-    "Piezas":            "land_piezas",
-    "Pieza_Segmento":    "land_pieza_segmento",
-    "Nombres":           "land_nombres",
-    "Shortlinks":        "land_shortlinks",
+    "Vocab_BU":          ("land_vocab_bu",               "nmx_insumos"),
+    "Vocab_Marcas":      ("land_vocab_marcas",            "nmx_insumos"),
+    "Vocab_Campanas":    ("land_vocab_campanas",          "nmx_insumos"),
+    "Vocab_Objetivos":   ("land_vocab_objetivos",         "nmx_insumos"),
+    "Vocab_Touchpoints": ("land_vocab_touchpoints_brief", "nmx_insumos"),
+    "Vocab_Segmentos":   ("land_vocab_segmentos",         "nmx_insumos"),
+    "Piezas":            ("land_piezas",                  "nmx_insumos"),
+    "Pieza_Segmento":    ("land_pieza_segmento",          "nmx_insumos"),
+    "Nombres":           ("land_nombres",                 "nmx_insumos"),
+    "Shortlinks":        ("land_shortlinks",              "nmx_insumos"),
 }
 
-DB = "nmx_insumos"
-TD_ENDPOINT = os.environ.get("TD_ENDPOINT", "api.us01.treasuredata.com")
-TD_API_KEY  = os.environ.get("TD_API_KEY", "")  # pre-configured by TD workflow env
-GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 
-
-def install_openpyxl():
-    subprocess.run([sys.executable, "-m", "pip", "install", "--quiet", "openpyxl"],
-                   check=True)
-
-
-def download_xlsx(dest: str):
-    req = urllib.request.Request(XLSX_URL, headers={"Authorization": f"token {GITHUB_TOKEN}"})
-    with urllib.request.urlopen(req) as resp, open(dest, "wb") as f:
-        f.write(resp.read())
-    print(f"Descargado: {XLSX_URL}")
-
-
-def sheet_to_csv(ws, dest: str):
-    rows = list(ws.iter_rows(values_only=True))
-    with open(dest, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f, quoting=csv.QUOTE_MINIMAL)
-        for row in rows:
-            writer.writerow(["" if v is None else v for v in row])
-    return len(rows) - 1  # minus header
-
-
-def td_import(table: str, csv_path: str):
-    """Loads CSV to TD using the td CLI (pre-installed in TD workflow env)."""
-    result = subprocess.run(
-        ["td", "table:import",
-         "--format", "csv",
-         "--column-header",
-         "--quote", '"',
-         "--null", "",
-         DB, table, csv_path],
-        capture_output=True, text=True,
-        env={**os.environ, "TD_API_KEY": TD_API_KEY, "ENDPOINT": TD_ENDPOINT}
-    )
+def tdx(sql: str):
+    result = subprocess.run(["tdx", "query", sql], capture_output=True, text=True)
     if result.returncode != 0:
-        print(f"  STDERR: {result.stderr}", file=sys.stderr)
-        raise RuntimeError(f"td table:import falló para {table}: {result.stdout}")
-    print(f"  OK → {DB}.{table}")
+        print(f"  ERROR: {result.stderr[:400]}", file=sys.stderr)
+        raise RuntimeError(f"tdx query falló: {result.stderr[:200]}")
+    return result.stdout
+
+
+def escape(v) -> str:
+    if v is None or str(v).strip() == "":
+        return "CAST(NULL AS VARCHAR)"
+    s = str(v).replace("'", "''")
+    return f"'{s}'"
+
+
+def load_sheet(wb, sheet_name: str, table: str, db: str):
+    if sheet_name not in wb.sheetnames:
+        print(f"  AVISO: hoja '{sheet_name}' no encontrada, omitida.")
+        return
+
+    ws = wb[sheet_name]
+    rows = list(ws.iter_rows(values_only=True))
+    if not rows:
+        print(f"  AVISO: hoja '{sheet_name}' vacía.")
+        return
+
+    headers = [str(h) if h is not None else f"col{i}" for i, h in enumerate(rows[0])]
+    n_cols = len(headers)
+    # Pad rows — openpyxl omits trailing None cells from short rows
+    data_rows = [
+        tuple(row) + (None,) * max(0, n_cols - len(row))
+        for row in rows[1:]
+        if any(c is not None and str(c).strip() != "" for c in row)
+    ]
+
+    if not data_rows:
+        print(f"  AVISO: hoja '{sheet_name}' sin datos, omitida.")
+        return
+
+    print(f"  Cargando {db}.{table} ({len(data_rows)} filas, {n_cols} cols)...")
+    tdx(f"DROP TABLE IF EXISTS {db}.{table}")
+
+    # Single CTAS — no batching avoids INSERT column-count mismatch with TD's auto time column
+    cols_sql   = ", ".join(headers)
+    values_sql = ", ".join(
+        f"({', '.join(escape(cell) for cell in row)})"
+        for row in data_rows
+    )
+    tdx(
+        f"CREATE TABLE {db}.{table} AS "
+        f"SELECT * FROM (VALUES {values_sql}) AS t({cols_sql})"
+    )
+    print(f"  ✓ {table}: {len(data_rows)} filas")
+
+
+def fetch_raw(path_suffix: str) -> bytes:
+    url = f"{REPO_RAW}/{path_suffix}"
+    req = urllib.request.Request(url, headers={"Authorization": f"token {GITHUB_TOKEN}"})
+    with urllib.request.urlopen(req) as resp:
+        return resp.read()
+
+
+def load_csv(url_suffix: str, table: str, db: str):
+    print(f"  Descargando {url_suffix.split('/')[-1]}...")
+    try:
+        raw = fetch_raw(url_suffix)
+    except Exception as e:
+        print(f"  AVISO: no se pudo descargar {url_suffix} — {e}. Omitido.")
+        return
+
+    text = raw.decode("utf-8-sig")
+    reader = csv.reader(io.StringIO(text))
+    rows = list(reader)
+    if len(rows) < 2:
+        print(f"  AVISO: {url_suffix} vacío, omitido.")
+        return
+
+    headers = rows[0]
+    data_rows = [r for r in rows[1:] if any(c.strip() for c in r)]
+    # Pad rows to header width
+    n_cols = len(headers)
+    padded = [
+        tuple(row[i] if i < len(row) else None for i in range(n_cols))
+        for row in data_rows
+    ]
+
+    print(f"  Cargando {db}.{table} ({len(padded)} filas, {n_cols} cols)...")
+    tdx(f"DROP TABLE IF EXISTS {db}.{table}")
+    cols_sql = ", ".join(headers)
+    values_sql = ", ".join(
+        f"({', '.join(escape(cell) for cell in row)})"
+        for row in padded
+    )
+    tdx(f"CREATE TABLE {db}.{table} AS SELECT * FROM (VALUES {values_sql}) AS t({cols_sql})")
+    print(f"  ✓ {table}: {len(padded)} filas")
 
 
 def main():
-    install_openpyxl()
-    import openpyxl  # noqa: E402 (import after install)
+    import openpyxl  # noqa (installed by uv)
 
-    with tempfile.TemporaryDirectory() as tmp:
-        xlsx_file = os.path.join(tmp, "catalogo.xlsx")
-        download_xlsx(xlsx_file)
+    print(f"Descargando catálogo desde GitHub...")
+    req = urllib.request.Request(XLSX_URL,
+                                 headers={"Authorization": f"token {GITHUB_TOKEN}"})
+    with urllib.request.urlopen(req) as resp:
+        xlsx_bytes = resp.read()
 
-        wb = openpyxl.load_workbook(xlsx_file, read_only=True, data_only=True)
+    wb = openpyxl.load_workbook(io.BytesIO(xlsx_bytes), read_only=True, data_only=True)
+    print(f"Hojas: {wb.sheetnames}\n")
 
-        for sheet_name, table_name in SHEET_TABLE.items():
-            if sheet_name not in wb.sheetnames:
-                print(f"  AVISO: hoja '{sheet_name}' no encontrada en el XLSX, se omite.")
-                continue
-            ws = wb[sheet_name]
-            csv_file = os.path.join(tmp, f"{table_name}.csv")
-            n_rows = sheet_to_csv(ws, csv_file)
-            print(f"  {sheet_name} → {n_rows} filas")
-            td_import(table_name, csv_file)
+    for sheet_name, (table, db) in SHEET_TABLE.items():
+        load_sheet(wb, sheet_name, table, db)
 
-        wb.close()
+    wb.close()
 
-    print("✓ Carga completa a nmx_insumos")
+    print("\nCargando insumos CSV (WA, Qcart)...")
+    for url_suffix, table, db in CSV_INSUMOS:
+        load_csv(url_suffix, table, db)
+
+    print("\n✓ Recarga completa. Corre nmx_crm_reporte.catalogo en TD para reconstruir nmx_catalogo.")
 
 
 if __name__ == "__main__":
