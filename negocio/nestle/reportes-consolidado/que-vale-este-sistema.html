@@ -1,0 +1,1197 @@
+<meta charset="utf-8">
+<title>Qué vale este sistema</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  color-scheme:dark;
+  --void:#06040D; --ground:#0A0716; --surface:#131028; --surface-2:#1A1640;
+  --line:#282250; --line-2:#3A3372;
+  --ink:#F3F1FF; --ink-2:#ADA6D4; --ink-3:#726B9E;
+  --volt:#F5E93F;
+  --acc:#8B7BFF;   --acc-soft:rgba(139,123,255,.14);
+  --stop:#FF6B6B;  --stop-soft:rgba(255,107,107,.14);
+  --ok:#5BE9A6;    --ok-soft:rgba(91,233,166,.12);
+  --gap:#FFA83E;   --gap-soft:rgba(255,168,62,.14);
+  --mute:rgba(255,255,255,.05);
+  --spectrum:linear-gradient(90deg,#8B5CF6 0%,#EC4899 28%,#F97316 52%,#F5E93F 74%,#A3E635 100%);
+}
+
+*{box-sizing:border-box}
+html{background:var(--void)}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Archivo",ui-sans-serif,system-ui,"Segoe UI",sans-serif;
+  font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+body::before{content:""; position:fixed; top:0; left:0; right:0; height:3px; background:var(--spectrum); z-index:50}
+
+.wrap{max-width:1040px; margin:0 auto; padding:52px 26px 120px; display:flex; flex-direction:column; gap:74px}
+
+h1,h2,h3{margin:0; font-family:"Archivo",ui-sans-serif,system-ui,sans-serif; text-transform:uppercase; text-wrap:balance}
+h1{
+  font-size:clamp(42px,8.6vw,102px); font-weight:800; font-variation-settings:"wdth" 125;
+  line-height:.87; letter-spacing:-.025em;
+}
+h2{
+  font-size:clamp(25px,3.9vw,42px); font-weight:800; font-variation-settings:"wdth" 112;
+  line-height:.98; letter-spacing:-.015em;
+}
+h3{font-size:16px; font-weight:700; font-variation-settings:"wdth" 100; letter-spacing:.04em}
+p{margin:0; max-width:68ch; color:var(--ink-2)}
+p strong{color:var(--ink); font-weight:600}
+em{color:var(--ink); font-style:italic}
+a{color:var(--volt); text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--volt); outline-offset:3px; border-radius:4px}
+
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+code{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.86em;
+  background:var(--mute); border:1px solid var(--line); border-radius:4px; padding:1px 6px; color:var(--ink);
+}
+
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--volt);
+}
+
+/* ---- hero ---- */
+header{display:flex; flex-direction:column; gap:22px; padding-bottom:44px; position:relative}
+header::after{content:""; position:absolute; left:0; right:0; bottom:0; height:2px; background:var(--spectrum)}
+h1 .grad{
+  background:var(--spectrum); -webkit-background-clip:text; background-clip:text;
+  color:transparent; -webkit-text-fill-color:transparent;
+}
+h1 .dot{color:var(--volt)}
+.lede{font-size:clamp(17px,1.9vw,21px); color:var(--ink-2); max-width:58ch; line-height:1.5}
+.lede strong{color:var(--volt); font-weight:700}
+.meta{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px}
+.meta span{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:500; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-2);
+  border:1px solid var(--line-2); border-radius:999px; padding:5px 13px; background:var(--surface);
+}
+.meta span b{color:var(--volt); font-weight:600}
+
+/* ---- secciones ---- */
+section{display:flex; flex-direction:column; gap:22px}
+.sec-head{display:flex; flex-direction:column; gap:10px}
+.sec-head .eyebrow+h2{margin-top:-2px}
+
+/* ---- figuras ---- */
+figure{
+  margin:0; position:relative; overflow:hidden;
+  background:var(--surface); border:1px solid var(--line); border-radius:16px;
+  padding:30px 26px 20px;
+}
+figure::before{content:""; position:absolute; top:0; left:0; right:0; height:2px; background:var(--spectrum); opacity:.9}
+figure svg{display:block; width:100%; max-width:100%; height:auto; color:var(--ink)}
+figcaption{
+  margin-top:18px; padding-top:15px; border-top:1px solid var(--line);
+  font-size:14px; color:var(--ink-3); max-width:76ch;
+}
+figcaption strong{color:var(--ink-2)}
+
+/* ---- tarjetas de cifra ---- */
+.tarjetas{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:14px}
+.t{
+  background:var(--surface); border:1px solid var(--line); border-radius:14px;
+  padding:20px 22px; display:flex; flex-direction:column; gap:8px;
+}
+.t .k{
+  font-family:"Archivo",sans-serif; font-size:40px; font-weight:800; font-variation-settings:"wdth" 125;
+  line-height:.9; letter-spacing:-.03em; font-variant-numeric:tabular-nums; color:var(--volt);
+}
+.t .k.gap{color:var(--gap)} .t .k.ok{color:var(--ok)}
+.t .d{font-size:13.5px; color:var(--ink-2); line-height:1.5}
+.t .d strong{color:var(--ink)}
+
+/* ---- notas ---- */
+.nota{
+  border-left:3px solid var(--volt); background:var(--surface);
+  border-radius:0 14px 14px 0; padding:20px 24px; display:flex; flex-direction:column; gap:10px;
+}
+.nota.gap{border-left-color:var(--gap)}
+.nota.stop{border-left-color:var(--stop)}
+.nota .t2{
+  font-family:"Archivo",sans-serif; font-weight:800; font-variation-settings:"wdth" 112;
+  text-transform:uppercase; font-size:15px; letter-spacing:.005em; color:var(--ink);
+}
+.nota p{font-size:15.5px; color:var(--ink-2)}
+.nota strong{color:var(--ink)}
+
+/* ---- tablas ---- */
+.scroller{overflow-x:auto; border:1px solid var(--line); border-radius:14px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:600px; font-size:14.5px}
+th{
+  text-align:left; font-family:"IBM Plex Mono",monospace; font-size:10px; font-weight:600;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--volt);
+  padding:14px 16px; border-bottom:1px solid var(--line-2); background:var(--surface-2);
+}
+td{padding:13px 16px; border-bottom:1px solid var(--line); vertical-align:top; color:var(--ink-2)}
+td strong{color:var(--ink)}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:rgba(255,255,255,.022)}
+td.num{text-align:right; font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap; color:var(--ink)}
+td.mono{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--volt); white-space:nowrap}
+td:first-child strong{white-space:nowrap}
+h1,h2{padding-top:.06em}
+
+.pill{
+  display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:10px; font-weight:600;
+  letter-spacing:.08em; text-transform:uppercase; border-radius:999px; padding:3px 10px;
+}
+.pill.no{background:var(--stop-soft); color:var(--stop)}
+.pill.si{background:var(--ok-soft); color:var(--ok)}
+.pill.med{background:var(--gap-soft); color:var(--gap)}
+
+/* ---- pasos ---- */
+ol.pasos{
+  list-style:none; margin:0; padding:0; counter-reset:p;
+  display:flex; flex-direction:column; gap:1px;
+  background:var(--line); border:1px solid var(--line); border-radius:14px; overflow:hidden;
+}
+ol.pasos li{
+  counter-increment:p; background:var(--surface); padding:17px 22px 17px 58px;
+  position:relative; display:flex; flex-direction:column; gap:5px;
+}
+ol.pasos li::before{
+  content:counter(p,decimal-leading-zero); position:absolute; left:20px; top:17px;
+  font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600; color:var(--volt);
+}
+ol.pasos .q{font-weight:700; font-size:15.5px; color:var(--ink)}
+ol.pasos .d{font-size:14.5px; color:var(--ink-2)}
+
+footer{
+  border-top:2px solid var(--line-2); padding-top:28px;
+  color:var(--ink-3); font-size:13.5px; display:flex; flex-direction:column; gap:8px;
+}
+footer p{color:var(--ink-3); max-width:78ch}
+footer strong{color:var(--ink-2)}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header>
+  <span class="eyebrow">Reporte CRM Nestlé · Martech · actualizado 8 sep 2026</span>
+  <h1>Qué vale<br>este <span class="grad">sistema</span><span class="dot">.</span></h1>
+  <p class="lede">No es un reporte. Es una <strong>capa de atribución</strong> sobre tres fuentes que
+  no se conocen entre ellas — y eso es exactamente lo que ninguna herramienta del mercado te da.</p>
+  <div class="meta">
+    <span><b>12</b> skills</span>
+    <span><b>17</b> etapas</span>
+    <span><b>142</b> scripts</span>
+    <span><b>31</b> librerías</span>
+    <span><b>4</b> fuentes</span>
+    <span><b>2</b> puertas que detienen todo</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head">
+    <h2>Lo que SFMC te da, y lo que tu reporte necesita</h2>
+    <p>Ésta es la pregunta central, y la respuesta cabe en un dibujo. Salesforce mide <em>envíos</em>.
+    Tu reporte habla de <em>campañas</em>. Entre una cosa y la otra hay ocho saltos que nadie da por ti.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 900 430" role="img" aria-label="SFMC entrega métricas por envío suelto; la fila del reporte necesita ocho dimensiones y tres fuentes que SFMC no conecta">
+      <defs>
+        <marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <polygon points="0,1 10,5 0,9" fill="currentColor"/>
+        </marker>
+        <marker id="flg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <polygon points="0,1 10,5 0,9" fill="var(--gap)"/>
+        </marker>
+      </defs>
+
+      <text x="16" y="24" font-size="12" font-weight="600" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">LO QUE ENTREGA SFMC</text>
+      <text x="580" y="24" font-size="12" font-weight="600" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">LO QUE PIDE UNA FILA</text>
+
+      <!-- envíos sueltos -->
+      <g>
+        <rect x="16" y="42" width="210" height="46" rx="6" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".75"/>
+        <text x="30" y="62" font-size="12.5" fill="currentColor">Envío · NC000600_…_803867</text>
+        <text x="30" y="78" font-size="11.5" fill="currentColor" opacity=".6" font-family="IBM Plex Mono, monospace">sends 154,013 · opens · clicks</text>
+
+        <rect x="16" y="98" width="210" height="46" rx="6" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".75"/>
+        <text x="30" y="118" font-size="12.5" fill="currentColor">Envío · NC000600_…_863587</text>
+        <text x="30" y="134" font-size="11.5" fill="currentColor" opacity=".6" font-family="IBM Plex Mono, monospace">sends 11,366 · opens · clicks</text>
+
+        <rect x="16" y="154" width="210" height="46" rx="6" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".75"/>
+        <text x="30" y="174" font-size="12.5" fill="currentColor">Envío · NC007067_…_84320</text>
+        <text x="30" y="190" font-size="11.5" fill="currentColor" opacity=".6" font-family="IBM Plex Mono, monospace">sends 66,204 · opens · clicks</text>
+
+        <text x="16" y="222" font-size="11.5" fill="currentColor" opacity=".5" font-family="IBM Plex Mono, monospace">… 98 envíos, cada uno solo</text>
+      </g>
+
+      <!-- la fila destino -->
+      <g>
+        <rect x="578" y="42" width="306" height="200" rx="8" fill="none" stroke="var(--acc)" stroke-width="1.6"/>
+        <text x="596" y="64" font-size="13" font-weight="600" fill="var(--acc)">Una fila de Report_Resumen</text>
+        <line x1="596" y1="74" x2="866" y2="74" stroke="var(--acc)" stroke-width=".8" opacity=".35"/>
+        <text x="596" y="94" font-size="12" fill="currentColor">BU · Marca · Campaña · Objetivo</text>
+        <text x="596" y="114" font-size="12" fill="currentColor">Segmento canónico · TouchPoint</text>
+        <text x="596" y="134" font-size="12" fill="currentColor">Quincena de lanzamiento</text>
+        <text x="596" y="154" font-size="12" fill="currentColor">Principal <tspan font-weight="600">+ su FollowUp, fusionados</tspan></text>
+        <text x="596" y="174" font-size="12" fill="currentColor">WhatsApp del mismo journey</text>
+        <text x="596" y="194" font-size="12" fill="currentColor">Carritos y pesos de Qcart</text>
+        <text x="596" y="214" font-size="12" fill="currentColor">Tasas comparables entre sí</text>
+        <text x="596" y="234" font-size="11.5" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">88 columnas · 77 filas</text>
+      </g>
+
+      <!-- el hueco -->
+      <rect x="266" y="42" width="272" height="200" rx="8" fill="var(--gap)" fill-opacity=".07" stroke="var(--gap)" stroke-width="1.3" stroke-dasharray="5 4"/>
+      <text x="402" y="70" font-size="14" font-weight="700" fill="var(--gap)" text-anchor="middle" font-family="Archivo, sans-serif">EL HUECO</text>
+      <text x="402" y="94" font-size="12" fill="var(--gap)" text-anchor="middle">nada de esto viene en la fuente</text>
+      <text x="286" y="122" font-size="12" fill="currentColor">· qué campaña es este envío</text>
+      <text x="286" y="142" font-size="12" fill="currentColor">· cuál FUP le corresponde</text>
+      <text x="286" y="162" font-size="12" fill="currentColor">· en qué quincena cae</text>
+      <text x="286" y="182" font-size="12" fill="currentColor">· qué carritos generó</text>
+      <text x="286" y="202" font-size="12" fill="currentColor">· qué WhatsApp lo acompaña</text>
+      <text x="286" y="222" font-size="12" fill="currentColor">· su segmento real, no el del naming</text>
+
+      <line x1="228" y1="120" x2="262" y2="120" stroke="currentColor" stroke-width="1.4" marker-end="url(#fl)" opacity=".7"/>
+      <line x1="542" y1="120" x2="574" y2="120" stroke="var(--gap)" stroke-width="1.6" marker-end="url(#flg)"/>
+
+      <!-- la barra de abajo -->
+      <line x1="16" y1="286" x2="884" y2="286" stroke="currentColor" stroke-width=".8" opacity=".2"/>
+      <text x="16" y="312" font-size="12.5" font-weight="600" fill="currentColor" opacity=".6" font-family="IBM Plex Mono, monospace">ESE HUECO ES EL PRODUCTO</text>
+      <text x="16" y="338" font-size="13" fill="currentColor">Salesforce mide <tspan font-weight="600">envíos</tspan>. El negocio pregunta por <tspan font-weight="600">campañas</tspan>. Nadie cierra esa distancia por ti:</text>
+      <text x="16" y="362" font-size="13" fill="currentColor">no es que la herramienta esté mal configurada — es que <tspan font-weight="600">el dato de negocio no existe en la fuente</tspan>.</text>
+      <text x="16" y="392" font-size="12.5" fill="currentColor" opacity=".7">Vive en el catálogo de piezas, y el catálogo lo mantienes tú. Eso es la capa semántica.</text>
+      <text x="16" y="414" font-size="12.5" fill="currentColor" opacity=".7">Y la atribución de Qcart no es un JOIN: la llave es el <tspan font-family="IBM Plex Mono, monospace">shortlink</tspan>, porque el utm llega invertido.</text>
+    </svg>
+    <figcaption>Lo que SFMC entrega (izquierda) contra lo que una sola fila del reporte necesita (derecha).
+    Las seis líneas del centro no salen de ninguna fuente: se declaran en el catálogo y se resuelven al cruzar.
+    Ése es el trabajo, y es el que ninguna herramienta hace.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head">
+    <h2>Tres fuentes que no se conocen entre ellas</h2>
+    <p>Y cada una se une por una llave distinta. Ésta es la razón técnica de que no sea un
+    «copy-paste»: no hay un identificador común entre las tres.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 900 340" role="img" aria-label="Tres fuentes con llaves distintas: SFMC por Pieza_ID, Qcart por shortlink, WhatsApp por Pieza_ID declarado; el catálogo es el único punto donde se tocan">
+      <defs>
+        <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <polygon points="0,1 10,5 0,9" fill="currentColor"/>
+        </marker>
+      </defs>
+
+      <!-- fuentes -->
+      <rect x="16" y="30" width="196" height="62" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="32" y="53" font-size="13.5" font-weight="600" fill="currentColor">SFMC · email</text>
+      <text x="32" y="72" font-size="11.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">98 envíos · 7,282,486</text>
+
+      <rect x="16" y="128" width="196" height="62" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="32" y="151" font-size="13.5" font-weight="600" fill="currentColor">Qcart · carritos</text>
+      <text x="32" y="170" font-size="11.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">2,645 eventos · 696 productos</text>
+
+      <rect x="16" y="226" width="196" height="62" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="32" y="249" font-size="13.5" font-weight="600" fill="currentColor">WhatsApp</text>
+      <text x="32" y="268" font-size="11.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">12 envíos · 14,643</text>
+
+      <!-- llaves -->
+      <line x1="214" y1="61" x2="378" y2="130" stroke="currentColor" stroke-width="1.3" marker-end="url(#a2)" opacity=".8"/>
+      <text x="238" y="82" font-size="11.5" fill="currentColor" font-family="IBM Plex Mono, monospace">Pieza_ID ← ContentName</text>
+
+      <line x1="214" y1="159" x2="378" y2="159" stroke="var(--gap)" stroke-width="1.8" marker-end="url(#a2)" color="var(--gap)"/>
+      <text x="230" y="150" font-size="11.5" font-weight="600" fill="var(--gap)" font-family="IBM Plex Mono, monospace">shortlink</text>
+      <text x="230" y="178" font-size="11" fill="var(--gap)">el utm llega invertido — no sirve</text>
+
+      <line x1="214" y1="257" x2="378" y2="190" stroke="currentColor" stroke-width="1.3" marker-end="url(#a2)" opacity=".8"/>
+      <text x="238" y="252" font-size="11.5" fill="currentColor" font-family="IBM Plex Mono, monospace">Pieza_ID declarado a mano</text>
+
+      <!-- catálogo -->
+      <rect x="382" y="104" width="188" height="112" rx="8" fill="var(--acc)" fill-opacity=".08" stroke="var(--acc)" stroke-width="1.7"/>
+      <text x="476" y="132" font-size="14.5" font-weight="600" fill="var(--acc)" text-anchor="middle" font-family="Archivo, sans-serif">Catálogo de piezas</text>
+      <text x="476" y="154" font-size="12" fill="currentColor" text-anchor="middle">131 piezas · 86 columnas</text>
+      <text x="476" y="176" font-size="11.5" fill="currentColor" text-anchor="middle" opacity=".7">el único lugar donde</text>
+      <text x="476" y="194" font-size="11.5" fill="currentColor" text-anchor="middle" opacity=".7">las tres se tocan</text>
+
+      <line x1="574" y1="160" x2="670" y2="160" stroke="currentColor" stroke-width="1.4" marker-end="url(#a2)"/>
+
+      <rect x="674" y="104" width="210" height="112" rx="8" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <text x="779" y="140" font-size="14" font-weight="600" fill="currentColor" text-anchor="middle" font-family="Archivo, sans-serif">La rejilla</text>
+      <text x="779" y="162" font-size="12" fill="currentColor" text-anchor="middle">campaña × touchpoint</text>
+      <text x="779" y="180" font-size="12" fill="currentColor" text-anchor="middle">× segmento × quincena</text>
+      <text x="779" y="200" font-size="11.5" fill="currentColor" text-anchor="middle" opacity=".65" font-family="IBM Plex Mono, monospace">77 filas</text>
+
+      <line x1="16" y1="312" x2="884" y2="312" stroke="currentColor" stroke-width=".8" opacity=".2"/>
+      <text x="16" y="334" font-size="12.5" fill="currentColor" opacity=".75">Si el catálogo no existiera, las tres fuentes serían tres reportes sueltos — que es justo lo que da la herramienta.</text>
+    </svg>
+    <figcaption>Cada fuente entra por una llave distinta, y solo una de las tres (el shortlink de Qcart)
+    es no obvia: el <code>utm_content</code> llega invertido en parte de los eventos, y usarlo mandó
+    171 carritos de Cooking a Botana. El catálogo es el único punto de contacto.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">El mapa · estado al 8 sep 2026</span>
+    <h2>El recorrido completo de un dato</h2>
+    <p>Las tres fuentes de arriba son el punto de partida, no el sistema. Éste es el camino entero:
+    de dónde sale cada dato, quién decide qué significa, dónde se puede detener todo, y en qué
+    momento se escribe por primera vez al archivo.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 900 600" role="img" aria-label="Recorrido del dato: cuatro fuentes y el catálogo alimentan cuatro bloques en el backend, la PUERTA 1 decide si se puede escribir, el motor calcula la rejilla, y la PUERTA 2 verifica el reporte escrito">
+      <defs>
+        <marker id="f1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <polygon points="0,1 10,5 0,9" fill="currentColor"/>
+        </marker>
+      </defs>
+
+      <!-- 1 · FUENTES -->
+      <text x="16" y="18" font-size="10.5" font-weight="600" letter-spacing="1.6" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">1 · LAS FUENTES</text>
+
+      <rect x="16" y="30" width="147" height="64" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="30" y="52" font-size="13" font-weight="600" fill="currentColor">SFMC</text>
+      <text x="30" y="70" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">dos tablas: 104 piezas</text>
+      <text x="30" y="84" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">+ 624 filas de detalle</text>
+
+      <rect x="175" y="30" width="147" height="64" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="189" y="52" font-size="13" font-weight="600" fill="currentColor">Qcart</text>
+      <text x="189" y="70" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">maestro de links</text>
+      <text x="189" y="84" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">+ eventos · 2,769</text>
+
+      <rect x="334" y="30" width="147" height="64" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="348" y="52" font-size="13" font-weight="600" fill="currentColor">WhatsApp</text>
+      <text x="348" y="70" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">14,643 envíos</text>
+
+      <rect x="493" y="30" width="147" height="64" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="507" y="52" font-size="13" font-weight="600" fill="currentColor">Manual</text>
+      <text x="507" y="70" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">lo que ninguna</text>
+      <text x="507" y="84" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">fuente entrega</text>
+
+      <line x1="89"  y1="94" x2="89"  y2="106" stroke="currentColor" stroke-width="1.2" opacity=".55" marker-end="url(#f1)"/>
+      <line x1="248" y1="94" x2="248" y2="106" stroke="currentColor" stroke-width="1.2" opacity=".55" marker-end="url(#f1)"/>
+      <line x1="407" y1="94" x2="407" y2="106" stroke="currentColor" stroke-width="1.2" opacity=".55" marker-end="url(#f1)"/>
+      <line x1="566" y1="94" x2="566" y2="106" stroke="currentColor" stroke-width="1.2" opacity=".55" marker-end="url(#f1)"/>
+
+      <!-- catálogo: el riel derecho -->
+      <rect x="664" y="30" width="220" height="144" rx="8" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.6"/>
+      <text x="682" y="54" font-size="13.5" font-weight="600" fill="var(--acc)" font-family="Archivo, sans-serif">El catálogo</text>
+      <text x="682" y="76" font-size="11" fill="currentColor" font-family="IBM Plex Mono, monospace">126 piezas · 82 columnas</text>
+      <text x="682" y="102" font-size="11.5" fill="currentColor" opacity=".8">No es una fuente:</text>
+      <text x="682" y="119" font-size="11.5" fill="currentColor" opacity=".8">es quien decide qué</text>
+      <text x="682" y="136" font-size="11.5" fill="currentColor" opacity=".8">significa cada dato.</text>
+      <text x="682" y="160" font-size="10.5" fill="var(--acc)" font-family="IBM Plex Mono, monospace">campaña · marca · segmento</text>
+
+      <line x1="664" y1="154" x2="642" y2="154" stroke="var(--acc)" stroke-width="2" stroke-dasharray="4 3" color="var(--acc)" marker-end="url(#f1)"/>
+
+      <!-- 2 · BLOQUES -->
+      <text x="16" y="120" font-size="10.5" font-weight="600" letter-spacing="1.6" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">2 · LOS BLOQUES — todavía nadie toca el Excel</text>
+
+      <rect x="16" y="128" width="624" height="52" rx="7" fill="var(--mute)" stroke="var(--line-2)" stroke-width="1.2"/>
+      <text x="32" y="151" font-size="13" font-weight="600" fill="currentColor">cuatro JSON en el backend</text>
+      <text x="32" y="170" font-size="11" fill="currentColor" opacity=".7">cada fuente cruzada contra el catálogo · aquí se descartan los jobs de prueba (203 envíos de 8,937,727)</text>
+
+      <line x1="328" y1="180" x2="328" y2="198" stroke="currentColor" stroke-width="1.3" marker-end="url(#f1)"/>
+
+      <!-- PUERTA 1 -->
+      <rect x="16" y="202" width="624" height="52" rx="7" fill="var(--stop-soft)" stroke="var(--stop)" stroke-width="1.7"/>
+      <text x="32" y="225" font-size="13.5" font-weight="600" fill="var(--stop)" font-family="Archivo, sans-serif">PUERTA 1 · ¿se puede escribir?</text>
+      <text x="32" y="244" font-size="11" fill="currentColor" opacity=".75">cruza los cuatro bloques entre ellos y contra el catálogo — si cierra, no se escribe NADA</text>
+
+      <line x1="328" y1="254" x2="328" y2="278" stroke="currentColor" stroke-width="1.3" marker-end="url(#f1)"/>
+
+      <!-- 3 · EL EXCEL -->
+      <text x="16" y="274" font-size="10.5" font-weight="600" letter-spacing="1.6" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">3 · EL EXCEL</text>
+
+      <rect x="16" y="282" width="300" height="52" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="32" y="305" font-size="13" font-weight="600" fill="currentColor">hojas de datos</text>
+      <text x="32" y="324" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">Data_Email · Data_Qcart · Data_WhatsApp</text>
+
+      <line x1="316" y1="308" x2="336" y2="308" stroke="currentColor" stroke-width="1.3" marker-end="url(#f1)"/>
+
+      <rect x="340" y="282" width="300" height="52" rx="7" fill="var(--acc-soft)" stroke="var(--acc)" stroke-width="1.5"/>
+      <text x="356" y="303" font-size="13" font-weight="600" fill="var(--acc)">el MOTOR — lo ÚNICO que divide</text>
+      <text x="356" y="322" font-size="10.5" fill="currentColor" opacity=".75" font-family="IBM Plex Mono, monospace">tasas · bajas · clicks · el ancla de Qcart</text>
+
+      <line x1="490" y1="334" x2="490" y2="358" stroke="currentColor" stroke-width="1.3" marker-end="url(#f1)"/>
+
+      <rect x="340" y="362" width="300" height="52" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="356" y="385" font-size="13" font-weight="600" fill="currentColor">la rejilla</text>
+      <text x="356" y="404" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">campaña × touchpoint × segmento × quincena</text>
+
+      <line x1="490" y1="414" x2="490" y2="438" stroke="currentColor" stroke-width="1.3" marker-end="url(#f1)"/>
+
+      <rect x="340" y="442" width="300" height="52" rx="7" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <text x="356" y="465" font-size="13" font-weight="600" fill="currentColor">Report_Resumen</text>
+      <text x="356" y="484" font-size="10.5" fill="currentColor" opacity=".65" font-family="IBM Plex Mono, monospace">82 filas × 78 columnas</text>
+
+      <rect x="16" y="362" width="300" height="132" rx="7" fill="var(--gap-soft)" stroke="var(--gap)" stroke-width="1.3"/>
+      <text x="32" y="385" font-size="12.5" font-weight="600" fill="var(--gap)">Y aquí manda el humano</text>
+      <text x="32" y="406" font-size="11.5" fill="currentColor" opacity=".8">El ORDEN de las filas del reporte</text>
+      <text x="32" y="423" font-size="11.5" fill="currentColor" opacity=".8">es de Rick. El regenerador lee</text>
+      <text x="32" y="440" font-size="11.5" fill="currentColor" opacity=".8">la posición de cada fila en SU</text>
+      <text x="32" y="457" font-size="11.5" fill="currentColor" opacity=".8">hoja; solo lo nuevo va al final.</text>
+      <text x="32" y="480" font-size="10.5" fill="var(--gap)" font-family="IBM Plex Mono, monospace">El formato también es suyo.</text>
+
+      <line x1="490" y1="494" x2="490" y2="518" stroke="currentColor" stroke-width="1.3" marker-end="url(#f1)"/>
+
+      <!-- PUERTA 2 -->
+      <rect x="16" y="522" width="624" height="52" rx="7" fill="var(--stop-soft)" stroke="var(--stop)" stroke-width="1.7"/>
+      <text x="32" y="545" font-size="13.5" font-weight="600" fill="var(--stop)" font-family="Archivo, sans-serif">PUERTA 2 · ¿lo escrito dice la verdad?</text>
+      <text x="32" y="564" font-size="11" fill="currentColor" opacity=".75">el reporte ya escrito, cifra por cifra, contra la rejilla</text>
+
+      <!-- guardianes -->
+      <rect x="664" y="282" width="220" height="212" rx="8" fill="var(--ok-soft)" stroke="var(--ok)" stroke-width="1.4"/>
+      <text x="682" y="306" font-size="12.5" font-weight="600" fill="var(--ok)" font-family="Archivo, sans-serif">Y por fuera, los guardianes</text>
+      <text x="682" y="332" font-size="11.5" font-weight="600" fill="currentColor">no-pérdida</text>
+      <text x="682" y="349" font-size="11" fill="currentColor" opacity=".75">ninguna pieza, shortlink ni</text>
+      <text x="682" y="365" font-size="11" fill="currentColor" opacity=".75">combinación desaparece</text>
+      <text x="682" y="390" font-size="11.5" font-weight="600" fill="currentColor">distribución de Qcart</text>
+      <text x="682" y="407" font-size="11" fill="currentColor" opacity=".75">nada baja ni se mueve de</text>
+      <text x="682" y="423" font-size="11" fill="currentColor" opacity=".75">quincena sin declararlo</text>
+      <text x="682" y="448" font-size="11.5" font-weight="600" fill="currentColor">unsub y sumas</text>
+      <text x="682" y="465" font-size="11" fill="currentColor" opacity=".75">recontados desde la fuente,</text>
+      <text x="682" y="481" font-size="11" fill="currentColor" opacity=".75">no desde lo ya calculado</text>
+    </svg>
+    <figcaption>El catálogo se consulta <strong>antes</strong> que las fuentes, no después: un bloque
+    armado contra un catálogo a medio corregir arrastra la dimensión vieja hasta el reporte. Y las dos
+    puertas van donde van a propósito — la 1 antes de escribir, porque un Excel a medio escribir es
+    peor que uno viejo; la 2 después, porque «escribí» y «quedó bien» son dos cosas distintas: un
+    valor puede caer en una columna que no existe y ninguna suma cambia.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">La partitura</span>
+    <h2>Cómo se reparten ese recorrido los skills</h2>
+    <p>Ese camino no lo corre un script: lo corren <strong>doce skills en diecisiete turnos</strong>.
+    Y no es «un skill = un tramo» — el <strong>escritor</strong> entra cuatro veces y el
+    <strong>cuadre</strong> dos, porque manda el orden real de ejecución, no la comodidad de
+    agruparlos. Cada punto es un turno.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 900 470" role="img" aria-label="Matriz de doce skills por diecisiete etapas: qué skill toma turno en cada etapa de la cadena">
+      <text x="0" y="17" font-size="10" font-weight="600" letter-spacing="1.4" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">SKILL</text>
+      <text x="150" y="17" font-size="10" font-weight="600" letter-spacing="1.4" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">ETAPA →</text>
+
+      <rect x="535" y="24" width="39" height="418" fill="var(--stop-soft)"/>
+      <rect x="846" y="24" width="39" height="418" fill="var(--stop-soft)"/>
+
+      <g font-size="10" fill="currentColor" opacity=".6" text-anchor="middle" font-family="IBM Plex Mono, monospace">
+        <text x="244" y="17">1</text><text x="283" y="17">2</text><text x="322" y="17">3</text>
+        <text x="361" y="17">4</text><text x="400" y="17">5</text><text x="438" y="17">6</text>
+        <text x="477" y="17">7</text><text x="516" y="17">8</text><text x="555" y="17">9</text>
+        <text x="594" y="17">10</text><text x="632" y="17">11</text><text x="671" y="17">12</text>
+        <text x="710" y="17">13</text><text x="749" y="17">14</text><text x="788" y="17">15</text>
+        <text x="826" y="17">16</text><text x="865" y="17">17</text>
+      </g>
+
+      <g stroke="currentColor" stroke-width="1" opacity=".12">
+        <line x1="0" y1="68"  x2="885" y2="68"/><line x1="0" y1="102" x2="885" y2="102"/>
+        <line x1="0" y1="136" x2="885" y2="136"/><line x1="0" y1="170" x2="885" y2="170"/>
+        <line x1="0" y1="204" x2="885" y2="204"/><line x1="0" y1="238" x2="885" y2="238"/>
+        <line x1="0" y1="272" x2="885" y2="272"/><line x1="0" y1="306" x2="885" y2="306"/>
+        <line x1="0" y1="340" x2="885" y2="340"/><line x1="0" y1="374" x2="885" y2="374"/>
+        <line x1="0" y1="408" x2="885" y2="408"/><line x1="0" y1="442" x2="885" y2="442"/>
+      </g>
+
+      <g font-size="12.5" font-weight="600" fill="currentColor">
+        <text x="0" y="47">escritor</text>
+        <text x="0" y="81">fuentes-insumos</text>
+        <text x="0" y="115">fuentes-qcart</text>
+        <text x="0" y="149">nestle-catalogo</text>
+        <text x="0" y="183">fuentes-email</text>
+        <text x="0" y="217">fuentes-whatsapp</text>
+        <text x="0" y="251">fuentes-manual</text>
+        <text x="0" y="285" fill="var(--stop)">fuentes-cuadre</text>
+        <text x="0" y="319">motor</text>
+        <text x="0" y="353">resumen</text>
+        <text x="0" y="387">nestle-insights</text>
+        <text x="0" y="421" fill="var(--acc)">orquestador</text>
+      </g>
+
+      <g font-size="9.5" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">
+        <text x="0" y="61">11 scripts · 4 turnos</text>
+        <text x="0" y="95">4 scripts</text>
+        <text x="0" y="129">14 scripts · 2 turnos</text>
+        <text x="0" y="163">37 scripts</text>
+        <text x="0" y="197">4 scripts</text>
+        <text x="0" y="231">5 scripts</text>
+        <text x="0" y="265">5 scripts</text>
+        <text x="0" y="299">7 scripts · las 2 puertas</text>
+        <text x="0" y="333">4 scripts</text>
+        <text x="0" y="367">9 scripts</text>
+        <text x="0" y="401">1 script</text>
+        <text x="0" y="435">36 scripts · y dirige la cadena</text>
+      </g>
+
+      <g fill="var(--acc)">
+        <circle cx="244" cy="51" r="7"/><circle cx="594" cy="51" r="7"/><circle cx="749" cy="51" r="7"/><circle cx="826" cy="51" r="7"/>
+        <circle cx="283" cy="85" r="7"/>
+        <circle cx="322" cy="119" r="7"/><circle cx="438" cy="119" r="7"/>
+        <circle cx="361" cy="153" r="7"/>
+        <circle cx="400" cy="187" r="7"/>
+        <circle cx="477" cy="221" r="7"/>
+        <circle cx="516" cy="255" r="7"/>
+        <circle cx="632" cy="323" r="7"/>
+        <circle cx="671" cy="357" r="7"/>
+        <circle cx="710" cy="391" r="7"/>
+        <circle cx="788" cy="425" r="7"/>
+      </g>
+      <g fill="var(--stop)">
+        <rect x="547" y="281" width="16" height="16" rx="3"/>
+        <rect x="857" y="281" width="16" height="16" rx="3"/>
+      </g>
+
+      <text x="0" y="463" font-size="11" fill="currentColor" opacity=".6">Las dos columnas rojas son las puertas. Todo lo que está entre ellas solo ocurre si la primera abrió.</text>
+    </svg>
+    <figcaption>El orden no es negociable y cada pieza tiene su razón: el <strong>catálogo</strong>
+    (etapa 4) va antes que las fuentes porque es su autoridad de dimensiones · el <strong>motor</strong>
+    (11) va después de escribir porque calcula sobre lo escrito · el <strong>formato del Resumen</strong>
+    (14) va al final porque la etapa 12 regenera la hoja y se llevaría por delante cualquier ancho
+    puesto antes.</figcaption>
+  </figure>
+
+  <div class="tarjetas">
+    <div class="t"><span class="k">12</span><span class="d">skills — cada uno dueño de su procedimiento, su contrato y sus pruebas</span></div>
+    <div class="t"><span class="k">17</span><span class="d">etapas — un mismo skill puede tomar varios turnos</span></div>
+    <div class="t"><span class="k">142</span><span class="d">scripts, ninguno huérfano: uno sin skill dueño <strong>detiene el corte</strong></span></div>
+    <div class="t"><span class="k">31</span><span class="d">librerías compartidas — nadie escribe su propia versión de una llave o una quincena</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">El catálogo de skills</span>
+    <h2>Qué hace cada uno, cuándo se activa y qué lo prueba</h2>
+    <p>Nadie los invoca a mano: la cadena los llama en orden y cada uno corre su propia validación
+    antes de ceder el turno. Ésta es la referencia completa para quien lo herede.</p>
+  </div>
+
+  <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th>Skill</th><th>Turno</th><th>Qué hace</th><th>Cuándo se activa</th><th>Qué lo prueba</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>orquestador</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">36 scripts</span></td>
+          <td class="mono">dirige<br>+ 15</td>
+          <td>Recorre las 17 etapas y se detiene en la primera que falla — un corte a medias es peor que ninguno. Antes de arrancar corre <strong>cinco guardas estructurales</strong>.</td>
+          <td>Es el punto de entrada: todo corte empieza aquí. En su turno propio mide los vacíos que quedaron.</td>
+          <td>A las guardas se les <em>planta</em> el defecto sobre una copia y se les exige que bloqueen — así se vio que una salía verde con el señuelo delante.</td>
+        </tr>
+        <tr>
+          <td><strong>escritor</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">11 scripts</span></td>
+          <td class="mono">1 · 10<br>14 · 16</td>
+          <td>Lo único que toca el Excel. Vacía fórmulas muertas, baja los bloques a las hojas, da formato y llena los huecos.</td>
+          <td>Cuatro veces: antes de que nadie escriba, al bajar los datos, al formatear el Resumen ya construido, y al cerrar los vacíos.</td>
+          <td>Las <strong>5 capas</strong> tras cada escritura, y una relectura del disco comparando <strong>por nombre de columna</strong>, nunca por letra.</td>
+        </tr>
+        <tr>
+          <td><strong>fuentes-insumos</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">4 scripts</span></td>
+          <td class="mono">2</td>
+          <td>Revisa las descargas antes de que alguien las consuma: qué llegó, qué falta, qué está viejo.</td>
+          <td>Al inicio de cada corte. Es la primera pregunta que se hace el sistema.</td>
+          <td>Cruza el inventario contra lo que cada skill declara necesitar.</td>
+        </tr>
+        <tr>
+          <td><strong>fuentes-qcart</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">14 scripts</span></td>
+          <td class="mono">3 · 6</td>
+          <td>Primero la fecha de activación de cada link; después los carritos y productos. La llave es el <strong>shortlink</strong>, nunca el utm.</td>
+          <td>Dos veces: la activación va temprano porque el resto la necesita; el bloque, con las demás fuentes.</td>
+          <td>Un guardián propio vigila que ninguna celda baje, desaparezca ni cambie de quincena. Re-basarlo exige motivo escrito y tres condiciones comprobadas.</td>
+        </tr>
+        <tr>
+          <td><strong>nestle-catalogo</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">37 scripts</span></td>
+          <td class="mono">4</td>
+          <td>Mantiene la <strong>autoridad de dimensiones</strong>: campaña, marca, BU, segmento, touchpoint, objetivo. Da de alta piezas nuevas y resuelve alias.</td>
+          <td><strong>Antes que las fuentes</strong>, no después.</td>
+          <td>8 suites. Dos de ellas <em>simulan el paso siguiente</em> usando solo el catálogo — encontraron dos defectos que ninguna prueba de forma veía.</td>
+        </tr>
+        <tr>
+          <td><strong>fuentes-email</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">4 scripts</span></td>
+          <td class="mono">5</td>
+          <td>Arma el bloque de email desde las dos tablas de SFMC, cruzando por <code>Email_Name</code> y restando los jobs de prueba.</td>
+          <td>Después del catálogo, porque necesita sus dimensiones para atribuir cada envío.</td>
+          <td>11 checks. Uno exige que <strong>bloque + lo declarado fuera + las pruebas = la fuente</strong>, al envío exacto.</td>
+        </tr>
+        <tr>
+          <td><strong>fuentes-whatsapp</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">5 scripts</span></td>
+          <td class="mono">7</td>
+          <td>El bloque de WhatsApp, anclado al catálogo. Declara si los clicks son <strong>medidos o derivados</strong> de un supuesto.</td>
+          <td>Con las demás fuentes, antes de la puerta.</td>
+          <td>14 checks más un refutador que ataca el resultado contra la fuente, no contra el bloque.</td>
+        </tr>
+        <tr>
+          <td><strong>fuentes-manual</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">5 scripts</span></td>
+          <td class="mono">8</td>
+          <td>Lo que ninguna fuente entrega y alguien declaró a mano.</td>
+          <td>El último de los cuatro bloques.</td>
+          <td>Exige que cada dato manual traiga quién lo declaró y cuándo.</td>
+        </tr>
+        <tr>
+          <td><strong>fuentes-cuadre</strong><br><span class="mono" style="font-size:11px;color:var(--stop)">7 scripts · las 2 puertas</span></td>
+          <td class="mono">9 · 17</td>
+          <td><strong>Las dos puertas.</strong> La 1 cruza los cuatro bloques y decide si se puede escribir; la 2 cruza el reporte ya escrito contra la rejilla.</td>
+          <td>Antes de la primera escritura y al cerrar el corte. Son las únicas etapas que detienen todo.</td>
+          <td>Un script le planta a la puerta sus cinco motivos de cierre y exige que <em>cierre</em> — y que después vuelva a abrir.</td>
+        </tr>
+        <tr>
+          <td><strong>motor</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">4 scripts</span></td>
+          <td class="mono">11</td>
+          <td><strong>Lo único que divide.</strong> Tasas, bajas, clicks por destino y el ancla del Qcart. Produce la rejilla.</td>
+          <td>Después de escribir los datos, porque calcula sobre lo escrito.</td>
+          <td>12 checks más una identidad verificada: la suma de los bloques tiene que dar exactamente la celda.</td>
+        </tr>
+        <tr>
+          <td><strong>resumen</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">9 scripts</span></td>
+          <td class="mono">12</td>
+          <td>Fusiona Principal y FollowUp y <strong>regenera</strong> el Report_Resumen desde la rejilla — respetando el orden de filas del humano.</td>
+          <td>Con la rejilla ya calculada, antes de insights y del formato.</td>
+          <td>12 checks cifra por cifra contra la rejilla, más una suma independiente traída de la fuente.</td>
+        </tr>
+        <tr>
+          <td><strong>nestle-insights</strong><br><span class="mono" style="font-size:11px;color:var(--ink-3)">1 script</span></td>
+          <td class="mono">13</td>
+          <td>La columna de insights, con un puntaje determinista. Si nada pasa el umbral escribe «sin acción prioritaria» en vez de inventar una.</td>
+          <td>Al final, sobre el reporte ya construido.</td>
+          <td>El puntaje es reproducible: mismo dato, mismo texto.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <span class="t2">Lo que hace que esto sea un sistema y no una carpeta de scripts</span>
+    <p>Los 142 scripts <strong>no se invocan a mano</strong>. Cada uno pertenece a un skill declarado,
+    y un script sin dueño <strong>detiene el corte</strong> — porque significaría que «correr la
+    cadena» deja fuera parte del trabajo, en silencio. Las 31 librerías compartidas existen por lo
+    mismo: el día que dos pasos calculan la quincena distinto, el reporte y el catálogo dejan de
+    cruzar <strong>y nada falla</strong>.</p>
+  </div>
+
+  <div class="nota gap">
+    <span class="t2">Y algo que solo se aprende habiéndolo hecho: que salga verde no prueba nada</span>
+    <p>Un guardián que nunca se ha probado <strong>da permiso</strong>, no protege. Por eso a cada
+    guarda y a cada puerta se le planta su defecto encima de una copia y se le exige que bloquee.
+    Ahí se vio que una guarda no reconocía una forma de invocar un proceso y salía verde con el
+    señuelo enfrente; y que la cadena entera podía correr en verde mientras una columna leía un campo
+    que otro paso deja obsoleto — <strong>2,111 bajas perdidas</strong> que ninguna de las dos puertas
+    veía, porque el reporte y la rejilla leían el mismo dato equivocado.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <h2>Cómo se haría esto sin Claude Code</h2>
+    <p>La ruta normal para este problema existe y está muy bien establecida. Vale la pena verla
+    completa, porque es la comparación honesta.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 900 300" role="img" aria-label="Comparación entre el stack tradicional de ingesta, warehouse, dbt y BI frente al camino actual de tres lectores, catálogo y escritor">
+      <defs>
+        <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+          <polygon points="0,1 10,5 0,9" fill="currentColor"/>
+        </marker>
+      </defs>
+
+      <text x="16" y="22" font-size="12" font-weight="600" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">RUTA TRADICIONAL — 3 a 4 MESES, 2 PERSONAS</text>
+
+      <g font-size="11.5">
+        <rect x="16" y="38" width="118" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".8"/>
+        <text x="75" y="60" text-anchor="middle" fill="currentColor" font-weight="600">Conectores</text>
+        <text x="75" y="76" text-anchor="middle" fill="currentColor" opacity=".65">Fivetran + 2 custom</text>
+
+        <rect x="152" y="38" width="118" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".8"/>
+        <text x="211" y="60" text-anchor="middle" fill="currentColor" font-weight="600">Warehouse</text>
+        <text x="211" y="76" text-anchor="middle" fill="currentColor" opacity=".65">BigQuery / Snowflake</text>
+
+        <rect x="288" y="38" width="118" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".8"/>
+        <text x="347" y="60" text-anchor="middle" fill="currentColor" font-weight="600">dbt</text>
+        <text x="347" y="76" text-anchor="middle" fill="currentColor" opacity=".65">staging → marts</text>
+
+        <rect x="424" y="38" width="118" height="52" rx="6" fill="var(--gap)" fill-opacity=".08" stroke="var(--gap)" stroke-width="1.5"/>
+        <text x="483" y="60" text-anchor="middle" fill="var(--gap)" font-weight="600">Atribución</text>
+        <text x="483" y="76" text-anchor="middle" fill="var(--gap)" opacity=".8">aquí se atoran</text>
+
+        <rect x="560" y="38" width="118" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".8"/>
+        <text x="619" y="60" text-anchor="middle" fill="currentColor" font-weight="600">Tableau / Looker</text>
+        <text x="619" y="76" text-anchor="middle" fill="currentColor" opacity=".65">dashboard</text>
+
+        <rect x="696" y="38" width="188" height="52" rx="6" fill="none" stroke="var(--stop)" stroke-width="1.4" stroke-dasharray="5 4"/>
+        <text x="790" y="58" text-anchor="middle" fill="var(--stop)" font-weight="600">¿el Excel formateado?</text>
+        <text x="790" y="76" text-anchor="middle" fill="var(--stop)" opacity=".85">no lo entregan · «usa el dashboard»</text>
+      </g>
+      <line x1="136" y1="64" x2="149" y2="64" stroke="currentColor" stroke-width="1.2" marker-end="url(#a3)"/>
+      <line x1="272" y1="64" x2="285" y2="64" stroke="currentColor" stroke-width="1.2" marker-end="url(#a3)"/>
+      <line x1="408" y1="64" x2="421" y2="64" stroke="currentColor" stroke-width="1.2" marker-end="url(#a3)"/>
+      <line x1="544" y1="64" x2="557" y2="64" stroke="currentColor" stroke-width="1.2" marker-end="url(#a3)"/>
+      <line x1="680" y1="64" x2="693" y2="64" stroke="currentColor" stroke-width="1.2" marker-end="url(#a3)"/>
+
+      <text x="16" y="126" font-size="11.5" fill="currentColor" opacity=".7">Y lo que un warehouse <tspan font-weight="600">no puede hacer</tspan>: que tú edites la salida a mano. Un pipeline reescribe; tus 277 celdas escritas a mano se pierden.</text>
+
+      <line x1="16" y1="150" x2="884" y2="150" stroke="currentColor" stroke-width=".8" opacity=".25"/>
+
+      <text x="16" y="180" font-size="12" font-weight="600" fill="var(--acc)" opacity=".9" font-family="IBM Plex Mono, monospace">LO QUE HAY HOY — UNA CORRIDA DE ~4 MINUTOS</text>
+
+      <g font-size="11.5">
+        <rect x="16" y="196" width="150" height="52" rx="6" fill="none" stroke="var(--acc)" stroke-width="1.3"/>
+        <text x="91" y="218" text-anchor="middle" fill="var(--acc)" font-weight="600">3 lectores</text>
+        <text x="91" y="234" text-anchor="middle" fill="currentColor" opacity=".7">SFMC · Qcart · WA</text>
+
+        <rect x="184" y="196" width="150" height="52" rx="6" fill="none" stroke="var(--acc)" stroke-width="1.3"/>
+        <text x="259" y="218" text-anchor="middle" fill="var(--acc)" font-weight="600">Catálogo</text>
+        <text x="259" y="234" text-anchor="middle" fill="currentColor" opacity=".7">la capa semántica</text>
+
+        <rect x="352" y="196" width="150" height="52" rx="6" fill="none" stroke="var(--acc)" stroke-width="1.3"/>
+        <text x="427" y="218" text-anchor="middle" fill="var(--acc)" font-weight="600">Rejilla + puertas</text>
+        <text x="427" y="234" text-anchor="middle" fill="currentColor" opacity=".7">cuadre antes y después</text>
+
+        <rect x="520" y="196" width="150" height="52" rx="6" fill="none" stroke="var(--acc)" stroke-width="1.3"/>
+        <text x="595" y="218" text-anchor="middle" fill="var(--acc)" font-weight="600">Escritor</text>
+        <text x="595" y="234" text-anchor="middle" fill="currentColor" opacity=".7">preserva lo tuyo</text>
+
+        <rect x="688" y="196" width="196" height="52" rx="6" fill="var(--ok)" fill-opacity=".08" stroke="var(--ok)" stroke-width="1.4"/>
+        <text x="786" y="218" text-anchor="middle" fill="var(--ok)" font-weight="600">El Excel que ya usan</text>
+        <text x="786" y="234" text-anchor="middle" fill="currentColor" opacity=".75">con su formato y tus ediciones</text>
+      </g>
+      <line x1="168" y1="222" x2="181" y2="222" stroke="currentColor" stroke-width="1.2" marker-end="url(#a3)"/>
+      <line x1="336" y1="222" x2="349" y2="222" stroke="currentColor" stroke-width="1.2" marker-end="url(#a3)"/>
+      <line x1="504" y1="222" x2="517" y2="222" stroke="currentColor" stroke-width="1.2" marker-end="url(#a3)"/>
+      <line x1="672" y1="222" x2="685" y2="222" stroke="currentColor" stroke-width="1.2" marker-end="url(#a3)"/>
+
+      <text x="16" y="284" font-size="12.5" fill="currentColor" opacity=".75">La diferencia no es velocidad: es que <tspan font-weight="600">la salida sigue siendo un Excel editable</tspan>, no un dashboard que hay que aceptar tal cual.</text>
+    </svg>
+    <figcaption>El stack tradicional resuelve el 80% en tres meses y se atora exactamente donde este
+    sistema pone su esfuerzo: la atribución y el entregable editable. Órdenes de magnitud, no cotizaciones.</figcaption>
+  </figure>
+
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Lo que pediría el negocio</th><th>SFMC</th><th>Tableau sobre un warehouse</th><th>Este sistema</th></tr></thead>
+      <tbody>
+        <tr><td>Métricas por envío</td><td><span class="pill si">sí</span></td><td><span class="pill si">sí</span></td><td><span class="pill si">sí</span></td></tr>
+        <tr><td>Campaña, BU, marca del envío</td><td><span class="pill no">no</span></td><td><span class="pill med">si alguien lo modela</span></td><td><span class="pill si">sí</span></td></tr>
+        <tr><td>Segmento real, no el del naming</td><td><span class="pill no">no</span></td><td><span class="pill med">si alguien lo declara</span></td><td><span class="pill si">sí</span></td></tr>
+        <tr><td>FollowUp pegado a su Principal</td><td><span class="pill no">no</span></td><td><span class="pill med">difícil: caen en quincenas distintas</span></td><td><span class="pill si">sí</span></td></tr>
+        <tr><td>Carritos y pesos atribuidos a la pieza</td><td><span class="pill no">no</span></td><td><span class="pill med">se atoran en el shortlink</span></td><td><span class="pill si">sí</span></td></tr>
+        <tr><td>WhatsApp en la misma fila</td><td><span class="pill no">no</span></td><td><span class="pill med">otra fuente, otro modelo</span></td><td><span class="pill si">sí</span></td></tr>
+        <tr><td>Que tú edites la salida a mano</td><td><span class="pill no">no</span></td><td><span class="pill no">no — el pipeline reescribe</span></td><td><span class="pill si">sí, y se respeta</span></td></tr>
+        <tr><td>Que avise cuando el dato no cuadra</td><td><span class="pill no">no</span></td><td><span class="pill med">tests de dbt, si los escriben</span></td><td><span class="pill si">dos puertas que detienen</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <h2>Cuánto cuesta esto por la ruta tradicional</h2>
+    <p>Tarifas y plazos publicados para 2026, no estimaciones mías. Abajo, el desglose por rol y por
+    fase de <em>este</em> caso concreto — tres fuentes, dos sin conector, atribución por shortlink y
+    salida a Excel.</p>
+  </div>
+
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Rol que este proyecto necesita</th><th>Qué haría aquí</th><th class="num">USD/hora onshore</th><th class="num">Nearshore LatAm</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Business / Marketing Analyst</strong></td><td>entender la taxonomía de campañas — el que se sentaría contigo a definir qué significa cada segmento</td><td class="num">$120–220</td><td class="num">$80–115</td></tr>
+        <tr><td><strong>Data Engineer</strong> (senior)</td><td>los conectores: SFMC, y los dos que <em>no existen</em> — Qcart y WhatsApp</td><td class="num">$150–185</td><td class="num">$80–115</td></tr>
+        <tr><td><strong>Analytics Engineer</strong> (senior)</td><td>el modelo dimensional, la capa semántica y la atribución</td><td class="num">$140–170</td><td class="num">$80–115</td></tr>
+        <tr><td><strong>Data Architect / Lead</strong></td><td>diseño del warehouse y decisiones de plataforma</td><td class="num">$250–400</td><td class="num">$115–160</td></tr>
+        <tr><td><strong>BI Developer</strong></td><td>el dashboard de Tableau o Looker</td><td class="num">$120–220</td><td class="num">$80–115</td></tr>
+        <tr><td><strong>Project Manager</strong></td><td>coordinación — ~15% del esfuerzo total</td><td class="num">$100–160</td><td class="num">$60–95</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 900 400" role="img" aria-label="Desglose de horas por fase para construir este mismo caso con un equipo de data: entre 780 y 1290 horas repartidas en nueve fases, más una décima que los proveedores no entregan">
+      <defs>
+        <marker id="a6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <polygon points="0,1 10,5 0,9" fill="currentColor"/>
+        </marker>
+      </defs>
+      <text x="16" y="22" font-size="12" font-weight="600" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">HORAS POR FASE — ESTE CASO, EQUIPO DE DATA</text>
+      <text x="700" y="22" font-size="11" fill="currentColor" opacity=".5" font-family="IBM Plex Mono, monospace" text-anchor="end">mín ▬ máx</text>
+
+      <g font-size="11.5">
+        <text x="16" y="52" fill="currentColor">Discovery + taxonomía de campañas</text>
+        <rect x="330" y="41" width="60" height="13" rx="2" fill="var(--acc)" fill-opacity=".55"/>
+        <rect x="390" y="41" width="40" height="13" rx="2" fill="var(--acc)" fill-opacity=".22"/>
+        <text x="716" y="52" fill="currentColor" opacity=".7" font-family="IBM Plex Mono, monospace" text-anchor="end">60–100 h</text>
+        <text x="730" y="52" fill="currentColor" opacity=".55">Business Analyst</text>
+
+        <text x="16" y="78" fill="currentColor">Conector SFMC</text>
+        <rect x="330" y="67" width="40" height="13" rx="2" fill="var(--acc)" fill-opacity=".55"/>
+        <rect x="370" y="67" width="40" height="13" rx="2" fill="var(--acc)" fill-opacity=".22"/>
+        <text x="716" y="78" fill="currentColor" opacity=".7" font-family="IBM Plex Mono, monospace" text-anchor="end">40–80 h</text>
+        <text x="730" y="78" fill="currentColor" opacity=".55">Data Engineer</text>
+
+        <text x="16" y="104" fill="var(--gap)" font-weight="600">Conector Qcart — no existe, se construye</text>
+        <rect x="330" y="93" width="80" height="13" rx="2" fill="var(--gap)" fill-opacity=".6"/>
+        <rect x="410" y="93" width="40" height="13" rx="2" fill="var(--gap)" fill-opacity=".25"/>
+        <text x="716" y="104" fill="var(--gap)" font-family="IBM Plex Mono, monospace" text-anchor="end">80–120 h</text>
+        <text x="730" y="104" fill="currentColor" opacity=".55">Data Engineer</text>
+
+        <text x="16" y="130" fill="var(--gap)" font-weight="600">Conector WhatsApp — no existe</text>
+        <rect x="330" y="119" width="60" height="13" rx="2" fill="var(--gap)" fill-opacity=".6"/>
+        <rect x="390" y="119" width="40" height="13" rx="2" fill="var(--gap)" fill-opacity=".25"/>
+        <text x="716" y="130" fill="var(--gap)" font-family="IBM Plex Mono, monospace" text-anchor="end">60–100 h</text>
+        <text x="730" y="130" fill="currentColor" opacity=".55">Data Engineer</text>
+
+        <text x="16" y="156" fill="currentColor">Warehouse + staging</text>
+        <rect x="330" y="145" width="60" height="13" rx="2" fill="var(--acc)" fill-opacity=".55"/>
+        <rect x="390" y="145" width="40" height="13" rx="2" fill="var(--acc)" fill-opacity=".22"/>
+        <text x="716" y="156" fill="currentColor" opacity=".7" font-family="IBM Plex Mono, monospace" text-anchor="end">60–100 h</text>
+        <text x="730" y="156" fill="currentColor" opacity=".55">Data Engineer</text>
+
+        <text x="16" y="182" fill="currentColor">Modelo dimensional + capa semántica</text>
+        <rect x="330" y="171" width="120" height="13" rx="2" fill="var(--acc)" fill-opacity=".55"/>
+        <rect x="450" y="171" width="80" height="13" rx="2" fill="var(--acc)" fill-opacity=".22"/>
+        <text x="716" y="182" fill="currentColor" opacity=".7" font-family="IBM Plex Mono, monospace" text-anchor="end">120–200 h</text>
+        <text x="730" y="182" fill="currentColor" opacity=".55">Analytics Engineer</text>
+
+        <text x="16" y="208" fill="var(--gap)" font-weight="600">Atribución: shortlink · ancla · FUP</text>
+        <rect x="330" y="197" width="120" height="13" rx="2" fill="var(--gap)" fill-opacity=".6"/>
+        <rect x="450" y="197" width="80" height="13" rx="2" fill="var(--gap)" fill-opacity=".25"/>
+        <text x="716" y="208" fill="var(--gap)" font-family="IBM Plex Mono, monospace" text-anchor="end">120–200 h</text>
+        <text x="730" y="208" fill="currentColor" opacity=".55">AE + Business Analyst</text>
+
+        <text x="16" y="234" fill="currentColor">Tests y calidad de dato</text>
+        <rect x="330" y="223" width="60" height="13" rx="2" fill="var(--acc)" fill-opacity=".55"/>
+        <rect x="390" y="223" width="40" height="13" rx="2" fill="var(--acc)" fill-opacity=".22"/>
+        <text x="716" y="234" fill="currentColor" opacity=".7" font-family="IBM Plex Mono, monospace" text-anchor="end">60–100 h</text>
+        <text x="730" y="234" fill="currentColor" opacity=".55">Analytics Engineer</text>
+
+        <text x="16" y="260" fill="currentColor">Dashboard de BI</text>
+        <rect x="330" y="249" width="80" height="13" rx="2" fill="var(--acc)" fill-opacity=".55"/>
+        <rect x="410" y="249" width="40" height="13" rx="2" fill="var(--acc)" fill-opacity=".22"/>
+        <text x="716" y="260" fill="currentColor" opacity=".7" font-family="IBM Plex Mono, monospace" text-anchor="end">80–120 h</text>
+        <text x="730" y="260" fill="currentColor" opacity=".55">BI Developer</text>
+
+        <text x="16" y="286" fill="currentColor" opacity=".75">Coordinación (~15%)</text>
+        <rect x="330" y="275" width="100" height="13" rx="2" fill="currentColor" fill-opacity=".2"/>
+        <text x="716" y="286" fill="currentColor" opacity=".6" font-family="IBM Plex Mono, monospace" text-anchor="end">100–170 h</text>
+        <text x="730" y="286" fill="currentColor" opacity=".55">Project Manager</text>
+      </g>
+
+      <line x1="16" y1="302" x2="884" y2="302" stroke="currentColor" stroke-width="1" opacity=".3"/>
+      <text x="16" y="326" font-size="14" font-weight="700" fill="currentColor" font-family="Archivo, sans-serif">TOTAL</text>
+      <text x="716" y="326" font-size="14" font-weight="700" fill="currentColor" font-family="IBM Plex Mono, monospace" text-anchor="end">780–1,290 h</text>
+      <text x="730" y="326" font-size="12" fill="currentColor" opacity=".65">≈ 3–4 meses, 2 personas</text>
+
+      <rect x="16" y="342" width="868" height="46" rx="7" fill="var(--stop)" fill-opacity=".07" stroke="var(--stop)" stroke-width="1.3" stroke-dasharray="5 4"/>
+      <text x="32" y="364" font-size="12.5" font-weight="600" fill="var(--stop)">Y una décima fase que ningún proveedor cotiza: el Excel formateado y editable a mano.</text>
+      <text x="32" y="381" font-size="11.5" fill="currentColor" opacity=".8">Un warehouse reescribe su salida por diseño. La respuesta estándar es «usa el dashboard» — y ahí se acaba la conversación.</text>
+    </svg>
+    <figcaption>Las tres barras en naranja son las que un equipo de data <strong>no puede acortar</strong>:
+    dos conectores que no existen en ningún catálogo de Fivetran, y una atribución cuya llave real
+    (el shortlink) solo se descubre mirando los datos sucios.</figcaption>
+  </figure>
+
+  <div class="tarjetas">
+    <div class="t"><span class="k">$62–148k</span><span class="d"><strong>USD, nearshore LatAm</strong> — 780 a 1,290 horas a $80–115/h. Es la comparación más justa para un equipo en México.</span></div>
+    <div class="t"><span class="k">$117–239k</span><span class="d"><strong>USD, equipo onshore</strong> — a $150–185/h de senior. Coincide con el rango publicado de <em>pipeline development</em>: $120–250k en 8–12 semanas.</span></div>
+    <div class="t"><span class="k gap">+ $13k/año</span><span class="d"><strong>solo en licencias</strong> — Fivetran arranca en ~$1,000/mes y dbt Cloud desde $100/mes, antes de tocar el warehouse.</span></div>
+    <div class="t"><span class="k ok">MXN 720k–1M</span><span class="d"><strong>en vez de contratar fuera</strong> — 2 personas de planta (Data + Analytics Engineer) × 4 meses, a MXN 90–125k/mes en CDMX. Más prestaciones y el costo de que después alguien lo mantenga.</span></div>
+  </div>
+
+  <div class="nota gap">
+    <p class="t2">La comparación honesta, sin inflarla</p>
+    <p><strong>Construir este sistema no tomó dos horas</strong> — tomó varias semanas de sesiones, y
+    hoy mismo se encontraron defectos que llevaban 17 corridas acumulándose. Lo que sí cambió de
+    orden de magnitud es lo que viene después: <strong>una corrida completa son ~4 minutos</strong>, y
+    un ajuste de negocio —una campaña nueva, un segmento que cambia— son minutos, no un ticket que
+    espera al sprint del equipo de data.</p>
+    <p>Y hay algo que el precio no captura: los rangos de arriba compran el 80% del problema. El
+    <strong>20% restante —el shortlink invertido, el ancla de Qcart, el FUP en otra quincena, tus
+    ediciones a mano— es donde este sistema puso su esfuerzo</strong>, y es justo donde una
+    implementación estándar entrega un número que parece bien y está mal.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <h2>Dónde decides tú — y no necesitas saber nada más</h2>
+    <p>Esto responde a lo que dijiste: que sientes que no puedes darme buenas instrucciones porque no
+    entiendes el sistema. <strong>No hace falta.</strong> Solo hay tres puntos donde el sistema no
+    puede seguir sin ti, y los tres son de negocio, no técnicos.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 900 250" role="img" aria-label="El ciclo tiene tres puntos donde solo el humano decide: qué significa una dimensión, si el dato cuadra, y qué se publica">
+      <defs>
+        <marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <polygon points="0,1 10,5 0,9" fill="currentColor"/>
+        </marker>
+      </defs>
+      <line x1="16" y1="80" x2="884" y2="80" stroke="currentColor" stroke-width="1" opacity=".25"/>
+
+      <g font-size="11.5">
+        <circle cx="90" cy="80" r="9" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".6"/>
+        <text x="90" y="112" text-anchor="middle" fill="currentColor" opacity=".7">leer fuentes</text>
+
+        <circle cx="270" cy="80" r="13" fill="var(--gap)" fill-opacity=".12" stroke="var(--gap)" stroke-width="2"/>
+        <text x="270" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="var(--gap)">1</text>
+        <text x="270" y="116" text-anchor="middle" font-weight="600" fill="var(--gap)">¿qué significa esto?</text>
+        <text x="270" y="134" text-anchor="middle" fill="currentColor" opacity=".7">campaña nueva · segmento</text>
+        <text x="270" y="150" text-anchor="middle" fill="currentColor" opacity=".7">que no resuelve</text>
+
+        <circle cx="450" cy="80" r="9" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".6"/>
+        <text x="450" y="112" text-anchor="middle" fill="currentColor" opacity=".7">atribuir y calcular</text>
+
+        <circle cx="630" cy="80" r="13" fill="var(--gap)" fill-opacity=".12" stroke="var(--gap)" stroke-width="2"/>
+        <text x="630" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="var(--gap)">2</text>
+        <text x="630" y="116" text-anchor="middle" font-weight="600" fill="var(--gap)">¿esto se queda así?</text>
+        <text x="630" y="134" text-anchor="middle" fill="currentColor" opacity=".7">una puerta cerró y</text>
+        <text x="630" y="150" text-anchor="middle" fill="currentColor" opacity=".7">necesita tu criterio</text>
+
+        <circle cx="820" cy="80" r="13" fill="var(--stop)" fill-opacity=".12" stroke="var(--stop)" stroke-width="2"/>
+        <text x="820" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="var(--stop)">3</text>
+        <text x="820" y="116" text-anchor="middle" font-weight="600" fill="var(--stop)">¿se publica?</text>
+        <text x="820" y="134" text-anchor="middle" fill="currentColor" opacity=".7">siempre tuyo,</text>
+        <text x="820" y="150" text-anchor="middle" fill="currentColor" opacity=".7">nunca automático</text>
+      </g>
+
+      <line x1="104" y1="80" x2="252" y2="80" stroke="currentColor" stroke-width="1.2" marker-end="url(#a4)" opacity=".5"/>
+      <line x1="288" y1="80" x2="436" y2="80" stroke="currentColor" stroke-width="1.2" marker-end="url(#a4)" opacity=".5"/>
+      <line x1="464" y1="80" x2="612" y2="80" stroke="currentColor" stroke-width="1.2" marker-end="url(#a4)" opacity=".5"/>
+      <line x1="648" y1="80" x2="802" y2="80" stroke="currentColor" stroke-width="1.2" marker-end="url(#a4)" opacity=".5"/>
+
+      <text x="16" y="42" font-size="12.5" fill="currentColor" opacity=".75">Todo lo demás —pasos, scripts, contratos, capas— es mecánica. No cambia nada si no la entiendes.</text>
+      <text x="16" y="205" font-size="12.5" fill="currentColor" opacity=".75">Y en los tres, la instrucción que mejor funciona es la misma: <tspan font-weight="600">di el hecho de negocio, no cómo implementarlo.</tspan></text>
+      <text x="16" y="228" font-size="12" fill="currentColor" opacity=".6">«el segmento real de Inspiration es Interés Salado» sirve más que «cambia la columna AO».</text>
+    </svg>
+    <figcaption>Los círculos huecos corren solos. Los tres marcados son los únicos donde el sistema
+    se detiene a esperarte — y ninguno requiere saber cómo está construido por dentro.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head">
+    <h2>El problema que nombraste: las decisiones que se pierden</h2>
+    <p>Dijiste algo importante — <em>«hay cosas que hemos definido ya, pero luego se borran y las
+    vuelves a escribir y luego se pierden»</em>. Tienes razón, y hoy pasó tres veces. Vale la pena ver
+    por qué, porque tiene arreglo.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 900 250" role="img" aria-label="Una decisión puede vivir en el chat, en un comentario o en un contrato; solo el contrato la hace cumplir, y por eso las otras dos se pierden">
+      <defs>
+        <marker id="a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <polygon points="0,1 10,5 0,9" fill="currentColor"/>
+        </marker>
+      </defs>
+
+      <rect x="16" y="34" width="150" height="48" rx="7" fill="var(--acc)" fill-opacity=".08" stroke="var(--acc)" stroke-width="1.5"/>
+      <text x="91" y="56" text-anchor="middle" font-size="13" font-weight="600" fill="var(--acc)">Tú decides algo</text>
+      <text x="91" y="73" text-anchor="middle" font-size="11.5" fill="currentColor" opacity=".7">«el unsub total se quita»</text>
+
+      <line x1="168" y1="58" x2="238" y2="58" stroke="currentColor" stroke-width="1.3" marker-end="url(#a5)"/>
+
+      <g font-size="11.5">
+        <rect x="242" y="14" width="196" height="42" rx="6" fill="none" stroke="var(--stop)" stroke-width="1.3" stroke-dasharray="5 4"/>
+        <text x="340" y="32" text-anchor="middle" fill="var(--stop)" font-weight="600">en el chat</text>
+        <text x="340" y="48" text-anchor="middle" fill="currentColor" opacity=".7">se pierde al cerrar la sesión</text>
+
+        <rect x="242" y="66" width="196" height="42" rx="6" fill="none" stroke="var(--stop)" stroke-width="1.3" stroke-dasharray="5 4"/>
+        <text x="340" y="84" text-anchor="middle" fill="var(--stop)" font-weight="600">en un comentario</text>
+        <text x="340" y="100" text-anchor="middle" fill="currentColor" opacity=".7">nadie lo obedece</text>
+
+        <rect x="242" y="118" width="196" height="42" rx="6" fill="var(--ok)" fill-opacity=".08" stroke="var(--ok)" stroke-width="1.6"/>
+        <text x="340" y="136" text-anchor="middle" fill="var(--ok)" font-weight="600">en un contrato + guarda</text>
+        <text x="340" y="152" text-anchor="middle" fill="currentColor" opacity=".75">se hace cumplir sola</text>
+      </g>
+
+      <line x1="442" y1="35" x2="516" y2="35" stroke="var(--stop)" stroke-width="1.3" marker-end="url(#a5)" color="var(--stop)" opacity=".8"/>
+      <line x1="442" y1="87" x2="516" y2="87" stroke="var(--stop)" stroke-width="1.3" marker-end="url(#a5)" color="var(--stop)" opacity=".8"/>
+      <line x1="442" y1="139" x2="516" y2="139" stroke="var(--ok)" stroke-width="1.7" marker-end="url(#a5)" color="var(--ok)"/>
+
+      <rect x="520" y="14" width="364" height="94" rx="7" fill="none" stroke="var(--stop)" stroke-width="1.3" stroke-dasharray="5 4"/>
+      <text x="702" y="42" text-anchor="middle" font-size="13" font-weight="600" fill="var(--stop)">Se pierde en la corrida siguiente</text>
+      <text x="536" y="66" font-size="11.5" fill="currentColor" opacity=".8">· el «unsub total se quita» lo pisó una línea duplicada</text>
+      <text x="536" y="84" font-size="11.5" fill="currentColor" opacity=".8">· una columna retirada volvió porque quien la crea no se enteró</text>
+      <text x="536" y="102" font-size="11.5" fill="currentColor" opacity=".8">· un contrato del 24-ago ya no cuadraba con el disco</text>
+
+      <rect x="520" y="118" width="364" height="42" rx="7" fill="var(--ok)" fill-opacity=".08" stroke="var(--ok)" stroke-width="1.6"/>
+      <text x="702" y="136" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ok)">Sobrevive</text>
+      <text x="702" y="152" text-anchor="middle" font-size="11.5" fill="currentColor" opacity=".75">algo se niega a correr si se viola</text>
+
+      <line x1="16" y1="188" x2="884" y2="188" stroke="currentColor" stroke-width=".8" opacity=".22"/>
+      <text x="16" y="212" font-size="13" fill="currentColor">El arreglo es un <tspan font-weight="600">registro de decisiones</tspan>: una línea por decisión, con su fecha y <tspan font-weight="600">qué guarda la hace cumplir</tspan>.</text>
+      <text x="16" y="236" font-size="12.5" fill="currentColor" opacity=".75">Y un check que exija que ninguna decisión esté sin guardián. Una decisión sin mecanismo no es una decisión: es una intención.</text>
+    </svg>
+    <figcaption>Las tres decisiones que se perdieron hoy vivían en los dos caminos punteados. La que
+    sobrevive es la que tiene algo que se niega a correr cuando se viola.</figcaption>
+  </figure>
+
+  <div class="nota">
+    <p class="t2">Esto lo puedo montar y es corto</p>
+    <p>Un archivo <code>decisiones.json</code>: <strong>qué decidiste · cuándo · qué la hace cumplir</strong>.
+    El preflight ya existente lo lee y se niega a correr si alguna decisión quedó sin guardián.
+    A partir de ahí, lo que definas una vez no se puede perder — y tú puedes leerlo sin saber nada técnico.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <h2>Y sí, hay cosas infladas</h2>
+    <p>Dos, y las dos son mías.</p>
+  </div>
+  <div class="tarjetas">
+    <div class="t"><span class="k gap">8,644</span><span class="d">celdas que ahora dicen <code>N/A</code>. Pediste cero vacías y lo cumplí al pie de la letra — pero un <code>N/A</code> repetido 3,245 veces en una hoja de eventos no informa a nadie. <strong>Vale la pena relajarlo</strong> donde no ayuda a leer.</span></div>
+    <div class="t"><span class="k gap">43 → ~18</span><span class="d">pasos. Seis suites validan una migración terminada hace dos semanas; dos etapas existen solo porque el catálogo se mantiene en un doc aparte. Se van sin perder nada.</span></div>
+    <div class="t"><span class="k ok">6</span><span class="d">pasos es el corte de verdad: leer · cruzar · <strong>puerta</strong> · escribir · resumir · <strong>puerta</strong>. Lo demás es formato, insights y verificación.</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <h2>Para el equipo que lo va a heredar</h2>
+    <p>Lo que tienen que cuidar cabe en cinco líneas. No necesitan entender la mecánica.</p>
+  </div>
+  <ol class="pasos">
+    <li><span class="q">El catálogo es la fuente de verdad del negocio</span><span class="d">Campaña, BU, marca, segmento y touchpoint <strong>no se deducen del naming</strong> — el naming engaña. Si una pieza nueva no resuelve, se pregunta; no se adivina.</span></li>
+    <li><span class="q">La llave de Qcart es el shortlink</span><span class="d">Nunca el utm: llega invertido en parte de los eventos. Es el error más caro y el menos visible.</span></li>
+    <li><span class="q">Si una puerta cierra, no se publica</span><span class="d">Una puerta que cierra está haciendo su trabajo. Lo peligroso es una que nunca cierra.</span></li>
+    <li><span class="q">Las ediciones a mano se respetan</span><span class="d">Hay 277 celdas escritas a mano. Cualquier proceso que las pise es un proceso mal hecho, por más que el total cuadre.</span></li>
+    <li><span class="q">A producción va una persona, nunca el sistema</span><span class="d">El interno es la fuente de verdad; publicar es copiar, y esa copia la autoriza alguien.</span></li>
+  </ol>
+</section>
+
+<section>
+  <div class="sec-head">
+    <h2>Esta sesión, en números</h2>
+    <p>Medido del historial real, no estimado. Este hilo de trabajo empezó el <strong>22 de junio</strong>
+    y sigue abierto hoy <strong>26 de agosto</strong> — 65 días de calendario, pero trabajado en
+    ráfagas, no todos los días.</p>
+  </div>
+
+  <div class="tarjetas">
+    <div class="t"><span class="k">65 días</span><span class="d">de calendario, del 22-jun al 26-ago — el proyecto completo «Sistema 3»</span></div>
+    <div class="t"><span class="k ok">~101 h</span><span class="d">de trabajo activo, sumando solo los tramos sin huecos mayores a 25 min</span></div>
+    <div class="t"><span class="k">32 días</span><span class="d">distintos con actividad — de los 65, en poco menos de la mitad se tocó algo</span></div>
+    <div class="t"><span class="k">7,900</span><span class="d">mensajes tuyos — instrucciones, correcciones y respuestas, uno por uno</span></div>
+    <div class="t"><span class="k">7,093</span><span class="d">acciones ejecutadas: comandos, archivos escritos o editados, lecturas</span></div>
+    <div class="t"><span class="k ok">140</span><span class="d">commits — cada uno un punto donde el sistema quedó en un estado conocido y reversible</span></div>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 900 195" role="img" aria-label="Actividad por día a lo largo de 65 días: ráfagas cortas en junio y julio, y una concentración fuerte en la última semana de agosto, con el pico el 20 de agosto">
+      <line x1="16" y1="160" x2="884" y2="160" stroke="currentColor" stroke-width="1" opacity=".3"/>
+      <text x="16" y="16" font-size="12" font-weight="600" fill="currentColor" opacity=".55" font-family="IBM Plex Mono, monospace">EVENTOS POR DÍA — 22 JUN → 26 AGO</text>
+
+      <rect x="16.0" y="150" width="7" height="10" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="29.1" y="143" width="7" height="17" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="42.2" y="157" width="7" height="3" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="68.4" y="127" width="7" height="33" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="107.8" y="139" width="7" height="21" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="120.9" y="157" width="7" height="3" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="134.0" y="157" width="7" height="3" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="199.5" y="141" width="7" height="19" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="238.8" y="138" width="7" height="22" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="251.9" y="151" width="7" height="9" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="317.5" y="154" width="7" height="6" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="330.6" y="127" width="7" height="33" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="343.7" y="146" width="7" height="14" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="422.3" y="146" width="7" height="14" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="435.4" y="133" width="7" height="27" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="474.8" y="150" width="7" height="10" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="514.1" y="141" width="7" height="19" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="527.2" y="154" width="7" height="6" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="540.3" y="145" width="7" height="15" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="566.5" y="153" width="7" height="7" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="619.0" y="144" width="7" height="16" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="684.5" y="119" width="7" height="41" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="697.6" y="95" width="7" height="65" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="710.7" y="141" width="7" height="19" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="750.0" y="117" width="7" height="43" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="763.1" y="156" width="7" height="4" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="776.2" y="94" width="7" height="66" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="789.4" y="30" width="7" height="130" rx="1.5" fill="var(--gap)"/>
+      <rect x="802.5" y="87" width="7" height="73" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="841.8" y="101" width="7" height="59" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="854.9" y="91" width="7" height="69" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+      <rect x="868.0" y="136" width="7" height="24" rx="1.5" fill="currentColor" fill-opacity=".55"/>
+
+      <text x="789.4" y="24" font-size="10.5" font-weight="600" fill="var(--gap)" text-anchor="middle" font-family="IBM Plex Mono, monospace">20-ago · 4,626</text>
+      <line x1="792.9" y1="26" x2="792.9" y2="29" stroke="var(--gap)" stroke-width="1.2"/>
+
+      <text x="16" y="178" font-size="11.5" fill="currentColor" opacity=".6">jun</text>
+      <text x="330" y="178" font-size="11.5" fill="currentColor" opacity=".6">jul</text>
+      <text x="684" y="178" font-size="11.5" fill="currentColor" opacity=".6">12-ago</text>
+      <text x="868" y="178" font-size="11.5" fill="currentColor" opacity=".6" text-anchor="end">26-ago</text>
+    </svg>
+    <figcaption>Cada barra es un día con actividad; el hueco entre barras es tiempo sin tocar el
+    proyecto. Junio y julio fueron exploración en ráfagas cortas — el grueso del trabajo, incluida
+    toda la migración de pasos a skills, se concentró en la última semana de agosto.</figcaption>
+  </figure>
+
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Qué se ejecutó</th><th class="num">Veces</th></tr></thead>
+      <tbody>
+        <tr><td>Comandos de terminal (leer, correr un paso, validar)</td><td class="num">4,404</td></tr>
+        <tr><td>Archivos nuevos escritos</td><td class="num">1,066</td></tr>
+        <tr><td>Ediciones a archivos existentes</td><td class="num">991</td></tr>
+        <tr><td>Lecturas de archivo</td><td class="num">139</td></tr>
+        <tr><td>Preguntas que te hice antes de decidir</td><td class="num">81</td></tr>
+        <tr><td>Consultas directas al MCP de SFMC</td><td class="num">~90</td></tr>
+        <tr><td>Artefactos publicados (mapas, este documento)</td><td class="num">34</td></tr>
+        <tr><td>Búsquedas y lecturas en la web</td><td class="num">25</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p class="t2">Los tokens, con su contexto — para que el número no engañe</p>
+    <p><strong>13.2 millones de tokens de salida</strong> — todo lo que se generó: código, análisis,
+    este documento. Es la cifra que de verdad mide «cuánto se produjo».</p>
+    <p>A eso se suman <strong>66.4 millones</strong> guardados en caché como contexto nuevo (el código
+    y las conversaciones que el sistema necesita recordar turno a turno), y <strong>~3,976 millones</strong>
+    de lecturas de ese caché — porque cada uno de los 7,900 turnos vuelve a traer el contexto
+    acumulado de los anteriores. Esa última cifra crece con la duración de la sesión, no con el
+    trabajo hecho: leer caché cuesta una fracción de generarlo, y es la razón técnica por la que una
+    sesión larga sigue siendo barata turno a turno aunque el contador total se vea enorme.</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Qué vale este sistema</strong> · el documento tiene cifras de <strong>dos cortes distintos, y se dicen cuáles</strong>.
+  Las tres primeras secciones describen la corrida del <strong>25 de agosto de 2026</strong> (98 envíos de email, 2,645 carritos,
+  12 de WhatsApp, 131 piezas en catálogo, 77 filas de reporte). Las tres secciones del sistema de skills describen el estado
+  al <strong>8 de septiembre de 2026</strong>: 104 piezas cruzando desde SFMC, 2,769 carritos, 14,643 envíos de WhatsApp,
+  126 piezas en catálogo, 82 filas de reporte, 8,937,524 envíos. Ninguna cifra se actualizó hacia atrás para que cuadraran entre sí.</p>
+  <p>Las tarifas y plazos de la ruta tradicional están publicados y se citan abajo. El desglose de
+  horas por fase es una estimación aplicada a <em>este</em> caso: tres fuentes, dos sin conector.
+  Son órdenes de magnitud para dimensionar, no cotizaciones.</p>
+  <p style="margin-top:10px"><strong>Fuentes</strong> —
+  <a href="https://dataconsultingfirms.com/insights/data-engineering-hourly-rates">tarifas por rol y por región, 2026</a> ·
+  <a href="https://xylitytech.com/data-engineering/data-engineering-consulting-cost-2026/">costos por tipo de proyecto y composición de equipo</a> ·
+  <a href="https://www.webfx.com/martech/pricing/big-data-consulting/">tarifas de consultoría de big data</a> ·
+  <a href="https://cdp.com/articles/cdp-implementation-guide/">plazos de implementación de CDP y analítica de marketing</a> ·
+  <a href="https://www.payrollmexico.com/insights/data-engineer-salary-mexico">sueldos de Data Engineer en México</a> ·
+  <a href="https://www.payrollmexico.com/insights/analytics-engineer-salary-mexico">sueldos de Analytics Engineer en México</a> ·
+  <a href="https://www.cometly.com/post/marketing-data-warehouse-solutions">precios de Fivetran y dbt Cloud</a></p>
+  <p style="margin-top:14px; padding-top:14px; border-top:1px solid var(--line)">
+    <strong>Versión en línea</strong> —
+    <a href="https://claude.ai/code/artifact/ca9cbd40-bf09-4449-b4e5-3f64c0bcfa1e">claude.ai/code/artifact/ca9cbd40-bf09-4449-b4e5-3f64c0bcfa1e</a><br>
+    <span class="mono" style="font-size:12px">Es privada hasta que se comparta desde el menú de la propia página.</span>
+  </p>
+</footer>
+
+</div>
