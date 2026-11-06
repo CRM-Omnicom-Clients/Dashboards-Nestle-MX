@@ -29,8 +29,23 @@ _export:
   database: nmx_hechos
   create_table: fact_envio_whatsapp
 
-# ── fact_evento_qcart_* ── (Etapa 4c — pendiente datos Qcart en nmx_insumos)
-# +rebuild_fact_qcart_carritos:
-#   td>: queries/hechos/rebuild_fact_evento_qcart_carritos.sql
-#   database: nmx_hechos
-#   create_table: fact_evento_qcart_carritos
+# ── fact_evento_qcart_* ──────────────────────────────────────────────
++drop_fact_qcart_carritos:
+  td_ddl>:
+  drop_tables: [fact_evento_qcart_carritos]
+  database: nmx_hechos
+
++rebuild_fact_qcart_carritos:
+  td>: queries/hechos/rebuild_fact_evento_qcart_carritos.sql
+  database: nmx_hechos
+  create_table: fact_evento_qcart_carritos
+
++drop_fact_qcart_productos:
+  td_ddl>:
+  drop_tables: [fact_evento_qcart_productos]
+  database: nmx_hechos
+
++rebuild_fact_qcart_productos:
+  td>: queries/hechos/rebuild_fact_evento_qcart_productos.sql
+  database: nmx_hechos
+  create_table: fact_evento_qcart_productos
