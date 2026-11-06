@@ -18,11 +18,16 @@ _export:
   database: nmx_hechos
   create_table: fact_envio_email
 
-# ── fact_envio_whatsapp ── (Etapa 4b — pendiente datos WA en nmx_insumos)
-# +rebuild_fact_envio_whatsapp:
-#   td>: queries/hechos/rebuild_fact_envio_whatsapp.sql
-#   database: nmx_hechos
-#   create_table: fact_envio_whatsapp
+# ── fact_envio_whatsapp ──────────────────────────────────────────────
++drop_fact_envio_whatsapp:
+  td_ddl>:
+  drop_tables: [fact_envio_whatsapp]
+  database: nmx_hechos
+
++rebuild_fact_envio_whatsapp:
+  td>: queries/hechos/rebuild_fact_envio_whatsapp.sql
+  database: nmx_hechos
+  create_table: fact_envio_whatsapp
 
 # ── fact_evento_qcart_* ── (Etapa 4c — pendiente datos Qcart en nmx_insumos)
 # +rebuild_fact_qcart_carritos:
