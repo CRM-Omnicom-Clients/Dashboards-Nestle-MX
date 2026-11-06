@@ -47,7 +47,7 @@ owner: Rick Aguilar
 ## Sub-plan: lo que falta en detalle
 
 ### Etapas 4b + 4c — Hechos WA y Qcart
-**Bloqueo: datos.** Rick sube los archivos al repo; yo los cargo a nmx_insumos y escribo los SQLs.
+**Bloqueo: datos.** Rick sube los archivos al repo; el asistente los carga a nmx_insumos y escribe los SQLs.
 
 | Paso | Acción | Quién |
 |---|---|---|
@@ -67,8 +67,7 @@ owner: Rick Aguilar
 
 ### Etapa 6 — Dashboard
 Requiere que las 3 tablas de reporte existan con datos reales para validar el diseño visual.
-
-Pendiente de Rick: **spec de diseño** (OI-12) — qué columnas, en qué orden, qué filtros quiere el cliente.
+Pendiente de Rick: spec de diseño (OI-12) — qué columnas, en qué orden, qué filtros quiere el cliente.
 
 ### Etapa 7 — Operabilidad
 - OPERACIONES.md: runbook del flujo semanal (quién hace qué, en qué orden)
@@ -149,55 +148,37 @@ Studio dashboard     (pendiente — Etapa 6)
 
 ---
 
-## Repo GitHub — estructura real actual
+## Repo GitHub — estructura
 
 ```
 CRM-Omnicom-Clients/Dashboards-Nestle-MX
 └── negocio/nestle/reportes-consolidado/
-    ├── ESTADO-reporte-consolidado.md      ← este archivo
-    ├── backup-drafts/
-    │   ├── Catalogo_Piezas.csv            ← archivado (legacy)
-    │   └── Catalogo_Referencias.csv       ← archivado (legacy)
+    ├── docs/
+    │   ├── ESTADO.md              ← este archivo
+    │   ├── ARQUITECTURA.md        ← 4 DBs, tablas, flujo, decisiones
+    │   └── OPERACIONES.md         ← runbook semanal (pendiente Etapa 7)
+    ├── referencia/
+    │   ├── (Interno-Copy))-Reporte-Consolidado-Nestle-2026-v8.xlsx   ← read-only
+    │   └── (Interno) Envios sin CDP _ Hive.xlsx                      ← read-only
     ├── catalogo/
-    │   ├── Catalogo-Nestle-MX.xlsx        ← Rick edita aquí cada semana
-    │   ├── CATALOGO.md
-    │   └── README.md
+    │   └── Catalogo-Nestle-MX.xlsx    ← Rick edita aquí cada semana
     ├── insumos/
-    │   └── README.md                      ← WA + Qcart irán aquí
-    ├── scripts/
-    │   └── reload_catalog.py              ← carga XLSX → nmx_insumos (corre local)
-    └── workflow/                          ← proyecto TD nmx_crm_reporte (ID: 2105350)
-        ├── nmx_crm_reporte.dig            ← orquestador principal
-        ├── catalogo.dig                   ← nmx_insumos → nmx_catalogo (24 tareas)
-        ├── hechos.dig                     ← prod_sfmc_* + catálogo → nmx_hechos
-        ├── landing.dig                    ← stub (sh> bloqueado en esta cuenta TD)
-        ├── manifest.yml
-        ├── tdx.json
-        └── queries/
-            ├── catalogo/                  ← 10 rebuild_dim_*.sql
-            ├── hechos/
-            │   └── rebuild_fact_envio_email.sql  ✓
-            └── landing_check.sql
+    │   └── README.md                  ← WA + Qcart irán aquí
+    ├── workflow/                       ← proyecto TD nmx_crm_reporte (ID: 2105350)
+    │   ├── nmx_crm_reporte.dig
+    │   ├── catalogo.dig
+    │   ├── hechos.dig
+    │   ├── manifest.yml
+    │   ├── tdx.json
+    │   └── queries/
+    │       ├── catalogo/              ← 10 rebuild_dim_*.sql
+    │       └── hechos/
+    │           └── rebuild_fact_envio_email.sql
+    └── _historico/                    ← archivado (no se usa)
+        ├── dashboard-crm-nestle-v3.html
+        ├── que-vale-este-sistema.html
+        └── backup-drafts/
 ```
-
-**Nota:** `sh>` operator está bloqueado en esta cuenta TD (requiere Docker/ECS). La recarga del catálogo es manual con el script local. Los archivos WA y Qcart se cargarán con `reload_catalog.py` extendido cuando Rick los suba.
-
----
-
-## Vocabularios en nmx_catalogo (v8 — cargados)
-
-| Dimensión | Conteo | Novedades v8 |
-|---|---|---|
-| dim_bu | 5 | — |
-| dim_marca | 11 | +Dog Chow, renombrado Nescafé ICE → ICE |
-| dim_campana | 13 | +Centenario Nestlé (100 años), +Checo |
-| dim_objetivo | 11 | +NO SE ENVIO, +Promoción |
-| dim_touchpoint_brief | 79 | +18 nuevos respecto a v7 |
-| dim_segmento | 52 | +Femenil Futbol, +Aspiracionales/Perros, +Educated Pet Owners/Perros, +Gen Z Cafés WA-opt-in |
-| tabla_piezas | 157 | era 139 en v7 |
-| pieza_segmento (bridge) | 169 filas | era 146 |
-| tabla_nombres | 158 | nombres únicos Email + WA |
-| dim_shortlink | 82 | era 72 |
 
 ---
 
