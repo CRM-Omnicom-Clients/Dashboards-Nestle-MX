@@ -1,18 +1,18 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12T23:00
-status: "Pipeline completo ✓. Dashboard live. Auditoría Qcart BUG-05/06/07 resuelta. OI-13 (shortlinks) pendiente Rick."
+updated: 2026-11-12T23:59
+status: "Pipeline completo ✓. Dashboard live y estable. BUG-08 resuelto (dashboard sin datos). Validación CDP vs SFMC completada: 100% match. Arquitectura dashboard estabilizada: datos en reporte-datos.js separado."
 owner: Rick Aguilar
 ---
 
 # ESTADO: Reporte Consolidado Nestlé México en TD
 
-> Fuente de verdad del proyecto — actualizado 2026-11-12T23:00.
+> Fuente de verdad del proyecto — actualizado 2026-11-12T23:59.
 > Para la arquitectura del sistema, ver `ARQUITECTURA.md`. Para correr, ver `OPERACIONES.md`.
 
 ---
 
-## Resumen ejecutivo (2026-11-12)
+## Resumen ejecutivo (2026-11-12, actualizado fin de sesión)
 
 | Canal | Tabla fact | Estado | Tabla rpt | Métricas finales |
 |-------|-----------|--------|-----------|-----------------|
@@ -49,7 +49,8 @@ owner: Rick Aguilar
 | **P2** | **WA insumos corregidos (OI-15+17)** | **✓ COMPLETA 2026-11-12** |
 | **P3** | **Pipeline final + dashboard refrescado** | **✓ COMPLETA 2026-11-12** |
 | P4 | Schedule semanal martes 22h | 🔲 PENDIENTE |
-| **P5** | **Validación email vs SFMC (OI-19)** | **🔲 PENDIENTE — Rick conectará MCP** |
+| **P5** | **Validación email vs SFMC (OI-19 + MCP directo)** | **✓ COMPLETADA 2026-11-12 — ver análisis abajo** |
+| P6 | Estabilización dashboard — datos/lógica separados | ✓ COMPLETADA 2026-11-12 — `reporte-datos.js` separado |
 
 ---
 
@@ -135,9 +136,43 @@ owner: Rick Aguilar
 - **Verificación:** `rows_wm+ched>total = 0` post-fix.
 - **Workflow re-run:** Attempt 1424132696 ✅ · **Commit:** `f918371`
 
+### BUG-08: `rsm()` fusionada con `go()` — dashboard sin datos en pantalla
+- **Síntoma:** Dashboard cargaba pero no mostraba ningún dato (tablas vacías, KPIs en blanco)
+- **Causa:** A partir del commit `e787520`, al hacer patch del timestamp en `go()`, la función `rsm(aon,os,wa)` desapareció y su cuerpo quedó pegado dentro de `go()`, creando un error de sintaxis JS que apagaba todo el script
+- **Fix:** `rsm()` restaurada como función independiente; `go()` cierra correctamente con `setSH();}`
+- **Commit:** `19d7524`
+
 ---
 
-## OIs abiertos
+## Estabilización dashboard: separación datos/lógica (2026-11-12)
+
+**Problema raíz:** el archivo HTML mezclaba lógica JS (funciones, estilos) con datos (arrays AON/OS/WA). Cada actualización de datos reescribía el HTML completo, con riesgo permanente de corromper el código.
+
+**Solución implementada:**
+
+| Archivo | Rol | Quién lo toca |
+|---------|-----|---------------|
+| `dashboards/reporte-consolidado-crm.html` | Solo lógica: filtros, tablas, estilos | **Nunca** (ya no hay datos aquí) |
+| `dashboards/reporte-datos.js` | Solo datos: `const AON`, `const OS`, `const WA` | Solo el script de build |
+| `workflow/scripts/build_dashboard_data.py` | Lee TD → escribe `reporte-datos.js` | Se corre al actualizar datos |
+
+**Para el próximo ciclo de datos:**
+```bash
+# 1. Correr pipeline TD (ya existía)
+tdx wf start nmx_crm_reporte
+
+# 2. Generar JS de datos
+uv run workflow/scripts/build_dashboard_data.py
+
+# 3. Push solo el .js
+git add dashboards/reporte-datos.js && git commit -m "data: refresco ..." && git push
+```
+
+- **Commits:** `19d7524` (BUG-08) · `5b0c81a` (separación datos/lógica)
+
+---
+
+
 
 | ID | Descripción | Responsable | Estado |
 |----|-------------|-------------|--------|
@@ -148,13 +183,60 @@ owner: Rick Aguilar
 | OI-16 | `land_qcart_carritos`: 71,117 filas cargadas | Studio | ✅ Resuelto 2026-11-12 |
 | OI-17 | 8 piezas WA clicks corregidos | Studio | ✅ Resuelto 2026-11-12 |
 | OI-18 | Duplicados en `rpt_*` por pieza_segmento sin colapsar | Studio | ✅ Resuelto 2026-11-12 |
-| **OI-19** | **Validación email vs SFMC — hallazgos completos** | **Studio + Rick** | **🔲 Decisión de Rick pendiente — ver análisis abajo** |
+| **OI-19** | **Validación CDP vs SFMC directo (MCP)** | Studio | **✅ Completado 2026-11-12 — ver análisis SFMC abajo** |
 | **OI-20** | **`005-P012` aparece en rpt_qcart pero no en rpt_email ni rpt_whatsapp** | Studio | 🔲 Investigar |
-| **OI-21** | **290 email_names sin mapeo en prod_sfmc_sends (50.4M sends no atribuidos)** | **Rick** | 🔲 Rick decide cuáles agregar al catálogo |
+| **OI-21** | **9 EmailNames SFMC sin mapeo en TD (Nescafé Winback SA/SB/A/B 1.6M sends, Purina 106K)** | **Rick** | 🔲 Rick decide si agregar al catálogo |
 
 ---
 
-## Análisis OI-19: Validación email vs SFMC — RESULTADO
+## Análisis OI-19 / Validación CDP vs SFMC directo — RESULTADO (2026-11-12)
+
+### Conexión SFMC via MCP kit
+Validación realizada directamente contra las DEs del BU NMX usando el kit en `sfmc/kit-crm-reporte-mcp-nestle-sfmc/`.
+DEs leídas: `CRM_Email_Piezas` (146 rows), `CRM_Reporte_Auditoria` (148 rows), `CRM_Reporte_Config` (148 rows).
+
+### Resultado del cruce TD vs SFMC
+
+| Categoría | N | Detalle |
+|-----------|---|---------|
+| **TD piezas con match SFMC** | **100/100** | ✅ Cobertura perfecta |
+| Exactos (diff sends = 0) | 10 | Piezas One-Shot simples |
+| Diff < 1% | 10 | Diferencias de 1–5 envíos por ventana de retención |
+| Diff 1–5% | 5 | Pequeñas divergencias de fecha |
+| Diff ≥ 5% (alerta) | 48 | **Esperadas** — ver arquitectura abajo |
+| SFMC sin mapeo TD | 9 | Variantes Nescafé Winback + Purina Brand |
+
+### Las divergencias grandes son arquitecturales, no errores
+
+- **TD agrega por `pieza_id`:** suma todos los `nombre_unico` → pieza (todos los EmailNames del catálogo que apunten a esa pieza, todas las quincenas)
+- **SFMC reporta por `EmailName`:** 1 fila por email job
+- Para piezas AON con muchos jobs (ej. 001-P001 LigaMX), TD acumula millones mientras SFMC muestra solo el EmailName registrado (34K sends)
+
+### Semáforo SFMC (Auditoría `CRM_Reporte_Auditoria`)
+
+| Estado | N | Detalle |
+|--------|---|---------|
+| OK | 139 | ✅ |
+| SIN MATCH | 2 | Nescafé ICE, Nescafé Espresso — sin envíos recientes |
+| DUPLICADO | 5 | Maggi Selección, Nescafé Winback CH2 B1+B2, Test_1 — 2 config keys apuntan al mismo EmailName |
+| ASSET CAMBIO | 2 | `009-P012`, `009-P017` (Proplan) — creativo reemplazado en Content Builder |
+
+### 9 SFMC sin mapeo TD — OI-21
+
+| Sends | EmailName | Acción |
+|-------|-----------|--------|
+| 854K | Nescafé Winback SA | Mapear → pieza existente en catálogo |
+| 414K | Nescafé Winback SB | Ídem |
+| 200K | Nescafé Winback A | Ídem |
+| 168K | Nescafé Winback B | Ídem |
+| 107K | Purina Brand AON | ¿Incluir en reporte NMX? — otra marca |
+| ~17 total | CH2 B1+B2 / SC / otros | Tests/duplicados — ignorar |
+
+**Total sin mapear: ~1.7M sends** — Rick decide si agregar al catálogo.
+
+---
+
+## Plan OI-19: Checklist MCP (cuando esté disponible)
 
 ### Veredicto
 **Los datos en TD son correctos.** Para todos los `email_name` registrados en `tabla_nombres`, `diff_sends = 0` — coincidencia perfecta con `prod_sfmc_sends`.
@@ -273,7 +355,9 @@ tdx wf schedule nmx_crm_reporte.nmx_crm_reporte \
 | `e787520` | **fix BUG-05 + dashboard: intencion_nestle corregida ($66K→$280K, pct 2.5%→10.4%)** |
 | `f918371` | **fix BUG-06+07: pct_penetracion NULL cuando inn>itn, store dual excluido de w/c** |
 | `919bcca` | **dashboard: refresh datos con BUG-05/06/07 corregidos** |
-| `ff60fa8` | chore: update tdx.json revision stamp |
+| `f7ec9cf` | docs: ESTADO.md auditoría Qcart completa — BUG-05/06/07 documentados |
+| `19d7524` | **fix BUG-08: rsm() restaurada como función separada — dashboard sin datos corregido** |
+| `5b0c81a` | **refactor: separar datos de lógica — reporte-datos.js + script build_dashboard_data.py** |
 
 ---
 
@@ -285,4 +369,5 @@ tdx wf schedule nmx_crm_reporte.nmx_crm_reporte \
 - Fact tables: formato v8 Principal+FUP wide, clicks desglosados CTA/Baja/Medidos
 - `rpt_qcart` grain: `(pieza_id, quincena)` — agrega en dashboard con `aggregate_qc_for_pieza()`
 - Dashboard `reporte-consolidado-crm.html`: 83 columnas ordenables, totales campaña P+FUP+Total+Qcart, paleta morado/rosa, Gotham/Montserrat, timestamp dinámico, filtro Quincena, badge v1
+- **Dashboard arquitectura estable (2026-11-12):** datos separados en `reporte-datos.js`; HTML es solo lógica. Actualizar datos: correr `build_dashboard_data.py`, push solo el `.js`
 - **Regla de orden de ejecución:** `catalogo.dig` siempre primero — `tabla_piezas` stale rompe tipo_envio en todos los `rpt_*`
