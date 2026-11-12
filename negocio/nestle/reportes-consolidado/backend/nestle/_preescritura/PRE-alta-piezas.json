@@ -1,0 +1,40 @@
+{
+ "paso": "catalogo.alta-piezas-declaradas",
+ "cuando": "2026-08-27",
+ "declaradas": [
+  {
+   "id": "005-P016",
+   "modelo": "005-P013",
+   "porque": "Rick declaró el nombre en el chat el 29-sep-2026 y el maestro de links (hoja «Septiembre» fila 15, actualizado ese día) declara su shortlink uCV8KGHm con utm_medium=whatsapp, utm_content=wa-j10 y fecha de envío 24-sep. Sin esta pieza, sus 8 carritos quedan sin dueño y la PUERTA 2 cierra — de hecho cerró.",
+   "campos": {
+    "BU": "RN",
+    "Marca": "Maggi",
+    "Campaña": "Liga MX",
+    "TouchPoint": "WA-J10",
+    "Touchpoint_Raw": "wa-j10",
+    "Segmento": "Región unificada",
+    "Subsegmento": "N/A",
+    "Segmentos_Combinados": "N/A",
+    "Objetivo": "Purchase",
+    "Canal": "WhatsApp",
+    "Email_Type": "Principal",
+    "Tipo_Envio": "one-shot",
+    "Email_Name": "N/A",
+    "Whatsapp_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-J10-JUE_CN_WA_A_V1_089419",
+    "Codigo_NC": "NC006537",
+    "Fecha_Primer_Envio": "2026-09-24",
+    "Fecha_Ultimo_Envio": "2026-09-24",
+    "Quincena": "2026-09-Q2",
+    "Mes_Lanzamiento": "2026-09",
+    "Tiene_Qcart": "Sí",
+    "N_Recetas": "1",
+    "Cod_Walmart_1": "uCV8KGHm",
+    "Clicks_Medidos": "Sí",
+    "Pieza_Principal_ID": "N/A",
+    "Estado": "⚠ Por confirmar (sin métricas de envío: la fuente de WhatsApp llega hasta J9)",
+    "Notas": "Alta del 29-sep-2026. Nombre declarado por Rick en el chat; su hermana de email es 005-P015 (E-J10) y los ids finales son consecutivos: 089419 WhatsApp / 089420 email. FECHA 24-sep del maestro de links (serial 46289), que es la autoridad — no de la fuente de WhatsApp, que todavía no publica J10. 🔴 SIN ENVÍOS NI LEÍDOS: (Interno) Resultados Whatsapp CRM 2026.xlsx es del 22-sep y su hoja «Maggi Liga MX» llega hasta J9. Van POR DEFINIR, no 0, hasta que Leslie actualice. Qcart: shortlink uCV8KGHm, receta «Papitas elote», Walmart — 7 filas = 8 carritos entre el 24 y el 27-sep. CLICKS_MEDIDOS=Sí por la regla que Rick declaró el 14-sep para todo WhatsApp con Qcart («los clicks debes sacarlos de qcart carritos»), la misma de 005-P011 y 005-P013. 🔴 Esta pieza la destapó la PUERTA 2 al cerrar por 8 carritos sin dueño, no una revisión: sin ella esos carritos no aparecían en ningún reporte.",
+    "Pieza_ID": "005-P016"
+   }
+  }
+ ]
+}

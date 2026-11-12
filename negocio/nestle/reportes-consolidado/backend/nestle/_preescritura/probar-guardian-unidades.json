@@ -1,0 +1,35 @@
+{
+ "cuando": "2026-09-30T19:57:00.787Z",
+ "senuelos": [
+  {
+   "id": "S1",
+   "que": "una métrica del reporte SIN unidad declarada",
+   "atrapado": true
+  },
+  {
+   "id": "S2",
+   "que": "una métrica de conteo sin declarar su comparación",
+   "atrapado": true
+  },
+  {
+   "id": "S3",
+   "que": "un desglose que excede a su total en el dato",
+   "atrapado": true
+  },
+  {
+   "id": "S4",
+   "que": "el desglose que ya no suma su total",
+   "atrapado": true
+  },
+  {
+   "id": "S5",
+   "que": "el motor contando carritos por FILA",
+   "atrapado": true
+  },
+  {
+   "id": "S6",
+   "que": "un cruce de unidades sin declarar `embudo`",
+   "atrapado": true
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+# Config generada por scripts/descubrir.js: es de CADA operador/BU, no se versiona.
+config/pipeline.config.json
+
+# Jamas credenciales
+.env
+.env.*
+conexion*.txt
+*.secret
+*.pem
+
+# Ruido
+*.log
+node_modules/
+tmp/
+
+# Las fotos en vivo de snapshot.js traen nombres de objetos y SQL del cliente: se quedan en la maquina (respaldo local)
+snapshot/

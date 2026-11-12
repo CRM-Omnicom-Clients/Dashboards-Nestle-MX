@@ -1,0 +1,303 @@
+{
+ "skill": "PRE-Data_WhatsApp",
+ "fecha": "2026-08-24",
+ "que_es": "La tabla previa: lo que este skill VA a escribir, ya con la forma de cada hoja destino.",
+ "por_que": "Mueve la traduccion fuente->hoja hacia adelante, para que se pueda revisar ANTES de tocar el Excel. Antes ocurria dentro del escritor, tarde y sin revision.",
+ "notas": "El prefijo dimensional de `Data_WhatsApp`, derivado del catálogo por Pieza_ID.",
+ "tablas": [
+  {
+   "skill": "PRE-Data_WhatsApp",
+   "hoja": "Data_WhatsApp",
+   "grano": "una fila = un envío",
+   "llave": "Pieza_ID",
+   "ancla": null,
+   "no_toca": [
+    "el contenido de las columnas renombradas: solo cambia su encabezado"
+   ],
+   "columnas_de_la_hoja": [
+    "BU",
+    "Marca",
+    "Campaña",
+    "Campana_Raw",
+    "Objetivo",
+    "Segmento",
+    "Segmento_WA_Raw",
+    "Canal",
+    "TouchPoint",
+    "Send_Date",
+    "Send_Month",
+    "Quincena",
+    "Sends",
+    "Deliveries",
+    "Opens_Read",
+    "Clicks",
+    "Clicks_Medidos",
+    "Errores",
+    "Delivery_Rate",
+    "Read_Rate",
+    "CTOR",
+    "Aud_Original",
+    "Aud_Filtros",
+    "Aud_Final",
+    "Logins",
+    "Recetas_Capturadas",
+    "Pct_Error",
+    "Errores_Meta_Detalle",
+    "utm_content",
+    "URL",
+    "Notas",
+    "Pieza_ID",
+    "Mes",
+    "Mes (#)",
+    "Email_Name"
+   ],
+   "columnas_que_escribe": [
+    "BU",
+    "Marca",
+    "Campaña",
+    "Segmento",
+    "Canal",
+    "TouchPoint",
+    "Quincena",
+    "Pieza_ID",
+    "Mes",
+    "Mes (#)",
+    "Email_Name",
+    "Objetivo"
+   ],
+   "filas": [
+    {
+     "BU": "RN",
+     "Marca": "Carnation, La Lechera",
+     "Campaña": "Hotcakes",
+     "Objetivo": "",
+     "Segmento": "Saludables",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-C1",
+     "Quincena": "Jun-Q1-2026",
+     "Pieza_ID": "002-P021",
+     "Mes": "Junio",
+     "Mes (#)": 6,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Carnation, La Lechera",
+     "Campaña": "Hotcakes",
+     "Objetivo": "",
+     "Segmento": "Prácticos",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-C2",
+     "Quincena": "Jun-Q1-2026",
+     "Pieza_ID": "002-P022",
+     "Mes": "Junio",
+     "Mes (#)": 6,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Carnation, La Lechera",
+     "Campaña": "Hotcakes",
+     "Objetivo": "",
+     "Segmento": "Indulgentes",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-C3",
+     "Quincena": "Jun-Q1-2026",
+     "Pieza_ID": "002-P023",
+     "Mes": "Junio",
+     "Mes (#)": 6,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Carnation, La Lechera",
+     "Campaña": "Hotcakes",
+     "Objetivo": "",
+     "Segmento": "FamilyKids",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-C4",
+     "Quincena": "Jun-Q1-2026",
+     "Pieza_ID": "002-P024",
+     "Mes": "Junio",
+     "Mes (#)": 6,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Purchase",
+     "Segmento": "Wa-opt-in-allsegments",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-SF-A",
+     "Quincena": "Jul-Q1-2026",
+     "Pieza_ID": "004-P017",
+     "Mes": "Julio",
+     "Mes (#)": 7,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "Nescafé",
+     "Marca": "Clásico",
+     "Campaña": "Tercer Tiempo",
+     "Objetivo": "",
+     "Segmento": "Combinado",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-1",
+     "Quincena": "Jun-Q2-2026",
+     "Pieza_ID": "008-P007",
+     "Mes": "Junio",
+     "Mes (#)": 6,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "Nescafé",
+     "Marca": "Clásico",
+     "Campaña": "Tercer Tiempo",
+     "Objetivo": "",
+     "Segmento": "Combinado",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-2",
+     "Quincena": "Jun-Q2-2026",
+     "Pieza_ID": "008-P008",
+     "Mes": "Junio",
+     "Mes (#)": 6,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "Nescafé",
+     "Marca": "Nescafé",
+     "Campaña": "ICE",
+     "Objetivo": "",
+     "Segmento": "Wa-opt-in",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-A1",
+     "Quincena": "Jul-Q2-2026",
+     "Pieza_ID": "006-P003",
+     "Mes": "Julio",
+     "Mes (#)": 7,
+     "Email_Name": "O_Nescafé-ICE-NC000817_1_IBS_CFEE_NESC_NCFAAIW_MX_ES_NA_AC_WA_A_NA_000611"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Purchase",
+     "Segmento": "WA-opt-in Cooking, WA-opt-in Botanas, WA-opt-in Bebidas",
+     "Canal": "WhatsApp",
+     "TouchPoint": "Partido 2",
+     "Quincena": "",
+     "Pieza_ID": "004-P010",
+     "Mes": "Junio",
+     "Mes (#)": 6,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Ver receta",
+     "Segmento": "WA-opt-in Cooking, WA-opt-in Botanas, WA-opt-in Bebidas",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-P3",
+     "Quincena": "",
+     "Pieza_ID": "004-P013",
+     "Mes": "Junio",
+     "Mes (#)": 6,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Purchase",
+     "Segmento": "Wa-opt-in-allsegments",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-SF-B",
+     "Quincena": "Jul-Q1-2026",
+     "Pieza_ID": "004-P018",
+     "Mes": "Julio",
+     "Mes (#)": 7,
+     "Email_Name": "N/A"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Purchase",
+     "Segmento": "Wa-opt-in-allsegments",
+     "Canal": "WhatsApp",
+     "TouchPoint": "WA-FINAL",
+     "Quincena": "Jul-Q2-2026",
+     "Pieza_ID": "004-P019",
+     "Mes": "Julio",
+     "Mes (#)": 7,
+     "Email_Name": "N/A"
+    }
+   ],
+   "n_filas": 12,
+   "cobertura": [
+    {
+     "columna": "BU",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Marca",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Campaña",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Segmento",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Canal",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "TouchPoint",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Quincena",
+     "llenas": 10,
+     "de": 12
+    },
+    {
+     "columna": "Pieza_ID",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Mes",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Mes (#)",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Email_Name",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Objetivo",
+     "llenas": 5,
+     "de": 12
+    }
+   ]
+  }
+ ]
+}

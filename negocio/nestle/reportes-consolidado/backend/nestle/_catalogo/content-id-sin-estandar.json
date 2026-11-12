@@ -1,0 +1,132 @@
+{
+ "paso": "A10",
+ "regla": "Content_ID = el último tramo del Email_Name separado por «_», y solo si es numérico",
+ "no_derivados": [
+  {
+   "fila": 53,
+   "pieza_id": "009-P002",
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PA_E3B1.NA",
+   "content_id_actual": "PA_E3B1",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 54,
+   "pieza_id": "009-P003",
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PP_E3A3_NA",
+   "content_id_actual": "PP_E3A3",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 55,
+   "pieza_id": "009-P004",
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PO_E3C1.NA",
+   "content_id_actual": "PO_E3C1",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 77,
+   "pieza_id": "009-P005",
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan.E2.2.NA",
+   "content_id_actual": "Proplan.E2.2",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 98,
+   "pieza_id": "009-P006",
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+   "content_id_actual": "PP_E3A1",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 99,
+   "pieza_id": "009-P007",
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+   "content_id_actual": "PP_E3A2",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 100,
+   "pieza_id": "009-P008",
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+   "content_id_actual": "PA_E3B2",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 101,
+   "pieza_id": "009-P009",
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+   "content_id_actual": "PA_E3B3",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 102,
+   "pieza_id": "009-P010",
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+   "content_id_actual": "PO_E3C2",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 103,
+   "pieza_id": "009-P011",
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+   "content_id_actual": "PO_E3C3",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 104,
+   "pieza_id": "009-P012",
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E4A1.NA",
+   "content_id_actual": "PP_E4A1",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 105,
+   "pieza_id": "009-P013",
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E4A2.NA",
+   "content_id_actual": "PP_E4A2",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 106,
+   "pieza_id": "009-P014",
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PP_E4A3.NA",
+   "content_id_actual": "PP_E4A3",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 107,
+   "pieza_id": "009-P015",
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PAE_E4B1.NA",
+   "content_id_actual": "PAE_E4B1",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 108,
+   "pieza_id": "009-P016",
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PAE_E4B2.NA",
+   "content_id_actual": "PAE_E4B2",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 109,
+   "pieza_id": "009-P017",
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PAE_E4B3.NA",
+   "content_id_actual": "PAE_E4B3",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 112,
+   "pieza_id": "001-P030",
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-PROP2_EN_EM_A_V1",
+   "content_id_actual": "",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  },
+  {
+   "fila": 113,
+   "pieza_id": "001-P031",
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-PROP2-FUP_EN_EM_A_V1",
+   "content_id_actual": "",
+   "porque": "su nombre no sigue el estándar SFMC (no termina en «_<dígitos>»); no se deriva nada"
+  }
+ ]
+}

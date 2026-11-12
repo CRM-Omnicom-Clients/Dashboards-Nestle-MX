@@ -1,0 +1,49 @@
+{
+ "paso": "manual-bloque · bloque manual",
+ "generado_por": "fuentes-manual.manual.js",
+ "que_es": "lo que el equipo declara a mano porque ninguna descarga lo entrega",
+ "estado_normal": "CERO datos. Que esté vacío no es un fallo: es lo esperado.",
+ "no_calcula": "solo conteos. ctor, rates y porcentajes se rechazan: son de motor-calculo.",
+ "reglas": {
+  "procedencia": "`quien` y `por_que` son obligatorios — es el único dato sin fuente verificable",
+  "pieza": "el pieza_id debe existir en Catalogo_Piezas",
+  "no_pisar": "si una fuente automática ya trae esa métrica, el manual se declara redundante y NO se carga",
+  "correccion": "un valor manual SÍ se puede corregir: gana el nuevo y se conserva el anterior"
+ },
+ "carpeta": "_manual/",
+ "datos": [],
+ "rechazados_por_forma": [
+  {
+   "pieza_id": "005-P001",
+   "fecha": "2026-08-22",
+   "metrica": "sends",
+   "valor": 0,
+   "quien": "",
+   "por_que": "ejemplo — BORRAR esta fila",
+   "archivo": "PLANTILLA-datos-manuales.csv",
+   "fila": 2,
+   "es_plantilla": true,
+   "motivo": "fila de ejemplo de la plantilla — no es un dato"
+  }
+ ],
+ "fuera_por_reglas": [],
+ "redundantes": [],
+ "auditoria": {
+  "datos": 0,
+  "nuevos": 0,
+  "ya_estaban": 0,
+  "sin_cambio": 0,
+  "corregidos": 0,
+  "rechazados_por_forma": 1,
+  "fuera_por_reglas": 0,
+  "redundantes": 0,
+  "cuadre": true,
+  "por_metrica": {},
+  "piezas": 0
+ },
+ "para_el_siguiente": {
+  "que_es": "datos declarados a mano, ya anclados a su pieza y con su procedencia",
+  "ojo": "cada dato trae quien y por_que: si un número del reporte no cuadra, ahí está su autor",
+  "ojo_puerta": "N3 los escribe como cualquier otro bloque, pero marcando Fuente_Dato = manual"
+ }
+}

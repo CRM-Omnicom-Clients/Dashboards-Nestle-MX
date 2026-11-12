@@ -1,0 +1,15 @@
+{
+ "skill": "crm-reporte-resumen",
+ "script": "resumen.mover-columnas.js",
+ "declarado": "2026-09-24",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Report_Resumen",
+   "grano": "el ENCABEZADO, el ANCHO y el ESTILO de una columna — ninguna celda de datos",
+   "llave": "el nombre del encabezado",
+   "celdas_esperadas": "20 encabezado(s) reubicado(s) · 0 celdas de datos movidas"
+  }
+ ]
+}

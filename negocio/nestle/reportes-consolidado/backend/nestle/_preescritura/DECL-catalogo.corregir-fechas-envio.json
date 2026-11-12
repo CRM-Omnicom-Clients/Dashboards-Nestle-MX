@@ -1,0 +1,15 @@
+{
+ "skill": "nestle-catalogo",
+ "script": "catalogo.corregir-fechas-envio.js",
+ "declarado": "2026-09-15",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Catalogo_Piezas",
+   "grano": "una CELDA — pieza × columna de fecha",
+   "llave": "Pieza_ID + nombre de columna",
+   "celdas_esperadas": "las vacías que SFMC tiene, y las que son ANTERIORES al envío real. Ninguna posterior."
+  }
+ ]
+}

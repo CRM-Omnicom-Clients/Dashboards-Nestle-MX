@@ -1,0 +1,19 @@
+# --- Credenciales y estado local: NUNCA al repositorio ---
+negocio/nestle/reportes-consolidado/credenciales/
+**/credenciales/
+*.env
+.env
+.env.*
+conexion.txt
+CLV-*.txt
+**/estado-local/
+# --- Ruido ---
+node_modules/
+desktop.ini
+Thumbs.db
+
+# repo anidado (respaldo de doctrina): vive solo en .claude
+negocio/nestle/reportes-consolidado/backend/nestle/_respaldos/doctrina-antes-renombre-20261002-1831/
+
+# scripts sueltos del MCP con secrets escritos a mano: solo viven en .claude	ools\_mcp-sfmc\_scripts
+negocio/nestle/reportes-consolidado/sfmc/mcp-sfmc-servidor/_scripts/

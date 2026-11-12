@@ -1,0 +1,83 @@
+{
+ "cuando": "2026-10-03T02:44:43.704Z",
+ "que_mide": "las hojas crudas del libro contra los bloques de los que salieron — lo que ninguna de las dos puertas cruza",
+ "no_llegaron_a_la_hoja": [],
+ "sobran_en_la_hoja": [
+  {
+   "hoja": "Data_Qcart_Carritos",
+   "n": 49,
+   "muestra": [
+    "004-P020¦2026-08-04¦15:00:00¦wdvsBDby¦(sin tienda)",
+    "004-P020¦2026-07-24¦13:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-07-24¦08:00:00¦wdvsBDby¦(sin tienda)"
+   ],
+   "llaves": [
+    "004-P020¦2026-08-04¦15:00:00¦wdvsBDby¦(sin tienda)",
+    "004-P020¦2026-07-24¦13:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-07-24¦08:00:00¦wdvsBDby¦(sin tienda)",
+    "004-P020¦2026-07-17¦11:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-07-15¦07:00:00¦wdvsBDby¦(sin tienda)",
+    "004-P020¦2026-07-08¦20:00:00¦wdvsBDby¦(sin tienda)",
+    "004-P020¦2026-07-08¦16:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-07-08¦16:00:00¦ZJ3SmPMy¦(sin tienda)",
+    "004-P020¦2026-06-30¦15:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-06-30¦15:00:00¦ZJ3SmPMy¦(sin tienda)",
+    "004-P020¦2026-06-25¦19:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-06-25¦17:00:00¦wdvsBDby¦chedraui",
+    "004-P020¦2026-06-25¦17:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-25¦15:00:00¦3NIh2kYW¦(sin tienda)",
+    "004-P020¦2026-06-25¦13:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-06-24¦13:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-24¦11:00:00¦3NIh2kYW¦(sin tienda)",
+    "004-P020¦2026-06-24¦09:00:00¦3NIh2kYW¦(sin tienda)",
+    "004-P020¦2026-06-23¦14:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-23¦13:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-23¦12:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-06-19¦19:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-06-19¦19:00:00¦wdvsBDby¦chedraui",
+    "004-P020¦2026-06-19¦19:00:00¦ZJ3SmPMy¦(sin tienda)",
+    "004-P020¦2026-06-19¦16:00:00¦3NIh2kYW¦(sin tienda)",
+    "004-P020¦2026-06-19¦16:00:00¦wdvsBDby¦(sin tienda)",
+    "004-P020¦2026-06-19¦16:00:00¦ZJ3SmPMy¦(sin tienda)",
+    "004-P020¦2026-06-19¦09:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-06-19¦07:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-18¦18:00:00¦3NIh2kYW¦(sin tienda)",
+    "004-P020¦2026-06-18¦13:00:00¦3NIh2kYW¦(sin tienda)",
+    "004-P020¦2026-06-18¦10:00:00¦3NIh2kYW¦(sin tienda)",
+    "004-P020¦2026-06-18¦10:00:00¦wdvsBDby¦(sin tienda)",
+    "004-P020¦2026-06-18¦09:00:00¦ZJ3SmPMy¦(sin tienda)",
+    "004-P020¦2026-06-17¦23:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-17¦17:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-17¦16:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-17¦15:00:00¦wdvsBDby¦chedraui",
+    "004-P020¦2026-06-17¦15:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-17¦14:00:00¦wdvsBDby¦chedraui",
+    "004-P020¦2026-06-17¦14:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-17¦13:00:00¦wdvsBDby¦chedraui",
+    "004-P020¦2026-06-17¦13:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-17¦10:00:00¦3NIh2kYW¦(sin tienda)",
+    "004-P020¦2026-06-17¦09:00:00¦wdvsBDby¦(sin tienda)",
+    "004-P020¦2026-06-17¦09:00:00¦ZJ3SmPMy¦walmart",
+    "004-P020¦2026-06-10¦10:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-08-20¦14:00:00¦3NIh2kYW¦chedraui",
+    "004-P020¦2026-08-17¦11:00:00¦wdvsBDby¦(sin tienda)"
+   ]
+  },
+  {
+   "hoja": "Data_Qcart_Productos",
+   "n": 4,
+   "muestra": [
+    "004-P020¦2026-06-19¦18:00:00¦3NIh2kYW¦chedraui¦jugo sazonador 1 botella",
+    "004-P020¦2026-06-19¦18:00:00¦wdvsBDby¦chedraui¦jugo sazonador 1 botella",
+    "004-P020¦2026-06-18¦18:00:00¦ZJ3SmPMy¦walmart¦jugo sazonador"
+   ],
+   "llaves": [
+    "004-P020¦2026-06-19¦18:00:00¦3NIh2kYW¦chedraui¦jugo sazonador 1 botella",
+    "004-P020¦2026-06-19¦18:00:00¦wdvsBDby¦chedraui¦jugo sazonador 1 botella",
+    "004-P020¦2026-06-18¦18:00:00¦ZJ3SmPMy¦walmart¦jugo sazonador",
+    "004-P020¦2026-06-18¦18:00:00¦3NIh2kYW¦chedraui¦jugo sazonador 1 botella"
+   ]
+  }
+ ],
+ "no_evaluado": []
+}

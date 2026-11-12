@@ -1,0 +1,96 @@
+{
+ "cuando": "2026-09-15T01:56:40.796Z",
+ "piezas": 12,
+ "hallazgos": [
+  {
+   "id": "005-P001",
+   "que": "dice Tiene_Qcart=Sí y NO tiene ni un evento de Qcart",
+   "detalle": ""
+  },
+  {
+   "id": "005-P001",
+   "que": "no tiene fila en el reporte",
+   "detalle": "Liga MX · E-P1"
+  },
+  {
+   "id": "005-P002",
+   "que": "no tiene fila en el reporte",
+   "detalle": "Liga MX · E-P2"
+  },
+  {
+   "id": "005-P003",
+   "que": "shortlink atribuido a esta pieza que el maestro NO declara (R2)",
+   "detalle": "piPZpvXp · CVCPHfND"
+  },
+  {
+   "id": "005-P003",
+   "que": "no tiene fila en el reporte",
+   "detalle": "Liga MX · E-P4"
+  },
+  {
+   "id": "005-P004",
+   "que": "dice Tiene_Qcart=Sí y NO tiene ni un evento de Qcart",
+   "detalle": ""
+  },
+  {
+   "id": "005-P004",
+   "que": "no tiene fila en el reporte",
+   "detalle": "Liga MX · E-P6"
+  },
+  {
+   "id": "005-P005",
+   "que": "SFMC la publica con ConfigKey provisional, no con el Pieza_ID",
+   "detalle": "«TMP-MAGGI-J4-CR» — cruza por Email_Name, no por ConfigKey"
+  },
+  {
+   "id": "005-P005",
+   "que": "el touchpoint de SFMC no coincide con el del catálogo",
+   "detalle": "SFMC «J4-ConRegión*» vs catálogo «E-J4»"
+  },
+  {
+   "id": "005-P006",
+   "que": "SFMC la publica con ConfigKey provisional, no con el Pieza_ID",
+   "detalle": "«TMP-MAGGI-J4-SR» — cruza por Email_Name, no por ConfigKey"
+  },
+  {
+   "id": "005-P006",
+   "que": "el touchpoint de SFMC no coincide con el del catálogo",
+   "detalle": "SFMC «J4-SinRegión*» vs catálogo «E-J4»"
+  },
+  {
+   "id": "005-P007",
+   "que": "SFMC la publica con ConfigKey provisional, no con el Pieza_ID",
+   "detalle": "«TMP-MAGGI-J6-SR» — cruza por Email_Name, no por ConfigKey"
+  },
+  {
+   "id": "005-P008",
+   "que": "SFMC la publica con ConfigKey provisional, no con el Pieza_ID",
+   "detalle": "«TMP-MAGGI-J6-CR» — cruza por Email_Name, no por ConfigKey"
+  },
+  {
+   "id": "005-P009",
+   "que": "SFMC la publica con ConfigKey provisional, no con el Pieza_ID",
+   "detalle": "«TMP-MAGGI-J6-REGION-SUR» — cruza por Email_Name, no por ConfigKey"
+  },
+  {
+   "id": "005-P010",
+   "que": "SFMC la publica con ConfigKey provisional, no con el Pieza_ID",
+   "detalle": "«TMP-MAGGI-J7-B-C» — cruza por Email_Name, no por ConfigKey"
+  },
+  {
+   "id": "005-P012",
+   "que": "SFMC la publica con ConfigKey provisional, no con el Pieza_ID",
+   "detalle": "«TMP-MAGGI-J8» — cruza por Email_Name, no por ConfigKey"
+  },
+  {
+   "id": "—",
+   "que": "carritos con pieza pero SIN shortlink declarado (atribuidos por una vía más débil que R2)",
+   "detalle": "piPZpvXp  (pieza 005-P003 · utm del CSV: e-p4) · 1 carritos"
+  },
+  {
+   "id": "—",
+   "que": "carritos con pieza pero SIN shortlink declarado (atribuidos por una vía más débil que R2)",
+   "detalle": "CVCPHfND  (pieza 005-P003 · utm del CSV: e-p4) · 1 carritos"
+  }
+ ]
+}

@@ -1,0 +1,542 @@
+{
+ "cuando": "2026-09-15T00:49:42.175Z",
+ "grupo": "SFMC",
+ "si": [
+  {
+   "id": "001-P029",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "001-P030",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "001-P031",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = Si",
+   "valor": "FUP"
+  },
+  {
+   "id": "005-P005",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "005-P006",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "006-P004",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "006-P005",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = Si",
+   "valor": "FUP"
+  },
+  {
+   "id": "007-P005",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "007-P006",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = Si",
+   "valor": "FUP"
+  },
+  {
+   "id": "007-P007",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "006-P006",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "001-P032",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "005-P007",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "005-P008",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "005-P009",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "005-P010",
+   "col": "Tipo_Envio",
+   "fuente": "la DE: Es_FUP = No",
+   "valor": "Principal"
+  },
+  {
+   "id": "005-P010",
+   "col": "Email_ID (de la DE de SFMC)",
+   "fuente": "la DE: Email_ID 85487",
+   "valor": "85487"
+  },
+  {
+   "id": "005-P010",
+   "col": "Subject",
+   "fuente": "la DE: «Prepárate esta delicia jugocit»",
+   "valor": "Prepárate esta delicia jugocita"
+  }
+ ],
+ "na": [],
+ "no": [
+  {
+   "id": "005-P001",
+   "col": "Email_Type",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "005-P002",
+   "col": "Email_Type",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "005-P003",
+   "col": "Email_Type",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "005-P004",
+   "col": "Email_Type",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "006-P003",
+   "col": "Tipo_Envio",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "004-P020",
+   "col": "Tipo_Envio",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "005-P011",
+   "col": "Tipo_Envio",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "005-P012",
+   "col": "Tipo_Envio",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "004-P010",
+   "col": "Sends_Por_Quincena",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P013",
+   "col": "Sends_Por_Quincena",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P017",
+   "col": "Sends_Por_Quincena",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P018",
+   "col": "Sends_Por_Quincena",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P019",
+   "col": "Sends_Por_Quincena",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "Sends_Por_Quincena",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Sends_Por_Quincena",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "Sends_Por_Quincena",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Sends_Por_Quincena",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P010",
+   "col": "Sends_Por_Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P013",
+   "col": "Sends_Por_Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P017",
+   "col": "Sends_Por_Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P018",
+   "col": "Sends_Por_Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P019",
+   "col": "Sends_Por_Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "Sends_Por_Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Sends_Por_Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "Sends_Por_Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Sends_Por_Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Sends",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "Sends",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Sends",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P001",
+   "col": "Email_Name",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P002",
+   "col": "Email_Name",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P003",
+   "col": "Email_Name",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P004",
+   "col": "Email_Name",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Email_Name",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P006",
+   "col": "Email_Names_Variantes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P007",
+   "col": "Email_Names_Variantes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P008",
+   "col": "Email_Names_Variantes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Email_Names_Variantes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "001-P033",
+   "col": "Email_Names_Variantes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Email_Names_Variantes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P006",
+   "col": "N_Email_Names",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P007",
+   "col": "N_Email_Names",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P008",
+   "col": "N_Email_Names",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "N_Email_Names",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "001-P033",
+   "col": "N_Email_Names",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "N_Email_Names",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P002",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P003",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P004",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P005",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P001",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P002",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P003",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P004",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P006",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P007",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P008",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P009",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P010",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P011",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P012",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P013",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P014",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P015",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P016",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P017",
+   "col": "Codigo_NC",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P001",
+   "col": "Content_ID (final del Email_Name)",
+   "por": "su Email_Name no termina en un id numérico"
+  },
+  {
+   "id": "005-P002",
+   "col": "Content_ID (final del Email_Name)",
+   "por": "su Email_Name no termina en un id numérico"
+  },
+  {
+   "id": "005-P003",
+   "col": "Content_ID (final del Email_Name)",
+   "por": "su Email_Name no termina en un id numérico"
+  },
+  {
+   "id": "005-P004",
+   "col": "Content_ID (final del Email_Name)",
+   "por": "su Email_Name no termina en un id numérico"
+  },
+  {
+   "id": "001-P030",
+   "col": "Content_ID (final del Email_Name)",
+   "por": "su Email_Name no termina en un id numérico"
+  },
+  {
+   "id": "001-P031",
+   "col": "Content_ID (final del Email_Name)",
+   "por": "su Email_Name no termina en un id numérico"
+  },
+  {
+   "id": "004-P020",
+   "col": "Content_ID (final del Email_Name)",
+   "por": "su Email_Name no termina en un id numérico"
+  },
+  {
+   "id": "005-P001",
+   "col": "Email_ID (de la DE de SFMC)",
+   "por": "la pieza no cruza con la DE (sin envíos ahí todavía)"
+  },
+  {
+   "id": "005-P002",
+   "col": "Email_ID (de la DE de SFMC)",
+   "por": "la pieza no cruza con la DE (sin envíos ahí todavía)"
+  },
+  {
+   "id": "005-P003",
+   "col": "Email_ID (de la DE de SFMC)",
+   "por": "la pieza no cruza con la DE (sin envíos ahí todavía)"
+  },
+  {
+   "id": "005-P004",
+   "col": "Email_ID (de la DE de SFMC)",
+   "por": "la pieza no cruza con la DE (sin envíos ahí todavía)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Email_ID (de la DE de SFMC)",
+   "por": "la pieza no cruza con la DE (sin envíos ahí todavía)"
+  },
+  {
+   "id": "005-P012",
+   "col": "Email_ID (de la DE de SFMC)",
+   "por": "la pieza no cruza con la DE (sin envíos ahí todavía)"
+  },
+  {
+   "id": "005-P001",
+   "col": "Subject",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "005-P002",
+   "col": "Subject",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "005-P003",
+   "col": "Subject",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "005-P004",
+   "col": "Subject",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "004-P020",
+   "col": "Subject",
+   "por": "la pieza no cruza con la DE"
+  },
+  {
+   "id": "005-P012",
+   "col": "Subject",
+   "por": "la pieza no cruza con la DE"
+  }
+ ]
+}

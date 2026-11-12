@@ -1,0 +1,245 @@
+{
+ "fecha": "2026-09-21",
+ "fallos": [],
+ "avisos": [
+  "B — fila 22 «Sartén de queso con jalapeño» no aparece en RECETAS «Sarten Queso Jalapeño»"
+ ],
+ "filas": [
+  {
+   "fila": 2,
+   "tp": "E-P1",
+   "codigos": [
+    "rr0VvKTb",
+    "dHfqmS7n",
+    "w5r9LWOP"
+   ],
+   "hoja": 137,
+   "fuente": 137
+  },
+  {
+   "fila": 3,
+   "tp": "E-P1",
+   "codigos": [
+    "tJEICO87",
+    "Z8W0ZouI",
+    "Y8umAAnA"
+   ],
+   "hoja": 81,
+   "fuente": 81
+  },
+  {
+   "fila": 4,
+   "tp": "E-P1",
+   "codigos": [
+    "cCFb2xEx",
+    "hWaJfDxS"
+   ],
+   "hoja": 98,
+   "fuente": 98
+  },
+  {
+   "fila": 5,
+   "tp": "E-P2",
+   "codigos": [
+    "3QfdZN2Q",
+    "SN2YWvgo"
+   ],
+   "hoja": 66,
+   "fuente": 66
+  },
+  {
+   "fila": 6,
+   "tp": "E-P2",
+   "codigos": [
+    "HcDJTsRH",
+    "rueO2xbY"
+   ],
+   "hoja": 47,
+   "fuente": 47
+  },
+  {
+   "fila": 7,
+   "tp": "E-P3",
+   "codigos": [
+    "vk67sh2J"
+   ],
+   "hoja": 0,
+   "fuente": 0
+  },
+  {
+   "fila": 8,
+   "tp": "E-P3",
+   "codigos": [
+    "xka2NWrW"
+   ],
+   "hoja": 0,
+   "fuente": 0
+  },
+  {
+   "fila": 9,
+   "tp": "E-P3",
+   "codigos": [
+    "YJOatjQs"
+   ],
+   "hoja": 0,
+   "fuente": 0
+  },
+  {
+   "fila": 10,
+   "tp": "E-P4",
+   "codigos": [],
+   "hoja": null,
+   "fuente": 0
+  },
+  {
+   "fila": 11,
+   "tp": "Partido 2",
+   "codigos": [],
+   "hoja": null,
+   "fuente": 0
+  },
+  {
+   "fila": 12,
+   "tp": "Partido 3",
+   "codigos": [],
+   "hoja": null,
+   "fuente": 0
+  },
+  {
+   "fila": 13,
+   "tp": "Semifinal A",
+   "codigos": [
+    "sbH9gVge",
+    "Agy5v9Yb"
+   ],
+   "hoja": 35,
+   "fuente": 35
+  },
+  {
+   "fila": 14,
+   "tp": "Semifinal B",
+   "codigos": [
+    "2YWR8c3Z",
+    "haPs2HHU"
+   ],
+   "hoja": 42,
+   "fuente": 42
+  },
+  {
+   "fila": 15,
+   "tp": "Final",
+   "codigos": [
+    "2Yn9L0bD",
+    "LO8RxwsM",
+    "uv5JZ8U7"
+   ],
+   "hoja": 62,
+   "fuente": 63
+  },
+  {
+   "fila": 16,
+   "tp": "E-J4",
+   "codigos": [
+    "i8LZ55bd",
+    "HThaf6bT"
+   ],
+   "hoja": 13,
+   "fuente": 13
+  },
+  {
+   "fila": 17,
+   "tp": "E-J4",
+   "codigos": [
+    "4tBsCXTp",
+    "hTHNLqzL"
+   ],
+   "hoja": 111,
+   "fuente": 111
+  },
+  {
+   "fila": 18,
+   "tp": "E-J5",
+   "codigos": [
+    "UhCnTNuz",
+    "TYZa8g47"
+   ],
+   "hoja": 1,
+   "fuente": 1
+  },
+  {
+   "fila": 19,
+   "tp": "E-J5",
+   "codigos": [
+    "9isauWgY",
+    "Hqa0fbOM"
+   ],
+   "hoja": 0,
+   "fuente": 0
+  },
+  {
+   "fila": 20,
+   "tp": "E-J6",
+   "codigos": [
+    "BdN0ck7t",
+    "okUSdwJk"
+   ],
+   "hoja": 2,
+   "fuente": 2
+  },
+  {
+   "fila": 21,
+   "tp": "E-J7",
+   "codigos": [
+    "hTHNLqzL",
+    "GQnvqqP3"
+   ],
+   "hoja": 13,
+   "fuente": 13
+  },
+  {
+   "fila": 22,
+   "tp": "WA-J8",
+   "codigos": [
+    "DTuqPqBo"
+   ],
+   "hoja": 5,
+   "fuente": 6
+  },
+  {
+   "fila": 23,
+   "tp": "E-J8",
+   "codigos": [
+    "0oSrtaxX",
+    "0eQt7uf5"
+   ],
+   "hoja": 5,
+   "fuente": 7
+  },
+  {
+   "fila": 24,
+   "tp": "E-J9",
+   "codigos": [
+    "bfQ24tDq",
+    "xTaSfQ2y"
+   ],
+   "hoja": 31,
+   "fuente": 31
+  },
+  {
+   "fila": 25,
+   "tp": "WA-J9",
+   "codigos": [
+    "ymh2OT4x"
+   ],
+   "hoja": 17,
+   "fuente": 17
+  }
+ ],
+ "totales": {
+  "carritos": 766,
+  "walmart": 574,
+  "chedraui": 51,
+  "intencion_total": 690818.87,
+  "intencion_nestle": 27676.5
+ }
+}

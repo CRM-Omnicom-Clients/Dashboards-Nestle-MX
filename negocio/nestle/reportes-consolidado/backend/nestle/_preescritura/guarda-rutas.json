@@ -1,0 +1,42 @@
+{
+ "cuando": "2026-10-03T03:58:00.685Z",
+ "revisados": "C:\\Users\\RICARD~1.AGU\\AppData\\Local\\Temp\\probar-guardas\\scripts-s7",
+ "patrones": [
+  {
+   "texto": "OneDrive - ",
+   "que_es": "la carpeta de la nube con el nombre de la organización dentro",
+   "pide": "ENT.PROYECTO · ENT.raiz('fuentes_externas') · ENT.NUBE"
+  },
+  {
+   "texto": "Marketing Automation Kinesso",
+   "que_es": "un segmento de la ruta del cliente",
+   "pide": "ENT.PROYECTO"
+  },
+  {
+   "texto": "Archivos de Leslie",
+   "que_es": "la carpeta compartida por el equipo de cliente",
+   "pide": "ENT.raiz('fuentes_externas')"
+  },
+  {
+   "texto": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+   "que_es": "el nombre del archivo del libro, que ya cambió una vez (v7 → v8). El patrón se sustituye por el valor real de `libro_vivo`, así que renombrarlo NO deja la guarda ciega.",
+   "pide": "ENT.LIBRO · require('path').basename(ENT.LIBRO) si solo se imprime"
+  },
+  {
+   "texto": ".claude/reportes-backend",
+   "que_es": "🔴 el BACKEND anclado al home. Es el peor de los cuatro: un script copiado a otra carpeta seguiría cargando sus librerías y sus contratos desde `~/.claude` de Rick, así que la copia nueva PARECERÍA funcionar mientras obedece a la vieja. Una fachada.",
+   "pide": "__dirname para una librería hermana · require('path').resolve(__dirname, '..') para la raíz"
+  },
+  {
+   "texto": ".claude/tools",
+   "que_es": "las herramientas: de ahí salen `node_modules` y las 5 capas de validación del Excel, sin las que no se publica nada",
+   "pide": "require(__dirname + '/lib-entorno.js').TOOLS"
+  },
+  {
+   "texto": "Programs/Python/Python",
+   "que_es": "el intérprete CON LA VERSIÓN escrita. El día que se instale un 3.14, los scripts apuntan a una carpeta que ya no existe — y uno de ellos es la 4ª capa de validación, «la que no se salta».",
+   "pide": "require(__dirname + '/lib-entorno.js').PYTHON"
+  }
+ ],
+ "hallazgos": []
+}

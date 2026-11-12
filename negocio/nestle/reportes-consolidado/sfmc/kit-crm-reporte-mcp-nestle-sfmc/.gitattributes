@@ -1,0 +1,2 @@
+# Fin de linea LF en TODAS las plataformas (checkout y git archive): el mismo kit en Windows, Mac y Linux, y los #! de scripts/ no se rompen con CRLF.
+* text=auto eol=lf

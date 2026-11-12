@@ -1,0 +1,942 @@
+{
+ "paso": "B3+H4",
+ "cambios": [
+  {
+   "fila": 53,
+   "pieza": "009-P002",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Perros",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 54,
+   "pieza": "009-P003",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Mixto",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 55,
+   "pieza": "009-P004",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Perros",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 98,
+   "pieza": "009-P006",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Perros",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 99,
+   "pieza": "009-P007",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Gatos",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 100,
+   "pieza": "009-P008",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Gatos",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 101,
+   "pieza": "009-P009",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Mixto",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 102,
+   "pieza": "009-P010",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Gatos",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 103,
+   "pieza": "009-P011",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Mixto",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 104,
+   "pieza": "009-P012",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Perros",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 105,
+   "pieza": "009-P013",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Gatos",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 106,
+   "pieza": "009-P014",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Mixto",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 107,
+   "pieza": "009-P015",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Perros",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 108,
+   "pieza": "009-P016",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Gatos",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 109,
+   "pieza": "009-P017",
+   "col": "Subsegmento",
+   "de": "",
+   "a": "Mixto",
+   "motivo": "Mascota → Subsegmento"
+  },
+  {
+   "fila": 53,
+   "pieza": "009-P002",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SFMC · sfmc_get_send_metrics jobId 1263916",
+   "motivo": "la via con la que se comprobo"
+  },
+  {
+   "fila": 54,
+   "pieza": "009-P003",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SFMC · sfmc_get_send_metrics jobId 1263906",
+   "motivo": "la via con la que se comprobo"
+  },
+  {
+   "fila": 55,
+   "pieza": "009-P004",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SFMC · sfmc_get_send_metrics jobId 1263923",
+   "motivo": "la via con la que se comprobo"
+  },
+  {
+   "fila": 98,
+   "pieza": "009-P006",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 98,
+   "pieza": "009-P006",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PP_E3A1",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 98,
+   "pieza": "009-P006",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SFMC · sfmc_get_send_metrics jobId 1263904",
+   "motivo": "la via con la que se comprobo"
+  },
+  {
+   "fila": 99,
+   "pieza": "009-P007",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 99,
+   "pieza": "009-P007",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PP_E3A2",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 99,
+   "pieza": "009-P007",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SFMC · sfmc_get_send_metrics jobId 1263905",
+   "motivo": "la via con la que se comprobo"
+  },
+  {
+   "fila": 100,
+   "pieza": "009-P008",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 100,
+   "pieza": "009-P008",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PA_E3B2",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 100,
+   "pieza": "009-P008",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SFMC · sfmc_get_send_metrics jobId 1263915",
+   "motivo": "la via con la que se comprobo"
+  },
+  {
+   "fila": 101,
+   "pieza": "009-P009",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 101,
+   "pieza": "009-P009",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PA_E3B3",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 101,
+   "pieza": "009-P009",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SFMC · sfmc_get_send_metrics jobId 1263914",
+   "motivo": "la via con la que se comprobo"
+  },
+  {
+   "fila": 102,
+   "pieza": "009-P010",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 102,
+   "pieza": "009-P010",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PO_E3C2",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 102,
+   "pieza": "009-P010",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SFMC · sfmc_get_send_metrics jobId 1263924",
+   "motivo": "la via con la que se comprobo"
+  },
+  {
+   "fila": 103,
+   "pieza": "009-P011",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 103,
+   "pieza": "009-P011",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PO_E3C3",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 103,
+   "pieza": "009-P011",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SFMC · sfmc_get_send_metrics jobId 1263925",
+   "motivo": "la via con la que se comprobo"
+  },
+  {
+   "fila": 104,
+   "pieza": "009-P012",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Perros.Comunidad.CDP_Proplan_PP_E4A1.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 104,
+   "pieza": "009-P012",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PP_E4A1",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 104,
+   "pieza": "009-P012",
+   "col": "EmailID",
+   "de": "83930",
+   "a": "**Por llenar",
+   "motivo": "no esta en la DE ni se pudo verificar"
+  },
+  {
+   "fila": 104,
+   "pieza": "009-P012",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SIN VERIFICAR",
+   "motivo": "ninguna via lo confirmo"
+  },
+  {
+   "fila": 104,
+   "pieza": "009-P012",
+   "col": "Notas",
+   "de": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 132. Fechas: 23-jul → 30-jul",
+   "a": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 132. Fechas: 23-jul → 30-jul · EmailID candidato 84317 (lista de Rick 20-ago). NO esta en CRM_Reporte_Config ni se pudo verificar por MCP: E4 es un journey continuo y sus jobs no se pueden agregar. Se llena cuando entre al config.",
+   "motivo": "candidato, no dato"
+  },
+  {
+   "fila": 105,
+   "pieza": "009-P013",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Gatos.Comunidad.CDP_Proplan_PP_E4A2.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 105,
+   "pieza": "009-P013",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PP_E4A2",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 105,
+   "pieza": "009-P013",
+   "col": "EmailID",
+   "de": "84320",
+   "a": "**Por llenar",
+   "motivo": "no esta en la DE ni se pudo verificar"
+  },
+  {
+   "fila": 105,
+   "pieza": "009-P013",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SIN VERIFICAR",
+   "motivo": "ninguna via lo confirmo"
+  },
+  {
+   "fila": 105,
+   "pieza": "009-P013",
+   "col": "Notas",
+   "de": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 133. Fechas: 30-jul → 30-jul",
+   "a": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 133. Fechas: 30-jul → 30-jul · EmailID candidato 84320 (lista de Rick 20-ago). NO esta en CRM_Reporte_Config ni se pudo verificar por MCP: E4 es un journey continuo y sus jobs no se pueden agregar. Se llena cuando entre al config.",
+   "motivo": "candidato, no dato"
+  },
+  {
+   "fila": 106,
+   "pieza": "009-P014",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Mixto.Comunidad.CDP_Proplan_PP_E4A3.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 106,
+   "pieza": "009-P014",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PP_E4A3",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 106,
+   "pieza": "009-P014",
+   "col": "EmailID",
+   "de": "84321",
+   "a": "**Por llenar",
+   "motivo": "no esta en la DE ni se pudo verificar"
+  },
+  {
+   "fila": 106,
+   "pieza": "009-P014",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SIN VERIFICAR",
+   "motivo": "ninguna via lo confirmo"
+  },
+  {
+   "fila": 106,
+   "pieza": "009-P014",
+   "col": "Notas",
+   "de": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 134. Fechas: 27-jul → 30-jul",
+   "a": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 134. Fechas: 27-jul → 30-jul · EmailID candidato 84321 (lista de Rick 20-ago). NO esta en CRM_Reporte_Config ni se pudo verificar por MCP: E4 es un journey continuo y sus jobs no se pueden agregar. Se llena cuando entre al config.",
+   "motivo": "candidato, no dato"
+  },
+  {
+   "fila": 107,
+   "pieza": "009-P015",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Perros.Comunidad.CDP_Proplan_PAE_E4B1.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 107,
+   "pieza": "009-P015",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PAE_E4B1",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 107,
+   "pieza": "009-P015",
+   "col": "EmailID",
+   "de": "84322",
+   "a": "**Por llenar",
+   "motivo": "no esta en la DE ni se pudo verificar"
+  },
+  {
+   "fila": 107,
+   "pieza": "009-P015",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SIN VERIFICAR",
+   "motivo": "ninguna via lo confirmo"
+  },
+  {
+   "fila": 107,
+   "pieza": "009-P015",
+   "col": "Notas",
+   "de": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 136. Fechas: 27-jul → 30-jul. POR CONFIRMAR: PAE no existe en el catálogo · el doc lo lee como Aspiracionales + Educated Pet Owners, pero hay que validarlo antes de reportarlo",
+   "a": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 136. Fechas: 27-jul → 30-jul. POR CONFIRMAR: PAE no existe en el catálogo · el doc lo lee como Aspiracionales + Educated Pet Owners, pero hay que validarlo antes de reportarlo · EmailID candidato 84322 (lista de Rick 20-ago). NO esta en CRM_Reporte_Config ni se pudo verificar por MCP: E4 es un journey continuo y sus jobs no se pueden agregar. Se llena cuando entre al config.",
+   "motivo": "candidato, no dato"
+  },
+  {
+   "fila": 108,
+   "pieza": "009-P016",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Gatos.Comunidad.CDP_Proplan_PAE_E4B2.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 108,
+   "pieza": "009-P016",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PAE_E4B2",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 108,
+   "pieza": "009-P016",
+   "col": "EmailID",
+   "de": "84323",
+   "a": "**Por llenar",
+   "motivo": "no esta en la DE ni se pudo verificar"
+  },
+  {
+   "fila": 108,
+   "pieza": "009-P016",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SIN VERIFICAR",
+   "motivo": "ninguna via lo confirmo"
+  },
+  {
+   "fila": 108,
+   "pieza": "009-P016",
+   "col": "Notas",
+   "de": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 137. Fechas: 27-jul → 30-jul. POR CONFIRMAR: PAE no existe en el catálogo · el doc lo lee como Aspiracionales + Educated Pet Owners, pero hay que validarlo antes de reportarlo",
+   "a": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 137. Fechas: 27-jul → 30-jul. POR CONFIRMAR: PAE no existe en el catálogo · el doc lo lee como Aspiracionales + Educated Pet Owners, pero hay que validarlo antes de reportarlo · EmailID candidato 84323 (lista de Rick 20-ago). NO esta en CRM_Reporte_Config ni se pudo verificar por MCP: E4 es un journey continuo y sus jobs no se pueden agregar. Se llena cuando entre al config.",
+   "motivo": "candidato, no dato"
+  },
+  {
+   "fila": 109,
+   "pieza": "009-P017",
+   "col": "EmailName",
+   "de": "",
+   "a": "User.Mixto.Comunidad.CDP_Proplan_PAE_E4B3.NA",
+   "motivo": "el EmailName es el ContentName completo"
+  },
+  {
+   "fila": 109,
+   "pieza": "009-P017",
+   "col": "Content_ID",
+   "de": "",
+   "a": "PAE_E4B3",
+   "motivo": "segmento final del EmailName"
+  },
+  {
+   "fila": 109,
+   "pieza": "009-P017",
+   "col": "EmailID",
+   "de": "84261",
+   "a": "**Por llenar",
+   "motivo": "no esta en la DE ni se pudo verificar"
+  },
+  {
+   "fila": 109,
+   "pieza": "009-P017",
+   "col": "Fuente_Dato",
+   "de": "datorama",
+   "a": "SIN VERIFICAR",
+   "motivo": "ninguna via lo confirmo"
+  },
+  {
+   "fila": 109,
+   "pieza": "009-P017",
+   "col": "Notas",
+   "de": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 138. Fechas: 23-jul → 30-jul. POR CONFIRMAR: PAE no existe en el catálogo · el doc lo lee como Aspiracionales + Educated Pet Owners, pero hay que validarlo antes de reportarlo",
+   "a": "Alta desde CATALOGO-CORRECCIONES.md (2026-08-20), linea 138. Fechas: 23-jul → 30-jul. POR CONFIRMAR: PAE no existe en el catálogo · el doc lo lee como Aspiracionales + Educated Pet Owners, pero hay que validarlo antes de reportarlo · EmailID candidato 84324 (lista de Rick 20-ago). NO esta en CRM_Reporte_Config ni se pudo verificar por MCP: E4 es un journey continuo y sus jobs no se pueden agregar. Se llena cuando entre al config.",
+   "motivo": "candidato, no dato"
+  },
+  {
+   "fila": 84,
+   "pieza": "004-P010",
+   "col": "Segmento",
+   "de": "Botana",
+   "a": "WA-opt-in Cooking, WA-opt-in Botanas, WA-opt-in Bebidas",
+   "motivo": "todos los segmentos que corresponden"
+  },
+  {
+   "fila": 84,
+   "pieza": "004-P010",
+   "col": "Sends",
+   "de": "0",
+   "a": "162",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 84,
+   "pieza": "004-P010",
+   "col": "Fecha_Primer_Envio",
+   "de": "",
+   "a": "2026-06-18",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 84,
+   "pieza": "004-P010",
+   "col": "Quincena_Lanzamiento",
+   "de": "",
+   "a": "2026-06-Q2",
+   "motivo": "derivada de la fecha"
+  },
+  {
+   "fila": 84,
+   "pieza": "004-P010",
+   "col": "Mes_Lanzamiento",
+   "de": "",
+   "a": "2026-06",
+   "motivo": "derivada de la fecha"
+  },
+  {
+   "fila": 84,
+   "pieza": "004-P010",
+   "col": "EmailName",
+   "de": "",
+   "a": "wa-cooking1, wa-bebida1, wa-botana1",
+   "motivo": "los utm agrupados del partido"
+  },
+  {
+   "fila": 84,
+   "pieza": "004-P010",
+   "col": "Content_ID",
+   "de": "",
+   "a": "Segundo Partido",
+   "motivo": "el partido es la identidad de la pieza"
+  },
+  {
+   "fila": 84,
+   "pieza": "004-P010",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Confirmado",
+   "motivo": "cuadrado con la fuente"
+  },
+  {
+   "fila": 87,
+   "pieza": "004-P013",
+   "col": "Segmento",
+   "de": "Bebidas",
+   "a": "WA-opt-in Cooking, WA-opt-in Botanas, WA-opt-in Bebidas",
+   "motivo": "todos los segmentos que corresponden"
+  },
+  {
+   "fila": 87,
+   "pieza": "004-P013",
+   "col": "Sends",
+   "de": "0",
+   "a": "162",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 87,
+   "pieza": "004-P013",
+   "col": "Fecha_Primer_Envio",
+   "de": "",
+   "a": "2026-06-26",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 87,
+   "pieza": "004-P013",
+   "col": "Quincena_Lanzamiento",
+   "de": "",
+   "a": "2026-06-Q2",
+   "motivo": "derivada de la fecha"
+  },
+  {
+   "fila": 87,
+   "pieza": "004-P013",
+   "col": "Mes_Lanzamiento",
+   "de": "",
+   "a": "2026-06",
+   "motivo": "derivada de la fecha"
+  },
+  {
+   "fila": 87,
+   "pieza": "004-P013",
+   "col": "EmailName",
+   "de": "",
+   "a": "wa-modercooking3, wa-botanas3, wa-bebidas3",
+   "motivo": "los utm agrupados del partido"
+  },
+  {
+   "fila": 87,
+   "pieza": "004-P013",
+   "col": "Content_ID",
+   "de": "",
+   "a": "Tercer Partido",
+   "motivo": "el partido es la identidad de la pieza"
+  },
+  {
+   "fila": 87,
+   "pieza": "004-P013",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Confirmado",
+   "motivo": "cuadrado con la fuente"
+  },
+  {
+   "fila": 91,
+   "pieza": "004-P017",
+   "col": "Touchpoint",
+   "de": "WA-P6",
+   "a": "WA-SF-A",
+   "motivo": "partido"
+  },
+  {
+   "fila": 91,
+   "pieza": "004-P017",
+   "col": "Segmento",
+   "de": "Activos",
+   "a": "Wa-opt-in-allsegments",
+   "motivo": "todos los segmentos que corresponden"
+  },
+  {
+   "fila": 91,
+   "pieza": "004-P017",
+   "col": "Sends",
+   "de": "0",
+   "a": "1981",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 91,
+   "pieza": "004-P017",
+   "col": "Fecha_Primer_Envio",
+   "de": "",
+   "a": "2026-07-14",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 91,
+   "pieza": "004-P017",
+   "col": "Quincena_Lanzamiento",
+   "de": "",
+   "a": "2026-07-Q1",
+   "motivo": "derivada de la fecha"
+  },
+  {
+   "fila": 91,
+   "pieza": "004-P017",
+   "col": "EmailName",
+   "de": "",
+   "a": "sbH9gVge, Agy5v9Yb",
+   "motivo": "los utm agrupados del partido"
+  },
+  {
+   "fila": 91,
+   "pieza": "004-P017",
+   "col": "Content_ID",
+   "de": "",
+   "a": "Semifinal A",
+   "motivo": "el partido es la identidad de la pieza"
+  },
+  {
+   "fila": 91,
+   "pieza": "004-P017",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Confirmado",
+   "motivo": "cuadrado con la fuente"
+  },
+  {
+   "fila": 92,
+   "pieza": "004-P018",
+   "col": "Touchpoint",
+   "de": "WA-P7",
+   "a": "WA-SF-B",
+   "motivo": "partido"
+  },
+  {
+   "fila": 92,
+   "pieza": "004-P018",
+   "col": "Segmento",
+   "de": "Activos",
+   "a": "Wa-opt-in-allsegments",
+   "motivo": "todos los segmentos que corresponden"
+  },
+  {
+   "fila": 92,
+   "pieza": "004-P018",
+   "col": "Sends",
+   "de": "0",
+   "a": "999",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 92,
+   "pieza": "004-P018",
+   "col": "Fecha_Primer_Envio",
+   "de": "",
+   "a": "2026-07-15",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 92,
+   "pieza": "004-P018",
+   "col": "Quincena_Lanzamiento",
+   "de": "",
+   "a": "2026-07-Q1",
+   "motivo": "derivada de la fecha"
+  },
+  {
+   "fila": 92,
+   "pieza": "004-P018",
+   "col": "EmailName",
+   "de": "",
+   "a": "2YWR8c3Z, haPs2HHU",
+   "motivo": "los utm agrupados del partido"
+  },
+  {
+   "fila": 92,
+   "pieza": "004-P018",
+   "col": "Content_ID",
+   "de": "",
+   "a": "Semifinal B",
+   "motivo": "el partido es la identidad de la pieza"
+  },
+  {
+   "fila": 92,
+   "pieza": "004-P018",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Confirmado",
+   "motivo": "cuadrado con la fuente"
+  },
+  {
+   "fila": 93,
+   "pieza": "004-P019",
+   "col": "Touchpoint",
+   "de": "WA-P8",
+   "a": "WA-FINAL",
+   "motivo": "partido"
+  },
+  {
+   "fila": 93,
+   "pieza": "004-P019",
+   "col": "Segmento",
+   "de": "Activos",
+   "a": "Wa-opt-in-allsegments",
+   "motivo": "todos los segmentos que corresponden"
+  },
+  {
+   "fila": 93,
+   "pieza": "004-P019",
+   "col": "Sends",
+   "de": "0",
+   "a": "1965",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 93,
+   "pieza": "004-P019",
+   "col": "Fecha_Primer_Envio",
+   "de": "",
+   "a": "2026-07-19",
+   "motivo": "fuente WhatsApp"
+  },
+  {
+   "fila": 93,
+   "pieza": "004-P019",
+   "col": "Quincena_Lanzamiento",
+   "de": "",
+   "a": "2026-07-Q2",
+   "motivo": "derivada de la fecha"
+  },
+  {
+   "fila": 93,
+   "pieza": "004-P019",
+   "col": "EmailName",
+   "de": "",
+   "a": "LO8RxwsM, 2Yn9L0bD",
+   "motivo": "los utm agrupados del partido"
+  },
+  {
+   "fila": 93,
+   "pieza": "004-P019",
+   "col": "Content_ID",
+   "de": "",
+   "a": "Final",
+   "motivo": "el partido es la identidad de la pieza"
+  },
+  {
+   "fila": 93,
+   "pieza": "004-P019",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Confirmado",
+   "motivo": "cuadrado con la fuente"
+  },
+  {
+   "fila": 85,
+   "pieza": "004-P011",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Retirada",
+   "motivo": "el envío de WhatsApp fue UNO por partido, no uno por segmento"
+  },
+  {
+   "fila": 85,
+   "pieza": "004-P011",
+   "col": "Notas",
+   "de": "declarada por Data_Maggi · engagement de WhatsApp sin cargar",
+   "a": "Retirada 20-ago-2026: modelada por segmento, pero el envío salió uno por partido. Su volumen está en la pieza del partido. NO se borra para conservar la historia.",
+   "motivo": "trazabilidad"
+  },
+  {
+   "fila": 86,
+   "pieza": "004-P012",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Retirada",
+   "motivo": "el envío de WhatsApp fue UNO por partido, no uno por segmento"
+  },
+  {
+   "fila": 86,
+   "pieza": "004-P012",
+   "col": "Notas",
+   "de": "declarada por Data_Maggi · engagement de WhatsApp sin cargar",
+   "a": "Retirada 20-ago-2026: modelada por segmento, pero el envío salió uno por partido. Su volumen está en la pieza del partido. NO se borra para conservar la historia.",
+   "motivo": "trazabilidad"
+  },
+  {
+   "fila": 88,
+   "pieza": "004-P014",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Retirada",
+   "motivo": "el envío de WhatsApp fue UNO por partido, no uno por segmento"
+  },
+  {
+   "fila": 88,
+   "pieza": "004-P014",
+   "col": "Notas",
+   "de": "declarada por Data_Maggi · engagement de WhatsApp sin cargar",
+   "a": "Retirada 20-ago-2026: modelada por segmento, pero el envío salió uno por partido. Su volumen está en la pieza del partido. NO se borra para conservar la historia.",
+   "motivo": "trazabilidad"
+  },
+  {
+   "fila": 89,
+   "pieza": "004-P015",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Retirada",
+   "motivo": "el envío de WhatsApp fue UNO por partido, no uno por segmento"
+  },
+  {
+   "fila": 89,
+   "pieza": "004-P015",
+   "col": "Notas",
+   "de": "declarada por Data_Maggi · engagement de WhatsApp sin cargar",
+   "a": "Retirada 20-ago-2026: modelada por segmento, pero el envío salió uno por partido. Su volumen está en la pieza del partido. NO se borra para conservar la historia.",
+   "motivo": "trazabilidad"
+  },
+  {
+   "fila": 90,
+   "pieza": "004-P016",
+   "col": "Estado",
+   "de": "Sin engagement cargado",
+   "a": "Retirada",
+   "motivo": "el envío de WhatsApp fue UNO por partido, no uno por segmento"
+  },
+  {
+   "fila": 90,
+   "pieza": "004-P016",
+   "col": "Notas",
+   "de": "declarada por Data_Maggi · engagement de WhatsApp sin cargar",
+   "a": "Retirada 20-ago-2026: modelada por segmento, pero el envío salió uno por partido. Su volumen está en la pieza del partido. NO se borra para conservar la historia.",
+   "motivo": "trazabilidad"
+  }
+ ],
+ "ice": true,
+ "por_llenar": [
+  "009-P012→84317",
+  "009-P013→84320",
+  "009-P014→84321",
+  "009-P015→84322",
+  "009-P016→84323",
+  "009-P017→84324"
+ ]
+}

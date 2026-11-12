@@ -1,0 +1,112 @@
+{
+  "paso": "N1s · pull de SFMC (solo lectura)",
+  "fuente": "DE CRM_Reporte_Auditoria · BU NMX - Nestle Mexico (MID 10966050)",
+  "poblada_por": "una query de Leslie contra las Data Views _Sent/_Job. LastRun 2026-08-19 23:40",
+  "traido_el": "2026-08-20",
+  "alcance": "las 76 piezas de email que declara CRM_Reporte_Config. NINGUNA otra: esa BU tiene 3,790 DE y ~2,343 envios al mes que no son nuestros.",
+  "que_es": "envios por pieza segun SFMC, que es la autoridad. NO trae opens/clicks/bounces: para eso esta CRM_Email_Performance, que solo llega hasta mayo.",
+
+  "🔴 lo_que_NO_es_confiable_todavia": {
+    "piezas": ["001-P005", "001-P006", "001-P025", "001-P027"],
+    "por_que": "la query de auditoria corrio ANTES de que se corrigieran los dos ContentName. Mientras P025 y P027 tenian el nombre de marzo, colisionaban con P005 y P006: la query dio DUPLICADO y le asigno a P025 el numero que era de P005.",
+    "prueba": "P005 y P006 salen con EnviosTotales=0 y Estado=DUPLICADO; P025 sale con 37,375 y fechas 18-mar a 13-abr, que es la ventana de MARZO, no la de abril.",
+    "que_hacer": "para estas 4 manda el DOCUMENTO (Leslie las calculo a mano contra las Data Views): P005=37,375 · P006=28,829 · P025=38,093 · P027=29,136. Cuando la query se vuelva a correr con los nombres ya corregidos, la DE deberia coincidir sola — y ese es el momento de volver a leerla."
+  },
+
+  "coincide_con_el_documento": {
+    "001-P001": 34450, "001-P002": 26508, "001-P003": 5969, "001-P004": 5397,
+    "001-P023": 35970, "001-P024": 13897, "001-P026": 12667, "001-P028": 27823
+  },
+
+  "envios_por_pieza": {
+    "001-P001": { "sends": 34450, "jobs": 2, "desde": "2026-03-19", "hasta": "2026-04-13", "estado": "OK" },
+    "001-P002": { "sends": 26508, "jobs": 1, "desde": "2026-03-20", "hasta": "2026-03-20", "estado": "OK" },
+    "001-P003": { "sends": 5969, "jobs": 2, "desde": "2026-03-14", "hasta": "2026-04-13", "estado": "OK" },
+    "001-P004": { "sends": 5397, "jobs": 1, "desde": "2026-03-17", "hasta": "2026-03-17", "estado": "OK" },
+    "001-P005": { "sends": null, "jobs": 0, "estado": "DUPLICADO", "del_documento": 37375 },
+    "001-P006": { "sends": null, "jobs": 0, "estado": "DUPLICADO", "del_documento": 28829 },
+    "001-P007": { "sends": 556865, "jobs": 2, "desde": "2026-04-20", "hasta": "2026-04-21", "estado": "OK" },
+    "001-P008": { "sends": 355979, "jobs": 1, "desde": "2026-04-24", "hasta": "2026-04-24", "estado": "OK" },
+    "001-P009": { "sends": 225247, "jobs": 2, "desde": "2026-04-20", "hasta": "2026-04-27", "estado": "OK" },
+    "001-P010": { "sends": 47857, "jobs": 1, "desde": "2026-04-27", "hasta": "2026-04-30", "estado": "OK" },
+    "001-P011": { "sends": 75942, "jobs": 1, "desde": "2026-04-30", "hasta": "2026-04-30", "estado": "OK" },
+    "001-P012": { "sends": 58021, "jobs": 1, "desde": "2026-05-03", "hasta": "2026-05-03", "estado": "OK" },
+    "001-P013": { "sends": 246251, "jobs": 1, "desde": "2026-05-13", "hasta": "2026-05-13", "estado": "OK" },
+    "001-P014": { "sends": 83171, "jobs": 2, "desde": "2026-05-16", "hasta": "2026-05-26", "estado": "OK" },
+    "001-P015": { "sends": 127294, "jobs": 2, "desde": "2026-07-20", "hasta": "2026-08-19", "estado": "OK" },
+    "001-P016": { "sends": 79744, "jobs": 1, "desde": "2026-07-25", "hasta": "2026-08-19", "estado": "OK" },
+    "001-P017": { "sends": 17902, "jobs": 3, "desde": "2026-07-20", "hasta": "2026-07-22", "estado": "OK" },
+    "001-P018": { "sends": 11523, "jobs": 2, "desde": "2026-07-20", "hasta": "2026-07-25", "estado": "OK" },
+    "001-P019": { "sends": 19112, "jobs": 3, "desde": "2026-07-20", "hasta": "2026-08-19", "estado": "OK" },
+    "001-P020": { "sends": 12274, "jobs": 1, "desde": "2026-07-28", "hasta": "2026-08-19", "estado": "OK" },
+    "001-P021": { "sends": 334664, "jobs": 2, "desde": "2026-07-20", "hasta": "2026-07-22", "estado": "OK" },
+    "001-P022": { "sends": 190730, "jobs": 1, "desde": "2026-07-25", "hasta": "2026-07-25", "estado": "OK" },
+    "001-P023": { "sends": 35970, "jobs": 1, "desde": "2026-04-30", "hasta": "2026-04-30", "estado": "OK" },
+    "001-P024": { "sends": 13897, "jobs": 1, "desde": "2026-04-30", "hasta": "2026-04-30", "estado": "OK" },
+    "001-P025": { "sends": null, "jobs": 2, "estado": "DUPLICADO", "leyo": 37375, "del_documento": 38093 },
+    "001-P026": { "sends": 12667, "jobs": 2, "desde": "2026-05-03", "hasta": "2026-05-21", "estado": "OK" },
+    "001-P027": { "sends": null, "jobs": 1, "estado": "DUPLICADO", "leyo": 28829, "del_documento": 29136 },
+    "001-P028": { "sends": 27823, "jobs": 1, "desde": "2026-05-03", "hasta": "2026-05-03", "estado": "OK" },
+
+    "002-P001": { "sends": 9888, "jobs": 8, "desde": "2026-05-13", "hasta": "2026-05-20", "estado": "OK" },
+    "002-P002": { "sends": 13316, "jobs": 6, "desde": "2026-05-13", "hasta": "2026-05-20", "estado": "OK" },
+    "002-P003": { "sends": 22075, "jobs": 7, "desde": "2026-05-13", "hasta": "2026-05-20", "estado": "OK" },
+    "002-P004": { "sends": 15414, "jobs": 8, "desde": "2026-05-13", "hasta": "2026-05-20", "estado": "OK" },
+    "002-P005": { "sends": 7228, "jobs": 3, "desde": "2026-05-13", "hasta": "2026-05-23", "estado": "OK" },
+    "002-P006": { "sends": 9701, "jobs": 1, "desde": "2026-05-23", "hasta": "2026-05-23", "estado": "OK" },
+    "002-P007": { "sends": 15688, "jobs": 1, "desde": "2026-05-23", "hasta": "2026-05-23", "estado": "OK" },
+    "002-P008": { "sends": 11033, "jobs": 1, "desde": "2026-05-23", "hasta": "2026-05-23", "estado": "OK" },
+    "002-P009": { "sends": 3192, "jobs": 1, "desde": "2026-05-27", "hasta": "2026-05-27", "estado": "OK" },
+    "002-P010": { "sends": 3060, "jobs": 1, "desde": "2026-05-27", "hasta": "2026-05-27", "estado": "OK" },
+    "002-P011": { "sends": 5732, "jobs": 1, "desde": "2026-05-27", "hasta": "2026-05-27", "estado": "OK" },
+    "002-P012": { "sends": 3545, "jobs": 1, "desde": "2026-05-27", "hasta": "2026-05-27", "estado": "OK" },
+    "002-P013": { "sends": 822, "jobs": 1, "desde": "2026-05-30", "hasta": "2026-05-30", "estado": "OK" },
+    "002-P014": { "sends": 847, "jobs": 1, "desde": "2026-05-30", "hasta": "2026-05-30", "estado": "OK" },
+    "002-P015": { "sends": 1353, "jobs": 1, "desde": "2026-05-30", "hasta": "2026-05-30", "estado": "OK" },
+    "002-P016": { "sends": 1111, "jobs": 1, "desde": "2026-05-30", "hasta": "2026-05-30", "estado": "OK" },
+    "002-P017": { "sends": 15011, "jobs": 1, "desde": "2026-04-17", "hasta": "2026-05-05", "estado": "OK" },
+    "002-P018": { "sends": 3864, "jobs": 1, "desde": "2026-04-20", "hasta": "2026-05-08", "estado": "OK" },
+    "002-P019": { "sends": 111015, "jobs": 1, "desde": "2026-04-14", "hasta": "2026-04-29", "estado": "OK" },
+    "002-P020": { "sends": 97691, "jobs": 1, "desde": "2026-04-17", "hasta": "2026-05-02", "estado": "OK" },
+
+    "003-P001": { "sends": 91380, "jobs": 3, "desde": "2026-06-25", "hasta": "2026-06-26", "estado": "OK" },
+    "003-P002": { "sends": 62633, "jobs": 1, "desde": "2026-06-29", "hasta": "2026-06-29", "estado": "OK" },
+
+    "004-P001": { "sends": 75679, "jobs": 1, "desde": "2026-06-10", "hasta": "2026-06-10", "estado": "OK" },
+    "004-P002": { "sends": 133903, "jobs": 6, "desde": "2026-06-10", "hasta": "2026-06-10", "estado": "OK" },
+    "004-P003": { "sends": 14138, "jobs": 1, "desde": "2026-06-11", "hasta": "2026-06-11", "estado": "OK" },
+    "004-P004": { "sends": 14117, "jobs": 1, "desde": "2026-06-17", "hasta": "2026-06-17", "estado": "OK" },
+    "004-P005": { "sends": 75518, "jobs": 1, "desde": "2026-06-17", "hasta": "2026-06-17", "estado": "OK" },
+    "004-P006": { "sends": 14108, "jobs": 3, "desde": "2026-06-24", "hasta": "2026-06-24", "estado": "OK" },
+    "004-P007": { "sends": 133513, "jobs": 3, "desde": "2026-06-24", "hasta": "2026-06-24", "estado": "OK" },
+    "004-P008": { "sends": 75429, "jobs": 3, "desde": "2026-06-24", "hasta": "2026-06-24", "estado": "OK" },
+    "004-P009": { "sends": 13459, "jobs": 3, "desde": "2026-06-30", "hasta": "2026-06-30", "estado": "OK" },
+
+    "006-P001": { "sends": 125394, "jobs": 2, "desde": "2026-07-21", "hasta": "2026-08-13", "estado": "OK" },
+    "006-P002": { "sends": 79056, "jobs": 3, "desde": "2026-07-21", "hasta": "2026-08-13", "estado": "OK" },
+
+    "007-P001": { "sends": 47276, "jobs": 6, "desde": "2026-07-24", "hasta": "2026-08-14", "estado": "OK" },
+    "007-P002": { "sends": 30047, "jobs": 1, "desde": "2026-07-28", "hasta": "2026-08-14", "estado": "OK" },
+    "007-P003": { "sends": 46203, "jobs": 5, "desde": "2026-07-27", "hasta": "2026-08-14", "estado": "OK" },
+    "007-P004": { "sends": 28972, "jobs": 3, "desde": "2026-07-27", "hasta": "2026-08-14", "estado": "OK" },
+
+    "008-P001": { "sends": 316044, "jobs": 8, "desde": "2026-06-19", "hasta": "2026-06-19", "estado": "OK" },
+    "008-P002": { "sends": 203839, "jobs": 1, "desde": "2026-06-23", "hasta": "2026-06-23", "estado": "OK" },
+    "008-P003": { "sends": 467715, "jobs": 2, "desde": "2026-06-26", "hasta": "2026-06-26", "estado": "OK" },
+    "008-P004": { "sends": 314029, "jobs": 1, "desde": "2026-06-29", "hasta": "2026-06-29", "estado": "OK" },
+    "008-P005": { "sends": 314661, "jobs": 1, "desde": "2026-06-29", "hasta": "2026-06-29", "estado": "OK" },
+    "008-P006": { "sends": 467661, "jobs": 2, "desde": "2026-06-26", "hasta": "2026-06-26", "estado": "OK" },
+
+    "009-P001": { "sends": 10568, "jobs": 12, "desde": "2026-06-25", "hasta": "2026-06-26", "estado": "OK" },
+    "009-P002": { "sends": 15988, "jobs": 5, "desde": "2026-07-13", "hasta": "2026-07-17", "estado": "OK" },
+    "009-P003": { "sends": 185, "jobs": 6, "desde": "2026-07-13", "hasta": "2026-07-17", "estado": "OK" },
+    "009-P004": { "sends": 1105, "jobs": 5, "desde": "2026-07-13", "hasta": "2026-07-17", "estado": "OK" },
+    "009-P005": { "sends": 25224, "jobs": 13, "desde": "2026-06-17", "hasta": "2026-07-03", "estado": "OK" }
+  },
+
+  "para_el_siguiente": {
+    "uso": "cruce INDEPENDIENTE contra el bloque de email. No sustituye a Datorama todavia: aqui solo hay envios, no opens ni clicks.",
+    "ojo_alcance": "solo 76 piezas. Las 12 nuevas de Pro Plan (009-P006..P017) NO estan: son altas de hoy y la query aun no las conoce.",
+    "ojo_ventana": "los rangos desde/hasta son de la Data View, que corta distinto que Datorama. Una diferencia pequena y CONSTANTE es ventana, no error: el documento lo dice explicitamente para Pro Plan (-14/-16, 0.07%)."
+  }
+}

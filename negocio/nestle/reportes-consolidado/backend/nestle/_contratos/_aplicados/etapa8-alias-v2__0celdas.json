@@ -1,0 +1,17 @@
+{
+ "corte": "etapa8-alias-v2",
+ "celdas": 0,
+ "columnas": 1,
+ "hojas_regeneradas": 0,
+ "respaldo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-etapa8-alias-v2.xlsx",
+ "cambios": [],
+ "columnas_nuevas": [
+  {
+   "paso": "E9",
+   "hoja": "Report_Resumen",
+   "nombre": "Insights",
+   "porque": "E9 · la columna que N6b exige y que nunca se creo. Se comprobaron los 5 backups mas recientes: en ninguno existe, asi que N6 no la borro al regenerar. Va AL FINAL para no recorrer las 82 que ya estan."
+  }
+ ],
+ "hojas": []
+}

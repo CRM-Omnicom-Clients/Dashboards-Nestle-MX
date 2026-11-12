@@ -1,0 +1,307 @@
+{
+ "cuando": "2026-10-03 02:44",
+ "modo": "escritura",
+ "desde": null,
+ "detenido": null,
+ "scripts": [
+  {
+   "paso": "escritor-neutralizar",
+   "nombre": "neutralizar fórmulas muertas",
+   "ok": true,
+   "ms": 2647,
+   "veredicto": "✔ no hay fórmulas muertas"
+  },
+  {
+   "paso": "escritor-neutralizar·publicar",
+   "nombre": "_neutro.xlsx",
+   "ok": true,
+   "veredicto": "publicado y validado"
+  },
+  {
+   "paso": "insumos-validar",
+   "nombre": "insumos",
+   "ok": true,
+   "ms": 8922,
+   "veredicto": "→ C:\\Users\\Ricardo.Aguilar\\.claude\\reportes-backend\\nestle/_insumos/inventario.json"
+  },
+  {
+   "paso": "insumos-validar·suite",
+   "nombre": "fuentes-insumos.validar.js",
+   "ok": true,
+   "veredicto": "✅ MIGRACIÓN VALIDADA — 10 checks · ninguna capacidad perdida"
+  },
+  {
+   "paso": "insumos-validar·suite",
+   "nombre": "fuentes-insumos.cruce-sfmc.js",
+   "ok": true,
+   "veredicto": "✅ CRUCE HECHO — 4 checks · el detalle en _insumos/cruce-sfmc.json"
+  },
+  {
+   "paso": "qcart-activacion",
+   "nombre": "activación de Qcart",
+   "ok": true,
+   "ms": 3648,
+   "veredicto": "✅ qcart-activacion VALIDADO — 3 checks · 2 hallazgo(s) en los datos"
+  },
+  {
+   "paso": "catalogo-leer",
+   "nombre": "leer correcciones del catálogo",
+   "ok": true,
+   "ms": 1388,
+   "veredicto": "001-P027  ABRIL EmailID 81286     28829 →   29136   🔴 cambia ContentName"
+  },
+  {
+   "paso": "catalogo-aplicar",
+   "nombre": "aplicar correcciones al catálogo",
+   "ok": true,
+   "ms": 11410,
+   "veredicto": "🔴 no existe la columna Content_Name"
+  },
+  {
+   "paso": "catalogo-aplicar·publicar",
+   "nombre": "_cat1f.xlsx",
+   "ok": true,
+   "veredicto": "publicado y validado"
+  },
+  {
+   "paso": "email-bloque",
+   "nombre": "bloque email (SFMC)",
+   "ok": true,
+   "ms": 2467,
+   "veredicto": "→ _fuentes/email.json  (108 envíos · Σ 10,395,076)"
+  },
+  {
+   "paso": "email-bloque·suite",
+   "nombre": "fuentes-email.validar.js",
+   "ok": true,
+   "veredicto": "════════ ✅ EL BLOQUE DE EMAIL ES EL DE SFMC Y CUADRA — 12 checks ════════"
+  },
+  {
+   "paso": "qcart-bloque",
+   "nombre": "bloque qcart",
+   "ok": true,
+   "ms": 4658,
+   "veredicto": "⚠ el Excel NO se tocó. Las dos hojas las escribe la Puerta 1."
+  },
+  {
+   "paso": "qcart-bloque·suite",
+   "nombre": "fuentes-qcart.validar.js",
+   "ok": true,
+   "veredicto": "✅ MIGRACIÓN VALIDADA — 12 checks · ninguna capacidad perdida"
+  },
+  {
+   "paso": "qcart-bloque·suite",
+   "nombre": "fuentes-qcart.refutar.js",
+   "ok": true,
+   "veredicto": "✅ ningún ataque rompió el bloque"
+  },
+  {
+   "paso": "whatsapp-bloque",
+   "nombre": "bloque whatsapp",
+   "ok": true,
+   "ms": 4865,
+   "veredicto": "[tabla_sin_fecha] 🔴 esta tabla NO trae columna de fecha y 2 de sus 5 envíos tampoco la consiguieron del doc de links: esos no se pueden ubicar en ningún periodo."
+  },
+  {
+   "paso": "whatsapp-bloque·suite",
+   "nombre": "fuentes-whatsapp.validar.js",
+   "ok": true,
+   "veredicto": "✅ MIGRACIÓN VALIDADA — 14 checks · ninguna capacidad perdida"
+  },
+  {
+   "paso": "whatsapp-bloque·suite",
+   "nombre": "fuentes-whatsapp.refutar.js",
+   "ok": true,
+   "veredicto": "✅ ningún ataque rompió el bloque"
+  },
+  {
+   "paso": "manual-bloque",
+   "nombre": "bloque manual",
+   "ok": true,
+   "ms": 2719,
+   "veredicto": "⚠ el Excel NO se tocó."
+  },
+  {
+   "paso": "manual-bloque·suite",
+   "nombre": "fuentes-manual.validar.js",
+   "ok": true,
+   "veredicto": "✅ SCRIPT VALIDADO — 12 checks · existe, corre vacío y rechaza bien"
+  },
+  {
+   "paso": "PUERTA-1",
+   "nombre": "PUERTA 1 · cuadre de los bloques",
+   "ok": true,
+   "ms": 2735,
+   "veredicto": "✅ PUERTA ABIERTA — los 4 bloques cuadran entre ellos y con el catálogo"
+  },
+  {
+   "paso": "escritor-datos",
+   "nombre": "escritura de datos",
+   "ok": true,
+   "ms": 3088,
+   "veredicto": "✔ nada que escribir: la hoja ya dice lo que dice el bloque"
+  },
+  {
+   "paso": "escritor-datos·publicar",
+   "nombre": "_n4.xlsx",
+   "ok": true,
+   "veredicto": "publicado y validado"
+  },
+  {
+   "paso": "escritor-datos·suite",
+   "nombre": "escritor.validar-contrato.js",
+   "ok": true,
+   "veredicto": "✅ CONTRATO VÁLIDO — 6 checks"
+  },
+  {
+   "paso": "escritor-datos·suite",
+   "nombre": "escritor.canonicos-coinciden.js",
+   "ok": true,
+   "veredicto": "✅ LOS CANÓNICOS COINCIDEN — 2 checks"
+  },
+  {
+   "paso": "escritor-formato-datos",
+   "nombre": "formato de las hojas",
+   "ok": true,
+   "ms": 12935,
+   "veredicto": "archivo listo en: C:\\Users\\Ricardo.Aguilar\\.claude\\reportes-backend\\nestle/_tmp/_fmt.xlsx"
+  },
+  {
+   "paso": "escritor-formato-datos·publicar",
+   "nombre": "_fmt.xlsx",
+   "ok": true,
+   "veredicto": "publicado y validado"
+  },
+  {
+   "paso": "motor-clicks",
+   "nombre": "clicks por destino",
+   "ok": true,
+   "ms": 2415,
+   "veredicto": "→ _fuentes/links.json"
+  },
+  {
+   "paso": "motor-calculo",
+   "nombre": "motor de cálculo",
+   "ok": true,
+   "ms": 2434,
+   "veredicto": "⚠ el Excel NO se tocó."
+  },
+  {
+   "paso": "motor-calculo·suite",
+   "nombre": "motor.validar.js",
+   "ok": true,
+   "veredicto": "✅ EL MOTOR CALCULA BIEN — 12 checks"
+  },
+  {
+   "paso": "motor-calculo·suite",
+   "nombre": "fuentes-qcart.guardian-distribucion.js",
+   "ok": true,
+   "veredicto": "✅ LA DISTRIBUCIÓN DE QCART ESTÁ ÍNTEGRA — nada bajó, nada desapareció, nada se movió sin declarar"
+  },
+  {
+   "paso": "motor-rejilla",
+   "nombre": "links a la rejilla",
+   "ok": true,
+   "ms": 1401,
+   "veredicto": "→ _rejilla/rejilla.json"
+  },
+  {
+   "paso": "resumen-fusionar",
+   "nombre": "fusionar Principal y FUP",
+   "ok": true,
+   "ms": 2516,
+   "veredicto": "Σ WhatsApp: 21,963 → 21,963   ✅ NO cambió"
+  },
+  {
+   "paso": "resumen-regenerar",
+   "nombre": "reporte Resumen (regenera)",
+   "ok": true,
+   "ms": 15153,
+   "veredicto": "════════ N6r · REGENERAR Report_Resumen 🔴 ESCRIBE ════════"
+  },
+  {
+   "paso": "resumen-regenerar·publicar",
+   "nombre": "_n6r.xlsx",
+   "ok": true,
+   "veredicto": "publicado y validado"
+  },
+  {
+   "paso": "resumen-regenerar·suite",
+   "nombre": "resumen.validar.js",
+   "ok": true,
+   "veredicto": "✅ EL REPORTE DICE LO QUE DICE LA REJILLA — 12 checks"
+  },
+  {
+   "paso": "insights-redactar",
+   "nombre": "insights",
+   "ok": true,
+   "ms": 2565,
+   "veredicto": "Para volver a tenerla: node resumen.asegurar-columnas.js --escribir"
+  },
+  {
+   "paso": "insights-redactar·publicar",
+   "nombre": "_n6b.xlsx",
+   "ok": true,
+   "veredicto": "publicado y validado"
+  },
+  {
+   "paso": "escritor-formato-resumen",
+   "nombre": "formato del Resumen",
+   "ok": true,
+   "ms": 11545,
+   "veredicto": "archivo listo en: C:\\Users\\Ricardo.Aguilar\\.claude\\reportes-backend\\nestle/_tmp/_fmt.xlsx"
+  },
+  {
+   "paso": "escritor-formato-resumen·publicar",
+   "nombre": "_fmt.xlsx",
+   "ok": true,
+   "veredicto": "publicado y validado"
+  },
+  {
+   "paso": "vacios-medir",
+   "nombre": "medir las celdas vacías (no escribe)",
+   "ok": true,
+   "ms": 7113,
+   "veredicto": "🔴 POR DEFINIR (aplica y se debe) ..... 539"
+  },
+  {
+   "paso": "vacios-llenar",
+   "nombre": "llenar vacías: N/A · cero · POR DEFINIR",
+   "ok": true,
+   "ms": 2458,
+   "veredicto": "════════ FASE E · UNA ESCRITURA 🔴 ESCRIBE ════════"
+  },
+  {
+   "paso": "cuadre-coherencia",
+   "nombre": "coherencia entre hojas (no repara, reporta)",
+   "ok": true,
+   "ms": 2729,
+   "veredicto": "🔴 EL NORMALIZADOR NO REPARA. Estas son decisiones de Rick: varias de estas filas"
+  },
+  {
+   "paso": "PUERTA-2",
+   "nombre": "PUERTA 2 · el reporte contra la rejilla",
+   "ok": true,
+   "ms": 2586,
+   "veredicto": "✅ PUERTA ABIERTA — el reporte dice lo que dice la rejilla, y la rejilla lo que dicen los bloques"
+  },
+  {
+   "paso": "PUERTA-2·suite",
+   "nombre": "fuentes-cuadre.probar-que-cierra.js",
+   "ok": true,
+   "veredicto": "✅ LA PUERTA CIERRA por los 5 motivos, y vuelve a abrir"
+  },
+  {
+   "paso": "PUERTA-2·suite",
+   "nombre": "orquestador.guardian-unidades.js",
+   "ok": true,
+   "veredicto": "✅ LAS UNIDADES CUADRAN — cada métrica dice qué es «uno» y cabe en su total"
+  },
+  {
+   "paso": "PUERTA-2·suite",
+   "nombre": "orquestador.guardian-hojas-vs-bloques.js",
+   "ok": true,
+   "veredicto": ""
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "cuando": "2026-09-24T20:29:10.408Z",
+ "volcado": "sfmc-piezas-2026-09-22.txt",
+ "mapeos": [
+  {
+   "hoja": "Fecha_Primer_Envio",
+   "desde": "detalle día por día (primer envío real)",
+   "veredicto": "SIRVE",
+   "acuerdo": 107,
+   "discrepan": 0,
+   "llenables": 0,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Fecha_Ultimo_Envio",
+   "desde": "detalle día por día (último envío real)",
+   "veredicto": "SIRVE",
+   "acuerdo": 107,
+   "discrepan": 0,
+   "llenables": 0,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Quincena",
+   "desde": "primer envío real (derivada)",
+   "veredicto": "SIRVE",
+   "acuerdo": 107,
+   "discrepan": 0,
+   "llenables": 0,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Mes_Lanzamiento",
+   "desde": "primer envío real (derivada)",
+   "veredicto": "SIRVE",
+   "acuerdo": 107,
+   "discrepan": 0,
+   "llenables": 0,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Mes",
+   "desde": "primer envío real (derivada)",
+   "veredicto": "SIRVE",
+   "acuerdo": 106,
+   "discrepan": 0,
+   "llenables": 1,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Mes (#)",
+   "desde": "primer envío real (derivada)",
+   "veredicto": "SIRVE",
+   "acuerdo": 106,
+   "discrepan": 0,
+   "llenables": 1,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Subject",
+   "desde": "Email_Subject",
+   "veredicto": "SIRVE",
+   "acuerdo": 106,
+   "discrepan": 0,
+   "llenables": 1,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Email_Type",
+   "desde": "Es_FUP",
+   "veredicto": "SIRVE",
+   "acuerdo": 107,
+   "discrepan": 0,
+   "llenables": 0,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Codigo_NC",
+   "desde": "Codigo_NC",
+   "veredicto": "SIRVE",
+   "acuerdo": 91,
+   "discrepan": 0,
+   "llenables": 0,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Sends",
+   "desde": "Email_Sends",
+   "veredicto": "SIRVE",
+   "acuerdo": 106,
+   "discrepan": 0,
+   "llenables": 1,
+   "ejemplos": []
+  },
+  {
+   "hoja": "Email_ID",
+   "desde": "Email_ID",
+   "veredicto": "SIRVE",
+   "acuerdo": 103,
+   "discrepan": 3,
+   "llenables": 1,
+   "ejemplos": [
+    {
+     "pieza": "009-P001",
+     "hoja": "83347",
+     "sfmc": "83356"
+    },
+    {
+     "pieza": "009-P012",
+     "hoja": "83930",
+     "sfmc": "84317"
+    },
+    {
+     "pieza": "009-P017",
+     "hoja": "84261",
+     "sfmc": "84324"
+    }
+   ]
+  }
+ ]
+}

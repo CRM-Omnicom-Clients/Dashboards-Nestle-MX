@@ -1,0 +1,21 @@
+{
+ "skill": "crm-reporte-escritor",
+ "script": "escritor.hojas-clicks.js",
+ "declarado": "2026-09-20",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Data_Clicks",
+   "grano": "una fila por pieza × clase × URL",
+   "llave": "Pieza_ID + Clase + URL",
+   "celdas_esperadas": "959 filas — hoja DERIVADA, se regenera entera"
+  },
+  {
+   "hoja": "Dic_Clicks",
+   "grano": "una fila por clase de destino",
+   "llave": "Clase",
+   "celdas_esperadas": "9 clases + la metodología"
+  }
+ ]
+}

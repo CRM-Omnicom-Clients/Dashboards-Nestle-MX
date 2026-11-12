@@ -1,0 +1,1172 @@
+{
+  "jobId": 1196926,
+  "count": 1306,
+  "uniqueSubscribers": 776,
+  "truncated": false,
+  "topUrls": [
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.nestle.mx.recetas.recetasnestle&hl=es&utm_source=CRM&utm_medium=email&utm_campaign=Abril AON&utm_content=email_app1",
+      "clicks": 586
+    },
+    {
+      "url": "https://apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058?utm_source=CRM&utm_medium=email&utm_campaign=Abril AON&utm_content=email_app1",
+      "clicks": 207
+    },
+    {
+      "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce?utm_source=CRM&utm_medium=email&utm_campaign=Abril AON&utm_content=cta",
+      "clicks": 32
+    },
+    {
+      "url": "https://www.facebook.com/RecetasNestleMX?utm_source=CRM&utm_medium=email&utm_campaign=Abril AON&utm_content=facebook",
+      "clicks": 17
+    },
+    {
+      "url": "https://www.tiktok.com/@recetasnestlemx?lang=es&utm_source=CRM&utm_medium=email&utm_campaign=Abril AON&utm_content=tiktok",
+      "clicks": 14
+    },
+    {
+      "url": "https://www.pinterest.com/recetasnestle/?utm_source=CRM&utm_medium=email&utm_campaign=Abril AON&utm_content=pinterest",
+      "clicks": 13
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCWIgEeSnQT6tZ6BLAh_ot5Q?utm_source=CRM&utm_medium=email&utm_campaign=Abril AON&utm_content=youtube",
+      "clicks": 12
+    },
+    {
+      "url": "https://www.instagram.com/recetasnestle/?utm_source=CRM&utm_medium=email&utm_campaign=Abril AON&utm_content=instagram",
+      "clicks": 12
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBj4pIeVRKH-GzTTlO1fBRg54LU4E7hQNf9cLXejyvKZ179cVK_t5B76Zw-GMvsQefTnN9FyDLdHVJ4ZLqD4J1kHbTs7q0TeruTwcdRc8I95elcXdJqAKDv_uc-kn3X3so7qHjJQSxeo5X5LGjUGQ5h2xb-RVN8sSBnRcnD_I",
+      "clicks": 6
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIujXadH8TKWTYM63QvaAsD_fG0oSMXmc6Y9nFMqUn1MeCl4vQGURKtcUOj0c6IvluN6t-75gPkp2uCeCafU9g6ul4fWLdGy-maQ_hjZchVIOk9zdbwJKFQTe9_c_timphttY-zdpOYi4Z5dI3BzbdbD4B_uc6P8atMYA27",
+      "clicks": 4
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyULPrIlsjWYwkn0TgV_szMPsWyJeZhZD9l1p-c6JG9OBcdwZfAJrNS8dmHM8Qo9PzFhjd4wdRxaDjRu_KBnfgXFVbt1NxAty98d7DmbFBHGOy5Jv15SCADhGMNIEq9Rf7hnnjMjAsuyqO5ME8EXmuyElt3nP6twBxYvIlug",
+      "clicks": 4
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIlCrwkcpMCAoWp-NjMc8op0oi31TQdb-FYxYPWe2Nvi32t04UTugxRYaQAfrfcYUey5cc3nfamHs-68W6ivAqfPpLy6ZdVkM_dnHcLmYyOBlD3RFkgLWLVqnMk5chizalWcothp-e1796P0tbOdCWrP-2QvEeWmvydmiFLaA",
+      "clicks": 4
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=GBIQLGPKXW2UBFVUQUNS6FNXUI.10190",
+      "clicks": 4
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDKyS-Ii9oGeDFup3BK2XcOl8_D3RUfuLkcPyMDZBglZPwTPQxysxpoBW4uLoRPEIHV99saH4pl-jGEYdLvtznKpxBy5_wKOhpp_NKIbezqvjGZxiJ2Tiuqaiabwsbf0WRa9x98tlEOGe5_wdXmVHzK-uu3R7SX8ZcCCPopA",
+      "clicks": 4
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBnq_mKJ8D30Z6UpfpP-0bKb-EepLmn7aDBoXe96SFRw5fpPcdpKfsaG4zT8FcdEJxFRE9S-lS4v0HsbviyXAsEgGEhMuOA_eR9_IwPMu4QfS357BH-wY1eQDcV9coYHLhTW4b-WJrkVmXhQUeAdjcV_PDaO75IfJXL6zBgmM",
+      "clicks": 4
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDLu5mHvKNS5wsNSt1qGQAg1Q5I6NcKVVwV_WfNSbMcyLogHwjW8tf4JIl0LS5mbPkyU3Q03ZRiMNkOYfmQIX3QGnHDWvNNPkeyXFCMqzO5UB8EJ8Ah2_J0U08jwCaETARhVPOC3H2SZopmKODbDEt9rQCeLprCodFfn2_0g",
+      "clicks": 4
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBmmRUwz2DcqfEdGFIxJms5TvbCRgmdra-OXT3CpQ1DA6-xqEDx4AzJMJgOJCKqh2iubTV3ZmPprQAAioLnS0ljpQ1Dd6T_4dnKu4RlWGX2OC-McvflD3tAXPDHnYUx_kPppVEC7v9t_39BGf-lCOp79hMhhy8uSm4cKORzw",
+      "clicks": 3
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUnJMVqd8hvdXDLqckfP7niFIez9QnniCF-IvxMErAHfJEmBIgQNsZF_JUCnR-yJxromMj84Etxo1b-LmyL4TQeGB2TIG-pcnEK_HOVLlkbmJbIdtuuPYe7cPIJaTL_g67bhqj_FnvVQzfknu0GxETPXOBEtNiinIu5QB7hm8",
+      "clicks": 3
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=O6UJT5AG4XAULOJXPOKR34AAVA.10196",
+      "clicks": 3
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=IAEATWRUSDQEVBS7TOWM63KDTY.10197",
+      "clicks": 3
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyRt1QKgA5dfkEaFIOQ1d2jDg3OC_0VuSPzgzWwFMFXcAy3gmZ8E_hOFpwNWeacKJWkRSRUiDeMnuRWv1F2AUFnald_P-3jWtWeEDXg_KAp6upcsfm7DZ1MUyFuayQoDx-HgloolK8HtJWuWnkDv27W3CBIPYOo4O7KP2qQg",
+      "clicks": 3
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDONW1vfLuk_RfTGmfQKNkEOX6Rqk3tkY812MbC5vwKtiaIyXPG8BNfWOZTg9HC4kw8ovIrDNjedWULhO0Hn14kWpLOLhUL4iJdV4BsIlwGCy822-Dk6_3zkK56MnCb9S9WwtKtY5Iw8lGdLmFx4G0WtpG6OuZkznV00SiSps",
+      "clicks": 3
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=ZSL553SQBB2U7BNA5RXLD534LQ.10195",
+      "clicks": 3
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=SMUJAAXSIFBUVKA2RDDVB2ZDJY.10197",
+      "clicks": 3
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDOoVHM91vYWmrazj7GNQ_pf2ISJN2Ry7VThkufio2oYbeyOgtE7jukLHap6uYkjXtswyDG4NvwgrLF4-kUdYCfj1oCO03iRmY2iZOu3tjZUlRG1PZSRejGLx8AKivFwetXeOuTT5GCkrWIbcLU62grDUlUo54Z-r4QtFl4g",
+      "clicks": 3
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIulEXwfZxbPYsUBL3MHyizY4e-4hr-FpESgeP0ODvDcKfqP_Aucjf6NsfJ9nFeVPdExF-6dd0AcY_8pg4_E3G3xGrocvmSsuNUuFW-kcklpPTiRR22mbxDPqtojrqQo_pGOndHLsMGaClv5NPp7VRwFuBtdRKouTFvgZ5QGQ",
+      "clicks": 3
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=GUGNWS6R5B5UDAERHZED476WHA.10196",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIul3IG02pt2p-cqfqwaJa-Hb6A835pcJMOmrhRdE7OOG6Ydcm8ilIvZYUx_vI_Hk-SyuOX3B2X3LyDaxTLGQMF9by5COShGu4HrRNzLVTXtCYCfb5m5wbkYlJQ1RMibMBvZ61snq7CCsurhT5AHajdP0sXJ-OFMs0gfDJQIrI",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyB6x023jKRjlUtrUs_4IjOsvv7FMiYUjZ1DlCVKjOu12chsXHcGN0YqS9aTBOWROmUhRGzSBhPW_zzULjx4OlaJEute9XllHxuDM_Tkqr0W0lZR3e1A5ypFrBxLOOCIdKXRavUEc97MlyngxS5VopcfmE9zuFqo1umYpBmQ",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=HQ5JQPG5BC6EPIMIT3D4DVBIQU.10194",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=SS6B6VH4KAYU5M6YQ5LMSFKCLA.10197",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=B6GAMAIDO4YE3IH4OE3GJFD4IQ.10191",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUmh3b24gFYZUEwevQjEvWHrFv_usG2tgaV0jYRv2UQzpGlL29M78C6PoGN6gn-d2c0SVCnzMcZq0apSjpmSN7UleQwbJPTnMSxtF7ApdNm086P1UDLopgc1gC6MeNJpnnEsPnB79DxpTksUZ8L3Wt7jmHdIa56-uHsUzSig",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=36CZ5YYQVOUE3BRUPSUXQRL22Q.10192",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySDJdJ59ReePBuZe1YybbFguO4bk0M-v_JDpPL6AqQcRMq_3YB5FUGqOOLhhkFdOfsNaLSn65uTssCk7AXHuOa1zmuwk1O4iLeP7zYFZU_wGr_JhgGS9ejQZ2rJdOUwyaIr_941LHR88qQB9U93QHnAI73aEjtoceu53oOQ",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDNyxIvD2nOa3Aa2yPa5hogBjBVzAjAXy4-DVTs4thMIedV8Ni1hO2n6wjK83PTMTdAdvhjNfIlbHthmplMjpM2ZNRezo1C3qPb0KfZc7gRPzc4MJe-9ByqsOcdXTyK9FVzRp9-Essw0JT9NmEo85L94Xp_VdUfHBUzCCxUB0",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySlwSNUJKLG5BeZ4N7pVcy5yMgs2cZ-qhXOys4NnXRFO7T5Tamwv6hCyptJ4lQ4Y7-NBqL1uXHpj5ylfkHAKSzTg1DzHwAmuxDV0Ul82vm7Fpw-H0XxnKdRvwIgHZzdJhGcJmqoBO3IVW6CRoXdRckPMO2_Hyp0kVVapF_A",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyGdprDAp1MEnDWaADz8w_okaZ5e5Uz5oq0GNDaJE-ItPG2LsFkCx49kQk1mwpNRUO3XhngwCGt8BmhxhIp95dY2QGXDJFDzl_B-b73ECJLZrt7sFzfB1cySRCq_tlrVqVDBzAFK594hxTSgKOjy3ukxMwO4aET2JFNEFT4mg",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=VQQAIY2EAFDU3KOAT2SIJHC534.10190",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=SAAOYMGEZ3GE5M3QO7DJIR74NE.10193",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyHGcKkuQVlALslHTXe8UcpMBDxMbdvltjBs-R8etiatEGeAIG1bJMLmy5jw0xLluDmgeLe4acQpHotFy1vmjIQGBtCClB1ieET0N6SlobyPiZHhldPreNGIvz9zaIffYrMOrzmS8SXo5wTEv1AOes7Eu0KCi5fvesMSd_oLs",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=AW6XZQDAEFDURCAZY57Z56XV6M.10191",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyDAPbiawL2gkXE9CR-EjgLyQYYDjWyvQ7H5Z8ZGQhXqLADhVLEhRbHfvzj_Rg_1sQEnHP6GN6xh3vCZAQYYDRXcfJkrgwaf4gIkSIHfR3CyYVuuGrJAmSJVfVzEFcVObvJynhUU5JXZ94OBhrxO8Rk8lE8mNqaKyVmEj0sEA",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyD_u4paUe-ZLhNSbC5BFaWzf9Ef-i0IASkvi52aqHWQBYnVqFFwo1mJAwzJQpZGmKSEFNnOfm7h_06OHIpT66dgzwCQDF5XtDtCbKCgJdBQCS1icMQTMavzXdYb4hsrZxgbEtTmys6km1V2xR65h0Iy8QzcTxECTAEnTVHK4",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDOXYzA796lSVvULu9IaA7wR7DddGV78VrmNgj8RGJH814gLYt6ZYVXRuyIdrlNQWceqopnB-Kx4AD_jU180suJyVuJ24hzfgnLQX81dNw1mtXRiS2y0WS3IUV0BvnbsUSNS0p4t3HQpBdtQ7pRvm3hpMiyYnyB3HZBKOo1g",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBiNhQ7wk7z59QhbLRNnh7iTISqVNxf3lUlupu8-giiAevQLwJwF1EkMb28wMEDGDHOdsXCGnbpz54198irWcesaqG0cxpJKH_QyOGz0HUiVd_J9nX_7qIX69DdLGcVnwqmJfgvnka-uw7pMDXRoRpicsoOCBsx-8Gp9rV3g",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=6WK45JFV2XYU5LGMXTOOLCFXM4.10197",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=3SQFAPKJV6OEXBIYFTR3DQ57AU.10191",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=BJURKXYYLQBEJKDGLRXPOKVQVY.10190",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=ID6WA2SZLFQERLXVYEGURELP4E.10190",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIumKzVdNigx2-z__OxmgniGVA9LCytO4BWAriY0AphkYvdNWqnOVaEKjuXF0Y7BNCkBbM0NeBVERAFLIxYuB5IvSQXpuElU2vzEI0G1HRVbxVufB-J2MZYMf6ZsI9BbYfq8YMtNoml38T5SOSP3KKEc8hEunErnliCyloR-Q",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyUcM_WW8lAOZ4K0cupLWl6_Rh-W893c6WMF8JxYjpIEdja5mfepYmjvAjK1wEObHZOekqrLt2SFNr8U-mtYK89UfvclHvfW_J_17YeC2NByIihTTV7mJxFGdb0eUW21mdVJziyvrcCLqkf2Oo8sSzH9akArL2aDLEbn5xzg",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=FYFNLSJL7H3UPPI64M3LHLSDOY.10195",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDL0XIMrkZ9hWVSRCGzINcH8jwexggZS7NJ7KTLimkoNvpn5ujGVIMJg8NYIJ-ToyFroo1rpqxxvEhyWnqdItplxFofRVYPfrIbbvgF-zQn5m7Vu8qQjnA-LLglK3XkL7GlgiCh2rN0hpKInh5qdm5Bu3MdAMs9KKyC8Nn",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDPCY8DFGNebv8tdi3VZGaG1koPs4hN8kqfMfvhoYk7bnconsoAS6PX1hs2kMULJyXSJjxKYmYnkYSDVd_wj3smiV_cgFY-dtET_5c0aZoMZD3KRy241NOdV54pcED8TmAHSPq2oPJkWh8_OuEy_cB0on0gAk6jN7kK5h6zQ",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIujG8P2MyGwzxECrjba3_xpCABkMqkOUnQM_igtNfXqFwTzWdT8V225rEv825r2Wci75rqLA6BXiuI_3zr1xi5RGEevIusElzFRFRtMpZ9PxxUhzZS5lDjQYPuMPD-H29qoj1UBNmqNvCfUnhr3Yhd1GPF06rBtjJbotWk",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=VDFVL3Q7236EXBO77J6VOIF7VA.10196",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIunIrtYvN7U4z8L-GAIveSaD-dxKAhjxxkupTOUawH_yUtkO-RRoPgE1dQE7HOfRfG6D8pTHYNTOYbRjz1JbdKDrafHcFeUf8GSu5W8rzQDQXE88oC7Q_nMs6lqBXvaWdf2eXmrDc-QwmI36IaDFU9OB_bSY6xVYc2RuQvmg",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=U47OF4DKSMKUZACMJF4OYBNKTY.10192",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=JYNWIRVBKZPUFOXMTVWTUURSQE.10193",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=QEL53TNR5FPE3OKX2XP3PHX3IU.10194",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDQXxDChDsKXckO_5GdKDciceI9If4g2dR-ZVa9M4OZrF0UOTMOyMwHui9STPaFbgxk2U7dnchJrz1bNC6B-v7nVdzgWwTPxKRAYOm--b9j569-hn-fHDAYC2UXc1rkySKZK6c_2sU-K9Vig3UpCCPrZY1FDR6y2H1sVAiz_8",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCgrJFU5ZeFiCDwWljrwHqDUpy0fP2Nr92GhQ430g9eOav0ldkUarFR64b_P4Gzz5AtHheOW_asE2l33vxxbsiLppccETtk2pANZXDGToHY5_nOtma2NenmMWlLv4fSO46Kgz1m7Xja4tqgtKnL_BmVBY9D_su6BSBXBZlsQ",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBhqBn7kqq3qkTEi6FAhr5NVVX5GIKB9GKbgExAiBEiw2LPjNaVpwGh65-PWmNKN5_QXNyZuGAmW5AtHci4u3uZcxs6WLjgxCg_4wmXg_v52UdZGoWtpAQogffp8fCTgnhg7vNzeaAy5e_PV1guvfrW6UNyWmMR-VM69WG4sI",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUlMbk-TSQtuJt4TDQ-pkTdVe7HoT0jSd3kIZMBy_9Mj34j56sfmpDEvqrD16fyqHqBPIhx-VihPAn8lWhzd-4VTHZTNg4wVgaEkNSeRGZv1vbfA3Zg3IlHuWV3tYaOP8aU3AL6Q4KNhcYok_1OTdb6snJuSwoGy3eIq4fyoM",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=XAXSE7MFX44UZOBQXCRM5VT4RI.10197",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIul2GS7d1wPZCDE19iFTZZK5OFdwZ5W15F3yw42vhj8cN2aZ-pPhPbMttOk3OGSmf-MHUKU6Ytfr87mgYyMZhlL_JPUBT073QTtrYt5SNACfcOZ1XM_lSn2p4zG5dzqt99Vii7cy1fG_iwQCd0KFb1w1JIlU11p6IsUyb1Sg",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=HIRZFM6QK5AUPC2KYAUOO23WKQ.10192",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwBYIXGcoLF-4zp_5KtneGNfinezGEC0DZn8n6IEcpXTIauiquJR8y2pyak5IZtxNP9azZ-14JU8QAvEoCCb76WMj8okOQ8eiGl4DP4YsHZP_wC9BJGSDiV2SIUF357g5KzUYUG-AgLSCtg2zGDa9fb1RaTyavU7TKQQF74g",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIum_pJrYtKkjgq9pFiy-s3GTm11WwSbs7EBy0oHDkyPIhaaXQVYjagMG8Mfg_N-moRg1xB6wPOlQIipvl_rmvcGxJMG5hO9k36uj2kpdeSV4h1-_db7BDWIGMN3Le2hSJYfstBAWKo4TuF1gWvMHcDUd4aLmrUEvlgIvC3Hg",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDPAWLM-LMoUsZiI9K3Zs1-TipVlbW2uJPJ0jn-A17iTOkbdm_McgXHiv6nRG4NeeIT2P8ILN1rk35s-4awLbGplr8P5FXf0DeGkStxL8fbFQOMtmpbOCmbhlxBKFY7Y_CGtNW0z4TMTKSB0Js-OU28ESm_OktwjsxcQXmEe4",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUlAs6XtnDs5mL79Fjvk01HAjDKEYBDYjekrbwLFicjXZPsFxXv5QehdHwFVlyyAwQsZEILzYpD9vuUlvPFGwmwh-21YzRENFhFMLEFKvQQW3LBapDV7-7a5z5r3a-C-PArDJXp-yUV1bebJbuUYAxj5BAg2gqABFU_1uwvg",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwDRf57D5RWfu3yZiPAJ5N0W2i6ZhEU6pyEHJ1mdVQyAY8mehzS8BCVFRFp_RjBXahRJf_MFKCVoEQc-eNLWxXGxEmKQ3aJWUK71xr7PaZBA7Fq269WsajZ56uYTdVIF6aKbwqoo-ifnpmzCYlo3BNaik1ECzPh_1FncexsA",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=VGEQUR2RK54UHGEKZYMMXWGO7E.10193",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUllcgxhv-WpLkLVoSQkZ_XTiZJvv5DP9vffr2I1aOgNfopLXIVRLznMhYNNA798rfjtf6jt3lnIJQkHHPWkBW3Vy-uuGgt_bV01qqdsOYdO4kcphKfpl8HENTDRFyMoDIDxYTwroxGxwuKkoRaEVdMoQZSYigmPMjFGEw5g",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=RTIL65DV6QHEDJANIZ32FLFZ5I.10197",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUlLzm6wyoNpv1Zp8zHoaCOUGCf5ESorPnZep28B9xvZJn3NIwuHwNnTaYu-ohem8qPwNhxNPWmCgjJcCWm9cQjM1YpuEjeb349P-f-7se-6vSi26YKlOW5eYE9-hFRsEzXJTUXurrnMwBEtjqX8nYeBNoeDhEzOKEgp5ThA",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIunmxP6s4rbI52a5-Bjgc4NFP6naBZ0cqKX0nMTy7BPoC_1XKIu09fm58i9VWpiCm7B1yarB_tkK1z8UFFjCsAGpal-v6MIHjuezslwmyvoSU3P_7SuvnJRP_uGPnscLRZIXzap4jC4xGGwjevK9-yR79LW_RtUdn3TAt3bg",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCfteQ5dvR9YgxTUtuPqXMPvo3kyo9jcPC2rpW5dBLTxB8xFEXjBWOXhreZasFc-ZULHMRdzpHb2M4AUlGek0xpQb9ky6os6SLG14hKuXnSZ9Qr2BhXyuEkTfyjNXd0jUYnXRjkRAiFGZDpgicR55c6MCh8_myDeKwgRE",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCh7qPoN_96FXPvN4gmlR7nHabUvbNJA-smrmo5E6amBMK0GiZ1AmYVqOMPBGJitfbaZSIaOroe4mbPX2SkEzsQr4hEs71nj1xwYv9T32RYLZ5xm9G2uQHNGVMu1HikRoeZ3KoGXHPx_eDmbfudVKU_t5BY5tAgP8wc80X",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBjOml3X44nqcbivymAo3T_N_D_JVMijEisHO4SLPr3HL1xDVHQEh9DaRJJKyf8G0rbZu-xKjH2RGJWko7NP6AdsYtzpdCNWTOG5ne8gbwM4vdfuJ81bztxUUTX3vRejiJhYB0HEBgtN4RRwImBkB9Rt-HIonpua6oD6hezT4",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=T2QKNKISC25U5KOUEIGPSCVF6A.10190",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyHrOXm0KAUMhGZrt97nDXF_vrNvl0AB2hab6MI5s0PDPW7CQEE13mK6jjIEfy5w__dhmoEGmCTiU5LfLvPZ8FTAZASVuNSlbPUpK4veSuF3LveQ5ctOR-2dla81xXropqgSEw1uswwWAOVNnM91pXoiHn68cz4I0eVx0WJg",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCgC6qjsPF3PMDtHC1GVR-3RU7KKU7Qy-2QBZUX-hJJvI1jZU3BF9OCAn4O4Z_ZF1IxTPsj0q21kmwYVBABzaoP3sDUunKU1ycMxqJX_fMUb5XmiaBVJNBo-zneKtcAA8Coah8FZAU3CwC8WE1Df4a2k-YmhTQHKJBJ9N-",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyHEl-yaSeYUvUvtrgdhini71s4PD6H-t0Uc72-WEJpE7WcWv01wpmoSB5HwZRVmgVWNyTtwkflPjm8icJUIwmDSdJFGf8_ZlIxJpmgeFv1fV1EEtQZADmQ-_6TxpV6T-8NYBf8Uz-EQSfSuN4b9WGAdFiUmTrXor88y5hIQ",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIumX-xINoBcmSQwrcaTgxYf6N-VW5LOWllhTA8cpPntZj1iVhwCcUPBaJ0ALvEpvMeVXBKaY6EFtc7De2OFl9WY4-Eccy8tN3W2xwGSvhtcH3kndMEJnt63xfMrJckmmbpx9zqJUnjCD3uM8y0M4iFXNtxxl58aMS20ENJVw",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyTeyYBBup3cRZ6QYAMWJtLSg-1c9LEUJ6R4zkp0yOnkLcloIMSbch9MAy6-C6u94yUYM07j4L3T6-M2pYz-z5T_FUJy0WARpkpDaXhZKqgGdk47xgat0ACCv7R84vbNsok2isbvRyw7iOWpMXL6oRSdjjVipcXq9yFmCTeg",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDNcAraykArgdXGlTpHgy_HB7xoVxclT8anqELlpiCy0v6RRTlj7Rgiv6rtkEeCsnpoDuHHKD1H9FIdo6qd7y8BaWRyOSj6naNO0NHWRsqKq4-oRQ8IIPx9mJ82WixzdoIT4zr-AB6aDalHw7PfE4ifxN_fODR6FHvSfYS",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySSV9j95ixWyTmOxnuO_G9IofTn9WbMv6KZc0p10jVjJTuhVMcdRVktBKdJswK8buWAfpNud5sobnI50Ln13lM2C18oj3HcYSTA5Olsk1Jgpyq-iscHYgY4EmxAmQBJI0y_IPIVNK5r9K7kcComH3Dw_oJSi8i3IEx9uq1A",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=BIN3OMWTQJWU5JRE22HXHU4YLQ.10197",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=EGXC2I6VRKVETEZOOWWV63HRT4.10190",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCh55pL8LE-vmVs369n0fw9HolfEhgs3Cit9N2ySXAMIseWXDFbVzGtCcW7SvcpR5BXTSFLTyC7iSU_yBY8hWpsI7XCNpZ5EFeDjYx7MwOfJAkqU3RBRqzCkiaWt4Kiu_VrAHgIvuZT8qXeMZQmOQkxh3NKAg6ve7qUfVU",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUmwFFSUBZo4RvABR2yoy9tIPrx0pthwa7UjL6GrCnZblaVICNuK3nrfm65zIpjv1gsumDTGlXa_EfIeUVs3VYYMTCvOF0YeHHif7eaqv121EGsBQ5qhZmmlk-HmPPKlWnKZujahUjmA-xHrwTCPEgJZTZ8oV1uowZmtwnhA",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIul0dAwd8Yb9LZMOlu1n5vdM_YmlG1RG4F6N74Aqt_oi6Hjc_xnZdzrKHp2lAlAc6qWlYc8VOYiwYrFXZsIQZBOeczWPuK8W5XTKp2GzFn0mu7nLov3n8Y2zO_ll_iQzCygBswspd7O-k-CUPOrguvxg9SEXAKdpkYETe9IQ",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=YTLIISNVN73ENLKPBKLTZEJIUY.10193",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDO21ZkDkHJcGdlmpXM3C-7ZiKAorNuQd_GLm_dwcCcsqCYEWBEHztL55-DLBQKOAF7OPKnQ6bvqrtCSlDIGuiUP3L3tSNKA0F_aOwZWP_DdLhlXsNmhSruWiAkTpiLpO5jTnyHF4NFHYiznSUtLnE3See1xF_IaaaMad5qt8",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwCGWYocKyfisW-FriEwKroVrQWPiMpYM-vyDY3IxzXZ7VjyU52R6F9-XcXglIBSsQ_NzYFomMAEwZNVHZmruM3LqUGDFFwj5tRIe1xXqlqWJy63ZzNrPf2TsY6Dnuzjj2vprY1CJ1HMH0rWe-Zgd6RqZAqkKeFzJw17pg39M",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBiKDuiqsNFvNvBjSlGjev6B7GXL721excyMxk_4gKQuN6SmAwpfilob6m_QXw1Lks1H4PsF5mzdopOM3VPV0ZwT1d5G0sAcWHrjQz5OTuZdAvj1NL3kRaoR1wxu6impi4EimgiTcWL8w8QbJaWN-CwFqOB91EWL62fo0LHA",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHClPrsrjPjtCdshJhvVsAZETD_v89IZducJYLeWfCYuXzkUcIgprD_Lw2RhkKfoIUT3ua_WYboA1Aoy6eFjuPMg_7PNmm3fM-gTWtcZP0OFvJbgs-muIiUQ3xDWBm47OJyKcIyoPMqCMEyd5i1-QmDjD5Bxvg5cRE2O_u9RUs",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIlCuIYFyb9OFvEoQ60NnJfAo-Q87c2unxo8bMHEUEA5fcuB8QF9-j_hmuMyMyNRsHBdUTxBNmMsmxC9yNKPvLDx4KSSKOCDKrFDYF5dyu_NZtUjq8mpN4OXERrE4xPQ6PmEBVyCSqxMpluQh5bIdSGiQrJ36T9QPv3CtJS5Sw",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUlStE-ySy1BAWEwjFpIPTKZlVpklG55DAZj6sZju3Y2nuwrs2QJ51V2r5Y7twHoj7dUsjVG7t1Hys1C4sZ77hl8Cu3qwp0HsOdXY7TDFjt_HKCdq9Z7HtLyw5erxDZR-ZbYs9DHk7_V131Trxag9DLmacVMOyruKWS_pVTc8",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCkWcmdcKa5D_lwYZeayg6gTSJ0LlUIK-n6FgjTmUgnDiESy5ahjEBJfXT6TJR0F1Xy58nJ9Yda2vtuerX1xDoJqbh2ePfun7Hb0XphggEJvI_yYc05EtbJVGIVRTZ7Gt-I_9qZP1P0ohV8ZiTNMnl95oYBNToUi4dANJg",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySBCcaQfVprsub-lKQaNwcgSX-CIUXvDhdrbK1rg5g79HNKp0gdBfObUTksx5sO8HHWJEs4bx1NgC8pSlQzt0iNAL2fWqvuzP2wKzbuhj2vb6DFoWuGQcz2updMpWP_Wt1UqXnAIfVthK735yZ-TGIVds8sNfSKYe1bOFuA",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIulH_wDkHlsZkMtejKOkQSb8tCRaDXj5-aKA68nDeF-Ns_A4e9q83ZWMzT1sh6bHysLP7WdgOKgkus0Ccp4rpuRzuvsGeR7uPNjWizR748fTWUFcrOqOHQ9y27xiuhzEC4Wbud9W75ieXYAvPgm73z71waSLXa5UU7pLYN_g",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwCiyRnXKomyr0-0slIMhHLmmkHgs00OmX99HZQ_WPTA11n8HngTFXJCydOHuf_hjxxob5kA12lZVSAWITu0bHBIMTHMJ_ziqS7fI1r1TY5ZJLtWdhyY1occ-1D_mT6x81aTPAiL_54ypPKrCgaPOK0ZdkzPjkVgk926JwBA",
+      "clicks": 2
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=NTD35WGCQRHEHEQB32OEWRL3P4.10192",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDMshAaPZR8ZHLOg9dhf_-YIJzN8GmWq2jO97PJEPpdeM5aBw8UvIukGopiAk2axFgZlMm4JMYoe9AkhFgVH7QSWyvmVPtXHi5obcNxmN16OQ8OO228LDSsmraxsbi6Td5CgatuETUzhjQJTZH52CKA2NWfYBap-OY-zL3",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBhJQtAbA00dPebTc48eORhdIlab5ltgBrmglY13w7ALg8yzf7SR_v3HsHTcjmfoORK4NBSlgZaSjlhbTPEOotGYXLqqIzc7J2MluhYiXIaXlyiH-cmjf_FIlSguQIUcpxlpKorjyke_kJFacq2U7gQgbj3vnxUKqEErpZzw",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIlCgx8637_kp9btNT77jAEqtlxtO1QTxudqmkgaNHyS2YP4K9u_aIluxy6zQ5mFwTUVEpNoet56bv4F2BbOdQ7fKZ8684JmMyqD8hA1c2n62RbFDVTvnrNVeBA00fJRiKsjWS1Mkwti9D7EcCPHKMYfMa0KDS4DENJZXbnTA",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyUHZk8n8OY2A1qhR3Qmcgkfaz-pf7ZEhNeDtblehYzISAb2WmJHCd2EAyWbkpFOKsv7YcFKcMwg449z_8C0_Cw_IrSlxRYnaabbAb5ftzpGPxNJS_baAP-5kmyNZdnd6nngzTUIsEDQEfnEN7dKhApX3RwRTZwwqwkauqYQ",
+      "clicks": 2
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDPkbE5SfeR7dXMRqIvnJdV4CA-uT-wiuO7JEDuPaEzSa3Mu-xpLJI_-23kudAHYJt-tx-4pnkobLRCIlWfe0oRwvEfhvAFU1HQwJxFa3k10KVL5nRnVjOfK_AJJ464POjPKxxhE_OigK5GN8L2AxGrfW0nAViia2xLr0tyg",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDNYBW6iG91eqb2T68xIT1tnDJK62FLUCs8HT7Wua5XnderD-dgDznREcIvCHwAQSryyYqFBExfK2vELDAkyHiFCjLwvGACQwR7Ck2GfGFyWRLNK6A4aVaCZGBJAcuPKnzDKD3_-GG-ekVTZ5fUwG7QDNSFiiNbgtlD23_",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=GDDHFX6J64MUFDP3UYRVXPGZG4.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=EXGMI4CYF6HUBK4ZC7XUJSF2UY.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwC5qboqo2KLE6tZDrDE3Tog-HtPMCEBBRctOcteoGuwwr2jNdNOxIKPKx9qvQAuRQAa-ISO1OIda5Xwsvk_OfqrH2H5wd8GaEaKwbPKYiMooI8R3b74wpDsddE3O9K2gI-zgTLFK6x5n0WXRxGxno5fg-Q_eWiQKgPdUReEQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDLEjuHkWcGDsUPR54XB_OX1yjXMmjfeqTIfk8p2shzBYqzdor2f76Agdq3GYbbtnVrsSMru9Rs0p9c67gctu3T6FmoL7m63WJ_Ph0ptRQvpOokU01-cLHsT7InYeWZm8HTv060ARG9sw-3r9OkftVDqDkpsmPTTT0wEUX",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyCRbqN94fcHU9GGZHmkEokmoSQstNd8NjR_yHlljMmlpFmdyQNfhsDY7IpkSjCFxDlGFLLyrCFjemTcg5K4OlboURsJQz1GdQ8kyJqo4Ckpm25IzGnMpRrsJRBk4PryRlcY3ozaNdXAbXkjfVjSIe9WzvlxJgq0xMnB-R-Q",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=A4LLFKITTIUEDKOBMGAQBX47ZE.10196",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyQGABw0kCeb0ROPVXJ-975d-gsriypkuysOLpYu4OsUVS0OTjIPnKG8-Yb1cWYE6KY75Udrk9Z_uJM5B6foP8tlj8-XA9Xs8wDaUoUrj5M2mbr1qbDZ_fAS4a1rr-u7b2GTA9hnjYN8pRabvkXQ1FiIvgDOohK7jd7xiBQVQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDRIKrh3FACJKJZ9LfbFNc0qzIeZwIp1P-omQnwPrb9UQxZLgVeQaQ5sXzDwZzb-y-2BPXcOOHPP9q8RFN0vtes3RxmjPTP8Movss1uRdrMp5fJmkDucQIkHtEGpNKAKYgRQqkyXphJ9kVUHqply9kLik59vTQ_0HYXN1-O08",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=FDFD7GSJIJ6URCJGGWQVJAHDZI.10191",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=QNXVFTZD3EPEXLUYI3WPWWM5NE.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUk8KyQBkBPlnhnW_DWpUtOHTHiIXsCwpiqoN6Ws0A361YRhAFfrPOvtJbtFkV-NYfuOobUMqfNAKondlFTXUiM0DS4eQdf7Pl3s3gcsiOzFEFIvdM_6dmYUcXRWpc3cPEKm1wOvvQ3c7aBP0LMPYrwwW9S49N-Fuc1Quh2fY",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyHt-Ou7n7BSrsbOxY7jD5i2rCf4RR2jAod7bShsk54qUB1hJe03pZvbCRw_S78QdXmBjLAHJKMPrYuIBVlSUKLuIVP8LhEtnjAJwNZJAdHRVTG1JPJyi21f_zRxkhQcz4efec908cBMswzmXMhudHfUwd_v5HSMbvfsGZkw",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBnEHyUkfMfHyQF4Ct1QF2wsJLtHkQkzGjyUjLnQgCJrcPmbuUZuZhLQJGmsPib9B2-3U3DMvWF0OwInXuPUXtilTMDXzT6qYGOByDJ4D--1ojCu1HVwQJT_IQGf0aeqeT-4en3j0h_6DKXpNDbdSjMEnDwuSrwtJ1PtKrJQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=IG5WCZYGANWUPFDDF77C5EK52A.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=VWEPSKDK7MBEHJUAOC3CEQECXA.10195",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDOjgTzK3CF_KMxFCFQqQ-p7AdwRcMt_PIJmJnc9laoCcfYVZgtI9k3QzgJxH6_-OeuKZxlq7oTElE00zMDQpqs9qhmdt3vuvZ0Ge1wDD7phN3DZcBYbmDfUOYoOmOFtez4ARKkMS-bXSHPR9fjE5CVhK8dgXrKNwksEzWqT0",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=XKC4QW2GBX7UDIPK2JYDYMVRPI.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBjoVX4lQlsUvuJbfl-y30DrnLSvY55rs2UQJMU3Yq1FzA6olwdrVlanu6wA7P30LzGOGIlMOC7DO1bsr-PY8j56PJem40bR201YgeWoz6fsDc1paho3tBp2gzrfo44AC6GiFZ2uJf_sFTJeX1avX1IGSTCGYg17vaShpcr-k",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=HVGNDYV5F66UJOTX54YEA25C7Q.10191",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyCOK5IEfkpb7O_K2xHFFmqxGAU4eNdePYuia0pkcExJoIvFW8dt3ANKptTwB4xy66vpgM47YkzGo0B0Evv-bKj48EJ1LnydhCMHeXl8fVXomZ0BobcjGtZstxzzS1dFJw9y9_M-PlNlpI63d1OmF_H9chqnX0rhFAvGKRNw",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHChAcp1G8yCSRZc9-lkrbmNn8Zz9BGw7IA4D6uuisT3Ww3GwEO3IHzhq0HXYgn8hxj100J8ueS00poMA7jq0aSELWJ1W3qPBU-eVOFuUJuoasZsCyGzdYe-_muouZY9kU6SHT0ciUihgDE0RZ8Bc9S5obU7zsHrrKs49Gw",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=QIB4BXHL4OXUNJWXSYE2DCHLFU.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBiEFEQYFePY1cHTIhsJh_-Rd7MA9eBZVFqOMK39Ck1UtKGiSorJilriQPcC5b0O3mZUX9ZqOccUCjrgxXg3bbtOWZv-GifbdwO8tRoCZ14pDV5Az9hePxsrUNlw0UPQLb7FRQGDUrKzdb-ICco-KeT8TEethOmjJT8Do-RQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUmBG7weu1xqUu6SjiYQNNBqHCCPEelmKCs8bNAOiJiK3g2HwuO2toYBgL7N8atfGX77vu0HNrMdWGa3vMXLdHbh8TuyIkO9_cSsJLlDYihYTLB2_ZYymgyCZ5xQXBn3jZ6BforuhFrNKDSWjLZunmJY93yrcRmGSNwIN4",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwCjaNDtLx1h8pbxkDZqjAggWSvqfBlN3uIBTj9ve33aJmCVtdeVtObn6FhuOrGXqpzNiPiyVuwfAJm2bEZoMBQGte0t7YqtOCfnHV4MTQCkd7NPVW5WXioEDR89z6H204WSNhWyAXawdpezM3l05Dg_yhBkAXJtTUhwvH8g",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=2HORNDUVTX3UVEEZRBITOVKOEQ.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIujztkObXZFSB-1DDxJ0KSaZxi9_CQIxtRQfbKUtnHbP3qGp5g_o9ChYAb_2aPruwfngOBBi1NnNfB0r6D7zuLvakrTAdarmT4MXcetPEqPOfytuELwodrB6WAI4M7RN6aHUwVuwMm1tzWMPYrIio4DR-bQtsqvLuqfGdZ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDL12gv-q6IIt8qgLykZZkp8efg1gZhl1Lj5GZMG5_oGDdYigEbnX-Trw3e33luSpn709n5hRERzobnTmh82SwI-gZweJ4baFpF3xqy0xuV7nVkyjsGonMPWWef07avHrt6Vpu3T5uNstr5gzlQa_ALSTfaOpgruwPoO2c",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=XSLJZVGUCKYUHG6BOGVS6A4FXM.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=I6DGBTJUNIFE7DP44R5XI5H6NY.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=WITHOSMBJOPELLAI4ESDX4IVVU.10194",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=YSEV2BGE4G6EDDGXAD5IGXQF3I.10191",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBi65g6hQQ8BHA0-igCfk4lYZTrxd92A9EF_NBWQJ1127uP318nw_MuSeCDRK9ntjVLPB77-5PXWGqxsXWYtPK1zFlsOBCg1yxZBBR66P1iTbR1eR4d31hqZv68yP24Ig94SjolCOD5oBb6bBxLOBxQqv4DkKUBDpPxpPSMdA",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBkhduxMJ15_vZsYDndxrdjTUhJ9CGf8DdYCumS25cOOAiElo9dOfBlyDRsUtjO7A8AJTHNUzqNnniSi8SVXy833oQGXvEU9LYJH02uM_LBuZDd7kI3cg5bBo2A7qj4BpVOZWVzzD2QRV7jeRD6cmxVv_wJQltiR3_z4vkLA",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwCk2sLEZfq-XSF0DqKEyYIUWN1ptxQme0oA0DW8xKFKljSrSLsq4zFCaHyhtqh42ZkIFyF8IhieIE2ipqN7rkkp57s8Vb8IwFk7ydoYCLEruu6X2LfP9mBOGtoXmfwjrIqXyxGVSK3iUtcxKZcmVdoHzmqCHOMFQdTpHThGA",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=ZIFSVMD6NG2E7JLRCZJT7XU2YM.10194",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBl0ei78w8JT9Wc4obDkQlgm_urL8YxKuylbOJuH7i9Tn3B5EhXVGD3pHfsOgNIIXher1J2b55GKrpJOefSl3EdbBdq0lj6Af6o4fR1gZxXB2UW-lQvf-xkUb5lTBakS52XLF2I6Imnizv0ZrP116H1KnVGVagSgReaGtzxQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySB3Iji0gyaDtVG7sUtmz9cRSMZ5BBQyDIiL0fh70WAH3fPTk4X6M2PDXZsISVdaAIg7hgRT2Pi6nG18xcoOywNONpzFGmSmNUAvBA2vENrjkv-lMCGm4s8ejWuM-8-Vayztl1V0WlOzD4JWRzHpdL13DjFBKvwI8yF8fpA",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUl0mJBWi0dvEcZDZt6an8lWykYEGJbkXVvNJ9xEpzq7-TBwVv3kQ9Y8RzmtgSAYvpiOxgmnn5ii9I9EdY9QPHQtNnWHoS1e7Br_IKWiqjst-iF7xbutVmulrzwXam01MtpK2TSrCrrwTvo66NKoJIXRuBEgRaDKz1qpvgu3U",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCiXqQcI-CMgp4ON4fHochVGntM1s71xrZNCVyP4J_atoksiDdy6lwjxE_sugOBghFXVNO5rrFKEIp-hNMDcxwLQFWtqicXC4Ea8TIJoOpo8GQ0gKROFD8S6Js3L-8-ztaJ6M67DtPkwVqLj5RcjywviMc0rG0vupC_BO_8g",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUm9TTNChNvcM02z8BVFJTugpsUyeHPINvimYSPp7DFcEh0AUUfRkim3AGLwvMaun5XvOoUWO_rEaWlF6it3haKmD2GdKPs6YeQe5ojT_3Yjzr05CKvfb0KommRoQynEUncH-Fijl7kS1vm8FGiQ8kqJXwgKBulP1nQb0HGg",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=I7E5EFAD3W5U7EYZAT2KODNLE4.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=VS7ZJ7KAB55EHB5JVDWASHXECQ.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyTFnZ5Rt_Ae6IRimwWx-EMaW-DoJaYaac6a6xyAHtFsrsagKYeCvNh52nwKMmnHcBSgFhXf7CdvYFh2t59dQ9nQztnt6GqWBGxe-GzgYGE31wxURTwfRzOFSpyLt3AN1lUTRKcVAtS3Pt4XK566pICcRwpI77FRXbMnIxpg",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCjL8UtKJiriYhJ6ba29dTgDVw9iyrOeXdubMcj9IJIUVGbBFEMpeTZI2MEuiC-Ti7775fmF-IB0W7DjDGmsWALBss5uAk3qWJH9ItPFJa8fZhvF2JB4TxNxvlPfxOSHpYpUp2jr-G1XFgnEsVIflfDFSBMCGFNFc5ri5k",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=B24RP6A25Q7UBNU2OWPNVWYHUY.10191",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDO12SmYETyNe_VO6IXXWDrDfM13xgQfjcTRhMINUkz0zN5DLI6Nm5VQ8tWF7cpawWtF-HZNVeVNZiBkOB1nS0Ato-TSfmVI6sTjKFi-ISeEcgf7_i2Vs8831m9yPTRASUm4aSrwmFAc4hgcfjbbf_iQlVaNZNbR6QjYmQIEI",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=2CCHS6CVCDOURNX4ZTHEIN5RCY.10195",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=MVOH65X6GN7U7K6ZOH52AZGDTE.10196",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=5EN3X56FV3WE7O3S3LOSNZHTWY.10194",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=S7JOWHDS5G2UZGA7XMW2O7XKPU.10196",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyQ_OvqTj31V9yuVaMVKTBhNL1UVlwbHIx-RA9aKNebrfLYmAMI9Q8T113tKIYL6f1o7wOvUCgDajlqj1V4oHwbqSZDgdKgoRislkv3mzDwSXKAdgNMjD4BlWH5AxNKOCrHxMElTAGHHSNi_PzDe_P2lKg9hxgHOQBVTSdWg",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=2RWP5PCCGSFEJENJPPTM4IAFNQ.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=UWEUDFVXZO3UVIMZQADHZQALNE.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=FIX4EKZ6UXZEDACTGRIFRIPDPM.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBjj-JuWEUxgq8qvvMqOSRs7Ebke8RIQ4UXMagUetiTpgT2mZSYZrrnUNFDlz4v6LrQ3hAfOtG1xZn1A1jhdnzpgayLf63X1sCnQp-RQa6P3bRSecExCTtGrlmetlI2JUBPn0MpduqhnKVZZomcTy6MtT0iSdZJEfiRV8ovZw",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBn-sFUILinqjXo5-hD8fA33lh3T04AleXxpj862-3U9YlyZ86AAyIIaFCy4HKqcsvc1Q73XRB_d4v8MNRxA_jusqJ5pb-kN9IIGdKWarP3xwnoRDAPkDqm-7ROstZqlpLp9FKrnNsD68laDsLj9AxpToR2WsUzYsVog",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=QSNSC5572MLEXEPDWP2UOX767U.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=J5I3SX5OWYFETP7RJMUKWD4MJI.10194",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=OAENSOCQZZFENIZMK3IZETEPDA.10195",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIulkbyx02dYzt76aofbPoGqLkaBCL8alQug6mfDNxKHbONYstAnYHhoEa13-F2mOBH_zEUcg2UFCLHvQCRgOjhyXHg5g9m08I1tIDKN6B_CCSVvb3JvCIS-MA7WKQPG83e6cFMtovMkbO2eo3-i2ck4vL7a-EIH9mn5Po",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=CHNBPBNWTZNEFHRDZ437ZIWRNE.10191",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUmU_PBmkYLG46BJAuZxSyuw6pHdeC8tcfuQoFmUQsedvjbpto21WzwIetIaS0GL3QoqKKEWpOv50TaNtJJThWAGmC1C-Ajxwng2FV9ILTh2kW3s2HT4et6hj-tMl1yEy_ZkJZC31wCCKByJCp70Q3InZi338mQDWugyrCXA",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=VA2ZV3OGEVMURMW43DH7WJ7M2Y.10196",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=FRRWSGMBTWGEPHNOCPTCEHRMDA.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=KI5AL4FGFYYUZF3SBCSGTYOWKU.10195",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=RSVFCVWNN4ZUNENCI63B4D4CXA.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=QIPVQ2MZXQTUBJ5QHFBEWUFCZY.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=NT3JTXVWUD2UNP74JBNMHAYKOQ.10196",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=A6YTXSA3SXZUHLKNFBJEM75ZK4.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCiSyuvznHVFEC9K2QVimhNP4KTo20OvKbviXuWyEqZ49uaG1CTMTRyhVYBHg2EB2jOaktE-bsFhOCNFfvPWj8GMK_1YUJttj6-GPLmWiK265orMHThzwqor8sybV18UbccAYN29TAJ9nFmdAG-4hIr8akGtmfFaRhNFaYyQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyFQPihM3b8sBmN-YRnIEgfdUCD6lARfRtfZ75geMK99fFfZq0i7W7Naq-z4tkkmS0RVRXCAfZ7nkV-yyjTEcF7j9mf8BzrY_c4jfElsV-QtzeLv84QRWnv5XYlSVsk_A6dTw5bPUOq2xzY2Ag5ILUOs1uEF7Mi7jc-MKaTg",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCkh8TnwgMe0lEnNVwcA0U3wT1rnZJYJfkz0VEUc4BomERK5x9hdtSyXh82hyDYlM6ZS75oo2KjEYmCE_xzML0WMfEnLn1kgT6p7ZSvFvUizg4ONHiqhu6Ptzqhc-gMDGcGU0hfrbHtbIcfRaEIYlS1NqRYioVGlg_fFA9",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDQij1fczY4orljbW4bL1cb5YTEf7bl5NNeiVn81tpv17iR29m7DoWwmn7AzcafxslArZ4AUyGOGRnEGJ6rs0rEjBVP8opubcjXi9-jp0V3tN6k3tj4DAtFOUCN08bOmNgxW3dvdN76SmDvs9-vboboe4NsHwjRoBZkSut8e4",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=XOARX4MAL3DENGQD3WTBAG3HYE.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=NEQKHNX76TFU5FSPUYCQCG7AE4.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=3SLDRLUKACFU3KMLGE2PENZW3U.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDRO-PGGXE_xwvbHPfdnhfGURdd4riJj2P3vtGPKhArOhAi6rMZoPhqFD5edTXTlOnKRB8O8XdImgaZ2AtQIYcrqSUFaaJNW-pcmoWr4IfKL6GxVx27-JieIcOStmN80BfU4rGP4BGzBdYPpoUw8CZ6ri-bCBLStsJsaHxIA",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=WWYWPRPA2URELOELGSBM6W6TTU.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDLzyBV61W600MlVmI8wrTwTpykD5M0wBE_STkzoGnfEpozC-rH7DDZ86NV1jwTAPFqEYICAR67Ni6nLTQcegGNWA00Jf1Xp-XXpSlf8hndvueRpOMK91SsmYHAFwGbhDxupQdW2ynjEmi6ZptqLObBw_8kyp57Rkx46aU",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDPoDO5UtQS-7umoJr--KT-keo7LsA7J_gJocYXtfvRKhMX5aER1Ga-UFHjEP6PpkXs640t9wixbzvbacnO2I9Z145m6GGNS424KZsBM2UTWEZh8ZrkUruz7rS2TFzh_g1wVZm8hBerJvRY4mQF4-qwgniM4bpIsCUxast3w",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBhqHPmtpBbTjRTJtP0-qtJ12g6YR0ZWucyriR-TgFXghIyveJpybTlyUKVSyjb2LVCuaw4Kknpn2sx89VLdmKfnTa9YXnyHmrxAV_OnaEl6CnrJqWHwkBGYd5OmzLP4-yJdl5mPtEFqA8W9DvtqFYntVpOVIWWeeAIPN91A",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyB4zYE5Kir1K--36kIQF70PUhjySLv91B-_KTHx8nO4VH2PvoxbbESIrdKQkJtszCQOoqdONErrP7WBSohk-MQ-_SkYYxfaY73MuecDaDSCwrt8bMQTYXk18JGQ2QW-ERE_LBKLN_6wYb6kIcr8vQO1F4Ym43-g7AcLliV8U",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCklrjLEeG8pk36cRjvDg8pku7eQDGOg-5vcG2sYHFci6qTxgTs0IP04SodMtXH7NR4f8UDmblrwqr_q9JL3AGQrfTZlrkQS0qw21-dA1lwBoOr9ydaXpMs2-2y5Nh5IYfGJtqsXR51-4LxegymgL_D37Gct4x0ijLjsupEQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyCS5NvtCfC6vmunVUqFYBDddV1lV87uTiWHwiLUPiwOKZtVS6BuNNUTlkZyXgqac550t3T3ectPj114s6LF4_xK7Fa0nAHma31qoFKz1LPc4-1kBbuxz3X1R636gXsswpjWUvqVl5cdLhXlonP_QjP_TpPH4oV4WImFd6Cw",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUmxuj9Xip_KV6E2lizC0QKXoQh0PBKNVMyqKd6uY8ACNKHUXwPXnoYIl2s652eGPpg-WY6SoNhbDKRDba9BiFbWF_FL4JbKPOI06a1dqDTp5wtUmg_fjKkUzkC9m1asPCzF0Nr4Uffply0G52lFmIKp-pIHCP5-dxzev9YQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDMx3E-sGQRmG7ZhKWLfWpIVZYw-RnHqMOabgsO8qzqJUG6OJk1PrpInVj2Qt1WXowC4LSZfZQm_oW2NtIVaed2alkjhOs1TmB6tGE5SOGkOTbE0CWSxma5iBlc2o9IExikY33tfVrEh2Ohkc_uBzS1_fNTqLlrE-4PAD9",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyUw_WEge9pbwE33Ql7Nag0sUNgv2D38h7uYz3rQotiDoVFUAMpsBBGC0cdts3GkK2doSaRrcDjmF8wZ45gBH-Ii72qfY-djh0iFjUGN5ELEY76NF7ds3smlPMfUGhRM-m9YphYogHJO-66tUplH-T_dVn-NxlAOC5u_YrKg",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACFc2Uh10wgrQH5wEJ3t5110NJqIoH4WU3yzm0kFUt0-NQY-VW8a2AZTUcjDu1VupVeqop5aDiFFHAiWLPTmDH4vVR-nRgdJjHRd1qFs4FtT1F_mpdu5ruQOrzKOzfmvwBOBfQroGeiuCqPKirwwPCeaEs0uhTWMBttCpeA",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyGDBBZBtRRSnBlSnRpSuVzDL_JM4kYaMWVXNqDY7c0weq5_9zUntns3QvBJFD0e4-O3fizpN4kCP580N7RzJZSUiwPdyvEz_bG63MkOoWnj3nVXwuugWtx0xyF6aN0WmbmElYjqAH5Bt62eIJNBhLOJEjAQBVqCx_fIF-Wg",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDQ9eDqUqgJP8CUoqgyWbqWUxGiwYEzmVSvEVKHSz1Gylsv-YuNXl8xzU4iXMPphwzQf-ZromjYZyZ8S-AdI3b4w8VtuOZ05chMsZjKE0Y_6vMlhb71MfLDK-gAmHYnJVSAAKQNoLXIMZP0sFsiyXZpiZwq9Mn_uIqEdMoLw",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyDqzI2Rbajpu5dxwTqBy_cWwe3Eqw6xYh8Wcnw9OggtWW76yG2zV6e7xyZ44nN2IQTfjJJ39hJe1lA3N8Fh4UHcAZBLAyigXLBORpSDzjBm3qCQGFfIzomyVxpnX_ko8IddIcl76P0Z2ds3JMMz4ofhANlDhQ1YY0CzB1wA",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=GBIVDDYSEFCE3GJMQRZVEPUQ4M.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=OUV6MFJCXKFUXFWINNSOBOI2QY.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=L2Z2BEULTWNEVGLU5N2WU5VNTY.10196",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=EB62552XIE5EBJYY5PBFEEWFGM.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=3MRU7YLQOG5UFORRCSNYJTNBAE.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHChOO48GE2NkrHa0RTm45sCev_rUmussVtWjKnOXhgwmV0WmICvi5UOsmwSSCvh4N0lflSoG-u8aI8-lLqfhYvISUd2eyb5U6O5hZAbZKL8sZdxNhdneQaIALo0-CSzICFUoZ1Ga2P60RAQZw53AqkCYv_7o7_GaFgJf6RFQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDNB_FeBrw9druHx0l1hcRh29huOS52dE1XwQtxzjW5Imu-TbS0cQWZ4Cv_7KR8GKXfaGNSf3r3qRjkosfDfKo_zejL08eM6FtotlaHTfweMOPy58RNjXZfvzPxyK1tMKO-f3V8e6fzLBlqEwn7RQ7SM6w-QfcdgIUmi4",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDKc1paLyQw7jQpZcNkyuwu0HQwavsngrQlfT3-KuRLf9I5ISJRLTAxhEuzFU02BFyks72oAssLhbAxtKXj5OOAVbrwlgs16-z0__LjsRxqnswbtID8KpPRA6eVDqIDYSo1w8rbLY3GiCUagPk1NCLs1f25SalPkz0pY6C",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=MZMC52HDS4UUHHL2HJIDOEDJAU.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUmPoDx1H2XT-L-jr2kcyX5IQ47tlncXQUsv11q6RkpyRp26MLDuNw_eyurfRxQ9HgQcWBiPzaeem9KR74TUu4yZ8_80v65kP1KgxSqKIPDcG_xo4g0orJnFZQ-tA6LKJby3aL-Tf0QinZqA6JtSBarORXNjpMv5oQUe065Q",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySyvWwfEzYe3ytF6A3TnUoTe_SKMV2JT_DWXHLKzchlf1_efcuQ6Dj2pRkFwpa3lz8oRF4jYaxLYJfdKky4osVJ4gF5rHVlAtSGiUHQYcWfgu2BbN-eAR7u9lRSMRogOr7yZ6jnC-KdLC49WJwrgFcqrzxX5rz1AaO03OmQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDKoco_hY4w_A4km7ieBGeqfWFTXOnZIYCbt6HjMguGy0fj7RUm-Nc0HWbXjCELJEtcoUE-uY9_WJRvziZas653xe54fpQzg-LF7ULDD5Kw6TG7LlaIuA8EHDAEht3mZykHHKvbaJbC5R2LOwSXkNlZWoRZUV1iOsKrpcS",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=7XJSBZRBBU3UJMQSM2XM64B2OA.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyTcU6adWmIVCwdMkxpb25ujw2gUJOmhVUoq0eIFpaaFLuaNOMemKj9b_aHXyuOG4kJId5fC3cWj3CvXAn_vj4h4gcnn-hECh-G1y0OAyVIICvcRRqq_gZ3vljJpa9_9fFE-oSNogvxUOHkp6HwRX5GJSCRQemHvHU5DjC",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwDTKn61Di7VuPqQm0SXvq78VWxuIQ00y1_ii8h9QKaeM2VFygPhNQx2BpKyR-FyyxXN_P5k1VvEtEXNhfdNksHtowz-YLRZlcHATfdF2bFgCWrWmJezDMsqMGnJHUBOZUtza8I_n5Tr2OKLr--gAURtT1kKkY-0FGOOIrWQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=DTK6NYZL2LMU3L62EPBUQLU7BE.10195",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=LBNHBWMN6UEEXP2IH6XENFRI6A.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDMKjAoBnNe44OjPOi9TnsrONHBePLSFpdB2RuW1tD50pSSkAKeuw4QKSz68V5Ff0ADNI0TW559IHdS4Ch8EQBtb-Bd6XFXrBurYAOeC7EHajOVhmDIGKc35fRZoDkCxOH9SzlHBJgcsBv604uJRGnoTCALIAl5nq27SyqLg",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=GVIYP2WUSB6E5HH4UVOHXJKVLM.10194",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=4IE42P7HZEKUXFKVKAC7GPH6MI.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=YA67J4Y44IDUJGP4EDQAAM6GV4.10194",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=WZHJHQXGLUIEJCWASWISN3YNRE.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=UYZ2QW7ANBPEVDZ3F7KN7U72IQ.10194",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBhzjBVtX2xSJxM8CJV0uO7xr8XtaWfTURhDtvKY_MijAJT9xLYg8nisygyDqnCq2Y_wD0pysuBd5J-bzcsCxvFLOcC5ZoWAYdaJ-q8dNopnjhCDzHEVYwdVrrU6EoZ_Zr9LK97D-GBI50v73p1E3xjcPutund6QEe8biFIxg",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCk7xyRh0WX6f2vBmKz1K8xesmb6VDhCxjPemqvKNCxBlzHC_AU-zWdMWXBqUZrXFK-2QCbC0i34T0lBmuXa8_mHdYyoxtmmMf-_EEs2gpxLH_WdF2Na0nmu_Grz0n-ARl_tggssa95BVDPMP5MCMBNQ4nHKemDylc5LpNuHQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySYGRjR6zCf2F36dw9O3brWWJQ1ZRjmBReLuACNPNZzYYI-KLOWV9-V3baQAYd-XVI3KBNWNWJZAQRdy6ht3riQktCkdteYt8e50-6uGy67tQHyX4WUSLPM8Zj_NLGXQZNiTmjL6bonxzj40x15xH57NCjv4W3kWIMfCB",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=Y3EVKQHYP3TUXL7ZNFH4JA5XXY.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDLzDlGK_5MAbPCwZWwAEErfXfwAv2_RAOgE40KF1UjgWzOhwvWvelIXvzV6W7dtWncYri7WBSYfZyp3cbhjjF6qLFG3jg82SxBhRa2rrnYipAaraJS_pBp3m3IuXZtizjvVhyE5XJBvc3HEaNfG0u8UztZ7aePrUwZ4vB",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=X5ZPPP4LNJ3EXEGTPFGU64XFVI.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=UFXFGCLQ3J4EFKUHWXGKYH3Y6E.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=4WYJ4ZLPDHXELC7BRKMH7OCN2M.10194",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=HIVZWHVUC6BE7PD6KDB6FSXLEY.10195",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=NCVG5QVPL3TEPCJFRA4XDRWNKI.10195",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=BFWEIZRJYV6UNFDELPB3YBSVBQ.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBjntow18fwmjIKOfjrq5ImKtj97VXipMFaT3bt79vqiuYr7acZI86bJZ5hIdPzS4zQhNYMvU9bsFs7iSOjsh40JPLWiaOsJKrnk7uqIIRhv2tDqtE0LQtmCJSOII4Q-91vymx1vjdJg_Qe1o2TaQKTQwkHOEcp-aJTr6CAQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACFc2P2BLLcU30MkF44pgwB7pAjPgv2kTlpz5l5NjSmWZlLznETRjFB2xZi1hhNJFcZHN8kFWARvG4mhunq6ufAkvb3lsQn6VWvrofD1PM0wAc-q2U5lAoc1EjnEeUFBI50fRONUpQAsyTAdLnlyZAbE9de2mfDBHKfkLVk",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJyUIbT5mzbzxZzJD4X2Ovqqu3TLHVMYrseKhTF7IY0MW3_pRXR2DGm-7xzc7bFk6xFd2q0FxEqZt6Bu0dP63NbIR1IbckjVF6tWVuhiW2dd1LRtm1s-bG9BwF-CazWNtms8Bkx8aGHelt3jygQF8CHS7i_60H2_okCnfsAtow",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=RRKZNJPOPUSEPL2KHVDJZ7IDNY.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=2UUIDLLDXTVUJFKFLGXFADLYWA.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=GMMIHIV6TSQUXKT6NXM33WLKXY.10196",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBjQPvGeMFJ8Z_zJ54EukycETWtKPMQ3bjGm-tsZT5SgYhoN1A5_7EGqyFHWBrEJdf7ORr1cmrGC-diEIomv0syGij041JpVnOeGwt3NVHuTCqxYeAeEZ2j4Ux1vSIrxeEybwf-083F3pCYeF3Tkz5JYVGYLw3oFslZiMnM2c",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=KM6OOUIDS24U3IGFUCP76VORO4.10195",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySyA6nNUD0IqZBuQCA-IRqMxV6Hkf_QUhcHHm6CO_-U64N2t-Zgqbkt-Rz5zciSqyPr8NOQ7evdJA2i_2-e9o1Dklku91pKS3_06RhutOtZ5cYSeCzlZdplcXupw2Los0FK6wW27sSyhEdE7KAktsRx2DoHZbeFhxSTd4m0o",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBiP0gPFcE-8s5tpy60RcC137wrIQbHEja5ZXxR1AId_FFn8itDDCZ8ksK_8QebY8dA0kk7tdUc8k_K-x-VhuD5VyyyxSlgq-mlmuEqnW4gpgwzFt59fx_ZGLJmBbRlvNRY9E7KHhv_72ah9u1KGi1SQjanToIg1JIHEDoAw",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIujVWBXDmk3TKIs5MS39z2EZlgE0MMsRHcArUpSOqgI3eLHCR_he5OsStI0nEJwyTkEnVfeO8unGQBy8FUAQv5jgsMK7I-BOdyO2gKw57ob_aEAIEX-s4EGDi9AzEARsKcFEgVv_BMhgkEK66JuKK1SJGVRgd1G2qIrTUR",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=7DV4R5THQCRUDJMX2MTOZSSQJI.10191",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwDboNOm-BqUn7yyj-XpUP10jkJQ5gYaS8AtxPHvJRhCiUu2byKCszFakPUQT15w0Dx8DAyW4OrZBlduJc7nTbH71iSA7ZUDNKvKl27DaA9mIJwd29zh9MwKFuU8UJD3UESeqgP4TW_y7p4WH6KEcRnI0KA-cIBUJP0n43fsM",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=ESJVZ2HP4BMEVD3BM2QJYPR7KQ.10196",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUkyYWSGaQV6qsffrWSowmo4bitaL3ZjKhPAj_WMKCnvNOrDD-0IIjK492X7pTtrDlC5HoobnvZ5sHH3zSB-5cGcux8uI1hx_S9-k9WaQAKGaDcrIhpsQYaMPZLECgnrnflwv01nowc_ISMZrmTrSJfy4G7747Rrwps7_IUQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDMJVnClC3BKJjo18B_05uo10Oze0IoQ_jBcrLIE_EX813IyBbSGbpr9pcOsPNX2GekEeN0q40azIkWMblAOHCwo8zbxxB5Oeci9kJJ2gjJ45FCdAIj8wXD_UhbAy1lCG-fnLhc6cF8HIvxvkLZgcqvc4Ew38ma4NPx9M2",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySp3P_lKd2WO8rsFa3M0F8h47b0G6Kd_9VzopoDWANrigMJKu7j-D5Pf9h0h9T4My_flSBdeh-AThUz6Uv7xAwPsH8kI_J9rm9wkY7LSyHiXZhqqAxY6nUUoVqVCx1YEt_sJVz1Kndozkxd2qvzjwYxtpYENuDog4SbSFaw",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=FQNNO3R5WBAUFDSDWPEOKFKYRE.10197",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=VAPTCS7CITYEJBIILP5FQQRFLI.10191",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=NEHOMEQFSL3UXKIN5WM5TYMPEQ.10191",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIlBoShl4YMVppK48UeKdVyQ6dhmtkA6z8wFY_KAXaKKZ4BYgg81j8h3K36MAFJEdvjbRaBM-rW9syYvTh3rSHI3EMHEzsVgwXuQCxOtTOEiBxBGnRPHa_fwpRzsgUFyHLUy_W4gUgAVzK554YaEV0sJiWUZNDkM-N8Fjs9P5E",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=QNGZAXUA464E7PDK6GOSBNYBG4.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDPMb1v0TBao_6WtfUNnVyXIU_FCebkacKeZjkdTY0GaBPMMKQKTzg0vvDg67VQzP1GYDRp0X5B72grKjN_LoyEE2nBoVuzSVk_x1z5UnLgw0QtVzSzuuWJtf3shgisukDTdh7z5NcMY8ZXPRLjLSLVP6mMn0qoT9G5LLmBg",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=DXFVZ7URNX3EFAKG5EEMSJLQUI.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBnENPFgOEpdej_b-sZGhDZ_AFJ6eYrwi1LXBgcA_UUIu9Mv32i9AIFR_MfPUYtNTc0H-iopWYNutIk0ekUVlM5Rc3rBEVsNTntQSnG23xqLjwIFRAS5qym5-YaFFaBnvJjXyMj7dyLXQwOPjcLVEdXoYSdGFB0533Ivbcbg",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIuiQaGCDv0WESFyWWwzo9xIN_5rd_EhNQ0nybXE-M1qCUnSLE5iMpTKXb_d--94oF7uDZPpJXFnSwumeXb_rEPYdluUTANs7rECCZdAJjsZat1xEjUfQvJBEb9hLxBmiGMLXvYp_6SVzox_FgSDFMeSRMNtNwXnGKbyok",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIUmx_nUc6ML6B2CRF5IkMCQHj-LwmhhjwW-hupazVQRmy5qqwqT7QcQnmPuIxD_3p6dqzPuJyTwdQh5fJZJweypPdKkz4sYTOqLFpW7jBcndPXAVqK3jM1lXTelqTn_lNnQkGOw8iyADqSV0q74SGtyM9hZidsDvNnrVlWWEc",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDLJ_-9Nx2BdCMRJ3lH9jzBO4kYrblhttL4khTIMhpfzgO5_pLs823uUVBXFI9NpLZIkwEmcun7DbBstUwh8R1FSVF6Zew75VwZ65wRzhq6b-75A8bxvR7nCNUAB_JBXuvCoFHIWVpofkflI7VrkOIoqbNsmK7-S9N82-2",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=XBZ67CNQTJRUBHR2JODD7ET2LM.10192",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=JYNAXAPLL4LETGGX4BP7Q3LBCE.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=ZLGOVH5BY76EDFMV5YP6GXUNLI.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBlrVvhIZm8k903BBIgMH67mY2WUp8hnemsUXhkNIfmtapzFJ6W0O1BarkaBHVhassCi39O9uPYoMzHj774FPiysm9vwwHNtFJ0vdBNtQgdxnN33Vio5d_TMxVkzXxBuRmB5O3yUjWUmQjdJ13jXiuIz1IKysq9TkR4fXzqA",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIyG4fszac2BpgcfwNMK_K1Rq7CPIHCKIu-6PJ2TkN9SvNluYqJS9qSMrcW6L1er5-qirwA-S9fJy2Cg8Hr6MAtBFLE6-dZWBe5aH5oQJnzOhLfY19hGTD1JpWn4YxTjZsge7zM3fZNi9ZimfMwBQJhjyY-BXRWmp-Ajq68",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=GOP7IUGKGWCENCQTBDF3DYZ4CI.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=OTBGUMZH6MEENBSNOPTF3YOLKY.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACFc3I5n8CR2jGRldbB38BN0kamqlcOstYYB3b3TfajdPe91CyzYD-JCKpCW27jA95yB70OR7HupjnG_U-P0lhCyFxM9WxmZfng6PszPSvOlkt77hC42GkRHCI_II4mRRkyTYSnrSAupBauAqyeXQleU5ip9FDYrJpSbgAQ0",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJySHDOaWU9H7hPfBrLxpNgcSaBKumYd1mAjO4G_agq6ZstchqPKSP1DJJKspB8iLtzL6VP9PT3NpOaBf6O8xcD6RgFKTy8_wZknhZXVRO42Daw-y6inBWoGlHdHdOmL3uyAVEeO2zx8LU7XuDRNUKyo8Rz2x7XQFNYZ7nXMQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=TFIFDKS5PUWE7FTJQDBR7ZL7EA.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDPjU3qz5aljiqesHsaATo_WvvAULQ9kQ92Mff7AT729PE7D759PqB_Fa9J4YZN93AsiEI3w2FguTArkBBG8CqJ49MDP51f7DH2m2Q1oXSw44SJdnoyFKkMg0ZC2RXWhbqHDIEtfHR1BuGp3Oozp6cstErpiga7MDeSwa6mg",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIlCzzizcenZRFw85DyMmHvrsZT2P4Y1BtF-xW2Mz0InIU25Kpzhu9fkQ4Db9euyrJc_VENHYgZWngmXpLwmDrrTyUhbl60nP6qspirBN4Mzf-aAiIH51C9vgCkMFlb53gj77KM18NFWLqYVpvfkmtU7hGL4ZXmlv-s2PRF5w",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIuiMaXVYtO-iXI6QF58r1-mRlm98xGsmyn5YeWDp07Zg__cycAZFOy-0n4F1V2zpOlC2NFGEbBeFJYI9SVBnKoqRAi2vyiEW_clNSgNPa4yuCg1JajbWPJRODKKhVprjJLiiWS18XJ4Znz8Zs_2gIQ8_QjHkN0OpjfEiw",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=PUUHLMQIDE3EFEOZTNUUODBQXQ.10196",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDK0E8Lrns_4tipXjDSmF8U7EsPxZ-ZdbONvhaEMCKsQ9wgYsKpuKWmG4qeefl-aIlYrjLhb4r-ts3uAUoWWe08jv6w2PxI1VFLR6k9UuJeG2B6-CiG__jrDoD3HcPzem0-Dc_Z8_uTiUJGqVwPOIs8t7AqDscCwJ-xGEJXw",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=IHPPMWAOFJVUVA37BWO254NAOE.10195",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACJwBolhhZGv-L6fPLqiP_0Q_d9YTtWrmq4NQWNapk9jXCLDt_g5sJH_9SRhfV5_xE0SkZtqfonriZOcMKogfInDSxynS2LrHoknP6lo_mo58foPcqWwkVJO0mv1hgWRQBG-EZXRHPoTBvItF268BqduEal4oRoLiWsUgtHqJo4",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=HTBHTXRRQFREJHIMEOOCPWQ4F4.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIDOtjccpyVnMIv1zTZtehj4BZ10ri-fvEgBrJ6WJ-jlDCIIq3LS6GEO254CpCGx6vSP9ZkzMliEUZatGvCxm0vajp0Z9A1TNUn1xjNVUOvPz1tRECyM-C8teg_wD3ON5QzTt_l7z_JKf-NBb6KFbbZL0uoik91Zlt3lv37wC0",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACHCk89o3rtKTtDdo_mp4rFWSP_e8qq6MQglGw30SS9V_6w9WSlarqh_Nc-495oHGKopV55_vMw98dl3OJIvSTw_uU2rexcCkT-VnztSVama1iJSB0M8bK60D498JMzTiwr1l6ktatHvWQNgVrS-KH9JMyvmq2gpItWgxRxryD8",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBihHDcjPBleaATcD3MBhHVlPTYYU-LaoETdz5Ol1e8biAdhtUdB5VTdRgHaRp72fs_d6n1SFmaC-96ZaDvCo-WOWHt7M8f1vQbyryzFEpPoiuCJT46YtZlhX6EAFHWILjH2N4ao-vvBFdk6DLl9GOlzXievLcJPBrUEoIYQ",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=QVIMVUYC3V2U5AZPQAHBZJCOFQ.10190",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=WAESB74ONXOUVJJDXBDQU6DI2Q.10193",
+      "clicks": 1
+    },
+    {
+      "url": "https://pages.email.mx.nestle.com/page.aspx?qs=ABB7InYiOjEsImQiOjQ4NTd9AAEAAAAAACIBka-iqD53yEB6T6jigHhcirSqCMtjri6DDli9OBrSgdywPt1J3CWxx_9NYRzTID1hJJONKu7p0PBOM_I8MmEtix5v8bCHuKi8hXVqtXWJf77B9RInTNey9Iah6JXuk8vmrXkjEgWa7lXXFGuLloFxOG9eRO1YIRGAfGrs9A",
+      "clicks": 1
+    },
+    {
+      "url": "https://view.email.mx.nestle.com/?vawpToken=PFHLFRGHRMPU3NO46EP5AIGAIU.10194",
+      "clicks": 1
+    }
+  ]
+}

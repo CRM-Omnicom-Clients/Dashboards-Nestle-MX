@@ -1,0 +1,409 @@
+{
+ "cuando": "2026-09-22T00:16:24.599Z",
+ "volcado": "sfmc-piezas-2026-09-15.txt",
+ "hallados": [
+  {
+   "id": "004-P020",
+   "col": "Tipo_Envio",
+   "valor": "one-shot",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Fecha_Primer_Envio",
+   "valor": "2026-06-17",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Fecha_Ultimo_Envio",
+   "valor": "2026-06-17",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Mes_Lanzamiento",
+   "valor": "2026-06",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Quincenas_Activas",
+   "valor": "2026-06-Q2",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "N_Quincenas",
+   "valor": "1",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Meses_Activos",
+   "valor": "2026-06",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "N_Meses",
+   "valor": "1",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "009-P006",
+   "col": "N_Envios_Fechados",
+   "valor": "3",
+   "fuente": "hermanas de Fuel for life · E-E3 (3, todas dicen lo mismo)"
+  },
+  {
+   "id": "009-P007",
+   "col": "N_Envios_Fechados",
+   "valor": "3",
+   "fuente": "hermanas de Fuel for life · E-E3 (3, todas dicen lo mismo)"
+  },
+  {
+   "id": "009-P008",
+   "col": "N_Envios_Fechados",
+   "valor": "3",
+   "fuente": "hermanas de Fuel for life · E-E3 (3, todas dicen lo mismo)"
+  },
+  {
+   "id": "009-P009",
+   "col": "N_Envios_Fechados",
+   "valor": "3",
+   "fuente": "hermanas de Fuel for life · E-E3 (3, todas dicen lo mismo)"
+  },
+  {
+   "id": "009-P010",
+   "col": "N_Envios_Fechados",
+   "valor": "3",
+   "fuente": "hermanas de Fuel for life · E-E3 (3, todas dicen lo mismo)"
+  },
+  {
+   "id": "009-P011",
+   "col": "N_Envios_Fechados",
+   "valor": "3",
+   "fuente": "hermanas de Fuel for life · E-E3 (3, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "N_Envios_Fechados",
+   "valor": "1",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Granularidad_Periodo",
+   "valor": "dia",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Fecha_Origen",
+   "valor": "SFMC · min(SendDay)",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Dias_Envio",
+   "valor": "1",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "001-P033",
+   "col": "Email_Names_Variantes",
+   "valor": "O_NC-000600_NA_IBS_FOOD_NEST_L73_ANNF_MX_ES_DE_Audience_RN_AON_E-PROP1_EM_3018905",
+   "fuente": "hermanas de AON · E-PROP1 (1, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "N_Email_Names",
+   "valor": "1",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "001-P033",
+   "col": "N_Email_Names",
+   "valor": "2",
+   "fuente": "hermanas de AON · E-PROP1 (1, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "URL_Receta_2",
+   "valor": "Misma receta",
+   "fuente": "hermanas de Mundial · E-P2 (1, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "URL_Receta_3",
+   "valor": "INGREDIENTES\r\r\n500        g de carne de res, molida\r\r\n1        cucharada de Jugo MAGGI® \r\r\n1        huevo \r\r\n3        cucharadas de pan molido\r\r\n2        ramas de perejil\r\r\n200        g de queso tipo manchego, rallado\r\r\n4        cucharadas de mayonesa\r\r\n4        bollos para hamburguesa, calientes \r\r\n8        rebanadas de tocino, frito\r\r\n4        hojas de lechuga italiana, desinfectada\r\r\n8        aros de cebolla, fritos y calientes\r\r\n¼        taza de rajas de chile en vinagre",
+   "fuente": "hermanas de Mundial · E-P2 (1, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Content_ID (final del Email_Name)",
+   "valor": "948858",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Mes",
+   "valor": "Junio",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  },
+  {
+   "id": "004-P020",
+   "col": "Mes (#)",
+   "valor": "6",
+   "fuente": "hermanas de Mundial · E-P2 (2, todas dicen lo mismo)"
+  }
+ ],
+ "reales": [
+  {
+   "columna": "Tipo_Envio",
+   "cuantas": 1,
+   "ejemplos": [
+    "006-P003 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Fecha_Ultimo_Envio",
+   "cuantas": 10,
+   "ejemplos": [
+    "002-P021 (no cruza con SFMC)",
+    "002-P022 (no cruza con SFMC)",
+    "002-P023 (no cruza con SFMC)",
+    "002-P024 (no cruza con SFMC)",
+    "004-P010 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Quincenas_Activas",
+   "cuantas": 6,
+   "ejemplos": [
+    "004-P010 (no cruza con SFMC)",
+    "004-P013 (no cruza con SFMC)",
+    "004-P017 (no cruza con SFMC)",
+    "004-P018 (no cruza con SFMC)",
+    "004-P019 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "N_Quincenas",
+   "cuantas": 1,
+   "ejemplos": [
+    "006-P003 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Meses_Activos",
+   "cuantas": 3,
+   "ejemplos": [
+    "004-P010 (no cruza con SFMC)",
+    "004-P013 (no cruza con SFMC)",
+    "006-P003 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "N_Meses",
+   "cuantas": 1,
+   "ejemplos": [
+    "006-P003 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Sends_Por_Quincena",
+   "cuantas": 7,
+   "ejemplos": [
+    "004-P010 (no cruza con SFMC)",
+    "004-P013 (no cruza con SFMC)",
+    "004-P017 (no cruza con SFMC)",
+    "004-P018 (no cruza con SFMC)",
+    "004-P019 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Sends_Por_Mes",
+   "cuantas": 7,
+   "ejemplos": [
+    "004-P010 (no cruza con SFMC)",
+    "004-P013 (no cruza con SFMC)",
+    "004-P017 (no cruza con SFMC)",
+    "004-P018 (no cruza con SFMC)",
+    "004-P019 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "N_Envios_Fechados",
+   "cuantas": 26,
+   "ejemplos": [
+    "009-P012",
+    "009-P013",
+    "009-P014",
+    "009-P015",
+    "009-P016"
+   ]
+  },
+  {
+   "columna": "Granularidad_Periodo",
+   "cuantas": 1,
+   "ejemplos": [
+    "006-P003 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Fecha_Origen",
+   "cuantas": 1,
+   "ejemplos": [
+    "006-P003 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Dias_Envio",
+   "cuantas": 1,
+   "ejemplos": [
+    "006-P003 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Clicks_Medidos",
+   "cuantas": 1,
+   "ejemplos": [
+    "006-P003 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Sends",
+   "cuantas": 1,
+   "ejemplos": [
+    "004-P020: 2 hermanas y discrepan (14117 / 75518)"
+   ]
+  },
+  {
+   "columna": "Email_Name",
+   "cuantas": 1,
+   "ejemplos": [
+    "004-P020: 2 hermanas y discrepan (GomichelaO_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_BEBIDAS_CN_EM_A_V1_948858 / O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_BOTANAS_CN_EM_A_V1_948858)"
+   ]
+  },
+  {
+   "columna": "Email_Names_Variantes",
+   "cuantas": 4,
+   "ejemplos": [
+    "006-P006",
+    "005-P007",
+    "005-P008",
+    "004-P020: 2 hermanas y discrepan (O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_BEBIDAS_CN_EM_A_V1_948858 / O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_BOTANAS_CN_EM_A_V1_948858)"
+   ]
+  },
+  {
+   "columna": "N_Email_Names",
+   "cuantas": 3,
+   "ejemplos": [
+    "006-P006",
+    "005-P007",
+    "005-P008"
+   ]
+  },
+  {
+   "columna": "Codigo_NC",
+   "cuantas": 16,
+   "ejemplos": [
+    "009-P002",
+    "009-P003",
+    "009-P004",
+    "009-P005",
+    "009-P006"
+   ]
+  },
+  {
+   "columna": "URL_Receta_1",
+   "cuantas": 9,
+   "ejemplos": [
+    "005-P005",
+    "005-P006",
+    "005-P007",
+    "005-P008",
+    "004-P020: 2 hermanas y discrepan (INGREDIENTES\r\r\n3 ½ tazas de cóctel de tomate y almeja, frío\r\r\n8 cucharadas de MAGGI® Miche\r\r\n3 cucharadas de chamoy, líquido\r\r\n2 cucharadas de concentrado de tamarindo\r\r\n4 tazas de cerveza clara, SIN ALCOHOL y fría\r\r\n3 limones, su jugo\r\r\n2 palitos para brocheta, largos\r\r\n½ taza de gomitas ácidas\r\r\n½ taza de gomitas en tiras\r\r\n½ taza de gomitas en forma de oso / INGREDIENTES\r\r\n5        cucharadas de Jugo MAGGI® \r\r\n4        cucharadas de chamoy, líquido\r\r\n2        limones, su jugo\r\r\n1        cucharadas de chile con limón, en polvo\r\r\n1 ½        tazas de jugo de tomate con almeja\r\r\n1        tazas de mango, cortado en cubos\r\r\n1        tazas de pepino\r\r\n1        tazas de cacahuates estilo japones\r\r\n1        bolsa de papas fritas (160 g))"
+   ]
+  },
+  {
+   "columna": "URL_Receta_2",
+   "cuantas": 7,
+   "ejemplos": [
+    "005-P005",
+    "005-P006",
+    "005-P007",
+    "005-P008",
+    "005-P009"
+   ]
+  },
+  {
+   "columna": "URL_Receta_4",
+   "cuantas": 1,
+   "ejemplos": [
+    "004-P020 (no cruza con SFMC)"
+   ]
+  },
+  {
+   "columna": "Fuente_Qcart",
+   "cuantas": 12,
+   "ejemplos": [
+    "009-P006",
+    "009-P007",
+    "009-P008",
+    "009-P009",
+    "009-P010"
+   ]
+  },
+  {
+   "columna": "Content_ID (final del Email_Name)",
+   "cuantas": 2,
+   "ejemplos": [
+    "001-P030",
+    "001-P031"
+   ]
+  },
+  {
+   "columna": "Email_ID (de la DE de SFMC)",
+   "cuantas": 1,
+   "ejemplos": [
+    "004-P020: 2 hermanas y discrepan (82982 / 82997)"
+   ]
+  },
+  {
+   "columna": "Oleada",
+   "cuantas": 2,
+   "ejemplos": [
+    "001-P032",
+    "001-P033"
+   ]
+  },
+  {
+   "columna": "Fecha_Activacion_Qcart",
+   "cuantas": 3,
+   "ejemplos": [
+    "004-P006",
+    "004-P007",
+    "004-P008"
+   ]
+  },
+  {
+   "columna": "Activaciones_Qcart",
+   "cuantas": 3,
+   "ejemplos": [
+    "004-P006",
+    "004-P007",
+    "004-P008"
+   ]
+  },
+  {
+   "columna": "Subject",
+   "cuantas": 1,
+   "ejemplos": [
+    "004-P020: 2 hermanas y discrepan (Ponle MAGGI ® Miche al grito de  GOOOOL ⚽ / El partido sabe aún mejor con esta botana y MAGGI ®)"
+   ]
+  }
+ ]
+}

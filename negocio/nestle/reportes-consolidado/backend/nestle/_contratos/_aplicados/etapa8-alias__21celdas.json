@@ -1,0 +1,179 @@
+{
+ "corte": "etapa8-alias",
+ "celdas": 21,
+ "columnas": 0,
+ "hojas_regeneradas": 0,
+ "respaldo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-etapa8-alias.xlsx",
+ "cambios": [
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 267,
+   "columna": "Tipo",
+   "valor": "alias",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 267,
+   "columna": "Dimension",
+   "valor": "Touchpoint",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 267,
+   "columna": "Valor_Crudo",
+   "valor": "Segundo Partido",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 267,
+   "columna": "Valor_Canonico",
+   "valor": "Partido 2",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 267,
+   "columna": "Contexto",
+   "valor": "Mundial",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 267,
+   "columna": "Fuente",
+   "valor": "declarado 24-ago",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 267,
+   "columna": "Notas",
+   "valor": "La fuente de WhatsApp nombra el journey «Segundo Partido»; el catálogo usa «Partido 2». Sin este alias el envío de 162 no encuentra su pieza (004-P010) y la Puerta 1 cierra.",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 268,
+   "columna": "Tipo",
+   "valor": "alias",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 268,
+   "columna": "Dimension",
+   "valor": "Touchpoint",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 268,
+   "columna": "Valor_Crudo",
+   "valor": "Tercer Partido",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 268,
+   "columna": "Valor_Canonico",
+   "valor": "Partido 3",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 268,
+   "columna": "Contexto",
+   "valor": "Mundial",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 268,
+   "columna": "Fuente",
+   "valor": "declarado 24-ago",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 268,
+   "columna": "Notas",
+   "valor": "Idem para 004-P013. Los dos envíos tienen los MISMOS sends (162), así que la cifra no los desambigua: solo el journey.",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, el envío de 162 se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 269,
+   "columna": "Tipo",
+   "valor": "alias",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, los 2,000 envíos de ICE se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 269,
+   "columna": "Dimension",
+   "valor": "Campaña",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, los 2,000 envíos de ICE se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 269,
+   "columna": "Valor_Crudo",
+   "valor": "ICE",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, los 2,000 envíos de ICE se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 269,
+   "columna": "Valor_Canonico",
+   "valor": "The Freshers",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, los 2,000 envíos de ICE se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 269,
+   "columna": "Contexto",
+   "valor": "",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, los 2,000 envíos de ICE se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 269,
+   "columna": "Fuente",
+   "valor": "declarado 24-ago",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, los 2,000 envíos de ICE se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  },
+  {
+   "paso": "E8",
+   "hoja": "Catalogo_Referencias",
+   "fila": 269,
+   "columna": "Notas",
+   "valor": "La hoja de WhatsApp titula la campaña «ICE», pero ICE es la MARCA (Nescafé ICE) y The Freshers la campaña — lo decidió Rick el 20-ago. Sin el alias, sus 2,000 envíos quedan sin pieza.",
+   "porque": "E8 · alias declarado tras la corrida E2E: sin él, los 2,000 envíos de ICE se queda sin pieza y la Puerta 1 cierra. Nada se infiere del naming: se declara."
+  }
+ ],
+ "columnas_nuevas": [],
+ "hojas": []
+}

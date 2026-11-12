@@ -1,0 +1,105 @@
+{
+ "cuando": "2026-09-14T23:46:46.691Z",
+ "piezas": 30,
+ "sin_carritos": [
+  {
+   "id": "005-P001",
+   "camp": "Liga MX",
+   "tp": "E-P1",
+   "motivo": "el catálogo no le declara ningún shortlink"
+  },
+  {
+   "id": "005-P003",
+   "camp": "Liga MX",
+   "tp": "E-P4",
+   "motivo": "el catálogo no le declara ningún shortlink"
+  },
+  {
+   "id": "005-P004",
+   "camp": "Liga MX",
+   "tp": "E-P6",
+   "motivo": "el catálogo no le declara ningún shortlink"
+  },
+  {
+   "id": "005-P005",
+   "camp": "Liga MX",
+   "tp": "E-J4",
+   "motivo": "el catálogo no le declara ningún shortlink"
+  },
+  {
+   "id": "005-P006",
+   "camp": "Liga MX",
+   "tp": "E-J4",
+   "motivo": "el catálogo no le declara ningún shortlink"
+  },
+  {
+   "id": "005-P007",
+   "camp": "Liga MX",
+   "tp": "E-J5",
+   "motivo": "sus links no tuvieron tráfico en recetas-nestle-mx-carts-raw-2026-08-01-2026-09-14.csv"
+  },
+  {
+   "id": "004-P006",
+   "camp": "Mundial",
+   "tp": "E-P3",
+   "motivo": "el maestro no declara: vk67sh2J"
+  },
+  {
+   "id": "004-P007",
+   "camp": "Mundial",
+   "tp": "E-P3",
+   "motivo": "el maestro no declara: YJOatjQs"
+  },
+  {
+   "id": "004-P008",
+   "camp": "Mundial",
+   "tp": "E-P3",
+   "motivo": "el maestro no declara: xka2NWrW"
+  }
+ ],
+ "desvios": [
+  {
+   "id": "005-P009",
+   "que": "Sends catálogo ≠ SFMC",
+   "d": "2,733 vs 2,735"
+  },
+  {
+   "id": "005-P010",
+   "que": "Sends catálogo ≠ SFMC",
+   "d": "91,580 vs 91,584"
+  },
+  {
+   "id": "004-P002",
+   "que": "Sends catálogo ≠ SFMC",
+   "d": "133,898 vs 133,903"
+  },
+  {
+   "id": "004-P006",
+   "que": "Sends catálogo ≠ SFMC",
+   "d": "14,106 vs 14,108"
+  },
+  {
+   "id": "004-P007",
+   "que": "Sends catálogo ≠ SFMC",
+   "d": "133,511 vs 133,513"
+  },
+  {
+   "id": "004-P008",
+   "que": "Sends catálogo ≠ SFMC",
+   "d": "75,427 vs 75,429"
+  },
+  {
+   "id": "004-P009",
+   "que": "Sends catálogo ≠ SFMC",
+   "d": "13,457 vs 13,459"
+  }
+ ],
+ "maestro_sin_pieza": [
+  "DTuqPqBo",
+  "0oSrtaxX",
+  "0eQt7uf5",
+  "4tBsCXTp",
+  "i8LZ55bd",
+  "HThaf6bT"
+ ]
+}

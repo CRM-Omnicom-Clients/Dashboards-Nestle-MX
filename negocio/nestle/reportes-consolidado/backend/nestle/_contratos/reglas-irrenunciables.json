@@ -1,0 +1,127 @@
+{
+ "que_es": "Las reglas que el sistema no puede perder. No son mecanismos: son decisiones de negocio de Rick. Cada una nombra el skill dueño y el mecanismo que la hace cumplir.",
+ "por_que_existe": "Rick, 26-ago: «Lo que el sistema no puede perder son las reglas de todos los skills.» Antes esta lista enumeraba MECANISMOS (las puertas, las 5 capas, el escritor). Estaba mal encuadrada: los mecanismos son la consecuencia, no la regla. La regla es «el catálogo es la autoridad de dimensiones»; el catálogo es solo dónde está escrita.",
+ "regla_de_la_lista": "Una regla sin mecanismo no es una regla: es una intención. Toda entrada declara quién la hace cumplir, y si no hay nadie, se dice.",
+ "reglas": [
+  {
+   "id": "R1",
+   "regla": "Las dimensiones no se infieren del naming. Salen del catálogo o se preguntan.",
+   "skill": "crm-reporte-nestle-catalogo",
+   "por_que": "El naming engaña: el journey «O_Welcome-NC007067» es Purchase, no Welcome. Deducir la campaña, el objetivo o el segmento del nombre produce un reporte que parece bien y está mal.",
+   "mecanismo": "lib-columna consulta el catálogo raíz (registro.json) ANTES que la hoja · Guarda 4 BLOQUEA si un script del corte lee columnas por su cuenta",
+   "evidencia": "el segmento real de Inspiration es «Interés Salado», no «Inspiration»"
+  },
+  {
+   "id": "R2",
+   "regla": "La llave de Qcart es el SHORTLINK, nunca el utm.",
+   "skill": "crm-reporte-fuentes-qcart",
+   "por_que": "El utm_content llega invertido en parte de los eventos. Es el error más caro del sistema y el menos visible: cuadra igual.",
+   "mecanismo": "lib-qcart-links y lib-maestro-links indexan por shortlink · fuentes-qcart.refutar.js ataca el bloque",
+   "evidencia": "usar el utm mandó 171 carritos de Cooking a Botana"
+  },
+  {
+   "id": "R3",
+   "regla": "El ancla de Qcart se pega a una celda que YA EXISTE. Nunca se fabrica.",
+   "skill": "crm-reporte-fuentes-qcart",
+   "por_que": "El Qcart es mensual y el email quincenal. Si el ancla puede crear la celda que necesita, inventa filas que nadie pidió.",
+   "mecanismo": "motor.motor.js declara los bloques sin ancla en vez de fabricarles una · PUERTA-2 los cuenta",
+   "evidencia": "366 carritos de 001-P005 quedaron sin ancla porque su Principal ya no llega por SFMC — se declaran, no se inventan"
+  },
+  {
+   "id": "R4",
+   "regla": "Las ediciones a mano de Rick se respetan. Leer antes de escribir, no después.",
+   "skill": "crm-reporte-escritor",
+   "por_que": "Hay cientos de celdas escritas a mano. Si él quitó filas o cambió textos, fue a propósito: no es basura por limpiar.",
+   "mecanismo": "el escritor diffea ANTES y lista qué se perdería · escritor.aplicar-vacios comprueba que la celda SIGA vacía antes de escribir",
+   "evidencia": "escribir por columna borraba 277 celdas de Data_Email que nadie podía reponer"
+  },
+  {
+   "id": "R5",
+   "regla": "Un skill no escribe si no declaró antes qué va a escribir.",
+   "skill": "todos los que escriben",
+   "por_que": "Sin declaración previa, el skill descubre los problemas MIENTRAS escribe, y el siguiente hereda el desorden. Ahí empiezan los loops.",
+   "mecanismo": "lib-declaracion-escritura se NIEGA si falta uno de los cuatro campos · Guarda 5 BLOQUEA el corte",
+   "evidencia": "Rick, 26-ago: «tiene que ser una regla muy estricta»"
+  },
+  {
+   "id": "R6",
+   "regla": "Si una puerta cierra, no se escribe ni se publica nada. Ni siquiera lo que sí cuadra.",
+   "skill": "crm-reporte-fuentes-cuadre",
+   "por_que": "Un corte a medias es peor que ningún corte: deja el archivo en un estado que nadie sabe describir.",
+   "mecanismo": "el orquestador se detiene en la puerta · fuentes-cuadre.probar-que-cierra prueba que CIERRA de verdad",
+   "evidencia": "una puerta que nunca cierra es un adorno"
+  },
+  {
+   "id": "R7",
+   "regla": "Después de cada escritura, las CINCO capas. Sin las cinco no se dice que quedó bien.",
+   "skill": "crm-reporte-escritor",
+   "por_que": "Un paquete OPC válido puede seguir siendo ilegible para Excel. Las cuatro primeras pasaron sobre un libro que Excel se negaba a abrir.",
+   "mecanismo": "publicar() las corre en orden y se niega a copiar si una falla · hook-xlsx-vigilar comprueba después",
+   "evidencia": "lo único malo era el orden de las celdas dentro de cada fila — solo la quinta lo ve"
+  },
+  {
+   "id": "R8",
+   "regla": "A producción va una persona, nunca el sistema.",
+   "skill": "crm-reporte-orquestador",
+   "por_que": "El interno es la fuente de verdad; publicar es copiar, y esa copia la autoriza alguien.",
+   "mecanismo": "publicar NO está en el bucle del orquestador — un bucle automático no puede darse el OK a sí mismo",
+   "evidencia": "Rick: «a producción lo llevo yo»"
+  },
+  {
+   "id": "R9",
+   "regla": "El formato lo edita Rick. El sistema no lo decide, pero tampoco lo destruye.",
+   "skill": "crm-reporte-escritor",
+   "por_que": "El formato es criterio visual sobre un entregable que él presenta.",
+   "mecanismo": "escritor.retirar reconstruye el bloque `cols` en vez de borrarlo · escritor.probar-retiro exige que ninguna celda cambie de columna",
+   "evidencia": "borrar `cols` entero se llevó los 65 anchos del catálogo y las 5 capas no lo vieron"
+  },
+  {
+   "id": "R10",
+   "regla": "Un cero es un dato. Un hueco no es un cero.",
+   "skill": "todos",
+   "por_que": "Confundirlos convierte un cero en un hueco, y el hueco en un N/A falso. Y al revés: un «no encontré la columna» que devuelve 0 se lee como «no hay ninguno».",
+   "mecanismo": "lib-columna TRUENA en vez de devolver vacío · lib-vacios distingue dato · N/A · POR DEFINIR",
+   "evidencia": "«98 de 98 filas sin Pieza_ID» se imprimió en rojo sobre una columna llena al 100%"
+  },
+  {
+   "id": "R11",
+   "regla": "N/A solo si se puede ESCRIBIR la razón. Si no, es POR DEFINIR y va a la lista de Rick.",
+   "skill": "todos",
+   "por_que": "Llenar de N/A cierra el archivo y deja a Rick sin saber qué le falta. El default es deber, no despachar.",
+   "mecanismo": "lib-vacios.js exige una razón escribible para dar N/A · el resto va a _preescritura/por-definir.json",
+   "evidencia": "432 celdas POR DEFINIR quedaron visibles en vez de taparse"
+  },
+  {
+   "id": "R12",
+   "regla": "Reporte_julio no se toca.",
+   "skill": "crm-reporte-escritor",
+   "por_que": "Decisión de Rick, sin discusión.",
+   "mecanismo": "declarada INTOCABLE en escritor.retirar y en orquestador.medir-vacios · sus 417 celdas vacías se cuentan aparte y no se llenan",
+   "evidencia": "Rick: «julio no se toca»"
+  },
+  {
+   "id": "R13",
+   "regla": "Solo se tocan los journeys del catálogo y los que Rick administre. Ningún otro.",
+   "skill": "crm-reporte-fuentes-email",
+   "por_que": "El MCP da acceso a todo Nestlé; la agencia solo maneja algunos journeys. Es mandatorio.",
+   "mecanismo": "el bloque de email cruza contra el catálogo y DECLARA lo que queda fuera en vez de incluirlo",
+   "evidencia": "Rick: «nunca otros que no te diga»"
+  },
+  {
+   "id": "R14",
+   "regla": "El MCP de SFMC es de SOLO LECTURA. No se crea, edita ni borra nada en ese tenant.",
+   "skill": "crm-reporte-fuentes-email",
+   "por_que": "Es producción del cliente.",
+   "mecanismo": "ningún script del corte llama a un verbo de escritura del MCP",
+   "evidencia": "Rick: «REGLA DURA. Excepción única: automations, y solo si yo te lo pido explícitamente»"
+  },
+  {
+   "id": "R15",
+   "regla": "Nunca renombrar ni mover un archivo compartido con el equipo.",
+   "skill": "crm-reporte-orquestador",
+   "por_que": "Rompe los links de quien lo tenga abierto o enlazado.",
+   "mecanismo": "sin mecanismo automático — es una regla de conducta que se declara aquí para que no se pierda",
+   "evidencia": "declarada por Rick; el sistema no la puede hacer cumplir solo"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "skill": "nestle-catalogo",
+ "script": "catalogo.realinear-codigos-qcart.js",
+ "declarado": "2026-08-27",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Catalogo_Piezas",
+   "grano": "el BLOQUE DE RECETAS de una pieza (Receta_N · Cod_Walmart_N · Cod_Chedraui_N · Codigos_Qcart · N_Recetas · Tiene_Qcart)",
+   "llave": "Pieza_ID — y el conjunto correcto sale de los bloques del doc que mapean a esa pieza",
+   "celdas_esperadas": "solo las piezas cuyo conjunto de códigos difiere del que dicta el doc"
+  }
+ ]
+}

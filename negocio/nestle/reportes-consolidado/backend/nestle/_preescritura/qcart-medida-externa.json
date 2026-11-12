@@ -1,0 +1,115 @@
+{
+ "agregado": "recetas-nestle-mx-carts-2026-09-01-2026-09-30.csv",
+ "ventana": {
+  "desde": "2026-09-01",
+  "hasta": "2026-09-30"
+ },
+ "medido": "2026-09-30T22:59:30.505Z",
+ "shortlinks": {
+  "agregado": 121,
+  "bloque": 41,
+  "comunes": 29
+ },
+ "vistas_exactas": 15,
+ "importe_exacto": 15,
+ "descuadres": [
+  {
+   "k": "PySVWRVY",
+   "mio": 154,
+   "ext": 106,
+   "d": 48
+  },
+  {
+   "k": "DTuqPqBo",
+   "mio": 44,
+   "ext": 25,
+   "d": 19
+  },
+  {
+   "k": "xTaSfQ2y",
+   "mio": 19,
+   "ext": 26,
+   "d": -7
+  },
+  {
+   "k": "LO8RxwsM",
+   "mio": 15,
+   "ext": 9,
+   "d": 6
+  },
+  {
+   "k": "0oSrtaxX",
+   "mio": 3,
+   "ext": 7,
+   "d": -4
+  },
+  {
+   "k": "0eQt7uf5",
+   "mio": 4,
+   "ext": 8,
+   "d": -4
+  },
+  {
+   "k": "ymh2OT4x",
+   "mio": 32,
+   "ext": 36,
+   "d": -4
+  },
+  {
+   "k": "hWaJfDxS",
+   "mio": 4,
+   "ext": 1,
+   "d": 3
+  },
+  {
+   "k": "bfQ24tDq",
+   "mio": 32,
+   "ext": 29,
+   "d": 3
+  },
+  {
+   "k": "hTHNLqzL",
+   "mio": 16,
+   "ext": 14,
+   "d": 2
+  },
+  {
+   "k": "GQnvqqP3",
+   "mio": 8,
+   "ext": 7,
+   "d": 1
+  },
+  {
+   "k": "fDAdN8Qa",
+   "mio": 2,
+   "ext": 1,
+   "d": 1
+  },
+  {
+   "k": "TYZa8g47",
+   "mio": 6,
+   "ext": 5,
+   "d": 1
+  },
+  {
+   "k": "rr0VvKTb",
+   "mio": 3,
+   "ext": 2,
+   "d": 1
+  }
+ ],
+ "solo_en_bloque": [
+  "qrMAKnjA",
+  "HcDJTsRH",
+  "UhCnTNuz",
+  "Agy5v9Yb",
+  "rueO2xbY",
+  "9isauWgY",
+  "Hqa0fbOM",
+  "xj2gTnHI",
+  "o41ObWyu",
+  "jhMxJiSo",
+  "uCV8KGHm",
+  "kzSTHGEd"
+ ]
+}

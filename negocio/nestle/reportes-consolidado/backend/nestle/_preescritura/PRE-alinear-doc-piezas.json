@@ -1,0 +1,30 @@
+{
+ "paso": "fuentes-qcart.alinear-doc-piezas",
+ "regla": "el bloque del doc (mes × campaña × segmento) manda; la pieza es Principal y se identifica por Email_Name",
+ "bloques": 34,
+ "alineados": 32,
+ "mover": [],
+ "sin_resolver": [],
+ "ambiguos": [
+  {
+   "bloque": "Julio ¦ maggi-julio14 ¦ e-botanas6 ¦ botanas",
+   "motivo": "4 candidatas tras campaña→20 · segmento→4",
+   "candidatas": [
+    "004-P001",
+    "004-P005",
+    "004-P008",
+    "004-P014"
+   ]
+  },
+  {
+   "bloque": "Julio ¦ maggi-julio15 ¦ e-botanas7 ¦ botanas",
+   "motivo": "4 candidatas tras campaña→20 · segmento→4",
+   "candidatas": [
+    "004-P001",
+    "004-P005",
+    "004-P008",
+    "004-P014"
+   ]
+  }
+ ]
+}

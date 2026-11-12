@@ -1,0 +1,212 @@
+{
+ "fecha": "2026-09-20",
+ "estados": {
+  "COMPLETA": 76,
+  "PARCIAL": 0,
+  "SIN_DATO": 27,
+  "SIN_EMAIL": 65
+ },
+ "columnas": [
+  "Principal_Clicks_CTA",
+  "Principal_Clicks_Baja",
+  "Principal_Clicks_Redes+Navegador+Legal",
+  "FUP_Clicks_CTA",
+  "FUP_Clicks_Baja",
+  "FUP_Clicks_Redes+Navegador+Legal",
+  "Tot_Clicks_CTA",
+  "Tot_Clicks_Baja",
+  "Tot_Clicks_Redes+Navegador+Legal"
+ ],
+ "parciales": [],
+ "sin_dato": [
+  {
+   "fila": "AON · E-APP · Usuarios activos sin click en App · 2026-08-Q2 [principal]",
+   "piezas": [
+    "001-P029"
+   ],
+   "clicks": 1566
+  },
+  {
+   "fila": "AON · E-PROP1 · Tibios · 2026-08-Q2 [principal]",
+   "piezas": [
+    "001-P032"
+   ],
+   "clicks": 1077
+  },
+  {
+   "fila": "The Freshers · E-P1 · Gen Z Cafés · 2026-08-Q1 [principal]",
+   "piezas": [
+    "006-P006"
+   ],
+   "clicks": 381
+  },
+  {
+   "fila": "AON · E-PROP1 · Tibios · 2026-08-Q2 [fup]",
+   "piezas": [
+    "001-P033"
+   ],
+   "clicks": 340
+  },
+  {
+   "fila": "Liga MX · E-J4 · Usuarios sin región · 2026-08-Q1 [principal]",
+   "piezas": [
+    "005-P006"
+   ],
+   "clicks": 338
+  },
+  {
+   "fila": "Liga MX · E-J7 · Región unificada · 2026-09-Q1 [principal]",
+   "piezas": [
+    "005-P010"
+   ],
+   "clicks": 314
+  },
+  {
+   "fila": "AON · E-PROP2 · Usuarios re-enganchables: nuevos del último año que nunca han interactuado · 2026-08-Q1 [principal]",
+   "piezas": [
+    "001-P030"
+   ],
+   "clicks": 297
+  },
+  {
+   "fila": "Hackea tu café · E-Rit1 · Premium Cafés · 2026-08-Q1 [principal]",
+   "piezas": [
+    "007-P005"
+   ],
+   "clicks": 193
+  },
+  {
+   "fila": "The Freshers · E-ENRICH1 · Gen Z Cafés · 2026-08-Q1 [principal]",
+   "piezas": [
+    "006-P004"
+   ],
+   "clicks": 172
+  },
+  {
+   "fila": "Hackea tu café · E-Rit2 · Premium Cafés · 2026-08-Q1 [principal]",
+   "piezas": [
+    "007-P007"
+   ],
+   "clicks": 156
+  },
+  {
+   "fila": "Liga MX · E-J5 · Usuarios sin región · 2026-08-Q2 [principal]",
+   "piezas": [
+    "005-P007"
+   ],
+   "clicks": 151
+  },
+  {
+   "fila": "AON · E-PROP2 · Usuarios re-enganchables: nuevos del último año que nunca han interactuado · 2026-08-Q1 [fup]",
+   "piezas": [
+    "001-P031"
+   ],
+   "clicks": 116
+  },
+  {
+   "fila": "Liga MX · E-J8 · Región unificada · Partición A · 2026-09-Q1 [principal]",
+   "piezas": [
+    "005-P012"
+   ],
+   "clicks": 114
+  },
+  {
+   "fila": "The Freshers · E-ENRICH1 · Gen Z Cafés · 2026-08-Q1 [fup]",
+   "piezas": [
+    "006-P005"
+   ],
+   "clicks": 96
+  },
+  {
+   "fila": "Hackea tu café · E-Rit1 · Premium Cafés · 2026-08-Q1 [fup]",
+   "piezas": [
+    "007-P006"
+   ],
+   "clicks": 83
+  },
+  {
+   "fila": "Fuel for life · E-E3 · Pro Plan Pet Parents · Perros · 2026-07-Q2 [principal]",
+   "piezas": [
+    "009-P006"
+   ],
+   "clicks": 50
+  },
+  {
+   "fila": "Fuel for life · E-E4 · Aspiracionales + Educated Pet Owners · Perros · 2026-07-Q2 [principal]",
+   "piezas": [
+    "009-P015"
+   ],
+   "clicks": 46
+  },
+  {
+   "fila": "Fuel for life · E-E4 · Pro Plan Pet Parents · Perros · 2026-07-Q2 [principal]",
+   "piezas": [
+    "009-P012"
+   ],
+   "clicks": 37
+  },
+  {
+   "fila": "Liga MX · E-J4 · Usuarios CON región · 2026-08-Q1 [principal]",
+   "piezas": [
+    "005-P005"
+   ],
+   "clicks": 22
+  },
+  {
+   "fila": "Fuel for life · E-E3 · Pro Plan Aspiracionales · Gatos · 2026-07-Q2 [principal]",
+   "piezas": [
+    "009-P008"
+   ],
+   "clicks": 14
+  },
+  {
+   "fila": "Liga MX · E-J6 · Usuarios CON región · Región Sur · Partición C · 2026-08-Q2 [principal]",
+   "piezas": [
+    "005-P009"
+   ],
+   "clicks": 12
+  },
+  {
+   "fila": "Fuel for life · E-E4 · Aspiracionales + Educated Pet Owners · Gatos · 2026-07-Q2 [principal]",
+   "piezas": [
+    "009-P016"
+   ],
+   "clicks": 11
+  },
+  {
+   "fila": "Fuel for life · E-E3 · Pro Plan Pet Parents · Gatos · 2026-07-Q2 [principal]",
+   "piezas": [
+    "009-P007"
+   ],
+   "clicks": 11
+  },
+  {
+   "fila": "Liga MX · E-J5 · Usuarios CON región · 2026-08-Q2 [principal]",
+   "piezas": [
+    "005-P008"
+   ],
+   "clicks": 9
+  },
+  {
+   "fila": "Fuel for life · E-E4 · Pro Plan Pet Parents · Gatos · 2026-07-Q2 [principal]",
+   "piezas": [
+    "009-P013"
+   ],
+   "clicks": 6
+  },
+  {
+   "fila": "Fuel for life · E-E3 · Pro Plan Educated Pet Owners · Gatos · 2026-07-Q2 [principal]",
+   "piezas": [
+    "009-P010"
+   ],
+   "clicks": 3
+  },
+  {
+   "fila": "Fuel for life · E-E4 · Pro Plan Pet Parents · Mixto · 2026-07-Q2 [principal]",
+   "piezas": [
+    "009-P014"
+   ],
+   "clicks": 1
+  }
+ ]
+}

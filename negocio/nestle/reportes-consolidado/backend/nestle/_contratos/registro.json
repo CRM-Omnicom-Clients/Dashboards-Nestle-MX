@@ -1,0 +1,7591 @@
+{
+ "paso": "L1",
+ "sembrado": "2026-08-20",
+ "regla": {
+  "id": "INMUTABLE. Se acuña una vez y no se renombra jamás; si el concepto cambia, id nuevo y el viejo a `retirado`.",
+  "nombres": "MUTABLE. Es lo que puede cambiar en el archivo. La librería es el único lugar donde el id y el nombre se tocan.",
+  "resolver": "Si un id no resuelve, o resuelve a dos candidatos, la librería TRUENA y dice cuáles son. Nunca devuelve undefined.",
+  "actualizar": "Se reconcilia AL LEER el archivo que se va a tocar, antes de tocarlo (L3). Un renombre es un hecho que se registra con evidencia, no una duda que se resuelve."
+ },
+ "ambitos": {
+  "resumen": {
+   "tipo": "hoja",
+   "nombre_fisico": "Report_Resumen",
+   "n_columnas": 77,
+   "n_filas": 87
+  },
+  "referencias": {
+   "tipo": "hoja",
+   "nombre_fisico": "Catalogo_Referencias",
+   "n_columnas": 11,
+   "n_filas": 265
+  },
+  "catalogo": {
+   "tipo": "hoja",
+   "nombre_fisico": "Catalogo_Piezas",
+   "n_columnas": 80,
+   "n_filas": 119
+  },
+  "data_email": {
+   "tipo": "hoja",
+   "nombre_fisico": "Data_Email",
+   "n_columnas": 47,
+   "n_filas": 264
+  },
+  "data_wa": {
+   "tipo": "hoja",
+   "nombre_fisico": "Data_WhatsApp",
+   "n_columnas": 35,
+   "n_filas": 12
+  },
+  "qcart_carritos": {
+   "tipo": "hoja",
+   "nombre_fisico": "Data_Qcart_Carritos",
+   "n_columnas": 31,
+   "n_filas": 3009
+  },
+  "qcart_productos": {
+   "tipo": "hoja",
+   "nombre_fisico": "Data_Qcart_Productos",
+   "n_columnas": 32,
+   "n_filas": 809
+  },
+  "de_detalle": {
+   "tipo": "data extension",
+   "nombre_fisico": "CRM_Email_Detalle",
+   "n_columnas": 37,
+   "fuente": "HANDOFF-CATALOGO-RAIZ.md (equipo de SFMC, 20-ago-2026)",
+   "de_nueva": false
+  },
+  "de_piezas": {
+   "tipo": "data extension",
+   "nombre_fisico": "CRM_Email_Piezas",
+   "n_columnas": 35,
+   "fuente": "HANDOFF-CATALOGO-RAIZ.md (equipo de SFMC, 20-ago-2026)",
+   "de_nueva": false
+  },
+  "de_links": {
+   "tipo": "data extension",
+   "nombre_fisico": "CRM_Email_Links",
+   "n_columnas": 13,
+   "fuente": "HANDOFF-CATALOGO-RAIZ.md (equipo de SFMC, 20-ago-2026)",
+   "de_nueva": true
+  },
+  "de_audiencias": {
+   "tipo": "data extension",
+   "nombre_fisico": "CRM_Audiencias",
+   "n_columnas": 5,
+   "fuente": "HANDOFF-CATALOGO-RAIZ.md (equipo de SFMC, 20-ago-2026)",
+   "de_nueva": true
+  },
+  "de_config": {
+   "tipo": "data extension",
+   "nombre_fisico": "CRM_Reporte_Config",
+   "n_columnas": 15,
+   "fuente": "HANDOFF-CATALOGO-RAIZ.md (equipo de SFMC, 20-ago-2026)",
+   "de_nueva": false
+  },
+  "de_auditoria": {
+   "tipo": "data extension",
+   "nombre_fisico": "CRM_Reporte_Auditoria",
+   "n_columnas": 16,
+   "fuente": "HANDOFF-CATALOGO-RAIZ.md (equipo de SFMC, 20-ago-2026)",
+   "de_nueva": false
+  }
+ },
+ "columnas": {
+  "resumen.campana": {
+   "id": "resumen.campana",
+   "ambito": "resumen",
+   "nombres": [
+    "Campaña"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "letra": "A",
+   "vecinos": [
+    "Medio"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 87,
+   "visto": "2026-08-20"
+  },
+  "resumen.medio": {
+   "id": "resumen.medio",
+   "ambito": "resumen",
+   "nombres": [
+    "Medio"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "letra": "B",
+   "vecinos": [
+    "Campaña",
+    "Objetivo"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.objetivo": {
+   "id": "resumen.objetivo",
+   "ambito": "resumen",
+   "nombres": [
+    "Objetivo"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "letra": "C",
+   "vecinos": [
+    "Medio",
+    "TouchPoint"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.touchpoint": {
+   "id": "resumen.touchpoint",
+   "ambito": "resumen",
+   "nombres": [
+    "TouchPoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "letra": "D",
+   "vecinos": [
+    "Objetivo",
+    "Tipo  Email"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.tipo_email": {
+   "id": "resumen.tipo_email",
+   "ambito": "resumen",
+   "nombres": [
+    "Tipo  Email"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "letra": "E",
+   "vecinos": [
+    "TouchPoint",
+    "Segmento"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 73,
+   "visto": "2026-08-20"
+  },
+  "resumen.segmento": {
+   "id": "resumen.segmento",
+   "ambito": "resumen",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "letra": "F",
+   "vecinos": [
+    "Tipo  Email",
+    "QCART?"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 83,
+   "visto": "2026-08-20"
+  },
+  "resumen.qcart": {
+   "id": "resumen.qcart",
+   "ambito": "resumen",
+   "nombres": [
+    "QCART?"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "letra": "G",
+   "vecinos": [
+    "Segmento",
+    "Quincena_Lanzamiento"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.quincena_lanzamiento": {
+   "id": "resumen.quincena_lanzamiento",
+   "ambito": "resumen",
+   "nombres": [
+    "Quincena_Lanzamiento Principal"
+   ],
+   "alias_historicos": [
+    "Quincena_Lanzamiento"
+   ],
+   "posicion": 7,
+   "letra": "H",
+   "vecinos": [
+    "QCART?",
+    "Mes"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.mes": {
+   "id": "resumen.mes",
+   "ambito": "resumen",
+   "nombres": [
+    "Mes"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "letra": "I",
+   "vecinos": [
+    "Quincena_Lanzamiento",
+    "Mes (#)"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.mes_num": {
+   "id": "resumen.mes_num",
+   "ambito": "resumen",
+   "nombres": [
+    "Mes (#)"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "letra": "J",
+   "vecinos": [
+    "Mes",
+    "Marca"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 72,
+   "visto": "2026-08-20"
+  },
+  "resumen.marca": {
+   "id": "resumen.marca",
+   "ambito": "resumen",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "letra": "K",
+   "vecinos": [
+    "Mes (#)",
+    "BU"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.bu": {
+   "id": "resumen.bu",
+   "ambito": "resumen",
+   "nombres": [
+    "BU"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "letra": "L",
+   "vecinos": [
+    "Marca",
+    "Content_ID (SFMC)"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 85,
+   "visto": "2026-08-20"
+  },
+  "resumen.content_id_sfmc": {
+   "id": "resumen.content_id_sfmc",
+   "ambito": "resumen",
+   "nombres": [
+    "Audiencia_DE SFMC"
+   ],
+   "alias_historicos": [
+    "Content_ID (SFMC)",
+    "Content_ID (final del Email_Name)"
+   ],
+   "posicion": 12,
+   "letra": "M",
+   "vecinos": [
+    "BU",
+    "Email_ID (SFMC)"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 73,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "Content_ID (SFMC)",
+    "a": "Content_ID (final del Email_Name)",
+    "por": "A11 · mismo criterio que el catálogo"
+   }
+  },
+  "resumen.email_id_sfmc": {
+   "id": "resumen.email_id_sfmc",
+   "ambito": "resumen",
+   "nombres": [
+    "Email_ID (de la DE de SFMC)"
+   ],
+   "alias_historicos": [
+    "Email_ID (SFMC)"
+   ],
+   "posicion": 13,
+   "letra": "N",
+   "vecinos": [
+    "Content_ID (SFMC)",
+    "Principal_Sends"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 73,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "Email_ID (SFMC)",
+    "a": "Email_ID (de la DE de SFMC)",
+    "por": "A11 · mismo criterio que el catálogo"
+   }
+  },
+  "resumen.principal_sends": {
+   "id": "resumen.principal_sends",
+   "ambito": "resumen",
+   "nombres": [
+    "Principal_Sends"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "letra": "O",
+   "vecinos": [
+    "Email_ID (SFMC)",
+    "Principal_Deliveries"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.principal_deliveries": {
+   "id": "resumen.principal_deliveries",
+   "ambito": "resumen",
+   "nombres": [
+    "Principal_Deliveries"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "letra": "P",
+   "vecinos": [
+    "Principal_Sends",
+    "Principal_Opens"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.principal_opens": {
+   "id": "resumen.principal_opens",
+   "ambito": "resumen",
+   "nombres": [
+    "Principal_Opens"
+   ],
+   "alias_historicos": [],
+   "posicion": 16,
+   "letra": "Q",
+   "vecinos": [
+    "Principal_Deliveries",
+    "Principal_Clicks"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.principal_clicks": {
+   "id": "resumen.principal_clicks",
+   "ambito": "resumen",
+   "nombres": [
+    "Principal_Clicks"
+   ],
+   "alias_historicos": [],
+   "posicion": 17,
+   "letra": "R",
+   "vecinos": [
+    "Principal_Opens",
+    "Principal_Open_Rate"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.principal_open_rate": {
+   "id": "resumen.principal_open_rate",
+   "ambito": "resumen",
+   "nombres": [
+    "Principal_Open_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 18,
+   "letra": "S",
+   "vecinos": [
+    "Principal_Clicks",
+    "Principal_CTOR"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 63,
+   "visto": "2026-08-20"
+  },
+  "resumen.principal_ctor": {
+   "id": "resumen.principal_ctor",
+   "ambito": "resumen",
+   "nombres": [
+    "Principal_CTOR"
+   ],
+   "alias_historicos": [],
+   "posicion": 19,
+   "letra": "T",
+   "vecinos": [
+    "Principal_Open_Rate",
+    "Principal_Click_Rate"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 63,
+   "visto": "2026-08-20"
+  },
+  "resumen.principal_click_rate": {
+   "id": "resumen.principal_click_rate",
+   "ambito": "resumen",
+   "nombres": [
+    "Principal_Click_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 20,
+   "letra": "U",
+   "vecinos": [
+    "Principal_CTOR",
+    "FUP_Subject"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 63,
+   "visto": "2026-08-20"
+  },
+  "resumen.fup_subject": {
+   "id": "resumen.fup_subject",
+   "ambito": "resumen",
+   "nombres": [
+    "FUP_Subject"
+   ],
+   "alias_historicos": [],
+   "posicion": 21,
+   "letra": "V",
+   "vecinos": [
+    "Principal_Click_Rate",
+    "FUP_Sends"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 34,
+   "visto": "2026-08-20"
+  },
+  "resumen.fup_sends": {
+   "id": "resumen.fup_sends",
+   "ambito": "resumen",
+   "nombres": [
+    "FUP_Sends"
+   ],
+   "alias_historicos": [],
+   "posicion": 22,
+   "letra": "W",
+   "vecinos": [
+    "FUP_Subject",
+    "FUP_Deliveries"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.fup_deliveries": {
+   "id": "resumen.fup_deliveries",
+   "ambito": "resumen",
+   "nombres": [
+    "FUP_Deliveries"
+   ],
+   "alias_historicos": [],
+   "posicion": 23,
+   "letra": "X",
+   "vecinos": [
+    "FUP_Sends",
+    "FUP_Opens"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.fup_opens": {
+   "id": "resumen.fup_opens",
+   "ambito": "resumen",
+   "nombres": [
+    "FUP_Opens"
+   ],
+   "alias_historicos": [],
+   "posicion": 24,
+   "letra": "Y",
+   "vecinos": [
+    "FUP_Deliveries",
+    "FUP_Clicks"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.fup_clicks": {
+   "id": "resumen.fup_clicks",
+   "ambito": "resumen",
+   "nombres": [
+    "FUP_Clicks"
+   ],
+   "alias_historicos": [],
+   "posicion": 25,
+   "letra": "Z",
+   "vecinos": [
+    "FUP_Opens",
+    "FUP_Open_Rate"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.fup_open_rate": {
+   "id": "resumen.fup_open_rate",
+   "ambito": "resumen",
+   "nombres": [
+    "FUP_Open_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 26,
+   "letra": "AA",
+   "vecinos": [
+    "FUP_Clicks",
+    "FUP_CTOR"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 34,
+   "visto": "2026-08-20"
+  },
+  "resumen.fup_ctor": {
+   "id": "resumen.fup_ctor",
+   "ambito": "resumen",
+   "nombres": [
+    "FUP_CTOR"
+   ],
+   "alias_historicos": [],
+   "posicion": 27,
+   "letra": "AB",
+   "vecinos": [
+    "FUP_Open_Rate",
+    "FUP_Click_Rate"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 34,
+   "visto": "2026-08-20"
+  },
+  "resumen.fup_click_rate": {
+   "id": "resumen.fup_click_rate",
+   "ambito": "resumen",
+   "nombres": [
+    "FUP_Click_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 28,
+   "letra": "AC",
+   "vecinos": [
+    "FUP_CTOR",
+    "Tot_Sends"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 34,
+   "visto": "2026-08-20"
+  },
+  "resumen.tot_sends": {
+   "id": "resumen.tot_sends",
+   "ambito": "resumen",
+   "nombres": [
+    "Tot_Sends"
+   ],
+   "alias_historicos": [],
+   "posicion": 29,
+   "letra": "AD",
+   "vecinos": [
+    "FUP_Click_Rate",
+    "Tot_Deliveries"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.tot_deliveries": {
+   "id": "resumen.tot_deliveries",
+   "ambito": "resumen",
+   "nombres": [
+    "Tot_Deliveries"
+   ],
+   "alias_historicos": [],
+   "posicion": 30,
+   "letra": "AE",
+   "vecinos": [
+    "Tot_Sends",
+    "Tot_Opens"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.tot_opens": {
+   "id": "resumen.tot_opens",
+   "ambito": "resumen",
+   "nombres": [
+    "Tot_Opens"
+   ],
+   "alias_historicos": [],
+   "posicion": 31,
+   "letra": "AF",
+   "vecinos": [
+    "Tot_Deliveries",
+    "Tot_Clicks"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.tot_clicks": {
+   "id": "resumen.tot_clicks",
+   "ambito": "resumen",
+   "nombres": [
+    "Tot_Clicks"
+   ],
+   "alias_historicos": [],
+   "posicion": 32,
+   "letra": "AG",
+   "vecinos": [
+    "Tot_Opens",
+    "Tot_Open_Rate"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.tot_open_rate": {
+   "id": "resumen.tot_open_rate",
+   "ambito": "resumen",
+   "nombres": [
+    "Tot_Open_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 33,
+   "letra": "AH",
+   "vecinos": [
+    "Tot_Clicks",
+    "Tot_CTOR"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 73,
+   "visto": "2026-08-20"
+  },
+  "resumen.tot_ctor": {
+   "id": "resumen.tot_ctor",
+   "ambito": "resumen",
+   "nombres": [
+    "Tot_CTOR"
+   ],
+   "alias_historicos": [],
+   "posicion": 34,
+   "letra": "AI",
+   "vecinos": [
+    "Tot_Open_Rate",
+    "Tot_Click_Rate"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 73,
+   "visto": "2026-08-20"
+  },
+  "resumen.tot_click_rate": {
+   "id": "resumen.tot_click_rate",
+   "ambito": "resumen",
+   "nombres": [
+    "Tot_Click_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 35,
+   "letra": "AJ",
+   "vecinos": [
+    "Tot_CTOR",
+    "WA-Envíos"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 73,
+   "visto": "2026-08-20"
+  },
+  "resumen.wa_envios": {
+   "id": "resumen.wa_envios",
+   "ambito": "resumen",
+   "nombres": [
+    "WA-Envíos"
+   ],
+   "alias_historicos": [],
+   "posicion": 36,
+   "letra": "AK",
+   "vecinos": [
+    "Tot_Click_Rate",
+    "WA-Entregados"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.wa_entregados": {
+   "id": "resumen.wa_entregados",
+   "ambito": "resumen",
+   "nombres": [
+    "WA-Entregados"
+   ],
+   "alias_historicos": [],
+   "posicion": 37,
+   "letra": "AL",
+   "vecinos": [
+    "WA-Envíos",
+    "WA-No entregados"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.wa_no_entregados": {
+   "id": "resumen.wa_no_entregados",
+   "ambito": "resumen",
+   "nombres": [
+    "WA-No entregados"
+   ],
+   "alias_historicos": [],
+   "posicion": 38,
+   "letra": "AM",
+   "vecinos": [
+    "WA-Entregados",
+    "WA-Leídos"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.wa_leidos": {
+   "id": "resumen.wa_leidos",
+   "ambito": "resumen",
+   "nombres": [
+    "WA-Leídos"
+   ],
+   "alias_historicos": [],
+   "posicion": 39,
+   "letra": "AN",
+   "vecinos": [
+    "WA-No entregados",
+    "WA-Clicks"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 86,
+   "visto": "2026-08-20"
+  },
+  "resumen.wa_clicks": {
+   "id": "resumen.wa_clicks",
+   "ambito": "resumen",
+   "nombres": [
+    "WA-Clicks"
+   ],
+   "alias_historicos": [],
+   "posicion": 40,
+   "letra": "AO",
+   "vecinos": [
+    "WA-Leídos",
+    "WA-%Entrega"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 82,
+   "visto": "2026-08-20"
+  },
+  "resumen.wa_pct_entrega": {
+   "id": "resumen.wa_pct_entrega",
+   "ambito": "resumen",
+   "nombres": [
+    "WA-%Entrega"
+   ],
+   "alias_historicos": [],
+   "posicion": 41,
+   "letra": "AP",
+   "vecinos": [
+    "WA-Clicks",
+    "WA-%No entrega"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 13,
+   "visto": "2026-08-20"
+  },
+  "resumen.wa_pct_no_entrega": {
+   "id": "resumen.wa_pct_no_entrega",
+   "ambito": "resumen",
+   "nombres": [
+    "WA-%No entrega"
+   ],
+   "alias_historicos": [],
+   "posicion": 42,
+   "letra": "AQ",
+   "vecinos": [
+    "WA-%Entrega",
+    "WA-%Read vs entrega"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 13,
+   "visto": "2026-08-20"
+  },
+  "resumen.wa_pct_read_vs_entrega": {
+   "id": "resumen.wa_pct_read_vs_entrega",
+   "ambito": "resumen",
+   "nombres": [
+    "WA-%Read vs entrega"
+   ],
+   "alias_historicos": [],
+   "posicion": 43,
+   "letra": "AR",
+   "vecinos": [
+    "WA-%No entrega",
+    "WA-%Click vs Read"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 13,
+   "visto": "2026-08-20"
+  },
+  "resumen.wa_pct_click_vs_read": {
+   "id": "resumen.wa_pct_click_vs_read",
+   "ambito": "resumen",
+   "nombres": [
+    "WA-%Click vs Read"
+   ],
+   "alias_historicos": [],
+   "posicion": 44,
+   "letra": "AS",
+   "vecinos": [
+    "WA-%Read vs entrega",
+    "Receta_Representativa"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 10,
+   "visto": "2026-08-20"
+  },
+  "resumen.receta_representativa": {
+   "id": "resumen.receta_representativa",
+   "ambito": "resumen",
+   "nombres": [
+    "Receta_Representativa"
+   ],
+   "alias_historicos": [],
+   "posicion": 45,
+   "letra": "AT",
+   "vecinos": [
+    "WA-%Click vs Read",
+    "FechaQcart_Desde"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.fechaqcart_desde": {
+   "id": "resumen.fechaqcart_desde",
+   "ambito": "resumen",
+   "nombres": [
+    "FechaQcart_Desde"
+   ],
+   "alias_historicos": [],
+   "posicion": 46,
+   "letra": "AU",
+   "vecinos": [
+    "Receta_Representativa",
+    "FechaQcart_Hasta"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.fechaqcart_hasta": {
+   "id": "resumen.fechaqcart_hasta",
+   "ambito": "resumen",
+   "nombres": [
+    "FechaQcart_Hasta"
+   ],
+   "alias_historicos": [],
+   "posicion": 47,
+   "letra": "AV",
+   "vecinos": [
+    "FechaQcart_Desde",
+    "Carritos_Walmart"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.carritos_walmart": {
+   "id": "resumen.carritos_walmart",
+   "ambito": "resumen",
+   "nombres": [
+    "Carritos_Walmart"
+   ],
+   "alias_historicos": [],
+   "posicion": 48,
+   "letra": "AW",
+   "vecinos": [
+    "FechaQcart_Hasta",
+    "Carritos_Chedraui"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.carritos_chedraui": {
+   "id": "resumen.carritos_chedraui",
+   "ambito": "resumen",
+   "nombres": [
+    "Carritos_Chedraui"
+   ],
+   "alias_historicos": [],
+   "posicion": 49,
+   "letra": "AX",
+   "vecinos": [
+    "Carritos_Walmart",
+    "Carritos_Total"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.carritos_total": {
+   "id": "resumen.carritos_total",
+   "ambito": "resumen",
+   "nombres": [
+    "Carritos_Total"
+   ],
+   "alias_historicos": [],
+   "posicion": 50,
+   "letra": "AY",
+   "vecinos": [
+    "Carritos_Chedraui",
+    "Views_Carrito"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.views_carrito": {
+   "id": "resumen.views_carrito",
+   "ambito": "resumen",
+   "nombres": [
+    "Views_Carrito"
+   ],
+   "alias_historicos": [],
+   "posicion": 51,
+   "letra": "AZ",
+   "vecinos": [
+    "Carritos_Total",
+    "Views_Productos_Nestle"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.views_productos_nestle": {
+   "id": "resumen.views_productos_nestle",
+   "ambito": "resumen",
+   "nombres": [
+    "Views_Productos_Nestle"
+   ],
+   "alias_historicos": [],
+   "posicion": 52,
+   "letra": "BA",
+   "vecinos": [
+    "Views_Carrito",
+    "Intencion_Total_MXN"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.intencion_total_mxn": {
+   "id": "resumen.intencion_total_mxn",
+   "ambito": "resumen",
+   "nombres": [
+    "Intencion_Total_MXN"
+   ],
+   "alias_historicos": [],
+   "posicion": 53,
+   "letra": "BB",
+   "vecinos": [
+    "Views_Productos_Nestle",
+    "Intencion_Nestle_MXN"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.intencion_nestle_mxn": {
+   "id": "resumen.intencion_nestle_mxn",
+   "ambito": "resumen",
+   "nombres": [
+    "Intencion_Nestle_MXN"
+   ],
+   "alias_historicos": [],
+   "posicion": 54,
+   "letra": "BC",
+   "vecinos": [
+    "Intencion_Total_MXN",
+    "Pct_Penetracion_Nestle"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.pct_penetracion_nestle": {
+   "id": "resumen.pct_penetracion_nestle",
+   "ambito": "resumen",
+   "nombres": [
+    "Pct_Penetracion_Nestle"
+   ],
+   "alias_historicos": [],
+   "posicion": 55,
+   "letra": "BD",
+   "vecinos": [
+    "Intencion_Nestle_MXN",
+    "Ticket_Carrito_MXN"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.ticket_carrito_mxn": {
+   "id": "resumen.ticket_carrito_mxn",
+   "ambito": "resumen",
+   "nombres": [
+    "Ticket_Carrito_MXN"
+   ],
+   "alias_historicos": [],
+   "posicion": 56,
+   "letra": "BE",
+   "vecinos": [
+    "Pct_Penetracion_Nestle",
+    "Ticket_Producto_MXN"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.ticket_producto_mxn": {
+   "id": "resumen.ticket_producto_mxn",
+   "ambito": "resumen",
+   "nombres": [
+    "Ticket_Producto_MXN"
+   ],
+   "alias_historicos": [],
+   "posicion": 57,
+   "letra": "BF",
+   "vecinos": [
+    "Ticket_Carrito_MXN",
+    "Audiencia_DE"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "resumen.audiencia_de": {
+   "id": "resumen.audiencia_de",
+   "ambito": "resumen",
+   "nombres": [
+    "Audiencia_DE"
+   ],
+   "alias_historicos": [],
+   "posicion": 58,
+   "letra": "BG",
+   "vecinos": [
+    "Ticket_Producto_MXN",
+    "Audiencia_Volumen"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.audiencia_volumen": {
+   "id": "resumen.audiencia_volumen",
+   "ambito": "resumen",
+   "nombres": [
+    "Audiencia_Volumen"
+   ],
+   "alias_historicos": [],
+   "posicion": 59,
+   "letra": "BH",
+   "vecinos": [
+    "Audiencia_DE",
+    "Unsubs_Unicos"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.unsubs_unicos": {
+   "id": "resumen.unsubs_unicos",
+   "ambito": "resumen",
+   "nombres": [
+    "Unsubs_Unicos"
+   ],
+   "alias_historicos": [],
+   "posicion": 60,
+   "letra": "BI",
+   "vecinos": [
+    "Audiencia_Volumen",
+    "Unsubs_Total"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.unsubs_total": {
+   "id": "resumen.unsubs_total",
+   "ambito": "resumen",
+   "nombres": [
+    "Unsubs_Total"
+   ],
+   "alias_historicos": [],
+   "posicion": 61,
+   "letra": "BJ",
+   "vecinos": [
+    "Unsubs_Unicos",
+    "Clicks_Qcart"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.clicks_qcart": {
+   "id": "resumen.clicks_qcart",
+   "ambito": "resumen",
+   "nombres": [
+    "Clicks_Qcart"
+   ],
+   "alias_historicos": [],
+   "posicion": 62,
+   "letra": "BK",
+   "vecinos": [
+    "Unsubs_Total",
+    "Clicks_App"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.clicks_app": {
+   "id": "resumen.clicks_app",
+   "ambito": "resumen",
+   "nombres": [
+    "Clicks_App"
+   ],
+   "alias_historicos": [],
+   "posicion": 63,
+   "letra": "BL",
+   "vecinos": [
+    "Clicks_Qcart",
+    "Clicks_Social"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.clicks_social": {
+   "id": "resumen.clicks_social",
+   "ambito": "resumen",
+   "nombres": [
+    "Clicks_Social"
+   ],
+   "alias_historicos": [],
+   "posicion": 64,
+   "letra": "BM",
+   "vecinos": [
+    "Clicks_App",
+    "Clicks_Web"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.clicks_web": {
+   "id": "resumen.clicks_web",
+   "ambito": "resumen",
+   "nombres": [
+    "Clicks_Web"
+   ],
+   "alias_historicos": [],
+   "posicion": 65,
+   "letra": "BN",
+   "vecinos": [
+    "Clicks_Social",
+    "Clicks_Ver_Navegador"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.clicks_ver_navegador": {
+   "id": "resumen.clicks_ver_navegador",
+   "ambito": "resumen",
+   "nombres": [
+    "Clicks_Ver_Navegador"
+   ],
+   "alias_historicos": [],
+   "posicion": 66,
+   "letra": "BO",
+   "vecinos": [
+    "Clicks_Web",
+    "Clicks_Unsub"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.clicks_unsub": {
+   "id": "resumen.clicks_unsub",
+   "ambito": "resumen",
+   "nombres": [
+    "Clicks_Unsub"
+   ],
+   "alias_historicos": [],
+   "posicion": 67,
+   "letra": "BP",
+   "vecinos": [
+    "Clicks_Ver_Navegador",
+    "Clicks_Links_Total"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "resumen.clicks_links_total": {
+   "id": "resumen.clicks_links_total",
+   "ambito": "resumen",
+   "nombres": [
+    "Clicks_Unicos_Total"
+   ],
+   "alias_historicos": [
+    "Clicks_Links_Total"
+   ],
+   "posicion": 68,
+   "letra": "BQ",
+   "vecinos": [
+    "Clicks_Unsub"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "Clicks_Links_Total",
+    "a": "Clicks_Unicos_Total",
+    "por": "D3 · el nombre tiene que decir que es de únicos"
+   }
+  },
+  "referencias.tipo": {
+   "id": "referencias.tipo",
+   "ambito": "referencias",
+   "nombres": [
+    "Tipo"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "letra": "A",
+   "vecinos": [
+    "Dimension"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 265,
+   "visto": "2026-08-20"
+  },
+  "referencias.dimension": {
+   "id": "referencias.dimension",
+   "ambito": "referencias",
+   "nombres": [
+    "Dimension"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "letra": "B",
+   "vecinos": [
+    "Tipo",
+    "Valor_Crudo"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 265,
+   "visto": "2026-08-20"
+  },
+  "referencias.valor_crudo": {
+   "id": "referencias.valor_crudo",
+   "ambito": "referencias",
+   "nombres": [
+    "Valor_Crudo"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "letra": "C",
+   "vecinos": [
+    "Dimension",
+    "Valor_Canonico"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 150,
+   "visto": "2026-08-20"
+  },
+  "referencias.valor_canonico": {
+   "id": "referencias.valor_canonico",
+   "ambito": "referencias",
+   "nombres": [
+    "Valor_Canonico"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "letra": "D",
+   "vecinos": [
+    "Valor_Crudo",
+    "Contexto"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 244,
+   "visto": "2026-08-20"
+  },
+  "referencias.contexto": {
+   "id": "referencias.contexto",
+   "ambito": "referencias",
+   "nombres": [
+    "Contexto"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "letra": "E",
+   "vecinos": [
+    "Valor_Canonico",
+    "Dato_1"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 137,
+   "visto": "2026-08-20"
+  },
+  "referencias.dato_1": {
+   "id": "referencias.dato_1",
+   "ambito": "referencias",
+   "nombres": [
+    "Dato_1"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "letra": "F",
+   "vecinos": [
+    "Contexto",
+    "Dato_2"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 21,
+   "visto": "2026-08-20"
+  },
+  "referencias.dato_2": {
+   "id": "referencias.dato_2",
+   "ambito": "referencias",
+   "nombres": [
+    "Dato_2"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "letra": "G",
+   "vecinos": [
+    "Dato_1",
+    "Fuente"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "referencias.fuente": {
+   "id": "referencias.fuente",
+   "ambito": "referencias",
+   "nombres": [
+    "Fuente"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "letra": "H",
+   "vecinos": [
+    "Dato_2",
+    "Notas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 265,
+   "visto": "2026-08-20"
+  },
+  "referencias.notas": {
+   "id": "referencias.notas",
+   "ambito": "referencias",
+   "nombres": [
+    "Notas"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "letra": "I",
+   "vecinos": [
+    "Fuente",
+    "N_Piezas"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 21,
+   "visto": "2026-08-20"
+  },
+  "referencias.n_piezas": {
+   "id": "referencias.n_piezas",
+   "ambito": "referencias",
+   "nombres": [
+    "N_Piezas"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "letra": "J",
+   "vecinos": [
+    "Notas",
+    "Pieza_IDs"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 265,
+   "visto": "2026-08-20"
+  },
+  "referencias.pieza_ids": {
+   "id": "referencias.pieza_ids",
+   "ambito": "referencias",
+   "nombres": [
+    "Pieza_IDs"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "letra": "K",
+   "vecinos": [
+    "N_Piezas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 212,
+   "visto": "2026-08-20"
+  },
+  "catalogo.bu": {
+   "id": "catalogo.bu",
+   "ambito": "catalogo",
+   "nombres": [
+    "BU"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "letra": "A",
+   "vecinos": [
+    "Marca"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 119,
+   "visto": "2026-08-20"
+  },
+  "catalogo.marca": {
+   "id": "catalogo.marca",
+   "ambito": "catalogo",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "letra": "B",
+   "vecinos": [
+    "BU",
+    "Campaña"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 119,
+   "visto": "2026-08-20"
+  },
+  "catalogo.campana": {
+   "id": "catalogo.campana",
+   "ambito": "catalogo",
+   "nombres": [
+    "Campaña"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "letra": "C",
+   "vecinos": [
+    "Marca",
+    "Pieza_ID"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 119,
+   "visto": "2026-08-20"
+  },
+  "catalogo.pieza_id": {
+   "id": "catalogo.pieza_id",
+   "ambito": "catalogo",
+   "nombres": [
+    "Pieza_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "letra": "D",
+   "vecinos": [
+    "Campaña",
+    "Camp_ID"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 119,
+   "visto": "2026-08-20"
+  },
+  "catalogo.camp_id": {
+   "id": "catalogo.camp_id",
+   "ambito": "catalogo",
+   "nombres": [
+    "Camp_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "letra": "E",
+   "vecinos": [
+    "Pieza_ID",
+    "Journey_ID"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 109,
+   "visto": "2026-08-20"
+  },
+  "catalogo.journey_id": {
+   "id": "catalogo.journey_id",
+   "ambito": "catalogo",
+   "nombres": [
+    "Journey_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "letra": "F",
+   "vecinos": [
+    "Camp_ID",
+    "Objetivo"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 109,
+   "visto": "2026-08-20"
+  },
+  "catalogo.objetivo": {
+   "id": "catalogo.objetivo",
+   "ambito": "catalogo",
+   "nombres": [
+    "Objetivo"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "letra": "G",
+   "vecinos": [
+    "Journey_ID",
+    "Touchpoint"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 119,
+   "visto": "2026-08-20"
+  },
+  "catalogo.touchpoint": {
+   "id": "catalogo.touchpoint",
+   "ambito": "catalogo",
+   "nombres": [
+    "Touchpoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "letra": "H",
+   "vecinos": [
+    "Objetivo",
+    "Touchpoint_Raw"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 119,
+   "visto": "2026-08-20"
+  },
+  "catalogo.touchpoint_raw": {
+   "id": "catalogo.touchpoint_raw",
+   "ambito": "catalogo",
+   "nombres": [
+    "Touchpoint_Raw"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "letra": "I",
+   "vecinos": [
+    "Touchpoint",
+    "Segmento"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.segmento": {
+   "id": "catalogo.segmento",
+   "ambito": "catalogo",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "letra": "J",
+   "vecinos": [
+    "Touchpoint_Raw",
+    "Segmentos_Combinados"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 114,
+   "visto": "2026-08-20"
+  },
+  "catalogo.segmentos_combinados": {
+   "id": "catalogo.segmentos_combinados",
+   "ambito": "catalogo",
+   "nombres": [
+    "Segmentos_Combinados"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "letra": "K",
+   "vecinos": [
+    "Segmento",
+    "Canal"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 4,
+   "visto": "2026-08-20"
+  },
+  "catalogo.canal": {
+   "id": "catalogo.canal",
+   "ambito": "catalogo",
+   "nombres": [
+    "Canal"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "letra": "L",
+   "vecinos": [
+    "Segmentos_Combinados",
+    "Email_Type"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 119,
+   "visto": "2026-08-20"
+  },
+  "catalogo.email_type": {
+   "id": "catalogo.email_type",
+   "ambito": "catalogo",
+   "nombres": [
+    "Email_Type"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "letra": "M",
+   "vecinos": [
+    "Canal",
+    "Tipo_Envio"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 98,
+   "visto": "2026-08-20"
+  },
+  "catalogo.tipo_envio": {
+   "id": "catalogo.tipo_envio",
+   "ambito": "catalogo",
+   "nombres": [
+    "Tipo_Envio"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "letra": "N",
+   "vecinos": [
+    "Email_Type",
+    "Fecha_Primer_Envio"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 108,
+   "visto": "2026-08-20"
+  },
+  "catalogo.fecha_primer_envio": {
+   "id": "catalogo.fecha_primer_envio",
+   "ambito": "catalogo",
+   "nombres": [
+    "Fecha_Primer_Envio"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "letra": "O",
+   "vecinos": [
+    "Tipo_Envio",
+    "Fecha_Ultimo_Envio"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 88,
+   "visto": "2026-08-20"
+  },
+  "catalogo.fecha_ultimo_envio": {
+   "id": "catalogo.fecha_ultimo_envio",
+   "ambito": "catalogo",
+   "nombres": [
+    "Fecha_Ultimo_Envio"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "letra": "P",
+   "vecinos": [
+    "Fecha_Primer_Envio",
+    "Mes_Lanzamiento"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 75,
+   "visto": "2026-08-20"
+  },
+  "catalogo.mes_lanzamiento": {
+   "id": "catalogo.mes_lanzamiento",
+   "ambito": "catalogo",
+   "nombres": [
+    "Mes_Lanzamiento"
+   ],
+   "alias_historicos": [],
+   "posicion": 16,
+   "letra": "Q",
+   "vecinos": [
+    "Fecha_Ultimo_Envio",
+    "Quincena_Lanzamiento"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 92,
+   "visto": "2026-08-20"
+  },
+  "catalogo.quincena_lanzamiento": {
+   "id": "catalogo.quincena_lanzamiento",
+   "ambito": "catalogo",
+   "nombres": [
+    "Quincena"
+   ],
+   "alias_historicos": [
+    "Quincena_Lanzamiento"
+   ],
+   "posicion": 17,
+   "letra": "R",
+   "vecinos": [
+    "Mes_Lanzamiento",
+    "Quincenas_Activas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 88,
+   "visto": "2026-08-20"
+  },
+  "catalogo.quincenas_activas": {
+   "id": "catalogo.quincenas_activas",
+   "ambito": "catalogo",
+   "nombres": [
+    "Quincenas_Activas"
+   ],
+   "alias_historicos": [],
+   "posicion": 18,
+   "letra": "S",
+   "vecinos": [
+    "Quincena_Lanzamiento",
+    "N_Quincenas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 82,
+   "visto": "2026-08-20"
+  },
+  "catalogo.n_quincenas": {
+   "id": "catalogo.n_quincenas",
+   "ambito": "catalogo",
+   "nombres": [
+    "N_Quincenas"
+   ],
+   "alias_historicos": [],
+   "posicion": 19,
+   "letra": "T",
+   "vecinos": [
+    "Quincenas_Activas",
+    "Meses_Activos"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.meses_activos": {
+   "id": "catalogo.meses_activos",
+   "ambito": "catalogo",
+   "nombres": [
+    "Meses_Activos"
+   ],
+   "alias_historicos": [],
+   "posicion": 20,
+   "letra": "U",
+   "vecinos": [
+    "N_Quincenas",
+    "N_Meses"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 89,
+   "visto": "2026-08-20"
+  },
+  "catalogo.n_meses": {
+   "id": "catalogo.n_meses",
+   "ambito": "catalogo",
+   "nombres": [
+    "N_Meses"
+   ],
+   "alias_historicos": [],
+   "posicion": 21,
+   "letra": "V",
+   "vecinos": [
+    "Meses_Activos",
+    "Sends_Por_Quincena"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.sends_por_quincena": {
+   "id": "catalogo.sends_por_quincena",
+   "ambito": "catalogo",
+   "nombres": [
+    "Sends_Por_Quincena"
+   ],
+   "alias_historicos": [],
+   "posicion": 22,
+   "letra": "W",
+   "vecinos": [
+    "N_Meses",
+    "Sends_Por_Mes"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 82,
+   "visto": "2026-08-20"
+  },
+  "catalogo.sends_por_mes": {
+   "id": "catalogo.sends_por_mes",
+   "ambito": "catalogo",
+   "nombres": [
+    "Sends_Por_Mes"
+   ],
+   "alias_historicos": [],
+   "posicion": 23,
+   "letra": "X",
+   "vecinos": [
+    "Sends_Por_Quincena",
+    "N_Envios_Fechados"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 82,
+   "visto": "2026-08-20"
+  },
+  "catalogo.n_envios_fechados": {
+   "id": "catalogo.n_envios_fechados",
+   "ambito": "catalogo",
+   "nombres": [
+    "N_Envios_Fechados"
+   ],
+   "alias_historicos": [],
+   "posicion": 24,
+   "letra": "Y",
+   "vecinos": [
+    "Sends_Por_Mes",
+    "Granularidad_Periodo"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.granularidad_periodo": {
+   "id": "catalogo.granularidad_periodo",
+   "ambito": "catalogo",
+   "nombres": [
+    "Granularidad_Periodo"
+   ],
+   "alias_historicos": [],
+   "posicion": 25,
+   "letra": "Z",
+   "vecinos": [
+    "N_Envios_Fechados",
+    "Fecha_Origen"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.fecha_origen": {
+   "id": "catalogo.fecha_origen",
+   "ambito": "catalogo",
+   "nombres": [
+    "Fecha_Origen"
+   ],
+   "alias_historicos": [],
+   "posicion": 26,
+   "letra": "AA",
+   "vecinos": [
+    "Granularidad_Periodo",
+    "Dias_Envio"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.dias_envio": {
+   "id": "catalogo.dias_envio",
+   "ambito": "catalogo",
+   "nombres": [
+    "Dias_Envio"
+   ],
+   "alias_historicos": [],
+   "posicion": 27,
+   "letra": "AB",
+   "vecinos": [
+    "Fecha_Origen",
+    "Fuente_Dato"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.fuente_dato": {
+   "id": "catalogo.fuente_dato",
+   "ambito": "catalogo",
+   "nombres": [
+    "Fuente_Dato"
+   ],
+   "alias_historicos": [],
+   "posicion": 28,
+   "letra": "AC",
+   "vecinos": [
+    "Dias_Envio",
+    "Clicks_Medidos"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 119,
+   "visto": "2026-08-20"
+  },
+  "catalogo.clicks_medidos": {
+   "id": "catalogo.clicks_medidos",
+   "ambito": "catalogo",
+   "nombres": [
+    "Clicks_Medidos"
+   ],
+   "alias_historicos": [],
+   "posicion": 29,
+   "letra": "AD",
+   "vecinos": [
+    "Fuente_Dato",
+    "Sends"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 108,
+   "visto": "2026-08-20"
+  },
+  "catalogo.sends": {
+   "id": "catalogo.sends",
+   "ambito": "catalogo",
+   "nombres": [
+    "Sends"
+   ],
+   "alias_historicos": [],
+   "posicion": 30,
+   "letra": "AE",
+   "vecinos": [
+    "Clicks_Medidos",
+    "Content_Name"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 109,
+   "visto": "2026-08-20"
+  },
+  "catalogo.content_name": {
+   "id": "catalogo.content_name",
+   "ambito": "catalogo",
+   "nombres": [
+    "Email_Name"
+   ],
+   "alias_historicos": [
+    "Content_Name"
+   ],
+   "posicion": 31,
+   "letra": "AF",
+   "vecinos": [
+    "Sends",
+    "Content_Names_Variantes"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 99,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "Content_Name",
+    "a": "Email_Name",
+    "por": "A11 · content name = email name (Rick, 21-ago)"
+   }
+  },
+  "catalogo.content_names_variantes": {
+   "id": "catalogo.content_names_variantes",
+   "ambito": "catalogo",
+   "nombres": [
+    "Email_Names_Variantes"
+   ],
+   "alias_historicos": [
+    "Content_Names_Variantes"
+   ],
+   "posicion": 32,
+   "letra": "AG",
+   "vecinos": [
+    "Content_Name",
+    "N_Content_Names"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 76,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "Content_Names_Variantes",
+    "a": "Email_Names_Variantes",
+    "por": "A11 · sigue al nombre principal"
+   }
+  },
+  "catalogo.n_content_names": {
+   "id": "catalogo.n_content_names",
+   "ambito": "catalogo",
+   "nombres": [
+    "N_Email_Names"
+   ],
+   "alias_historicos": [
+    "N_Content_Names"
+   ],
+   "posicion": 33,
+   "letra": "AH",
+   "vecinos": [
+    "Content_Names_Variantes",
+    "Asset_ID"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 76,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "N_Content_Names",
+    "a": "N_Email_Names",
+    "por": "A11 · sigue al nombre principal"
+   }
+  },
+  "catalogo.asset_id": {
+   "id": "catalogo.asset_id",
+   "ambito": "catalogo",
+   "nombres": [
+    "Asset_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 34,
+   "letra": "AI",
+   "vecinos": [
+    "N_Content_Names",
+    "Codigo_NC"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 82,
+   "visto": "2026-08-20"
+  },
+  "catalogo.codigo_nc": {
+   "id": "catalogo.codigo_nc",
+   "ambito": "catalogo",
+   "nombres": [
+    "Codigo_NC"
+   ],
+   "alias_historicos": [],
+   "posicion": 35,
+   "letra": "AJ",
+   "vecinos": [
+    "Asset_ID",
+    "ID_SFMC"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 83,
+   "visto": "2026-08-20"
+  },
+  "catalogo.id_sfmc": {
+   "id": "catalogo.id_sfmc",
+   "ambito": "catalogo",
+   "nombres": [
+    "ID_SFMC"
+   ],
+   "alias_historicos": [],
+   "posicion": 36,
+   "letra": "AK",
+   "vecinos": [
+    "Codigo_NC",
+    "Tiene_Qcart"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 23,
+   "visto": "2026-08-20"
+  },
+  "catalogo.tiene_qcart": {
+   "id": "catalogo.tiene_qcart",
+   "ambito": "catalogo",
+   "nombres": [
+    "Tiene_Qcart"
+   ],
+   "alias_historicos": [],
+   "posicion": 37,
+   "letra": "AL",
+   "vecinos": [
+    "ID_SFMC",
+    "N_Recetas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 97,
+   "visto": "2026-08-20"
+  },
+  "catalogo.n_recetas": {
+   "id": "catalogo.n_recetas",
+   "ambito": "catalogo",
+   "nombres": [
+    "N_Recetas"
+   ],
+   "alias_historicos": [],
+   "posicion": 38,
+   "letra": "AM",
+   "vecinos": [
+    "Tiene_Qcart",
+    "Carritos_Total"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.carritos_total": {
+   "id": "catalogo.carritos_total",
+   "ambito": "catalogo",
+   "nombres": [
+    "Carritos_Total"
+   ],
+   "alias_historicos": [],
+   "posicion": 39,
+   "letra": "AN",
+   "vecinos": [
+    "N_Recetas",
+    "Views_Total"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.views_total": {
+   "id": "catalogo.views_total",
+   "ambito": "catalogo",
+   "nombres": [
+    "Views_Total"
+   ],
+   "alias_historicos": [],
+   "posicion": 40,
+   "letra": "AO",
+   "vecinos": [
+    "Carritos_Total",
+    "Receta_1"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 96,
+   "visto": "2026-08-20"
+  },
+  "catalogo.receta_1": {
+   "id": "catalogo.receta_1",
+   "ambito": "catalogo",
+   "nombres": [
+    "Receta_1"
+   ],
+   "alias_historicos": [],
+   "posicion": 41,
+   "letra": "AP",
+   "vecinos": [
+    "Views_Total",
+    "URL_Receta_1"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 30,
+   "visto": "2026-08-20"
+  },
+  "catalogo.url_receta_1": {
+   "id": "catalogo.url_receta_1",
+   "ambito": "catalogo",
+   "nombres": [
+    "URL_Receta_1"
+   ],
+   "alias_historicos": [],
+   "posicion": 42,
+   "letra": "AQ",
+   "vecinos": [
+    "Receta_1",
+    "Cod_Walmart_1"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 30,
+   "visto": "2026-08-20"
+  },
+  "catalogo.cod_walmart_1": {
+   "id": "catalogo.cod_walmart_1",
+   "ambito": "catalogo",
+   "nombres": [
+    "Cod_Walmart_1"
+   ],
+   "alias_historicos": [],
+   "posicion": 43,
+   "letra": "AR",
+   "vecinos": [
+    "URL_Receta_1",
+    "Carritos_Walmart_1"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 30,
+   "visto": "2026-08-20"
+  },
+  "catalogo.carritos_walmart_1": {
+   "id": "catalogo.carritos_walmart_1",
+   "ambito": "catalogo",
+   "nombres": [
+    "Carritos_Walmart_1"
+   ],
+   "alias_historicos": [],
+   "posicion": 44,
+   "letra": "AS",
+   "vecinos": [
+    "Cod_Walmart_1",
+    "Cod_Chedraui_1"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 30,
+   "visto": "2026-08-20"
+  },
+  "catalogo.cod_chedraui_1": {
+   "id": "catalogo.cod_chedraui_1",
+   "ambito": "catalogo",
+   "nombres": [
+    "Cod_Chedraui_1"
+   ],
+   "alias_historicos": [],
+   "posicion": 45,
+   "letra": "AT",
+   "vecinos": [
+    "Carritos_Walmart_1",
+    "Carritos_Chedraui_1"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 4,
+   "visto": "2026-08-20"
+  },
+  "catalogo.carritos_chedraui_1": {
+   "id": "catalogo.carritos_chedraui_1",
+   "ambito": "catalogo",
+   "nombres": [
+    "Carritos_Chedraui_1"
+   ],
+   "alias_historicos": [],
+   "posicion": 46,
+   "letra": "AU",
+   "vecinos": [
+    "Cod_Chedraui_1",
+    "Receta_2"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 30,
+   "visto": "2026-08-20"
+  },
+  "catalogo.receta_2": {
+   "id": "catalogo.receta_2",
+   "ambito": "catalogo",
+   "nombres": [
+    "Receta_2"
+   ],
+   "alias_historicos": [],
+   "posicion": 47,
+   "letra": "AV",
+   "vecinos": [
+    "Carritos_Chedraui_1",
+    "URL_Receta_2"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 14,
+   "visto": "2026-08-20"
+  },
+  "catalogo.url_receta_2": {
+   "id": "catalogo.url_receta_2",
+   "ambito": "catalogo",
+   "nombres": [
+    "URL_Receta_2"
+   ],
+   "alias_historicos": [],
+   "posicion": 48,
+   "letra": "AW",
+   "vecinos": [
+    "Receta_2",
+    "Cod_Walmart_2"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 13,
+   "visto": "2026-08-20"
+  },
+  "catalogo.cod_walmart_2": {
+   "id": "catalogo.cod_walmart_2",
+   "ambito": "catalogo",
+   "nombres": [
+    "Cod_Walmart_2"
+   ],
+   "alias_historicos": [],
+   "posicion": 49,
+   "letra": "AX",
+   "vecinos": [
+    "URL_Receta_2",
+    "Carritos_Walmart_2"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 14,
+   "visto": "2026-08-20"
+  },
+  "catalogo.carritos_walmart_2": {
+   "id": "catalogo.carritos_walmart_2",
+   "ambito": "catalogo",
+   "nombres": [
+    "Carritos_Walmart_2"
+   ],
+   "alias_historicos": [],
+   "posicion": 50,
+   "letra": "AY",
+   "vecinos": [
+    "Cod_Walmart_2",
+    "Cod_Chedraui_2"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 13,
+   "visto": "2026-08-20"
+  },
+  "catalogo.cod_chedraui_2": {
+   "id": "catalogo.cod_chedraui_2",
+   "ambito": "catalogo",
+   "nombres": [
+    "Cod_Chedraui_2"
+   ],
+   "alias_historicos": [],
+   "posicion": 51,
+   "letra": "AZ",
+   "vecinos": [
+    "Carritos_Walmart_2",
+    "Carritos_Chedraui_2"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "catalogo.carritos_chedraui_2": {
+   "id": "catalogo.carritos_chedraui_2",
+   "ambito": "catalogo",
+   "nombres": [
+    "Carritos_Chedraui_2"
+   ],
+   "alias_historicos": [],
+   "posicion": 52,
+   "letra": "BA",
+   "vecinos": [
+    "Cod_Chedraui_2",
+    "Receta_3"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "catalogo.receta_3": {
+   "id": "catalogo.receta_3",
+   "ambito": "catalogo",
+   "nombres": [
+    "Receta_3"
+   ],
+   "alias_historicos": [],
+   "posicion": 53,
+   "letra": "BB",
+   "vecinos": [
+    "Carritos_Chedraui_2",
+    "URL_Receta_3"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 10,
+   "visto": "2026-08-20"
+  },
+  "catalogo.url_receta_3": {
+   "id": "catalogo.url_receta_3",
+   "ambito": "catalogo",
+   "nombres": [
+    "URL_Receta_3"
+   ],
+   "alias_historicos": [],
+   "posicion": 54,
+   "letra": "BC",
+   "vecinos": [
+    "Receta_3",
+    "Cod_Walmart_3"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 8,
+   "visto": "2026-08-20"
+  },
+  "catalogo.cod_walmart_3": {
+   "id": "catalogo.cod_walmart_3",
+   "ambito": "catalogo",
+   "nombres": [
+    "Cod_Walmart_3"
+   ],
+   "alias_historicos": [],
+   "posicion": 55,
+   "letra": "BD",
+   "vecinos": [
+    "URL_Receta_3",
+    "Carritos_Walmart_3"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 10,
+   "visto": "2026-08-20"
+  },
+  "catalogo.carritos_walmart_3": {
+   "id": "catalogo.carritos_walmart_3",
+   "ambito": "catalogo",
+   "nombres": [
+    "Carritos_Walmart_3"
+   ],
+   "alias_historicos": [],
+   "posicion": 56,
+   "letra": "BE",
+   "vecinos": [
+    "Cod_Walmart_3",
+    "Cod_Chedraui_3"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 8,
+   "visto": "2026-08-20"
+  },
+  "catalogo.cod_chedraui_3": {
+   "id": "catalogo.cod_chedraui_3",
+   "ambito": "catalogo",
+   "nombres": [
+    "Cod_Chedraui_3"
+   ],
+   "alias_historicos": [],
+   "posicion": 57,
+   "letra": "BF",
+   "vecinos": [
+    "Carritos_Walmart_3",
+    "Carritos_Chedraui_3"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 1,
+   "visto": "2026-08-20"
+  },
+  "catalogo.carritos_chedraui_3": {
+   "id": "catalogo.carritos_chedraui_3",
+   "ambito": "catalogo",
+   "nombres": [
+    "Carritos_Chedraui_3"
+   ],
+   "alias_historicos": [],
+   "posicion": 58,
+   "letra": "BG",
+   "vecinos": [
+    "Cod_Chedraui_3",
+    "Receta_4"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 7,
+   "visto": "2026-08-20"
+  },
+  "catalogo.receta_4": {
+   "id": "catalogo.receta_4",
+   "ambito": "catalogo",
+   "nombres": [
+    "Receta_4"
+   ],
+   "alias_historicos": [],
+   "posicion": 59,
+   "letra": "BH",
+   "vecinos": [
+    "Carritos_Chedraui_3",
+    "URL_Receta_4"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 4,
+   "visto": "2026-08-20"
+  },
+  "catalogo.url_receta_4": {
+   "id": "catalogo.url_receta_4",
+   "ambito": "catalogo",
+   "nombres": [
+    "URL_Receta_4"
+   ],
+   "alias_historicos": [],
+   "posicion": 60,
+   "letra": "BI",
+   "vecinos": [
+    "Receta_4",
+    "Cod_Walmart_4"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3,
+   "visto": "2026-08-20"
+  },
+  "catalogo.cod_walmart_4": {
+   "id": "catalogo.cod_walmart_4",
+   "ambito": "catalogo",
+   "nombres": [
+    "Cod_Walmart_4"
+   ],
+   "alias_historicos": [],
+   "posicion": 61,
+   "letra": "BJ",
+   "vecinos": [
+    "URL_Receta_4",
+    "Carritos_Walmart_4"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 4,
+   "visto": "2026-08-20"
+  },
+  "catalogo.carritos_walmart_4": {
+   "id": "catalogo.carritos_walmart_4",
+   "ambito": "catalogo",
+   "nombres": [
+    "Carritos_Walmart_4"
+   ],
+   "alias_historicos": [],
+   "posicion": 62,
+   "letra": "BK",
+   "vecinos": [
+    "Cod_Walmart_4",
+    "Cod_Chedraui_4"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 3,
+   "visto": "2026-08-20"
+  },
+  "catalogo.cod_chedraui_4": {
+   "id": "catalogo.cod_chedraui_4",
+   "ambito": "catalogo",
+   "nombres": [
+    "Cod_Chedraui_4"
+   ],
+   "alias_historicos": [],
+   "posicion": 63,
+   "letra": "BL",
+   "vecinos": [
+    "Carritos_Walmart_4",
+    "Carritos_Chedraui_4"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "catalogo.carritos_chedraui_4": {
+   "id": "catalogo.carritos_chedraui_4",
+   "ambito": "catalogo",
+   "nombres": [
+    "Carritos_Chedraui_4"
+   ],
+   "alias_historicos": [],
+   "posicion": 64,
+   "letra": "BM",
+   "vecinos": [
+    "Cod_Chedraui_4",
+    "Estado"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 3,
+   "visto": "2026-08-20"
+  },
+  "catalogo.estado": {
+   "id": "catalogo.estado",
+   "ambito": "catalogo",
+   "nombres": [
+    "Estado"
+   ],
+   "alias_historicos": [],
+   "posicion": 65,
+   "letra": "BN",
+   "vecinos": [
+    "Carritos_Chedraui_4",
+    "Fuente_Qcart"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 119,
+   "visto": "2026-08-20"
+  },
+  "catalogo.fuente_qcart": {
+   "id": "catalogo.fuente_qcart",
+   "ambito": "catalogo",
+   "nombres": [
+    "Fuente_Qcart"
+   ],
+   "alias_historicos": [],
+   "posicion": 66,
+   "letra": "BO",
+   "vecinos": [
+    "Estado",
+    "Notas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 30,
+   "visto": "2026-08-20"
+  },
+  "catalogo.notas": {
+   "id": "catalogo.notas",
+   "ambito": "catalogo",
+   "nombres": [
+    "Notas"
+   ],
+   "alias_historicos": [],
+   "posicion": 67,
+   "letra": "BP",
+   "vecinos": [
+    "Fuente_Qcart",
+    "Subsegmento"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 46,
+   "visto": "2026-08-20"
+  },
+  "catalogo.subsegmento": {
+   "id": "catalogo.subsegmento",
+   "ambito": "catalogo",
+   "nombres": [
+    "Subsegmento"
+   ],
+   "alias_historicos": [],
+   "posicion": 68,
+   "letra": "BQ",
+   "vecinos": [
+    "Notas",
+    "EmailName"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 15,
+   "visto": "2026-08-20"
+  },
+  "catalogo.emailname": {
+   "id": "catalogo.emailname",
+   "ambito": "catalogo",
+   "nombres": [
+    "Email_Name_Legacy (duplicada, no usar)"
+   ],
+   "alias_historicos": [
+    "EmailName"
+   ],
+   "posicion": 69,
+   "letra": "BR",
+   "vecinos": [
+    "Subsegmento",
+    "Content_ID"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 94,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "EmailName",
+    "a": "Email_Name_Legacy (duplicada, no usar)",
+    "por": "A11 · era una SEGUNDA columna con el mismo hecho, y no coincidía en 16 filas (A8). Se conserva como evidencia; el nombre avisa que no se use"
+   }
+  },
+  "catalogo.content_id": {
+   "id": "catalogo.content_id",
+   "ambito": "catalogo",
+   "nombres": [
+    "Content_ID (final del Email_Name)"
+   ],
+   "alias_historicos": [
+    "Content_ID"
+   ],
+   "posicion": 70,
+   "letra": "BS",
+   "vecinos": [
+    "EmailName",
+    "EmailID"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 94,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "Content_ID",
+    "a": "Content_ID (final del Email_Name)",
+    "por": "A11 · la nota que pidió Rick, para que no se confunda con Email_ID"
+   }
+  },
+  "catalogo.emailid": {
+   "id": "catalogo.emailid",
+   "ambito": "catalogo",
+   "nombres": [
+    "Email_ID (de la DE de SFMC)"
+   ],
+   "alias_historicos": [
+    "EmailID"
+   ],
+   "posicion": 71,
+   "letra": "BT",
+   "vecinos": [
+    "Content_ID",
+    "Oleada"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 98,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "EmailID",
+    "a": "Email_ID (de la DE de SFMC)",
+    "por": "A11 · la nota que pidió Rick — es otro dato, no la colita"
+   }
+  },
+  "catalogo.oleada": {
+   "id": "catalogo.oleada",
+   "ambito": "catalogo",
+   "nombres": [
+    "Oleada"
+   ],
+   "alias_historicos": [],
+   "posicion": 72,
+   "letra": "BU",
+   "vecinos": [
+    "EmailID",
+    "Mascota"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "catalogo.mascota": {
+   "id": "catalogo.mascota",
+   "ambito": "catalogo",
+   "nombres": [
+    "Mascota"
+   ],
+   "alias_historicos": [],
+   "posicion": 73,
+   "letra": "BV",
+   "vecinos": [
+    "Oleada",
+    "Fecha_Activacion_Qcart"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 15,
+   "visto": "2026-08-20"
+  },
+  "catalogo.fecha_activacion_qcart": {
+   "id": "catalogo.fecha_activacion_qcart",
+   "ambito": "catalogo",
+   "nombres": [
+    "Fecha_Activacion_Qcart"
+   ],
+   "alias_historicos": [],
+   "posicion": 74,
+   "letra": "BW",
+   "vecinos": [
+    "Mascota",
+    "Activaciones_Qcart"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 23,
+   "visto": "2026-08-20"
+  },
+  "catalogo.activaciones_qcart": {
+   "id": "catalogo.activaciones_qcart",
+   "ambito": "catalogo",
+   "nombres": [
+    "Activaciones_Qcart"
+   ],
+   "alias_historicos": [],
+   "posicion": 75,
+   "letra": "BX",
+   "vecinos": [
+    "Fecha_Activacion_Qcart"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 23,
+   "visto": "2026-08-20"
+  },
+  "data_email.bu": {
+   "id": "data_email.bu",
+   "ambito": "data_email",
+   "nombres": [
+    "BU"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "letra": "A",
+   "vecinos": [
+    "Campaign"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.campaign": {
+   "id": "data_email.campaign",
+   "ambito": "data_email",
+   "nombres": [
+    "Campaign"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "letra": "B",
+   "vecinos": [
+    "BU",
+    "Journey"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.journey": {
+   "id": "data_email.journey",
+   "ambito": "data_email",
+   "nombres": [
+    "Journey"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "letra": "C",
+   "vecinos": [
+    "Campaign",
+    "Segment"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.segment": {
+   "id": "data_email.segment",
+   "ambito": "data_email",
+   "nombres": [
+    "Segment"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "letra": "D",
+   "vecinos": [
+    "Journey",
+    "Email_Type"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.email_type": {
+   "id": "data_email.email_type",
+   "ambito": "data_email",
+   "nombres": [
+    "Email_Type"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "letra": "E",
+   "vecinos": [
+    "Segment",
+    "Touchpoint"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.touchpoint": {
+   "id": "data_email.touchpoint",
+   "ambito": "data_email",
+   "nombres": [
+    "Touchpoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "letra": "F",
+   "vecinos": [
+    "Email_Type",
+    "Version"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.version": {
+   "id": "data_email.version",
+   "ambito": "data_email",
+   "nombres": [
+    "Version"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "letra": "G",
+   "vecinos": [
+    "Touchpoint",
+    "Journey_ID"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 80,
+   "visto": "2026-08-20"
+  },
+  "data_email.journey_id": {
+   "id": "data_email.journey_id",
+   "ambito": "data_email",
+   "nombres": [
+    "Journey_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "letra": "H",
+   "vecinos": [
+    "Version",
+    "Subject_Clean"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 263,
+   "visto": "2026-08-20"
+  },
+  "data_email.subject_clean": {
+   "id": "data_email.subject_clean",
+   "ambito": "data_email",
+   "nombres": [
+    "Subject_Clean"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "letra": "I",
+   "vecinos": [
+    "Journey_ID",
+    "Report_Period"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 81,
+   "visto": "2026-08-20"
+  },
+  "data_email.report_period": {
+   "id": "data_email.report_period",
+   "ambito": "data_email",
+   "nombres": [
+    "Report_Period"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "letra": "J",
+   "vecinos": [
+    "Subject_Clean",
+    "Source"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 81,
+   "visto": "2026-08-20"
+  },
+  "data_email.source": {
+   "id": "data_email.source",
+   "ambito": "data_email",
+   "nombres": [
+    "Source"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "letra": "K",
+   "vecinos": [
+    "Report_Period",
+    "Send_Date"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.send_date": {
+   "id": "data_email.send_date",
+   "ambito": "data_email",
+   "nombres": [
+    "Send_Date"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "letra": "L",
+   "vecinos": [
+    "Source",
+    "Send_Week"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 263,
+   "visto": "2026-08-20"
+  },
+  "data_email.send_week": {
+   "id": "data_email.send_week",
+   "ambito": "data_email",
+   "nombres": [
+    "Send_Week"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "letra": "M",
+   "vecinos": [
+    "Send_Date",
+    "Email_Sender_Name"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 263,
+   "visto": "2026-08-20"
+  },
+  "data_email.email_sender_name": {
+   "id": "data_email.email_sender_name",
+   "ambito": "data_email",
+   "nombres": [
+    "Email_Sender_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "letra": "N",
+   "vecinos": [
+    "Send_Week",
+    "Canal"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 263,
+   "visto": "2026-08-20"
+  },
+  "data_email.canal": {
+   "id": "data_email.canal",
+   "ambito": "data_email",
+   "nombres": [
+    "Canal"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "letra": "O",
+   "vecinos": [
+    "Email_Sender_Name",
+    "BU_Canonico"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.bu_canonico": {
+   "id": "data_email.bu_canonico",
+   "ambito": "data_email",
+   "nombres": [
+    "BU_Canonico"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "letra": "P",
+   "vecinos": [
+    "Canal",
+    "Marca"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 53,
+   "visto": "2026-08-20"
+  },
+  "data_email.marca": {
+   "id": "data_email.marca",
+   "ambito": "data_email",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 16,
+   "letra": "Q",
+   "vecinos": [
+    "BU_Canonico",
+    "Campana_Canonica"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 53,
+   "visto": "2026-08-20"
+  },
+  "data_email.campana_canonica": {
+   "id": "data_email.campana_canonica",
+   "ambito": "data_email",
+   "nombres": [
+    "Campaña"
+   ],
+   "alias_historicos": [
+    "Campana_Canonica"
+   ],
+   "posicion": 17,
+   "letra": "R",
+   "vecinos": [
+    "Marca",
+    "Segmento_Canonico"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 134,
+   "visto": "2026-08-20"
+  },
+  "data_email.segmento_canonico": {
+   "id": "data_email.segmento_canonico",
+   "ambito": "data_email",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [
+    "Segmento_Canonico"
+   ],
+   "posicion": 18,
+   "letra": "S",
+   "vecinos": [
+    "Campana_Canonica",
+    "Nombre_Journey"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 237,
+   "visto": "2026-08-20"
+  },
+  "data_email.nombre_journey": {
+   "id": "data_email.nombre_journey",
+   "ambito": "data_email",
+   "nombres": [
+    "Nombre_Journey"
+   ],
+   "alias_historicos": [],
+   "posicion": 19,
+   "letra": "T",
+   "vecinos": [
+    "Segmento_Canonico",
+    "Datorama_Campaign"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 210,
+   "visto": "2026-08-20"
+  },
+  "data_email.datorama_campaign": {
+   "id": "data_email.datorama_campaign",
+   "ambito": "data_email",
+   "nombres": [
+    "Datorama_Campaign"
+   ],
+   "alias_historicos": [],
+   "posicion": 20,
+   "letra": "U",
+   "vecinos": [
+    "Nombre_Journey",
+    "Datorama_Campaign_ID"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 56,
+   "visto": "2026-08-20"
+  },
+  "data_email.datorama_campaign_id": {
+   "id": "data_email.datorama_campaign_id",
+   "ambito": "data_email",
+   "nombres": [
+    "Datorama_Campaign_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 21,
+   "letra": "V",
+   "vecinos": [
+    "Datorama_Campaign",
+    "Email_Content_Name"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 239,
+   "visto": "2026-08-20"
+  },
+  "data_email.email_content_name": {
+   "id": "data_email.email_content_name",
+   "ambito": "data_email",
+   "nombres": [
+    "Email_Name"
+   ],
+   "alias_historicos": [
+    "Email_Content_Name"
+   ],
+   "posicion": 22,
+   "letra": "W",
+   "vecinos": [
+    "Datorama_Campaign_ID",
+    "Email_Subject_Raw"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20",
+   "renombrada": {
+    "cuando": "2026-08-21",
+    "de": "Email_Content_Name",
+    "a": "Email_Name",
+    "por": "A11 · content name = email name; «Email_Email_Name» habría sido el resultado de un reemplazo ciego"
+   }
+  },
+  "data_email.email_subject_raw": {
+   "id": "data_email.email_subject_raw",
+   "ambito": "data_email",
+   "nombres": [
+    "Email_Subject_Raw"
+   ],
+   "alias_historicos": [],
+   "posicion": 23,
+   "letra": "X",
+   "vecinos": [
+    "Email_Content_Name",
+    "Audience_Name"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.audience_name": {
+   "id": "data_email.audience_name",
+   "ambito": "data_email",
+   "nombres": [
+    "Audience_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 24,
+   "letra": "Y",
+   "vecinos": [
+    "Email_Subject_Raw",
+    "Email_Sends"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 261,
+   "visto": "2026-08-20"
+  },
+  "data_email.email_sends": {
+   "id": "data_email.email_sends",
+   "ambito": "data_email",
+   "nombres": [
+    "Email_Sends"
+   ],
+   "alias_historicos": [],
+   "posicion": 25,
+   "letra": "Z",
+   "vecinos": [
+    "Audience_Name",
+    "Email_Deliveries"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.email_deliveries": {
+   "id": "data_email.email_deliveries",
+   "ambito": "data_email",
+   "nombres": [
+    "Email_Deliveries"
+   ],
+   "alias_historicos": [],
+   "posicion": 26,
+   "letra": "AA",
+   "vecinos": [
+    "Email_Sends",
+    "Email_Unique_Opens"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.email_unique_opens": {
+   "id": "data_email.email_unique_opens",
+   "ambito": "data_email",
+   "nombres": [
+    "Email_Unique_Opens"
+   ],
+   "alias_historicos": [],
+   "posicion": 27,
+   "letra": "AB",
+   "vecinos": [
+    "Email_Deliveries",
+    "Email_Unique_Clicks"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.email_unique_clicks": {
+   "id": "data_email.email_unique_clicks",
+   "ambito": "data_email",
+   "nombres": [
+    "Email_Unique_Clicks"
+   ],
+   "alias_historicos": [],
+   "posicion": 28,
+   "letra": "AC",
+   "vecinos": [
+    "Email_Unique_Opens",
+    "Email_Bounces"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.email_bounces": {
+   "id": "data_email.email_bounces",
+   "ambito": "data_email",
+   "nombres": [
+    "Email_Bounces"
+   ],
+   "alias_historicos": [],
+   "posicion": 29,
+   "letra": "AD",
+   "vecinos": [
+    "Email_Unique_Clicks",
+    "Delivery_Rate"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.delivery_rate": {
+   "id": "data_email.delivery_rate",
+   "ambito": "data_email",
+   "nombres": [
+    "Delivery_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 30,
+   "letra": "AE",
+   "vecinos": [
+    "Email_Bounces",
+    "Open_Rate"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 81,
+   "visto": "2026-08-20"
+  },
+  "data_email.open_rate": {
+   "id": "data_email.open_rate",
+   "ambito": "data_email",
+   "nombres": [
+    "Open_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 31,
+   "letra": "AF",
+   "vecinos": [
+    "Delivery_Rate",
+    "Click_Rate"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 81,
+   "visto": "2026-08-20"
+  },
+  "data_email.click_rate": {
+   "id": "data_email.click_rate",
+   "ambito": "data_email",
+   "nombres": [
+    "Click_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 32,
+   "letra": "AG",
+   "vecinos": [
+    "Open_Rate",
+    "CTOR"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 81,
+   "visto": "2026-08-20"
+  },
+  "data_email.ctor": {
+   "id": "data_email.ctor",
+   "ambito": "data_email",
+   "nombres": [
+    "CTOR"
+   ],
+   "alias_historicos": [],
+   "posicion": 33,
+   "letra": "AH",
+   "vecinos": [
+    "Click_Rate",
+    "Bounce_Rate"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 81,
+   "visto": "2026-08-20"
+  },
+  "data_email.bounce_rate": {
+   "id": "data_email.bounce_rate",
+   "ambito": "data_email",
+   "nombres": [
+    "Bounce_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 34,
+   "letra": "AI",
+   "vecinos": [
+    "CTOR",
+    "Flag_Zero_Sends"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 81,
+   "visto": "2026-08-20"
+  },
+  "data_email.flag_zero_sends": {
+   "id": "data_email.flag_zero_sends",
+   "ambito": "data_email",
+   "nombres": [
+    "Flag_Zero_Sends"
+   ],
+   "alias_historicos": [],
+   "posicion": 35,
+   "letra": "AJ",
+   "vecinos": [
+    "Bounce_Rate",
+    "Flag_Negative_Values"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 80,
+   "visto": "2026-08-20"
+  },
+  "data_email.flag_negative_values": {
+   "id": "data_email.flag_negative_values",
+   "ambito": "data_email",
+   "nombres": [
+    "Flag_Negative_Values"
+   ],
+   "alias_historicos": [],
+   "posicion": 36,
+   "letra": "AK",
+   "vecinos": [
+    "Flag_Zero_Sends",
+    "Flag_Rate_Mismatch"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 80,
+   "visto": "2026-08-20"
+  },
+  "data_email.flag_rate_mismatch": {
+   "id": "data_email.flag_rate_mismatch",
+   "ambito": "data_email",
+   "nombres": [
+    "Flag_Rate_Mismatch"
+   ],
+   "alias_historicos": [],
+   "posicion": 37,
+   "letra": "AL",
+   "vecinos": [
+    "Flag_Negative_Values",
+    "Send_Month"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 80,
+   "visto": "2026-08-20"
+  },
+  "data_email.send_month": {
+   "id": "data_email.send_month",
+   "ambito": "data_email",
+   "nombres": [
+    "Send_Month"
+   ],
+   "alias_historicos": [],
+   "posicion": 38,
+   "letra": "AM",
+   "vecinos": [
+    "Flag_Rate_Mismatch",
+    "Send_Quincena"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.send_quincena": {
+   "id": "data_email.send_quincena",
+   "ambito": "data_email",
+   "nombres": [
+    "Quincena"
+   ],
+   "alias_historicos": [
+    "Send_Quincena"
+   ],
+   "posicion": 39,
+   "letra": "AN",
+   "vecinos": [
+    "Send_Month",
+    "Brand"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_email.brand": {
+   "id": "data_email.brand",
+   "ambito": "data_email",
+   "nombres": [
+    "Brand"
+   ],
+   "alias_historicos": [],
+   "posicion": 40,
+   "letra": "AO",
+   "vecinos": [
+    "Send_Quincena",
+    "Send_Week_Label"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 75,
+   "visto": "2026-08-20"
+  },
+  "data_email.send_week_label": {
+   "id": "data_email.send_week_label",
+   "ambito": "data_email",
+   "nombres": [
+    "Send_Week_Label"
+   ],
+   "alias_historicos": [],
+   "posicion": 41,
+   "letra": "AP",
+   "vecinos": [
+    "Brand",
+    "Excluido_Motivo"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 263,
+   "visto": "2026-08-20"
+  },
+  "data_email.excluido_motivo": {
+   "id": "data_email.excluido_motivo",
+   "ambito": "data_email",
+   "nombres": [
+    "Excluido_Motivo"
+   ],
+   "alias_historicos": [],
+   "posicion": 42,
+   "letra": "AQ",
+   "vecinos": [
+    "Send_Week_Label",
+    "pieza_id"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 24,
+   "visto": "2026-08-20"
+  },
+  "data_email.pieza_id": {
+   "id": "data_email.pieza_id",
+   "ambito": "data_email",
+   "nombres": [
+    "pieza_id"
+   ],
+   "alias_historicos": [],
+   "posicion": 43,
+   "letra": "AR",
+   "vecinos": [
+    "Excluido_Motivo"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 264,
+   "visto": "2026-08-20"
+  },
+  "data_wa.bu": {
+   "id": "data_wa.bu",
+   "ambito": "data_wa",
+   "nombres": [
+    "BU"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "letra": "A",
+   "vecinos": [
+    "Marca"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.marca": {
+   "id": "data_wa.marca",
+   "ambito": "data_wa",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "letra": "B",
+   "vecinos": [
+    "BU",
+    "Campaña"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.campana": {
+   "id": "data_wa.campana",
+   "ambito": "data_wa",
+   "nombres": [
+    "Campaña"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "letra": "C",
+   "vecinos": [
+    "Marca",
+    "Campana_Raw"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.campana_raw": {
+   "id": "data_wa.campana_raw",
+   "ambito": "data_wa",
+   "nombres": [
+    "Campana_Raw"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "letra": "D",
+   "vecinos": [
+    "Campaña",
+    "Objetivo"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.objetivo": {
+   "id": "data_wa.objetivo",
+   "ambito": "data_wa",
+   "nombres": [
+    "Objetivo"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "letra": "E",
+   "vecinos": [
+    "Campana_Raw",
+    "Segmento_Canonico"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 5,
+   "visto": "2026-08-20"
+  },
+  "data_wa.segmento_canonico": {
+   "id": "data_wa.segmento_canonico",
+   "ambito": "data_wa",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [
+    "Segmento_Canonico"
+   ],
+   "posicion": 5,
+   "letra": "F",
+   "vecinos": [
+    "Objetivo",
+    "Segmento_WA_Raw"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.segmento_wa_raw": {
+   "id": "data_wa.segmento_wa_raw",
+   "ambito": "data_wa",
+   "nombres": [
+    "Segmento_WA_Raw"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "letra": "G",
+   "vecinos": [
+    "Segmento_Canonico",
+    "Canal"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "data_wa.canal": {
+   "id": "data_wa.canal",
+   "ambito": "data_wa",
+   "nombres": [
+    "Canal"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "letra": "H",
+   "vecinos": [
+    "Segmento_WA_Raw",
+    "Touchpoint"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.touchpoint": {
+   "id": "data_wa.touchpoint",
+   "ambito": "data_wa",
+   "nombres": [
+    "Touchpoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "letra": "I",
+   "vecinos": [
+    "Canal",
+    "Send_Date"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.send_date": {
+   "id": "data_wa.send_date",
+   "ambito": "data_wa",
+   "nombres": [
+    "Send_Date"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "letra": "J",
+   "vecinos": [
+    "Touchpoint",
+    "Send_Month"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 11,
+   "visto": "2026-08-20"
+  },
+  "data_wa.send_month": {
+   "id": "data_wa.send_month",
+   "ambito": "data_wa",
+   "nombres": [
+    "Send_Month"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "letra": "K",
+   "vecinos": [
+    "Send_Date",
+    "Send_Quincena"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 10,
+   "visto": "2026-08-20"
+  },
+  "data_wa.send_quincena": {
+   "id": "data_wa.send_quincena",
+   "ambito": "data_wa",
+   "nombres": [
+    "Quincena"
+   ],
+   "alias_historicos": [
+    "Send_Quincena"
+   ],
+   "posicion": 11,
+   "letra": "L",
+   "vecinos": [
+    "Send_Month",
+    "Sends"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 10,
+   "visto": "2026-08-20"
+  },
+  "data_wa.sends": {
+   "id": "data_wa.sends",
+   "ambito": "data_wa",
+   "nombres": [
+    "Sends"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "letra": "M",
+   "vecinos": [
+    "Send_Quincena",
+    "Deliveries"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.deliveries": {
+   "id": "data_wa.deliveries",
+   "ambito": "data_wa",
+   "nombres": [
+    "Deliveries"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "letra": "N",
+   "vecinos": [
+    "Sends",
+    "Opens_Read"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.opens_read": {
+   "id": "data_wa.opens_read",
+   "ambito": "data_wa",
+   "nombres": [
+    "Opens_Read"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "letra": "O",
+   "vecinos": [
+    "Deliveries",
+    "Clicks"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.clicks": {
+   "id": "data_wa.clicks",
+   "ambito": "data_wa",
+   "nombres": [
+    "Clicks"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "letra": "P",
+   "vecinos": [
+    "Opens_Read",
+    "Clicks_Medidos"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 7,
+   "visto": "2026-08-20"
+  },
+  "data_wa.clicks_medidos": {
+   "id": "data_wa.clicks_medidos",
+   "ambito": "data_wa",
+   "nombres": [
+    "Clicks_Medidos"
+   ],
+   "alias_historicos": [],
+   "posicion": 16,
+   "letra": "Q",
+   "vecinos": [
+    "Clicks",
+    "Errores"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.errores": {
+   "id": "data_wa.errores",
+   "ambito": "data_wa",
+   "nombres": [
+    "Errores"
+   ],
+   "alias_historicos": [],
+   "posicion": 17,
+   "letra": "R",
+   "vecinos": [
+    "Clicks_Medidos",
+    "Delivery_Rate"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.delivery_rate": {
+   "id": "data_wa.delivery_rate",
+   "ambito": "data_wa",
+   "nombres": [
+    "Delivery_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 18,
+   "letra": "S",
+   "vecinos": [
+    "Errores",
+    "Read_Rate"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.read_rate": {
+   "id": "data_wa.read_rate",
+   "ambito": "data_wa",
+   "nombres": [
+    "Read_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 19,
+   "letra": "T",
+   "vecinos": [
+    "Delivery_Rate",
+    "CTOR"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.ctor": {
+   "id": "data_wa.ctor",
+   "ambito": "data_wa",
+   "nombres": [
+    "CTOR"
+   ],
+   "alias_historicos": [],
+   "posicion": 20,
+   "letra": "U",
+   "vecinos": [
+    "Read_Rate",
+    "Aud_Original"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "data_wa.aud_original": {
+   "id": "data_wa.aud_original",
+   "ambito": "data_wa",
+   "nombres": [
+    "Aud_Original"
+   ],
+   "alias_historicos": [],
+   "posicion": 21,
+   "letra": "V",
+   "vecinos": [
+    "CTOR",
+    "Aud_Filtros"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 7,
+   "visto": "2026-08-20"
+  },
+  "data_wa.aud_filtros": {
+   "id": "data_wa.aud_filtros",
+   "ambito": "data_wa",
+   "nombres": [
+    "Aud_Filtros"
+   ],
+   "alias_historicos": [],
+   "posicion": 22,
+   "letra": "W",
+   "vecinos": [
+    "Aud_Original",
+    "Aud_Final"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 4,
+   "visto": "2026-08-20"
+  },
+  "data_wa.aud_final": {
+   "id": "data_wa.aud_final",
+   "ambito": "data_wa",
+   "nombres": [
+    "Aud_Final"
+   ],
+   "alias_historicos": [],
+   "posicion": 23,
+   "letra": "X",
+   "vecinos": [
+    "Aud_Filtros",
+    "Logins"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 4,
+   "visto": "2026-08-20"
+  },
+  "data_wa.logins": {
+   "id": "data_wa.logins",
+   "ambito": "data_wa",
+   "nombres": [
+    "Logins"
+   ],
+   "alias_historicos": [],
+   "posicion": 24,
+   "letra": "Y",
+   "vecinos": [
+    "Aud_Final",
+    "Recetas_Capturadas"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "data_wa.recetas_capturadas": {
+   "id": "data_wa.recetas_capturadas",
+   "ambito": "data_wa",
+   "nombres": [
+    "Recetas_Capturadas"
+   ],
+   "alias_historicos": [],
+   "posicion": 25,
+   "letra": "Z",
+   "vecinos": [
+    "Logins",
+    "Pct_Error"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "data_wa.pct_error": {
+   "id": "data_wa.pct_error",
+   "ambito": "data_wa",
+   "nombres": [
+    "Pct_Error"
+   ],
+   "alias_historicos": [],
+   "posicion": 26,
+   "letra": "AA",
+   "vecinos": [
+    "Recetas_Capturadas",
+    "Errores_Meta_Detalle"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "data_wa.errores_meta_detalle": {
+   "id": "data_wa.errores_meta_detalle",
+   "ambito": "data_wa",
+   "nombres": [
+    "Errores_Meta_Detalle"
+   ],
+   "alias_historicos": [],
+   "posicion": 27,
+   "letra": "AB",
+   "vecinos": [
+    "Pct_Error",
+    "utm_content"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "data_wa.utm_content": {
+   "id": "data_wa.utm_content",
+   "ambito": "data_wa",
+   "nombres": [
+    "utm_content"
+   ],
+   "alias_historicos": [],
+   "posicion": 28,
+   "letra": "AC",
+   "vecinos": [
+    "Errores_Meta_Detalle",
+    "URL"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 9,
+   "visto": "2026-08-20"
+  },
+  "data_wa.url": {
+   "id": "data_wa.url",
+   "ambito": "data_wa",
+   "nombres": [
+    "URL"
+   ],
+   "alias_historicos": [],
+   "posicion": 29,
+   "letra": "AD",
+   "vecinos": [
+    "utm_content",
+    "Notas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 6,
+   "visto": "2026-08-20"
+  },
+  "data_wa.notas": {
+   "id": "data_wa.notas",
+   "ambito": "data_wa",
+   "nombres": [
+    "Notas"
+   ],
+   "alias_historicos": [],
+   "posicion": 30,
+   "letra": "AE",
+   "vecinos": [
+    "URL",
+    "pieza_id"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 0,
+   "visto": "2026-08-20"
+  },
+  "data_wa.pieza_id": {
+   "id": "data_wa.pieza_id",
+   "ambito": "data_wa",
+   "nombres": [
+    "pieza_id"
+   ],
+   "alias_historicos": [],
+   "posicion": 31,
+   "letra": "AF",
+   "vecinos": [
+    "Notas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 12,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.pieza_id": {
+   "id": "qcart_carritos.pieza_id",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "pieza_id"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "letra": "A",
+   "vecinos": [
+    "fecha"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 2808,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.fecha": {
+   "id": "qcart_carritos.fecha",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "fecha"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "letra": "B",
+   "vecinos": [
+    "pieza_id",
+    "hora"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.hora": {
+   "id": "qcart_carritos.hora",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "hora"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "letra": "C",
+   "vecinos": [
+    "fecha",
+    "shortlink_code"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.shortlink_code": {
+   "id": "qcart_carritos.shortlink_code",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "shortlink_code"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "letra": "D",
+   "vecinos": [
+    "hora",
+    "shortlink_name"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.shortlink_name": {
+   "id": "qcart_carritos.shortlink_name",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "shortlink_name"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "letra": "E",
+   "vecinos": [
+    "shortlink_code",
+    "utm_campaign"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.utm_campaign": {
+   "id": "qcart_carritos.utm_campaign",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "utm_campaign"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "letra": "F",
+   "vecinos": [
+    "shortlink_name",
+    "utm_medium"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.utm_medium": {
+   "id": "qcart_carritos.utm_medium",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "utm_medium"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "letra": "G",
+   "vecinos": [
+    "utm_campaign",
+    "utm_source"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.utm_source": {
+   "id": "qcart_carritos.utm_source",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "utm_source"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "letra": "H",
+   "vecinos": [
+    "utm_medium",
+    "utm_content"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.utm_content": {
+   "id": "qcart_carritos.utm_content",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "utm_content"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "letra": "I",
+   "vecinos": [
+    "utm_source",
+    "utm_term"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 2287,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.utm_term": {
+   "id": "qcart_carritos.utm_term",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "utm_term"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "letra": "J",
+   "vecinos": [
+    "utm_content",
+    "store"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.store": {
+   "id": "qcart_carritos.store",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "store"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "letra": "K",
+   "vecinos": [
+    "utm_term",
+    "n_tiendas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.n_tiendas": {
+   "id": "qcart_carritos.n_tiendas",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "n_tiendas"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "letra": "L",
+   "vecinos": [
+    "store",
+    "impressions"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.impressions": {
+   "id": "qcart_carritos.impressions",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "impressions"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "letra": "M",
+   "vecinos": [
+    "n_tiendas",
+    "views"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.views": {
+   "id": "qcart_carritos.views",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "views"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "letra": "N",
+   "vecinos": [
+    "impressions",
+    "total_shown_price"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.total_shown_price": {
+   "id": "qcart_carritos.total_shown_price",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "total_shown_price"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "letra": "O",
+   "vecinos": [
+    "views",
+    "activacion_link"
+   ],
+   "tipo_dato": "decimal",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.activacion_link": {
+   "id": "qcart_carritos.activacion_link",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "activacion_link"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "letra": "P",
+   "vecinos": [
+    "total_shown_price",
+    "link_campana"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 2608,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.link_campana": {
+   "id": "qcart_carritos.link_campana",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "link_campana"
+   ],
+   "alias_historicos": [],
+   "posicion": 16,
+   "letra": "Q",
+   "vecinos": [
+    "activacion_link",
+    "fuente"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.fuente": {
+   "id": "qcart_carritos.fuente",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "fuente"
+   ],
+   "alias_historicos": [],
+   "posicion": 17,
+   "letra": "R",
+   "vecinos": [
+    "link_campana",
+    "fila_en_csv"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.fila_en_csv": {
+   "id": "qcart_carritos.fila_en_csv",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "fila_en_csv"
+   ],
+   "alias_historicos": [],
+   "posicion": 18,
+   "letra": "S",
+   "vecinos": [
+    "fuente",
+    "aviso"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 3009,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.aviso": {
+   "id": "qcart_carritos.aviso",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "aviso"
+   ],
+   "alias_historicos": [],
+   "posicion": 19,
+   "letra": "T",
+   "vecinos": [
+    "fila_en_csv",
+    "BU"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 401,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.bu": {
+   "id": "qcart_carritos.bu",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "BU"
+   ],
+   "alias_historicos": [],
+   "posicion": 20,
+   "letra": "U",
+   "vecinos": [
+    "aviso",
+    "Marca"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 2808,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.marca": {
+   "id": "qcart_carritos.marca",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 21,
+   "letra": "V",
+   "vecinos": [
+    "BU",
+    "Campana_Canonica"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 2808,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.campana_canonica": {
+   "id": "qcart_carritos.campana_canonica",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "Campaña"
+   ],
+   "alias_historicos": [
+    "Campana_Canonica"
+   ],
+   "posicion": 22,
+   "letra": "W",
+   "vecinos": [
+    "Marca",
+    "Segmento_Canonico"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 2808,
+   "visto": "2026-08-20"
+  },
+  "qcart_carritos.segmento_canonico": {
+   "id": "qcart_carritos.segmento_canonico",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [
+    "Segmento_Canonico"
+   ],
+   "posicion": 23,
+   "letra": "X",
+   "vecinos": [
+    "Campana_Canonica"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 2808,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.pieza_id": {
+   "id": "qcart_productos.pieza_id",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "pieza_id"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "letra": "A",
+   "vecinos": [
+    "fecha"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 745,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.fecha": {
+   "id": "qcart_productos.fecha",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "fecha"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "letra": "B",
+   "vecinos": [
+    "pieza_id",
+    "hora"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.hora": {
+   "id": "qcart_productos.hora",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "hora"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "letra": "C",
+   "vecinos": [
+    "fecha",
+    "shortlink_code"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.shortlink_code": {
+   "id": "qcart_productos.shortlink_code",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "shortlink_code"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "letra": "D",
+   "vecinos": [
+    "hora",
+    "shortlink_name"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.shortlink_name": {
+   "id": "qcart_productos.shortlink_name",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "shortlink_name"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "letra": "E",
+   "vecinos": [
+    "shortlink_code",
+    "utm_campaign"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.utm_campaign": {
+   "id": "qcart_productos.utm_campaign",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "utm_campaign"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "letra": "F",
+   "vecinos": [
+    "shortlink_name",
+    "utm_medium"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.utm_medium": {
+   "id": "qcart_productos.utm_medium",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "utm_medium"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "letra": "G",
+   "vecinos": [
+    "utm_campaign",
+    "utm_source"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.utm_source": {
+   "id": "qcart_productos.utm_source",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "utm_source"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "letra": "H",
+   "vecinos": [
+    "utm_medium",
+    "utm_content"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.utm_content": {
+   "id": "qcart_productos.utm_content",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "utm_content"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "letra": "I",
+   "vecinos": [
+    "utm_source",
+    "utm_term"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 607,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.utm_term": {
+   "id": "qcart_productos.utm_term",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "utm_term"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "letra": "J",
+   "vecinos": [
+    "utm_content",
+    "store"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.store": {
+   "id": "qcart_productos.store",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "store"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "letra": "K",
+   "vecinos": [
+    "utm_term",
+    "n_tiendas"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.n_tiendas": {
+   "id": "qcart_productos.n_tiendas",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "n_tiendas"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "letra": "L",
+   "vecinos": [
+    "store",
+    "product"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.product": {
+   "id": "qcart_productos.product",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "product"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "letra": "M",
+   "vecinos": [
+    "n_tiendas",
+    "impressions"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.impressions": {
+   "id": "qcart_productos.impressions",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "impressions"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "letra": "N",
+   "vecinos": [
+    "product",
+    "views"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.views": {
+   "id": "qcart_productos.views",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "views"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "letra": "O",
+   "vecinos": [
+    "impressions",
+    "total_shown_price"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.total_shown_price": {
+   "id": "qcart_productos.total_shown_price",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "total_shown_price"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "letra": "P",
+   "vecinos": [
+    "views",
+    "activacion_link"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.activacion_link": {
+   "id": "qcart_productos.activacion_link",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "activacion_link"
+   ],
+   "alias_historicos": [],
+   "posicion": 16,
+   "letra": "Q",
+   "vecinos": [
+    "total_shown_price",
+    "link_campana"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 684,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.link_campana": {
+   "id": "qcart_productos.link_campana",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "link_campana"
+   ],
+   "alias_historicos": [],
+   "posicion": 17,
+   "letra": "R",
+   "vecinos": [
+    "activacion_link",
+    "fuente"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.fuente": {
+   "id": "qcart_productos.fuente",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "fuente"
+   ],
+   "alias_historicos": [],
+   "posicion": 18,
+   "letra": "S",
+   "vecinos": [
+    "link_campana",
+    "fila_en_csv"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.fila_en_csv": {
+   "id": "qcart_productos.fila_en_csv",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "fila_en_csv"
+   ],
+   "alias_historicos": [],
+   "posicion": 19,
+   "letra": "T",
+   "vecinos": [
+    "fuente",
+    "aviso"
+   ],
+   "tipo_dato": "entero",
+   "llenas": 809,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.aviso": {
+   "id": "qcart_productos.aviso",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "aviso"
+   ],
+   "alias_historicos": [],
+   "posicion": 20,
+   "letra": "U",
+   "vecinos": [
+    "fila_en_csv",
+    "BU"
+   ],
+   "tipo_dato": "sin datos",
+   "llenas": 125,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.bu": {
+   "id": "qcart_productos.bu",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "BU"
+   ],
+   "alias_historicos": [],
+   "posicion": 21,
+   "letra": "V",
+   "vecinos": [
+    "aviso",
+    "Marca"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 745,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.marca": {
+   "id": "qcart_productos.marca",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 22,
+   "letra": "W",
+   "vecinos": [
+    "BU",
+    "Campana_Canonica"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 745,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.campana_canonica": {
+   "id": "qcart_productos.campana_canonica",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "Campaña"
+   ],
+   "alias_historicos": [
+    "Campana_Canonica"
+   ],
+   "posicion": 23,
+   "letra": "X",
+   "vecinos": [
+    "Marca",
+    "Segmento_Canonico"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 745,
+   "visto": "2026-08-20"
+  },
+  "qcart_productos.segmento_canonico": {
+   "id": "qcart_productos.segmento_canonico",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [
+    "Segmento_Canonico"
+   ],
+   "posicion": 24,
+   "letra": "Y",
+   "vecinos": [
+    "Campana_Canonica"
+   ],
+   "tipo_dato": "texto",
+   "llenas": 745,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.rowkey": {
+   "id": "de_detalle.rowkey",
+   "ambito": "de_detalle",
+   "nombres": [
+    "RowKey"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "vecinos": [
+    "JobID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.jobid": {
+   "id": "de_detalle.jobid",
+   "ambito": "de_detalle",
+   "nombres": [
+    "JobID"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "vecinos": [
+    "RowKey",
+    "SendDay"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.sendday": {
+   "id": "de_detalle.sendday",
+   "ambito": "de_detalle",
+   "nombres": [
+    "SendDay"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "vecinos": [
+    "JobID",
+    "ConfigKey"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.configkey": {
+   "id": "de_detalle.configkey",
+   "ambito": "de_detalle",
+   "nombres": [
+    "ConfigKey"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "vecinos": [
+    "SendDay",
+    "BU"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.bu": {
+   "id": "de_detalle.bu",
+   "ambito": "de_detalle",
+   "nombres": [
+    "BU"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "vecinos": [
+    "ConfigKey",
+    "Marca"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.marca": {
+   "id": "de_detalle.marca",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "vecinos": [
+    "BU",
+    "Campana"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.campana": {
+   "id": "de_detalle.campana",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Campana"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "vecinos": [
+    "Marca",
+    "Touchpoint"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.touchpoint": {
+   "id": "de_detalle.touchpoint",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Touchpoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "vecinos": [
+    "Campana",
+    "Segmento"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.segmento": {
+   "id": "de_detalle.segmento",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "vecinos": [
+    "Touchpoint",
+    "Email_Content_Name"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_content_name": {
+   "id": "de_detalle.email_content_name",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Content_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "vecinos": [
+    "Segmento",
+    "Email_Subject"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_subject": {
+   "id": "de_detalle.email_subject",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Subject"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "vecinos": [
+    "Email_Content_Name",
+    "Email_Sender_Name"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_sender_name": {
+   "id": "de_detalle.email_sender_name",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Sender_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "vecinos": [
+    "Email_Subject",
+    "Send_Date"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.send_date": {
+   "id": "de_detalle.send_date",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Send_Date"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "vecinos": [
+    "Email_Sender_Name",
+    "Journey_Name"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.journey_name": {
+   "id": "de_detalle.journey_name",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Journey_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "vecinos": [
+    "Send_Date",
+    "Journey_UUID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.journey_uuid": {
+   "id": "de_detalle.journey_uuid",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Journey_UUID"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "vecinos": [
+    "Journey_Name",
+    "Journey_ID_Datorama"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.journey_id_datorama": {
+   "id": "de_detalle.journey_id_datorama",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Journey_ID_Datorama"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "vecinos": [
+    "Journey_UUID",
+    "Codigo_NC"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.codigo_nc": {
+   "id": "de_detalle.codigo_nc",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Codigo_NC"
+   ],
+   "alias_historicos": [],
+   "posicion": 16,
+   "vecinos": [
+    "Journey_ID_Datorama",
+    "Email_Sends"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_sends": {
+   "id": "de_detalle.email_sends",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Sends"
+   ],
+   "alias_historicos": [],
+   "posicion": 17,
+   "vecinos": [
+    "Codigo_NC",
+    "Email_Deliveries"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_deliveries": {
+   "id": "de_detalle.email_deliveries",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Deliveries"
+   ],
+   "alias_historicos": [],
+   "posicion": 18,
+   "vecinos": [
+    "Email_Sends",
+    "Email_Bounces"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_bounces": {
+   "id": "de_detalle.email_bounces",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Bounces"
+   ],
+   "alias_historicos": [],
+   "posicion": 19,
+   "vecinos": [
+    "Email_Deliveries",
+    "Email_Bounces_Soft"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_bounces_soft": {
+   "id": "de_detalle.email_bounces_soft",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Bounces_Soft"
+   ],
+   "alias_historicos": [],
+   "posicion": 20,
+   "vecinos": [
+    "Email_Bounces",
+    "Email_Unique_Opens"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_unique_opens": {
+   "id": "de_detalle.email_unique_opens",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Unique_Opens"
+   ],
+   "alias_historicos": [],
+   "posicion": 21,
+   "vecinos": [
+    "Email_Bounces_Soft",
+    "Email_Total_Opens"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_total_opens": {
+   "id": "de_detalle.email_total_opens",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Total_Opens"
+   ],
+   "alias_historicos": [],
+   "posicion": 22,
+   "vecinos": [
+    "Email_Unique_Opens",
+    "Email_Unique_Clicks"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_unique_clicks": {
+   "id": "de_detalle.email_unique_clicks",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Unique_Clicks"
+   ],
+   "alias_historicos": [],
+   "posicion": 23,
+   "vecinos": [
+    "Email_Total_Opens",
+    "Email_Total_Clicks"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_total_clicks": {
+   "id": "de_detalle.email_total_clicks",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Total_Clicks"
+   ],
+   "alias_historicos": [],
+   "posicion": 24,
+   "vecinos": [
+    "Email_Unique_Clicks",
+    "Email_Unique_Unsubs"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_unique_unsubs": {
+   "id": "de_detalle.email_unique_unsubs",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Unique_Unsubs"
+   ],
+   "alias_historicos": [],
+   "posicion": 25,
+   "vecinos": [
+    "Email_Total_Clicks",
+    "Delivery_Rate"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.delivery_rate": {
+   "id": "de_detalle.delivery_rate",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Delivery_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 26,
+   "vecinos": [
+    "Email_Unique_Unsubs",
+    "Open_Rate"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.open_rate": {
+   "id": "de_detalle.open_rate",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Open_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 27,
+   "vecinos": [
+    "Delivery_Rate",
+    "Click_Rate"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.click_rate": {
+   "id": "de_detalle.click_rate",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Click_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 28,
+   "vecinos": [
+    "Open_Rate",
+    "CTOR"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.ctor": {
+   "id": "de_detalle.ctor",
+   "ambito": "de_detalle",
+   "nombres": [
+    "CTOR"
+   ],
+   "alias_historicos": [],
+   "posicion": 29,
+   "vecinos": [
+    "Click_Rate",
+    "Bounce_Rate"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.bounce_rate": {
+   "id": "de_detalle.bounce_rate",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Bounce_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 30,
+   "vecinos": [
+    "CTOR",
+    "LastRefresh"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.lastrefresh": {
+   "id": "de_detalle.lastrefresh",
+   "ambito": "de_detalle",
+   "nombres": [
+    "LastRefresh"
+   ],
+   "alias_historicos": [],
+   "posicion": 31,
+   "vecinos": [
+    "Bounce_Rate",
+    "Email_ID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_id": {
+   "id": "de_detalle.email_id",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 32,
+   "vecinos": [
+    "LastRefresh",
+    "Es_FUP"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.es_fup": {
+   "id": "de_detalle.es_fup",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Es_FUP"
+   ],
+   "alias_historicos": [],
+   "posicion": 33,
+   "vecinos": [
+    "Email_ID",
+    "Email_Total_Unsubs"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.email_total_unsubs": {
+   "id": "de_detalle.email_total_unsubs",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Email_Total_Unsubs"
+   ],
+   "alias_historicos": [],
+   "posicion": 34,
+   "vecinos": [
+    "Es_FUP",
+    "Audience_DE"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.audience_de": {
+   "id": "de_detalle.audience_de",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Audience_DE"
+   ],
+   "alias_historicos": [],
+   "posicion": 35,
+   "vecinos": [
+    "Email_Total_Unsubs",
+    "Audience_Volume"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_detalle.audience_volume": {
+   "id": "de_detalle.audience_volume",
+   "ambito": "de_detalle",
+   "nombres": [
+    "Audience_Volume"
+   ],
+   "alias_historicos": [],
+   "posicion": 36,
+   "vecinos": [
+    "Audience_DE"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.configkey": {
+   "id": "de_piezas.configkey",
+   "ambito": "de_piezas",
+   "nombres": [
+    "ConfigKey"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "vecinos": [
+    "PiezaID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.piezaid": {
+   "id": "de_piezas.piezaid",
+   "ambito": "de_piezas",
+   "nombres": [
+    "PiezaID"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "vecinos": [
+    "ConfigKey",
+    "Email_Content_Name"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_content_name": {
+   "id": "de_piezas.email_content_name",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_Content_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "vecinos": [
+    "PiezaID",
+    "Codigo_NC"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.codigo_nc": {
+   "id": "de_piezas.codigo_nc",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Codigo_NC"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "vecinos": [
+    "Email_Content_Name",
+    "Journey_Name"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.journey_name": {
+   "id": "de_piezas.journey_name",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Journey_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "vecinos": [
+    "Codigo_NC",
+    "Journey_UUID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.journey_uuid": {
+   "id": "de_piezas.journey_uuid",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Journey_UUID"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "vecinos": [
+    "Journey_Name",
+    "BU"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.bu": {
+   "id": "de_piezas.bu",
+   "ambito": "de_piezas",
+   "nombres": [
+    "BU"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "vecinos": [
+    "Journey_UUID",
+    "Marca"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.marca": {
+   "id": "de_piezas.marca",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "vecinos": [
+    "BU",
+    "Campana"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.campana": {
+   "id": "de_piezas.campana",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Campana"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "vecinos": [
+    "Marca",
+    "Touchpoint"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.touchpoint": {
+   "id": "de_piezas.touchpoint",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Touchpoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "vecinos": [
+    "Campana",
+    "Segmento"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.segmento": {
+   "id": "de_piezas.segmento",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "vecinos": [
+    "Touchpoint",
+    "Fecha_Primer_Envio"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.fecha_primer_envio": {
+   "id": "de_piezas.fecha_primer_envio",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Fecha_Primer_Envio"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "vecinos": [
+    "Segmento",
+    "Fecha_Ultimo_Envio"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.fecha_ultimo_envio": {
+   "id": "de_piezas.fecha_ultimo_envio",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Fecha_Ultimo_Envio"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "vecinos": [
+    "Fecha_Primer_Envio",
+    "N_Jobs"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.n_jobs": {
+   "id": "de_piezas.n_jobs",
+   "ambito": "de_piezas",
+   "nombres": [
+    "N_Jobs"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "vecinos": [
+    "Fecha_Ultimo_Envio",
+    "Dias_Con_Envio"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.dias_con_envio": {
+   "id": "de_piezas.dias_con_envio",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Dias_Con_Envio"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "vecinos": [
+    "N_Jobs",
+    "Email_Sends"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_sends": {
+   "id": "de_piezas.email_sends",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_Sends"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "vecinos": [
+    "Dias_Con_Envio",
+    "Email_Deliveries"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_deliveries": {
+   "id": "de_piezas.email_deliveries",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_Deliveries"
+   ],
+   "alias_historicos": [],
+   "posicion": 16,
+   "vecinos": [
+    "Email_Sends",
+    "Email_Bounces"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_bounces": {
+   "id": "de_piezas.email_bounces",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_Bounces"
+   ],
+   "alias_historicos": [],
+   "posicion": 17,
+   "vecinos": [
+    "Email_Deliveries",
+    "Email_Unique_Opens"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_unique_opens": {
+   "id": "de_piezas.email_unique_opens",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_Unique_Opens"
+   ],
+   "alias_historicos": [],
+   "posicion": 18,
+   "vecinos": [
+    "Email_Bounces",
+    "Email_Unique_Clicks"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_unique_clicks": {
+   "id": "de_piezas.email_unique_clicks",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_Unique_Clicks"
+   ],
+   "alias_historicos": [],
+   "posicion": 19,
+   "vecinos": [
+    "Email_Unique_Opens",
+    "Email_Unique_Unsubs"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_unique_unsubs": {
+   "id": "de_piezas.email_unique_unsubs",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_Unique_Unsubs"
+   ],
+   "alias_historicos": [],
+   "posicion": 20,
+   "vecinos": [
+    "Email_Unique_Clicks",
+    "Delivery_Rate"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.delivery_rate": {
+   "id": "de_piezas.delivery_rate",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Delivery_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 21,
+   "vecinos": [
+    "Email_Unique_Unsubs",
+    "Open_Rate"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.open_rate": {
+   "id": "de_piezas.open_rate",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Open_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 22,
+   "vecinos": [
+    "Delivery_Rate",
+    "Click_Rate"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.click_rate": {
+   "id": "de_piezas.click_rate",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Click_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 23,
+   "vecinos": [
+    "Open_Rate",
+    "CTOR"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.ctor": {
+   "id": "de_piezas.ctor",
+   "ambito": "de_piezas",
+   "nombres": [
+    "CTOR"
+   ],
+   "alias_historicos": [],
+   "posicion": 24,
+   "vecinos": [
+    "Click_Rate",
+    "Bounce_Rate"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.bounce_rate": {
+   "id": "de_piezas.bounce_rate",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Bounce_Rate"
+   ],
+   "alias_historicos": [],
+   "posicion": 25,
+   "vecinos": [
+    "CTOR",
+    "LastRefresh"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.lastrefresh": {
+   "id": "de_piezas.lastrefresh",
+   "ambito": "de_piezas",
+   "nombres": [
+    "LastRefresh"
+   ],
+   "alias_historicos": [],
+   "posicion": 26,
+   "vecinos": [
+    "Bounce_Rate",
+    "Email_ID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_id": {
+   "id": "de_piezas.email_id",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 27,
+   "vecinos": [
+    "LastRefresh",
+    "Email_Subject"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_subject": {
+   "id": "de_piezas.email_subject",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_Subject"
+   ],
+   "alias_historicos": [],
+   "posicion": 28,
+   "vecinos": [
+    "Email_ID",
+    "Es_FUP"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.es_fup": {
+   "id": "de_piezas.es_fup",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Es_FUP"
+   ],
+   "alias_historicos": [],
+   "posicion": 29,
+   "vecinos": [
+    "Email_Subject",
+    "Journey_ID_Datorama"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.journey_id_datorama": {
+   "id": "de_piezas.journey_id_datorama",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Journey_ID_Datorama"
+   ],
+   "alias_historicos": [],
+   "posicion": 30,
+   "vecinos": [
+    "Es_FUP",
+    "Piezas_Mismo_Asset"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.piezas_mismo_asset": {
+   "id": "de_piezas.piezas_mismo_asset",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Piezas_Mismo_Asset"
+   ],
+   "alias_historicos": [],
+   "posicion": 31,
+   "vecinos": [
+    "Journey_ID_Datorama",
+    "Email_Total_Unsubs"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.email_total_unsubs": {
+   "id": "de_piezas.email_total_unsubs",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Email_Total_Unsubs"
+   ],
+   "alias_historicos": [],
+   "posicion": 32,
+   "vecinos": [
+    "Piezas_Mismo_Asset",
+    "Audience_DE"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.audience_de": {
+   "id": "de_piezas.audience_de",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Audience_DE"
+   ],
+   "alias_historicos": [],
+   "posicion": 33,
+   "vecinos": [
+    "Email_Total_Unsubs",
+    "Audience_Volume"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_piezas.audience_volume": {
+   "id": "de_piezas.audience_volume",
+   "ambito": "de_piezas",
+   "nombres": [
+    "Audience_Volume"
+   ],
+   "alias_historicos": [],
+   "posicion": 34,
+   "vecinos": [
+    "Audience_DE"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_links.rowkey": {
+   "id": "de_links.rowkey",
+   "ambito": "de_links",
+   "nombres": [
+    "RowKey"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "vecinos": [
+    "ConfigKey"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_links.configkey": {
+   "id": "de_links.configkey",
+   "ambito": "de_links",
+   "nombres": [
+    "ConfigKey"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "vecinos": [
+    "RowKey",
+    "Campana"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_links.campana": {
+   "id": "de_links.campana",
+   "ambito": "de_links",
+   "nombres": [
+    "Campana"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "vecinos": [
+    "ConfigKey",
+    "Touchpoint"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_links.touchpoint": {
+   "id": "de_links.touchpoint",
+   "ambito": "de_links",
+   "nombres": [
+    "Touchpoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "vecinos": [
+    "Campana",
+    "Segmento"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_links.segmento": {
+   "id": "de_links.segmento",
+   "ambito": "de_links",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "vecinos": [
+    "Touchpoint",
+    "Email_Content_Name"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_links.email_content_name": {
+   "id": "de_links.email_content_name",
+   "ambito": "de_links",
+   "nombres": [
+    "Email_Content_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "vecinos": [
+    "Segmento",
+    "Email_Subject"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_links.email_subject": {
+   "id": "de_links.email_subject",
+   "ambito": "de_links",
+   "nombres": [
+    "Email_Subject"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "vecinos": [
+    "Email_Content_Name",
+    "Email_ID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_links.email_id": {
+   "id": "de_links.email_id",
+   "ambito": "de_links",
+   "nombres": [
+    "Email_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "vecinos": [
+    "Email_Subject",
+    "Link_Name"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_links.link_name": {
+   "id": "de_links.link_name",
+   "ambito": "de_links",
+   "nombres": [
+    "Link_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "vecinos": [
+    "Email_ID",
+    "Link_URL"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_links.link_url": {
+   "id": "de_links.link_url",
+   "ambito": "de_links",
+   "nombres": [
+    "Link_URL"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "vecinos": [
+    "Link_Name",
+    "Clicks_Total"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_links.clicks_total": {
+   "id": "de_links.clicks_total",
+   "ambito": "de_links",
+   "nombres": [
+    "Clicks_Total"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "vecinos": [
+    "Link_URL",
+    "Clicks_Unique"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_links.clicks_unique": {
+   "id": "de_links.clicks_unique",
+   "ambito": "de_links",
+   "nombres": [
+    "Clicks_Unique"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "vecinos": [
+    "Clicks_Total",
+    "LastRefresh"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_links.lastrefresh": {
+   "id": "de_links.lastrefresh",
+   "ambito": "de_links",
+   "nombres": [
+    "LastRefresh"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "vecinos": [
+    "Clicks_Unique"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_audiencias.configkey": {
+   "id": "de_audiencias.configkey",
+   "ambito": "de_audiencias",
+   "nombres": [
+    "ConfigKey"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "vecinos": [
+    "Journey_UUID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_audiencias.journey_uuid": {
+   "id": "de_audiencias.journey_uuid",
+   "ambito": "de_audiencias",
+   "nombres": [
+    "Journey_UUID"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "vecinos": [
+    "ConfigKey",
+    "Audience_DE"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_audiencias.audience_de": {
+   "id": "de_audiencias.audience_de",
+   "ambito": "de_audiencias",
+   "nombres": [
+    "Audience_DE"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "vecinos": [
+    "Journey_UUID",
+    "Audience_Volume"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_audiencias.audience_volume": {
+   "id": "de_audiencias.audience_volume",
+   "ambito": "de_audiencias",
+   "nombres": [
+    "Audience_Volume"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "vecinos": [
+    "Audience_DE",
+    "LastRefresh"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_audiencias.lastrefresh": {
+   "id": "de_audiencias.lastrefresh",
+   "ambito": "de_audiencias",
+   "nombres": [
+    "LastRefresh"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "vecinos": [
+    "Audience_Volume"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.configkey": {
+   "id": "de_config.configkey",
+   "ambito": "de_config",
+   "nombres": [
+    "ConfigKey"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "vecinos": [
+    "PiezaID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.piezaid": {
+   "id": "de_config.piezaid",
+   "ambito": "de_config",
+   "nombres": [
+    "PiezaID"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "vecinos": [
+    "ConfigKey",
+    "ContentName"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.contentname": {
+   "id": "de_config.contentname",
+   "ambito": "de_config",
+   "nombres": [
+    "ContentName"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "vecinos": [
+    "PiezaID",
+    "CodigoNC"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.codigonc": {
+   "id": "de_config.codigonc",
+   "ambito": "de_config",
+   "nombres": [
+    "CodigoNC"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "vecinos": [
+    "ContentName",
+    "JourneyUUID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.journeyuuid": {
+   "id": "de_config.journeyuuid",
+   "ambito": "de_config",
+   "nombres": [
+    "JourneyUUID"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "vecinos": [
+    "CodigoNC",
+    "BU"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.bu": {
+   "id": "de_config.bu",
+   "ambito": "de_config",
+   "nombres": [
+    "BU"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "vecinos": [
+    "JourneyUUID",
+    "Marca"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.marca": {
+   "id": "de_config.marca",
+   "ambito": "de_config",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "vecinos": [
+    "BU",
+    "Campana"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.campana": {
+   "id": "de_config.campana",
+   "ambito": "de_config",
+   "nombres": [
+    "Campana"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "vecinos": [
+    "Marca",
+    "Touchpoint"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.touchpoint": {
+   "id": "de_config.touchpoint",
+   "ambito": "de_config",
+   "nombres": [
+    "Touchpoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "vecinos": [
+    "Campana",
+    "Segmento"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.segmento": {
+   "id": "de_config.segmento",
+   "ambito": "de_config",
+   "nombres": [
+    "Segmento"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "vecinos": [
+    "Touchpoint",
+    "EmailType"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.emailtype": {
+   "id": "de_config.emailtype",
+   "ambito": "de_config",
+   "nombres": [
+    "EmailType"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "vecinos": [
+    "Segmento",
+    "Estado"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.estado": {
+   "id": "de_config.estado",
+   "ambito": "de_config",
+   "nombres": [
+    "Estado"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "vecinos": [
+    "EmailType",
+    "Activo"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.activo": {
+   "id": "de_config.activo",
+   "ambito": "de_config",
+   "nombres": [
+    "Activo"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "vecinos": [
+    "Estado",
+    "Notas"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.notas": {
+   "id": "de_config.notas",
+   "ambito": "de_config",
+   "nombres": [
+    "Notas"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "vecinos": [
+    "Activo",
+    "EmailID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_config.emailid": {
+   "id": "de_config.emailid",
+   "ambito": "de_config",
+   "nombres": [
+    "EmailID"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "vecinos": [
+    "Notas"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.configkey": {
+   "id": "de_auditoria.configkey",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "ConfigKey"
+   ],
+   "alias_historicos": [],
+   "posicion": 0,
+   "vecinos": [
+    "PiezaID"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.piezaid": {
+   "id": "de_auditoria.piezaid",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "PiezaID"
+   ],
+   "alias_historicos": [],
+   "posicion": 1,
+   "vecinos": [
+    "ConfigKey",
+    "Email_Content_Name"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.email_content_name": {
+   "id": "de_auditoria.email_content_name",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "Email_Content_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 2,
+   "vecinos": [
+    "PiezaID",
+    "Campana"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.campana": {
+   "id": "de_auditoria.campana",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "Campana"
+   ],
+   "alias_historicos": [],
+   "posicion": 3,
+   "vecinos": [
+    "Email_Content_Name",
+    "Marca"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.marca": {
+   "id": "de_auditoria.marca",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "Marca"
+   ],
+   "alias_historicos": [],
+   "posicion": 4,
+   "vecinos": [
+    "Campana",
+    "Activo"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.activo": {
+   "id": "de_auditoria.activo",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "Activo"
+   ],
+   "alias_historicos": [],
+   "posicion": 5,
+   "vecinos": [
+    "Marca",
+    "JobsEncontrados"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.jobsencontrados": {
+   "id": "de_auditoria.jobsencontrados",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "JobsEncontrados"
+   ],
+   "alias_historicos": [],
+   "posicion": 6,
+   "vecinos": [
+    "Activo",
+    "DiasConEnvio"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.diasconenvio": {
+   "id": "de_auditoria.diasconenvio",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "DiasConEnvio"
+   ],
+   "alias_historicos": [],
+   "posicion": 7,
+   "vecinos": [
+    "JobsEncontrados",
+    "EnviosTotales"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.enviostotales": {
+   "id": "de_auditoria.enviostotales",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "EnviosTotales"
+   ],
+   "alias_historicos": [],
+   "posicion": 8,
+   "vecinos": [
+    "DiasConEnvio",
+    "PrimerEnvio"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.primerenvio": {
+   "id": "de_auditoria.primerenvio",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "PrimerEnvio"
+   ],
+   "alias_historicos": [],
+   "posicion": 9,
+   "vecinos": [
+    "EnviosTotales",
+    "UltimoEnvio"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.ultimoenvio": {
+   "id": "de_auditoria.ultimoenvio",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "UltimoEnvio"
+   ],
+   "alias_historicos": [],
+   "posicion": 10,
+   "vecinos": [
+    "PrimerEnvio",
+    "Estado"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.estado": {
+   "id": "de_auditoria.estado",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "Estado"
+   ],
+   "alias_historicos": [],
+   "posicion": 11,
+   "vecinos": [
+    "UltimoEnvio",
+    "LastRun"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.lastrun": {
+   "id": "de_auditoria.lastrun",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "LastRun"
+   ],
+   "alias_historicos": [],
+   "posicion": 12,
+   "vecinos": [
+    "Estado",
+    "Asset_Declarado"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.asset_declarado": {
+   "id": "de_auditoria.asset_declarado",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "Asset_Declarado"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "vecinos": [
+    "LastRun",
+    "Asset_Real"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.asset_real": {
+   "id": "de_auditoria.asset_real",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "Asset_Real"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "vecinos": [
+    "Asset_Declarado",
+    "Piezas_Mismo_Asset"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "de_auditoria.piezas_mismo_asset": {
+   "id": "de_auditoria.piezas_mismo_asset",
+   "ambito": "de_auditoria",
+   "nombres": [
+    "Piezas_Mismo_Asset"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "vecinos": [
+    "Asset_Real"
+   ],
+   "tipo_dato": "declarado en el esquema",
+   "nueva_del_handoff": true,
+   "visto": "2026-08-20"
+  },
+  "resumen.pct_qcart": {
+   "id": "resumen.pct_qcart",
+   "ambito": "resumen",
+   "nombres": [
+    "%_Qcart"
+   ],
+   "alias_historicos": [],
+   "posicion": 70,
+   "letra": "BR",
+   "vecinos": [
+    "Clicks_Unicos_Total",
+    "%_App"
+   ],
+   "tipo_dato": "porcentaje",
+   "nueva": "2026-08-21 · D4/F3",
+   "visto": "2026-08-21"
+  },
+  "resumen.pct_app": {
+   "id": "resumen.pct_app",
+   "ambito": "resumen",
+   "nombres": [
+    "%_App"
+   ],
+   "alias_historicos": [],
+   "posicion": 71,
+   "letra": "BS",
+   "vecinos": [
+    "%_Qcart",
+    "%_Social"
+   ],
+   "tipo_dato": "porcentaje",
+   "nueva": "2026-08-21 · D4/F3",
+   "visto": "2026-08-21"
+  },
+  "resumen.pct_social": {
+   "id": "resumen.pct_social",
+   "ambito": "resumen",
+   "nombres": [
+    "%_Social"
+   ],
+   "alias_historicos": [],
+   "posicion": 72,
+   "letra": "BT",
+   "vecinos": [
+    "%_App",
+    "%_Web"
+   ],
+   "tipo_dato": "porcentaje",
+   "nueva": "2026-08-21 · D4/F3",
+   "visto": "2026-08-21"
+  },
+  "resumen.pct_web": {
+   "id": "resumen.pct_web",
+   "ambito": "resumen",
+   "nombres": [
+    "%_Web"
+   ],
+   "alias_historicos": [],
+   "posicion": 73,
+   "letra": "BU",
+   "vecinos": [
+    "%_Social",
+    "%_Ver_Navegador"
+   ],
+   "tipo_dato": "porcentaje",
+   "nueva": "2026-08-21 · D4/F3",
+   "visto": "2026-08-21"
+  },
+  "resumen.pct_ver_navegador": {
+   "id": "resumen.pct_ver_navegador",
+   "ambito": "resumen",
+   "nombres": [
+    "%_Ver_Navegador"
+   ],
+   "alias_historicos": [],
+   "posicion": 74,
+   "letra": "BV",
+   "vecinos": [
+    "%_Web",
+    "%_Unsub"
+   ],
+   "tipo_dato": "porcentaje",
+   "nueva": "2026-08-21 · D4/F3",
+   "visto": "2026-08-21"
+  },
+  "resumen.pct_unsub": {
+   "id": "resumen.pct_unsub",
+   "ambito": "resumen",
+   "nombres": [
+    "%_Unsub"
+   ],
+   "alias_historicos": [],
+   "posicion": 75,
+   "letra": "BW",
+   "vecinos": [
+    "%_Ver_Navegador",
+    "Email_Name"
+   ],
+   "tipo_dato": "porcentaje",
+   "nueva": "2026-08-21 · D4/F3",
+   "visto": "2026-08-21"
+  },
+  "resumen.email_name": {
+   "id": "resumen.email_name",
+   "ambito": "resumen",
+   "nombres": [
+    "Email_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 76,
+   "letra": "BX",
+   "vecinos": [
+    "%_Unsub",
+    "Principal_Subject"
+   ],
+   "tipo_dato": "texto",
+   "nueva": "2026-08-21 · D4/F3",
+   "visto": "2026-08-21"
+  },
+  "resumen.principal_subject": {
+   "id": "resumen.principal_subject",
+   "ambito": "resumen",
+   "nombres": [
+    "Principal_Subject"
+   ],
+   "alias_historicos": [],
+   "posicion": 77,
+   "letra": "BY",
+   "vecinos": [
+    "Email_Name",
+    ""
+   ],
+   "tipo_dato": "texto",
+   "nueva": "2026-08-21 · D4/F3",
+   "visto": "2026-08-21"
+  },
+  "resumen.audiencia_volumen_sfmc": {
+   "id": "resumen.audiencia_volumen_sfmc",
+   "ambito": "resumen",
+   "nombres": [
+    "Audiencia_Volumen SFMC"
+   ],
+   "alias_historicos": [],
+   "posicion": 13,
+   "letra": "N",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "resumen.email_name_sfmc_principal": {
+   "id": "resumen.email_name_sfmc_principal",
+   "ambito": "resumen",
+   "nombres": [
+    "Email Name SFMC_Principal"
+   ],
+   "alias_historicos": [],
+   "posicion": 14,
+   "letra": "O",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "resumen.content_id_final_del_email_name_principal": {
+   "id": "resumen.content_id_final_del_email_name_principal",
+   "ambito": "resumen",
+   "nombres": [
+    "Content ID (Final del Email Name) Principal"
+   ],
+   "alias_historicos": [],
+   "posicion": 15,
+   "letra": "P",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "resumen.email_name_sfmc_fup": {
+   "id": "resumen.email_name_sfmc_fup",
+   "ambito": "resumen",
+   "nombres": [
+    "Email Name SFMC_FUP"
+   ],
+   "alias_historicos": [],
+   "posicion": 25,
+   "letra": "Z",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "resumen.content_id_final_del_email_name_fup": {
+   "id": "resumen.content_id_final_del_email_name_fup",
+   "ambito": "resumen",
+   "nombres": [
+    "Content ID (Final del Email Name) _ FUP"
+   ],
+   "alias_historicos": [],
+   "posicion": 26,
+   "letra": "AA",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "resumen.email_id_de_la_de_de_sfmc_fup": {
+   "id": "resumen.email_id_de_la_de_de_sfmc_fup",
+   "ambito": "resumen",
+   "nombres": [
+    "Email_ID (de la DE de SFMC) _ FUP"
+   ],
+   "alias_historicos": [],
+   "posicion": 27,
+   "letra": "AB",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "resumen.fup_quincena": {
+   "id": "resumen.fup_quincena",
+   "ambito": "resumen",
+   "nombres": [
+    "FUP_Quincena"
+   ],
+   "alias_historicos": [],
+   "posicion": 28,
+   "letra": "AC",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "resumen.insights": {
+   "id": "resumen.insights",
+   "ambito": "resumen",
+   "nombres": [
+    "Insights"
+   ],
+   "alias_historicos": [],
+   "posicion": 80,
+   "letra": "CC",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "catalogo.pieza_principal_id": {
+   "id": "catalogo.pieza_principal_id",
+   "ambito": "catalogo",
+   "nombres": [
+    "Pieza_Principal_ID"
+   ],
+   "alias_historicos": [],
+   "posicion": 76,
+   "letra": "BY",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "catalogo.subject": {
+   "id": "catalogo.subject",
+   "ambito": "catalogo",
+   "nombres": [
+    "Subject"
+   ],
+   "alias_historicos": [],
+   "posicion": 77,
+   "letra": "BZ",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "catalogo.mes": {
+   "id": "catalogo.mes",
+   "ambito": "catalogo",
+   "nombres": [
+    "Mes"
+   ],
+   "alias_historicos": [],
+   "posicion": 78,
+   "letra": "CA",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "catalogo.mes_num": {
+   "id": "catalogo.mes_num",
+   "ambito": "catalogo",
+   "nombres": [
+    "Mes (#)"
+   ],
+   "alias_historicos": [],
+   "posicion": 79,
+   "letra": "CB",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "data_email.objetivo": {
+   "id": "data_email.objetivo",
+   "ambito": "data_email",
+   "nombres": [
+    "Objetivo"
+   ],
+   "alias_historicos": [],
+   "posicion": 44,
+   "letra": "AS",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "data_email.mes": {
+   "id": "data_email.mes",
+   "ambito": "data_email",
+   "nombres": [
+    "Mes"
+   ],
+   "alias_historicos": [],
+   "posicion": 45,
+   "letra": "AT",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "data_email.mes_num": {
+   "id": "data_email.mes_num",
+   "ambito": "data_email",
+   "nombres": [
+    "Mes (#)"
+   ],
+   "alias_historicos": [],
+   "posicion": 46,
+   "letra": "AU",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "data_wa.mes": {
+   "id": "data_wa.mes",
+   "ambito": "data_wa",
+   "nombres": [
+    "Mes"
+   ],
+   "alias_historicos": [],
+   "posicion": 32,
+   "letra": "AG",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "data_wa.mes_num": {
+   "id": "data_wa.mes_num",
+   "ambito": "data_wa",
+   "nombres": [
+    "Mes (#)"
+   ],
+   "alias_historicos": [],
+   "posicion": 33,
+   "letra": "AH",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "data_wa.email_name": {
+   "id": "data_wa.email_name",
+   "ambito": "data_wa",
+   "nombres": [
+    "Email_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 34,
+   "letra": "AI",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_carritos.canal": {
+   "id": "qcart_carritos.canal",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "Canal"
+   ],
+   "alias_historicos": [],
+   "posicion": 24,
+   "letra": "Y",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_carritos.objetivo": {
+   "id": "qcart_carritos.objetivo",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "Objetivo"
+   ],
+   "alias_historicos": [],
+   "posicion": 25,
+   "letra": "Z",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_carritos.touchpoint": {
+   "id": "qcart_carritos.touchpoint",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "TouchPoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 26,
+   "letra": "AA",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_carritos.quincena": {
+   "id": "qcart_carritos.quincena",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "Quincena"
+   ],
+   "alias_historicos": [],
+   "posicion": 27,
+   "letra": "AB",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_carritos.mes": {
+   "id": "qcart_carritos.mes",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "Mes"
+   ],
+   "alias_historicos": [],
+   "posicion": 28,
+   "letra": "AC",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_carritos.mes_num": {
+   "id": "qcart_carritos.mes_num",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "Mes (#)"
+   ],
+   "alias_historicos": [],
+   "posicion": 29,
+   "letra": "AD",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_carritos.email_name": {
+   "id": "qcart_carritos.email_name",
+   "ambito": "qcart_carritos",
+   "nombres": [
+    "Email_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 30,
+   "letra": "AE",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_productos.canal": {
+   "id": "qcart_productos.canal",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "Canal"
+   ],
+   "alias_historicos": [],
+   "posicion": 25,
+   "letra": "Z",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_productos.objetivo": {
+   "id": "qcart_productos.objetivo",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "Objetivo"
+   ],
+   "alias_historicos": [],
+   "posicion": 26,
+   "letra": "AA",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_productos.touchpoint": {
+   "id": "qcart_productos.touchpoint",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "TouchPoint"
+   ],
+   "alias_historicos": [],
+   "posicion": 27,
+   "letra": "AB",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_productos.quincena": {
+   "id": "qcart_productos.quincena",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "Quincena"
+   ],
+   "alias_historicos": [],
+   "posicion": 28,
+   "letra": "AC",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_productos.mes": {
+   "id": "qcart_productos.mes",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "Mes"
+   ],
+   "alias_historicos": [],
+   "posicion": 29,
+   "letra": "AD",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_productos.mes_num": {
+   "id": "qcart_productos.mes_num",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "Mes (#)"
+   ],
+   "alias_historicos": [],
+   "posicion": 30,
+   "letra": "AE",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "qcart_productos.email_name": {
+   "id": "qcart_productos.email_name",
+   "ambito": "qcart_productos",
+   "nombres": [
+    "Email_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 31,
+   "letra": "AF",
+   "tipo_dato": "por medir",
+   "llenas": null,
+   "visto": "2026-08-20",
+   "acunada_por": "L3-reconciliar"
+  },
+  "catalogo.whatsapp_name": {
+   "id": "catalogo.whatsapp_name",
+   "ambito": "catalogo",
+   "nombres": [
+    "Whatsapp_Name"
+   ],
+   "alias_historicos": [],
+   "posicion": 83,
+   "letra": "CE",
+   "vecinos": [
+    "Codigos_Qcart",
+    "Whatsapp_Names_Variantes"
+   ],
+   "tipo_dato": "texto",
+   "llenas": null,
+   "visto": "2026-09-15",
+   "nota": "la llave natural de una pieza de WhatsApp — el equivalente de `Email_Name` en email. Creada el 2026-09-15 a pedido de Rick: hasta entonces las 18 piezas de WhatsApp tenían `Email_Name = N/A` y sus journeys vivían en `Notas`, como texto libre. Los valores los produce `lib-whatsapp-nombre` con su regla de 3 niveles, y `nivel` dice si el nombre lo publica la fuente o lo construyó el sistema."
+  },
+  "catalogo.whatsapp_names_variantes": {
+   "id": "catalogo.whatsapp_names_variantes",
+   "ambito": "catalogo",
+   "nombres": [
+    "Whatsapp_Names_Variantes"
+   ],
+   "alias_historicos": [],
+   "posicion": 84,
+   "letra": "CF",
+   "vecinos": [
+    "Whatsapp_Name",
+    "N_Whatsapp_Names"
+   ],
+   "tipo_dato": "texto",
+   "llenas": null,
+   "visto": "2026-09-15",
+   "nota": "los demás nombres físicos de la misma pieza. Hace falta porque `005-P011` tiene DOS journeys en una sola pieza (4PM y 5PM): el maestro da un único shortlink para `wa-j8` y los carritos de un link no se pueden repartir. Y en los niveles 2 y 3 guarda lo que dijo la fuente tal cual, para que el nombre construido no la sustituya."
+  },
+  "catalogo.n_whatsapp_names": {
+   "id": "catalogo.n_whatsapp_names",
+   "ambito": "catalogo",
+   "nombres": [
+    "N_Whatsapp_Names"
+   ],
+   "alias_historicos": [],
+   "posicion": 85,
+   "letra": "CG",
+   "vecinos": [
+    "Whatsapp_Names_Variantes"
+   ],
+   "tipo_dato": "numero",
+   "llenas": null,
+   "visto": "2026-09-15",
+   "nota": "cuántos nombres físicos tiene el mismo id lógico. Igual que `N_Email_Names`."
+  }
+ },
+ "ultimo_renombre": {
+  "paso": "A11",
+  "cuando": "2026-08-21",
+  "columnas": 9
+ },
+ "renombres": [
+  {
+   "id": "resumen.quincena_lanzamiento",
+   "de": "Quincena_Lanzamiento",
+   "a": "Quincena_Lanzamiento Principal",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición H",
+    "vecinos QCART? y Mes",
+    "parecido al nombre viejo (distancia 10)"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "resumen.content_id_sfmc",
+   "de": "Content_ID (final del Email_Name)",
+   "a": "Audiencia_DE SFMC",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición M",
+    "vecino BU"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "catalogo.quincena_lanzamiento",
+   "de": "Quincena_Lanzamiento",
+   "a": "Quincena",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición R",
+    "vecinos Mes_Lanzamiento y Quincenas_Activas"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "data_email.campana_canonica",
+   "de": "Campana_Canonica",
+   "a": "Campaña",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición R",
+    "vecino Marca"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "data_email.segmento_canonico",
+   "de": "Segmento_Canonico",
+   "a": "Segmento",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición S",
+    "vecino Nombre_Journey"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "data_email.send_quincena",
+   "de": "Send_Quincena",
+   "a": "Quincena",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición AN",
+    "vecinos Send_Month y Brand"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "data_wa.segmento_canonico",
+   "de": "Segmento_Canonico",
+   "a": "Segmento",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición F",
+    "vecinos Objetivo y Segmento_WA_Raw",
+    "forma: texto y 12 llenas (antes 12)"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "data_wa.send_quincena",
+   "de": "Send_Quincena",
+   "a": "Quincena",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición L",
+    "vecinos Send_Month y Sends",
+    "forma: texto y 10 llenas (antes 10)"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "qcart_carritos.campana_canonica",
+   "de": "Campana_Canonica",
+   "a": "Campaña",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición W",
+    "vecino Marca",
+    "forma: texto y 2645 llenas (antes 2808)"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "qcart_carritos.segmento_canonico",
+   "de": "Segmento_Canonico",
+   "a": "Segmento",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición X",
+    "forma: texto y 2645 llenas (antes 2808)"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "qcart_productos.campana_canonica",
+   "de": "Campana_Canonica",
+   "a": "Campaña",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición X",
+    "vecino Marca",
+    "forma: texto y 696 llenas (antes 745)"
+   ],
+   "detectado_por": "L3-reconciliar"
+  },
+  {
+   "id": "qcart_productos.segmento_canonico",
+   "de": "Segmento_Canonico",
+   "a": "Segmento",
+   "fecha": "2026-08-20",
+   "evidencia": [
+    "posición Y",
+    "forma: texto y 696 llenas (antes 745)"
+   ],
+   "detectado_por": "L3-reconciliar"
+  }
+ ],
+ "ultimo_alta": {
+  "cuando": "2026-09-15",
+  "ids": [
+   "catalogo.whatsapp_name",
+   "catalogo.whatsapp_names_variantes",
+   "catalogo.n_whatsapp_names"
+  ],
+  "por": "Rick pidió una llave propia para WhatsApp"
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "cuando": "2026-09-30T15:16:22.772Z",
+ "plan": [
+  {
+   "id": "005-P013",
+   "col": "Receta_1",
+   "fila": 122,
+   "ref": "AL122",
+   "valor": "Alitas Salsa Mango",
+   "regla": "R4"
+  },
+  {
+   "id": "005-P013",
+   "col": "Codigos_Qcart",
+   "fila": 122,
+   "ref": "CD122",
+   "valor": "ymh2OT4x",
+   "regla": "R4"
+  },
+  {
+   "id": "005-P013",
+   "col": "Fuente_Qcart",
+   "fila": 122,
+   "ref": "BK122",
+   "valor": "maestro Qcart-Links · Septiembre ¦ Maggi-LigaMx-sep26 ¦ wa-j9 ¦ regionunificada-part-b-wa",
+   "regla": "R4"
+  },
+  {
+   "id": "005-P014",
+   "col": "Receta_1",
+   "fila": 123,
+   "ref": "AL123",
+   "valor": "Alitas Salsa Mango",
+   "regla": "R4"
+  },
+  {
+   "id": "005-P014",
+   "col": "Receta_2",
+   "fila": 123,
+   "ref": "AR123",
+   "valor": "Tropi Maggi",
+   "regla": "R4"
+  },
+  {
+   "id": "005-P014",
+   "col": "Codigos_Qcart",
+   "fila": 123,
+   "ref": "CD123",
+   "valor": "bfQ24tDq, xTaSfQ2y",
+   "regla": "R4"
+  },
+  {
+   "id": "005-P014",
+   "col": "Fuente_Qcart",
+   "fila": 123,
+   "ref": "BK123",
+   "valor": "maestro Qcart-Links · Septiembre ¦ Maggi-LigaMx-sep26 ¦ e-j9 ¦ regionunificada-part-b-email",
+   "regla": "R4"
+  }
+ ],
+ "sinCerrar": [
+  {
+   "id": "004-P006",
+   "cols": [
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "004-P007",
+   "cols": [
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "004-P008",
+   "cols": [
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P006",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P007",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P008",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P009",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P010",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P011",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P012",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P013",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P014",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P015",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P016",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "009-P017",
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "motivo": "lleva Qcart y el maestro no tiene ese bloque (mes no vigente o sin fecha)"
+  },
+  {
+   "id": "005-P013",
+   "cols": [
+    "Carritos_Total",
+    "Views_Total",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "motivo": "el maestro no trae carritos ni activación — los mide el corte de Qcart"
+  },
+  {
+   "id": "005-P014",
+   "cols": [
+    "Carritos_Total",
+    "Views_Total",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "motivo": "el maestro no trae carritos ni activación — los mide el corte de Qcart"
+  }
+ ]
+}

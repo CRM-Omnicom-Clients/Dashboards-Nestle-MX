@@ -1,0 +1,7 @@
+{
+  "name": "scripts-nestle",
+  "version": "1.0.0",
+  "description": "Scripts operativos del pipeline de reporteria de email CRM Nestle. CommonJS (require) a proposito: el _mcp-sfmc padre es ESM.",
+  "type": "commonjs",
+  "private": true
+}

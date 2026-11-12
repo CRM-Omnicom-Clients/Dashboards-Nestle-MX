@@ -1,0 +1,1746 @@
+{
+ "corte": "WK35-limpieza",
+ "celdas": 216,
+ "columnas": 1,
+ "hojas_regeneradas": 0,
+ "respaldo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-WK35-limpieza.xlsx",
+ "cambios": [
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 52,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83356 · 83347",
+   "porque": "fusión de la fantasma EmailID · discrepan: se quedan ambos"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 121,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 122,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 123,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 124,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 125,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 126,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 127,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 128,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 129,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 130,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 131,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 132,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 133,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 134,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 135,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 136,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 137,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 138,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 139,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 140,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 141,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 142,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 143,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 144,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 145,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 146,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 147,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 148,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 149,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 150,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 151,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 152,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 153,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 154,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 155,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 156,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 157,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 158,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 159,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 160,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 161,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 162,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 163,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 164,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 165,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 166,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 167,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 168,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 169,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 170,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 171,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 172,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 173,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 174,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 175,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 176,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 177,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 178,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 179,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 180,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 181,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 182,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 183,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 184,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 185,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 186,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 187,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 188,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 189,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 190,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 191,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 192,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 193,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 194,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 195,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 196,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 197,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 198,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 199,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 200,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 201,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 202,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 203,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 204,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 205,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 206,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 207,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 208,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 209,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 210,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 211,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 212,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 213,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 214,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 215,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 216,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 217,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 218,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 219,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 220,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 221,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 222,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 223,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 224,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 225,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 226,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 227,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 228,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 229,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 230,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 231,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 232,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 233,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 234,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 235,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 236,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 237,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 238,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 239,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 240,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 241,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 242,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 243,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 244,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 245,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 246,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 247,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 248,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 249,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 250,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 251,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 252,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 253,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 254,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 255,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 256,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 257,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 258,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 259,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 260,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 261,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 262,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 263,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 264,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 265,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 266,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 267,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 268,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 269,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 270,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 271,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 272,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 273,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 274,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 275,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 276,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 277,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 278,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 279,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 280,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 281,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 282,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 283,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 284,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 285,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 286,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 287,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 288,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 289,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83762",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 290,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83763",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 291,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83766",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 292,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83767",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 293,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83769",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 294,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83770",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 295,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "83930",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 296,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84320",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 297,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84321",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 298,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84322",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 299,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84323",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 300,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "valor": "84261",
+   "porque": "fusión de la fantasma EmailID · la viva estaba vacía"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 6,
+   "columna": "Email_Name",
+   "valor": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_803867 · J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_863587",
+   "porque": "fusión de Email_Name_Legacy · discrepan, se quedan ambos"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 7,
+   "columna": "Email_Name",
+   "valor": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS-FP_AC_EM_A_V1_803867 · J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_FUP-TRADITIONAL-PARENTS_AC_EM_A_V1_863587",
+   "porque": "fusión de Email_Name_Legacy · discrepan, se quedan ambos"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 72,
+   "columna": "Email_Name",
+   "valor": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_PURCHASE-EP1_AC_EM_A_V1_863587 · J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_803867",
+   "porque": "fusión de Email_Name_Legacy · discrepan, se quedan ambos"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 74,
+   "columna": "Email_Name",
+   "valor": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_FUP-PURCHASE-EP1_AC_EM_A_V1_863587 · J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS-FP_AC_EM_A_V1_803867",
+   "porque": "fusión de Email_Name_Legacy · discrepan, se quedan ambos"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 84,
+   "columna": "Codigos_Qcart",
+   "valor": "wa-cooking1, wa-bebida1, wa-botana1",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de WhatsApp"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 87,
+   "columna": "Codigos_Qcart",
+   "valor": "wa-modercooking3, wa-botanas3, wa-bebidas3",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de WhatsApp"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 91,
+   "columna": "Codigos_Qcart",
+   "valor": "sbH9gVge, Agy5v9Yb",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de WhatsApp"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 92,
+   "columna": "Codigos_Qcart",
+   "valor": "2YWR8c3Z, haPs2HHU",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de WhatsApp"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 93,
+   "columna": "Codigos_Qcart",
+   "valor": "LO8RxwsM, 2Yn9L0bD",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de WhatsApp"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 94,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 95,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 96,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 97,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 98,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 99,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 100,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 101,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 102,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 103,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 104,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Perros.Comunidad.CDP_Proplan_PP_E4A1.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 105,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Gatos.Comunidad.CDP_Proplan_PP_E4A2.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 106,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Mixto.Comunidad.CDP_Proplan_PP_E4A3.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 107,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Perros.Comunidad.CDP_Proplan_PAE_E4B1.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 108,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Gatos.Comunidad.CDP_Proplan_PAE_E4B2.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 109,
+   "columna": "Codigos_Qcart",
+   "valor": "User.Mixto.Comunidad.CDP_Proplan_PAE_E4B3.NA",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 111,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 112,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 113,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 114,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 115,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 116,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 117,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 118,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 119,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  },
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "fila": 120,
+   "columna": "Codigos_Qcart",
+   "valor": "N/A",
+   "porque": "código(s) de Qcart que estaban en Email_Name_Legacy · pieza de Email"
+  }
+ ],
+ "columnas_nuevas": [
+  {
+   "paso": "N1g",
+   "hoja": "Catalogo_Piezas",
+   "nombre": "Codigos_Qcart",
+   "porque": "los codigos de Qcart que vivian en Email_Name_Legacy: son codigos, no nombres de email. Rick, 25-ago."
+  }
+ ],
+ "hojas": []
+}

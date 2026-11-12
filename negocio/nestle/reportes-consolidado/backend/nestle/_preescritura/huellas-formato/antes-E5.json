@@ -1,0 +1,2717 @@
+{
+ "cuando": "2026-09-24T20:22:43.406Z",
+ "hojas": {
+  "Report_Resumen": {
+   "filas": 87,
+   "columnas": 87,
+   "cols": {
+    "Campaña": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 17
+    },
+    "Medio": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Objetivo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "TouchPoint": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Tipo  Email": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Segmento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    },
+    "QCART?": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Quincena_Lanzamiento Principal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 32
+    },
+    "Mes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Mes (#)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Marca": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 23
+    },
+    "BU": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Audiencia_DE SFMC": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    },
+    "Audiencia_Volumen SFMC": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "Email Name SFMC_Principal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    },
+    "Content ID (Final del Email Name) Principal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    },
+    "Email_ID (de la DE de SFMC)": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 29
+    },
+    "Principal_Fecha_Envio": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 23
+    },
+    "Principal_Subject": {
+     "fmt": "#,##0",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    },
+    "Principal_Sends": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 17
+    },
+    "Principal_Deliveries": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 22
+    },
+    "Principal_Opens": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 17
+    },
+    "Principal_Clicks": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Principal_Clicks_CTA": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 22
+    },
+    "Principal_Clicks_Baja": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 23
+    },
+    "Principal_Clicks_Redes+Navegador+Legal": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 40
+    },
+    "Principal_Clicks_Medidos": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 26
+    },
+    "Principal_Unsubs": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Principal_Open_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "Principal_CTOR": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Principal_Click_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 22
+    },
+    "Principal_UTOR (vs opens)": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 27
+    },
+    "Email Name SFMC_FUP": {
+     "fmt": "#,##0",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    },
+    "Content ID (Final del Email Name) _ FUP": {
+     "fmt": "#,##0",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 41
+    },
+    "Email_ID (de la DE de SFMC) _ FUP": {
+     "fmt": "#,##0",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 35
+    },
+    "FUP_Quincena": {
+     "fmt": "#,##0",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "FUP_Fecha_Envio": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 17
+    },
+    "FUP_Subject": {
+     "fmt": "#,##0",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    },
+    "FUP_Sends": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "FUP_Deliveries": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "FUP_Opens": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "FUP_Clicks": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "FUP_Clicks_CTA": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "FUP_Clicks_Baja": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 17
+    },
+    "FUP_Clicks_Redes+Navegador+Legal": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 34
+    },
+    "FUP_Clicks_Medidos": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 20
+    },
+    "FUP_Unsubs": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "FUP_Open_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 15
+    },
+    "FUP_CTOR": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "FUP_Click_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "FUP_UTOR (vs opens)": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "Tot_Sends": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Tot_Deliveries": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Tot_Opens": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "Tot_Clicks": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Tot_Clicks_CTA": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Tot_Clicks_Baja": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 17
+    },
+    "Tot_Clicks_Redes+Navegador+Legal": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 34
+    },
+    "Tot_Clicks_Medidos": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 20
+    },
+    "Tot_Unsubs": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Tot_Open_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 15
+    },
+    "Tot_CTOR": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Tot_Click_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Tot_UTOR (vs opens)": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "WA-Envíos": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "WA-Entregados": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 15
+    },
+    "WA-No entregados": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "WA-Leídos": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "WA-Clicks": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "WA-%Entrega": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "WA-%No entrega": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "WA-%Read vs entrega": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "WA-%Click vs Read": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 19
+    },
+    "Receta_Representativa": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    },
+    "FechaQcart_Desde": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "FechaQcart_Hasta": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Carritos_Walmart": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Carritos_Chedraui": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 19
+    },
+    "Carritos_Total": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Views_Carrito": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 15
+    },
+    "Views_Productos_Nestle": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "Intencion_Total_MXN": {
+     "fmt": "[$$-80A]#,##0.00",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "Intencion_Nestle_MXN": {
+     "fmt": "[$$-80A]#,##0.00",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 22
+    },
+    "Pct_Penetracion_Nestle": {
+     "fmt": "0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "Ticket_Carrito_MXN": {
+     "fmt": "_-[$$-80A]* #,##0.00_-;\\-[$$-80A]* #,##0.00_-;_-[$$-80A]* \"-\"??_-;_-@_-",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 20
+    },
+    "Ticket_Producto_MXN": {
+     "fmt": "_-[$$-80A]* #,##0.00_-;\\-[$$-80A]* #,##0.00_-;_-[$$-80A]* \"-\"??_-;_-@_-",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "Insights": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    }
+   }
+  },
+  "Maggi Reporte": {
+   "filas": 33,
+   "columnas": 51,
+   "cols": {
+    "Campaña": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Medio": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Objetivo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "TouchPoint": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Tipo Email": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Segmento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "QCART?": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Quincena_Lanzamiento Principal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Mes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Mes (#)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Marca": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "BU": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Email Name SFMC_Principal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_Fecha_Envio": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_Subject": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_Sends": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_Deliveries": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_Opens": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_Clicks": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_Unsubs": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_Open_Rate": {
+     "fmt": "0.00%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_CTOR": {
+     "fmt": "0.00%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_Click_Rate": {
+     "fmt": "0.00%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_UTOR (vs opens)": {
+     "fmt": "0.00%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-Envíos": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-Entregados": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-No entregados": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-Leídos": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-Clicks Qcart": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-Clicks-Recetas": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-%Entrega": {
+     "fmt": "0.00%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-%No entrega": {
+     "fmt": "0.00%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-%Read vs entrega": {
+     "fmt": "0.00%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "WA-%Click vs Read": {
+     "fmt": "0.00%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "RECETAS ASIGNADAS": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "SHORTLINKS ASIGNADOS": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "UTMS CONTENT ORIGEN": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "UTMS CONTENT MODIFICADAS": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Medición desde": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Medición hasta": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "NOTAS": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Clicks": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Carritos_Total": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Clicks vs Carritos": {
+     "fmt": "0.00%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Views_Carrito": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Views_Productos_Nestle": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Intencion_Total_MXN": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Intencion_Nestle_MXN": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Pct_Penetracion_Nestle": {
+     "fmt": "0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Ticket_Carrito_MXN": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Ticket_Producto_MXN": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 8
+    }
+   }
+  },
+  "Exclusiones": {
+   "filas": 14,
+   "columnas": 1,
+   "cols": {
+    "ECOSISTEMA DE EXCLUSIONES Y DE JERARQUÍAS": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    }
+   }
+  },
+  "Reporte_julio": {
+   "filas": 44,
+   "columnas": 58,
+   "cols": {
+    "Campaña": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Medio": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Objetivo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "TouchPoint": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Tipo  Email": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Segmento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "QCART?": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 5
+    },
+    "Quincena_Lanzamiento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Mes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 4
+    },
+    "Mes (#)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 5
+    },
+    "Marca": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "BU": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "Content_ID (SFMC)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Email_ID (SFMC)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "Principal_Sends": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Principal_Deliveries": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Principal_Opens": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Principal_Clicks": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Principal_Open_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Principal_CTOR": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Principal_Click_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "FUP_Subject": {
+     "fmt": "(sin celda)",
+     "tipo": "-",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "FUP_Sends": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "FUP_Deliveries": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "FUP_Opens": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "FUP_Clicks": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "FUP_Open_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "FUP_CTOR": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "FUP_Click_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Tot_Sends": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "Tot_Deliveries": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Tot_Opens": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "Tot_Clicks": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 6
+    },
+    "Tot_Open_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Tot_CTOR": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 6
+    },
+    "Tot_Click_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "WA-Envíos": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "WA-Entregados": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "WA-No entregados": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "WA-Leídos": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "WA-Clicks": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "WA-%Entrega": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "WA-%No entrega": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "WA-%Read vs entrega": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "WA-%Click vs Read": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Receta_Representativa": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 42
+    },
+    "FechaQcart_Desde": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "FechaQcart_Hasta": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Carritos_Walmart": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "Carritos_Chedraui": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 7
+    },
+    "Carritos_Total": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Views_Carrito": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Views_Productos_Nestle": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Intencion_Total_MXN": {
+     "fmt": "[$$-80A]#,##0.00",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Intencion_Nestle_MXN": {
+     "fmt": "[$$-80A]#,##0.00",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Pct_Penetracion_Nestle": {
+     "fmt": "0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 15
+    },
+    "Ticket_Carrito_MXN": {
+     "fmt": "_-[$$-80A]* #,##0.00_-;\\-[$$-80A]* #,##0.00_-;_-[$$-80A]* \"-\"??_-;_-@_-",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 8
+    },
+    "Ticket_Producto_MXN": {
+     "fmt": "_-[$$-80A]* #,##0.00_-;\\-[$$-80A]* #,##0.00_-;_-[$$-80A]* \"-\"??_-;_-@_-",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": "-"
+    }
+   }
+  },
+  "Catalogo_Piezas": {
+   "filas": 122,
+   "columnas": 85,
+   "cols": {
+    "BU": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Marca": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Segmento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Campaña": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Pieza_ID": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Objetivo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "TouchPoint": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Touchpoint_Raw": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Segmentos_Combinados": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Canal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Email_Type": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Tipo_Envio": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Fecha_Primer_Envio": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Fecha_Ultimo_Envio": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Mes_Lanzamiento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Quincena": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Quincenas_Activas": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "N_Quincenas": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Meses_Activos": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "N_Meses": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Sends_Por_Quincena": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Sends_Por_Mes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "N_Envios_Fechados": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Granularidad_Periodo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Fecha_Origen": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "Dias_Envio": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Fuente_Dato": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Clicks_Medidos": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Sends": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Email_Name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Email_Names_Variantes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "N_Email_Names": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Codigo_NC": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Tiene_Qcart": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "N_Recetas": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Total": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Views_Total": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Receta_1": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "URL_Receta_1": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Walmart_1": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Walmart_1": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Chedraui_1": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Chedraui_1": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Receta_2": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "URL_Receta_2": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Walmart_2": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Walmart_2": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Chedraui_2": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Chedraui_2": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Receta_3": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "URL_Receta_3": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Walmart_3": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Walmart_3": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Chedraui_3": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Chedraui_3": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Receta_4": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "URL_Receta_4": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Walmart_4": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Walmart_4": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Chedraui_4": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Chedraui_4": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Estado": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Fuente_Qcart": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Notas": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Subsegmento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Content_ID (final del Email_Name)": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Email_ID (de la DE de SFMC)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Oleada": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Mascota": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Fecha_Activacion_Qcart": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Activaciones_Qcart": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Pieza_Principal_ID": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Subject": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Mes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Mes (#)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Receta_5": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "URL_Receta_5": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Walmart_5": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Walmart_5": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Cod_Chedraui_5": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Carritos_Chedraui_5": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Codigos_Qcart": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Whatsapp_Name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "Whatsapp_Names_Variantes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "N_Whatsapp_Names": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    }
+   }
+  },
+  "Sheet1": {
+   "filas": 22,
+   "columnas": 5,
+   "cols": {
+    "UNIDAD DE NEGOCIO PERTENCE": {
+     "fmt": "(sin celda)",
+     "tipo": "-",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "AUDIENICA": {
+     "fmt": "(sin celda)",
+     "tipo": "-",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "NOMBRE DE LA CAMPAÑA": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": "-"
+    },
+    "QCARTLINK ESTA VINCULADO": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 26
+    },
+    "FECHAS DE ACTIVACIÓN": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 28
+    }
+   }
+  },
+  "Catalogo_Referencias": {
+   "filas": 268,
+   "columnas": 11,
+   "cols": {
+    "Tipo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Dimension": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Valor_Crudo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 32
+    },
+    "Valor_Canonico": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 29
+    },
+    "Contexto": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 27
+    },
+    "Dato_1": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "Dato_2": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "Fuente": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 34
+    },
+    "Notas": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 42
+    },
+    "N_Piezas": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "Pieza_IDs": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 42
+    }
+   }
+  },
+  "Data_Email": {
+   "filas": 107,
+   "columnas": 47,
+   "cols": {
+    "BU": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Campaign": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Journey": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 22
+    },
+    "Segment": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 39
+    },
+    "Email_Type": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "TouchPoint": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Version": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Journey_ID": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "Subject_Clean": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Report_Period": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Source": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 26
+    },
+    "Send_Date": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Send_Week": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Email_Sender_Name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 20
+    },
+    "Canal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "BU_Canonico": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "Marca": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "Campaña": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Segmento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Nombre_Journey": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Datorama_Campaign": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 20
+    },
+    "Datorama_Campaign_ID": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 23
+    },
+    "Email_Name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Email_Subject_Raw": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Audience_Name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Email_Sends": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "Email_Deliveries": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 19
+    },
+    "Email_Unique_Opens": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "Email_Unique_Clicks": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 22
+    },
+    "Email_Bounces": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Delivery_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Open_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Click_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "CTOR": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Bounce_Rate": {
+     "fmt": "0.0%",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "Flag_Zero_Sends": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Flag_Negative_Values": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 23
+    },
+    "Flag_Rate_Mismatch": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "Send_Month": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Quincena": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Brand": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "Send_Week_Label": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Excluido_Motivo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Pieza_ID": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "Objetivo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 22
+    },
+    "Mes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Mes (#)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    }
+   }
+  },
+  "Data_WhatsApp": {
+   "filas": 16,
+   "columnas": 33,
+   "cols": {
+    "BU": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Marca": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "Campaña": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Campana_Raw": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Objetivo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Segmento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Segmento_WA_Raw": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Canal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "TouchPoint": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "Send_Date": {
+     "fmt": "m/d/yy",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "Send_Month": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Quincena": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Sends": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Deliveries": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Opens_Read": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Clicks": {
+     "fmt": "0.00",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Clicks_Medidos": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 17
+    },
+    "Errores": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Aud_Original": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 15
+    },
+    "Aud_Filtros": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "Aud_Final": {
+     "fmt": "#,##0",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "Logins": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Recetas_Capturadas": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "Errores_Meta_Detalle": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 23
+    },
+    "utm_content": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 45
+    },
+    "URL": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Notas": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "Pieza_ID": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "Mes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Mes (#)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Email_Name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "No_Entregados": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 16
+    },
+    "Whatsapp_Name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    }
+   }
+  },
+  "Data_Qcart_Carritos": {
+   "filas": 3013,
+   "columnas": 31,
+   "cols": {
+    "Pieza_ID": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "fecha": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "hora": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "shortlink_code": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 17
+    },
+    "shortlink_name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "utm_campaign": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 31
+    },
+    "utm_medium": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "utm_source": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 23
+    },
+    "utm_content": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "utm_term": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 22
+    },
+    "store": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 15
+    },
+    "n_tiendas": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "impressions": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "views": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "total_shown_price": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 20
+    },
+    "activacion_link": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "link_campana": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "fuente": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 31
+    },
+    "fila_en_csv": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "aviso": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "BU": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Marca": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "Campaña": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Segmento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 26
+    },
+    "Canal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "Objetivo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "TouchPoint": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "Quincena": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Mes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Mes (#)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Email_Name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    }
+   }
+  },
+  "Data_Qcart_Productos": {
+   "filas": 884,
+   "columnas": 32,
+   "cols": {
+    "Pieza_ID": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "fecha": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "hora": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "shortlink_code": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 17
+    },
+    "shortlink_name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "utm_campaign": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 32
+    },
+    "utm_medium": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "utm_source": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 23
+    },
+    "utm_content": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 21
+    },
+    "utm_term": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 22
+    },
+    "store": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 19
+    },
+    "n_tiendas": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 12
+    },
+    "product": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "impressions": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "views": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "total_shown_price": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 20
+    },
+    "activacion_link": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "link_campana": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "fuente": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 32
+    },
+    "fila_en_csv": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "aviso": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    },
+    "BU": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Marca": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 24
+    },
+    "Campaña": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 18
+    },
+    "Segmento": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 26
+    },
+    "Canal": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 11
+    },
+    "Objetivo": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 14
+    },
+    "TouchPoint": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Quincena": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 13
+    },
+    "Mes": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 9
+    },
+    "Mes (#)": {
+     "fmt": "General",
+     "tipo": "n",
+     "enc_s": "obj",
+     "ancho": 10
+    },
+    "Email_Name": {
+     "fmt": "General",
+     "tipo": "s",
+     "enc_s": "obj",
+     "ancho": 46
+    }
+   }
+  }
+ }
+}

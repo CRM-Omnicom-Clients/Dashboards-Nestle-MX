@@ -1,0 +1,247 @@
+{
+ "paso": "insumos-validar · insumos",
+ "generado_por": "fuentes-insumos.insumos.js",
+ "corte": "WK33",
+ "veredicto": "CON HALLAZGOS",
+ "checks": [
+  {
+   "grupo": 1,
+   "check": "existe el inbox de email",
+   "ok": true,
+   "detalle": "C:\\Users\\Ricardo.Aguilar\\OneDrive - OneWorkplace\\Marketing Automation Kinesso - Librería-Sharepoint-MAK\\Nestlé\\Reportes-Nestlé\\Reportes-Datorama"
+  },
+  {
+   "grupo": 1,
+   "check": "hay descarga de email",
+   "ok": true,
+   "detalle": "18 archivos"
+  },
+  {
+   "grupo": 1,
+   "check": "la descarga no viene vacía",
+   "ok": true,
+   "detalle": "153 KB"
+  },
+  {
+   "grupo": 1,
+   "check": "el nombre no contradice a la frescura real",
+   "ok": false,
+   "detalle": "Datorama-Nestle-WK33.xlsx (WK33 pero 12-Aug-2026 20:11:00)"
+  },
+  {
+   "grupo": 1,
+   "check": "el corte pedido coincide con el elegido",
+   "ok": false,
+   "detalle": "pedido=WK33 · elegido=Datorama-Nestle-WK32.1.xlsx  ⚠ el nombre del corte NO dice qué datos trae: eso se lee adentro"
+  },
+  {
+   "grupo": 1,
+   "check": "ningún archivo queda fuera por su nombre",
+   "ok": true,
+   "detalle": "4 rescatados que el patrón viejo no veía: AON-RN-Marzo-Mayo.xlsx, Datorama-Nestle-WK32.1.xlsx, Intelligent-Abril.xlsx, Reporte-Email-Nestle-Datoramawk25.xlsx"
+  },
+  {
+   "grupo": 2,
+   "check": "existe el inbox de Qcart",
+   "ok": true,
+   "detalle": "C:\\Users\\Ricardo.Aguilar\\OneDrive - OneWorkplace\\Marketing Automation Kinesso - Librería-Sharepoint-MAK\\Nestlé\\Reportes-Nestlé\\ReportesQcart"
+  },
+  {
+   "grupo": 2,
+   "check": "todo CSV se clasifica por su encabezado",
+   "ok": true,
+   "detalle": "4 CSV · sin clasificar 0"
+  },
+  {
+   "grupo": 2,
+   "check": "cada pieza trae sus dos mitades",
+   "ok": true,
+   "detalle": "2 piezas · incompletas 0"
+  },
+  {
+   "grupo": 2,
+   "check": "ninguna descarga viene vacía",
+   "ok": true,
+   "detalle": "vacías: 0"
+  },
+  {
+   "grupo": 2,
+   "check": "los CSV comparten un solo esquema",
+   "ok": false,
+   "detalle": "3 esquemas distintos conviviendo"
+  },
+  {
+   "grupo": 2,
+   "check": "el periodo de cada CSV se puede leer de sus filas",
+   "ok": true,
+   "detalle": "0 de 4 sin columna de fecha"
+  },
+  {
+   "grupo": 3,
+   "check": "se encuentra la fuente de WhatsApp",
+   "ok": true,
+   "detalle": "(Interno) Resultados Whatsapp CRM 2026.xlsx"
+  },
+  {
+   "grupo": 3,
+   "check": "no viene de un respaldo ni es un borrador",
+   "ok": true,
+   "detalle": "CRM General"
+  },
+  {
+   "grupo": 4,
+   "check": "el archivo de trabajo está libre para escribir",
+   "ok": true,
+   "detalle": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx"
+  },
+  {
+   "grupo": 5,
+   "check": "está el mapa de shortlinks de Qcart",
+   "ok": true,
+   "detalle": "Qcart-Links Mails-Hive- MX.xlsx"
+  },
+  {
+   "grupo": 1,
+   "check": "todas las hojas traen el mismo número de columnas",
+   "ok": false,
+   "detalle": "4 hoja(s) con 20 cols · 2 hoja(s) con 31 cols"
+  }
+ ],
+ "notas": [
+  "email: 18 descargas · se usa Datorama-Nestle-WK32.1.xlsx (13-Aug-2026 16:42:46)",
+  "qcart: 2 piezas · 4 CSV · 3 esquemas"
+ ],
+ "tareas": [
+  "⚠ 1 archivo(s) con WK mayor pero MÁS VIEJOS que Datorama-Nestle-WK32.1.xlsx. Se usa el sello interno, no el nombre. Si el corte pedía uno de esos, dilo.",
+  "⚠ 3 esquemas de CSV distintos en Qcart. Un lector que asuma uno solo falla. Los bloques deben leer por NOMBRE de columna, no por posición.",
+  "⚠ el export de email NO tiene el mismo esquema en todas sus hojas (20 cols×4, 31 cols×2). No es un error: es la fuente evolucionando. Leer por NOMBRE de columna, nunca por posición."
+ ],
+ "forma": {
+  "archivo_vivo": {
+   "archivo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+   "ruta": "C:\\Users\\Ricardo.Aguilar\\OneDrive - OneWorkplace\\Marketing Automation Kinesso - Librería-Sharepoint-MAK\\Nestlé\\Reportes-Nestlé\\(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+   "version": "8",
+   "resuelto_por": "patrón + más reciente, ignorando respaldos (lib-flexible.archivoVivo)",
+   "otros_candidatos": [],
+   "ambiguo": false,
+   "ojo": ""
+  },
+  "email": {
+   "archivo": "Datorama-Nestle-WK32.1.xlsx",
+   "ruta": "C:\\Users\\Ricardo.Aguilar\\OneDrive - OneWorkplace\\Marketing Automation Kinesso - Librería-Sharepoint-MAK\\Nestlé\\Reportes-Nestlé\\Reportes-Datorama\\Datorama-Nestle-WK32.1.xlsx",
+   "sello": "13-Aug-2026 16:42:46",
+   "frescura": "sello interno",
+   "hojas": [
+    {
+     "hoja": "AON-RN-Mayo",
+     "filas": 100,
+     "columnas": 20
+    },
+    {
+     "hoja": "AON-RN-Abril",
+     "filas": 71,
+     "columnas": 20
+    },
+    {
+     "hoja": "AON-RN-Marzo",
+     "filas": 6,
+     "columnas": 20
+    },
+    {
+     "hoja": "AON-RN-Junio",
+     "filas": 78,
+     "columnas": 20
+    },
+    {
+     "hoja": "AON-RN-Julio",
+     "filas": 214,
+     "columnas": 31
+    },
+    {
+     "hoja": "AON-RN-Agosto",
+     "filas": 486,
+     "columnas": 31
+    }
+   ],
+   "esquema_uniforme": false,
+   "nota": "el encabezado NO está en la fila 1: el export trae preámbulo. Buscarlo por CONTENIDO. Y el nº de columnas cambia entre hojas: leer por NOMBRE, nunca por posición."
+  },
+  "qcart": {
+   "csv": 4,
+   "piezas": 2,
+   "esquemas": [
+    {
+     "cols": [
+      "date",
+      "shortlink code",
+      "shortlink name",
+      "utm_campaign",
+      "utm_medium",
+      "utm_source",
+      "utm_content",
+      "utm_term",
+      "ads_platform",
+      "store",
+      "impressions",
+      "views",
+      "total shown price"
+     ],
+     "n": 2,
+     "ejemplo": "recetas-nestle-mx-carts-raw-2026-08-01-2026-09-14.csv"
+    },
+    {
+     "cols": [
+      "date",
+      "shortlink code",
+      "shortlink name",
+      "utm_campaign",
+      "utm_medium",
+      "utm_source",
+      "utm_content",
+      "utm_term",
+      "ads_platform",
+      "product",
+      "store",
+      "impressions",
+      "views",
+      "total shown price"
+     ],
+     "n": 1,
+     "ejemplo": "recetas-nestle-mx-products-raw-2026-08-01-2026-09-14.csv"
+    },
+    {
+     "cols": [
+      "date",
+      "shortlink code",
+      "shortlink name",
+      "utm_campaign",
+      "utm_medium",
+      "utm_source",
+      "utm_content",
+      "utm_term",
+      "ads_platform",
+      "product",
+      "brand",
+      "store",
+      "impressions",
+      "views",
+      "total shown price"
+     ],
+     "n": 1,
+     "ejemplo": "recetas-nestle-mx-products-raw-2026-09-01-2026-09-29.csv"
+    }
+   ],
+   "sin_periodo_legible": 0,
+   "mapa_shortlinks": "Qcart-Links Mails-Hive- MX.xlsx",
+   "nota": "separador y BOM varían: detectarlos por archivo. Clasificar por encabezado, no por nombre."
+  },
+  "whatsapp": {
+   "ruta": "C:\\Users\\Ricardo.Aguilar\\OneDrive - OneWorkplace\\Archivos de Leslie Monserrat Monterrosas (Omnicom) - Nestlé 2026\\Marcas\\CRM General\\(Interno) Resultados Whatsapp CRM 2026.xlsx",
+   "nota": "solo lectura"
+  }
+ },
+ "para_el_siguiente": {
+  "que_es": "la FORMA de cada fuente. Los bloques email-bloque/b/c NO deben re-derivarla.",
+  "como_usarla": "verifica UNA cifra contra el archivo; si cuadra, da el resto por bueno. Si no cuadra, para todo y repórtalo."
+ }
+}

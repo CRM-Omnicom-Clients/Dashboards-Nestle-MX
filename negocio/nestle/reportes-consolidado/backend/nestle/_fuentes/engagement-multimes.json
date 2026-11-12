@@ -1,0 +1,9 @@
+{
+ "pregunta": "un envío ocurre en UNA quincena; su engagement cruza varias",
+ "envios_con_engagement_posterior": 115,
+ "opens_mes_del_envio": 1855908,
+ "opens_meses_posteriores": 102053,
+ "clicks_meses_posteriores": 1863,
+ "atribucion": "A · todo al periodo del envío (regla ya decidida por Rick)",
+ "abierto": "MAX vs SUMA del engagement multi-mes"
+}

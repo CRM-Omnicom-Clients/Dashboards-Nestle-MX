@@ -1,0 +1,23 @@
+{
+ "corte": "etapa6-reporte",
+ "celdas": 0,
+ "columnas": 2,
+ "hojas_regeneradas": 0,
+ "respaldo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-etapa6-reporte.xlsx",
+ "cambios": [],
+ "columnas_nuevas": [
+  {
+   "paso": "E6",
+   "hoja": "Report_Resumen",
+   "nombre": "FUP_Quincena",
+   "porque": "La quincena en que salio el seguimiento. 10 de 34 FUP salieron en otra quincena que su Principal; sin esta columna el reporte parece decir que salieron juntos. La pidio Rick."
+  },
+  {
+   "paso": "E6",
+   "hoja": "Report_Resumen",
+   "nombre": "Canal",
+   "porque": "Canal gana sobre Medio (decision de Rick): un solo nombre para el mismo dato en todas las hojas."
+  }
+ ],
+ "hojas": []
+}

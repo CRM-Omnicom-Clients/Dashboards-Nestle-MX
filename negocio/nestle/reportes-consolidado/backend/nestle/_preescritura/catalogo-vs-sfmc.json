@@ -1,0 +1,84 @@
+{
+ "cuando": "2026-09-04T06:49:55.297Z",
+ "volcado": "sfmc-piezas-2026-09-04.txt",
+ "campoNombre": "EmailName",
+ "sinCatalogo": [],
+ "sinSFMC": [
+  "002-P021",
+  "002-P022",
+  "002-P023",
+  "002-P024",
+  "008-P007",
+  "008-P008",
+  "004-P010",
+  "004-P011",
+  "004-P012",
+  "004-P013",
+  "004-P014",
+  "004-P015",
+  "004-P016",
+  "004-P017",
+  "004-P018",
+  "004-P019",
+  "005-P001",
+  "005-P002",
+  "005-P003",
+  "005-P004",
+  "006-P003",
+  "009-P018",
+  "009-P019",
+  "009-P020",
+  "009-P021",
+  "009-P022",
+  "009-P023",
+  "009-P024",
+  "009-P025",
+  "009-P026",
+  "009-P027",
+  "009-P028",
+  "009-P029",
+  "004-P020"
+ ],
+ "recuperables": [
+  {
+   "col": "Content_ID",
+   "campoDE": "ConfigKey",
+   "huecos": 30,
+   "recuperables": 2,
+   "ejemplos": [
+    "001-P030",
+    "001-P031"
+   ]
+  },
+  {
+   "col": "Email_ID",
+   "campoDE": "Email_ID",
+   "huecos": 28,
+   "recuperables": 6,
+   "ejemplos": [
+    "006-P006",
+    "001-P032",
+    "005-P007"
+   ]
+  }
+ ],
+ "sinFuente": [
+  {
+   "col": "TouchPoint",
+   "huecos": 12,
+   "nota": "la DE trae `Touchpoint` pero está vacío en esas piezas"
+  },
+  {
+   "col": "Quincena",
+   "huecos": 25
+  },
+  {
+   "col": "Subject",
+   "huecos": 40
+  },
+  {
+   "col": "Email_Type",
+   "huecos": 21
+  }
+ ]
+}

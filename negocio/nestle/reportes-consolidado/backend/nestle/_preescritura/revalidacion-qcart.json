@@ -1,0 +1,529 @@
+{
+ "cuando": "2026-09-30T23:01:19.693Z",
+ "total_carritos": 8184,
+ "celdas": 35,
+ "descuadres": [],
+ "sin_pieza": 0,
+ "grano": {
+  "AON ¦ E-P4 ¦ Sin Cluster": {
+   "cam": "AON",
+   "tp": "E-P4",
+   "seg": "Sin Cluster",
+   "carritos": 1048,
+   "views": 1048,
+   "filas": 394,
+   "piezas": {
+    "001-P021": 394
+   },
+   "cods": {
+    "hhzYOf18": 143,
+    "GblUR93I": 154,
+    "fDAdN8Qa": 97
+   }
+  },
+  "Hotcakes ¦ E-P3 ¦ Indulgentes": {
+   "cam": "Hotcakes",
+   "tp": "E-P3",
+   "seg": "Indulgentes",
+   "carritos": 46,
+   "views": 46,
+   "filas": 42,
+   "piezas": {
+    "002-P003": 42
+   },
+   "cods": {
+    "qrMAKnjA": 42
+   }
+  },
+  "Hotcakes ¦ E-P4 ¦ FamilyKids": {
+   "cam": "Hotcakes",
+   "tp": "E-P4",
+   "seg": "FamilyKids",
+   "carritos": 110,
+   "views": 110,
+   "filas": 79,
+   "piezas": {
+    "002-P004": 79
+   },
+   "cods": {
+    "LU7k7fMB": 79
+   }
+  },
+  "Hotcakes ¦ E-I2 ¦ Interés Salado": {
+   "cam": "Hotcakes",
+   "tp": "E-I2",
+   "seg": "Interés Salado",
+   "carritos": 51,
+   "views": 51,
+   "filas": 46,
+   "piezas": {
+    "002-P017": 46
+   },
+   "cods": {
+    "bd2KESe4": 27,
+    "VbE5Jnb4": 19
+   }
+  },
+  "Hotcakes ¦ E-I1 ¦ Interés Salado": {
+   "cam": "Hotcakes",
+   "tp": "E-I1",
+   "seg": "Interés Salado",
+   "carritos": 194,
+   "views": 194,
+   "filas": 139,
+   "piezas": {
+    "002-P019": 139
+   },
+   "cods": {
+    "a4NBepmo": 83,
+    "0varyzKZ": 56
+   }
+  },
+  "Mundial ¦ E-P1 ¦ Bebidas": {
+   "cam": "Mundial",
+   "tp": "E-P1",
+   "seg": "Bebidas",
+   "carritos": 308,
+   "views": 308,
+   "filas": 146,
+   "piezas": {
+    "004-P003": 146
+   },
+   "cods": {
+    "rr0VvKTb": 124,
+    "dHfqmS7n": 22
+   }
+  },
+  "Antojo Infinito ¦ E-C1 ¦ Combinado": {
+   "cam": "Antojo Infinito",
+   "tp": "E-C1",
+   "seg": "Combinado",
+   "carritos": 192,
+   "views": 192,
+   "filas": 123,
+   "piezas": {
+    "003-P001": 123
+   },
+   "cods": {
+    "PJrhl5GT": 36,
+    "r0J2KBES": 20,
+    "o41ObWyu": 44,
+    "PDy0MeF9": 23
+   }
+  },
+  "Mundial ¦ E-P2 ¦ Bebidas": {
+   "cam": "Mundial",
+   "tp": "E-P2",
+   "seg": "Bebidas",
+   "carritos": 139,
+   "views": 139,
+   "filas": 66,
+   "piezas": {
+    "004-P004": 66
+   },
+   "cods": {
+    "3QfdZN2Q": 53,
+    "SN2YWvgo": 13
+   }
+  },
+  "Mundial ¦ E-P1 ¦ Modern Cooking": {
+   "cam": "Mundial",
+   "tp": "E-P1",
+   "seg": "Modern Cooking",
+   "carritos": 183,
+   "views": 183,
+   "filas": 126,
+   "piezas": {
+    "004-P002": 126
+   },
+   "cods": {
+    "hWaJfDxS": 126
+   }
+  },
+  "Mundial ¦ Semifinal A ¦ Wa-opt-in-allsegments": {
+   "cam": "Mundial",
+   "tp": "Semifinal A",
+   "seg": "Wa-opt-in-allsegments",
+   "carritos": 174,
+   "views": 174,
+   "filas": 37,
+   "piezas": {
+    "004-P017": 37
+   },
+   "cods": {
+    "sbH9gVge": 34,
+    "Agy5v9Yb": 3
+   }
+  },
+  "AON ¦ E-P1 ¦ Productive Adults": {
+   "cam": "AON",
+   "tp": "E-P1",
+   "seg": "Productive Adults",
+   "carritos": 506,
+   "views": 506,
+   "filas": 270,
+   "piezas": {
+    "001-P015": 270
+   },
+   "cods": {
+    "PySVWRVY": 270
+   }
+  },
+  "AON ¦ E-P1 ¦ Traditional Parents": {
+   "cam": "AON",
+   "tp": "E-P1",
+   "seg": "Traditional Parents",
+   "carritos": 790,
+   "views": 790,
+   "filas": 367,
+   "piezas": {
+    "001-P005": 367
+   },
+   "cods": {
+    "kzFAiKMv": 124,
+    "SGm6GxjJ": 66,
+    "vgMqmCrL": 86,
+    "uDEM0jlX": 91
+   }
+  },
+  "AON ¦ E-P3 ¦ Wellness Navigators": {
+   "cam": "AON",
+   "tp": "E-P3",
+   "seg": "Wellness Navigators",
+   "carritos": 135,
+   "views": 135,
+   "filas": 66,
+   "piezas": {
+    "001-P019": 66
+   },
+   "cods": {
+    "KO3vgQok": 66
+   }
+  },
+  "AON ¦ E-P3 ¦ New Parents": {
+   "cam": "AON",
+   "tp": "E-P3",
+   "seg": "New Parents",
+   "carritos": 205,
+   "views": 205,
+   "filas": 129,
+   "piezas": {
+    "001-P003": 129
+   },
+   "cods": {
+    "os3U6hWb": 71,
+    "ETJFEOzD": 31,
+    "1iqH9Tx7": 27
+   }
+  },
+  "AON ¦ E-P2 ¦ Young Creatives": {
+   "cam": "AON",
+   "tp": "E-P2",
+   "seg": "Young Creatives",
+   "carritos": 258,
+   "views": 258,
+   "filas": 98,
+   "piezas": {
+    "001-P017": 98
+   },
+   "cods": {
+    "xj2gTnHI": 98
+   }
+  },
+  "Mundial ¦ Final ¦ Wa-opt-in-allsegments": {
+   "cam": "Mundial",
+   "tp": "Final",
+   "seg": "Wa-opt-in-allsegments",
+   "carritos": 383,
+   "views": 383,
+   "filas": 70,
+   "piezas": {
+    "004-P019": 70
+   },
+   "cods": {
+    "LO8RxwsM": 52,
+    "2Yn9L0bD": 18
+   }
+  },
+  "Mundial ¦ E-P1 ¦ Botana": {
+   "cam": "Mundial",
+   "tp": "E-P1",
+   "seg": "Botana",
+   "carritos": 79,
+   "views": 79,
+   "filas": 81,
+   "piezas": {
+    "004-P001": 81
+   },
+   "cods": {
+    "tJEICO87": 59,
+    "Z8W0ZouI": 22
+   }
+  },
+  "AON ¦ E-P4 ¦ Career Focused": {
+   "cam": "AON",
+   "tp": "E-P4",
+   "seg": "Career Focused",
+   "carritos": 507,
+   "views": 507,
+   "filas": 230,
+   "piezas": {
+    "001-P001": 230
+   },
+   "cods": {
+    "Mb4KvUvP": 96,
+    "E8RDSsHg": 74,
+    "9Bm8slOi": 60
+   }
+  },
+  "Hotcakes ¦ E-P1 ¦ Saludables": {
+   "cam": "Hotcakes",
+   "tp": "E-P1",
+   "seg": "Saludables",
+   "carritos": 9,
+   "views": 9,
+   "filas": 17,
+   "piezas": {
+    "002-P001": 17
+   },
+   "cods": {
+    "NhrllATy": 17
+   }
+  },
+  "Mundial ¦ Semifinal B ¦ Wa-opt-in-allsegments": {
+   "cam": "Mundial",
+   "tp": "Semifinal B",
+   "seg": "Wa-opt-in-allsegments",
+   "carritos": 252,
+   "views": 252,
+   "filas": 42,
+   "piezas": {
+    "004-P018": 42
+   },
+   "cods": {
+    "haPs2HHU": 24,
+    "2YWR8c3Z": 18
+   }
+  },
+  "AON ¦ E-P2 ¦ Dinkies y Empty Nesters": {
+   "cam": "AON",
+   "tp": "E-P2",
+   "seg": "Dinkies y Empty Nesters",
+   "carritos": 364,
+   "views": 364,
+   "filas": 146,
+   "piezas": {
+    "001-P011": 146
+   },
+   "cods": {
+    "YdlUlPrm": 146
+   }
+  },
+  "Hotcakes ¦ E-P2 ¦ Prácticos": {
+   "cam": "Hotcakes",
+   "tp": "E-P2",
+   "seg": "Prácticos",
+   "carritos": 61,
+   "views": 61,
+   "filas": 47,
+   "piezas": {
+    "002-P002": 47
+   },
+   "cods": {
+    "3o1GDbRc": 47
+   }
+  },
+  "Mundial ¦ E-P2 ¦ Botana": {
+   "cam": "Mundial",
+   "tp": "E-P2",
+   "seg": "Botana",
+   "carritos": 1688,
+   "views": 1688,
+   "filas": 125,
+   "piezas": {
+    "004-P005": 125
+   },
+   "cods": {
+    "HcDJTsRH": 62,
+    "rueO2xbY": 63
+   }
+  },
+  "Liga MX ¦ E-J4 ¦ Usuarios sin región": {
+   "cam": "Liga MX",
+   "tp": "E-J4",
+   "seg": "Usuarios sin región",
+   "carritos": 286,
+   "views": 286,
+   "filas": 111,
+   "piezas": {
+    "005-P006": 111
+   },
+   "cods": {
+    "4tBsCXTp": 63,
+    "hTHNLqzL": 48
+   }
+  },
+  "Liga MX ¦ E-J4 ¦ Usuarios CON región": {
+   "cam": "Liga MX",
+   "tp": "E-J4",
+   "seg": "Usuarios CON región",
+   "carritos": 23,
+   "views": 23,
+   "filas": 13,
+   "piezas": {
+    "005-P005": 13
+   },
+   "cods": {
+    "i8LZ55bd": 10,
+    "HThaf6bT": 3
+   }
+  },
+  "Liga MX ¦ E-J7 ¦ Región unificada": {
+   "cam": "Liga MX",
+   "tp": "E-J7",
+   "seg": "Región unificada",
+   "carritos": 24,
+   "views": 24,
+   "filas": 25,
+   "piezas": {
+    "005-P010": 25
+   },
+   "cods": {
+    "hTHNLqzL": 17,
+    "GQnvqqP3": 8
+   }
+  },
+  "Liga MX ¦ E-J8 ¦ Región unificada": {
+   "cam": "Liga MX",
+   "tp": "E-J8",
+   "seg": "Región unificada",
+   "carritos": 7,
+   "views": 7,
+   "filas": 12,
+   "piezas": {
+    "005-P012": 12
+   },
+   "cods": {
+    "0oSrtaxX": 7,
+    "0eQt7uf5": 5
+   }
+  },
+  "Liga MX ¦ E-J6 ¦ Usuarios CON región": {
+   "cam": "Liga MX",
+   "tp": "E-J6",
+   "seg": "Usuarios CON región",
+   "carritos": 2,
+   "views": 2,
+   "filas": 2,
+   "piezas": {
+    "005-P009": 2
+   },
+   "cods": {
+    "okUSdwJk": 1,
+    "BdN0ck7t": 1
+   }
+  },
+  "Liga MX ¦ E-J5 ¦ Usuarios CON región": {
+   "cam": "Liga MX",
+   "tp": "E-J5",
+   "seg": "Usuarios CON región",
+   "carritos": 6,
+   "views": 6,
+   "filas": 5,
+   "piezas": {
+    "005-P008": 5
+   },
+   "cods": {
+    "TYZa8g47": 4,
+    "UhCnTNuz": 1
+   }
+  },
+  "Liga MX ¦ WA-J8 ¦ Región unificada": {
+   "cam": "Liga MX",
+   "tp": "WA-J8",
+   "seg": "Región unificada",
+   "carritos": 44,
+   "views": 44,
+   "filas": 22,
+   "piezas": {
+    "005-P011": 22
+   },
+   "cods": {
+    "DTuqPqBo": 22
+   }
+  },
+  "Liga MX ¦ E-J9 ¦ Región unificada": {
+   "cam": "Liga MX",
+   "tp": "E-J9",
+   "seg": "Región unificada",
+   "carritos": 51,
+   "views": 51,
+   "filas": 39,
+   "piezas": {
+    "005-P014": 39
+   },
+   "cods": {
+    "bfQ24tDq": 25,
+    "xTaSfQ2y": 14
+   }
+  },
+  "Liga MX ¦ WA-J9 ¦ Región unificada": {
+   "cam": "Liga MX",
+   "tp": "WA-J9",
+   "seg": "Región unificada",
+   "carritos": 32,
+   "views": 32,
+   "filas": 14,
+   "piezas": {
+    "005-P013": 14
+   },
+   "cods": {
+    "ymh2OT4x": 14
+   }
+  },
+  "Liga MX ¦ E-J5 ¦ Usuarios sin región": {
+   "cam": "Liga MX",
+   "tp": "E-J5",
+   "seg": "Usuarios sin región",
+   "carritos": 5,
+   "views": 5,
+   "filas": 6,
+   "piezas": {
+    "005-P007": 6
+   },
+   "cods": {
+    "9isauWgY": 3,
+    "Hqa0fbOM": 3
+   }
+  },
+  "Liga MX ¦ E-J10 ¦ Región unificada": {
+   "cam": "Liga MX",
+   "tp": "E-J10",
+   "seg": "Región unificada",
+   "carritos": 14,
+   "views": 14,
+   "filas": 7,
+   "piezas": {
+    "005-P015": 7
+   },
+   "cods": {
+    "jhMxJiSo": 3,
+    "kzSTHGEd": 4
+   }
+  },
+  "Liga MX ¦ WA-J10 ¦ Región unificada": {
+   "cam": "Liga MX",
+   "tp": "WA-J10",
+   "seg": "Región unificada",
+   "carritos": 8,
+   "views": 8,
+   "filas": 7,
+   "piezas": {
+    "005-P016": 7
+   },
+   "cods": {
+    "uCV8KGHm": 7
+   }
+  }
+ }
+}

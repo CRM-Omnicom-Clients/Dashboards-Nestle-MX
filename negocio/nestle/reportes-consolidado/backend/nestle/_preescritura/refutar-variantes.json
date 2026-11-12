@@ -1,0 +1,35 @@
+{
+ "cuando": "2026-09-29T23:16:44.473Z",
+ "ataques": [
+  {
+   "nombre": "B1 · un principal usurpado como variante",
+   "intenta": "buscar si queda alguna pieza reclamando como variante el nombre principal de otra",
+   "atrapado": true,
+   "como": "ninguno con dueño claro; los que quedan son de misma audiencia (D1 de Rick)"
+  },
+  {
+   "nombre": "B2 · los nombres de Pro Plan sin resolver",
+   "intenta": "pedirle al índice canónico los 6 nombres que antes daban AMBIGUO",
+   "atrapado": true,
+   "como": "los 6 resuelven a 009-P006..P011, ninguno AMBIGUO"
+  },
+  {
+   "nombre": "B3 · una decisión de Rick tocada por mi cuenta",
+   "intenta": "comprobar que 001-P005/P006 y los pares recíprocos de AON conservan sus variantes",
+   "atrapado": true,
+   "como": "los pares de D1 conservan sus variantes: no se decidió por Rick"
+  },
+  {
+   "nombre": "B4 · el índice eligiendo «el primero» ante un empate",
+   "intenta": "darle al índice un nombre que dos piezas de misma audiencia reclaman",
+   "atrapado": true,
+   "como": "16 nombre(s) siguen marcados AMBIGUO en vez de resueltos a ciegas (es lo correcto)"
+  },
+  {
+   "nombre": "B5 · POR DEFINIR con la información disponible",
+   "intenta": "buscar filas del reporte con clicks y desglose en POR DEFINIR",
+   "atrapado": true,
+   "como": "0 celdas del desglose en POR DEFINIR"
+  }
+ ]
+}

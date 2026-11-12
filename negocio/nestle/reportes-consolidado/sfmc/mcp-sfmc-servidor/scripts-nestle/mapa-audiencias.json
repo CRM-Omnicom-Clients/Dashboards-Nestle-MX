@@ -1,0 +1,754 @@
+[
+ {
+  "ConfigKey": "001-P001",
+  "Campana": "AON",
+  "Journey_UUID": "066E3FED-1D2A-411C-87D0-86BE2C3E6AFE",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_CAREER-FOCUSED_AC_EM_A_V1_803867",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_CARRER FOCUSED_MX_022026_FILTERED",
+  "Audience_DE_Id": "1e6aa0f8-7a1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P002",
+  "Campana": "AON",
+  "Journey_UUID": "066E3FED-1D2A-411C-87D0-86BE2C3E6AFE",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_CAREER-FOCUSED_AC_EM_A_V1_803867",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_CARRER FOCUSED_MX_022026_FILTERED",
+  "Audience_DE_Id": "1e6aa0f8-7a1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P003",
+  "Campana": "AON",
+  "Journey_UUID": "27EBB084-13F7-45C6-9F95-6DBA1824CD04",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_NEW-PARENTS_AC_EM_A_V1_803867",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_NEW PARENTS_MX_022026_FILTERED",
+  "Audience_DE_Id": "9b47dadb-7b1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P004",
+  "Campana": "AON",
+  "Journey_UUID": "27EBB084-13F7-45C6-9F95-6DBA1824CD04",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_NEW-PARENTS_AC_EM_A_V1_803867",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_NEW PARENTS_MX_022026_FILTERED",
+  "Audience_DE_Id": "9b47dadb-7b1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P007",
+  "Campana": "AON",
+  "Journey_UUID": "E54207AC-9639-4341-9073-0118813B6B69",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_ABRIL-AON-APP_AC_EM_A_V1_865439",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_ACTIVOS_MX_031226_FILTERED",
+  "Audience_DE_Id": "108112d2-d738-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P008",
+  "Campana": "AON",
+  "Journey_UUID": "E54207AC-9639-4341-9073-0118813B6B69",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_ABRIL-AON-APP_AC_EM_A_V1_865439",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_ACTIVOS_MX_031226_FILTERED",
+  "Audience_DE_Id": "108112d2-d738-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P009",
+  "Campana": "AON",
+  "Journey_UUID": "E54207AC-9639-4341-9073-0118813B6B69",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_ABRIL-AON-APP_AC_EM_A_V1_865439",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_ACTIVOS_MX_031226_FILTERED",
+  "Audience_DE_Id": "108112d2-d738-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P010",
+  "Campana": "AON",
+  "Journey_UUID": "E54207AC-9639-4341-9073-0118813B6B69",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_ABRIL-AON-APP_AC_EM_A_V1_865439",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_ACTIVOS_MX_031226_FILTERED",
+  "Audience_DE_Id": "108112d2-d738-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P011",
+  "Campana": "AON",
+  "Journey_UUID": "2F87D61F-3343-41AD-95C7-EB8EA85F8D2B",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_DINKIES_AC_EM_A_V1_863587",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_DINKIES Y EMPTY NESTERS_MX_022026_FILTERED",
+  "Audience_DE_Id": "b46b8e43-3c43-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P012",
+  "Campana": "AON",
+  "Journey_UUID": "2F87D61F-3343-41AD-95C7-EB8EA85F8D2B",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_DINKIES_AC_EM_A_V1_863587",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_DINKIES Y EMPTY NESTERS_MX_022026_FILTERED",
+  "Audience_DE_Id": "b46b8e43-3c43-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P013",
+  "Campana": "AON",
+  "Journey_UUID": "4E23D5BF-89AE-4B08-A17F-7985B6374A81",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_AON-LOYALTY_EN_EM_A_V1_863587",
+  "Audience_DE": "recetas_aon_loyalty_opens",
+  "Audience_DE_Id": "53245d5d-dd4a-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P014",
+  "Campana": "AON",
+  "Journey_UUID": "4E23D5BF-89AE-4B08-A17F-7985B6374A81",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_AON-LOYALTY_EN_EM_A_V1_863587",
+  "Audience_DE": "recetas_aon_loyalty_opens",
+  "Audience_DE_Id": "53245d5d-dd4a-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P015",
+  "Campana": "AON",
+  "Journey_UUID": "72089CDC-0C32-4591-A650-4DC982527BA0",
+  "Journey_Name": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-PRODUCTIVE-ADULTS_CN_EM_A_V2_982527",
+  "Audience_DE": "AON PRODUCTIVE ADULTS filtrado final",
+  "Audience_DE_Id": "4ddc7ea4-4184-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "001-P016",
+  "Campana": "AON",
+  "Journey_UUID": "72089CDC-0C32-4591-A650-4DC982527BA0",
+  "Journey_Name": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-PRODUCTIVE-ADULTS_CN_EM_A_V2_982527",
+  "Audience_DE": "AON PRODUCTIVE ADULTS filtrado final",
+  "Audience_DE_Id": "4ddc7ea4-4184-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "001-P017",
+  "Campana": "AON",
+  "Journey_UUID": "0CF267FE-857A-45D4-837A-39F178E96637",
+  "Journey_Name": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-YOUNG-CREATIVES_CN_EM_A_V1_982525",
+  "Audience_DE": "AON Young Creatives filtrado final",
+  "Audience_DE_Id": "ff3ea611-6784-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "001-P018",
+  "Campana": "AON",
+  "Journey_UUID": "0CF267FE-857A-45D4-837A-39F178E96637",
+  "Journey_Name": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-YOUNG-CREATIVES_CN_EM_A_V1_982525",
+  "Audience_DE": "AON Young Creatives filtrado final",
+  "Audience_DE_Id": "ff3ea611-6784-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "001-P019",
+  "Campana": "AON",
+  "Journey_UUID": "6D312E85-6210-4160-A5BB-C3CB47A94571",
+  "Journey_Name": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-WELLNESS-NAVIGATORS_CN_EM_A_V2_9825257",
+  "Audience_DE": "AON Wellness Navigators filtrado final",
+  "Audience_DE_Id": "aae96d2b-0b82-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "001-P020",
+  "Campana": "AON",
+  "Journey_UUID": "6D312E85-6210-4160-A5BB-C3CB47A94571",
+  "Journey_Name": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-WELLNESS-NAVIGATORS_CN_EM_A_V2_9825257",
+  "Audience_DE": "AON Wellness Navigators filtrado final",
+  "Audience_DE_Id": "aae96d2b-0b82-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "001-P021",
+  "Campana": "AON",
+  "Journey_UUID": "F34C7BC8-229B-4194-BF38-1440D7DDFD0D",
+  "Journey_Name": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-SIN-CLUSTER_CN_EM_A_V2_982526",
+  "Audience_DE": "AON sin cluster exclusion segmentos",
+  "Audience_DE_Id": "9a17aa6d-2e85-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "001-P022",
+  "Campana": "AON",
+  "Journey_UUID": "F34C7BC8-229B-4194-BF38-1440D7DDFD0D",
+  "Journey_Name": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-SIN-CLUSTER_CN_EM_A_V2_982526",
+  "Audience_DE": "AON sin cluster exclusion segmentos",
+  "Audience_DE_Id": "9a17aa6d-2e85-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "001-P023",
+  "Campana": "AON",
+  "Journey_UUID": "4434DD40-B509-4D6C-98AB-93B544687F96",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_CAREER-FOCUSED_AC_EM_A_V1_863587",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_CARRER FOCUSED_MX_022026_FILTERED",
+  "Audience_DE_Id": "1e6aa0f8-7a1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P024",
+  "Campana": "AON",
+  "Journey_UUID": "A2E138DA-804D-40E7-B182-63BA708C3D8D",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_NEW-PARENTS_AC_EM_A_V1_863587",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_NEW PARENTS_MX_022026_FILTERED",
+  "Audience_DE_Id": "9b47dadb-7b1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P025",
+  "Campana": "AON",
+  "Journey_UUID": "20B0C0DA-B834-41FF-BE5F-016ACD959700",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_803867",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_TRADITIONAL PARENTS_MX_022026_FILTERED",
+  "Audience_DE_Id": "07b4c906-7c1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P026",
+  "Campana": "AON",
+  "Journey_UUID": "A2E138DA-804D-40E7-B182-63BA708C3D8D",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_NEW-PARENTS_AC_EM_A_V1_863587",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_NEW PARENTS_MX_022026_FILTERED",
+  "Audience_DE_Id": "9b47dadb-7b1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P027",
+  "Campana": "AON",
+  "Journey_UUID": "20B0C0DA-B834-41FF-BE5F-016ACD959700",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_803867",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_TRADITIONAL PARENTS_MX_022026_FILTERED",
+  "Audience_DE_Id": "07b4c906-7c1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "001-P028",
+  "Campana": "AON",
+  "Journey_UUID": "4434DD40-B509-4D6C-98AB-93B544687F96",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_CAREER-FOCUSED_AC_EM_A_V1_863587",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_CARRER FOCUSED_MX_022026_FILTERED",
+  "Audience_DE_Id": "1e6aa0f8-7a1d-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P001",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "FB8A7D57-029F-4662-B9F6-715D52988961",
+  "Journey_Name": "test majo y sofi",
+  "Audience_DE": "Test_majo_y_sofi",
+  "Audience_DE_Id": "3aa24a9e-c952-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P002",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "1CD63429-BE73-4BAA-87CA-0A594A1D3C28",
+  "Journey_Name": " J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-PRACTICOS_AC_EM_A_V2_2894428",
+  "Audience_DE": "hotcakes_crafting_practicos_p2",
+  "Audience_DE_Id": "baaf461b-d54e-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P003",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "A938042B-2D62-4BBF-A9E8-53712DFE9A38",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-CRAFTING-INDULGENTES_AC_EM_A_V2_2894428",
+  "Audience_DE": "hotcakes_crafting_indulgentes_p3",
+  "Audience_DE_Id": "fb947042-d54e-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P004",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "6088AABC-E03C-4BB4-8AF5-B5DA43878483",
+  "Journey_Name": " J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-FAMILY-KIDS_AC_EM_A_V2_2894428",
+  "Audience_DE": "hotcakes_crafting_familykids_p4",
+  "Audience_DE_Id": "ff450e61-d54e-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P005",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "CAC252F7-99AC-49C8-B051-0EB06B049D2B",
+  "Journey_Name": " J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-SALUDABLES_AC_EM_A_V2_2894428",
+  "Audience_DE": "hotcakes_crafting_saludables_p1",
+  "Audience_DE_Id": "b012b3de-d04e-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P006",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "1CD63429-BE73-4BAA-87CA-0A594A1D3C28",
+  "Journey_Name": " J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-PRACTICOS_AC_EM_A_V2_2894428",
+  "Audience_DE": "hotcakes_crafting_practicos_p2",
+  "Audience_DE_Id": "baaf461b-d54e-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P007",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "A938042B-2D62-4BBF-A9E8-53712DFE9A38",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-CRAFTING-INDULGENTES_AC_EM_A_V2_2894428",
+  "Audience_DE": "hotcakes_crafting_indulgentes_p3",
+  "Audience_DE_Id": "fb947042-d54e-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P008",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "6088AABC-E03C-4BB4-8AF5-B5DA43878483",
+  "Journey_Name": " J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-FAMILY-KIDS_AC_EM_A_V2_2894428",
+  "Audience_DE": "hotcakes_crafting_familykids_p4",
+  "Audience_DE_Id": "ff450e61-d54e-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P009",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "8282C03F-1EE6-4F0F-B894-62E2A011959F",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-LOYALTY_CN_EM_A_V1_890132",
+  "Audience_DE": "recetas_hotcakes_loyalty_p",
+  "Audience_DE_Id": "dbc2c2ae-c159-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "002-P010",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "8282C03F-1EE6-4F0F-B894-62E2A011959F",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-LOYALTY_CN_EM_A_V1_890132",
+  "Audience_DE": "recetas_hotcakes_loyalty_p",
+  "Audience_DE_Id": "dbc2c2ae-c159-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "002-P011",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "8282C03F-1EE6-4F0F-B894-62E2A011959F",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-LOYALTY_CN_EM_A_V1_890132",
+  "Audience_DE": "recetas_hotcakes_loyalty_p",
+  "Audience_DE_Id": "dbc2c2ae-c159-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "002-P012",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "8282C03F-1EE6-4F0F-B894-62E2A011959F",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-LOYALTY_CN_EM_A_V1_890132",
+  "Audience_DE": "recetas_hotcakes_loyalty_p",
+  "Audience_DE_Id": "dbc2c2ae-c159-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "002-P013",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "8282C03F-1EE6-4F0F-B894-62E2A011959F",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-LOYALTY_CN_EM_A_V1_890132",
+  "Audience_DE": "recetas_hotcakes_loyalty_p",
+  "Audience_DE_Id": "dbc2c2ae-c159-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "002-P014",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "8282C03F-1EE6-4F0F-B894-62E2A011959F",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-LOYALTY_CN_EM_A_V1_890132",
+  "Audience_DE": "recetas_hotcakes_loyalty_p",
+  "Audience_DE_Id": "dbc2c2ae-c159-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "002-P015",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "8282C03F-1EE6-4F0F-B894-62E2A011959F",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-LOYALTY_CN_EM_A_V1_890132",
+  "Audience_DE": "recetas_hotcakes_loyalty_p",
+  "Audience_DE_Id": "dbc2c2ae-c159-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "002-P016",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "8282C03F-1EE6-4F0F-B894-62E2A011959F",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-LOYALTY_CN_EM_A_V1_890132",
+  "Audience_DE": "recetas_hotcakes_loyalty_p",
+  "Audience_DE_Id": "dbc2c2ae-c159-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "002-P017",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "427EA6B4-72EE-4612-B2A4-C1ACFABCE355",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-INSPIRATION_AC_EM_A_V1_852761",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_HOTCAKES_SALADOS_20260401",
+  "Audience_DE_Id": "777e0168-e431-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P018",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "427EA6B4-72EE-4612-B2A4-C1ACFABCE355",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-INSPIRATION_AC_EM_A_V1_852761",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_HOTCAKES_SALADOS_20260401",
+  "Audience_DE_Id": "777e0168-e431-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P019",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "427EA6B4-72EE-4612-B2A4-C1ACFABCE355",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-INSPIRATION_AC_EM_A_V1_852761",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_HOTCAKES_SALADOS_20260401",
+  "Audience_DE_Id": "777e0168-e431-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "002-P020",
+  "Campana": "Hotcakes",
+  "Journey_UUID": "427EA6B4-72EE-4612-B2A4-C1ACFABCE355",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-INSPIRATION_AC_EM_A_V1_852761",
+  "Audience_DE": "TD_SFMC_GLOBAL_IPG_MEX_RN_HOTCAKES_SALADOS_20260401",
+  "Audience_DE_Id": "777e0168-e431-f111-a5b5-d4f5ef3d54ad"
+ },
+ {
+  "ConfigKey": "003-P001",
+  "Campana": "Antojo Infinito",
+  "Journey_UUID": "3217F406-45D2-42D9-83B6-F0E353C7AE97",
+  "Journey_Name": "J_Ponches-La-Lechera-NC007631_1_IBS_FOOD_NEST_LLE_ANXL_MX_ES_E-C1_CN_EM_A_V2_942069",
+  "Audience_DE": "Lechera-AudienciasAON-2026 FINAL",
+  "Audience_DE_Id": "80af25c0-d170-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "003-P002",
+  "Campana": "Antojo Infinito",
+  "Journey_UUID": "3217F406-45D2-42D9-83B6-F0E353C7AE97",
+  "Journey_Name": "J_Ponches-La-Lechera-NC007631_1_IBS_FOOD_NEST_LLE_ANXL_MX_ES_E-C1_CN_EM_A_V2_942069",
+  "Audience_DE": "Lechera-AudienciasAON-2026 FINAL",
+  "Audience_DE_Id": "80af25c0-d170-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "004-P001",
+  "Campana": "Mundial",
+  "Journey_UUID": "B5C682D3-3A04-46C1-9F4F-C60254634DD3",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_BOTANA_CN_EM_A_V1_938607",
+  "Audience_DE": "maggi_seleccion_botanas_FILTRADO",
+  "Audience_DE_Id": "d3cb3120-3864-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "004-P002",
+  "Campana": "Mundial",
+  "Journey_UUID": "CB954AD8-281D-4988-94B0-39A80C3B3051",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_MODERN-COOKING_CN_EM_A_V1_938607",
+  "Audience_DE": "maggi_seleccion_moderncooking_FILTRADO",
+  "Audience_DE_Id": "279e36ca-3864-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "004-P003",
+  "Campana": "Mundial",
+  "Journey_UUID": "EBC01722-900A-40AD-96EC-1B4144B3520D",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_BEBIDAS_CN_EM_A_V1_938607",
+  "Audience_DE": "maggi_seleccion_bebidas_FILTRADO",
+  "Audience_DE_Id": "bb8132d9-3564-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "004-P004",
+  "Campana": "Mundial",
+  "Journey_UUID": "E86E058B-A4C9-4BEA-8C1D-0CFC4732A5E7",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_BEBIDAS_CN_EM_A_V1_948858",
+  "Audience_DE": "maggi_seleccion_bebidas_FILTRADO",
+  "Audience_DE_Id": "bb8132d9-3564-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "004-P005",
+  "Campana": "Mundial",
+  "Journey_UUID": "EC474F31-FDA3-43A6-A687-1C602E1E58D5",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_BOTANAS_CN_EM_A_V1_948858",
+  "Audience_DE": "maggi_seleccion_botanas_FILTRADO",
+  "Audience_DE_Id": "d3cb3120-3864-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "004-P006",
+  "Campana": "Mundial",
+  "Journey_UUID": "4689BEB2-FE70-4E63-A11B-0C3EF100FA6A",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_3ER-PARTIDO-BEBIDA_EN_EM_A_V1_961546",
+  "Audience_DE": "maggi_seleccion_bebidas_FILTRADO",
+  "Audience_DE_Id": "bb8132d9-3564-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "004-P007",
+  "Campana": "Mundial",
+  "Journey_UUID": "38550C5D-2663-4BE0-8112-AFBAA6ED6C43",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_3ER-PARTIDO-COOKING_EN_EM_A_V1_961546",
+  "Audience_DE": "maggi_seleccion_moderncooking_FILTRADO",
+  "Audience_DE_Id": "279e36ca-3864-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "004-P008",
+  "Campana": "Mundial",
+  "Journey_UUID": "793EC241-4CA9-4E52-8F7A-0DFBE81AACA3",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_3ER-PARTIDO-BOTANA_EN_EM_A_V1_961546",
+  "Audience_DE": "maggi_seleccion_botanas_FILTRADO",
+  "Audience_DE_Id": "d3cb3120-3864-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "004-P009",
+  "Campana": "Mundial",
+  "Journey_UUID": "A481F066-6A14-4072-B6E4-93A62B81855C",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_4TO-PARTIDO-BEBIDAS_EN_EM_A_V1_972726",
+  "Audience_DE": "4to partido bebidas filtrado",
+  "Audience_DE_Id": "9cbc2362-8874-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "006-P001",
+  "Campana": "The Freshers",
+  "Journey_UUID": "0BD663C7-3F8B-4154-B0EB-547918CA735A",
+  "Journey_Name": "O_Welcome-NC007067_NA_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_AC_EM_A_NA_997024",
+  "Audience_DE": "ice_filtrado_final",
+  "Audience_DE_Id": "a344d913-3385-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "006-P002",
+  "Campana": "The Freshers",
+  "Journey_UUID": "0BD663C7-3F8B-4154-B0EB-547918CA735A",
+  "Journey_Name": "O_Welcome-NC007067_NA_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_AC_EM_A_NA_997024",
+  "Audience_DE": "ice_filtrado_final",
+  "Audience_DE_Id": "a344d913-3385-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "007-P001",
+  "Campana": "Hackea tu café",
+  "Journey_UUID": "CDF21A1B-F401-4869-AE0C-3297D3341584",
+  "Journey_Name": "O_Nescafe-Espresso-Con-NC004682_1_IBS_CFEE_NESC_NCF_AAGW_MX_ES_Concentrate_AC_EM_A_V1_001577",
+  "Audience_DE": "3001577_final_E-Hack1 Concentrate",
+  "Audience_DE_Id": "83134b71-8f87-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "007-P002",
+  "Campana": "Hackea tu café",
+  "Journey_UUID": "CDF21A1B-F401-4869-AE0C-3297D3341584",
+  "Journey_Name": "O_Nescafe-Espresso-Con-NC004682_1_IBS_CFEE_NESC_NCF_AAGW_MX_ES_Concentrate_AC_EM_A_V1_001577",
+  "Audience_DE": "3001577_final_E-Hack1 Concentrate",
+  "Audience_DE_Id": "83134b71-8f87-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "007-P003",
+  "Campana": "Hackea tu café",
+  "Journey_UUID": "264355DC-B5DA-4F04-A199-9065BC15FAA5",
+  "Journey_Name": "O_Nescafe-Espresso-Con-NC004682_2_IBS_CFEE_NESC_NCF_AAGW_MX_ES_Concentrate_AC_EM_B_V2_001576",
+  "Audience_DE": "3001576_final_E-Hack2 Concentrate",
+  "Audience_DE_Id": "fde839d8-8f87-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "007-P004",
+  "Campana": "Hackea tu café",
+  "Journey_UUID": "264355DC-B5DA-4F04-A199-9065BC15FAA5",
+  "Journey_Name": "O_Nescafe-Espresso-Con-NC004682_2_IBS_CFEE_NESC_NCF_AAGW_MX_ES_Concentrate_AC_EM_B_V2_001576",
+  "Audience_DE": "3001576_final_E-Hack2 Concentrate",
+  "Audience_DE_Id": "fde839d8-8f87-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "008-P001",
+  "Campana": "Tercer Tiempo",
+  "Journey_UUID": "7E091E4D-C9BB-423F-A1C9-28046B95CE43",
+  "Journey_Name": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_EM_A_V1_948950",
+  "Audience_DE": "2948950_EMAIL_NESCAFE_DESPERTAR1_DE_FILTRADA",
+  "Audience_DE_Id": "f96ffba6-d96b-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "008-P002",
+  "Campana": "Tercer Tiempo",
+  "Journey_UUID": "7E091E4D-C9BB-423F-A1C9-28046B95CE43",
+  "Journey_Name": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_EM_A_V1_948950",
+  "Audience_DE": "2948950_EMAIL_NESCAFE_DESPERTAR1_DE_FILTRADA",
+  "Audience_DE_Id": "f96ffba6-d96b-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "008-P003",
+  "Campana": "Tercer Tiempo",
+  "Journey_UUID": "F6542843-110E-4D70-BBF3-504FEE5B2E21",
+  "Journey_Name": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_EM_A_V1_amazon_2948954",
+  "Audience_DE": "2948954_EMAIL_NESCAFE_DESPERTAR2_DE_FILTRADA",
+  "Audience_DE_Id": "88c05f73-9b70-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "008-P004",
+  "Campana": "Tercer Tiempo",
+  "Journey_UUID": "F6542843-110E-4D70-BBF3-504FEE5B2E21",
+  "Journey_Name": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_EM_A_V1_amazon_2948954",
+  "Audience_DE": "2948954_EMAIL_NESCAFE_DESPERTAR2_DE_FILTRADA",
+  "Audience_DE_Id": "88c05f73-9b70-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "008-P005",
+  "Campana": "Tercer Tiempo",
+  "Journey_UUID": "8856BEF0-D284-4C3F-8499-F44D908684A2",
+  "Journey_Name": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_EM_A_V1_walmart_2948954",
+  "Audience_DE": "2948954_EMAIL_NESCAFE_DESPERTAR2_DE_FILTRADA",
+  "Audience_DE_Id": "88c05f73-9b70-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "008-P006",
+  "Campana": "Tercer Tiempo",
+  "Journey_UUID": "8856BEF0-D284-4C3F-8499-F44D908684A2",
+  "Journey_Name": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_EM_A_V1_walmart_2948954",
+  "Audience_DE": "2948954_EMAIL_NESCAFE_DESPERTAR2_DE_FILTRADA",
+  "Audience_DE_Id": "88c05f73-9b70-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-P001",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "04EF5F3B-7E80-4F8C-9834-0E977BE6D45D",
+  "Journey_Name": "O_Pro-Plan-Campaign-NC007886_1_IBS_PETC_PURI_PRP_AOJA_MX_ES_NA_EN_EM_A_V1_952340",
+  "Audience_DE": "2952340_Envio1A PROPLAN_Filtrado",
+  "Audience_DE_Id": "35c6d698-6471-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-P002",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "887D8D25-E4A7-4941-931C-2FECE62F6CA2",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E3B_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio3B",
+  "Audience_DE_Id": "08f3f6dc-4281-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-P003",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "91AD154C-B4ED-4961-9D01-380C52F6388E",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E3A_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio3A",
+  "Audience_DE_Id": "a751cd31-4181-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-P004",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "612D89A7-86DC-4DF8-B91A-B8F01FCA56C8",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E3C_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio3C",
+  "Audience_DE_Id": "10d145f4-4281-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PA-E3-G",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "887D8D25-E4A7-4941-931C-2FECE62F6CA2",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E3B_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio3B",
+  "Audience_DE_Id": "08f3f6dc-4281-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PA-E3-M",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "887D8D25-E4A7-4941-931C-2FECE62F6CA2",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E3B_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio3B",
+  "Audience_DE_Id": "08f3f6dc-4281-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PAE-E4-G",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "709A0B10-CA20-4A63-B0B2-D0DB90710A42",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E4B_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio4B",
+  "Audience_DE_Id": "410c4f66-6185-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PAE-E4-M",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "709A0B10-CA20-4A63-B0B2-D0DB90710A42",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E4B_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio4B",
+  "Audience_DE_Id": "410c4f66-6185-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PAE-E4-P",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "709A0B10-CA20-4A63-B0B2-D0DB90710A42",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E4B_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio4B",
+  "Audience_DE_Id": "410c4f66-6185-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PO-E3-G",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "612D89A7-86DC-4DF8-B91A-B8F01FCA56C8",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E3C_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio3C",
+  "Audience_DE_Id": "10d145f4-4281-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PO-E3-M",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "612D89A7-86DC-4DF8-B91A-B8F01FCA56C8",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E3C_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio3C",
+  "Audience_DE_Id": "10d145f4-4281-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PP-E3-G",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "91AD154C-B4ED-4961-9D01-380C52F6388E",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E3A_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio3A",
+  "Audience_DE_Id": "a751cd31-4181-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PP-E3-P",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "91AD154C-B4ED-4961-9D01-380C52F6388E",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E3A_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio3A",
+  "Audience_DE_Id": "a751cd31-4181-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PP-E4-G",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "518D9BFB-3786-4060-A12A-FA02F4E76DAA",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E4A_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio4A",
+  "Audience_DE_Id": "53bc5e51-6185-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PP-E4-M",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "518D9BFB-3786-4060-A12A-FA02F4E76DAA",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E4A_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio4A",
+  "Audience_DE_Id": "53bc5e51-6185-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "009-TMP-PP-E4-P",
+  "Campana": "Fuel for life",
+  "Journey_UUID": "518D9BFB-3786-4060-A12A-FA02F4E76DAA",
+  "Journey_Name": "MX_Automa_User_Mixto_AutomatedJourney_CDP_ProPlan_E4A_NA",
+  "Audience_DE": "DE_CDP_Proplan_Envio4A",
+  "Audience_DE_Id": "53bc5e51-6185-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "TMP-AON-EAPP",
+  "Campana": "AON",
+  "Journey_UUID": "31CFB55D-BFD8-463C-A0D0-9D41811F1B3A",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-APP_CN_EM_A_V1_018904",
+  "Audience_DE": "Junio AON 2 E-APP filtrado final",
+  "Audience_DE_Id": "27584f08-8895-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "TMP-AON-EPROP2",
+  "Campana": "AON",
+  "Journey_UUID": "F8F8A4BF-392C-45F8-8444-F6F396271D25",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-PROP2_EN_EM_A_V1",
+  "Audience_DE": "Junio AON 2 E-PROP2 filtrado final",
+  "Audience_DE_Id": "89fc8f5b-8895-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "TMP-AON-EPROP2-FUP",
+  "Campana": "AON",
+  "Journey_UUID": "F8F8A4BF-392C-45F8-8444-F6F396271D25",
+  "Journey_Name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-PROP2_EN_EM_A_V1",
+  "Audience_DE": "Junio AON 2 E-PROP2 filtrado final",
+  "Audience_DE_Id": "89fc8f5b-8895-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "TMP-MAGGI-J4-CR",
+  "Campana": "Liga MX*",
+  "Journey_UUID": "3864DF0B-0F74-4091-8373-1AF557E367AD",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_NA_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LIGAMX-J4-CONREGION_AQ_EM_A_NA_035275",
+  "Audience_DE": "E-J4 Liga MX CON REGION filtrado",
+  "Audience_DE_Id": "0273f565-1098-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "TMP-MAGGI-J4-SR",
+  "Campana": "Liga MX*",
+  "Journey_UUID": "6311D86F-CC12-41D4-8D4D-BEDFE48AB6FE",
+  "Journey_Name": "O_Maggi-Seleccion-NC006537_NA_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LIGAMX-J4-SINREGION_AQ_EM_A_NA_035274",
+  "Audience_DE": "E-J4 Liga MX SIN REGION filtrado",
+  "Audience_DE_Id": "4507efe3-1098-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "TMP-NESC-ESPRESSO",
+  "Campana": "Espresso Con*",
+  "Journey_UUID": "D12A6294-1FEF-4BEB-AD29-CB7A46D66C98",
+  "Journey_Name": "O_Nescafe-Espresso-Con-NC004682_2_IBS_CFEE_NESC_NCF_AAGW_MX_ES_NA_AC_EM_B_V2_024241",
+  "Audience_DE": "3024241_Concentrate ERIT-1",
+  "Audience_DE_Id": "2fad3ddd-8092-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "TMP-NESC-ESPRESSO-FUP",
+  "Campana": "Espresso Con*",
+  "Journey_UUID": "D12A6294-1FEF-4BEB-AD29-CB7A46D66C98",
+  "Journey_Name": "O_Nescafe-Espresso-Con-NC004682_2_IBS_CFEE_NESC_NCF_AAGW_MX_ES_NA_AC_EM_B_V2_024241",
+  "Audience_DE": "3024241_Concentrate ERIT-1",
+  "Audience_DE_Id": "2fad3ddd-8092-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "TMP-NESC-ICE",
+  "Campana": "Nescafé ICE*",
+  "Journey_UUID": "BD161F58-CA36-43D2-8B6A-8CF187B7F051",
+  "Journey_Name": "O_Nescafé-ICE-NC000817_2_IBS_CFEE_NESC_NCF_AAIW_MX_ES_NA_AC_EM_A_V2_024222",
+  "Audience_DE": "3024222_ICE Email Enrch 1",
+  "Audience_DE_Id": "2f4a164a-0c91-f111-a5bb-d4f5ef3d535b"
+ },
+ {
+  "ConfigKey": "TMP-NESC-ICE-FUP",
+  "Campana": "Nescafé ICE*",
+  "Journey_UUID": "BD161F58-CA36-43D2-8B6A-8CF187B7F051",
+  "Journey_Name": "O_Nescafé-ICE-NC000817_2_IBS_CFEE_NESC_NCF_AAIW_MX_ES_NA_AC_EM_A_V2_024222",
+  "Audience_DE": "3024222_ICE Email Enrch 1",
+  "Audience_DE_Id": "2f4a164a-0c91-f111-a5bb-d4f5ef3d535b"
+ }
+]

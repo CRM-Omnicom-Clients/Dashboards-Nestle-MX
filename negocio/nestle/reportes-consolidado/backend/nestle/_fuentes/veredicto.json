@@ -1,0 +1,116 @@
+{
+ "paso": "PUERTA-1 · cuadre cruzado",
+ "generado_por": "fuentes-cuadre.cuadre.js",
+ "cuando": "2026-10-03T02:41",
+ "que_hace": "cruza los 4 bloques entre ellos y contra el catálogo. NO escribe el Excel.",
+ "regla_dura": "si el veredicto es CERRADA, la Puerta 1 no escribe NADA — ni los bloques que sí cuadran. Un corte a medias deja el archivo en un estado que nadie sabe describir.",
+ "veredicto": "PUERTA ABIERTA",
+ "puede_escribir": true,
+ "bloqueos": [],
+ "avisos": [
+  {
+   "que": "el bloque de email trae más que el catálogo",
+   "detalle": "el bloque trae 1,327,804 MÁS: son datos que el catálogo aún no tiene, y que la puerta va a escribir"
+  },
+  {
+   "que": "el bloque de whatsapp trae más que el catálogo",
+   "detalle": "el bloque trae 5,358 MÁS: son datos que el catálogo aún no tiene, y que la puerta va a escribir"
+  },
+  {
+   "que": "1 piezas del catálogo sin datos de ningún bloque",
+   "detalle": "puede que aún no tengan envíos — no impide escribir las demás"
+  }
+ ],
+ "medido": {
+  "frescura": {
+   "ok": true,
+   "minutos": 0,
+   "mas_viejo": "email 2026-10-03T02:40",
+   "mas_nuevo": "manual 2026-10-03T02:41",
+   "detalle": "0 min entre el más viejo y el más nuevo (tolerancia 180)"
+  },
+  "doble_conteo": {
+   "pares": 93,
+   "choques": []
+  },
+  "suma_vs_catalogo": [
+   {
+    "canal": "email",
+    "bloque": 10395076,
+    "catalogo": 9067272,
+    "diferencia": 1327804,
+    "clase": "aviso",
+    "lectura": "el bloque trae 1,327,804 MÁS: son datos que el catálogo aún no tiene, y que la puerta va a escribir"
+   },
+   {
+    "canal": "whatsapp",
+    "bloque": 21963,
+    "catalogo": 16605,
+    "diferencia": 5358,
+    "clase": "aviso",
+    "lectura": "el bloque trae 5,358 MÁS: son datos que el catálogo aún no tiene, y que la puerta va a escribir"
+   }
+  ],
+  "cuadre_interno": [
+   {
+    "bloque": "email",
+    "ok": true,
+    "detalle": "108 = 108  ·  108 registros contados"
+   },
+   {
+    "bloque": "qcart",
+    "ok": true,
+    "detalle": "filtro y append  ·  4091 registros contados"
+   },
+   {
+    "bloque": "whatsapp",
+    "ok": true,
+    "detalle": "append  ·  19 registros contados"
+   },
+   {
+    "bloque": "manual",
+    "ok": true,
+    "detalle": "entran + fuera = leídos  ·  0 registros contados"
+   }
+  ],
+  "cobertura": {
+   "piezas": 124,
+   "tocadas": 123,
+   "sin_tocar": 1,
+   "sin_tocar_detalle": [
+    "004-P020 Mundial Email"
+   ],
+   "huerfanos": 0,
+   "huerfanos_sin_declarar": 0
+  },
+  "bloques": [
+   {
+    "bloque": "email",
+    "generado": "2026-10-03T02:40"
+   },
+   {
+    "bloque": "qcart",
+    "generado": "2026-10-03T02:40"
+   },
+   {
+    "bloque": "whatsapp",
+    "generado": "2026-10-03T02:41"
+   },
+   {
+    "bloque": "manual",
+    "generado": "2026-10-03T02:41"
+   }
+  ]
+ },
+ "para_la_puerta": {
+  "orden": [
+   "catalogo",
+   "email",
+   "qcart",
+   "whatsapp",
+   "manual"
+  ],
+  "ojo": "el catálogo va PRIMERO: las columnas canónicas de las hojas de datos lo consultan por fórmula",
+  "ojo_2": "los avisos no detienen la escritura pero viajan al reporte del corte"
+ }
+}

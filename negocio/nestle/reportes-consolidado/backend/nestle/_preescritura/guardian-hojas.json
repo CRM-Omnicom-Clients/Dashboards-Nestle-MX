@@ -1,0 +1,46 @@
+{
+ "fecha": "2026-09-22",
+ "hojas_del_libro": 13,
+ "declaradas": 8,
+ "sin_declarar": [
+  {
+   "hoja": "Maggi Reporte",
+   "filas": 24,
+   "la_creo": [],
+   "escriben_celdas": [
+    "maggi.corregir-utm-junio.js",
+    "maggi.escribir-columnas.js",
+    "maggi.qcart-j9.js"
+   ]
+  },
+  {
+   "hoja": "Exclusiones",
+   "filas": 8,
+   "la_creo": [],
+   "escriben_celdas": []
+  },
+  {
+   "hoja": "Sheet1",
+   "filas": 9,
+   "la_creo": [],
+   "escriben_celdas": []
+  },
+  {
+   "hoja": "Data_Clicks",
+   "filas": 959,
+   "la_creo": [
+    "escritor.hojas-clicks.js"
+   ],
+   "escriben_celdas": []
+  },
+  {
+   "hoja": "Dic_Clicks",
+   "filas": 24,
+   "la_creo": [
+    "escritor.hojas-clicks.js"
+   ],
+   "escriben_celdas": []
+  }
+ ],
+ "declaradas_ausentes": []
+}

@@ -1,0 +1,171 @@
+{
+ "paso": "E1.4",
+ "fecha": "2026-08-24",
+ "que_es": "Que escribe cada fuente, DONDE y CON QUE GRANO. Se declara ANTES de escribir.",
+ "por_que": "Los skills de fuente sabian de donde LEEN pero no a donde ESCRIBEN, y el grano acababa decidiendose dentro del motor, tarde y sin revision. F1 es el caso que lo prueba.",
+ "se_verifica_con": "E1-4-contrato-escritura.js — cada columna declarada debe existir, cada columna del reporte debe tener UN dueno, y el grano del Qcart se mide en la hoja real",
+ "fuentes": {
+  "catalogo": {
+   "que_es": "El catálogo no es una fuente: es la TABLA MAESTRA. Define las dimensiones que las demás usan.",
+   "escribe_en": {
+    "Report_Resumen": {
+     "grano": "define la LLAVE de la fila: campaña × touchpoint × segmento × quincena del Principal",
+     "columnas": [
+      "Campaña",
+      "Medio",
+      "Objetivo",
+      "TouchPoint",
+      "Segmento",
+      "Quincena_Lanzamiento",
+      "Mes",
+      "Mes (#)",
+      "Marca",
+      "BU"
+     ],
+     "llave": "Campaña + TouchPoint + Segmento + Quincena_Lanzamiento",
+     "no_toca": [
+      "ninguna métrica: el catálogo describe, no mide"
+     ]
+    }
+   }
+  },
+  "email": {
+   "que_es": "Los envíos de email. Autoridad: la DE de SFMC (CRM_Email_Piezas), cruce por ContentName.",
+   "escribe_en": {
+    "Data_Email": {
+     "grano": "una fila = UNA PIEZA (98). No día de envío: la fuente entrega por pieza.",
+     "llave": "Pieza_ID",
+     "no_toca": [
+      "las 4 columnas canónicas escritas a mano por Rick — 277 celdas"
+     ]
+    },
+    "Report_Resumen": {
+     "grano": "campaña × touchpoint × segmento × quincena — Principal y FUP FUSIONADOS en la misma fila",
+     "columnas": [
+      "Email Name SFMC_Principal",
+      "Principal_Subject",
+      "Principal_Sends",
+      "Principal_Deliveries",
+      "Principal_Opens",
+      "Principal_Clicks",
+      "Email Name SFMC_FUP",
+      "FUP_Subject",
+      "FUP_Sends",
+      "FUP_Deliveries",
+      "FUP_Opens",
+      "FUP_Clicks",
+      "Tot_Sends",
+      "Tot_Deliveries",
+      "Tot_Opens",
+      "Tot_Clicks",
+      "Unsubs_Unicos",
+      "Audiencia_DE SFMC",
+      "Audiencia_Volumen SFMC",
+      "Clicks_Unicos_Total",
+      "Clicks_Qcart",
+      "Clicks_App",
+      "Clicks_Social",
+      "Clicks_Web",
+      "Clicks_Ver_Navegador",
+      "Clicks_Unsub"
+     ],
+     "llave": "la misma fila que define el catálogo",
+     "ancla": "el FUP se pega a la fila de su Principal por Pieza_Principal_ID, aunque haya salido en otra quincena",
+     "no_toca": [
+      "las columnas WA-*",
+      "las columnas de Qcart"
+     ]
+    }
+   }
+  },
+  "whatsapp": {
+   "que_es": "Los envíos de WhatsApp. No tiene Email_Name ni Subject: ahí va N/A.",
+   "escribe_en": {
+    "Data_WhatsApp": {
+     "grano": "una fila = un envío de WA",
+     "llave": "Pieza_ID + TouchPoint",
+     "no_toca": [
+      "nada de email"
+     ]
+    },
+    "Report_Resumen": {
+     "grano": "su propia fila — una pieza de WhatsApp NO se fusiona con una de email",
+     "columnas": [
+      "WA-Envíos",
+      "WA-Entregados",
+      "WA-No entregados",
+      "WA-Leídos",
+      "WA-Clicks"
+     ],
+     "llave": "la misma fila que define el catálogo",
+     "no_toca": [
+      "Email Name",
+      "Subject",
+      "las columnas Principal_* y FUP_*: van en N/A"
+     ]
+    }
+   }
+  },
+  "qcart": {
+   "que_es": "Los carritos y productos. Autoridad de links: Qcart-Links Mails-Hive-MX.xlsx.",
+   "escribe_en": {
+    "Data_Qcart_Carritos": {
+     "grano": "una fila = un evento carrito",
+     "llave": "fecha_hora + shortlink + tienda",
+     "no_toca": [
+      "nada calculado: penetración y tickets son del motor"
+     ]
+    },
+    "Data_Qcart_Productos": {
+     "grano": "una fila = un evento producto",
+     "llave": "fecha_hora + shortlink + tienda + producto",
+     "no_toca": [
+      "idem"
+     ]
+    },
+    "Report_Resumen": {
+     "grano": "🔴 POR TOUCHPOINT × SEGMENTO. La quincena es solo el ANCLA temporal.",
+     "regla_dura": "El ancla decide EN QUÉ FILA se pega el Qcart, NO cuántas filas hay. Agrupar a un solo segmento por campaña borra la comparación que el reporte existe para dar — y CUADRA IGUAL, así que ninguna puerta lo detecta. Cada evento trae su pieza_id por su shortlink: se agrupa por pieza y se reparte sin duplicar.",
+     "columnas": [
+      "QCART?",
+      "Receta_Representativa",
+      "FechaQcart_Desde",
+      "FechaQcart_Hasta",
+      "Carritos_Walmart",
+      "Carritos_Chedraui",
+      "Carritos_Total",
+      "Views_Carrito",
+      "Views_Productos_Nestle",
+      "Intencion_Total_MXN",
+      "Intencion_Nestle_MXN",
+      "Pct_Penetracion_Nestle",
+      "Ticket_Carrito_MXN",
+      "Ticket_Producto_MXN"
+     ],
+     "llave": "la misma fila que define el catálogo",
+     "ancla": "la quincena de lanzamiento del Principal, pegada a una celda QUE YA EXISTE — nunca fabrica una",
+     "no_toca": [
+      "las columnas de email",
+      "las columnas WA-*"
+     ],
+     "ojo_fup": "Los carritos que llegaron por un link del FUP suman al Principal, y queda declarado que vinieron vía FUP."
+    }
+   }
+  },
+  "manual": {
+   "que_es": "Lo que Rick declara a mano porque ninguna descarga lo entrega.",
+   "escribe_en": {
+    "Report_Resumen": {
+     "grano": "la fila que Rick declare",
+     "columnas": [
+      "las que declare"
+     ],
+     "llave": "la misma",
+     "no_toca": [
+      "lo que una fuente automática ya escribe"
+     ]
+    }
+   }
+  }
+ }
+}

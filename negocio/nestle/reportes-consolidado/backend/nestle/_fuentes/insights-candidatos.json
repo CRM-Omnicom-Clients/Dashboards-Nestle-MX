@@ -1,0 +1,646 @@
+{
+ "paso": "G3",
+ "celdas": 71,
+ "candidatos": 79,
+ "pasan": 63,
+ "por_celda": {
+  "AON¦Descarga App¦Abr-Q2-2026": [
+   {
+    "campana": "AON",
+    "objetivo": "Descarga App",
+    "touchpoint": "E-D1",
+    "segmento": "Activos",
+    "quincena": "Abr-Q2-2026",
+    "palanca": "fup",
+    "destino": "Follow Up",
+    "hecho": "el FUP abre 28.1pp menos que el Principal (12.3% vs 40.3%) sobre 355,979 envíos",
+    "datos": {
+     "fup_or": 0.12282456150319036,
+     "prin_or": 0.4034461310813678,
+     "sends": 355979
+    },
+    "puntaje": 100,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "AON¦Purchase¦Abr-Q2-2026": [
+   {
+    "campana": "AON",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P3",
+    "segmento": "New Parents",
+    "quincena": "Abr-Q2-2026",
+    "palanca": "asunto",
+    "destino": "E-P3",
+    "hecho": "su OR (11.5%) está 11.8pp abajo de su propio mejor (23.3%, Mar-Q2-2026)",
+    "datos": {
+     "or": 0.11518895348837209,
+     "mejor": 0.23285428415499362,
+     "brecha": 0.11766533066662153,
+     "sends": 13897
+    },
+    "puntaje": 100,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 10
+    }
+   },
+   {
+    "campana": "AON",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P2",
+    "segmento": "Dinkies y Empty Nesters",
+    "quincena": "Abr-Q2-2026",
+    "palanca": "clic",
+    "destino": "E-P2",
+    "hecho": "su CTOR (1.4%) está 6.1pp abajo de su propio mejor (7.5%, Mar-Q2-2026): abren pero no hacen clic",
+    "datos": {
+     "ctor": 0.014053858010699066,
+     "mejor": 0.0749063670411985,
+     "brecha": 0.060852509030499435,
+     "sends": 75942
+    },
+    "puntaje": 80,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "AON¦Purchase¦Jul-Q2-2026": [
+   {
+    "campana": "AON",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P1",
+    "segmento": "Productive Adults",
+    "quincena": "Jul-Q2-2026",
+    "palanca": "clic",
+    "destino": "E-P1",
+    "hecho": "su CTOR (1.6%) está 5.9pp abajo de su propio mejor (7.5%, Mar-Q2-2026): abren pero no hacen clic",
+    "datos": {
+     "ctor": 0.016154446053699607,
+     "mejor": 0.0749063670411985,
+     "brecha": 0.0587519209874989,
+     "sends": 207038
+    },
+    "puntaje": 100,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 10
+    }
+   },
+   {
+    "campana": "AON",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P4",
+    "segmento": "Sin Cluster",
+    "quincena": "Jul-Q2-2026",
+    "palanca": "fup",
+    "destino": "Follow Up",
+    "hecho": "el FUP abre 31.5pp menos que el Principal (16.5% vs 48%) sobre 190,730 envíos",
+    "datos": {
+     "fup_or": 0.16480162227011647,
+     "prin_or": 0.48000350206652115,
+     "sends": 190730
+    },
+    "puntaje": 90,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 0
+    },
+    "repetido_de": "Abr-Q2-2026"
+   }
+  ],
+  "AON¦Purchase¦May-Q1-2026": [
+   {
+    "campana": "AON",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P2",
+    "segmento": "Dinkies y Empty Nesters",
+    "quincena": "May-Q1-2026",
+    "palanca": "asunto",
+    "destino": "E-P2",
+    "hecho": "su OR (12.2%) está 16.9pp abajo de su propio mejor (29.1%, Abr-Q2-2026)",
+    "datos": {
+     "or": 0.12249597451391174,
+     "mejor": 0.291398602322417,
+     "brecha": 0.16890262780850523,
+     "sends": 58021
+    },
+    "puntaje": 100,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 10
+    }
+   },
+   {
+    "campana": "AON",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P2",
+    "segmento": "Dinkies y Empty Nesters",
+    "quincena": "May-Q1-2026",
+    "palanca": "clic",
+    "destino": "E-P2",
+    "hecho": "su CTOR (2.2%) está 5.3pp abajo de su propio mejor (7.5%, Mar-Q2-2026): abren pero no hacen clic",
+    "datos": {
+     "ctor": 0.021908127208480566,
+     "mejor": 0.0749063670411985,
+     "brecha": 0.05299823983271794,
+     "sends": 58021
+    },
+    "puntaje": 70,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 0
+    },
+    "repetido_de": "Abr-Q2-2026"
+   }
+  ],
+  "AON¦Loyalty¦May-Q2-2026": [
+   {
+    "campana": "AON",
+    "objetivo": "Loyalty",
+    "touchpoint": "E-L1",
+    "segmento": "Usuarios con Engagement",
+    "quincena": "May-Q2-2026",
+    "palanca": "asunto",
+    "destino": "E-L1",
+    "hecho": "su OR (38.1%) está 35.9pp abajo de su propio mejor (74%, May-Q1-2026)",
+    "datos": {
+     "or": 0.3811122463873887,
+     "mejor": 0.7404510063170265,
+     "brecha": 0.3593387599296378,
+     "sends": 83171
+    },
+    "puntaje": 100,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "Hotcakes¦Purchase¦May-Q2-2026": [
+   {
+    "campana": "Hotcakes",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P2",
+    "segmento": "Prácticos",
+    "quincena": "May-Q2-2026",
+    "palanca": "asunto",
+    "destino": "E-P2",
+    "hecho": "su OR (8.9%) está 24pp abajo de su propio mejor (32.9%, May-Q1-2026)",
+    "datos": {
+     "or": 0.08928571428571429,
+     "mejor": 0.32945205479452055,
+     "brecha": 0.24016634050880625,
+     "sends": 9701
+    },
+    "puntaje": 100,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "Mundial¦Purchase¦Jun-Q2-2026": [
+   {
+    "campana": "Mundial",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P3",
+    "segmento": "Modern Cooking",
+    "quincena": "Jun-Q2-2026",
+    "palanca": "clic",
+    "destino": "E-P3",
+    "hecho": "su CTOR (0.9%) está 1.2pp abajo de su propio mejor (2.1%, Jun-Q1-2026): abren pero no hacen clic",
+    "datos": {
+     "ctor": 0.009243283214197684,
+     "mejor": 0.020792099002379095,
+     "brecha": 0.011548815788181411,
+     "sends": 133513
+    },
+    "puntaje": 100,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 10
+    }
+   },
+   {
+    "campana": "Mundial",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P2",
+    "segmento": "Bebidas",
+    "quincena": "Jun-Q2-2026",
+    "palanca": "asunto",
+    "destino": "E-P2",
+    "hecho": "su OR (33.7%) está 4.9pp abajo de su propio mejor (38.6%, Jun-Q1-2026)",
+    "datos": {
+     "or": 0.337037037037037,
+     "mejor": 0.38600079691858147,
+     "brecha": 0.048963759881544444,
+     "sends": 14117
+    },
+    "puntaje": 80,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "Tercer Tiempo¦Purchase¦Jun-Q2-2026": [
+   {
+    "campana": "Tercer Tiempo",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P1",
+    "segmento": "Futboleros",
+    "quincena": "Jun-Q2-2026",
+    "palanca": "fup",
+    "destino": "Follow Up",
+    "hecho": "el FUP abre 29pp menos que el Principal (10.2% vs 39.2%) sobre 203,839 envíos",
+    "datos": {
+     "fup_or": 0.10184233853096418,
+     "prin_or": 0.3923400098967952,
+     "sends": 203839
+    },
+    "puntaje": 100,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 10
+    }
+   },
+   {
+    "campana": "Tercer Tiempo",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P1",
+    "segmento": "Futboleros",
+    "quincena": "Jun-Q2-2026",
+    "palanca": "dispersion",
+    "destino": "Futboleros",
+    "hecho": "el CTOR abre 22× entre segmentos del mismo corte: Futboleros 9.3% vs Walmart 0.4%",
+    "datos": {
+     "veces": 22.010120857755425,
+     "alto": 0.09287849133393156,
+     "bajo": 0.004219808329730509,
+     "sends": 519883
+    },
+    "puntaje": 100,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 20,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "Antojo Infinito¦Consider¦Jun-Q2-2026": [
+   {
+    "campana": "Antojo Infinito",
+    "objetivo": "Consider",
+    "touchpoint": "E-C1",
+    "segmento": "Combinado",
+    "quincena": "Jun-Q2-2026",
+    "palanca": "fup",
+    "destino": "Follow Up",
+    "hecho": "el FUP abre 24.1pp menos que el Principal (11.1% vs 35.2%) sobre 62,633 envíos",
+    "datos": {
+     "fup_or": 0.11135921862198589,
+     "prin_or": 0.3522667253521127,
+     "sends": 62633
+    },
+    "puntaje": 80,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "Hackea tu café¦Awareness¦Jul-Q2-2026": [
+   {
+    "campana": "Hackea tu café",
+    "objetivo": "Awareness",
+    "touchpoint": "E-A1",
+    "segmento": "Premium",
+    "quincena": "Jul-Q2-2026",
+    "palanca": "fup",
+    "destino": "Follow Up",
+    "hecho": "el FUP abre 27.5pp menos que el Principal (13.8% vs 41.3%) sobre 30,047 envíos",
+    "datos": {
+     "fup_or": 0.1381211776894028,
+     "prin_or": 0.41322191350823984,
+     "sends": 30047
+    },
+    "puntaje": 80,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "Hotcakes¦Inspiration¦Abr-Q2-2026": [
+   {
+    "campana": "Hotcakes",
+    "objetivo": "Inspiration",
+    "touchpoint": "E-I1",
+    "segmento": "Interés Salado",
+    "quincena": "Abr-Q2-2026",
+    "palanca": "asunto",
+    "destino": "E-I1",
+    "hecho": "su OR (3.7%) está 9.5pp abajo de su propio mejor (13.2%, Abr-Q1-2026)",
+    "datos": {
+     "or": 0.0369314366587122,
+     "mejor": 0.132402372038368,
+     "brecha": 0.09547093537965579,
+     "sends": 97691
+    },
+    "puntaje": 80,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 10
+    }
+   },
+   {
+    "campana": "Hotcakes",
+    "objetivo": "Inspiration",
+    "touchpoint": "E-I2",
+    "segmento": "Interés Salado",
+    "quincena": "Abr-Q2-2026",
+    "palanca": "clic",
+    "destino": "E-I2",
+    "hecho": "su CTOR (1.1%) está 1.7pp abajo de su propio mejor (2.8%, Abr-Q1-2026): abren pero no hacen clic",
+    "datos": {
+     "ctor": 0.01111608475082065,
+     "mejor": 0.0282765737874097,
+     "brecha": 0.01716048903658905,
+     "sends": 18875
+    },
+    "puntaje": 80,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "The Freshers¦Awareness¦Jul-Q2-2026": [
+   {
+    "campana": "The Freshers",
+    "objetivo": "Awareness",
+    "touchpoint": "E-A1",
+    "segmento": "Gen Z Indulgentes",
+    "quincena": "Jul-Q2-2026",
+    "palanca": "fup",
+    "destino": "Follow Up",
+    "hecho": "el FUP abre 28.7pp menos que el Principal (12.5% vs 41.2%) sobre 79,056 envíos",
+    "datos": {
+     "fup_or": 0.12507858306711314,
+     "prin_or": 0.41244429374152297,
+     "sends": 79056
+    },
+    "puntaje": 80,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "Fuel for life¦Enrichment¦Jul-Q1-2026": [
+   {
+    "campana": "Fuel for life",
+    "objetivo": "Enrichment",
+    "touchpoint": "E-E3",
+    "segmento": "Pro Plan Pet Parents — Mixto",
+    "quincena": "Jul-Q1-2026",
+    "palanca": "dispersion",
+    "destino": "Pro Plan Pet Parents — Mixto",
+    "hecho": "el CTOR abre 10.5× entre segmentos del mismo corte: Pro Plan Pet Parents — Mixto 7.6% vs Pro Plan Pet Parents — Perros 0.7%",
+    "datos": {
+     "veces": 10.47773654916512,
+     "alto": 0.07575757575757576,
+     "bajo": 0.007230337907628745,
+     "sends": 185
+    },
+    "puntaje": 80,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "Hotcakes¦Loyalty¦May-Q2-2026": [
+   {
+    "campana": "Hotcakes",
+    "objetivo": "Loyalty",
+    "touchpoint": "E-L4",
+    "segmento": "FamilyKids",
+    "quincena": "May-Q2-2026",
+    "palanca": "dispersion",
+    "destino": "FamilyKids",
+    "hecho": "el CTOR abre 5.6× entre segmentos del mismo corte: FamilyKids 1.9% vs Indulgentes 0.3%",
+    "datos": {
+     "veces": 5.594312692138779,
+     "alto": 0.019104084321475624,
+     "bajo": 0.003414911781445646,
+     "sends": 4656
+    },
+    "puntaje": 80,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 10
+    }
+   },
+   {
+    "campana": "Hotcakes",
+    "objetivo": "Loyalty",
+    "touchpoint": "E-L2",
+    "segmento": "Prácticos",
+    "quincena": "May-Q2-2026",
+    "palanca": "fup",
+    "destino": "Follow Up",
+    "hecho": "el FUP abre 39.1pp menos que el Principal (38.9% vs 78%) sobre 847 envíos",
+    "datos": {
+     "fup_or": 0.3892857142857143,
+     "prin_or": 0.7799278451951459,
+     "sends": 847
+    },
+    "puntaje": 70,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 0
+    },
+    "repetido_de": "Abr-Q2-2026"
+   }
+  ],
+  "Mundial¦Purchase¦Jun-Q1-2026": [
+   {
+    "campana": "Mundial",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P1",
+    "segmento": "Modern Cooking",
+    "quincena": "Jun-Q1-2026",
+    "palanca": "contradiccion",
+    "destino": "Modern Cooking",
+    "hecho": "Botana lidera apertura (38.6% OR) y Modern Cooking convierte mejor (2.1% CTOR): NO se rankean, la discrepancia es el hallazgo",
+    "datos": {
+     "or_lider": "Botana",
+     "ctor_lider": "Modern Cooking",
+     "sends": 133903
+    },
+    "puntaje": 75,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 0,
+     "material": 20,
+     "no_repetido": 10
+    }
+   }
+  ],
+  "AON¦Purchase¦Mar-Q2-2026": [
+   {
+    "campana": "AON",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P3",
+    "segmento": "New Parents",
+    "quincena": "Mar-Q2-2026",
+    "palanca": "asunto",
+    "destino": "E-P3",
+    "hecho": "su OR (5%) está 7.2pp abajo de su propio mejor (12.2%, Mar-Q1-2026)",
+    "datos": {
+     "or": 0.05002810567734682,
+     "mejor": 0.12162849872773537,
+     "brecha": 0.07160039305038855,
+     "sends": 5397
+    },
+    "puntaje": 70,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 0
+    },
+    "repetido_de": "Abr-Q2-2026"
+   },
+   {
+    "campana": "AON",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P4",
+    "segmento": "Career Focused",
+    "quincena": "Mar-Q2-2026",
+    "palanca": "clic",
+    "destino": "E-P4",
+    "hecho": "su CTOR (2%) está 3.7pp abajo de su propio mejor (5.7%, Mar-Q1-2026): abren pero no hacen clic",
+    "datos": {
+     "ctor": 0.0203125,
+     "mejor": 0.05718270571827057,
+     "brecha": 0.03687020571827057,
+     "sends": 60958
+    },
+    "puntaje": 70,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 0
+    },
+    "repetido_de": "Jul-Q2-2026"
+   }
+  ],
+  "Hotcakes¦Purchase¦May-Q1-2026": [
+   {
+    "campana": "Hotcakes",
+    "objetivo": "Purchase",
+    "touchpoint": "E-P1",
+    "segmento": "Saludables",
+    "quincena": "May-Q1-2026",
+    "palanca": "fup",
+    "destino": "Follow Up",
+    "hecho": "el FUP abre 20.6pp menos que el Principal (10.4% vs 31%) sobre 7,228 envíos",
+    "datos": {
+     "fup_or": 0.10434661465589301,
+     "prin_or": 0.3100641090872087,
+     "sends": 7228
+    },
+    "puntaje": 70,
+    "criterios": {
+     "cuantificado": 25,
+     "comparado": 20,
+     "accionable": 25,
+     "material": 0,
+     "no_repetido": 0
+    },
+    "repetido_de": "Abr-Q2-2026"
+   }
+  ]
+ },
+ "sin_accion": [
+  "AON · Purchase · Mar-Q1-2026",
+  "AON · Loyalty · May-Q1-2026",
+  "Fuel for life · Awareness · Jun-Q2-2026",
+  "Fuel for life · Awareness · Jun-Q2-2026",
+  "Hotcakes · Inspiration · Abr-Q1-2026"
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "paso": "catalogo.fusionar-fantasmas",
+ "regla": "vieja y nueva: SE QUEDAN AMBOS (Rick, 25-ago). Fusionar no es elegir.",
+ "medido": "contra el libro vivo, en esta corrida",
+ "parejas": [
+  {
+   "pareja": {
+    "hoja": "Catalogo_Piezas",
+    "viva": "Email_ID (de la DE de SFMC)",
+    "fantasma": "EmailID"
+   },
+   "copia": 0,
+   "ambos": 0,
+   "iguales": 76,
+   "soloViva": 55,
+   "vacias": 0
+  },
+  {
+   "pareja": {
+    "hoja": "Catalogo_Piezas",
+    "viva": "Email_Name",
+    "fantasma": "Email_Name_Legacy (duplicada, no usar)"
+   },
+   "estado": "la fantasma ya no existe"
+  }
+ ],
+ "celdas": []
+}

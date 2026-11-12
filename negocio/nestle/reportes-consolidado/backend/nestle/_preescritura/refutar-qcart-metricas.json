@@ -1,0 +1,41 @@
+{
+ "cuando": "2026-09-30T22:59:15.663Z",
+ "ataques": [
+  {
+   "nombre": "C1 · carritos contados como filas del CSV",
+   "intenta": "que el motor vuelva a hacer carritos++ en vez de sumar views",
+   "atrapado": true,
+   "como": "los dos granos (pieza y rejilla) suman views"
+  },
+  {
+   "nombre": "C2 · el reparto por tienda en otra unidad que el total",
+   "intenta": "que Carritos_Walmart cuente filas mientras Carritos_Total cuenta vistas",
+   "atrapado": true,
+   "como": "el reparto por tienda suma views, igual que el total"
+  },
+  {
+   "nombre": "C3 · el importe leído con el decimal equivocado",
+   "intenta": "pasar \"1144,45\" y \"6695256,15\" por el parser del sistema",
+   "atrapado": true,
+   "como": "lee coma decimal y coma de millar sin confundirlas (1144,45 → 1144.45)"
+  },
+  {
+   "nombre": "C4 · el ticket dividido entre filas",
+   "intenta": "que ticket_carrito use el número de eventos como denominador",
+   "atrapado": true,
+   "como": "los dos tickets dividen entre views, coherente con el total"
+  },
+  {
+   "nombre": "C5 · una puerta comparando vistas contra filas",
+   "intenta": "que PUERTA 2 o el guardián de distribución midan el bloque con .length",
+   "atrapado": true,
+   "como": "las dos suman views del bloque, no cuentan eventos"
+  },
+  {
+   "nombre": "C6 · una impresión sin vista contada como carrito",
+   "intenta": "comprobar que las 444 filas con views = 0 no aportan carritos",
+   "atrapado": true,
+   "como": "la rejilla suma 8184 = Σ views; las 449 filas de 0 vistas aportan 0"
+  }
+ ]
+}

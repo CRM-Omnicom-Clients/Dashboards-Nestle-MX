@@ -1,0 +1,303 @@
+{
+ "fecha": "2026-09-21",
+ "reparto_ambiguo": {
+  "antes": 48,
+  "desde": 14,
+  "dias": {
+   "min": "2026-08-15",
+   "max": "2026-09-18"
+  }
+ },
+ "j9": {
+  "email": {
+   "n": 31,
+   "dias": {
+    "min": "2026-09-16",
+    "max": "2026-09-20"
+   }
+  },
+  "wa": {
+   "n": 17,
+   "dias": {
+    "min": "2026-09-16",
+    "max": "2026-09-20"
+   }
+  }
+ },
+ "celdas": [
+  {
+   "ref": "AJ2",
+   "valor": "rr0VvKTb · dHfqmS7n · w5r9LWOP",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "rr0VvKTb · dHfqmS7n · w5r9LWOP",
+   "rojo": false
+  },
+  {
+   "ref": "AJ3",
+   "valor": "tJEICO87 · Z8W0ZouI · Y8umAAnA",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "tJEICO87 · Z8W0ZouI · Y8umAAnA",
+   "rojo": false
+  },
+  {
+   "ref": "AJ4",
+   "valor": "cCFb2xEx · hWaJfDxS",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "cCFb2xEx · hWaJfDxS",
+   "rojo": false
+  },
+  {
+   "ref": "AJ5",
+   "valor": "3QfdZN2Q · SN2YWvgo",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "3QfdZN2Q · SN2YWvgo",
+   "rojo": false
+  },
+  {
+   "ref": "AJ6",
+   "valor": "HcDJTsRH · rueO2xbY",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "HcDJTsRH · rueO2xbY",
+   "rojo": false
+  },
+  {
+   "ref": "AJ7",
+   "valor": "vk67sh2J",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "vk67sh2J",
+   "rojo": false
+  },
+  {
+   "ref": "AJ8",
+   "valor": "xka2NWrW",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "xka2NWrW",
+   "rojo": false
+  },
+  {
+   "ref": "AJ9",
+   "valor": "YJOatjQs",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "YJOatjQs",
+   "rojo": false
+  },
+  {
+   "ref": "AJ10",
+   "valor": "N/A",
+   "porque": "el maestro no declara ningún link",
+   "pisa": "N/A",
+   "rojo": false
+  },
+  {
+   "ref": "AJ11",
+   "valor": "N/A",
+   "porque": "el maestro no declara ningún link",
+   "pisa": "N/A",
+   "rojo": false
+  },
+  {
+   "ref": "AJ12",
+   "valor": "N/A",
+   "porque": "el maestro no declara ningún link",
+   "pisa": "N/A",
+   "rojo": false
+  },
+  {
+   "ref": "AJ13",
+   "valor": "sbH9gVge · Agy5v9Yb",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "sbH9gVge · Agy5v9Yb",
+   "rojo": false
+  },
+  {
+   "ref": "AJ14",
+   "valor": "2YWR8c3Z · haPs2HHU",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "2YWR8c3Z · haPs2HHU",
+   "rojo": false
+  },
+  {
+   "ref": "AJ15",
+   "valor": "2Yn9L0bD · LO8RxwsM · uv5JZ8U7",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "2Yn9L0bD · LO8RxwsM · uv5JZ8U7",
+   "rojo": false
+  },
+  {
+   "ref": "AJ16",
+   "valor": "i8LZ55bd · HThaf6bT",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "i8LZ55bd · HThaf6bT",
+   "rojo": false
+  },
+  {
+   "ref": "AJ17",
+   "valor": "4tBsCXTp · hTHNLqzL (15-ago→04-sep · 48 carritos)",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "4tBsCXTp · hTHNLqzL (15-ago→04-sep · 48 carritos)",
+   "rojo": true
+  },
+  {
+   "ref": "AJ18",
+   "valor": "UhCnTNuz · TYZa8g47",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "UhCnTNuz · TYZa8g47",
+   "rojo": false
+  },
+  {
+   "ref": "AJ19",
+   "valor": "9isauWgY · Hqa0fbOM",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "9isauWgY · Hqa0fbOM",
+   "rojo": false
+  },
+  {
+   "ref": "AJ20",
+   "valor": "BdN0ck7t · okUSdwJk",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "BdN0ck7t · okUSdwJk",
+   "rojo": false
+  },
+  {
+   "ref": "AJ21",
+   "valor": "hTHNLqzL (04-sep→18-sep · 14 carritos) · GQnvqqP3",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "hTHNLqzL (04-sep→18-sep · 14 carritos) · GQnvqqP3",
+   "rojo": true
+  },
+  {
+   "ref": "AJ22",
+   "valor": "DTuqPqBo",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "DTuqPqBo",
+   "rojo": false
+  },
+  {
+   "ref": "AJ23",
+   "valor": "0oSrtaxX · 0eQt7uf5",
+   "porque": "los códigos del maestro; el nombre que había pasa a RECETAS ASIGNADAS",
+   "pisa": "0oSrtaxX · 0eQt7uf5",
+   "rojo": false
+  }
+ ],
+ "filas_nuevas": [
+  {
+   "fila": 24,
+   "base": 23,
+   "tp": "E-J9",
+   "val": {
+    "Campaña": "Liga MX",
+    "Medio": "email",
+    "Objetivo": "Purchase",
+    "TouchPoint": "E-J9",
+    "Tipo Email": "Principal",
+    "Segmento": "Región unificada · Partición B",
+    "QCART?": "Sí",
+    "Quincena_Lanzamiento Principal": "2026-09-Q2",
+    "Mes": "Septiembre",
+    "Mes (#)": 9,
+    "Marca": "Maggi",
+    "BU": "RN",
+    "Email Name SFMC_Principal": "O_Maggi-Seleccion-NC006537_NA_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LIGAMX-J9-B-C_AQ_EM_A_NA_3074970",
+    "Principal_Fecha_Envio": 46284,
+    "Principal_Subject": "El clásico de clásicos también se juega en la mesa",
+    "Principal_Sends": 40130,
+    "Principal_Deliveries": 39804,
+    "Principal_Opens": 15080,
+    "Principal_Clicks": 86,
+    "Principal_Unsubs": 27,
+    "Principal_Open_Rate": 0.379,
+    "Principal_CTOR": 0.006,
+    "Principal_Click_Rate": 0.002,
+    "Principal_UTOR (vs opens)": 0.002,
+    "WA-Envíos": 0,
+    "WA-Entregados": 0,
+    "WA-No entregados": 0,
+    "WA-Leídos": 0,
+    "WA-Clicks Qcart": 0,
+    "WA-Clicks-Recetas": null,
+    "WA-%Entrega": null,
+    "WA-%No entrega": null,
+    "WA-%Read vs entrega": null,
+    "WA-%Click vs Read": null,
+    "RECETAS ASIGNADAS": "Alitas con salsa mango habanero al horno · Tropi MAGGI® Shot",
+    "SHORTLINKS ASIGNADOS": "bfQ24tDq · xTaSfQ2y",
+    "UTMS CONTENT ORIGEN": "e-j9",
+    "UTMS CONTENT MODIFICADAS": "e-j9",
+    "Medición desde": 46281,
+    "Medición hasta": 46285,
+    "Clicks": 86,
+    "Carritos_Walmart": "POR DEFINIR",
+    "Carritos_Chedraui": "POR DEFINIR",
+    "Carritos_Total": "POR DEFINIR",
+    "Clicks vs Carritos": "POR DEFINIR",
+    "Views_Carrito": "POR DEFINIR",
+    "Views_Productos_Nestle": "POR DEFINIR",
+    "Intencion_Total_MXN": "POR DEFINIR",
+    "Intencion_Nestle_MXN": "POR DEFINIR",
+    "Pct_Penetracion_Nestle": "POR DEFINIR",
+    "Ticket_Carrito_MXN": "POR DEFINIR",
+    "Ticket_Producto_MXN": "POR DEFINIR"
+   }
+  },
+  {
+   "fila": 25,
+   "base": 22,
+   "tp": "WA-J9",
+   "val": {
+    "Campaña": "Liga MX",
+    "Medio": "whatsapp",
+    "Objetivo": "Purchase",
+    "TouchPoint": "WA-J9",
+    "Tipo Email": "WhatsApp",
+    "Segmento": "Región unificada · Partición B",
+    "QCART?": "Sí",
+    "Quincena_Lanzamiento Principal": "2026-09-Q2",
+    "Mes": "Septiembre",
+    "Mes (#)": 9,
+    "Marca": "Maggi",
+    "BU": "RN",
+    "Email Name SFMC_Principal": "N/A",
+    "Principal_Fecha_Envio": "N/A",
+    "Principal_Subject": "N/A",
+    "Principal_Sends": "N/A",
+    "Principal_Deliveries": "N/A",
+    "Principal_Opens": "N/A",
+    "Principal_Clicks": "N/A",
+    "Principal_Unsubs": "N/A",
+    "Principal_Open_Rate": "N/A",
+    "Principal_CTOR": "N/A",
+    "Principal_Click_Rate": "N/A",
+    "Principal_UTOR (vs opens)": "N/A",
+    "WA-Envíos": "POR DEFINIR",
+    "WA-Entregados": "POR DEFINIR",
+    "WA-No entregados": "POR DEFINIR",
+    "WA-Leídos": "POR DEFINIR",
+    "WA-Clicks Qcart": "POR DEFINIR",
+    "WA-Clicks-Recetas": "POR DEFINIR",
+    "WA-%Entrega": "POR DEFINIR",
+    "WA-%No entrega": "POR DEFINIR",
+    "WA-%Read vs entrega": "POR DEFINIR",
+    "WA-%Click vs Read": "POR DEFINIR",
+    "RECETAS ASIGNADAS": "Alitas con salsa mango habanero al horno",
+    "SHORTLINKS ASIGNADOS": "ymh2OT4x",
+    "UTMS CONTENT ORIGEN": "wa-j9",
+    "UTMS CONTENT MODIFICADAS": "wa-j9",
+    "Medición desde": 46281,
+    "Medición hasta": 46285,
+    "Clicks": "POR DEFINIR",
+    "Carritos_Walmart": "POR DEFINIR",
+    "Carritos_Chedraui": "POR DEFINIR",
+    "Carritos_Total": "POR DEFINIR",
+    "Clicks vs Carritos": "POR DEFINIR",
+    "Views_Carrito": "POR DEFINIR",
+    "Views_Productos_Nestle": "POR DEFINIR",
+    "Intencion_Total_MXN": "POR DEFINIR",
+    "Intencion_Nestle_MXN": "POR DEFINIR",
+    "Pct_Penetracion_Nestle": "POR DEFINIR",
+    "Ticket_Carrito_MXN": "POR DEFINIR",
+    "Ticket_Producto_MXN": "POR DEFINIR"
+   }
+  }
+ ]
+}

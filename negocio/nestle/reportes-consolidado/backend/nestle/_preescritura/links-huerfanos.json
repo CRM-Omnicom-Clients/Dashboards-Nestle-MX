@@ -1,0 +1,579 @@
+{
+ "fecha": "2026-09-20",
+ "huerfanas": 28,
+ "clicks": 6471,
+ "total_bloque": 45424,
+ "cruzan_por_nombre": [
+  {
+   "id": "TMP-AON-EAPP",
+   "clicks": 1769,
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-APP_CN_EM_A_V1_018904",
+   "campana": "AON",
+   "segmento": "App*",
+   "sends": 427217,
+   "email_id": "84566",
+   "cruza_por_nombre": "001-P029"
+  },
+  {
+   "id": "TMP-RN-AON-PROP1",
+   "clicks": 1407,
+   "nombre": "O_NC-000600_NA_IBS_FOOD_NEST_L73_ANNF_MX_ES_DE_Audience_RN_AON_E-PROP1_EM_3018905",
+   "campana": "AON",
+   "segmento": "TIBIOS",
+   "sends": 1337773,
+   "email_id": "84562",
+   "cruza_por_nombre": "001-P032"
+  },
+  {
+   "id": "TMP-AON-EPROP2",
+   "clicks": 448,
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-PROP2_EN_EM_A_V1",
+   "campana": "AON",
+   "segmento": "Propensión*",
+   "sends": 42633,
+   "email_id": "84594",
+   "cruza_por_nombre": "001-P030"
+  },
+  {
+   "id": "TMP-RN-AON-PROP1-FUP",
+   "clicks": 446,
+   "nombre": "O_NC-000600_NA_IBS_FOOD_NEST_L73_ANNF_MX_ES-FUP__DE_Audience_RN_AON_E-PROP1_EM_3018905",
+   "campana": "AON",
+   "segmento": "TIBIOS",
+   "sends": 158056,
+   "email_id": "84565",
+   "cruza_por_nombre": "001-P033"
+  },
+  {
+   "id": "TMP-NESC-ICE-ENRICH1",
+   "clicks": 441,
+   "nombre": "O_Nescafé-ICE-NC000817_3_IBS_CFEE_NESC_NCF_AAIW_MX_ES_NA_AC_EM_C_V3_024243",
+   "campana": "The Freshers",
+   "segmento": "GEN Z",
+   "sends": 104709,
+   "email_id": "84936",
+   "cruza_por_nombre": "006-P006"
+  },
+  {
+   "id": "TMP-MAGGI-J4-SR",
+   "clicks": 412,
+   "nombre": "O_Maggi-Seleccion-NC006537_NA_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LIGAMX-J4-SINREGION_AQ_EM_A_NA_035274",
+   "campana": "Liga MX*",
+   "segmento": "Sin región*",
+   "sends": 128759,
+   "email_id": "84970",
+   "cruza_por_nombre": "005-P006"
+  },
+  {
+   "id": "TMP-NESC-ICE",
+   "clicks": 254,
+   "nombre": "O_Nescafé-ICE-NC000817_2_IBS_CFEE_NESC_NCF_AAIW_MX_ES_NA_AC_EM_A_V2_024222",
+   "campana": "*por definir",
+   "segmento": "(por definir)*",
+   "sends": 114361,
+   "email_id": "84655",
+   "cruza_por_nombre": "006-P004"
+  },
+  {
+   "id": "TMP-NESC-ESPRESSO",
+   "clicks": 237,
+   "nombre": "O_Nescafe-Espresso-Con-NC004682_2_IBS_CFEE_NESC_NCF_AAGW_MX_ES_NA_AC_EM_B_V2_024241",
+   "campana": "Espresso Con*",
+   "segmento": "(por definir)*",
+   "sends": 44590,
+   "email_id": "84742",
+   "cruza_por_nombre": "007-P005"
+  },
+  {
+   "id": "TMP-MAGGI-J6-SR",
+   "clicks": 191,
+   "nombre": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_J5-SINREGION_CN_EM_A_V1_043381",
+   "campana": "Liga MX*",
+   "segmento": "Sin región*",
+   "sends": 43188,
+   "email_id": "85166",
+   "cruza_por_nombre": "005-P007"
+  },
+  {
+   "id": "TMP-NESC-ESPRESSO-V3",
+   "clicks": 180,
+   "nombre": "O_Nescafe-Espresso-Con-NC004682_1_IBS_CFEE_NESC_NCF_AAGW_MX_ES_NA_AC_EM_C_V3_024242",
+   "campana": "Espresso Con*",
+   "segmento": "(por definir)*",
+   "sends": 42000,
+   "email_id": "84984",
+   "cruza_por_nombre": "007-P007"
+  },
+  {
+   "id": "TMP-AON-EPROP2-FUP",
+   "clicks": 155,
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-PROP2-FUP_EN_EM_A_V1",
+   "campana": "AON",
+   "segmento": "Propensión*",
+   "sends": 38188,
+   "email_id": "84595",
+   "cruza_por_nombre": "001-P031"
+  },
+  {
+   "id": "TMP-NESC-ICE-FUP",
+   "clicks": 111,
+   "nombre": "O_Nescafé-ICE-NC000817_2_IBS_CFEE_NESC_NCF_AAIW_MX_ES_NA_AC_EM_FUP_A_V2_024222",
+   "campana": "*por definir",
+   "segmento": "(por definir)*",
+   "sends": 72464,
+   "email_id": "84697",
+   "cruza_por_nombre": "006-P005"
+  },
+  {
+   "id": "TMP-NESC-ESPRESSO-FUP",
+   "clicks": 89,
+   "nombre": "O_Nescafe-Espresso-Con-NC004682_2_IBS_CFEE_NESC_NCF_AAGW_MX_ES_NA_AC_EM_FUP_B_V2_024241",
+   "campana": "Espresso Con*",
+   "segmento": "(por definir)*",
+   "sends": 26603,
+   "email_id": "84747",
+   "cruza_por_nombre": "007-P006"
+  },
+  {
+   "id": "009-TMP-PP-E3-P",
+   "clicks": 66,
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Perros",
+   "sends": 19213,
+   "email_id": "83762",
+   "cruza_por_nombre": "009-P006"
+  },
+  {
+   "id": "009-TMP-PAE-E4-P",
+   "clicks": 60,
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PAE_E4B1.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan PAE (por confirmar) · Perros",
+   "sends": 14768,
+   "email_id": "84322",
+   "cruza_por_nombre": "009-P015"
+  },
+  {
+   "id": "009-TMP-PP-E4-P",
+   "clicks": 40,
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E4A1.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Perros",
+   "sends": 3411,
+   "email_id": "84317",
+   "cruza_por_nombre": "009-P012"
+  },
+  {
+   "id": "TMP-MAGGI-J4-CR",
+   "clicks": 25,
+   "nombre": "O_Maggi-Seleccion-NC006537_NA_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LIGAMX-J4-CONREGION_AQ_EM_A_NA_035275",
+   "campana": "Liga MX*",
+   "segmento": "Con región*",
+   "sends": 7995,
+   "email_id": "84969",
+   "cruza_por_nombre": "005-P005"
+  },
+  {
+   "id": "009-TMP-PA-E3-G",
+   "clicks": 23,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Aspiracionales · Gatos",
+   "sends": 2988,
+   "email_id": "83766",
+   "cruza_por_nombre": "009-P008"
+  },
+  {
+   "id": "009-TMP-PP-E4-M",
+   "clicks": 23,
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PP_E4A3.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Mixto",
+   "sends": 39,
+   "email_id": "84321",
+   "cruza_por_nombre": "009-P014"
+  },
+  {
+   "id": "009-TMP-PP-E3-G",
+   "clicks": 21,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Gatos",
+   "sends": 3421,
+   "email_id": "83763",
+   "cruza_por_nombre": "009-P007"
+  },
+  {
+   "id": "009-TMP-PAE-E4-G",
+   "clicks": 18,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PAE_E4B2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan PAE (por confirmar) · Gatos",
+   "sends": 4026,
+   "email_id": "84323",
+   "cruza_por_nombre": "009-P016"
+  },
+  {
+   "id": "009-TMP-PO-E3-G",
+   "clicks": 10,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Educated Pet Owners · Gatos",
+   "sends": 315,
+   "email_id": "83769",
+   "cruza_por_nombre": "009-P010"
+  },
+  {
+   "id": "TMP-MAGGI-J6-REGION-SUR",
+   "clicks": 10,
+   "nombre": "O_Maggi-Seleccion-NC006537_NA_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LIGAMX-J6-REGION-SUR_AQ_EM_A_NA_035275",
+   "campana": "Liga MX",
+   "segmento": "Region Sur",
+   "sends": 2735,
+   "email_id": "85340",
+   "cruza_por_nombre": "005-P009"
+  },
+  {
+   "id": "TMP-MAGGI-J6-CR",
+   "clicks": 9,
+   "nombre": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_J5-CONREGION_CN_EM_A_V1_043382",
+   "campana": "Liga MX*",
+   "segmento": "Con región*",
+   "sends": 2708,
+   "email_id": "85190",
+   "cruza_por_nombre": "005-P008"
+  },
+  {
+   "id": "009-TMP-PO-E3-M",
+   "clicks": 8,
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Educated Pet Owners · Mixto",
+   "sends": 43,
+   "email_id": "83770",
+   "cruza_por_nombre": "009-P011"
+  },
+  {
+   "id": "009-TMP-PP-E4-G",
+   "clicks": 7,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E4A2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Gatos",
+   "sends": 703,
+   "email_id": "84320",
+   "cruza_por_nombre": "009-P013"
+  },
+  {
+   "id": "009-TMP-PAE-E4-M",
+   "clicks": 6,
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PAE_E4B3.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan PAE (por confirmar) · Mixto",
+   "sends": 157,
+   "email_id": "84324",
+   "cruza_por_nombre": "009-P017"
+  },
+  {
+   "id": "009-TMP-PA-E3-M",
+   "clicks": 5,
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Aspiracionales · Mixto",
+   "sends": 153,
+   "email_id": "83767",
+   "cruza_por_nombre": "009-P009"
+  }
+ ],
+ "por_campana": {
+  "AON": 4225,
+  "The Freshers": 441,
+  "Liga MX*": 637,
+  "*por definir": 365,
+  "Espresso Con*": 506,
+  "Fuel for life": 287,
+  "Liga MX": 10
+ },
+ "detalle": [
+  {
+   "id": "TMP-AON-EAPP",
+   "clicks": 1769,
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-APP_CN_EM_A_V1_018904",
+   "campana": "AON",
+   "segmento": "App*",
+   "sends": 427217,
+   "email_id": "84566",
+   "cruza_por_nombre": "001-P029"
+  },
+  {
+   "id": "TMP-RN-AON-PROP1",
+   "clicks": 1407,
+   "nombre": "O_NC-000600_NA_IBS_FOOD_NEST_L73_ANNF_MX_ES_DE_Audience_RN_AON_E-PROP1_EM_3018905",
+   "campana": "AON",
+   "segmento": "TIBIOS",
+   "sends": 1337773,
+   "email_id": "84562",
+   "cruza_por_nombre": "001-P032"
+  },
+  {
+   "id": "TMP-AON-EPROP2",
+   "clicks": 448,
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-PROP2_EN_EM_A_V1",
+   "campana": "AON",
+   "segmento": "Propensión*",
+   "sends": 42633,
+   "email_id": "84594",
+   "cruza_por_nombre": "001-P030"
+  },
+  {
+   "id": "TMP-RN-AON-PROP1-FUP",
+   "clicks": 446,
+   "nombre": "O_NC-000600_NA_IBS_FOOD_NEST_L73_ANNF_MX_ES-FUP__DE_Audience_RN_AON_E-PROP1_EM_3018905",
+   "campana": "AON",
+   "segmento": "TIBIOS",
+   "sends": 158056,
+   "email_id": "84565",
+   "cruza_por_nombre": "001-P033"
+  },
+  {
+   "id": "TMP-NESC-ICE-ENRICH1",
+   "clicks": 441,
+   "nombre": "O_Nescafé-ICE-NC000817_3_IBS_CFEE_NESC_NCF_AAIW_MX_ES_NA_AC_EM_C_V3_024243",
+   "campana": "The Freshers",
+   "segmento": "GEN Z",
+   "sends": 104709,
+   "email_id": "84936",
+   "cruza_por_nombre": "006-P006"
+  },
+  {
+   "id": "TMP-MAGGI-J4-SR",
+   "clicks": 412,
+   "nombre": "O_Maggi-Seleccion-NC006537_NA_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LIGAMX-J4-SINREGION_AQ_EM_A_NA_035274",
+   "campana": "Liga MX*",
+   "segmento": "Sin región*",
+   "sends": 128759,
+   "email_id": "84970",
+   "cruza_por_nombre": "005-P006"
+  },
+  {
+   "id": "TMP-NESC-ICE",
+   "clicks": 254,
+   "nombre": "O_Nescafé-ICE-NC000817_2_IBS_CFEE_NESC_NCF_AAIW_MX_ES_NA_AC_EM_A_V2_024222",
+   "campana": "*por definir",
+   "segmento": "(por definir)*",
+   "sends": 114361,
+   "email_id": "84655",
+   "cruza_por_nombre": "006-P004"
+  },
+  {
+   "id": "TMP-NESC-ESPRESSO",
+   "clicks": 237,
+   "nombre": "O_Nescafe-Espresso-Con-NC004682_2_IBS_CFEE_NESC_NCF_AAGW_MX_ES_NA_AC_EM_B_V2_024241",
+   "campana": "Espresso Con*",
+   "segmento": "(por definir)*",
+   "sends": 44590,
+   "email_id": "84742",
+   "cruza_por_nombre": "007-P005"
+  },
+  {
+   "id": "TMP-MAGGI-J6-SR",
+   "clicks": 191,
+   "nombre": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_J5-SINREGION_CN_EM_A_V1_043381",
+   "campana": "Liga MX*",
+   "segmento": "Sin región*",
+   "sends": 43188,
+   "email_id": "85166",
+   "cruza_por_nombre": "005-P007"
+  },
+  {
+   "id": "TMP-NESC-ESPRESSO-V3",
+   "clicks": 180,
+   "nombre": "O_Nescafe-Espresso-Con-NC004682_1_IBS_CFEE_NESC_NCF_AAGW_MX_ES_NA_AC_EM_C_V3_024242",
+   "campana": "Espresso Con*",
+   "segmento": "(por definir)*",
+   "sends": 42000,
+   "email_id": "84984",
+   "cruza_por_nombre": "007-P007"
+  },
+  {
+   "id": "TMP-AON-EPROP2-FUP",
+   "clicks": 155,
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_E-PROP2-FUP_EN_EM_A_V1",
+   "campana": "AON",
+   "segmento": "Propensión*",
+   "sends": 38188,
+   "email_id": "84595",
+   "cruza_por_nombre": "001-P031"
+  },
+  {
+   "id": "TMP-NESC-ICE-FUP",
+   "clicks": 111,
+   "nombre": "O_Nescafé-ICE-NC000817_2_IBS_CFEE_NESC_NCF_AAIW_MX_ES_NA_AC_EM_FUP_A_V2_024222",
+   "campana": "*por definir",
+   "segmento": "(por definir)*",
+   "sends": 72464,
+   "email_id": "84697",
+   "cruza_por_nombre": "006-P005"
+  },
+  {
+   "id": "TMP-NESC-ESPRESSO-FUP",
+   "clicks": 89,
+   "nombre": "O_Nescafe-Espresso-Con-NC004682_2_IBS_CFEE_NESC_NCF_AAGW_MX_ES_NA_AC_EM_FUP_B_V2_024241",
+   "campana": "Espresso Con*",
+   "segmento": "(por definir)*",
+   "sends": 26603,
+   "email_id": "84747",
+   "cruza_por_nombre": "007-P006"
+  },
+  {
+   "id": "009-TMP-PP-E3-P",
+   "clicks": 66,
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Perros",
+   "sends": 19213,
+   "email_id": "83762",
+   "cruza_por_nombre": "009-P006"
+  },
+  {
+   "id": "009-TMP-PAE-E4-P",
+   "clicks": 60,
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PAE_E4B1.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan PAE (por confirmar) · Perros",
+   "sends": 14768,
+   "email_id": "84322",
+   "cruza_por_nombre": "009-P015"
+  },
+  {
+   "id": "009-TMP-PP-E4-P",
+   "clicks": 40,
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E4A1.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Perros",
+   "sends": 3411,
+   "email_id": "84317",
+   "cruza_por_nombre": "009-P012"
+  },
+  {
+   "id": "TMP-MAGGI-J4-CR",
+   "clicks": 25,
+   "nombre": "O_Maggi-Seleccion-NC006537_NA_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LIGAMX-J4-CONREGION_AQ_EM_A_NA_035275",
+   "campana": "Liga MX*",
+   "segmento": "Con región*",
+   "sends": 7995,
+   "email_id": "84969",
+   "cruza_por_nombre": "005-P005"
+  },
+  {
+   "id": "009-TMP-PA-E3-G",
+   "clicks": 23,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Aspiracionales · Gatos",
+   "sends": 2988,
+   "email_id": "83766",
+   "cruza_por_nombre": "009-P008"
+  },
+  {
+   "id": "009-TMP-PP-E4-M",
+   "clicks": 23,
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PP_E4A3.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Mixto",
+   "sends": 39,
+   "email_id": "84321",
+   "cruza_por_nombre": "009-P014"
+  },
+  {
+   "id": "009-TMP-PP-E3-G",
+   "clicks": 21,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Gatos",
+   "sends": 3421,
+   "email_id": "83763",
+   "cruza_por_nombre": "009-P007"
+  },
+  {
+   "id": "009-TMP-PAE-E4-G",
+   "clicks": 18,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PAE_E4B2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan PAE (por confirmar) · Gatos",
+   "sends": 4026,
+   "email_id": "84323",
+   "cruza_por_nombre": "009-P016"
+  },
+  {
+   "id": "009-TMP-PO-E3-G",
+   "clicks": 10,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Educated Pet Owners · Gatos",
+   "sends": 315,
+   "email_id": "83769",
+   "cruza_por_nombre": "009-P010"
+  },
+  {
+   "id": "TMP-MAGGI-J6-REGION-SUR",
+   "clicks": 10,
+   "nombre": "O_Maggi-Seleccion-NC006537_NA_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LIGAMX-J6-REGION-SUR_AQ_EM_A_NA_035275",
+   "campana": "Liga MX",
+   "segmento": "Region Sur",
+   "sends": 2735,
+   "email_id": "85340",
+   "cruza_por_nombre": "005-P009"
+  },
+  {
+   "id": "TMP-MAGGI-J6-CR",
+   "clicks": 9,
+   "nombre": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_J5-CONREGION_CN_EM_A_V1_043382",
+   "campana": "Liga MX*",
+   "segmento": "Con región*",
+   "sends": 2708,
+   "email_id": "85190",
+   "cruza_por_nombre": "005-P008"
+  },
+  {
+   "id": "009-TMP-PO-E3-M",
+   "clicks": 8,
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Educated Pet Owners · Mixto",
+   "sends": 43,
+   "email_id": "83770",
+   "cruza_por_nombre": "009-P011"
+  },
+  {
+   "id": "009-TMP-PP-E4-G",
+   "clicks": 7,
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E4A2.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Pet Parents · Gatos",
+   "sends": 703,
+   "email_id": "84320",
+   "cruza_por_nombre": "009-P013"
+  },
+  {
+   "id": "009-TMP-PAE-E4-M",
+   "clicks": 6,
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PAE_E4B3.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan PAE (por confirmar) · Mixto",
+   "sends": 157,
+   "email_id": "84324",
+   "cruza_por_nombre": "009-P017"
+  },
+  {
+   "id": "009-TMP-PA-E3-M",
+   "clicks": 5,
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+   "campana": "Fuel for life",
+   "segmento": "Pro Plan Aspiracionales · Mixto",
+   "sends": 153,
+   "email_id": "83767",
+   "cruza_por_nombre": "009-P009"
+  }
+ ]
+}

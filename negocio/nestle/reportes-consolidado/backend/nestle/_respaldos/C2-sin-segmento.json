@@ -1,0 +1,36 @@
+{
+ "paso": "C2",
+ "motivo": "estas piezas de Email no tienen Segmento en ninguna fuente: SFMC lo declara «(por definir)». Se dejan vacías, no se inventa.",
+ "piezas": [
+  {
+   "pieza_id": "007-P005",
+   "bu": "Nescafé",
+   "campana": "Hackea tu café",
+   "touchpoint": "E-Rit1"
+  },
+  {
+   "pieza_id": "007-P006",
+   "bu": "Nescafé",
+   "campana": "Hackea tu café",
+   "touchpoint": "E-Rit1"
+  },
+  {
+   "pieza_id": "007-P007",
+   "bu": "Nescafé",
+   "campana": "Hackea tu café",
+   "touchpoint": "E-Rit2"
+  },
+  {
+   "pieza_id": "006-P004",
+   "bu": "Nescafé",
+   "campana": "The Freshers",
+   "touchpoint": "E-A"
+  },
+  {
+   "pieza_id": "006-P005",
+   "bu": "Nescafé",
+   "campana": "The Freshers",
+   "touchpoint": "E-A"
+  }
+ ]
+}

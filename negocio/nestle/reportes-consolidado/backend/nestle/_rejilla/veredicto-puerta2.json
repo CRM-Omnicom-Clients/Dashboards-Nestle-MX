@@ -1,0 +1,15 @@
+{
+ "paso": "PUERTA-2 · puerta 2",
+ "cuando": "2026-10-03 02:44",
+ "abierta": true,
+ "bloqueos": [],
+ "avisos": [
+  "⚠ el reporte se entrega SIN Insights: Rick retiró esas columnas a mano el 27-ago"
+ ],
+ "medido": {
+  "filas_reporte": 88,
+  "celdas_rejilla": 88,
+  "email_bloque": 10395076,
+  "email_rejilla": 10395076
+ }
+}

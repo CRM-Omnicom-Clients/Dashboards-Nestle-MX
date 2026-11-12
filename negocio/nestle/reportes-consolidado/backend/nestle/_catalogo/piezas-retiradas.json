@@ -1,0 +1,70 @@
+{
+ "paso": "A9",
+ "cuando": "2026-08-21",
+ "que_es": "Las piezas 005-P001…P004 de Liga MX, con la evidencia de por qué cada una queda como queda.",
+ "como_vuelve": "Una PROGRAMADA se completa sola cuando SFMC declare su correo: el catálogo la cruza por EmailID. Una RETIRADA no vuelve: su envío ya está contado en otra pieza.",
+ "casos": [
+  {
+   "fila": 94,
+   "pieza_id": "005-P001",
+   "touchpoint": "E-P1",
+   "segmento": "Futboleros Liga MX",
+   "codigos_que_le_quedan": [],
+   "fecha_de_salida_segun_la_autoridad": "",
+   "tiene_email_id": false,
+   "tiene_nombre": false,
+   "veredicto": "Retirada",
+   "porque": "Es el mismo envío que 005-P005/P006 (E-J4, 15-ago-2026): SFMC fecha los eids 84969/84970 ese día y la autoridad fecha e-p1 ese mismo día. Sus 4 links —los que dictó Rick— quedaron colgados de E-J4 por región (A2), y los 2 que no declara la autoridad salieron (A6b). La fila se queda sin códigos, sin EmailID y sin nombre: contarla sería contar dos veces el mismo envío."
+  },
+  {
+   "fila": 95,
+   "pieza_id": "005-P002",
+   "touchpoint": "E-P2",
+   "segmento": "Futboleros Liga MX",
+   "codigos_que_le_quedan": [
+    "9isauWgY",
+    "Hqa0fbOM",
+    "UhCnTNuz",
+    "TYZa8g47"
+   ],
+   "fecha_de_salida_segun_la_autoridad": "2026-08-22",
+   "tiene_email_id": false,
+   "tiene_nombre": false,
+   "veredicto": "Sin email cargado (programada)",
+   "porque": "Sus 4 links SÍ los declara «Qcart-Links Mails-Hive-MX.xlsx», con salida 2026-08-22 — posterior a hoy (2026-08-21). El correo no ha salido, así que no tiene Email_Name. No es un hueco por llenar: es una pieza programada."
+  },
+  {
+   "fila": 96,
+   "pieza_id": "005-P003",
+   "touchpoint": "E-P4",
+   "segmento": "Futboleros Liga MX",
+   "codigos_que_le_quedan": [
+    "dwIwoYUs",
+    "piPZpvXp",
+    "CVCPHfND"
+   ],
+   "fecha_de_salida_segun_la_autoridad": "2026-09-06",
+   "tiene_email_id": false,
+   "tiene_nombre": false,
+   "veredicto": "Sin email cargado (programada)",
+   "porque": "Sus 3 links SÍ los declara «Qcart-Links Mails-Hive-MX.xlsx», con salida 2026-09-06 — posterior a hoy (2026-08-21). El correo no ha salido, así que no tiene Email_Name. No es un hueco por llenar: es una pieza programada."
+  },
+  {
+   "fila": 97,
+   "pieza_id": "005-P004",
+   "touchpoint": "E-P6",
+   "segmento": "Futboleros Liga MX",
+   "codigos_que_le_quedan": [
+    "Z9JrTGrX",
+    "oV564aAb",
+    "TjDcVdNI",
+    "bgsOdlLo"
+   ],
+   "fecha_de_salida_segun_la_autoridad": "2026-09-19",
+   "tiene_email_id": false,
+   "tiene_nombre": false,
+   "veredicto": "Sin email cargado (programada)",
+   "porque": "Sus 4 links SÍ los declara «Qcart-Links Mails-Hive-MX.xlsx», con salida 2026-09-19 — posterior a hoy (2026-08-21). El correo no ha salido, así que no tiene Email_Name. No es un hueco por llenar: es una pieza programada."
+  }
+ ]
+}

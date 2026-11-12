@@ -1,0 +1,647 @@
+{
+ "fecha": "2026-09-21",
+ "calibracion": {
+  "exactas": 12,
+  "de": 19,
+  "detalle": [
+   {
+    "fila": 2,
+    "tp": "E-P1",
+    "derivado": {
+     "Carritos_Walmart": 93,
+     "Carritos_Chedraui": 13,
+     "Carritos_Total": 137,
+     "Clicks vs Carritos": 3.6053,
+     "Views_Carrito": 305,
+     "Views_Productos_Nestle": 197,
+     "Intencion_Total_MXN": 67934.90000000001,
+     "Intencion_Nestle_MXN": 5516,
+     "Pct_Penetracion_Nestle": 0.08,
+     "Ticket_Carrito_MXN": 222.73737704918037,
+     "Ticket_Producto_MXN": 28
+    },
+    "suyo": {
+     "Carritos_Walmart": 93,
+     "Carritos_Chedraui": 13,
+     "Carritos_Total": 137,
+     "Clicks vs Carritos": 3.6053,
+     "Views_Carrito": 305,
+     "Views_Productos_Nestle": 197,
+     "Intencion_Total_MXN": 67934.9,
+     "Intencion_Nestle_MXN": 5516,
+     "Pct_Penetracion_Nestle": 0.08,
+     "Ticket_Carrito_MXN": 222.74,
+     "Ticket_Producto_MXN": 28
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 3,
+    "tp": "E-P1",
+    "derivado": {
+     "Carritos_Walmart": 36,
+     "Carritos_Chedraui": 9,
+     "Carritos_Total": 81,
+     "Clicks vs Carritos": 0.3333,
+     "Views_Carrito": 79,
+     "Views_Productos_Nestle": 47,
+     "Intencion_Total_MXN": 31583.260000000002,
+     "Intencion_Nestle_MXN": 1037.5,
+     "Pct_Penetracion_Nestle": 0.03,
+     "Ticket_Carrito_MXN": 399.78810126582283,
+     "Ticket_Producto_MXN": 22.074468085106382
+    },
+    "suyo": {
+     "Carritos_Walmart": 36,
+     "Carritos_Chedraui": 9,
+     "Carritos_Total": 81,
+     "Clicks vs Carritos": 0.3333,
+     "Views_Carrito": 79,
+     "Views_Productos_Nestle": 47,
+     "Intencion_Total_MXN": 31583.26,
+     "Intencion_Nestle_MXN": 1037.5,
+     "Pct_Penetracion_Nestle": 0.03,
+     "Ticket_Carrito_MXN": 399.79,
+     "Ticket_Producto_MXN": 22.07
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 4,
+    "tp": "E-P1",
+    "derivado": {
+     "Carritos_Walmart": 73,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 98,
+     "Clicks vs Carritos": 0.0938,
+     "Views_Carrito": 179,
+     "Views_Productos_Nestle": 118,
+     "Intencion_Total_MXN": 48480.25,
+     "Intencion_Nestle_MXN": 4602,
+     "Pct_Penetracion_Nestle": 0.09,
+     "Ticket_Carrito_MXN": 270.8393854748603,
+     "Ticket_Producto_MXN": 39
+    },
+    "suyo": {
+     "Carritos_Walmart": 73,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 98,
+     "Clicks vs Carritos": 0.0938,
+     "Views_Carrito": 179,
+     "Views_Productos_Nestle": 118,
+     "Intencion_Total_MXN": 48480.25,
+     "Intencion_Nestle_MXN": 4602,
+     "Pct_Penetracion_Nestle": 0.09,
+     "Ticket_Carrito_MXN": 270.84,
+     "Ticket_Producto_MXN": 39
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 5,
+    "tp": "E-P2",
+    "derivado": {
+     "Carritos_Walmart": 47,
+     "Carritos_Chedraui": 13,
+     "Carritos_Total": 66,
+     "Clicks vs Carritos": 2.75,
+     "Views_Carrito": 139,
+     "Views_Productos_Nestle": 125,
+     "Intencion_Total_MXN": 42372.130000000005,
+     "Intencion_Nestle_MXN": 3500,
+     "Pct_Penetracion_Nestle": 0.08,
+     "Ticket_Carrito_MXN": 304.8354676258993,
+     "Ticket_Producto_MXN": 28
+    },
+    "suyo": {
+     "Carritos_Walmart": 47,
+     "Carritos_Chedraui": 13,
+     "Carritos_Total": 66,
+     "Clicks vs Carritos": 2.75,
+     "Views_Carrito": 139,
+     "Views_Productos_Nestle": 125,
+     "Intencion_Total_MXN": 42372.13,
+     "Intencion_Nestle_MXN": 3500,
+     "Pct_Penetracion_Nestle": 0.08,
+     "Ticket_Carrito_MXN": 304.84,
+     "Ticket_Producto_MXN": 28
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 6,
+    "tp": "E-P2",
+    "derivado": {
+     "Carritos_Walmart": 20,
+     "Carritos_Chedraui": 16,
+     "Carritos_Total": 47,
+     "Clicks vs Carritos": 0.5402,
+     "Views_Carrito": 63,
+     "Views_Productos_Nestle": 29,
+     "Intencion_Total_MXN": 13471.839999999997,
+     "Intencion_Nestle_MXN": 816,
+     "Pct_Penetracion_Nestle": 0.06,
+     "Ticket_Carrito_MXN": 213.8387301587301,
+     "Ticket_Producto_MXN": 28.137931034482758
+    },
+    "suyo": {
+     "Carritos_Walmart": 20,
+     "Carritos_Chedraui": 16,
+     "Carritos_Total": 47,
+     "Clicks vs Carritos": 0.5402,
+     "Views_Carrito": 63,
+     "Views_Productos_Nestle": 29,
+     "Intencion_Total_MXN": 13471.84,
+     "Intencion_Nestle_MXN": 816,
+     "Pct_Penetracion_Nestle": 0.06,
+     "Ticket_Carrito_MXN": 213.84,
+     "Ticket_Producto_MXN": 28.14
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 7,
+    "tp": "E-P3",
+    "derivado": {
+     "Carritos_Walmart": 0,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 0,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 0,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 0,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": null,
+     "Ticket_Carrito_MXN": null,
+     "Ticket_Producto_MXN": null
+    },
+    "suyo": {
+     "Carritos_Walmart": 0,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 0,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 0,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 0,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": 0,
+     "Ticket_Carrito_MXN": 0,
+     "Ticket_Producto_MXN": 0
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 8,
+    "tp": "E-P3",
+    "derivado": {
+     "Carritos_Walmart": 0,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 0,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 0,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 0,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": null,
+     "Ticket_Carrito_MXN": null,
+     "Ticket_Producto_MXN": null
+    },
+    "suyo": {
+     "Carritos_Walmart": 0,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 0,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 0,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 0,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": 0,
+     "Ticket_Carrito_MXN": 0,
+     "Ticket_Producto_MXN": 0
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 9,
+    "tp": "E-P3",
+    "derivado": {
+     "Carritos_Walmart": 0,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 0,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 0,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 0,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": null,
+     "Ticket_Carrito_MXN": null,
+     "Ticket_Producto_MXN": null
+    },
+    "suyo": {
+     "Carritos_Walmart": 0,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 0,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 0,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 0,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": 0,
+     "Ticket_Carrito_MXN": 0,
+     "Ticket_Producto_MXN": 0
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 13,
+    "tp": "Semifinal A",
+    "derivado": {
+     "Carritos_Walmart": 31,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 35,
+     "Clicks vs Carritos": null,
+     "Views_Carrito": 174,
+     "Views_Productos_Nestle": 45,
+     "Intencion_Total_MXN": 85134.40000000001,
+     "Intencion_Nestle_MXN": 1132,
+     "Pct_Penetracion_Nestle": 0.01,
+     "Ticket_Carrito_MXN": 489.27816091954026,
+     "Ticket_Producto_MXN": 25.155555555555555
+    },
+    "suyo": {
+     "Carritos_Walmart": 31,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 35,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 174,
+     "Views_Productos_Nestle": 45,
+     "Intencion_Total_MXN": 85134.4,
+     "Intencion_Nestle_MXN": 1132,
+     "Pct_Penetracion_Nestle": 0.01,
+     "Ticket_Carrito_MXN": 489.28,
+     "Ticket_Producto_MXN": 25.16
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 14,
+    "tp": "Semifinal B",
+    "derivado": {
+     "Carritos_Walmart": 40,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 42,
+     "Clicks vs Carritos": null,
+     "Views_Carrito": 252,
+     "Views_Productos_Nestle": 54,
+     "Intencion_Total_MXN": 97396.91999999998,
+     "Intencion_Nestle_MXN": 1368,
+     "Pct_Penetracion_Nestle": 0.01,
+     "Ticket_Carrito_MXN": 386.4957142857142,
+     "Ticket_Producto_MXN": 25.333333333333332
+    },
+    "suyo": {
+     "Carritos_Walmart": 40,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 42,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 252,
+     "Views_Productos_Nestle": 54,
+     "Intencion_Total_MXN": 97396.92,
+     "Intencion_Nestle_MXN": 1368,
+     "Pct_Penetracion_Nestle": 0.01,
+     "Ticket_Carrito_MXN": 386.5,
+     "Ticket_Producto_MXN": 25.33
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 15,
+    "tp": "Final",
+    "derivado": {
+     "Carritos_Walmart": 59,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 63,
+     "Clicks vs Carritos": null,
+     "Views_Carrito": 375,
+     "Views_Productos_Nestle": 61,
+     "Intencion_Total_MXN": 110688.33000000002,
+     "Intencion_Nestle_MXN": 1615,
+     "Pct_Penetracion_Nestle": 0.01,
+     "Ticket_Carrito_MXN": 295.16888000000006,
+     "Ticket_Producto_MXN": 26.475409836065573
+    },
+    "suyo": {
+     "Carritos_Walmart": 58,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 62,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 373,
+     "Views_Productos_Nestle": 59,
+     "Intencion_Total_MXN": 110207.59,
+     "Intencion_Nestle_MXN": 1559,
+     "Pct_Penetracion_Nestle": 0.01,
+     "Ticket_Carrito_MXN": 295.46,
+     "Ticket_Producto_MXN": 26.42
+    },
+    "iguales": 1
+   },
+   {
+    "fila": 16,
+    "tp": "E-J4",
+    "derivado": {
+     "Carritos_Walmart": 13,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 13,
+     "Clicks vs Carritos": 0.5909,
+     "Views_Carrito": 23,
+     "Views_Productos_Nestle": 9,
+     "Intencion_Total_MXN": 7407.63,
+     "Intencion_Nestle_MXN": 334,
+     "Pct_Penetracion_Nestle": 0.05,
+     "Ticket_Carrito_MXN": 322.0708695652174,
+     "Ticket_Producto_MXN": 37.111111111111114
+    },
+    "suyo": {
+     "Carritos_Walmart": 13,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 13,
+     "Clicks vs Carritos": 0.5909,
+     "Views_Carrito": 23,
+     "Views_Productos_Nestle": 9,
+     "Intencion_Total_MXN": 7407.63,
+     "Intencion_Nestle_MXN": 334,
+     "Pct_Penetracion_Nestle": 0.05,
+     "Ticket_Carrito_MXN": 322.07,
+     "Ticket_Producto_MXN": 37.11
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 17,
+    "tp": "E-J4",
+    "derivado": {
+     "Carritos_Walmart": 102,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 111,
+     "Clicks vs Carritos": 0.3284,
+     "Views_Carrito": 286,
+     "Views_Productos_Nestle": 203,
+     "Intencion_Total_MXN": 126947.79,
+     "Intencion_Nestle_MXN": 5438,
+     "Pct_Penetracion_Nestle": 0.04,
+     "Ticket_Carrito_MXN": 443.8733916083916,
+     "Ticket_Producto_MXN": 26.788177339901477
+    },
+    "suyo": {
+     "Carritos_Walmart": 102,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 111,
+     "Clicks vs Carritos": 0.3284,
+     "Views_Carrito": 286,
+     "Views_Productos_Nestle": 197,
+     "Intencion_Total_MXN": 126947.79,
+     "Intencion_Nestle_MXN": 5276,
+     "Pct_Penetracion_Nestle": 0.04,
+     "Ticket_Carrito_MXN": 443.87,
+     "Ticket_Producto_MXN": 26.78
+    },
+    "iguales": 5
+   },
+   {
+    "fila": 18,
+    "tp": "E-J5",
+    "derivado": {
+     "Carritos_Walmart": 1,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 1,
+     "Clicks vs Carritos": 0.1111,
+     "Views_Carrito": 1,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 615.05,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": 0,
+     "Ticket_Carrito_MXN": 615.05,
+     "Ticket_Producto_MXN": null
+    },
+    "suyo": {
+     "Carritos_Walmart": 1,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 1,
+     "Clicks vs Carritos": 0.1111,
+     "Views_Carrito": 1,
+     "Views_Productos_Nestle": 1,
+     "Intencion_Total_MXN": 615.05,
+     "Intencion_Nestle_MXN": 22,
+     "Pct_Penetracion_Nestle": 0.04,
+     "Ticket_Carrito_MXN": 615.05,
+     "Ticket_Producto_MXN": 22
+    },
+    "iguales": 5
+   },
+   {
+    "fila": 19,
+    "tp": "E-J5",
+    "derivado": {
+     "Carritos_Walmart": 0,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 0,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 0,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 0,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": null,
+     "Ticket_Carrito_MXN": null,
+     "Ticket_Producto_MXN": null
+    },
+    "suyo": {
+     "Carritos_Walmart": 0,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 0,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 0,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 0,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": 0,
+     "Ticket_Carrito_MXN": 0,
+     "Ticket_Producto_MXN": 0
+    },
+    "iguales": 7
+   },
+   {
+    "fila": 20,
+    "tp": "E-J6",
+    "derivado": {
+     "Carritos_Walmart": 2,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 2,
+     "Clicks vs Carritos": 0.1667,
+     "Views_Carrito": 2,
+     "Views_Productos_Nestle": 0,
+     "Intencion_Total_MXN": 533.43,
+     "Intencion_Nestle_MXN": 0,
+     "Pct_Penetracion_Nestle": 0,
+     "Ticket_Carrito_MXN": 266.715,
+     "Ticket_Producto_MXN": null
+    },
+    "suyo": {
+     "Carritos_Walmart": 2,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 2,
+     "Clicks vs Carritos": 0.1667,
+     "Views_Carrito": 2,
+     "Views_Productos_Nestle": 3,
+     "Intencion_Total_MXN": 533.43,
+     "Intencion_Nestle_MXN": 110,
+     "Pct_Penetracion_Nestle": 0.21,
+     "Ticket_Carrito_MXN": 266.72,
+     "Ticket_Producto_MXN": 36.67
+    },
+    "iguales": 5
+   },
+   {
+    "fila": 21,
+    "tp": "E-J7",
+    "derivado": {
+     "Carritos_Walmart": 11,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 13,
+     "Clicks vs Carritos": 0.0414,
+     "Views_Carrito": 15,
+     "Views_Productos_Nestle": 21,
+     "Intencion_Total_MXN": 7433.790000000001,
+     "Intencion_Nestle_MXN": 647,
+     "Pct_Penetracion_Nestle": 0.09,
+     "Ticket_Carrito_MXN": 495.58600000000007,
+     "Ticket_Producto_MXN": 30.80952380952381
+    },
+    "suyo": {
+     "Carritos_Walmart": 11,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 13,
+     "Clicks vs Carritos": 0.0414,
+     "Views_Carrito": 15,
+     "Views_Productos_Nestle": 25,
+     "Intencion_Total_MXN": 7433.79,
+     "Intencion_Nestle_MXN": 755,
+     "Pct_Penetracion_Nestle": 0.1,
+     "Ticket_Carrito_MXN": 495.59,
+     "Ticket_Producto_MXN": 30.2
+    },
+    "iguales": 5
+   },
+   {
+    "fila": 22,
+    "tp": "WA-J8",
+    "derivado": {
+     "Carritos_Walmart": 4,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 6,
+     "Clicks vs Carritos": null,
+     "Views_Carrito": 13,
+     "Views_Productos_Nestle": 1,
+     "Intencion_Total_MXN": 5862.74,
+     "Intencion_Nestle_MXN": 22,
+     "Pct_Penetracion_Nestle": 0,
+     "Ticket_Carrito_MXN": 450.97999999999996,
+     "Ticket_Producto_MXN": 22
+    },
+    "suyo": {
+     "Carritos_Walmart": 4,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 5,
+     "Clicks vs Carritos": 0,
+     "Views_Carrito": 13,
+     "Views_Productos_Nestle": 1,
+     "Intencion_Total_MXN": 5862.74,
+     "Intencion_Nestle_MXN": 22,
+     "Pct_Penetracion_Nestle": 0,
+     "Ticket_Carrito_MXN": 450.98,
+     "Ticket_Producto_MXN": 22
+    },
+    "iguales": 6
+   },
+   {
+    "fila": 23,
+    "tp": "E-J8",
+    "derivado": {
+     "Carritos_Walmart": 4,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 7,
+     "Clicks vs Carritos": 0.0614,
+     "Views_Carrito": 5,
+     "Views_Productos_Nestle": 3,
+     "Intencion_Total_MXN": 1804.94,
+     "Intencion_Nestle_MXN": 66,
+     "Pct_Penetracion_Nestle": 0.04,
+     "Ticket_Carrito_MXN": 360.988,
+     "Ticket_Producto_MXN": 22
+    },
+    "suyo": {
+     "Carritos_Walmart": 3,
+     "Carritos_Chedraui": 0,
+     "Carritos_Total": 5,
+     "Clicks vs Carritos": 0.0439,
+     "Views_Carrito": 4,
+     "Views_Productos_Nestle": 2,
+     "Intencion_Total_MXN": 1353.96,
+     "Intencion_Nestle_MXN": 44,
+     "Pct_Penetracion_Nestle": 0.03,
+     "Ticket_Carrito_MXN": 338.49,
+     "Ticket_Producto_MXN": 22
+    },
+    "iguales": 1
+   }
+  ]
+ },
+ "j9": [
+  {
+   "fila": 24,
+   "tp": "E-J9",
+   "cods": [
+    "bfQ24tDq",
+    "xTaSfQ2y"
+   ],
+   "desde": "2026-09-16",
+   "hasta": "2026-09-20",
+   "clicks": 86,
+   "D": {
+    "Carritos_Walmart": 26,
+    "Carritos_Chedraui": 0,
+    "Carritos_Total": 31,
+    "Clicks vs Carritos": 0.3605,
+    "Views_Carrito": 55,
+    "Views_Productos_Nestle": 44,
+    "Intencion_Total_MXN": 29098.1,
+    "Intencion_Nestle_MXN": 1143,
+    "Pct_Penetracion_Nestle": 0.04,
+    "Ticket_Carrito_MXN": 529.0563636363636,
+    "Ticket_Producto_MXN": 25.977272727272727
+   }
+  },
+  {
+   "fila": 25,
+   "tp": "WA-J9",
+   "cods": [
+    "ymh2OT4x"
+   ],
+   "desde": "2026-09-16",
+   "hasta": "2026-09-20",
+   "clicks": 0,
+   "D": {
+    "Carritos_Walmart": 14,
+    "Carritos_Chedraui": 0,
+    "Carritos_Total": 17,
+    "Clicks vs Carritos": null,
+    "Views_Carrito": 36,
+    "Views_Productos_Nestle": 20,
+    "Intencion_Total_MXN": 14985.09,
+    "Intencion_Nestle_MXN": 440,
+    "Pct_Penetracion_Nestle": 0.03,
+    "Ticket_Carrito_MXN": 416.2525,
+    "Ticket_Producto_MXN": 22
+   }
+  }
+ ]
+}

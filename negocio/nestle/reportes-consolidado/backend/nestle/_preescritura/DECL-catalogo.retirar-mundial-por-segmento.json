@@ -1,0 +1,15 @@
+{
+ "skill": "nestle-catalogo",
+ "script": "catalogo.retirar-mundial-por-segmento.js",
+ "declarado": "2026-09-22",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Catalogo_Piezas",
+   "grano": "una FILA entera",
+   "llave": "Pieza_ID",
+   "celdas_esperadas": "5 filas retiradas; TODAS las demás verificadas celda por celda antes de publicar"
+  }
+ ]
+}

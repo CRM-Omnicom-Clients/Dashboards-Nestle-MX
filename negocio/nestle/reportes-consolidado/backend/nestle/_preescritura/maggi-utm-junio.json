@@ -1,0 +1,77 @@
+{
+ "fecha": "2026-09-21",
+ "celdas": [
+  {
+   "ref": "AK2",
+   "valor": "e-bebida1 · wa-bebida1",
+   "antes": "e-bebida1 · (no está en el maestro)",
+   "porque": "el maestro (Junio) sí declara esta utm"
+  },
+  {
+   "ref": "AL2",
+   "valor": "e-bebida1 · N/A · no se envió a Qcart",
+   "antes": "e-bebida1 · (sin carritos)",
+   "porque": "la razón la da el maestro, no es que no haya carritos: es que no se envió"
+  },
+  {
+   "ref": "AO2",
+   "valor": "w5r9LWOP está en el maestro (Junio f23) pero con utm «wa-bebida1» = WhatsApp, y esta pieza es de email. El maestro lo marca «No se envío a Qcart» y tiene 0 carritos. ¿Es un error del catálogo o se reusó a propósito?",
+   "antes": null,
+   "porque": "no se pudo atribuir por fechas: 0 eventos que repartir"
+  },
+  {
+   "ref": "AK7",
+   "valor": "e-bebida3",
+   "antes": "(no está en el maestro)",
+   "porque": "el maestro (Junio) sí declara esta utm"
+  },
+  {
+   "ref": "AL7",
+   "valor": "N/A · no se envió a Qcart",
+   "antes": "(sin carritos)",
+   "porque": "la razón la da el maestro, no es que no haya carritos: es que no se envió"
+  },
+  {
+   "ref": "AO7",
+   "valor": "vk67sh2J está declarado en el maestro (Junio f26, utm «e-bebida3») pero marcado «No se envío a Qcart»: por eso 0 carritos. El 0 es medido, no un hueco.",
+   "antes": null,
+   "porque": "no se pudo atribuir por fechas: 0 eventos que repartir"
+  },
+  {
+   "ref": "AK8",
+   "valor": "e-botanas3",
+   "antes": "(no está en el maestro)",
+   "porque": "el maestro (Junio) sí declara esta utm"
+  },
+  {
+   "ref": "AL8",
+   "valor": "N/A · no se envió a Qcart",
+   "antes": "(sin carritos)",
+   "porque": "la razón la da el maestro, no es que no haya carritos: es que no se envió"
+  },
+  {
+   "ref": "AO8",
+   "valor": "xka2NWrW está declarado en el maestro (Junio f27, utm «e-botanas3») pero marcado «No se envío a Qcart»: por eso 0 carritos. El 0 es medido, no un hueco.",
+   "antes": null,
+   "porque": "no se pudo atribuir por fechas: 0 eventos que repartir"
+  },
+  {
+   "ref": "AK9",
+   "valor": "e-cooking3",
+   "antes": "(no está en el maestro)",
+   "porque": "el maestro (Junio) sí declara esta utm"
+  },
+  {
+   "ref": "AL9",
+   "valor": "N/A · no se envió a Qcart",
+   "antes": "(sin carritos)",
+   "porque": "la razón la da el maestro, no es que no haya carritos: es que no se envió"
+  },
+  {
+   "ref": "AO9",
+   "valor": "YJOatjQs está declarado en el maestro (Junio f28, utm «e-cooking3») pero marcado «No se envío a Qcart»: por eso 0 carritos. El 0 es medido, no un hueco.",
+   "antes": null,
+   "porque": "no se pudo atribuir por fechas: 0 eventos que repartir"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "corte": "WK40-maggi-j10-columnas",
+ "abierto": false,
+ "aplicado": {
+  "celdas": 12,
+  "columnas": 0,
+  "respaldo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-WK40-maggi-j10-columnas.xlsx",
+  "archivo": "WK40-maggi-j10-columnas__12celdas.json"
+ },
+ "cambios": [],
+ "columnas_nuevas": [],
+ "hojas": [],
+ "regla": "lote CERRADO y VACIADO. Lo aplicado vive en _contratos/_aplicados/. Para el siguiente corte: lib-cambios.abrir(<corte>)"
+}

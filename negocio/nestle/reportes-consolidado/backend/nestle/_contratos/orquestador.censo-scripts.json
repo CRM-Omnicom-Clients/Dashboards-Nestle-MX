@@ -1,0 +1,2711 @@
+{
+ "paso": "censo-scripts",
+ "fase": 1,
+ "que_hace": "clasifica sin mover nada",
+ "total": 258,
+ "clases": {
+  "VIVO": [
+   {
+    "f": "catalogo.corregir-catalogo.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "paso de la etapa 4"
+   },
+   {
+    "f": "catalogo.fusionar-fantasmas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "declarado: fusiona fantasma con viva ANTES de retirar · vieja y nueva SE QUEDAN AMBOS"
+   },
+   {
+    "f": "catalogo.leer-correcciones.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "paso de la etapa 4"
+   },
+   {
+    "f": "escritor.aplicar-vacios.js",
+    "skill": "crm-reporte-escritor",
+    "via": "paso de la etapa 16"
+   },
+   {
+    "f": "escritor.canonicos-coinciden.js",
+    "skill": "crm-reporte-escritor",
+    "via": "suite de escritor-datos"
+   },
+   {
+    "f": "escritor.escribir.js",
+    "skill": "crm-reporte-escritor",
+    "via": "paso de la etapa 10"
+   },
+   {
+    "f": "escritor.formato.js",
+    "skill": "crm-reporte-escritor",
+    "via": "paso de la etapa 14"
+   },
+   {
+    "f": "escritor.neutralizar-muertas.js",
+    "skill": "crm-reporte-escritor",
+    "via": "paso de la etapa 1"
+   },
+   {
+    "f": "escritor.validar-contrato.js",
+    "skill": "crm-reporte-escritor",
+    "via": "suite de escritor-datos"
+   },
+   {
+    "f": "fuentes-cuadre.cuadre.js",
+    "skill": "crm-reporte-fuentes-cuadre",
+    "via": "paso de la etapa 9"
+   },
+   {
+    "f": "fuentes-cuadre.normalizador.js",
+    "skill": "crm-reporte-fuentes-cuadre",
+    "via": "paso de la etapa 17"
+   },
+   {
+    "f": "fuentes-cuadre.probar-que-cierra.js",
+    "skill": "crm-reporte-fuentes-cuadre",
+    "via": "suite de PUERTA-2"
+   },
+   {
+    "f": "fuentes-cuadre.puerta2.js",
+    "skill": "crm-reporte-fuentes-cuadre",
+    "via": "paso de la etapa 17"
+   },
+   {
+    "f": "fuentes-email.email-piezas.js",
+    "skill": "crm-reporte-fuentes-email",
+    "via": "paso de la etapa 5"
+   },
+   {
+    "f": "fuentes-email.refrescar-volcado.js",
+    "skill": "crm-reporte-fuentes-email",
+    "via": "lo invoca fuentes-email.email-piezas.js"
+   },
+   {
+    "f": "fuentes-email.validar.js",
+    "skill": "crm-reporte-fuentes-email",
+    "via": "suite de email-bloque"
+   },
+   {
+    "f": "fuentes-insumos.cruce-sfmc.js",
+    "skill": "crm-reporte-fuentes-insumos",
+    "via": "suite de insumos-validar"
+   },
+   {
+    "f": "fuentes-insumos.insumos.js",
+    "skill": "crm-reporte-fuentes-insumos",
+    "via": "paso de la etapa 2"
+   },
+   {
+    "f": "fuentes-insumos.validar.js",
+    "skill": "crm-reporte-fuentes-insumos",
+    "via": "suite de insumos-validar"
+   },
+   {
+    "f": "fuentes-manual.manual.js",
+    "skill": "crm-reporte-fuentes-manual",
+    "via": "paso de la etapa 8"
+   },
+   {
+    "f": "fuentes-manual.validar.js",
+    "skill": "crm-reporte-fuentes-manual",
+    "via": "suite de manual-bloque"
+   },
+   {
+    "f": "fuentes-qcart.activacion-qcart.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "paso de la etapa 3"
+   },
+   {
+    "f": "fuentes-qcart.guardian-distribucion.js",
+    "skill": "crm-reporte-motor",
+    "via": "suite de motor-calculo"
+   },
+   {
+    "f": "fuentes-qcart.qcart.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "paso de la etapa 6"
+   },
+   {
+    "f": "fuentes-qcart.refutar.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "suite de qcart-bloque"
+   },
+   {
+    "f": "fuentes-qcart.validar.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "suite de qcart-bloque"
+   },
+   {
+    "f": "fuentes-whatsapp.refutar.js",
+    "skill": "crm-reporte-fuentes-whatsapp",
+    "via": "suite de whatsapp-bloque"
+   },
+   {
+    "f": "fuentes-whatsapp.validar.js",
+    "skill": "crm-reporte-fuentes-whatsapp",
+    "via": "suite de whatsapp-bloque"
+   },
+   {
+    "f": "fuentes-whatsapp.whatsapp.js",
+    "skill": "crm-reporte-fuentes-whatsapp",
+    "via": "paso de la etapa 7"
+   },
+   {
+    "f": "insights.insights.js",
+    "skill": "crm-reporte-nestle-insights",
+    "via": "paso de la etapa 13"
+   },
+   {
+    "f": "maggi.valores-de-rick.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "lo invoca maggi.copiar-del-reporte.js"
+   },
+   {
+    "f": "motor.links-a-rejilla.js",
+    "skill": "crm-reporte-motor",
+    "via": "paso de la etapa 11"
+   },
+   {
+    "f": "motor.links.js",
+    "skill": "crm-reporte-motor",
+    "via": "paso de la etapa 11"
+   },
+   {
+    "f": "motor.motor.js",
+    "skill": "crm-reporte-motor",
+    "via": "paso de la etapa 11"
+   },
+   {
+    "f": "motor.validar.js",
+    "skill": "crm-reporte-motor",
+    "via": "suite de motor-calculo"
+   },
+   {
+    "f": "orquestador.cadena-skills.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declara la cadena"
+   },
+   {
+    "f": "orquestador.declarar-en-skills.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "lo invoca orquestador.renombrar-skills.js"
+   },
+   {
+    "f": "orquestador.guardas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "lo invoca orquestador.orquestador.js"
+   },
+   {
+    "f": "orquestador.guardian-hojas-vs-bloques.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "lo invoca orquestador.orquestador.js"
+   },
+   {
+    "f": "orquestador.guardian-unidades.js",
+    "skill": "crm-reporte-fuentes-cuadre",
+    "via": "suite de PUERTA-2"
+   },
+   {
+    "f": "orquestador.mapa-skills.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "lo invoca orquestador.refutar-cadena.js"
+   },
+   {
+    "f": "orquestador.medir-vacios.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "paso de la etapa 15"
+   },
+   {
+    "f": "orquestador.orquestador.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "recorre la cadena"
+   },
+   {
+    "f": "orquestador.renombrar-skills.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "lo invoca orquestador.probar-renombre.js"
+   },
+   {
+    "f": "resumen.asegurar-columnas.js",
+    "skill": "crm-reporte-nestle-insights",
+    "via": "lo invoca insights.insights.js"
+   },
+   {
+    "f": "resumen.fusionar-fup.js",
+    "skill": "crm-reporte-resumen",
+    "via": "paso de la etapa 12"
+   },
+   {
+    "f": "resumen.regenerar.js",
+    "skill": "crm-reporte-resumen",
+    "via": "paso de la etapa 12"
+   },
+   {
+    "f": "resumen.validar.js",
+    "skill": "crm-reporte-resumen",
+    "via": "suite de resumen-regenerar"
+   }
+  ],
+  "ESCRITOR": [
+   {
+    "f": "escritor.escribir-todo.js",
+    "skill": "crm-reporte-escritor",
+    "via": "declarado: el escritor único: aplica lo que todos apuntan"
+   }
+  ],
+  "ADVERSARIAL": [
+   {
+    "f": "catalogo.probar-gemelas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.probar-indice-nombres.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.probar-mapeo-sfmc.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.probar-mundial-por-segmento.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.prueba-alias.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.prueba-anclas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.prueba-crecer2.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.prueba-uso.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.refutar-variantes.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.refutar.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.simular-n3.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "catalogo.simular-tasas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "escritor.probar-retiro.js",
+    "skill": "crm-reporte-escritor",
+    "via": "declarado: planta el retiro sobre una copia y exige que ninguna celda cambie de columna"
+   },
+   {
+    "f": "fuentes-cuadre.refuta-probar-que-cierra.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-cuadre.refutar.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-cuadre.simular-siguiente.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-email.medir-pruebas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-insumos.simular-siguiente.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-manual.refutar.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-manual.simular-primer-dato.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-manual.simular-siguiente.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-qcart.probar-filtro.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-qcart.probar-guardian-distribucion.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-qcart.probar-lector.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-qcart.refutar-metricas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-qcart.simular-nuevo.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-qcart.simular-siguiente.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-whatsapp.simular-nuevo.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "fuentes-whatsapp.simular-siguiente.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "motor.probar-vara-clicks.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "motor.refutar-clicks.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "orquestador.probar-columna.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "orquestador.probar-entorno.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "orquestador.probar-flexible.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "orquestador.probar-guardas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "orquestador.probar-guardian-unidades.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "orquestador.probar-idempotencia.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "refuta o simula · la cadena NO lo corre"
+   },
+   {
+    "f": "orquestador.probar-renombre.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: prueba que el registro sobrevive a un renombre"
+   },
+   {
+    "f": "orquestador.refutar-cadena.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: ataca la cadena de skills: 8 intentos de demostrar que la migración es de mentira"
+   },
+   {
+    "f": "orquestador.validar-capacidades.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: compara cada capacidad contra el código que sustituye: si difieren, no puede sustituirlo"
+   }
+  ],
+  "HERRAMIENTA": [
+   {
+    "f": "catalogo.catalogo-limpieza.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "declarado: fusión de fantasmas y revisión de vacíos del catálogo"
+   },
+   {
+    "f": "catalogo.codigos-maestro.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "declarado: contrasta los códigos del catálogo contra el maestro de links"
+   },
+   {
+    "f": "catalogo.medir-contra-sfmc.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · clase por su verbo"
+   },
+   {
+    "f": "catalogo.medir-fechas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · clase por su verbo"
+   },
+   {
+    "f": "catalogo.medir-qcart-huecos.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · clase por su verbo"
+   },
+   {
+    "f": "catalogo.medir-quincenas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "declarado: mide cómo quedan las quincenas"
+   },
+   {
+    "f": "escritor.cierre.js",
+    "skill": "crm-reporte-escritor",
+    "via": "declarado: cierra el libro tras una tanda de escrituras"
+   },
+   {
+    "f": "escritor.restaurar.js",
+    "skill": "crm-reporte-escritor",
+    "via": "declarado: restaura desde un backup: es la red, no el corte"
+   },
+   {
+    "f": "escritor.retirar.js",
+    "skill": "crm-reporte-escritor",
+    "via": "declarado: retira columnas fantasma tras fusionarlas · probado por escritor.probar-retiro.js"
+   },
+   {
+    "f": "fuentes-qcart.revalidar-grano.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · clase por su verbo"
+   },
+   {
+    "f": "lib-hoja-xml.js",
+    "skill": "crm-reporte-escritor",
+    "via": "declarado: librería: escribe una hoja por XML conservando el formato. La usa el escritor, no se invoca sola"
+   },
+   {
+    "f": "maggi.ajustar-filas-nuevas.js",
+    "skill": "crm-reporte-escritor",
+    "via": "declarado: iguala la altura de las filas nuevas de «Maggi Reporte» a la de las demás y les pone el Tipo Email de su hermana. Nace de que el render mostró dos franjas de ht=304 que ningún check veía"
+   },
+   {
+    "f": "maggi.copiar-del-reporte.js",
+    "skill": "crm-reporte-escritor",
+    "via": "declarado: copia a «Maggi Reporte» las filas de Maggi de Report_Resumen conservando las 13 columnas propias de esa hoja. Se invoca cuando Rick lo pide, no en el corte"
+   },
+   {
+    "f": "motor.medir-brecha-clicks.js",
+    "skill": "crm-reporte-motor",
+    "via": "el nombre declara su skill · clase por su verbo"
+   },
+   {
+    "f": "motor.medir-cobertura-filas.js",
+    "skill": "crm-reporte-motor",
+    "via": "el nombre declara su skill · clase por su verbo"
+   },
+   {
+    "f": "motor.medir-links-huerfanos.js",
+    "skill": "crm-reporte-motor",
+    "via": "el nombre declara su skill · clase por su verbo"
+   },
+   {
+    "f": "orquestador.censo-scripts.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: este censo"
+   },
+   {
+    "f": "orquestador.columnas-perdidas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: herramienta de la migración de scripts: se invoca con propósito"
+   },
+   {
+    "f": "orquestador.e2e.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: prueba de punta a punta"
+   },
+   {
+    "f": "orquestador.inventario-hojas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: herramienta de la migración de scripts: se invoca con propósito"
+   },
+   {
+    "f": "orquestador.medir-divergencia.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · clase por su verbo"
+   },
+   {
+    "f": "orquestador.medir-duplicacion.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: herramienta de la migración de scripts: se invoca con propósito"
+   },
+   {
+    "f": "orquestador.reconciliar.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: reconcilia el registro cuando un nombre físico cambió"
+   },
+   {
+    "f": "orquestador.retiro.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: mide quién cita a quién antes de retirar algo"
+   },
+   {
+    "f": "orquestador.revalidar-todo.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: corre la batería de validadores contra el libro ya escrito"
+   },
+   {
+    "f": "orquestador.trazabilidad.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: traza de dónde salió cada dato"
+   },
+   {
+    "f": "resumen.censo-estilos.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · clase por su verbo"
+   },
+   {
+    "f": "resumen.restaurar-estilos.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · clase por su verbo"
+   }
+  ],
+  "LIBRERIA": [
+   "lib-alias.js",
+   "lib-ancla-refs.js",
+   "lib-cambios.js",
+   "lib-canonico.js",
+   "lib-capacidades.js",
+   "lib-celda-xml.js",
+   "lib-clicks-destino.js",
+   "lib-columna.js",
+   "lib-conflictos.js",
+   "lib-cuadre.js",
+   "lib-datorama.js",
+   "lib-declaracion-escritura.js",
+   "lib-entorno.js",
+   "lib-es-pieza.js",
+   "lib-esquema.js",
+   "lib-fechas-envio.js",
+   "lib-flexible.js",
+   "lib-handoff.js",
+   "lib-ids.js",
+   "lib-insumos.js",
+   "lib-maestro-links.js",
+   "lib-manual-reglas.js",
+   "lib-manual.js",
+   "lib-mapeo-sfmc.js",
+   "lib-preescritura.js",
+   "lib-qcart-filtro.js",
+   "lib-qcart-links.js",
+   "lib-qcart.js",
+   "lib-quincena.js",
+   "lib-registro.js",
+   "lib-vacios.js",
+   "lib-valores-resumen.js",
+   "lib-whatsapp-ancla.js",
+   "lib-whatsapp-nombre.js",
+   "lib-whatsapp.js"
+  ],
+  "FUERA-DE-CICLO": [
+   {
+    "f": "catalogo.alta-piezas-declaradas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.auditar-ligamx.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.barrer-por-definir.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.buscar-piezas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.cerrar-por-definir.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.cerrar-qcart.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.columnas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.contrato-consumo.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.corregir-celdas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.corregir-fechas-envio.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.corregir-referencias.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.diff-sends.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.esquema-llave-whatsapp.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.estado-maggi.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.informe-por-definir.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.limpiar-notas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.limpiar-sends-duplicados.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.limpiar-variantes-usurpadas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.llenar-desde-sfmc.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.mirar-notas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.nombrar-whatsapp.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.piezas-gemelas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.plegar-mundial.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.que-puedo-cerrar.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.realinear-codigos-qcart.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.registrar-whatsapp-name.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.retirar-clones.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.retirar-columnas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.retirar-ep-ligamx.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.retirar-gemelas.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.retirar-mundial-por-segmento.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.sincronizar-ids.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "catalogo.ver-nombres-ambiguos.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "escritor.desempatar-envio-wa.js",
+    "skill": "crm-reporte-escritor",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "escritor.retirar-hojas.js",
+    "skill": "crm-reporte-escritor",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-email.copia-de-local.js",
+    "skill": "crm-reporte-fuentes-email",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-email.reconstruir-data-email.js",
+    "skill": "crm-reporte-fuentes-email",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-insumos.agregar-pieza-sfmc.js",
+    "skill": "crm-reporte-fuentes-insumos",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-insumos.deriva-sfmc.js",
+    "skill": "crm-reporte-fuentes-insumos",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-insumos.refrescar-metricas.js",
+    "skill": "crm-reporte-fuentes-insumos",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.alinear-doc-piezas.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.auditar-pauta.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.auditar-shortlinks.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.declarar-exclusion.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.doc-sobre-piezas.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.medida-externa.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.purgar-no-nuestros.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.purgar-sin-fecha.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.reanclar-huerfanos.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-qcart.rebasar-distribucion.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-whatsapp.auditar-entregas.js",
+    "skill": "crm-reporte-fuentes-whatsapp",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-whatsapp.auditar-metricas.js",
+    "skill": "crm-reporte-fuentes-whatsapp",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-whatsapp.ver-conciliacion.js",
+    "skill": "crm-reporte-fuentes-whatsapp",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "fuentes-whatsapp.ver-hoja-cruda.js",
+    "skill": "crm-reporte-fuentes-whatsapp",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "motor.auditar-destinos.js",
+    "skill": "crm-reporte-motor",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "motor.clicks-desde-plataforma.js",
+    "skill": "crm-reporte-motor",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.anclar-al-catalogo.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.declarar-escrituras.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.diff-explicado.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.foto-hojas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.guardian-hojas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.guardian-no-perdida.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.huella-formato.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.instalar.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.linea-base.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.lista-por-definir.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.llevar-a-carpeta.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.manifiestos.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.mapa-carpeta.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.mapa-final.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.migrar-a-dirname.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.migrar-a-entorno.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.migrar-herramientas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.publicar.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: publicar a producción — exige OK de Rick, por eso no está en la cadena"
+   },
+   {
+    "f": "orquestador.que-cambio-rick.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.que-viaja.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.quitar-usuario-hardcodeado.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.reducir.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.resumen.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.sanear-fundacion.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.validar-reglas.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "orquestador.verificar-estado-docs.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "paid.crear-catalogo-plantilla.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: plantilla del catálogo de PAID: otro reporte, no entra en este corte"
+   },
+   {
+    "f": "resumen.agregar-columna.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.comparar-formato.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.mover-columnas.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.piezas-por-quincena.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.quincena-principal-fup.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.rastrear-pieza.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.reordenar-encabezados.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.ver-encabezados.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.ver-whatsapp.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.verificar-clicks.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   },
+   {
+    "f": "resumen.verificar-unsub.js",
+    "skill": "crm-reporte-resumen",
+    "via": "el nombre declara su skill · NADIE lo invoca: no tiene turno en el corte"
+   }
+  ],
+  "APLICADO": [
+   {
+    "f": "maggi.corregir-utm-junio.js",
+    "skill": "crm-reporte-nestle-catalogo",
+    "via": "declarado: corrigió 12 utm de junio en el catálogo de Maggi. Corrida y cerrada"
+   },
+   {
+    "f": "maggi.escribir-columnas.js",
+    "skill": "crm-reporte-escritor",
+    "via": "declarado: escribió las 6 columnas de la hoja «Maggi Reporte» (recetas, shortlinks, utms, ventana). Corrida y cerrada el 22-sep-2026"
+   },
+   {
+    "f": "maggi.qcart-j9.js",
+    "skill": "crm-reporte-fuentes-qcart",
+    "via": "declarado: derivó las 11 columnas de Qcart de la pieza J9 en «Maggi Reporte». Corrida y cerrada el 22-sep-2026"
+   }
+  ],
+  "CONGELADO": [],
+  "RETIRADO": [
+   {
+    "f": "orquestador.reporte.js",
+    "skill": "crm-reporte-orquestador",
+    "via": "declarado: era un segundo runner del corte; se niega a correr"
+   }
+  ],
+  "SIN_CLASIFICAR": [
+   {
+    "f": "maggi.calcular-columnas.js"
+   },
+   {
+    "f": "maggi.validar-todo.js"
+   },
+   {
+    "f": "maggi.ver-hoja.js"
+   },
+   {
+    "f": "maggi.verificar-carritos.js"
+   },
+   {
+    "f": "qcart.extraer-crudo.js"
+   },
+   {
+    "f": "qcart.shortlinks-ambiguos.js"
+   },
+   {
+    "f": "qcart.utms-por-pieza.js"
+   },
+   {
+    "f": "_tmp-armar-j10.js"
+   }
+  ]
+ },
+ "propiedades": {
+  "catalogo.alta-piezas-declaradas.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.auditar-ligamx.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.barrer-por-definir.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.buscar-piezas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.catalogo-limpieza.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": true
+  },
+  "catalogo.cerrar-por-definir.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.cerrar-qcart.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.codigos-maestro.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.columnas.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.contrato-consumo.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.corregir-catalogo.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.corregir-celdas.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.corregir-fechas-envio.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.corregir-referencias.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.diff-sends.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.esquema-llave-whatsapp.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.estado-maggi.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.fusionar-fantasmas.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.informe-por-definir.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.leer-correcciones.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.limpiar-notas.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.limpiar-sends-duplicados.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.limpiar-variantes-usurpadas.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.llenar-desde-sfmc.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.medir-contra-sfmc.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.medir-fechas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.medir-qcart-huecos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.medir-quincenas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.mirar-notas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.nombrar-whatsapp.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.piezas-gemelas.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.plegar-mundial.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.probar-gemelas.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.probar-indice-nombres.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.probar-mapeo-sfmc.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.probar-mundial-por-segmento.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.prueba-alias.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.prueba-anclas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.prueba-crecer2.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.prueba-uso.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.que-puedo-cerrar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.realinear-codigos-qcart.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.refutar-variantes.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "catalogo.refutar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "catalogo.registrar-whatsapp-name.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.retirar-clones.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.retirar-columnas.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.retirar-ep-ligamx.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.retirar-gemelas.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.retirar-mundial-por-segmento.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.simular-n3.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "catalogo.simular-tasas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "catalogo.sincronizar-ids.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "catalogo.ver-nombres-ambiguos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.aplicar-vacios.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.canonicos-coinciden.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.cierre.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.desempatar-envio-wa.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": true
+  },
+  "escritor.escribir-todo.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.escribir.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.formato.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.neutralizar-muertas.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.probar-retiro.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.restaurar.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.retirar-hojas.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.retirar.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "escritor.validar-contrato.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-cuadre.cuadre.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-cuadre.normalizador.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-cuadre.probar-que-cierra.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-cuadre.puerta2.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-cuadre.refuta-probar-que-cierra.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-cuadre.refutar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-cuadre.simular-siguiente.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-email.copia-de-local.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-email.email-piezas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-email.medir-pruebas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-email.reconstruir-data-email.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-email.refrescar-volcado.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-email.validar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-insumos.agregar-pieza-sfmc.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-insumos.cruce-sfmc.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-insumos.deriva-sfmc.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-insumos.insumos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-insumos.refrescar-metricas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-insumos.simular-siguiente.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-insumos.validar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-manual.manual.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-manual.refutar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-manual.simular-primer-dato.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-manual.simular-siguiente.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-manual.validar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.activacion-qcart.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.alinear-doc-piezas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.auditar-pauta.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.auditar-shortlinks.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.declarar-exclusion.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.doc-sobre-piezas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.guardian-distribucion.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.medida-externa.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.probar-filtro.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.probar-guardian-distribucion.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.probar-lector.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.purgar-no-nuestros.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.purgar-sin-fecha.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.qcart.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.reanclar-huerfanos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.rebasar-distribucion.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.refutar-metricas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-qcart.refutar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-qcart.revalidar-grano.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-qcart.simular-nuevo.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-qcart.simular-siguiente.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-qcart.validar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-whatsapp.auditar-entregas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-whatsapp.auditar-metricas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-whatsapp.refutar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-whatsapp.simular-nuevo.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-whatsapp.simular-siguiente.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "fuentes-whatsapp.validar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-whatsapp.ver-conciliacion.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-whatsapp.ver-hoja-cruda.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "fuentes-whatsapp.whatsapp.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "insights.insights.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-alias.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-ancla-refs.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-cambios.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-canonico.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-capacidades.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-celda-xml.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-clicks-destino.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-columna.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-conflictos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-cuadre.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-datorama.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-declaracion-escritura.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-entorno.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-es-pieza.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-esquema.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-fechas-envio.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-flexible.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-handoff.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-hoja-xml.js": {
+   "escribe_excel": false,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-ids.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-insumos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-maestro-links.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-manual-reglas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-manual.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-mapeo-sfmc.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-preescritura.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-qcart-filtro.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-qcart-links.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-qcart.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-quincena.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-registro.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-vacios.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-valores-resumen.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-whatsapp-ancla.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-whatsapp-nombre.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "lib-whatsapp.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "maggi.ajustar-filas-nuevas.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "maggi.calcular-columnas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "maggi.copiar-del-reporte.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "maggi.corregir-utm-junio.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "maggi.escribir-columnas.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "maggi.qcart-j9.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "maggi.validar-todo.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "maggi.valores-de-rick.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": true
+  },
+  "maggi.ver-hoja.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "maggi.verificar-carritos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.auditar-destinos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.clicks-desde-plataforma.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.links-a-rejilla.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.links.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.medir-brecha-clicks.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.medir-cobertura-filas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.medir-links-huerfanos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.motor.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.probar-vara-clicks.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "motor.refutar-clicks.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "motor.validar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.anclar-al-catalogo.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.cadena-skills.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.censo-scripts.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.columnas-perdidas.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": true
+  },
+  "orquestador.declarar-en-skills.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.declarar-escrituras.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.diff-explicado.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.e2e.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.foto-hojas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.guardas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.guardian-hojas-vs-bloques.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.guardian-hojas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.guardian-no-perdida.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.guardian-unidades.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.huella-formato.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.instalar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.inventario-hojas.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.linea-base.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.lista-por-definir.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.llevar-a-carpeta.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.manifiestos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.mapa-carpeta.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.mapa-final.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.mapa-skills.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.medir-divergencia.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.medir-duplicacion.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.medir-vacios.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.migrar-a-dirname.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.migrar-a-entorno.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.migrar-herramientas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.orquestador.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.probar-columna.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.probar-entorno.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.probar-flexible.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.probar-guardas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.probar-guardian-unidades.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.probar-idempotencia.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.probar-renombre.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.publicar.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.que-cambio-rick.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.que-viaja.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.quitar-usuario-hardcodeado.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.reconciliar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.reducir.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.refutar-cadena.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": true,
+   "apunta": false
+  },
+  "orquestador.renombrar-skills.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.reporte.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.resumen.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.retiro.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.revalidar-todo.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.sanear-fundacion.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.trazabilidad.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.validar-capacidades.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.validar-reglas.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "orquestador.verificar-estado-docs.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "paid.crear-catalogo-plantilla.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "qcart.extraer-crudo.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "qcart.shortlinks-ambiguos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "qcart.utms-por-pieza.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.agregar-columna.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.asegurar-columnas.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.censo-estilos.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.comparar-formato.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.fusionar-fup.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.mover-columnas.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.piezas-por-quincena.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.quincena-principal-fup.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.rastrear-pieza.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.regenerar.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.reordenar-encabezados.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.restaurar-estilos.js": {
+   "escribe_excel": true,
+   "borra": true,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.validar.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.ver-encabezados.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.ver-whatsapp.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.verificar-clicks.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "resumen.verificar-unsub.js": {
+   "escribe_excel": true,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  },
+  "_tmp-armar-j10.js": {
+   "escribe_excel": false,
+   "borra": false,
+   "adversarial": false,
+   "apunta": false
+  }
+ }
+}

@@ -1,0 +1,110 @@
+[
+ {
+  "persona": "PP",
+  "personaN": "Pet Parents",
+  "mascota": "Perros",
+  "email_id": "83762",
+  "content_id": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+  "jobId": 1263904,
+  "sends": 19206,
+  "deliv": 19074,
+  "opens": 6777,
+  "clicks": 49
+ },
+ {
+  "persona": "PP",
+  "personaN": "Pet Parents",
+  "mascota": "Gatos",
+  "email_id": "83763",
+  "content_id": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+  "jobId": 1263905,
+  "sends": 3417,
+  "deliv": 3410,
+  "opens": 1215,
+  "clicks": 11
+ },
+ {
+  "persona": "PP",
+  "personaN": "Pet Parents",
+  "mascota": "Mixto",
+  "email_id": "83764",
+  "content_id": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PP_E3A3_NA",
+  "jobId": 1263906,
+  "sends": 180,
+  "deliv": 180,
+  "opens": 61,
+  "clicks": 1
+ },
+ {
+  "persona": "PA",
+  "personaN": "Aspiracionales",
+  "mascota": "Perros",
+  "email_id": "83765",
+  "content_id": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PA_E3B1.NA",
+  "jobId": 1263916,
+  "sends": 15984,
+  "deliv": 15871,
+  "opens": 5552,
+  "clicks": 57
+ },
+ {
+  "persona": "PA",
+  "personaN": "Aspiracionales",
+  "mascota": "Gatos",
+  "email_id": "83766",
+  "content_id": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+  "jobId": 1263915,
+  "sends": 2983,
+  "deliv": 2976,
+  "opens": 1046,
+  "clicks": 14
+ },
+ {
+  "persona": "PA",
+  "personaN": "Aspiracionales",
+  "mascota": "Mixto",
+  "email_id": "83767",
+  "content_id": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+  "jobId": 1263914,
+  "sends": 148,
+  "deliv": 148,
+  "opens": 41,
+  "clicks": 0
+ },
+ {
+  "persona": "PO",
+  "personaN": "Educated Pet Owners",
+  "mascota": "Perros",
+  "email_id": "83768",
+  "content_id": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PO_E3C1.NA",
+  "jobId": 1263923,
+  "sends": 1101,
+  "deliv": 1093,
+  "opens": 392,
+  "clicks": 3
+ },
+ {
+  "persona": "PO",
+  "personaN": "Educated Pet Owners",
+  "mascota": "Gatos",
+  "email_id": "83769",
+  "content_id": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+  "jobId": 1263924,
+  "sends": 310,
+  "deliv": 310,
+  "opens": 111,
+  "clicks": 3
+ },
+ {
+  "persona": "PO",
+  "personaN": "Educated Pet Owners",
+  "mascota": "Mixto",
+  "email_id": "83770",
+  "content_id": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+  "jobId": 1263925,
+  "sends": 38,
+  "deliv": 38,
+  "opens": 13,
+  "clicks": 0
+ }
+]

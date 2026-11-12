@@ -1,0 +1,2486 @@
+{
+ "paso": "E1.8",
+ "fecha": "2026-08-24",
+ "que_es": "La AUTORIDAD UNICA de normalizacion: crudo -> canonico. Los skills leen SOLO de aqui.",
+ "garantia": "Un skill nunca elige entre dos catalogos porque solo conoce uno. La hoja Catalogo_Referencias es una VISTA, y un guardian bloquea si no coinciden.",
+ "puente_con_el_catalogo": [
+  "Pieza_IDs",
+  "Dimension",
+  "Valor_Canonico"
+ ],
+ "ojo_pieza_ids": "La columna Pieza_IDs de la hoja esta TRUNCADA en 25 de 265 filas (dice N_Piezas=77 y lista 9). Es una MUESTRA para leer, no una llave foranea: el puente real se reconstruye desde el catalogo buscando que piezas tienen ese Valor_Canonico en esa Dimension.",
+ "alias": {
+  "Campaña": {
+   "ao-recetasnestlé @ utm_campaign": {
+    "crudo": "ao-recetasnestlé",
+    "contexto": "utm_campaign",
+    "canonico": "AON",
+    "fuente": "declarado",
+    "n_piezas": 28,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "001-P003",
+     "001-P004",
+     "001-P005",
+     "001-P006",
+     "001-P007",
+     "001-P008",
+     "001-P009",
+     "001-P010",
+     "001-P011",
+     "001-P012",
+     "…",
+     "(+16)"
+    ],
+    "piezas_truncado": true
+   },
+   "aon_crm_marzo @ utm_campaign": {
+    "crudo": "aon_crm_marzo",
+    "contexto": "utm_campaign",
+    "canonico": "AON",
+    "fuente": "declarado",
+    "n_piezas": 28,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "001-P003",
+     "001-P004",
+     "001-P005",
+     "001-P006",
+     "001-P007",
+     "001-P008",
+     "001-P009",
+     "001-P010",
+     "001-P011",
+     "001-P012",
+     "…",
+     "(+16)"
+    ],
+    "piezas_truncado": true
+   },
+   "aon-rn-marzo-purchase @ utm_campaign": {
+    "crudo": "aon-rn-marzo-purchase",
+    "contexto": "utm_campaign",
+    "canonico": "AON",
+    "fuente": "declarado",
+    "n_piezas": 28,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "001-P003",
+     "001-P004",
+     "001-P005",
+     "001-P006",
+     "001-P007",
+     "001-P008",
+     "001-P009",
+     "001-P010",
+     "001-P011",
+     "001-P012",
+     "…",
+     "(+16)"
+    ],
+    "piezas_truncado": true
+   },
+   "aon-rn-abril-purchase @ utm_campaign": {
+    "crudo": "aon-rn-abril-purchase",
+    "contexto": "utm_campaign",
+    "canonico": "AON",
+    "fuente": "declarado",
+    "n_piezas": 28,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "001-P003",
+     "001-P004",
+     "001-P005",
+     "001-P006",
+     "001-P007",
+     "001-P008",
+     "001-P009",
+     "001-P010",
+     "001-P011",
+     "001-P012",
+     "…",
+     "(+16)"
+    ],
+    "piezas_truncado": true
+   },
+   "aon-rn-julio26 @ utm_campaign": {
+    "crudo": "aon-rn-julio26",
+    "contexto": "utm_campaign",
+    "canonico": "AON",
+    "fuente": "declarado",
+    "n_piezas": 28,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "001-P003",
+     "001-P004",
+     "001-P005",
+     "001-P006",
+     "001-P007",
+     "001-P008",
+     "001-P009",
+     "001-P010",
+     "001-P011",
+     "001-P012",
+     "…",
+     "(+16)"
+    ],
+    "piezas_truncado": true
+   },
+   "lechera-junio @ utm_campaign": {
+    "crudo": "lechera-junio",
+    "contexto": "utm_campaign",
+    "canonico": "Antojo Infinito",
+    "fuente": "declarado",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "003-P001",
+     "003-P002"
+    ],
+    "piezas_truncado": false
+   },
+   "hotcakes-abril @ utm_campaign": {
+    "crudo": "hotcakes-abril",
+    "contexto": "utm_campaign",
+    "canonico": "Hotcakes",
+    "fuente": "declarado",
+    "n_piezas": 24,
+    "piezas_muestra": [
+     "002-P001",
+     "002-P002",
+     "002-P003",
+     "002-P004",
+     "002-P005",
+     "002-P006",
+     "002-P007",
+     "002-P008",
+     "002-P009",
+     "002-P010",
+     "002-P011",
+     "002-P012",
+     "…",
+     "(+12)"
+    ],
+    "piezas_truncado": true
+   },
+   "hotcakes-mayo @ utm_campaign": {
+    "crudo": "hotcakes-mayo",
+    "contexto": "utm_campaign",
+    "canonico": "Hotcakes",
+    "fuente": "declarado",
+    "n_piezas": 24,
+    "piezas_muestra": [
+     "002-P001",
+     "002-P002",
+     "002-P003",
+     "002-P004",
+     "002-P005",
+     "002-P006",
+     "002-P007",
+     "002-P008",
+     "002-P009",
+     "002-P010",
+     "002-P011",
+     "002-P012",
+     "…",
+     "(+12)"
+    ],
+    "piezas_truncado": true
+   },
+   "maggi-junio24 @ utm_campaign": {
+    "crudo": "maggi-junio24",
+    "contexto": "utm_campaign",
+    "canonico": "Mundial",
+    "fuente": "declarado",
+    "n_piezas": 19,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003",
+     "004-P004",
+     "004-P005",
+     "004-P006",
+     "004-P007",
+     "004-P008",
+     "004-P009",
+     "004-P010",
+     "004-P011",
+     "004-P012",
+     "…",
+     "(+7)"
+    ],
+    "piezas_truncado": true
+   },
+   "maggi-junio26 @ utm_campaign": {
+    "crudo": "maggi-junio26",
+    "contexto": "utm_campaign",
+    "canonico": "Mundial",
+    "fuente": "declarado",
+    "n_piezas": 19,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003",
+     "004-P004",
+     "004-P005",
+     "004-P006",
+     "004-P007",
+     "004-P008",
+     "004-P009",
+     "004-P010",
+     "004-P011",
+     "004-P012",
+     "…",
+     "(+7)"
+    ],
+    "piezas_truncado": true
+   },
+   "maggi-julio @ utm_campaign": {
+    "crudo": "maggi-julio",
+    "contexto": "utm_campaign",
+    "canonico": "Mundial",
+    "fuente": "declarado",
+    "n_piezas": 19,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003",
+     "004-P004",
+     "004-P005",
+     "004-P006",
+     "004-P007",
+     "004-P008",
+     "004-P009",
+     "004-P010",
+     "004-P011",
+     "004-P012",
+     "…",
+     "(+7)"
+    ],
+    "piezas_truncado": true
+   },
+   "maggi-julio14 @ utm_campaign": {
+    "crudo": "maggi-julio14",
+    "contexto": "utm_campaign",
+    "canonico": "Mundial",
+    "fuente": "declarado",
+    "n_piezas": 19,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003",
+     "004-P004",
+     "004-P005",
+     "004-P006",
+     "004-P007",
+     "004-P008",
+     "004-P009",
+     "004-P010",
+     "004-P011",
+     "004-P012",
+     "…",
+     "(+7)"
+    ],
+    "piezas_truncado": true
+   },
+   "maggi-julio15 @ utm_campaign": {
+    "crudo": "maggi-julio15",
+    "contexto": "utm_campaign",
+    "canonico": "Mundial",
+    "fuente": "declarado",
+    "n_piezas": 19,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003",
+     "004-P004",
+     "004-P005",
+     "004-P006",
+     "004-P007",
+     "004-P008",
+     "004-P009",
+     "004-P010",
+     "004-P011",
+     "004-P012",
+     "…",
+     "(+7)"
+    ],
+    "piezas_truncado": true
+   },
+   "maggi-julio26 @ utm_campaign": {
+    "crudo": "maggi-julio26",
+    "contexto": "utm_campaign",
+    "canonico": "Mundial",
+    "fuente": "declarado",
+    "n_piezas": 19,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003",
+     "004-P004",
+     "004-P005",
+     "004-P006",
+     "004-P007",
+     "004-P008",
+     "004-P009",
+     "004-P010",
+     "004-P011",
+     "004-P012",
+     "…",
+     "(+7)"
+    ],
+    "piezas_truncado": true
+   },
+   "maggi-ligamx-agosto26 @ utm_campaign": {
+    "crudo": "maggi-ligamx-agosto26",
+    "contexto": "utm_campaign",
+    "canonico": "Liga MX",
+    "fuente": "declarado",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "005-P001",
+     "005-P002",
+     "005-P003",
+     "005-P004"
+    ],
+    "piezas_truncado": false
+   },
+   "ICE": {
+    "crudo": "ICE",
+    "contexto": null,
+    "canonico": "The Freshers",
+    "fuente": "declarado 24-ago",
+    "n_piezas": 0,
+    "piezas_muestra": [],
+    "piezas_truncado": false
+   }
+  },
+  "Segmento": {
+   "bebidas @ utm_term": {
+    "crudo": "bebidas",
+    "contexto": "utm_term",
+    "canonico": "Bebidas",
+    "fuente": "declarado",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "004-P003",
+     "004-P004",
+     "004-P006",
+     "004-P009",
+     "004-P011",
+     "004-P013"
+    ],
+    "piezas_truncado": false
+   },
+   "botanas @ utm_term": {
+    "crudo": "botanas",
+    "contexto": "utm_term",
+    "canonico": "Botana",
+    "fuente": "declarado",
+    "n_piezas": 5,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P005",
+     "004-P008",
+     "004-P010",
+     "004-P014"
+    ],
+    "piezas_truncado": false
+   },
+   "new-cooking @ utm_term": {
+    "crudo": "new-cooking",
+    "contexto": "utm_term",
+    "canonico": "Modern Cooking",
+    "fuente": "declarado",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "004-P002",
+     "004-P007",
+     "004-P012",
+     "004-P015"
+    ],
+    "piezas_truncado": false
+   },
+   "general-sin-cluster @ utm_term": {
+    "crudo": "general-sin-cluster",
+    "contexto": "utm_term",
+    "canonico": "Sin Cluster",
+    "fuente": "declarado",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "001-P021",
+     "001-P022"
+    ],
+    "piezas_truncado": false
+   },
+   "ligamx @ utm_term": {
+    "crudo": "ligamx",
+    "contexto": "utm_term",
+    "canonico": "Futboleros Liga MX",
+    "fuente": "declarado",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "005-P001",
+     "005-P002",
+     "005-P003",
+     "005-P004"
+    ],
+    "piezas_truncado": false
+   },
+   "productive-adults @ utm_term": {
+    "crudo": "productive-adults",
+    "contexto": "utm_term",
+    "canonico": "Productive Adults",
+    "fuente": "declarado",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "001-P015",
+     "001-P016"
+    ],
+    "piezas_truncado": false
+   },
+   "wellness-navigators @ utm_term": {
+    "crudo": "wellness-navigators",
+    "contexto": "utm_term",
+    "canonico": "Wellness Navigators",
+    "fuente": "declarado",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "001-P019",
+     "001-P020"
+    ],
+    "piezas_truncado": false
+   },
+   "young-creatives @ utm_term": {
+    "crudo": "young-creatives",
+    "contexto": "utm_term",
+    "canonico": "Young Creatives",
+    "fuente": "declarado",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "001-P017",
+     "001-P018"
+    ],
+    "piezas_truncado": false
+   },
+   "career-focused-parents @ utm_term": {
+    "crudo": "career-focused-parents",
+    "contexto": "utm_term",
+    "canonico": "Career Focused",
+    "fuente": "declarado",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "003-P001",
+     "003-P002",
+     "001-P023",
+     "001-P028"
+    ],
+    "piezas_truncado": false
+   },
+   "new-parents @ utm_term": {
+    "crudo": "new-parents",
+    "contexto": "utm_term",
+    "canonico": "New Parents",
+    "fuente": "declarado",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P003",
+     "001-P004",
+     "003-P001",
+     "003-P002",
+     "001-P024",
+     "001-P026"
+    ],
+    "piezas_truncado": false
+   },
+   "traditional-parents @ utm_term": {
+    "crudo": "traditional-parents",
+    "contexto": "utm_term",
+    "canonico": "Traditional Parents",
+    "fuente": "declarado",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P005",
+     "001-P006",
+     "003-P001",
+     "003-P002",
+     "001-P025",
+     "001-P027"
+    ],
+    "piezas_truncado": false
+   },
+   "tradicional parents @ utm_term": {
+    "crudo": "tradicional parents",
+    "contexto": "utm_term",
+    "canonico": "Traditional Parents",
+    "fuente": "declarado",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P005",
+     "001-P006",
+     "003-P001",
+     "003-P002",
+     "001-P025",
+     "001-P027"
+    ],
+    "piezas_truncado": false
+   },
+   "reposteros @ utm_term": {
+    "crudo": "reposteros",
+    "contexto": "utm_term",
+    "canonico": "Reposteros",
+    "fuente": "declarado",
+    "n_piezas": 0,
+    "piezas_muestra": [],
+    "piezas_truncado": false
+   },
+   "inpiration @ utm_term": {
+    "crudo": "inpiration",
+    "contexto": "utm_term",
+    "canonico": "Interés Salado",
+    "fuente": "declarado",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "002-P017",
+     "002-P018",
+     "002-P019",
+     "002-P020"
+    ],
+    "piezas_truncado": false
+   },
+   "saludables (segmento de td) @ utm_term": {
+    "crudo": "saludables (segmento de td)",
+    "contexto": "utm_term",
+    "canonico": "Saludables",
+    "fuente": "declarado",
+    "n_piezas": 5,
+    "piezas_muestra": [
+     "002-P001",
+     "002-P005",
+     "002-P009",
+     "002-P013",
+     "002-P021"
+    ],
+    "piezas_truncado": false
+   },
+   "practicos @ utm_term": {
+    "crudo": "practicos",
+    "contexto": "utm_term",
+    "canonico": "Prácticos",
+    "fuente": "declarado",
+    "n_piezas": 5,
+    "piezas_muestra": [
+     "002-P002",
+     "002-P006",
+     "002-P010",
+     "002-P014",
+     "002-P022"
+    ],
+    "piezas_truncado": false
+   },
+   "indulgentes @ utm_term": {
+    "crudo": "indulgentes",
+    "contexto": "utm_term",
+    "canonico": "Indulgentes",
+    "fuente": "declarado",
+    "n_piezas": 5,
+    "piezas_muestra": [
+     "002-P003",
+     "002-P007",
+     "002-P011",
+     "002-P015",
+     "002-P023"
+    ],
+    "piezas_truncado": false
+   },
+   "familias @ utm_term": {
+    "crudo": "familias",
+    "contexto": "utm_term",
+    "canonico": "FamilyKids",
+    "fuente": "declarado",
+    "n_piezas": 5,
+    "piezas_muestra": [
+     "002-P004",
+     "002-P008",
+     "002-P012",
+     "002-P016",
+     "002-P024"
+    ],
+    "piezas_truncado": false
+   },
+   "careerfocused @ utm_term": {
+    "crudo": "careerfocused",
+    "contexto": "utm_term",
+    "canonico": "Career Focused",
+    "fuente": "declarado",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "003-P001",
+     "003-P002",
+     "001-P023",
+     "001-P028"
+    ],
+    "piezas_truncado": false
+   },
+   "dinkys @ utm_term": {
+    "crudo": "dinkys",
+    "contexto": "utm_term",
+    "canonico": "Dinkies y Empty Nesters",
+    "fuente": "declarado",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "001-P011",
+     "001-P012"
+    ],
+    "piezas_truncado": false
+   },
+   "newparentes @ utm_term": {
+    "crudo": "newparentes",
+    "contexto": "utm_term",
+    "canonico": "New Parents",
+    "fuente": "declarado",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P003",
+     "001-P004",
+     "003-P001",
+     "003-P002",
+     "001-P024",
+     "001-P026"
+    ],
+    "piezas_truncado": false
+   },
+   "familyfocused @ utm_term": {
+    "crudo": "familyfocused",
+    "contexto": "utm_term",
+    "canonico": "FamilyKids",
+    "fuente": "declarado",
+    "n_piezas": 5,
+    "piezas_muestra": [
+     "002-P004",
+     "002-P008",
+     "002-P012",
+     "002-P016",
+     "002-P024"
+    ],
+    "piezas_truncado": false
+   },
+   "career focused parents @ utm_term": {
+    "crudo": "career focused parents",
+    "contexto": "utm_term",
+    "canonico": "Career Focused",
+    "fuente": "declarado",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "003-P001",
+     "003-P002",
+     "001-P023",
+     "001-P028"
+    ],
+    "piezas_truncado": false
+   },
+   "new parents @ utm_term": {
+    "crudo": "new parents",
+    "contexto": "utm_term",
+    "canonico": "New Parents",
+    "fuente": "declarado",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P003",
+     "001-P004",
+     "003-P001",
+     "003-P002",
+     "001-P024",
+     "001-P026"
+    ],
+    "piezas_truncado": false
+   }
+  },
+  "Objetivo": {
+   "consider @ utm_term": {
+    "crudo": "consider",
+    "contexto": "utm_term",
+    "canonico": "Consider",
+    "fuente": "declarado",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "003-P001",
+     "003-P002"
+    ],
+    "piezas_truncado": false
+   },
+   "AON-APP": {
+    "crudo": "AON-APP",
+    "contexto": null,
+    "canonico": "Descarga App",
+    "fuente": "Data_Email",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "001-P007",
+     "001-P008",
+     "001-P009",
+     "001-P010"
+    ],
+    "piezas_truncado": false
+   },
+   "AON-LOYALTY": {
+    "crudo": "AON-LOYALTY",
+    "contexto": null,
+    "canonico": "Loyalty",
+    "fuente": "Data_Email",
+    "n_piezas": 10,
+    "piezas_muestra": [
+     "001-P013",
+     "001-P014",
+     "002-P009",
+     "002-P010",
+     "002-P011",
+     "002-P012",
+     "002-P013",
+     "002-P014",
+     "002-P015",
+     "002-P016"
+    ],
+    "piezas_truncado": false
+   },
+   "Purchase @ Antojo Infinito": {
+    "crudo": "Purchase",
+    "contexto": "Antojo Infinito",
+    "canonico": "Consider",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "003-P001",
+     "003-P002"
+    ],
+    "piezas_truncado": false
+   },
+   "Welcome": {
+    "crudo": "Welcome",
+    "contexto": null,
+    "canonico": "Awareness",
+    "fuente": "Data_Email",
+    "n_piezas": 8,
+    "piezas_muestra": [
+     "009-P001",
+     "006-P001",
+     "006-P002",
+     "007-P001",
+     "007-P002",
+     "007-P003",
+     "007-P004",
+     "009-P005"
+    ],
+    "piezas_truncado": false
+   },
+   "Enriquecimiento": {
+    "crudo": "Enriquecimiento",
+    "contexto": null,
+    "canonico": "Enrichment",
+    "fuente": "Data_Email",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "009-P002",
+     "009-P003",
+     "009-P004"
+    ],
+    "piezas_truncado": false
+   }
+  },
+  "Partido": {
+   "final @ utm_term": {
+    "crudo": "final",
+    "contexto": "utm_term",
+    "canonico": "Final",
+    "fuente": "declarado",
+    "n_piezas": 0,
+    "piezas_muestra": [],
+    "piezas_truncado": false
+   }
+  },
+  "Touchpoint": {
+   "Email 1 @ AON": {
+    "crudo": "Email 1",
+    "contexto": "AON",
+    "canonico": "E-P1",
+    "fuente": "Marzo: \"Email n\"",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P005",
+     "001-P006",
+     "001-P015",
+     "001-P016",
+     "001-P025",
+     "001-P027"
+    ],
+    "piezas_truncado": false
+   },
+   "Email 2 @ AON": {
+    "crudo": "Email 2",
+    "contexto": "AON",
+    "canonico": "E-P2",
+    "fuente": "Marzo: \"Email n\"",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "001-P011",
+     "001-P012",
+     "001-P017",
+     "001-P018"
+    ],
+    "piezas_truncado": false
+   },
+   "Email 3 @ AON": {
+    "crudo": "Email 3",
+    "contexto": "AON",
+    "canonico": "E-P3",
+    "fuente": "Marzo: \"Email n\"",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P003",
+     "001-P004",
+     "001-P019",
+     "001-P020",
+     "001-P024",
+     "001-P026"
+    ],
+    "piezas_truncado": false
+   },
+   "E-I1 @ Hotcakes": {
+    "crudo": "E-I1",
+    "contexto": "Hotcakes",
+    "canonico": "E-I1",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P019",
+     "002-P020"
+    ],
+    "piezas_truncado": false
+   },
+   "E-I2 @ Hotcakes": {
+    "crudo": "E-I2",
+    "contexto": "Hotcakes",
+    "canonico": "E-I2",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P017",
+     "002-P018"
+    ],
+    "piezas_truncado": false
+   },
+   "E-P1 @ AON": {
+    "crudo": "E-P1",
+    "contexto": "AON",
+    "canonico": "E-P1",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P005",
+     "001-P006",
+     "001-P015",
+     "001-P016",
+     "001-P025",
+     "001-P027"
+    ],
+    "piezas_truncado": false
+   },
+   "E-P2 @ AON": {
+    "crudo": "E-P2",
+    "contexto": "AON",
+    "canonico": "E-P2",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "001-P011",
+     "001-P012",
+     "001-P017",
+     "001-P018"
+    ],
+    "piezas_truncado": false
+   },
+   "E-P3 @ AON": {
+    "crudo": "E-P3",
+    "contexto": "AON",
+    "canonico": "E-P3",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P003",
+     "001-P004",
+     "001-P019",
+     "001-P020",
+     "001-P024",
+     "001-P026"
+    ],
+    "piezas_truncado": false
+   },
+   "E-P4 @ AON": {
+    "crudo": "E-P4",
+    "contexto": "AON",
+    "canonico": "E-P4",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "001-P021",
+     "001-P022",
+     "001-P023",
+     "001-P028"
+    ],
+    "piezas_truncado": false
+   },
+   "E-P1 @ Hotcakes": {
+    "crudo": "E-P1",
+    "contexto": "Hotcakes",
+    "canonico": "E-P1",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P001",
+     "002-P005"
+    ],
+    "piezas_truncado": false
+   },
+   "E-P2 @ Hotcakes": {
+    "crudo": "E-P2",
+    "contexto": "Hotcakes",
+    "canonico": "E-P2",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P002",
+     "002-P006"
+    ],
+    "piezas_truncado": false
+   },
+   "E-P3 @ Hotcakes": {
+    "crudo": "E-P3",
+    "contexto": "Hotcakes",
+    "canonico": "E-P3",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P003",
+     "002-P007"
+    ],
+    "piezas_truncado": false
+   },
+   "E-P4 @ Hotcakes": {
+    "crudo": "E-P4",
+    "contexto": "Hotcakes",
+    "canonico": "E-P4",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P004",
+     "002-P008"
+    ],
+    "piezas_truncado": false
+   },
+   "e-botana1 @ Mundial": {
+    "crudo": "e-botana1",
+    "contexto": "Mundial",
+    "canonico": "E-P1",
+    "fuente": "Data_Maggi: Partido 1",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003"
+    ],
+    "piezas_truncado": false
+   },
+   "e-bebida1 @ Mundial": {
+    "crudo": "e-bebida1",
+    "contexto": "Mundial",
+    "canonico": "E-P1",
+    "fuente": "Data_Maggi: Partido 1",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003"
+    ],
+    "piezas_truncado": false
+   },
+   "e-cooking1 @ Mundial": {
+    "crudo": "e-cooking1",
+    "contexto": "Mundial",
+    "canonico": "E-P1",
+    "fuente": "Data_Maggi: Partido 1",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003"
+    ],
+    "piezas_truncado": false
+   },
+   "e-cooking2 @ Mundial": {
+    "crudo": "e-cooking2",
+    "contexto": "Mundial",
+    "canonico": "E-P2",
+    "fuente": "Data_Maggi: Partido 2",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "004-P004",
+     "004-P005"
+    ],
+    "piezas_truncado": false
+   },
+   "e-bebida2 @ Mundial": {
+    "crudo": "e-bebida2",
+    "contexto": "Mundial",
+    "canonico": "E-P2",
+    "fuente": "Data_Maggi: Partido 2",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "004-P004",
+     "004-P005"
+    ],
+    "piezas_truncado": false
+   },
+   "e-botana2 @ Mundial": {
+    "crudo": "e-botana2",
+    "contexto": "Mundial",
+    "canonico": "E-P2",
+    "fuente": "Data_Maggi: Partido 2",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "004-P004",
+     "004-P005"
+    ],
+    "piezas_truncado": false
+   },
+   "e-c1 @ Antojo Infinito": {
+    "crudo": "e-c1",
+    "contexto": "Antojo Infinito",
+    "canonico": "E-C1",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "003-P001",
+     "003-P002"
+    ],
+    "piezas_truncado": false
+   },
+   "e-cooking-alitas @ Mundial": {
+    "crudo": "e-cooking-alitas",
+    "contexto": "Mundial",
+    "canonico": "E-P2",
+    "fuente": "Data_Maggi: \"Alitas\" fue Partido 2",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "004-P004",
+     "004-P005"
+    ],
+    "piezas_truncado": false
+   },
+   "wa-botana1 @ Mundial": {
+    "crudo": "wa-botana1",
+    "contexto": "Mundial",
+    "canonico": "E-P1",
+    "fuente": "Data_Maggi: Partido 1",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003"
+    ],
+    "piezas_truncado": false
+   },
+   "wa-bebida1 @ Mundial": {
+    "crudo": "wa-bebida1",
+    "contexto": "Mundial",
+    "canonico": "E-P1",
+    "fuente": "Data_Maggi: Partido 1",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003"
+    ],
+    "piezas_truncado": false
+   },
+   "wa-cooking1 @ Mundial": {
+    "crudo": "wa-cooking1",
+    "contexto": "Mundial",
+    "canonico": "E-P1",
+    "fuente": "Data_Maggi: Partido 1",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003"
+    ],
+    "piezas_truncado": false
+   },
+   "e-bebida3 @ Mundial": {
+    "crudo": "e-bebida3",
+    "contexto": "Mundial",
+    "canonico": "E-P3",
+    "fuente": "Data_Maggi: Partido 3",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P006",
+     "004-P007",
+     "004-P008"
+    ],
+    "piezas_truncado": false
+   },
+   "e-botanas3 @ Mundial": {
+    "crudo": "e-botanas3",
+    "contexto": "Mundial",
+    "canonico": "E-P3",
+    "fuente": "Data_Maggi: Partido 3",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P006",
+     "004-P007",
+     "004-P008"
+    ],
+    "piezas_truncado": false
+   },
+   "e-cooking3 @ Mundial": {
+    "crudo": "e-cooking3",
+    "contexto": "Mundial",
+    "canonico": "E-P3",
+    "fuente": "Data_Maggi: Partido 3",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P006",
+     "004-P007",
+     "004-P008"
+    ],
+    "piezas_truncado": false
+   },
+   "e-p1 @ AON": {
+    "crudo": "e-p1",
+    "contexto": "AON",
+    "canonico": "E-P1",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P005",
+     "001-P006",
+     "001-P015",
+     "001-P016",
+     "001-P025",
+     "001-P027"
+    ],
+    "piezas_truncado": false
+   },
+   "e-p2 @ AON": {
+    "crudo": "e-p2",
+    "contexto": "AON",
+    "canonico": "E-P2",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "001-P011",
+     "001-P012",
+     "001-P017",
+     "001-P018"
+    ],
+    "piezas_truncado": false
+   },
+   "e-p3 @ AON": {
+    "crudo": "e-p3",
+    "contexto": "AON",
+    "canonico": "E-P3",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P003",
+     "001-P004",
+     "001-P019",
+     "001-P020",
+     "001-P024",
+     "001-P026"
+    ],
+    "piezas_truncado": false
+   },
+   "e-p4 @ AON": {
+    "crudo": "e-p4",
+    "contexto": "AON",
+    "canonico": "E-P4",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "001-P021",
+     "001-P022",
+     "001-P023",
+     "001-P028"
+    ],
+    "piezas_truncado": false
+   },
+   "e-botanas6 @ Mundial": {
+    "crudo": "e-botanas6",
+    "contexto": "Mundial",
+    "canonico": "WA-P6",
+    "fuente": "Data_Maggi: Semifinal A",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "004-P017"
+    ],
+    "piezas_truncado": false
+   },
+   "e-botanas7 @ Mundial": {
+    "crudo": "e-botanas7",
+    "contexto": "Mundial",
+    "canonico": "WA-P7",
+    "fuente": "Data_Maggi: Semifinal B",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "004-P018"
+    ],
+    "piezas_truncado": false
+   },
+   "wa-final-aceitunas @ Mundial": {
+    "crudo": "wa-final-aceitunas",
+    "contexto": "Mundial",
+    "canonico": "WA-P8",
+    "fuente": "Data_Maggi: Final",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "004-P019"
+    ],
+    "piezas_truncado": false
+   },
+   "wa-final-empanadas @ Mundial": {
+    "crudo": "wa-final-empanadas",
+    "contexto": "Mundial",
+    "canonico": "WA-P8",
+    "fuente": "Data_Maggi: Final",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "004-P019"
+    ],
+    "piezas_truncado": false
+   },
+   "wa-final-botana-salsa @ Mundial": {
+    "crudo": "wa-final-botana-salsa",
+    "contexto": "Mundial",
+    "canonico": "WA-P8",
+    "fuente": "Data_Maggi: Final",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "004-P019"
+    ],
+    "piezas_truncado": false
+   },
+   "e-p1 @ Liga MX": {
+    "crudo": "e-p1",
+    "contexto": "Liga MX",
+    "canonico": "E-P1",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "005-P001"
+    ],
+    "piezas_truncado": false
+   },
+   "e-p2 @ Liga MX": {
+    "crudo": "e-p2",
+    "contexto": "Liga MX",
+    "canonico": "E-P2",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "005-P002"
+    ],
+    "piezas_truncado": false
+   },
+   "e-p4 @ Liga MX": {
+    "crudo": "e-p4",
+    "contexto": "Liga MX",
+    "canonico": "E-P4",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "005-P003"
+    ],
+    "piezas_truncado": false
+   },
+   "e-p6 @ Liga MX": {
+    "crudo": "e-p6",
+    "contexto": "Liga MX",
+    "canonico": "E-P6",
+    "fuente": "patrón E-{etapa}{n}",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "005-P004"
+    ],
+    "piezas_truncado": false
+   },
+   "Partido 2 - Corea @ Mundial": {
+    "crudo": "Partido 2 - Corea",
+    "contexto": "Mundial",
+    "canonico": "WA-P2",
+    "fuente": "Data_Maggi",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P010",
+     "004-P011",
+     "004-P012"
+    ],
+    "piezas_truncado": false
+   },
+   "Partido 3 - Checa @ Mundial": {
+    "crudo": "Partido 3 - Checa",
+    "contexto": "Mundial",
+    "canonico": "WA-P3",
+    "fuente": "Data_Maggi",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "004-P013",
+     "004-P014",
+     "004-P015",
+     "004-P016"
+    ],
+    "piezas_truncado": false
+   },
+   "Semifinal A @ Mundial": {
+    "crudo": "Semifinal A",
+    "contexto": "Mundial",
+    "canonico": "WA-P6",
+    "fuente": "Data_Maggi",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "004-P017"
+    ],
+    "piezas_truncado": false
+   },
+   "Semifinal B - argentina vs ingla @ Mundial": {
+    "crudo": "Semifinal B - argentina vs ingla",
+    "contexto": "Mundial",
+    "canonico": "WA-P7",
+    "fuente": "Data_Maggi",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "004-P018"
+    ],
+    "piezas_truncado": false
+   },
+   "Final - españa vs aregentica @ Mundial": {
+    "crudo": "Final - españa vs aregentica",
+    "contexto": "Mundial",
+    "canonico": "WA-P8",
+    "fuente": "Data_Maggi",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "004-P019"
+    ],
+    "piezas_truncado": false
+   },
+   "N/A @ AON · Career Focused": {
+    "crudo": "N/A",
+    "contexto": "AON · Career Focused",
+    "canonico": "E-P4",
+    "fuente": "depende del segmento",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "001-P023",
+     "001-P028"
+    ],
+    "piezas_truncado": false
+   },
+   "N/A @ AON · New Parents": {
+    "crudo": "N/A",
+    "contexto": "AON · New Parents",
+    "canonico": "E-P3",
+    "fuente": "depende del segmento",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "001-P003",
+     "001-P004",
+     "001-P024",
+     "001-P026"
+    ],
+    "piezas_truncado": false
+   },
+   "N/A @ AON · Traditional Parents": {
+    "crudo": "N/A",
+    "contexto": "AON · Traditional Parents",
+    "canonico": "E-P1",
+    "fuente": "depende del segmento",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "001-P005",
+     "001-P006",
+     "001-P025",
+     "001-P027"
+    ],
+    "piezas_truncado": false
+   },
+   "Único @ Hotcakes · Saludables": {
+    "crudo": "Único",
+    "contexto": "Hotcakes · Saludables",
+    "canonico": "WA-C1",
+    "fuente": "depende del segmento",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "002-P021"
+    ],
+    "piezas_truncado": false
+   },
+   "Único @ Hotcakes · Prácticos": {
+    "crudo": "Único",
+    "contexto": "Hotcakes · Prácticos",
+    "canonico": "WA-C2",
+    "fuente": "depende del segmento",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "002-P022"
+    ],
+    "piezas_truncado": false
+   },
+   "Único @ Hotcakes · Indulgentes": {
+    "crudo": "Único",
+    "contexto": "Hotcakes · Indulgentes",
+    "canonico": "WA-C3",
+    "fuente": "depende del segmento",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "002-P023"
+    ],
+    "piezas_truncado": false
+   },
+   "Único @ Hotcakes · FamilyKids": {
+    "crudo": "Único",
+    "contexto": "Hotcakes · FamilyKids",
+    "canonico": "WA-C4",
+    "fuente": "depende del segmento",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "002-P024"
+    ],
+    "piezas_truncado": false
+   },
+   "1 @ AON": {
+    "crudo": "1",
+    "contexto": "AON",
+    "canonico": "E-D1",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "001-P007",
+     "001-P008"
+    ],
+    "piezas_truncado": false
+   },
+   "2 @ AON": {
+    "crudo": "2",
+    "contexto": "AON",
+    "canonico": "E-D2",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "001-P009",
+     "001-P010"
+    ],
+    "piezas_truncado": false
+   },
+   "EP4 @ AON": {
+    "crudo": "EP4",
+    "contexto": "AON",
+    "canonico": "E-P4",
+    "fuente": "Data_Email",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P001",
+     "001-P002",
+     "001-P021",
+     "001-P022",
+     "001-P023",
+     "001-P028"
+    ],
+    "piezas_truncado": false
+   },
+   "EP2 @ AON": {
+    "crudo": "EP2",
+    "contexto": "AON",
+    "canonico": "E-P2",
+    "fuente": "Data_Email",
+    "n_piezas": 4,
+    "piezas_muestra": [
+     "001-P011",
+     "001-P012",
+     "001-P017",
+     "001-P018"
+    ],
+    "piezas_truncado": false
+   },
+   "EP3 @ AON": {
+    "crudo": "EP3",
+    "contexto": "AON",
+    "canonico": "E-P3",
+    "fuente": "Data_Email",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P003",
+     "001-P004",
+     "001-P019",
+     "001-P020",
+     "001-P024",
+     "001-P026"
+    ],
+    "piezas_truncado": false
+   },
+   "EP1 @ AON": {
+    "crudo": "EP1",
+    "contexto": "AON",
+    "canonico": "E-P1",
+    "fuente": "Data_Email",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "001-P005",
+     "001-P006",
+     "001-P015",
+     "001-P016",
+     "001-P025",
+     "001-P027"
+    ],
+    "piezas_truncado": false
+   },
+   "TP1 @ AON": {
+    "crudo": "TP1",
+    "contexto": "AON",
+    "canonico": "E-L1",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "001-P013",
+     "001-P014"
+    ],
+    "piezas_truncado": false
+   },
+   "vacios-medir @ Hotcakes": {
+    "crudo": "vacios-medir",
+    "contexto": "Hotcakes",
+    "canonico": "E-P1",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P001",
+     "002-P005"
+    ],
+    "piezas_truncado": false
+   },
+   "vacios-llenar @ Hotcakes": {
+    "crudo": "vacios-llenar",
+    "contexto": "Hotcakes",
+    "canonico": "E-P2",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P002",
+     "002-P006"
+    ],
+    "piezas_truncado": false
+   },
+   "V3 @ Hotcakes": {
+    "crudo": "V3",
+    "contexto": "Hotcakes",
+    "canonico": "E-P3",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P003",
+     "002-P007"
+    ],
+    "piezas_truncado": false
+   },
+   "V4 @ Hotcakes": {
+    "crudo": "V4",
+    "contexto": "Hotcakes",
+    "canonico": "E-P4",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P004",
+     "002-P008"
+    ],
+    "piezas_truncado": false
+   },
+   "EL1 @ Hotcakes": {
+    "crudo": "EL1",
+    "contexto": "Hotcakes",
+    "canonico": "E-L1",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P009",
+     "002-P013"
+    ],
+    "piezas_truncado": false
+   },
+   "EL2 @ Hotcakes": {
+    "crudo": "EL2",
+    "contexto": "Hotcakes",
+    "canonico": "E-L2",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P010",
+     "002-P014"
+    ],
+    "piezas_truncado": false
+   },
+   "EL3 @ Hotcakes": {
+    "crudo": "EL3",
+    "contexto": "Hotcakes",
+    "canonico": "E-L3",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P011",
+     "002-P015"
+    ],
+    "piezas_truncado": false
+   },
+   "EL4 @ Hotcakes": {
+    "crudo": "EL4",
+    "contexto": "Hotcakes",
+    "canonico": "E-L4",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P012",
+     "002-P016"
+    ],
+    "piezas_truncado": false
+   },
+   "TP2 @ Hotcakes": {
+    "crudo": "TP2",
+    "contexto": "Hotcakes",
+    "canonico": "E-I2",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P017",
+     "002-P018"
+    ],
+    "piezas_truncado": false
+   },
+   "TP1 @ Hotcakes": {
+    "crudo": "TP1",
+    "contexto": "Hotcakes",
+    "canonico": "E-I1",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "002-P019",
+     "002-P020"
+    ],
+    "piezas_truncado": false
+   },
+   "Partido 1 @ Mundial": {
+    "crudo": "Partido 1",
+    "contexto": "Mundial",
+    "canonico": "E-P1",
+    "fuente": "Data_Email",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P001",
+     "004-P002",
+     "004-P003"
+    ],
+    "piezas_truncado": false
+   },
+   "Partido 2 @ Mundial": {
+    "crudo": "Partido 2",
+    "contexto": "Mundial",
+    "canonico": "E-P2",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "004-P004",
+     "004-P005"
+    ],
+    "piezas_truncado": false
+   },
+   "Partido 3 @ Mundial": {
+    "crudo": "Partido 3",
+    "contexto": "Mundial",
+    "canonico": "E-P3",
+    "fuente": "Data_Email",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "004-P006",
+     "004-P007",
+     "004-P008"
+    ],
+    "piezas_truncado": false
+   },
+   "vacios-medir @ Tercer Tiempo": {
+    "crudo": "vacios-medir",
+    "contexto": "Tercer Tiempo",
+    "canonico": "E-P1",
+    "fuente": "Data_Email",
+    "n_piezas": 6,
+    "piezas_muestra": [
+     "008-P001",
+     "008-P002",
+     "008-P003",
+     "008-P004",
+     "008-P005",
+     "008-P006"
+    ],
+    "piezas_truncado": false
+   },
+   "E-C1 @ Antojo Infinito": {
+    "crudo": "E-C1",
+    "contexto": "Antojo Infinito",
+    "canonico": "E-C1",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "003-P001",
+     "003-P002"
+    ],
+    "piezas_truncado": false
+   },
+   "TP1 @ Fuel for life": {
+    "crudo": "TP1",
+    "contexto": "Fuel for life",
+    "canonico": "E-A1",
+    "fuente": "Data_Email",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "009-P001"
+    ],
+    "piezas_truncado": false
+   },
+   "TP3 @ Fuel for life": {
+    "crudo": "TP3",
+    "contexto": "Fuel for life",
+    "canonico": "E-E3",
+    "fuente": "Data_Email",
+    "n_piezas": 3,
+    "piezas_muestra": [
+     "009-P002",
+     "009-P003",
+     "009-P004"
+    ],
+    "piezas_truncado": false
+   },
+   "Partido 4 @ Mundial": {
+    "crudo": "Partido 4",
+    "contexto": "Mundial",
+    "canonico": "E-P4",
+    "fuente": "Data_Email",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "004-P009"
+    ],
+    "piezas_truncado": false
+   },
+   "E-A1 @ The Freshers": {
+    "crudo": "E-A1",
+    "contexto": "The Freshers",
+    "canonico": "E-A1",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "006-P001",
+     "006-P002"
+    ],
+    "piezas_truncado": false
+   },
+   "E-Hack1 @ Hackea tu café": {
+    "crudo": "E-Hack1",
+    "contexto": "Hackea tu café",
+    "canonico": "E-A1",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "007-P001",
+     "007-P002"
+    ],
+    "piezas_truncado": false
+   },
+   "E-Hack2 @ Hackea tu café": {
+    "crudo": "E-Hack2",
+    "contexto": "Hackea tu café",
+    "canonico": "E-A2",
+    "fuente": "Data_Email",
+    "n_piezas": 2,
+    "piezas_muestra": [
+     "007-P003",
+     "007-P004"
+    ],
+    "piezas_truncado": false
+   },
+   "TP2 @ Fuel for life": {
+    "crudo": "TP2",
+    "contexto": "Fuel for life",
+    "canonico": "E-A2",
+    "fuente": "Data_Email",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "009-P005"
+    ],
+    "piezas_truncado": false
+   },
+   "Envío 1 @ Tercer Tiempo": {
+    "crudo": "Envío 1",
+    "contexto": "Tercer Tiempo",
+    "canonico": "WA-1",
+    "fuente": "Data_Email",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "008-P007"
+    ],
+    "piezas_truncado": false
+   },
+   "Envío 2 @ Tercer Tiempo": {
+    "crudo": "Envío 2",
+    "contexto": "Tercer Tiempo",
+    "canonico": "WA-2",
+    "fuente": "Data_Email",
+    "n_piezas": 1,
+    "piezas_muestra": [
+     "008-P008"
+    ],
+    "piezas_truncado": false
+   },
+   "Segundo Partido @ Mundial": {
+    "crudo": "Segundo Partido",
+    "contexto": "Mundial",
+    "canonico": "Partido 2",
+    "fuente": "declarado 24-ago",
+    "n_piezas": 0,
+    "piezas_muestra": [],
+    "piezas_truncado": false
+   },
+   "Tercer Partido @ Mundial": {
+    "crudo": "Tercer Partido",
+    "contexto": "Mundial",
+    "canonico": "Partido 3",
+    "fuente": "declarado 24-ago",
+    "n_piezas": 0,
+    "piezas_muestra": [],
+    "piezas_truncado": false
+   }
+  }
+ },
+ "vocabulario": {
+  "Bu": [
+   {
+    "valor": "RN",
+    "fuente": "lista cerrada",
+    "n_piezas": 77
+   },
+   {
+    "valor": "Nescafé",
+    "fuente": "lista cerrada",
+    "n_piezas": 14
+   },
+   {
+    "valor": "Family Nes",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Purina",
+    "fuente": "lista cerrada",
+    "n_piezas": 5
+   }
+  ],
+  "Marca": [
+   {
+    "valor": "Carnation",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "La Lechera",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "Carnation, La Lechera",
+    "fuente": "lista cerrada",
+    "n_piezas": 24
+   },
+   {
+    "valor": "Maggi",
+    "fuente": "lista cerrada",
+    "n_piezas": 23
+   },
+   {
+    "valor": "Masterbrand",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "NIDO",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "NAN",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Pro Plan",
+    "fuente": "lista cerrada",
+    "n_piezas": 5
+   },
+   {
+    "valor": "Recetas Nestlé",
+    "fuente": "lista cerrada",
+    "n_piezas": 28
+   },
+   {
+    "valor": "Recetario Gamer",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "NIN, Purina",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "ICE",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "Concentrate",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Taster Choice",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Clásico",
+    "fuente": "lista cerrada",
+    "n_piezas": 8
+   },
+   {
+    "valor": "CoffeMatte",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   }
+  ],
+  "Campana": [
+   {
+    "valor": "Hotcakes",
+    "fuente": "lista cerrada",
+    "n_piezas": 24
+   },
+   {
+    "valor": "AON",
+    "fuente": "lista cerrada",
+    "n_piezas": 28
+   },
+   {
+    "valor": "Mundial",
+    "fuente": "lista cerrada",
+    "n_piezas": 19
+   },
+   {
+    "valor": "Liga MX",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "The Freshers",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "Hackea tu café",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Tercer Tiempo",
+    "fuente": "lista cerrada",
+    "n_piezas": 8
+   },
+   {
+    "valor": "Checo",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Navidad",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "La Lechera",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Carnation",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Antojo Infinito",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "AON NAN",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Fuel for life",
+    "fuente": "lista cerrada",
+    "n_piezas": 5
+   },
+   {
+    "valor": "Winback",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Prevensión Churn",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Perfilamiento Growth Drivers",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Especializados NAN",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Crossbrand NIN+Purina",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "You Can",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Marvel",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Art by Choice",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Por confirmar",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   }
+  ],
+  "Objetivo": [
+   {
+    "valor": "Awareness",
+    "fuente": "lista cerrada",
+    "n_piezas": 8
+   },
+   {
+    "valor": "Consider",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "Purchase",
+    "fuente": "lista cerrada",
+    "n_piezas": 65
+   },
+   {
+    "valor": "Loyalty",
+    "fuente": "lista cerrada",
+    "n_piezas": 10
+   },
+   {
+    "valor": "Enrichment",
+    "fuente": "lista cerrada",
+    "n_piezas": 3
+   },
+   {
+    "valor": "Reactivación pre-churn",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Premios",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Inspiration",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Recaptación",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Descarga App",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Por definir",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   }
+  ],
+  "Canal": [
+   {
+    "valor": "Email",
+    "fuente": "lista cerrada",
+    "n_piezas": 80
+   },
+   {
+    "valor": "WhatsApp",
+    "fuente": "lista cerrada",
+    "n_piezas": 16
+   }
+  ],
+  "Segmento": [
+   {
+    "valor": "Activos",
+    "fuente": "lista cerrada",
+    "n_piezas": 10
+   },
+   {
+    "valor": "Amazon",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Bebidas",
+    "fuente": "lista cerrada",
+    "n_piezas": 6
+   },
+   {
+    "valor": "Botana",
+    "fuente": "lista cerrada",
+    "n_piezas": 5
+   },
+   {
+    "valor": "Career Focused",
+    "fuente": "lista cerrada",
+    "n_piezas": 6
+   },
+   {
+    "valor": "Combinado",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Dinkies y Empty Nesters",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "FamilyKids",
+    "fuente": "lista cerrada",
+    "n_piezas": 5
+   },
+   {
+    "valor": "Futboleros",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Futboleros Liga MX",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Gen Z Indulgentes",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "Indulgentes",
+    "fuente": "lista cerrada",
+    "n_piezas": 5
+   },
+   {
+    "valor": "Interés Salado",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Modern Cooking",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "New Parents",
+    "fuente": "lista cerrada",
+    "n_piezas": 6
+   },
+   {
+    "valor": "Premium",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Pro Plan Aspiracionales",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "Pro Plan Educated Pet Owners",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "Pro Plan Pet Parents",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "Productive Adults",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "Prácticos",
+    "fuente": "lista cerrada",
+    "n_piezas": 5
+   },
+   {
+    "valor": "Reposteros",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Saludables",
+    "fuente": "lista cerrada",
+    "n_piezas": 5
+   },
+   {
+    "valor": "Sin Cluster",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "Traditional Parents",
+    "fuente": "lista cerrada",
+    "n_piezas": 6
+   },
+   {
+    "valor": "Usuarios con Engagement",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "Walmart",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "Wellness Navigators",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "Young Creatives",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   }
+  ],
+  "Touchpoint": [
+   {
+    "valor": "E-A1",
+    "fuente": "lista cerrada",
+    "n_piezas": 5
+   },
+   {
+    "valor": "E-A2",
+    "fuente": "lista cerrada",
+    "n_piezas": 3
+   },
+   {
+    "valor": "E-C1",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "E-D1",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "E-D2",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "E-E3",
+    "fuente": "lista cerrada",
+    "n_piezas": 3
+   },
+   {
+    "valor": "E-I1",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "E-I2",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "E-L1",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "E-L2",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "E-L3",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "E-L4",
+    "fuente": "lista cerrada",
+    "n_piezas": 2
+   },
+   {
+    "valor": "E-P1",
+    "fuente": "lista cerrada",
+    "n_piezas": 18
+   },
+   {
+    "valor": "E-P2",
+    "fuente": "lista cerrada",
+    "n_piezas": 9
+   },
+   {
+    "valor": "E-P3",
+    "fuente": "lista cerrada",
+    "n_piezas": 11
+   },
+   {
+    "valor": "E-P4",
+    "fuente": "lista cerrada",
+    "n_piezas": 10
+   },
+   {
+    "valor": "E-P6",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "WA-1",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "WA-2",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "WA-C1",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "WA-C2",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "WA-C3",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "WA-C4",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "WA-P2",
+    "fuente": "lista cerrada",
+    "n_piezas": 3
+   },
+   {
+    "valor": "WA-P3",
+    "fuente": "lista cerrada",
+    "n_piezas": 4
+   },
+   {
+    "valor": "WA-P6",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "WA-P7",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   },
+   {
+    "valor": "WA-P8",
+    "fuente": "lista cerrada",
+    "n_piezas": 1
+   }
+  ],
+  "Tienda": [
+   {
+    "valor": "Walmart",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   },
+   {
+    "valor": "Chedraui",
+    "fuente": "lista cerrada",
+    "n_piezas": 0
+   }
+  ]
+ },
+ "escalera": [
+  "canonico",
+  "campana_segmento (contexto)",
+  "campana",
+  "utm",
+  "global",
+  "FRENA: no se adivina"
+ ],
+ "llave_del_alias": "Dimension + Valor_Crudo + Contexto — un alias NO es global"
+}

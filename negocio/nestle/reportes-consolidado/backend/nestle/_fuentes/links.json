@@ -1,0 +1,5658 @@
+{
+ "paso": "motor-clicks",
+ "generado_por": "motor.links.js",
+ "fuente": "SFMC · CRM_Email_Links",
+ "llave": "ConfigKey = pieza_id",
+ "clases": "el destino se lee de la URL: qcart · app · social · unsub · ver_en_navegador · web · otro",
+ "piezas": {
+  "001-P001": {
+   "pieza_id": "001-P001",
+   "links": 7,
+   "clicks_total": 308,
+   "clicks_unicos": 227,
+   "por_destino": {
+    "app": 12,
+    "qcart": 122,
+    "contenido": 70,
+    "baja_preferencias": 13,
+    "ver_en_navegador": 10
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 70,
+     "total": 88
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/E8RDSsHg",
+     "nombre": "recetasnestlmx.qcart.app/E8RDSsHg",
+     "unicos": 62,
+     "total": 79
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/9Bm8slOi",
+     "nombre": "recetasnestlmx.qcart.app/9Bm8slOi",
+     "unicos": 60,
+     "total": 92
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 13,
+     "total": 21
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 10,
+     "total": 14
+    }
+   ],
+   "_cks": {
+    "001-P001": 1
+   },
+   "clicks_medidos": 227,
+   "clicks_de_prueba": 3
+  },
+  "001-P002": {
+   "pieza_id": "001-P002",
+   "links": 13,
+   "clicks_total": 192,
+   "clicks_unicos": 148,
+   "por_destino": {
+    "app": 6,
+    "qcart": 71,
+    "social": 8,
+    "legal": 2,
+    "contenido": 44,
+    "baja_preferencias": 11,
+    "ver_en_navegador": 6
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 44,
+     "total": 58
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/9Bm8slOi",
+     "nombre": "recetasnestlmx.qcart.app/9Bm8slOi",
+     "unicos": 37,
+     "total": 51
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/E8RDSsHg",
+     "nombre": "recetasnestlmx.qcart.app/E8RDSsHg",
+     "unicos": 34,
+     "total": 43
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 11,
+     "total": 12
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 6,
+     "total": 7
+    }
+   ],
+   "_cks": {
+    "001-P002": 1
+   },
+   "clicks_medidos": 148
+  },
+  "001-P003": {
+   "pieza_id": "001-P003",
+   "links": 5,
+   "clicks_total": 83,
+   "clicks_unicos": 54,
+   "por_destino": {
+    "qcart": 44,
+    "contenido": 1,
+    "app": 3,
+    "ver_en_navegador": 6
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/ETJFEOzD",
+     "nombre": "recetasnestlmx.qcart.app/ETJFEOzD",
+     "unicos": 27,
+     "total": 42
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/1iqH9Tx7",
+     "nombre": "recetasnestlmx.qcart.app/1iqH9Tx7",
+     "unicos": 17,
+     "total": 23
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 6,
+     "total": 13
+    },
+    {
+     "destino": "app",
+     "url": "https://play.google.com/store/apps/details?id=com.nestle.mx.recetas.recetasnestle&hl=es",
+     "nombre": "play.google.com/store/apps/details",
+     "unicos": 3,
+     "total": 4
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "001-P003": 1
+   },
+   "clicks_medidos": 54,
+   "clicks_de_prueba": 2
+  },
+  "001-P004": {
+   "pieza_id": "001-P004",
+   "links": 5,
+   "clicks_total": 42,
+   "clicks_unicos": 28,
+   "por_destino": {
+    "qcart": 20,
+    "contenido": 3,
+    "baja_preferencias": 1,
+    "ver_en_navegador": 4
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/ETJFEOzD",
+     "nombre": "recetasnestlmx.qcart.app/ETJFEOzD",
+     "unicos": 11,
+     "total": 13
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/1iqH9Tx7",
+     "nombre": "recetasnestlmx.qcart.app/1iqH9Tx7",
+     "unicos": 9,
+     "total": 18
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 4,
+     "total": 6
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 3,
+     "total": 3
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 1,
+     "total": 2
+    }
+   ],
+   "_cks": {
+    "001-P004": 1
+   },
+   "clicks_medidos": 28
+  },
+  "001-P005": {
+   "pieza_id": "001-P005",
+   "links": 8,
+   "clicks_total": 632,
+   "clicks_unicos": 425,
+   "por_destino": {
+    "app": 27,
+    "qcart": 307,
+    "social": 1,
+    "contenido": 56,
+    "baja_preferencias": 15,
+    "ver_en_navegador": 19
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/vgMqmCrL",
+     "nombre": "recetasnestlmx.qcart.app/vgMqmCrL",
+     "unicos": 163,
+     "total": 260
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/uDEM0jlX",
+     "nombre": "recetasnestlmx.qcart.app/uDEM0jlX",
+     "unicos": 144,
+     "total": 210
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 56,
+     "total": 80
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 19,
+     "total": 24
+    },
+    {
+     "destino": "app",
+     "url": "https://play.google.com/store/apps/details?id=com.nestle.mx.recetas.recetasnestle&hl=es",
+     "nombre": "play.google.com/store/apps/details",
+     "unicos": 18,
+     "total": 22
+    }
+   ],
+   "_cks": {
+    "001-P005": 1
+   },
+   "clicks_medidos": 425,
+   "clicks_de_prueba": 5
+  },
+  "001-P006": {
+   "pieza_id": "001-P006",
+   "links": 7,
+   "clicks_total": 241,
+   "clicks_unicos": 166,
+   "por_destino": {
+    "app": 3,
+    "qcart": 117,
+    "contenido": 22,
+    "baja_preferencias": 12,
+    "ver_en_navegador": 12
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/vgMqmCrL",
+     "nombre": "recetasnestlmx.qcart.app/vgMqmCrL",
+     "unicos": 63,
+     "total": 93
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/uDEM0jlX",
+     "nombre": "recetasnestlmx.qcart.app/uDEM0jlX",
+     "unicos": 54,
+     "total": 84
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 22,
+     "total": 30
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 12,
+     "total": 17
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 12,
+     "total": 14
+    }
+   ],
+   "_cks": {
+    "001-P006": 1
+   },
+   "clicks_medidos": 166
+  },
+  "001-P007": {
+   "pieza_id": "001-P007",
+   "links": 10,
+   "clicks_total": 3341,
+   "clicks_unicos": 2348,
+   "por_destino": {
+    "app": 1543,
+    "social": 133,
+    "legal": 27,
+    "contenido": 349,
+    "ver_en_navegador": 296
+   },
+   "top": [
+    {
+     "destino": "app",
+     "url": "https://play.google.com/store/apps/details?id=com.nestle.mx.recetas.recetasnestle&hl=es",
+     "nombre": "play.google.com/store/apps/details",
+     "unicos": 881,
+     "total": 1176
+    },
+    {
+     "destino": "app",
+     "url": "https://apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058",
+     "nombre": "apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058",
+     "unicos": 662,
+     "total": 916
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 349,
+     "total": 552
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 296,
+     "total": 447
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "facebook.com/RecetasNestleMX",
+     "unicos": 32,
+     "total": 46
+    }
+   ],
+   "_cks": {
+    "001-P007": 1
+   },
+   "clicks_medidos": 2348
+  },
+  "001-P008": {
+   "pieza_id": "001-P008",
+   "links": 10,
+   "clicks_total": 1306,
+   "clicks_unicos": 965,
+   "por_destino": {
+    "app": 598,
+    "social": 68,
+    "legal": 16,
+    "contenido": 167,
+    "ver_en_navegador": 116
+   },
+   "top": [
+    {
+     "destino": "app",
+     "url": "https://play.google.com/store/apps/details?id=com.nestle.mx.recetas.recetasnestle&hl=es",
+     "nombre": "play.google.com/store/apps/details",
+     "unicos": 437,
+     "total": 586
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 167,
+     "total": 260
+    },
+    {
+     "destino": "app",
+     "url": "https://apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058",
+     "nombre": "apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058",
+     "unicos": 161,
+     "total": 207
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 116,
+     "total": 153
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "facebook.com/RecetasNestleMX",
+     "unicos": 17,
+     "total": 17
+    }
+   ],
+   "_cks": {
+    "001-P008": 1
+   },
+   "clicks_medidos": 965
+  },
+  "001-P009": {
+   "pieza_id": "001-P009",
+   "links": 10,
+   "clicks_total": 1720,
+   "clicks_unicos": 1177,
+   "por_destino": {
+    "app": 700,
+    "social": 87,
+    "legal": 31,
+    "baja_preferencias": 197,
+    "ver_en_navegador": 162
+   },
+   "top": [
+    {
+     "destino": "app",
+     "url": "https://play.google.com/store/apps/details?id=com.nestle.mx.recetas.recetasnestle&hl=es",
+     "nombre": "play.google.com/store/apps/details",
+     "unicos": 394,
+     "total": 564
+    },
+    {
+     "destino": "app",
+     "url": "https://apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058",
+     "nombre": "apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058",
+     "unicos": 306,
+     "total": 419
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 197,
+     "total": 292
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 162,
+     "total": 241
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "aviso_priv",
+     "unicos": 31,
+     "total": 58
+    }
+   ],
+   "_cks": {
+    "001-P009": 1
+   },
+   "clicks_medidos": 1177
+  },
+  "001-P010": {
+   "pieza_id": "001-P010",
+   "links": 10,
+   "clicks_total": 336,
+   "clicks_unicos": 259,
+   "por_destino": {
+    "app": 163,
+    "social": 8,
+    "legal": 3,
+    "baja_preferencias": 67,
+    "ver_en_navegador": 18
+   },
+   "top": [
+    {
+     "destino": "app",
+     "url": "https://play.google.com/store/apps/details?id=com.nestle.mx.recetas.recetasnestle&hl=es",
+     "nombre": "play.google.com/store/apps/details",
+     "unicos": 112,
+     "total": 153
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 67,
+     "total": 84
+    },
+    {
+     "destino": "app",
+     "url": "https://apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058",
+     "nombre": "apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058",
+     "unicos": 51,
+     "total": 62
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 18,
+     "total": 24
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "aviso_priv",
+     "unicos": 3,
+     "total": 5
+    }
+   ],
+   "_cks": {
+    "001-P010": 1
+   },
+   "clicks_medidos": 259
+  },
+  "001-P011": {
+   "pieza_id": "001-P011",
+   "links": 10,
+   "clicks_total": 538,
+   "clicks_unicos": 390,
+   "por_destino": {
+    "social": 30,
+    "legal": 4,
+    "contenido": 95,
+    "qcart": 219,
+    "ver_en_navegador": 42
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/YdlUlPrm",
+     "nombre": "recetasnestlmx.qcart.app/YdlUlPrm",
+     "unicos": 219,
+     "total": 300
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 74,
+     "total": 102
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 42,
+     "total": 54
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 21,
+     "total": 34
+    },
+    {
+     "destino": "social",
+     "url": "https://www.tiktok.com/@recetasnestlemx?lang=es",
+     "nombre": "TikTok",
+     "unicos": 7,
+     "total": 10
+    }
+   ],
+   "_cks": {
+    "001-P011": 1
+   },
+   "clicks_medidos": 390
+  },
+  "001-P012": {
+   "pieza_id": "001-P012",
+   "links": 10,
+   "clicks_total": 283,
+   "clicks_unicos": 202,
+   "por_destino": {
+    "social": 14,
+    "legal": 3,
+    "contenido": 60,
+    "qcart": 102,
+    "ver_en_navegador": 23
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/YdlUlPrm",
+     "nombre": "recetasnestlmx.qcart.app/YdlUlPrm",
+     "unicos": 102,
+     "total": 144
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 37,
+     "total": 50
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 23,
+     "total": 31
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 23,
+     "total": 30
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/recetasnestle/",
+     "nombre": "Instagram",
+     "unicos": 4,
+     "total": 6
+    }
+   ],
+   "_cks": {
+    "001-P012": 1
+   },
+   "clicks_medidos": 202
+  },
+  "001-P013": {
+   "pieza_id": "001-P013",
+   "links": 10,
+   "clicks_total": 3115,
+   "clicks_unicos": 2316,
+   "por_destino": {
+    "social": 1729,
+    "legal": 30,
+    "contenido": 456,
+    "ver_en_navegador": 101
+   },
+   "top": [
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/",
+     "nombre": "instagram.com/",
+     "unicos": 1344,
+     "total": 1828
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 239,
+     "total": 355
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 217,
+     "total": 275
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 101,
+     "total": 133
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 85,
+     "total": 103
+    }
+   ],
+   "_cks": {
+    "001-P013": 1
+   },
+   "clicks_medidos": 2316
+  },
+  "001-P014": {
+   "pieza_id": "001-P014",
+   "links": 10,
+   "clicks_total": 1006,
+   "clicks_unicos": 798,
+   "por_destino": {
+    "social": 613,
+    "legal": 7,
+    "contenido": 148,
+    "ver_en_navegador": 30
+   },
+   "top": [
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/",
+     "nombre": "instagram.com/",
+     "unicos": 387,
+     "total": 510
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 83,
+     "total": 120
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 65,
+     "total": 88
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/recetasnestle/",
+     "nombre": "Instagram",
+     "unicos": 46,
+     "total": 46
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 45,
+     "total": 45
+    }
+   ],
+   "_cks": {
+    "001-P014": 1
+   },
+   "clicks_medidos": 798
+  },
+  "001-P015": {
+   "pieza_id": "001-P015",
+   "links": 12,
+   "clicks_total": 1381,
+   "clicks_unicos": 911,
+   "por_destino": {
+    "qcart": 229,
+    "social": 24,
+    "legal": 10,
+    "contenido": 486,
+    "baja_preferencias": 85,
+    "ver_en_navegador": 77
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 383,
+     "total": 547
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/PySVWRVY",
+     "nombre": "recetasnestlmx.qcart.app/PySVWRVY",
+     "unicos": 161,
+     "total": 222
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 103,
+     "total": 144
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 85,
+     "total": 143
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 77,
+     "total": 131
+    }
+   ],
+   "_cks": {
+    "001-P015": 1
+   },
+   "clicks_medidos": 911
+  },
+  "001-P016": {
+   "pieza_id": "001-P016",
+   "links": 12,
+   "clicks_total": 513,
+   "clicks_unicos": 372,
+   "por_destino": {
+    "qcart": 90,
+    "social": 9,
+    "legal": 10,
+    "contenido": 172,
+    "baja_preferencias": 54,
+    "ver_en_navegador": 37
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 134,
+     "total": 186
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/PySVWRVY",
+     "nombre": "recetasnestlmx.qcart.app/PySVWRVY",
+     "unicos": 61,
+     "total": 71
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 54,
+     "total": 85
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 38,
+     "total": 44
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 37,
+     "total": 61
+    }
+   ],
+   "_cks": {
+    "001-P016": 1
+   },
+   "clicks_medidos": 372
+  },
+  "001-P017": {
+   "pieza_id": "001-P017",
+   "links": 11,
+   "clicks_total": 1014,
+   "clicks_unicos": 636,
+   "por_destino": {
+    "social": 19,
+    "legal": 5,
+    "contenido": 353,
+    "baja_preferencias": 34,
+    "qcart": 170,
+    "ver_en_navegador": 55
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 267,
+     "total": 391
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/xj2gTnHI",
+     "nombre": "recetasnestlmx.qcart.app/xj2gTnHI",
+     "unicos": 170,
+     "total": 255
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 86,
+     "total": 121
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 55,
+     "total": 79
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 34,
+     "total": 63
+    }
+   ],
+   "_cks": {
+    "001-P017": 1
+   },
+   "clicks_medidos": 636
+  },
+  "001-P018": {
+   "pieza_id": "001-P018",
+   "links": 10,
+   "clicks_total": 229,
+   "clicks_unicos": 163,
+   "por_destino": {
+    "social": 5,
+    "legal": 2,
+    "contenido": 98,
+    "baja_preferencias": 19,
+    "qcart": 29,
+    "ver_en_navegador": 10
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 74,
+     "total": 116
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/xj2gTnHI",
+     "nombre": "recetasnestlmx.qcart.app/xj2gTnHI",
+     "unicos": 29,
+     "total": 35
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 24,
+     "total": 30
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 19,
+     "total": 25
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 10,
+     "total": 15
+    }
+   ],
+   "_cks": {
+    "001-P018": 1
+   },
+   "clicks_medidos": 163
+  },
+  "001-P019": {
+   "pieza_id": "001-P019",
+   "links": 11,
+   "clicks_total": 705,
+   "clicks_unicos": 383,
+   "por_destino": {
+    "social": 22,
+    "legal": 7,
+    "contenido": 209,
+    "baja_preferencias": 49,
+    "qcart": 58,
+    "ver_en_navegador": 38
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 171,
+     "total": 258
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/KO3vgQok",
+     "nombre": "recetasnestlmx.qcart.app/KO3vgQok",
+     "unicos": 58,
+     "total": 117
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 49,
+     "total": 85
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 38,
+     "total": 68
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 38,
+     "total": 61
+    }
+   ],
+   "_cks": {
+    "001-P019": 1
+   },
+   "clicks_medidos": 383
+  },
+  "001-P020": {
+   "pieza_id": "001-P020",
+   "links": 11,
+   "clicks_total": 356,
+   "clicks_unicos": 231,
+   "por_destino": {
+    "social": 12,
+    "legal": 3,
+    "contenido": 133,
+    "baja_preferencias": 36,
+    "qcart": 29,
+    "ver_en_navegador": 18
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 104,
+     "total": 138
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 36,
+     "total": 66
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 29,
+     "total": 42
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/KO3vgQok",
+     "nombre": "recetasnestlmx.qcart.app/KO3vgQok",
+     "unicos": 29,
+     "total": 41
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 18,
+     "total": 45
+    }
+   ],
+   "_cks": {
+    "001-P020": 1
+   },
+   "clicks_medidos": 231
+  },
+  "001-P021": {
+   "pieza_id": "001-P021",
+   "links": 13,
+   "clicks_total": 2389,
+   "clicks_unicos": 1459,
+   "por_destino": {
+    "social": 42,
+    "legal": 27,
+    "contenido": 489,
+    "baja_preferencias": 242,
+    "qcart": 564,
+    "ver_en_navegador": 95
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 347,
+     "total": 505
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 242,
+     "total": 431
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/GblUR93I",
+     "nombre": "recetasnestlmx.qcart.app/GblUR93I",
+     "unicos": 220,
+     "total": 307
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/hhzYOf18",
+     "nombre": "recetasnestlmx.qcart.app/hhzYOf18",
+     "unicos": 213,
+     "total": 312
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 142,
+     "total": 214
+    }
+   ],
+   "_cks": {
+    "001-P021": 1
+   },
+   "clicks_medidos": 1459
+  },
+  "001-P022": {
+   "pieza_id": "001-P022",
+   "links": 12,
+   "clicks_total": 894,
+   "clicks_unicos": 637,
+   "por_destino": {
+    "social": 8,
+    "legal": 9,
+    "contenido": 206,
+    "baja_preferencias": 107,
+    "qcart": 278,
+    "ver_en_navegador": 29
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 148,
+     "total": 197
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/GblUR93I",
+     "nombre": "recetasnestlmx.qcart.app/GblUR93I",
+     "unicos": 120,
+     "total": 169
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 107,
+     "total": 170
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/hhzYOf18",
+     "nombre": "recetasnestlmx.qcart.app/hhzYOf18",
+     "unicos": 104,
+     "total": 139
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 58,
+     "total": 85
+    }
+   ],
+   "_cks": {
+    "001-P022": 1
+   },
+   "clicks_medidos": 637
+  },
+  "001-P023": {
+   "pieza_id": "001-P023",
+   "links": 10,
+   "clicks_total": 286,
+   "clicks_unicos": 203,
+   "por_destino": {
+    "social": 5,
+    "legal": 2,
+    "contenido": 52,
+    "qcart": 125,
+    "ver_en_navegador": 19
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/Mb4KvUvP",
+     "nombre": "recetasnestlmx.qcart.app/Mb4KvUvP",
+     "unicos": 125,
+     "total": 179
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 37,
+     "total": 45
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 19,
+     "total": 26
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 15,
+     "total": 20
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "unicos": 2,
+     "total": 6
+    }
+   ],
+   "_cks": {
+    "001-P023": 1
+   },
+   "clicks_medidos": 203
+  },
+  "001-P024": {
+   "pieza_id": "001-P024",
+   "links": 10,
+   "clicks_total": 152,
+   "clicks_unicos": 94,
+   "por_destino": {
+    "social": 10,
+    "legal": 2,
+    "contenido": 13,
+    "qcart": 57,
+    "ver_en_navegador": 12
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/os3U6hWb",
+     "nombre": "recetasnestlmx.qcart.app/os3U6hWb",
+     "unicos": 57,
+     "total": 89
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 12,
+     "total": 17
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 10,
+     "total": 12
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 3,
+     "total": 5
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 2,
+     "total": 5
+    }
+   ],
+   "_cks": {
+    "001-P024": 1
+   },
+   "clicks_medidos": 94
+  },
+  "001-P025": {
+   "pieza_id": "001-P025",
+   "links": 11,
+   "clicks_total": 428,
+   "clicks_unicos": 292,
+   "por_destino": {
+    "social": 21,
+    "legal": 7,
+    "contenido": 19,
+    "baja_preferencias": 22,
+    "qcart": 209,
+    "ver_en_navegador": 14
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/kzFAiKMv",
+     "nombre": "recetasnestlmx.qcart.app/kzFAiKMv",
+     "unicos": 158,
+     "total": 222
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/SGm6GxjJ",
+     "nombre": "recetasnestlmx.qcart.app/SGm6GxjJ",
+     "unicos": 51,
+     "total": 73
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 22,
+     "total": 33
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 19,
+     "total": 28
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 14,
+     "total": 21
+    }
+   ],
+   "_cks": {
+    "001-P025": 1
+   },
+   "clicks_medidos": 292
+  },
+  "001-P026": {
+   "pieza_id": "001-P026",
+   "links": 10,
+   "clicks_total": 78,
+   "clicks_unicos": 58,
+   "por_destino": {
+    "social": 6,
+    "legal": 1,
+    "contenido": 12,
+    "qcart": 34,
+    "ver_en_navegador": 5
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/os3U6hWb",
+     "nombre": "recetasnestlmx.qcart.app/os3U6hWb",
+     "unicos": 34,
+     "total": 47
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 10,
+     "total": 12
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 5,
+     "total": 7
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 2,
+     "total": 2
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 2,
+     "total": 4
+    }
+   ],
+   "_cks": {
+    "001-P026": 1
+   },
+   "clicks_medidos": 58
+  },
+  "001-P027": {
+   "pieza_id": "001-P027",
+   "links": 5,
+   "clicks_total": 220,
+   "clicks_unicos": 163,
+   "por_destino": {
+    "contenido": 15,
+    "baja_preferencias": 16,
+    "qcart": 126,
+    "ver_en_navegador": 6
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/kzFAiKMv",
+     "nombre": "recetasnestlmx.qcart.app/kzFAiKMv",
+     "unicos": 96,
+     "total": 128
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/SGm6GxjJ",
+     "nombre": "recetasnestlmx.qcart.app/SGm6GxjJ",
+     "unicos": 30,
+     "total": 35
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 16,
+     "total": 28
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 15,
+     "total": 20
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 6,
+     "total": 9
+    }
+   ],
+   "_cks": {
+    "001-P027": 1
+   },
+   "clicks_medidos": 163
+  },
+  "001-P028": {
+   "pieza_id": "001-P028",
+   "links": 6,
+   "clicks_total": 128,
+   "clicks_unicos": 95,
+   "por_destino": {
+    "social": 1,
+    "legal": 1,
+    "contenido": 27,
+    "qcart": 53,
+    "ver_en_navegador": 13
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/Mb4KvUvP",
+     "nombre": "recetasnestlmx.qcart.app/Mb4KvUvP",
+     "unicos": 53,
+     "total": 72
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 16,
+     "total": 18
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 13,
+     "total": 19
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "unicos": 11,
+     "total": 14
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "001-P028": 1
+   },
+   "clicks_medidos": 95
+  },
+  "002-P001": {
+   "pieza_id": "002-P001",
+   "links": 12,
+   "clicks_total": 179,
+   "clicks_unicos": 64,
+   "por_destino": {
+    "social": 5,
+    "baja_preferencias": 6,
+    "legal": 1,
+    "contenido": 41,
+    "qcart": 9,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 41,
+     "total": 68
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/NhrllATy",
+     "nombre": "recetasnestlmx.qcart.app/NhrllATy",
+     "unicos": 8,
+     "total": 16
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 4,
+     "total": 14
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=RedirectTo(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 2,
+     "total": 4
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 2,
+     "total": 8
+    }
+   ],
+   "_cks": {
+    "002-P001": 1
+   },
+   "clicks_medidos": 64,
+   "clicks_de_prueba": 7
+  },
+  "002-P002": {
+   "pieza_id": "002-P002",
+   "links": 6,
+   "clicks_total": 152,
+   "clicks_unicos": 115,
+   "por_destino": {
+    "social": 2,
+    "baja_preferencias": 9,
+    "contenido": 66,
+    "qcart": 33,
+    "ver_en_navegador": 5
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 66,
+     "total": 83
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/3o1GDbRc",
+     "nombre": "recetasnestlmx.qcart.app/3o1GDbRc",
+     "unicos": 33,
+     "total": 43
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 9,
+     "total": 17
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 5,
+     "total": 7
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "002-P002": 1
+   },
+   "clicks_medidos": 115
+  },
+  "002-P003": {
+   "pieza_id": "002-P003",
+   "links": 6,
+   "clicks_total": 168,
+   "clicks_unicos": 119,
+   "por_destino": {
+    "social": 2,
+    "baja_preferencias": 13,
+    "contenido": 65,
+    "qcart": 31,
+    "ver_en_navegador": 8
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 65,
+     "total": 91
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/qrMAKnjA",
+     "nombre": "recetasnestlmx.qcart.app/qrMAKnjA",
+     "unicos": 31,
+     "total": 37
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 13,
+     "total": 26
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 8,
+     "total": 9
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/recetasnestle/",
+     "nombre": "Instagram",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "002-P003": 1
+   },
+   "clicks_medidos": 119,
+   "clicks_de_prueba": 8
+  },
+  "002-P004": {
+   "pieza_id": "002-P004",
+   "links": 11,
+   "clicks_total": 343,
+   "clicks_unicos": 171,
+   "por_destino": {
+    "social": 8,
+    "baja_preferencias": 10,
+    "legal": 3,
+    "contenido": 90,
+    "qcart": 55,
+    "ver_en_navegador": 5
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 90,
+     "total": 160
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/LU7k7fMB",
+     "nombre": "recetasnestlmx.qcart.app/LU7k7fMB",
+     "unicos": 55,
+     "total": 76
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 9,
+     "total": 23
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 5,
+     "total": 10
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "aviso_priv",
+     "unicos": 3,
+     "total": 21
+    }
+   ],
+   "_cks": {
+    "002-P004": 1
+   },
+   "clicks_medidos": 171,
+   "clicks_de_prueba": 12
+  },
+  "002-P005": {
+   "pieza_id": "002-P005",
+   "links": 4,
+   "clicks_total": 36,
+   "clicks_unicos": 24,
+   "por_destino": {
+    "baja_preferencias": 4,
+    "contenido": 14,
+    "qcart": 4,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 14,
+     "total": 21
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 4,
+     "total": 7
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/NhrllATy",
+     "nombre": "recetasnestlmx.qcart.app/NhrllATy",
+     "unicos": 4,
+     "total": 5
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 2,
+     "total": 3
+    }
+   ],
+   "_cks": {
+    "002-P005": 1
+   },
+   "clicks_medidos": 24,
+   "clicks_de_prueba": 1
+  },
+  "002-P006": {
+   "pieza_id": "002-P006",
+   "links": 4,
+   "clicks_total": 54,
+   "clicks_unicos": 37,
+   "por_destino": {
+    "baja_preferencias": 5,
+    "contenido": 16,
+    "qcart": 12,
+    "ver_en_navegador": 4
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 16,
+     "total": 26
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/3o1GDbRc",
+     "nombre": "recetasnestlmx.qcart.app/3o1GDbRc",
+     "unicos": 12,
+     "total": 14
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 5,
+     "total": 8
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 4,
+     "total": 6
+    }
+   ],
+   "_cks": {
+    "002-P006": 1
+   },
+   "clicks_medidos": 37
+  },
+  "002-P007": {
+   "pieza_id": "002-P007",
+   "links": 10,
+   "clicks_total": 111,
+   "clicks_unicos": 66,
+   "por_destino": {
+    "social": 9,
+    "baja_preferencias": 5,
+    "legal": 1,
+    "contenido": 30,
+    "qcart": 16,
+    "ver_en_navegador": 5
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 30,
+     "total": 53
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/qrMAKnjA",
+     "nombre": "recetasnestlmx.qcart.app/qrMAKnjA",
+     "unicos": 16,
+     "total": 29
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 5,
+     "total": 8
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 5,
+     "total": 9
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/recetasnestle/",
+     "nombre": "Instagram",
+     "unicos": 3,
+     "total": 3
+    }
+   ],
+   "_cks": {
+    "002-P007": 1
+   },
+   "clicks_medidos": 66
+  },
+  "002-P008": {
+   "pieza_id": "002-P008",
+   "links": 10,
+   "clicks_total": 146,
+   "clicks_unicos": 97,
+   "por_destino": {
+    "social": 5,
+    "baja_preferencias": 2,
+    "legal": 1,
+    "contenido": 45,
+    "qcart": 37,
+    "ver_en_navegador": 7
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 45,
+     "total": 68
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/LU7k7fMB",
+     "nombre": "recetasnestlmx.qcart.app/LU7k7fMB",
+     "unicos": 37,
+     "total": 49
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 7,
+     "total": 10
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 2,
+     "total": 5
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 1,
+     "total": 2
+    }
+   ],
+   "_cks": {
+    "002-P008": 1
+   },
+   "clicks_medidos": 97
+  },
+  "002-P009": {
+   "pieza_id": "002-P009",
+   "links": 11,
+   "clicks_total": 97,
+   "clicks_unicos": 22,
+   "por_destino": {
+    "social": 5,
+    "baja_preferencias": 2,
+    "legal": 1,
+    "contenido": 6,
+    "qcart": 6,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/0varyzKZ",
+     "nombre": "recetasnestlmx.qcart.app/0varyzKZ",
+     "unicos": 6,
+     "total": 16
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/login?destination=/envia-tu-receta",
+     "nombre": "recetasnestle.com.mx/login",
+     "unicos": 4,
+     "total": 11
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 2,
+     "total": 9
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 2,
+     "total": 8
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 2,
+     "total": 7
+    }
+   ],
+   "_cks": {
+    "002-P009": 1
+   },
+   "clicks_medidos": 22
+  },
+  "002-P010": {
+   "pieza_id": "002-P010",
+   "links": 5,
+   "clicks_total": 42,
+   "clicks_unicos": 31,
+   "por_destino": {
+    "baja_preferencias": 2,
+    "contenido": 21,
+    "qcart": 5,
+    "ver_en_navegador": 3
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/login?destination=/envia-tu-receta",
+     "nombre": "recetasnestle.com.mx/login",
+     "unicos": 15,
+     "total": 19
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 6,
+     "total": 7
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/0varyzKZ",
+     "nombre": "recetasnestlmx.qcart.app/0varyzKZ",
+     "unicos": 5,
+     "total": 7
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 3,
+     "total": 5
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 2,
+     "total": 4
+    }
+   ],
+   "_cks": {
+    "002-P010": 1
+   },
+   "clicks_medidos": 31
+  },
+  "002-P011": {
+   "pieza_id": "002-P011",
+   "links": 6,
+   "clicks_total": 28,
+   "clicks_unicos": 18,
+   "por_destino": {
+    "baja_preferencias": 3,
+    "legal": 2,
+    "contenido": 9,
+    "qcart": 3,
+    "ver_en_navegador": 1
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/login?destination=/envia-tu-receta",
+     "nombre": "recetasnestle.com.mx/login",
+     "unicos": 7,
+     "total": 9
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 3,
+     "total": 4
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/0varyzKZ",
+     "nombre": "recetasnestlmx.qcart.app/0varyzKZ",
+     "unicos": 3,
+     "total": 8
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "aviso_priv",
+     "unicos": 2,
+     "total": 3
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 2,
+     "total": 3
+    }
+   ],
+   "_cks": {
+    "002-P011": 1
+   },
+   "clicks_medidos": 18
+  },
+  "002-P012": {
+   "pieza_id": "002-P012",
+   "links": 6,
+   "clicks_total": 60,
+   "clicks_unicos": 48,
+   "por_destino": {
+    "legal": 1,
+    "contenido": 31,
+    "social": 1,
+    "qcart": 10,
+    "ver_en_navegador": 5
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/login?destination=/envia-tu-receta",
+     "nombre": "recetasnestle.com.mx/login",
+     "unicos": 22,
+     "total": 27
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/0varyzKZ",
+     "nombre": "recetasnestlmx.qcart.app/0varyzKZ",
+     "unicos": 10,
+     "total": 14
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 9,
+     "total": 10
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 5,
+     "total": 6
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "aviso_priv",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "002-P012": 1
+   },
+   "clicks_medidos": 48
+  },
+  "002-P013": {
+   "pieza_id": "002-P013",
+   "links": 2,
+   "clicks_total": 6,
+   "clicks_unicos": 4,
+   "por_destino": {
+    "contenido": 4
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 2,
+     "total": 3
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/login?destination=/envia-tu-receta",
+     "nombre": "recetasnestle.com.mx/login",
+     "unicos": 2,
+     "total": 3
+    }
+   ],
+   "_cks": {
+    "002-P013": 1
+   },
+   "clicks_medidos": 4
+  },
+  "002-P014": {
+   "pieza_id": "002-P014",
+   "links": 4,
+   "clicks_total": 19,
+   "clicks_unicos": 9,
+   "por_destino": {
+    "contenido": 6,
+    "qcart": 2,
+    "ver_en_navegador": 1
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/login?destination=/envia-tu-receta",
+     "nombre": "recetasnestle.com.mx/login",
+     "unicos": 4,
+     "total": 11
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 2,
+     "total": 4
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/0varyzKZ",
+     "nombre": "recetasnestlmx.qcart.app/0varyzKZ",
+     "unicos": 2,
+     "total": 3
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "002-P014": 1
+   },
+   "clicks_medidos": 9
+  },
+  "002-P015": {
+   "pieza_id": "002-P015",
+   "links": 2,
+   "clicks_total": 5,
+   "clicks_unicos": 2,
+   "por_destino": {
+    "baja_preferencias": 1,
+    "contenido": 1
+   },
+   "top": [
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 1,
+     "total": 4
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/login?destination=/envia-tu-receta",
+     "nombre": "recetasnestle.com.mx/login",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "002-P015": 1
+   },
+   "clicks_medidos": 2
+  },
+  "002-P016": {
+   "pieza_id": "002-P016",
+   "links": 4,
+   "clicks_total": 21,
+   "clicks_unicos": 15,
+   "por_destino": {
+    "contenido": 9,
+    "qcart": 4,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/login?destination=/envia-tu-receta",
+     "nombre": "recetasnestle.com.mx/login",
+     "unicos": 8,
+     "total": 10
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/0varyzKZ",
+     "nombre": "recetasnestlmx.qcart.app/0varyzKZ",
+     "unicos": 4,
+     "total": 8
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 2,
+     "total": 2
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "002-P016": 1
+   },
+   "clicks_medidos": 15
+  },
+  "002-P017": {
+   "pieza_id": "002-P017",
+   "links": 9,
+   "clicks_total": 167,
+   "clicks_unicos": 140,
+   "por_destino": {
+    "legal": 2,
+    "contenido": 98,
+    "baja_preferencias": 17,
+    "qcart": 21,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/desayunos-hot-cakes-chocolate",
+     "nombre": "recetasnestle.com.mx/recetas/desayunos-hot-cakes-chocolate",
+     "unicos": 62,
+     "total": 68
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/desayunos-hot-cakes-capuchino-facil",
+     "nombre": "recetasnestle.com.mx/recetas/desayunos-hot-cakes-capuchino-facil",
+     "unicos": 32,
+     "total": 38
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 17,
+     "total": 25
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/bd2KESe4",
+     "nombre": "recetasnestlmx.qcart.app/bd2KESe4",
+     "unicos": 13,
+     "total": 16
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/VbE5Jnb4",
+     "nombre": "recetasnestlmx.qcart.app/VbE5Jnb4",
+     "unicos": 8,
+     "total": 9
+    }
+   ],
+   "_cks": {
+    "002-P017": 1
+   },
+   "clicks_medidos": 140
+  },
+  "002-P018": {
+   "pieza_id": "002-P018",
+   "links": 7,
+   "clicks_total": 53,
+   "clicks_unicos": 44,
+   "por_destino": {
+    "contenido": 34,
+    "baja_preferencias": 4,
+    "qcart": 6
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/desayunos-hot-cakes-chocolate",
+     "nombre": "recetasnestle.com.mx/recetas/desayunos-hot-cakes-chocolate",
+     "unicos": 19,
+     "total": 23
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/desayunos-hot-cakes-capuchino-facil",
+     "nombre": "recetasnestle.com.mx/recetas/desayunos-hot-cakes-capuchino-facil",
+     "unicos": 12,
+     "total": 14
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 4,
+     "total": 4
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/bd2KESe4",
+     "nombre": "recetasnestlmx.qcart.app/bd2KESe4",
+     "unicos": 3,
+     "total": 5
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/VbE5Jnb4",
+     "nombre": "recetasnestlmx.qcart.app/VbE5Jnb4",
+     "unicos": 3,
+     "total": 3
+    }
+   ],
+   "_cks": {
+    "002-P018": 1
+   },
+   "clicks_medidos": 44
+  },
+  "002-P019": {
+   "pieza_id": "002-P019",
+   "links": 13,
+   "clicks_total": 597,
+   "clicks_unicos": 479,
+   "por_destino": {
+    "social": 11,
+    "legal": 4,
+    "contenido": 387,
+    "baja_preferencias": 37,
+    "qcart": 29,
+    "ver_en_navegador": 11
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/hot-cakes-esponjosos",
+     "nombre": "recetasnestle.com.mx/recetas/hot-cakes-esponjosos",
+     "unicos": 281,
+     "total": 338
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/hot-cakes-de-cocoa-con-avena",
+     "nombre": "recetasnestle.com.mx/recetas/hot-cakes-de-cocoa-con-avena",
+     "unicos": 61,
+     "total": 72
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 45,
+     "total": 59
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 37,
+     "total": 56
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/0varyzKZ",
+     "nombre": "recetasnestlmx.qcart.app/0varyzKZ",
+     "unicos": 19,
+     "total": 24
+    }
+   ],
+   "_cks": {
+    "002-P019": 1
+   },
+   "clicks_medidos": 479
+  },
+  "002-P020": {
+   "pieza_id": "002-P020",
+   "links": 13,
+   "clicks_total": 226,
+   "clicks_unicos": 184,
+   "por_destino": {
+    "social": 5,
+    "legal": 3,
+    "contenido": 144,
+    "baja_preferencias": 15,
+    "qcart": 14,
+    "ver_en_navegador": 3
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/hot-cakes-esponjosos",
+     "nombre": "recetasnestle.com.mx/recetas/hot-cakes-esponjosos",
+     "unicos": 89,
+     "total": 109
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/hot-cakes-de-cocoa-con-avena",
+     "nombre": "recetasnestle.com.mx/recetas/hot-cakes-de-cocoa-con-avena",
+     "unicos": 32,
+     "total": 40
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 23,
+     "total": 33
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 15,
+     "total": 17
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/0varyzKZ",
+     "nombre": "recetasnestlmx.qcart.app/0varyzKZ",
+     "unicos": 8,
+     "total": 8
+    }
+   ],
+   "_cks": {
+    "002-P020": 1
+   },
+   "clicks_medidos": 184
+  },
+  "003-P001": {
+   "pieza_id": "003-P001",
+   "links": 17,
+   "clicks_total": 1363,
+   "clicks_unicos": 943,
+   "por_destino": {
+    "social": 11,
+    "legal": 3,
+    "contenido": 791,
+    "baja_preferencias": 40,
+    "qcart": 91,
+    "ver_en_navegador": 7
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/carlota-ligera-limon?utm_source=crm-hive&utm_medium=email&utm_campaign=rn_leche",
+     "nombre": "recetasnestle.com.mx/recetas/carlota-ligera-limon",
+     "unicos": 480,
+     "total": 636
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/postres-flan-napolitano",
+     "nombre": "recetasnestle.com.mx/recetas/postres-flan-napolitano",
+     "unicos": 189,
+     "total": 255
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 96,
+     "total": 135
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/a4NBepmo",
+     "nombre": "recetasnestlmx.qcart.app/a4NBepmo",
+     "unicos": 54,
+     "total": 77
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 40,
+     "total": 62
+    }
+   ],
+   "_cks": {
+    "003-P001": 1
+   },
+   "clicks_medidos": 943
+  },
+  "003-P002": {
+   "pieza_id": "003-P002",
+   "links": 12,
+   "clicks_total": 652,
+   "clicks_unicos": 489,
+   "por_destino": {
+    "social": 1,
+    "legal": 4,
+    "contenido": 404,
+    "baja_preferencias": 31,
+    "qcart": 46,
+    "ver_en_navegador": 3
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/carlota-ligera-limon?utm_source=crm-hive&utm_medium=email&utm_campaign=rn_leche",
+     "nombre": "recetasnestle.com.mx/recetas/carlota-ligera-limon",
+     "unicos": 251,
+     "total": 336
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/postres-flan-napolitano",
+     "nombre": "recetasnestle.com.mx/recetas/postres-flan-napolitano",
+     "unicos": 100,
+     "total": 133
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 41,
+     "total": 52
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 31,
+     "total": 54
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/a4NBepmo",
+     "nombre": "recetasnestlmx.qcart.app/a4NBepmo",
+     "unicos": 27,
+     "total": 30
+    }
+   ],
+   "_cks": {
+    "003-P002": 1
+   },
+   "clicks_medidos": 489
+  },
+  "004-P001": {
+   "pieza_id": "004-P001",
+   "links": 9,
+   "clicks_total": 1458,
+   "clicks_unicos": 296,
+   "por_destino": {
+    "social": 30,
+    "legal": 6,
+    "qcart": 170,
+    "ver_en_navegador": 27,
+    "baja_preferencias": 63
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/rr0VvKTb",
+     "nombre": "recetasnestlmx.qcart.app/rr0VvKTb",
+     "unicos": 170,
+     "total": 462
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 63,
+     "total": 228
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 27,
+     "total": 155
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/recetasnestle/",
+     "nombre": "Instagram",
+     "unicos": 7,
+     "total": 95
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 6,
+     "total": 89
+    }
+   ],
+   "_cks": {
+    "004-P001": 1
+   },
+   "clicks_medidos": 296
+  },
+  "004-P002": {
+   "pieza_id": "004-P002",
+   "links": 10,
+   "clicks_total": 7317,
+   "clicks_unicos": 1151,
+   "por_destino": {
+    "social": 35,
+    "legal": 13,
+    "contenido": 849,
+    "qcart": 122,
+    "ver_en_navegador": 20,
+    "baja_preferencias": 112
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://nes.tl/31266c",
+     "nombre": "nes.tl/31266c",
+     "unicos": 849,
+     "total": 1574
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/hWaJfDxS",
+     "nombre": "recetasnestlmx.qcart.app/hWaJfDxS",
+     "unicos": 122,
+     "total": 1195
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 112,
+     "total": 743
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 20,
+     "total": 755
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "aviso_priv",
+     "unicos": 13,
+     "total": 533
+    }
+   ],
+   "_cks": {
+    "004-P002": 1
+   },
+   "clicks_medidos": 1151
+  },
+  "004-P003": {
+   "pieza_id": "004-P003",
+   "links": 9,
+   "clicks_total": 143,
+   "clicks_unicos": 56,
+   "por_destino": {
+    "social": 12,
+    "legal": 1,
+    "qcart": 29,
+    "ver_en_navegador": 5,
+    "baja_preferencias": 9
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/tJEICO87",
+     "nombre": "recetasnestlmx.qcart.app/tJEICO87",
+     "unicos": 29,
+     "total": 56
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 9,
+     "total": 20
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 5,
+     "total": 13
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/recetasnestle/",
+     "nombre": "Instagram",
+     "unicos": 3,
+     "total": 8
+    },
+    {
+     "destino": "social",
+     "url": "https://www.youtube.com/channel/UCWIgEeSnQT6tZ6BLAh_ot5Q",
+     "nombre": "YouTube",
+     "unicos": 3,
+     "total": 10
+    }
+   ],
+   "_cks": {
+    "004-P003": 1
+   },
+   "clicks_medidos": 56
+  },
+  "004-P004": {
+   "pieza_id": "004-P004",
+   "links": 10,
+   "clicks_total": 191,
+   "clicks_unicos": 38,
+   "por_destino": {
+    "social": 5,
+    "legal": 1,
+    "qcart": 15,
+    "ver_en_navegador": 3,
+    "baja_preferencias": 14
+   },
+   "top": [
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 14,
+     "total": 31
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/3QfdZN2Q",
+     "nombre": "recetasnestlmx.qcart.app/3QfdZN2Q",
+     "unicos": 8,
+     "total": 45
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/SN2YWvgo",
+     "nombre": "recetasnestlmx.qcart.app/SN2YWvgo",
+     "unicos": 7,
+     "total": 61
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 3,
+     "total": 9
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 1,
+     "total": 8
+    }
+   ],
+   "_cks": {
+    "004-P004": 1
+   },
+   "clicks_medidos": 38
+  },
+  "004-P005": {
+   "pieza_id": "004-P005",
+   "links": 10,
+   "clicks_total": 11080,
+   "clicks_unicos": 130,
+   "por_destino": {
+    "social": 27,
+    "legal": 4,
+    "qcart": 28,
+    "ver_en_navegador": 16,
+    "baja_preferencias": 55
+   },
+   "top": [
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 55,
+     "total": 1145
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 16,
+     "total": 1662
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/HcDJTsRH",
+     "nombre": "recetasnestlmx.qcart.app/HcDJTsRH",
+     "unicos": 15,
+     "total": 1031
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/rueO2xbY",
+     "nombre": "recetasnestlmx.qcart.app/rueO2xbY",
+     "unicos": 13,
+     "total": 1025
+    },
+    {
+     "destino": "social",
+     "url": "https://www.tiktok.com/@recetasnestlemx?lang=es",
+     "nombre": "TikTok",
+     "unicos": 6,
+     "total": 1042
+    }
+   ],
+   "_cks": {
+    "004-P005": 1
+   },
+   "clicks_medidos": 130
+  },
+  "004-P006": {
+   "pieza_id": "004-P006",
+   "links": 9,
+   "clicks_total": 210,
+   "clicks_unicos": 95,
+   "por_destino": {
+    "social": 10,
+    "legal": 2,
+    "ver_en_navegador": 4,
+    "baja_preferencias": 7,
+    "contenido": 72
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/chelada-nortena?utm_source=crm-hive&utm_campaign=maggi-junio26&utm_content=e-be",
+     "nombre": "recetasnestle.com.mx/recetas/chelada-nortena",
+     "unicos": 72,
+     "total": 121
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 7,
+     "total": 20
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 4,
+     "total": 10
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 2,
+     "total": 10
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/recetasnestle/",
+     "nombre": "Instagram",
+     "unicos": 2,
+     "total": 8
+    }
+   ],
+   "_cks": {
+    "004-P006": 1
+   },
+   "clicks_medidos": 95
+  },
+  "004-P007": {
+   "pieza_id": "004-P007",
+   "links": 9,
+   "clicks_total": 1267,
+   "clicks_unicos": 502,
+   "por_destino": {
+    "social": 26,
+    "legal": 9,
+    "ver_en_navegador": 13,
+    "baja_preferencias": 102,
+    "contenido": 352
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/comidas-dogo-sonorense?utm_source=crm-hive&utm_campaign=maggi-junio26&utm_conte",
+     "nombre": "recetasnestle.com.mx/recetas/comidas-dogo-sonorense",
+     "unicos": 352,
+     "total": 565
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 102,
+     "total": 251
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 13,
+     "total": 44
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "aviso_priv",
+     "unicos": 9,
+     "total": 59
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 6,
+     "total": 70
+    }
+   ],
+   "_cks": {
+    "004-P007": 1
+   },
+   "clicks_medidos": 502
+  },
+  "004-P008": {
+   "pieza_id": "004-P008",
+   "links": 9,
+   "clicks_total": 3704,
+   "clicks_unicos": 309,
+   "por_destino": {
+    "social": 16,
+    "legal": 4,
+    "ver_en_navegador": 9,
+    "baja_preferencias": 49,
+    "contenido": 231
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/papas-locas?utm_source=crm-hive&utm_campaign=maggi-junio26&utm_content=e-botana",
+     "nombre": "recetasnestle.com.mx/recetas/papas-locas",
+     "unicos": 231,
+     "total": 884
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 49,
+     "total": 395
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 9,
+     "total": 439
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "aviso_priv",
+     "unicos": 4,
+     "total": 336
+    },
+    {
+     "destino": "social",
+     "url": "https://www.youtube.com/channel/UCWIgEeSnQT6tZ6BLAh_ot5Q",
+     "nombre": "YouTube",
+     "unicos": 4,
+     "total": 337
+    }
+   ],
+   "_cks": {
+    "004-P008": 1
+   },
+   "clicks_medidos": 309
+  },
+  "004-P009": {
+   "pieza_id": "004-P009",
+   "links": 9,
+   "clicks_total": 213,
+   "clicks_unicos": 91,
+   "por_destino": {
+    "social": 10,
+    "legal": 1,
+    "ver_en_navegador": 5,
+    "baja_preferencias": 10,
+    "contenido": 65
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/vaso-michelado?utm_source=crm-hive&utm_campaign=maggi-jun26&utm_content=e-bebid",
+     "nombre": "recetasnestle.com.mx/recetas/vaso-michelado",
+     "unicos": 65,
+     "total": 112
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "unsub",
+     "unicos": 10,
+     "total": 33
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 5,
+     "total": 15
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/RecetasNestleMX",
+     "nombre": "Facebook",
+     "unicos": 2,
+     "total": 9
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/recetasnestle/",
+     "nombre": "Instagram",
+     "unicos": 2,
+     "total": 7
+    }
+   ],
+   "_cks": {
+    "004-P009": 1
+   },
+   "clicks_medidos": 91
+  },
+  "006-P001": {
+   "pieza_id": "006-P001",
+   "links": 10,
+   "clicks_total": 1066,
+   "clicks_unicos": 487,
+   "por_destino": {
+    "social": 15,
+    "contenido": 276,
+    "baja_preferencias": 170,
+    "legal": 5,
+    "ver_en_navegador": 21
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://nestlmexiconew.qualifioapp.com/quiz/1789218_3094/The-Freshers.html",
+     "nombre": "nestlmexiconew.qualifioapp.com/quiz/1789218_3094/The-Freshers.html",
+     "unicos": 243,
+     "total": 351
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 170,
+     "total": 344
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 21,
+     "total": 41
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/contactanos",
+     "nombre": "contactanos",
+     "unicos": 9,
+     "total": 68
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 9,
+     "total": 68
+    }
+   ],
+   "_cks": {
+    "006-P001": 1
+   },
+   "clicks_medidos": 487
+  },
+  "006-P002": {
+   "pieza_id": "006-P002",
+   "links": 9,
+   "clicks_total": 237,
+   "clicks_unicos": 149,
+   "por_destino": {
+    "social": 4,
+    "contenido": 71,
+    "baja_preferencias": 69,
+    "legal": 3,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 69,
+     "total": 132
+    },
+    {
+     "destino": "contenido",
+     "url": "https://nestlmexiconew.qualifioapp.com/quiz/1789218_3094/The-Freshers.html",
+     "nombre": "nestlmexiconew.qualifioapp.com/quiz/1789218_3094/The-Freshers.html",
+     "unicos": 61,
+     "total": 81
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 5,
+     "total": 8
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/contactanos",
+     "nombre": "contactanos",
+     "unicos": 3,
+     "total": 3
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "Política de Privacidad",
+     "unicos": 3,
+     "total": 4
+    }
+   ],
+   "_cks": {
+    "006-P002": 1
+   },
+   "clicks_medidos": 149,
+   "clicks_de_prueba": 2
+  },
+  "007-P001": {
+   "pieza_id": "007-P001",
+   "links": 10,
+   "clicks_total": 1215,
+   "clicks_unicos": 609,
+   "por_destino": {
+    "social": 19,
+    "contenido": 44,
+    "baja_preferencias": 78,
+    "legal": 6,
+    "ver_en_navegador": 29,
+    "retail": 433
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/E9F5E890-3AFB-49F6-ABD7-0800D745757A",
+     "nombre": "amazon.com.mx/stores/page/E9F5E890-3AFB-49F6-ABD7-0800D745757A",
+     "unicos": 433,
+     "total": 645
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 78,
+     "total": 188
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 29,
+     "total": 84
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 17,
+     "total": 65
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/nescafemex/",
+     "nombre": "instagram.com/nescafemex/",
+     "unicos": 11,
+     "total": 28
+    }
+   ],
+   "_cks": {
+    "007-P001": 1
+   },
+   "clicks_medidos": 609,
+   "clicks_de_prueba": 15
+  },
+  "007-P002": {
+   "pieza_id": "007-P002",
+   "links": 9,
+   "clicks_total": 215,
+   "clicks_unicos": 121,
+   "por_destino": {
+    "social": 2,
+    "contenido": 4,
+    "baja_preferencias": 21,
+    "ver_en_navegador": 8,
+    "retail": 86
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/E9F5E890-3AFB-49F6-ABD7-0800D745757A",
+     "nombre": "amazon.com.mx/stores/page/E9F5E890-3AFB-49F6-ABD7-0800D745757A",
+     "unicos": 86,
+     "total": 125
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 21,
+     "total": 71
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 8,
+     "total": 13
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/Nescafe.MX/",
+     "nombre": "facebook.com/Nescafe.MX/",
+     "unicos": 1,
+     "total": 1
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/nescafemex/",
+     "nombre": "instagram.com/nescafemex/",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "007-P002": 1
+   },
+   "clicks_medidos": 121
+  },
+  "007-P003": {
+   "pieza_id": "007-P003",
+   "links": 10,
+   "clicks_total": 468,
+   "clicks_unicos": 244,
+   "por_destino": {
+    "social": 4,
+    "contenido": 17,
+    "baja_preferencias": 37,
+    "legal": 3,
+    "ver_en_navegador": 28,
+    "retail": 155
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/E9F5E890-3AFB-49F6-ABD7-0800D745757A?",
+     "nombre": "amazon.com.mx/stores/page/E9F5E890-3AFB-49F6-ABD7-0800D745757A",
+     "unicos": 155,
+     "total": 254
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 37,
+     "total": 72
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 28,
+     "total": 47
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 6,
+     "total": 21
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/contactanos",
+     "nombre": "contactanos",
+     "unicos": 5,
+     "total": 20
+    }
+   ],
+   "_cks": {
+    "007-P003": 1
+   },
+   "clicks_medidos": 244,
+   "clicks_de_prueba": 7
+  },
+  "007-P004": {
+   "pieza_id": "007-P004",
+   "links": 10,
+   "clicks_total": 171,
+   "clicks_unicos": 94,
+   "por_destino": {
+    "social": 3,
+    "contenido": 6,
+    "baja_preferencias": 24,
+    "legal": 1,
+    "ver_en_navegador": 7,
+    "retail": 53
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/E9F5E890-3AFB-49F6-ABD7-0800D745757A?",
+     "nombre": "amazon.com.mx/stores/page/E9F5E890-3AFB-49F6-ABD7-0800D745757A",
+     "unicos": 53,
+     "total": 74
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 24,
+     "total": 62
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 7,
+     "total": 12
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/Nescafe.MX/",
+     "nombre": "facebook.com/Nescafe.MX/",
+     "unicos": 2,
+     "total": 3
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/contactanos",
+     "nombre": "contactanos",
+     "unicos": 2,
+     "total": 5
+    }
+   ],
+   "_cks": {
+    "007-P004": 1
+   },
+   "clicks_medidos": 94,
+   "clicks_de_prueba": 3
+  },
+  "008-P001": {
+   "pieza_id": "008-P001",
+   "links": 12,
+   "clicks_total": 20415,
+   "clicks_unicos": 12354,
+   "por_destino": {
+    "social": 169,
+    "contenido": 995,
+    "legal": 80,
+    "ver_en_navegador": 183,
+    "retail": 10927
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Cl%C3%A1sico-Coleccionable-Artistas-Mexicanos/dp/B0FJDBCYYV/ref=sr_1_5?utm_source",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Cl%C3%A1sico-Coleccionable-Artistas-Mexicanos/dp/B0FJDBCYYV/ref=sr_1_5",
+     "unicos": 10927,
+     "total": 14454
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'?',@tracking,'&utm_content=cta'))=%%",
+     "nombre": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'",
+     "unicos": 387,
+     "total": 833
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/",
+     "nombre": "nescafe.com/mx/",
+     "unicos": 251,
+     "total": 752
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 183,
+     "total": 517
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "nescafe.com/mx/login",
+     "unicos": 159,
+     "total": 659
+    }
+   ],
+   "_cks": {
+    "008-P001": 1
+   },
+   "clicks_medidos": 12354,
+   "clicks_de_prueba": 33
+  },
+  "008-P002": {
+   "pieza_id": "008-P002",
+   "links": 10,
+   "clicks_total": 2201,
+   "clicks_unicos": 1773,
+   "por_destino": {
+    "social": 13,
+    "contenido": 168,
+    "legal": 4,
+    "ver_en_navegador": 22,
+    "retail": 1566
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Cl%C3%A1sico-Coleccionable-Artistas-Mexicanos/dp/B0FJDBCYYV/ref=sr_1_5?utm_source",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Cl%C3%A1sico-Coleccionable-Artistas-Mexicanos/dp/B0FJDBCYYV/ref=sr_1_5",
+     "unicos": 1566,
+     "total": 1939
+    },
+    {
+     "destino": "contenido",
+     "url": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'?',@tracking,'&utm_content=cta'))=%%",
+     "nombre": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'",
+     "unicos": 110,
+     "total": 134
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/",
+     "nombre": "nescafe.com/mx/",
+     "unicos": 25,
+     "total": 28
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 22,
+     "total": 27
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "nescafe.com/mx/login",
+     "unicos": 19,
+     "total": 26
+    }
+   ],
+   "_cks": {
+    "008-P002": 1
+   },
+   "clicks_medidos": 1773
+  },
+  "008-P003": {
+   "pieza_id": "008-P003",
+   "links": 10,
+   "clicks_total": 1386,
+   "clicks_unicos": 688,
+   "por_destino": {
+    "social": 53,
+    "contenido": 458,
+    "legal": 13,
+    "ver_en_navegador": 40,
+    "retail": 124
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'?',@tracking,'&utm_content=cta'))=%%",
+     "nombre": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'",
+     "unicos": 355,
+     "total": 534
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Cl%C3%A1sico-Coleccionable-Artistas-Mexicanos/dp/B0FJDBCYYV/ref=sr_1_7?utm_source",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Cl%C3%A1sico-Coleccionable-Artistas-Mexicanos/dp/B0FJDBCYYV/ref=sr_1_7",
+     "unicos": 124,
+     "total": 211
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/",
+     "nombre": "nescafe.com/mx/",
+     "unicos": 51,
+     "total": 119
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 40,
+     "total": 84
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/Nescafe.MX/",
+     "nombre": "facebook.com/Nescafe.MX/",
+     "unicos": 27,
+     "total": 74
+    }
+   ],
+   "_cks": {
+    "008-P003": 1
+   },
+   "clicks_medidos": 688,
+   "clicks_de_prueba": 5
+  },
+  "008-P004": {
+   "pieza_id": "008-P004",
+   "links": 10,
+   "clicks_total": 929,
+   "clicks_unicos": 639,
+   "por_destino": {
+    "social": 16,
+    "contenido": 504,
+    "legal": 5,
+    "ver_en_navegador": 16,
+    "retail": 98
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'?',@tracking,'&utm_content=cta'))=%%",
+     "nombre": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'",
+     "unicos": 435,
+     "total": 642
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Cl%C3%A1sico-Coleccionable-Artistas-Mexicanos/dp/B0FJDBCYYV/ref=sr_1_7?utm_source",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Cl%C3%A1sico-Coleccionable-Artistas-Mexicanos/dp/B0FJDBCYYV/ref=sr_1_7",
+     "unicos": 98,
+     "total": 136
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/",
+     "nombre": "nescafe.com/mx/",
+     "unicos": 36,
+     "total": 51
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "nescafe.com/mx/login",
+     "unicos": 17,
+     "total": 20
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 16,
+     "total": 25
+    }
+   ],
+   "_cks": {
+    "008-P004": 1
+   },
+   "clicks_medidos": 639
+  },
+  "008-P005": {
+   "pieza_id": "008-P005",
+   "links": 10,
+   "clicks_total": 585,
+   "clicks_unicos": 417,
+   "por_destino": {
+    "social": 11,
+    "contenido": 341,
+    "legal": 5,
+    "ver_en_navegador": 10,
+    "retail": 50
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'?',@tracking,'&utm_content=cta'))=%%",
+     "nombre": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'",
+     "unicos": 284,
+     "total": 409
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.walmart.com.mx/ip/cafe-soluble-nescafe-clasico-200-g-taza-roja-coleccion-futbolera/00750647512525?utm_source",
+     "nombre": "walmart.com.mx/ip/cafe-soluble-nescafe-clasico-200-g-taza-roja-coleccion-futbolera/00750647512525",
+     "unicos": 50,
+     "total": 65
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/",
+     "nombre": "nescafe.com/mx/",
+     "unicos": 40,
+     "total": 44
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 10,
+     "total": 20
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/contactanos",
+     "nombre": "nescafe.com/mx/contactanos",
+     "unicos": 8,
+     "total": 9
+    }
+   ],
+   "_cks": {
+    "008-P005": 1
+   },
+   "clicks_medidos": 417
+  },
+  "008-P006": {
+   "pieza_id": "008-P006",
+   "links": 10,
+   "clicks_total": 1402,
+   "clicks_unicos": 674,
+   "por_destino": {
+    "social": 41,
+    "contenido": 477,
+    "legal": 16,
+    "ver_en_navegador": 46,
+    "retail": 94
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'?',@tracking,'&utm_content=cta'))=%%",
+     "nombre": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'",
+     "unicos": 343,
+     "total": 512
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.walmart.com.mx/ip/cafe-soluble-nescafe-clasico-200-g-taza-roja-coleccion-futbolera/00750647512525?utm_source",
+     "nombre": "walmart.com.mx/ip/cafe-soluble-nescafe-clasico-200-g-taza-roja-coleccion-futbolera/00750647512525",
+     "unicos": 94,
+     "total": 175
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/",
+     "nombre": "nescafe.com/mx/",
+     "unicos": 81,
+     "total": 149
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 46,
+     "total": 98
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "nescafe.com/mx/login",
+     "unicos": 22,
+     "total": 74
+    }
+   ],
+   "_cks": {
+    "008-P006": 1
+   },
+   "clicks_medidos": 674,
+   "clicks_de_prueba": 4
+  },
+  "009-P001": {
+   "pieza_id": "009-P001",
+   "links": 2,
+   "clicks_total": 24,
+   "clicks_unicos": 16,
+   "por_destino": {
+    "contenido": 12,
+    "ver_en_navegador": 4
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'?',@tracking,'&utm_content=cta'))=%%",
+     "nombre": "%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC),'",
+     "unicos": 12,
+     "total": 18
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 4,
+     "total": 6
+    }
+   ],
+   "_cks": {
+    "009-P001": 1
+   },
+   "clicks_medidos": 16,
+   "clicks_de_prueba": 2
+  },
+  "009-P002": {
+   "pieza_id": "009-P002",
+   "links": 11,
+   "clicks_total": 136,
+   "clicks_unicos": 74,
+   "por_destino": {
+    "contenido": 43,
+    "legal": 7,
+    "ver_en_navegador": 5,
+    "baja_preferencias": 19
+   },
+   "top": [
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 19,
+     "total": 36
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/perros/active-mind?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_P",
+     "nombre": "purina.com.mx/proplan/perros/active-mind",
+     "unicos": 18,
+     "total": 30
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/perros/adultos?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PA_E3",
+     "nombre": "purina.com.mx/proplan/perros/adultos",
+     "unicos": 13,
+     "total": 24
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/perros/cachorros?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PA_",
+     "nombre": "purina.com.mx/proplan/perros/cachorros",
+     "unicos": 7,
+     "total": 17
+    },
+    {
+     "destino": "legal",
+     "url": "https://purina.com.mx/purina/aviso-de-privacidad?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_P",
+     "nombre": "purina.com.mx/purina/aviso-de-privacidad",
+     "unicos": 6,
+     "total": 7
+    }
+   ],
+   "_cks": {
+    "009-P002": 1
+   },
+   "clicks_medidos": 74,
+   "clicks_de_prueba": 33
+  },
+  "009-P003": {
+   "pieza_id": "009-P003",
+   "links": 4,
+   "clicks_total": 37,
+   "clicks_unicos": 6,
+   "por_destino": {
+    "contenido": 4,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PP_E3A_Mixto&utm_con",
+     "nombre": "purina.com.mx/proplan",
+     "unicos": 2,
+     "total": 3
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 2,
+     "total": 10
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/gatos/esterilizados?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_",
+     "nombre": "purina.com.mx/proplan/gatos/esterilizados",
+     "unicos": 1,
+     "total": 11
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/la-nutricion-mas-avanzada?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Pr",
+     "nombre": "purina.com.mx/proplan/la-nutricion-mas-avanzada",
+     "unicos": 1,
+     "total": 13
+    }
+   ],
+   "_cks": {
+    "009-P003": 1
+   },
+   "clicks_medidos": 6,
+   "clicks_de_prueba": 35
+  },
+  "009-P004": {
+   "pieza_id": "009-P004",
+   "links": 7,
+   "clicks_total": 21,
+   "clicks_unicos": 9,
+   "por_destino": {
+    "contenido": 5,
+    "ver_en_navegador": 2,
+    "social": 1,
+    "baja_preferencias": 1
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/perros/active-mind?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_P",
+     "nombre": "purina.com.mx/proplan/perros/active-mind",
+     "unicos": 2,
+     "total": 3
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 2,
+     "total": 8
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/perros/adultos?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PO_E3",
+     "nombre": "purina.com.mx/proplan/perros/adultos",
+     "unicos": 1,
+     "total": 2
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/perros/cachorros?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PO_",
+     "nombre": "purina.com.mx/proplan/perros/cachorros",
+     "unicos": 1,
+     "total": 2
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/purina/productos-purina?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PO_E",
+     "nombre": "purina.com.mx/purina/productos-purina",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "009-P004": 1
+   },
+   "clicks_medidos": 9,
+   "clicks_de_prueba": 16
+  },
+  "009-P005": {
+   "pieza_id": "009-P005",
+   "links": 15,
+   "clicks_total": 119,
+   "clicks_unicos": 70,
+   "por_destino": {
+    "legal": 3,
+    "contenido": 26,
+    "ver_en_navegador": 9,
+    "social": 5,
+    "baja_preferencias": 27
+   },
+   "top": [
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 27,
+     "total": 55
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/purina?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_E2.2&utm_content=web_",
+     "nombre": "purina.com.mx/purina",
+     "unicos": 11,
+     "total": 13
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 9,
+     "total": 18
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/purina?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_E2.2&utm_content=head",
+     "nombre": "purina.com.mx/purina",
+     "unicos": 5,
+     "total": 5
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/purina/conoce-purina?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_E2.2&ut",
+     "nombre": "purina.com.mx/purina/conoce-purina",
+     "unicos": 3,
+     "total": 3
+    }
+   ],
+   "_cks": {
+    "009-P005": 1
+   },
+   "clicks_medidos": 70,
+   "clicks_de_prueba": 14
+  },
+  "009-P008": {
+   "pieza_id": "009-P008",
+   "links": 5,
+   "clicks_total": 54,
+   "clicks_unicos": 23,
+   "por_destino": {
+    "contenido": 17,
+    "ver_en_navegador": 2,
+    "baja_preferencias": 4
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/gatos/adultos?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PA_E3B",
+     "nombre": "purina.com.mx/proplan/gatos/adultos",
+     "unicos": 8,
+     "total": 16
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/gatos/gatitos?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PA_E3B",
+     "nombre": "purina.com.mx/proplan/gatos/gatitos",
+     "unicos": 6,
+     "total": 14
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 4,
+     "total": 7
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/gatos/adultos-mayores?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Propla",
+     "nombre": "purina.com.mx/proplan/gatos/adultos-mayores",
+     "unicos": 3,
+     "total": 8
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 2,
+     "total": 9
+    }
+   ],
+   "_cks": {
+    "009-TMP-PA-E3-G": 1
+   },
+   "clicks_medidos": 23,
+   "clicks_de_prueba": 31
+  },
+  "009-P009": {
+   "pieza_id": "009-P009",
+   "links": 4,
+   "clicks_total": 32,
+   "clicks_unicos": 5,
+   "por_destino": {
+    "contenido": 3,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 2,
+     "total": 8
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PA_E3B_Mixto&utm_con",
+     "nombre": "purina.com.mx/proplan",
+     "unicos": 1,
+     "total": 6
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PA_E3B_Mixto&utm_con",
+     "nombre": "purina.com.mx/proplan",
+     "unicos": 1,
+     "total": 6
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PA_E3B_Mixto&utm_con",
+     "nombre": "purina.com.mx/proplan",
+     "unicos": 1,
+     "total": 12
+    }
+   ],
+   "_cks": {
+    "009-TMP-PA-E3-M": 1
+   },
+   "clicks_medidos": 5,
+   "clicks_de_prueba": 32
+  },
+  "009-P016": {
+   "pieza_id": "009-P016",
+   "links": 7,
+   "clicks_total": 40,
+   "clicks_unicos": 18,
+   "por_destino": {
+    "legal": 1,
+    "ver_en_navegador": 3,
+    "retail": 12,
+    "baja_preferencias": 2
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 9,
+     "total": 11
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 3,
+     "total": 12
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 2,
+     "total": 8
+    },
+    {
+     "destino": "legal",
+     "url": "https://purina.com.mx/purina/aviso-de-privacidad?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_P",
+     "nombre": "purina.com.mx/purina/aviso-de-privacidad",
+     "unicos": 1,
+     "total": 3
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 1,
+     "total": 2
+    }
+   ],
+   "_cks": {
+    "009-TMP-PAE-E4-G": 1
+   },
+   "clicks_medidos": 18,
+   "clicks_de_prueba": 18
+  },
+  "009-P017": {
+   "pieza_id": "009-P017",
+   "links": 4,
+   "clicks_total": 17,
+   "clicks_unicos": 6,
+   "por_destino": {
+    "ver_en_navegador": 3,
+    "retail": 3
+   },
+   "top": [
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 3,
+     "total": 10
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 1,
+     "total": 2
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 1,
+     "total": 3
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 1,
+     "total": 2
+    }
+   ],
+   "_cks": {
+    "009-TMP-PAE-E4-M": 1
+   },
+   "clicks_medidos": 6,
+   "clicks_de_prueba": 17
+  },
+  "009-P015": {
+   "pieza_id": "009-P015",
+   "links": 11,
+   "clicks_total": 99,
+   "clicks_unicos": 60,
+   "por_destino": {
+    "contenido": 9,
+    "ver_en_navegador": 8,
+    "retail": 29,
+    "baja_preferencias": 14
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 26,
+     "total": 33
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 14,
+     "total": 29
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 8,
+     "total": 17
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/purina/conoce-purina?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PAE_E4B",
+     "nombre": "purina.com.mx/purina/conoce-purina",
+     "unicos": 2,
+     "total": 2
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/purina/productos-purina?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PAE_",
+     "nombre": "purina.com.mx/purina/productos-purina",
+     "unicos": 2,
+     "total": 2
+    }
+   ],
+   "_cks": {
+    "009-TMP-PAE-E4-P": 1
+   },
+   "clicks_medidos": 60,
+   "clicks_de_prueba": 23
+  },
+  "009-P010": {
+   "pieza_id": "009-P010",
+   "links": 4,
+   "clicks_total": 38,
+   "clicks_unicos": 10,
+   "por_destino": {
+    "contenido": 8,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/gatos/adultos-mayores?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Propla",
+     "nombre": "purina.com.mx/proplan/gatos/adultos-mayores",
+     "unicos": 4,
+     "total": 12
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/gatos/adultos?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PO_E3C",
+     "nombre": "purina.com.mx/proplan/gatos/adultos",
+     "unicos": 2,
+     "total": 9
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/gatos/gatitos?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PO_E3C",
+     "nombre": "purina.com.mx/proplan/gatos/gatitos",
+     "unicos": 2,
+     "total": 9
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 2,
+     "total": 8
+    }
+   ],
+   "_cks": {
+    "009-TMP-PO-E3-G": 1
+   },
+   "clicks_medidos": 10,
+   "clicks_de_prueba": 26
+  },
+  "009-P011": {
+   "pieza_id": "009-P011",
+   "links": 7,
+   "clicks_total": 40,
+   "clicks_unicos": 8,
+   "por_destino": {
+    "contenido": 6,
+    "ver_en_navegador": 2
+   },
+   "top": [
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 2,
+     "total": 8
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/la-nutricion-mas-avanzada?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Pr",
+     "nombre": "purina.com.mx/proplan/la-nutricion-mas-avanzada",
+     "unicos": 1,
+     "total": 7
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/la-nutricion-mas-avanzada?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Pr",
+     "nombre": "purina.com.mx/proplan/la-nutricion-mas-avanzada",
+     "unicos": 1,
+     "total": 11
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/la-nutricion-mas-avanzada?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Pr",
+     "nombre": "purina.com.mx/proplan/la-nutricion-mas-avanzada",
+     "unicos": 1,
+     "total": 11
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PA_E3C_Mixto&utm_con",
+     "nombre": "purina.com.mx/proplan",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "009-TMP-PO-E3-M": 1
+   },
+   "clicks_medidos": 8,
+   "clicks_de_prueba": 40
+  },
+  "009-P007": {
+   "pieza_id": "009-P007",
+   "links": 10,
+   "clicks_total": 54,
+   "clicks_unicos": 21,
+   "por_destino": {
+    "contenido": 15,
+    "ver_en_navegador": 2,
+    "baja_preferencias": 4
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/gatos/esterilizados?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_",
+     "nombre": "purina.com.mx/proplan/gatos/esterilizados",
+     "unicos": 4,
+     "total": 9
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PP_E3A_Gatos&utm_con",
+     "nombre": "purina.com.mx/proplan",
+     "unicos": 4,
+     "total": 5
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 4,
+     "total": 11
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/gatos/sensibles?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PP_E",
+     "nombre": "purina.com.mx/proplan/gatos/sensibles",
+     "unicos": 2,
+     "total": 9
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 2,
+     "total": 8
+    }
+   ],
+   "_cks": {
+    "009-TMP-PP-E3-G": 1
+   },
+   "clicks_medidos": 21,
+   "clicks_de_prueba": 34
+  },
+  "009-P006": {
+   "pieza_id": "009-P006",
+   "links": 15,
+   "clicks_total": 135,
+   "clicks_unicos": 66,
+   "por_destino": {
+    "contenido": 46,
+    "legal": 1,
+    "ver_en_navegador": 2,
+    "social": 4,
+    "baja_preferencias": 13
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/perros/piel-estomago-sensible?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CD",
+     "nombre": "purina.com.mx/proplan/perros/piel-estomago-sensible",
+     "unicos": 14,
+     "total": 30
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PP_E3A_Perros&utm_co",
+     "nombre": "purina.com.mx/proplan",
+     "unicos": 13,
+     "total": 19
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 13,
+     "total": 27
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/proplan/perros/piel-sensible?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan",
+     "nombre": "purina.com.mx/proplan/perros/piel-sensible",
+     "unicos": 12,
+     "total": 27
+    },
+    {
+     "destino": "contenido",
+     "url": "https://purina.com.mx/purina/nuestras-marcas?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_PP_E3",
+     "nombre": "purina.com.mx/purina/nuestras-marcas",
+     "unicos": 2,
+     "total": 2
+    }
+   ],
+   "_cks": {
+    "009-TMP-PP-E3-P": 1
+   },
+   "clicks_medidos": 66,
+   "clicks_de_prueba": 58
+  },
+  "009-P013": {
+   "pieza_id": "009-P013",
+   "links": 3,
+   "clicks_total": 7,
+   "clicks_unicos": 7,
+   "por_destino": {
+    "retail": 6,
+    "social": 1
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 4,
+     "total": 4
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 2,
+     "total": 2
+    },
+    {
+     "destino": "social",
+     "url": "https://www.tiktok.com/@purinamx",
+     "nombre": "tiktok.com/@purinamx",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "009-TMP-PP-E4-G": 1
+   },
+   "clicks_medidos": 7
+  },
+  "009-P014": {
+   "pieza_id": "009-P014",
+   "links": 21,
+   "clicks_total": 30,
+   "clicks_unicos": 23,
+   "por_destino": {
+    "social": 5,
+    "legal": 4,
+    "contenido": 6,
+    "ver_en_navegador": 2,
+    "retail": 5,
+    "baja_preferencias": 1
+   },
+   "top": [
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 2,
+     "total": 8
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 2,
+     "total": 2
+    },
+    {
+     "destino": "social",
+     "url": "https://open.spotify.com/user/n4tcu7d9kk5gm0vjsg1bxo42e?si=929aa643f6884513",
+     "nombre": "open.spotify.com/user/n4tcu7d9kk5gm0vjsg1bxo42e",
+     "unicos": 1,
+     "total": 1
+    },
+    {
+     "destino": "legal",
+     "url": "https://purina.com.mx/purina/aviso-de-privacidad?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_P",
+     "nombre": "purina.com.mx/purina/aviso-de-privacidad",
+     "unicos": 1,
+     "total": 1
+    },
+    {
+     "destino": "legal",
+     "url": "https://purina.com.mx/purina/aviso-de-privacidad?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_P",
+     "nombre": "purina.com.mx/purina/aviso-de-privacidad",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "009-TMP-PP-E4-M": 1
+   },
+   "clicks_medidos": 23,
+   "clicks_de_prueba": 8
+  },
+  "009-P012": {
+   "pieza_id": "009-P012",
+   "links": 8,
+   "clicks_total": 61,
+   "clicks_unicos": 40,
+   "por_destino": {
+    "legal": 1,
+    "contenido": 2,
+    "ver_en_navegador": 3,
+    "retail": 31,
+    "baja_preferencias": 3
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 27,
+     "total": 37
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "view.email.mx.nestle.com/",
+     "unicos": 3,
+     "total": 5
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D?ingress=0&visitId=3b7b3f26-aee3-4072-b0aa-8b0",
+     "nombre": "amazon.com.mx/stores/page/2F83E8A3-79AC-49DA-908A-B9D3A90C8B7D",
+     "unicos": 3,
+     "total": 7
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "nestle.com.mx/centro-de-preferencias",
+     "unicos": 3,
+     "total": 5
+    },
+    {
+     "destino": "legal",
+     "url": "https://purina.com.mx/purina/aviso-de-privacidad?utm_source=Salesforce&utm_medium=Email&utm_campaign=ATMJB_CDP_Proplan_P",
+     "nombre": "purina.com.mx/purina/aviso-de-privacidad",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "009-TMP-PP-E4-P": 1
+   },
+   "clicks_medidos": 40
+  },
+  "001-P029": {
+   "pieza_id": "001-P029",
+   "links": 11,
+   "clicks_total": 2933,
+   "clicks_unicos": 1822,
+   "por_destino": {
+    "social": 70,
+    "legal": 28,
+    "contenido": 138,
+    "baja_preferencias": 311,
+    "app": 1151,
+    "ver_en_navegador": 124
+   },
+   "top": [
+    {
+     "destino": "app",
+     "url": "https://play.google.com/store/apps/details?id=com.nestle.mx.recetas.recetasnestle&hl=es&utm_source=crm-hive&utm_campaign",
+     "nombre": "play.google.com/store/apps/details",
+     "unicos": 615,
+     "total": 852
+    },
+    {
+     "destino": "app",
+     "url": "https://apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058?utm_source=crm-hive&utm_campaign=aon-rn-jul26",
+     "nombre": "apps.apple.com/us/app/recetas-nestl%C3%A9-m%C3%A9xico/id6749270058",
+     "unicos": 536,
+     "total": 745
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 311,
+     "total": 528
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 138,
+     "total": 223
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 124,
+     "total": 211
+    }
+   ],
+   "_cks": {
+    "TMP-AON-EAPP": 1
+   },
+   "clicks_medidos": 1822
+  },
+  "001-P030": {
+   "pieza_id": "001-P030",
+   "links": 14,
+   "clicks_total": 979,
+   "clicks_unicos": 692,
+   "por_destino": {
+    "social": 12,
+    "legal": 3,
+    "contenido": 625,
+    "baja_preferencias": 30,
+    "ver_en_navegador": 22
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 266,
+     "total": 377
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 194,
+     "total": 286
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/pasta-quesoY",
+     "nombre": "recetasnestle.com.mx/recetas/pasta-quesoY",
+     "unicos": 67,
+     "total": 91
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/bebidas-agua-avena",
+     "nombre": "recetasnestle.com.mx/recetas/bebidas-agua-avena",
+     "unicos": 51,
+     "total": 70
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/tarta-dulce-leche",
+     "nombre": "recetasnestle.com.mx/recetas/tarta-dulce-leche",
+     "unicos": 31,
+     "total": 36
+    }
+   ],
+   "_cks": {
+    "TMP-AON-EPROP2": 1
+   },
+   "clicks_medidos": 692
+  },
+  "001-P031": {
+   "pieza_id": "001-P031",
+   "links": 9,
+   "clicks_total": 313,
+   "clicks_unicos": 240,
+   "por_destino": {
+    "contenido": 221,
+    "baja_preferencias": 14,
+    "ver_en_navegador": 4,
+    "legal": 1
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/",
+     "nombre": "recetasnestle.com.mx/",
+     "unicos": 95,
+     "total": 125
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 71,
+     "total": 97
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/pasta-quesoY",
+     "nombre": "recetasnestle.com.mx/recetas/pasta-quesoY",
+     "unicos": 20,
+     "total": 24
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 14,
+     "total": 22
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/bebidas-agua-avena",
+     "nombre": "recetasnestle.com.mx/recetas/bebidas-agua-avena",
+     "unicos": 14,
+     "total": 15
+    }
+   ],
+   "_cks": {
+    "TMP-AON-EPROP2-FUP": 1
+   },
+   "clicks_medidos": 240
+  },
+  "005-P005": {
+   "pieza_id": "005-P005",
+   "links": 3,
+   "clicks_total": 38,
+   "clicks_unicos": 27,
+   "por_destino": {
+    "baja_preferencias": 5,
+    "qcart": 22
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/i8LZ55bd",
+     "nombre": "recetasnestlmx.qcart.app/i8LZ55bd",
+     "unicos": 16,
+     "total": 21
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/HThaf6bT",
+     "nombre": "recetasnestlmx.qcart.app/HThaf6bT",
+     "unicos": 6,
+     "total": 8
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 5,
+     "total": 9
+    }
+   ],
+   "_cks": {
+    "TMP-MAGGI-J4-CR": 1
+   },
+   "clicks_medidos": 27
+  },
+  "005-P006": {
+   "pieza_id": "005-P006",
+   "links": 11,
+   "clicks_total": 668,
+   "clicks_unicos": 414,
+   "por_destino": {
+    "social": 15,
+    "legal": 5,
+    "contenido": 35,
+    "baja_preferencias": 84,
+    "qcart": 259,
+    "ver_en_navegador": 16
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/4tBsCXTp",
+     "nombre": "recetasnestlmx.qcart.app/4tBsCXTp",
+     "unicos": 147,
+     "total": 200
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/hTHNLqzL",
+     "nombre": "recetasnestlmx.qcart.app/hTHNLqzL",
+     "unicos": 112,
+     "total": 154
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 84,
+     "total": 146
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 35,
+     "total": 69
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 16,
+     "total": 27
+    }
+   ],
+   "_cks": {
+    "TMP-MAGGI-J4-SR": 1
+   },
+   "clicks_medidos": 414
+  },
+  "005-P008": {
+   "pieza_id": "005-P008",
+   "links": 3,
+   "clicks_total": 16,
+   "clicks_unicos": 12,
+   "por_destino": {
+    "baja_preferencias": 2,
+    "qcart": 10
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/TYZa8g47",
+     "nombre": "recetasnestlmx.qcart.app/TYZa8g47",
+     "unicos": 5,
+     "total": 7
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/UhCnTNuz",
+     "nombre": "recetasnestlmx.qcart.app/UhCnTNuz",
+     "unicos": 5,
+     "total": 6
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 2,
+     "total": 3
+    }
+   ],
+   "_cks": {
+    "TMP-MAGGI-J6-CR": 1
+   },
+   "clicks_medidos": 12
+  },
+  "005-P009": {
+   "pieza_id": "005-P009",
+   "links": 4,
+   "clicks_total": 13,
+   "clicks_unicos": 12,
+   "por_destino": {
+    "baja_preferencias": 3,
+    "qcart": 8,
+    "ver_en_navegador": 1
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/okUSdwJk",
+     "nombre": "recetasnestlmx.qcart.app/okUSdwJk",
+     "unicos": 6,
+     "total": 6
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 3,
+     "total": 3
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/BdN0ck7t",
+     "nombre": "recetasnestlmx.qcart.app/BdN0ck7t",
+     "unicos": 2,
+     "total": 3
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 1,
+     "total": 1
+    }
+   ],
+   "_cks": {
+    "TMP-MAGGI-J6-REGION-SUR": 1
+   },
+   "clicks_medidos": 12
+  },
+  "005-P007": {
+   "pieza_id": "005-P007",
+   "links": 10,
+   "clicks_total": 372,
+   "clicks_unicos": 211,
+   "por_destino": {
+    "social": 13,
+    "legal": 4,
+    "baja_preferencias": 30,
+    "qcart": 154,
+    "ver_en_navegador": 10
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/9isauWgY",
+     "nombre": "recetasnestlmx.qcart.app/9isauWgY",
+     "unicos": 89,
+     "total": 135
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/Hqa0fbOM",
+     "nombre": "recetasnestlmx.qcart.app/Hqa0fbOM",
+     "unicos": 65,
+     "total": 99
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 30,
+     "total": 50
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 10,
+     "total": 19
+    },
+    {
+     "destino": "legal",
+     "url": "https://www.nestle.com.mx/info/aviso-privacidad-consumidores-pce",
+     "nombre": "aviso_priv",
+     "unicos": 4,
+     "total": 18
+    }
+   ],
+   "_cks": {
+    "TMP-MAGGI-J6-SR": 1
+   },
+   "clicks_medidos": 211
+  },
+  "007-P005": {
+   "pieza_id": "007-P005",
+   "links": 12,
+   "clicks_total": 472,
+   "clicks_unicos": 238,
+   "por_destino": {
+    "social": 4,
+    "contenido": 14,
+    "baja_preferencias": 44,
+    "legal": 2,
+    "ver_en_navegador": 15,
+    "retail": 159
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Vainilla-Concentrado/dp/B0GXGSPN26?ref_=ast_sto_dp&th=1&psc=",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Vainilla-Concentrado/dp/B0GXGSPN26",
+     "unicos": 83,
+     "total": 127
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Concentrado-Botella/dp/B0GXGP7Z7F?ref_=ast_sto_dp&th=1&psc=1",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Concentrado-Botella/dp/B0GXGP7Z7F",
+     "unicos": 75,
+     "total": 126
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 44,
+     "total": 80
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 15,
+     "total": 37
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 5,
+     "total": 20
+    }
+   ],
+   "_cks": {
+    "TMP-NESC-ESPRESSO": 1
+   },
+   "clicks_medidos": 238,
+   "clicks_de_prueba": 20
+  },
+  "007-P006": {
+   "pieza_id": "007-P006",
+   "links": 6,
+   "clicks_total": 127,
+   "clicks_unicos": 93,
+   "por_destino": {
+    "contenido": 3,
+    "baja_preferencias": 23,
+    "ver_en_navegador": 3,
+    "retail": 64
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Vainilla-Concentrado/dp/B0GXGSPN26?ref_=ast_sto_dp&th=1&psc=",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Vainilla-Concentrado/dp/B0GXGSPN26",
+     "unicos": 40,
+     "total": 46
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Concentrado-Botella/dp/B0GXGP7Z7F?ref_=ast_sto_dp&th=1&psc=1",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Concentrado-Botella/dp/B0GXGP7Z7F",
+     "unicos": 24,
+     "total": 31
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 23,
+     "total": 42
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 3,
+     "total": 4
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 2,
+     "total": 3
+    }
+   ],
+   "_cks": {
+    "TMP-NESC-ESPRESSO-FUP": 1
+   },
+   "clicks_medidos": 93
+  },
+  "007-P007": {
+   "pieza_id": "007-P007",
+   "links": 11,
+   "clicks_total": 385,
+   "clicks_unicos": 187,
+   "por_destino": {
+    "social": 2,
+    "contenido": 9,
+    "baja_preferencias": 43,
+    "legal": 1,
+    "ver_en_navegador": 15,
+    "retail": 117
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Concentrado-Botella/dp/B0GXGP7Z7F?ref_=ast_sto_dp&th=1&psc=1",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Concentrado-Botella/dp/B0GXGP7Z7F",
+     "unicos": 82,
+     "total": 128
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 43,
+     "total": 89
+    },
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Vainilla-Concentrado/dp/B0GXGSPN26?ref_=ast_sto_dp&th=1&psc=",
+     "nombre": "amazon.com.mx/Nescaf%C3%A9-Espresso-Concentrate-Vainilla-Concentrado/dp/B0GXGSPN26",
+     "unicos": 35,
+     "total": 53
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 15,
+     "total": 34
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 4,
+     "total": 19
+    }
+   ],
+   "_cks": {
+    "TMP-NESC-ESPRESSO-V3": 1
+   },
+   "clicks_medidos": 187
+  },
+  "006-P004": {
+   "pieza_id": "006-P004",
+   "links": 10,
+   "clicks_total": 921,
+   "clicks_unicos": 259,
+   "por_destino": {
+    "social": 21,
+    "contenido": 49,
+    "baja_preferencias": 154,
+    "legal": 10,
+    "ver_en_navegador": 25
+   },
+   "top": [
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 154,
+     "total": 314
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 25,
+     "total": 85
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 13,
+     "total": 94
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/contactanos",
+     "nombre": "contactanos",
+     "unicos": 12,
+     "total": 87
+    },
+    {
+     "destino": "social",
+     "url": "https://www.instagram.com/nescafemex/",
+     "nombre": "instagram.com/nescafemex/",
+     "unicos": 11,
+     "total": 32
+    }
+   ],
+   "_cks": {
+    "TMP-NESC-ICE": 1
+   },
+   "clicks_medidos": 259,
+   "clicks_de_prueba": 2
+  },
+  "006-P006": {
+   "pieza_id": "006-P006",
+   "links": 10,
+   "clicks_total": 739,
+   "clicks_unicos": 452,
+   "por_destino": {
+    "social": 6,
+    "contenido": 23,
+    "baja_preferencias": 160,
+    "legal": 3,
+    "ver_en_navegador": 61,
+    "retail": 199
+   },
+   "top": [
+    {
+     "destino": "retail",
+     "url": "https://www.amazon.com.mx/stores/page/594C6B18-2D7D-49FB-980B-7E9B9EFE8576?ingress=2&lp_context_asin=B0C7FLD9CR&lp_conte",
+     "nombre": "amazon.com.mx/stores/page/594C6B18-2D7D-49FB-980B-7E9B9EFE8576",
+     "unicos": 199,
+     "total": 279
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 160,
+     "total": 305
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 61,
+     "total": 93
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 12,
+     "total": 19
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/contactanos",
+     "nombre": "contactanos",
+     "unicos": 5,
+     "total": 9
+    }
+   ],
+   "_cks": {
+    "TMP-NESC-ICE-ENRICH1": 1
+   },
+   "clicks_medidos": 452,
+   "clicks_de_prueba": 16
+  },
+  "006-P005": {
+   "pieza_id": "006-P005",
+   "links": 10,
+   "clicks_total": 211,
+   "clicks_unicos": 112,
+   "por_destino": {
+    "social": 5,
+    "contenido": 14,
+    "baja_preferencias": 85,
+    "legal": 2,
+    "ver_en_navegador": 6
+   },
+   "top": [
+    {
+     "destino": "baja_preferencias",
+     "url": "https://www.nestle.com.mx/centro-de-preferencias",
+     "nombre": "aquí",
+     "unicos": 85,
+     "total": 171
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar en navegador",
+     "unicos": 6,
+     "total": 10
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/login",
+     "nombre": "ver-producto",
+     "unicos": 5,
+     "total": 7
+    },
+    {
+     "destino": "social",
+     "url": "https://www.facebook.com/Nescafe.MX/",
+     "nombre": "facebook.com/Nescafe.MX/",
+     "unicos": 3,
+     "total": 4
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.nescafe.com/mx/contactanos",
+     "nombre": "contactanos",
+     "unicos": 3,
+     "total": 4
+    }
+   ],
+   "_cks": {
+    "TMP-NESC-ICE-FUP": 1
+   },
+   "clicks_medidos": 112
+  },
+  "001-P032": {
+   "pieza_id": "001-P032",
+   "links": 15,
+   "clicks_total": 2768,
+   "clicks_unicos": 2153,
+   "por_destino": {
+    "social": 22,
+    "legal": 12,
+    "contenido": 1314,
+    "baja_preferencias": 163,
+    "qcart": 503,
+    "ver_en_navegador": 139
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/PySVWRVY",
+     "nombre": "recetasnestlmx.qcart.app/PySVWRVY",
+     "unicos": 503,
+     "total": 631
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/categorias/comidas",
+     "nombre": "recetasnestle.com.mx/categorias/comidas",
+     "unicos": 447,
+     "total": 546
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 356,
+     "total": 462
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/comidas-tacos-ahogados-pollo-morita",
+     "nombre": "recetasnestle.com.mx/recetas/comidas-tacos-ahogados-pollo-morita",
+     "unicos": 187,
+     "total": 225
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 163,
+     "total": 251
+    }
+   ],
+   "_cks": {
+    "TMP-RN-AON-PROP1": 1
+   },
+   "clicks_medidos": 2153,
+   "clicks_de_prueba": 2
+  },
+  "001-P033": {
+   "pieza_id": "001-P033",
+   "links": 14,
+   "clicks_total": 2328,
+   "clicks_unicos": 1854,
+   "por_destino": {
+    "social": 8,
+    "legal": 8,
+    "contenido": 1138,
+    "baja_preferencias": 163,
+    "qcart": 448,
+    "ver_en_navegador": 89
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/PySVWRVY",
+     "nombre": "recetasnestlmx.qcart.app/PySVWRVY",
+     "unicos": 448,
+     "total": 561
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/categorias/comidas",
+     "nombre": "recetasnestle.com.mx/categorias/comidas",
+     "unicos": 400,
+     "total": 489
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx",
+     "nombre": "recetasnestle.com.mx",
+     "unicos": 319,
+     "total": 422
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 163,
+     "total": 236
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/comidas-tacos-ahogados-pollo-morita",
+     "nombre": "recetasnestle.com.mx/recetas/comidas-tacos-ahogados-pollo-morita",
+     "unicos": 144,
+     "total": 167
+    }
+   ],
+   "_cks": {
+    "TMP-RN-AON-PROP1-FUP": 1
+   },
+   "clicks_medidos": 1854
+  },
+  "005-P010": {
+   "pieza_id": "005-P010",
+   "links": 12,
+   "clicks_total": 657,
+   "clicks_unicos": 442,
+   "por_destino": {
+    "social": 32,
+    "legal": 7,
+    "baja_preferencias": 54,
+    "qcart": 191,
+    "ver_en_navegador": 14,
+    "contenido": 144
+   },
+   "top": [
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/hTHNLqzL",
+     "nombre": "recetasnestlmx.qcart.app/hTHNLqzL",
+     "unicos": 113,
+     "total": 151
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/aceitunas-toreadas#google_vignette",
+     "nombre": "recetasnestle.com.mx/recetas/aceitunas-toreadas#google_vignette",
+     "unicos": 96,
+     "total": 134
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/GQnvqqP3",
+     "nombre": "recetasnestlmx.qcart.app/GQnvqqP3",
+     "unicos": 78,
+     "total": 105
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 54,
+     "total": 84
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/papas-nacho",
+     "nombre": "recetasnestle.com.mx/recetas/papas-nacho",
+     "unicos": 48,
+     "total": 67
+    }
+   ],
+   "_cks": {
+    "TMP-MAGGI-J7-B-C": 1
+   },
+   "clicks_medidos": 442
+  },
+  "005-P012": {
+   "pieza_id": "005-P012",
+   "links": 12,
+   "clicks_total": 300,
+   "clicks_unicos": 173,
+   "por_destino": {
+    "social": 13,
+    "legal": 5,
+    "baja_preferencias": 18,
+    "qcart": 12,
+    "ver_en_navegador": 9,
+    "contenido": 116
+   },
+   "top": [
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/nachos-carne",
+     "nombre": "recetasnestle.com.mx/recetas/nachos-carne",
+     "unicos": 64,
+     "total": 86
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/sarten-queso-jalapeno",
+     "nombre": "recetasnestle.com.mx/recetas/sarten-queso-jalapeno",
+     "unicos": 52,
+     "total": 73
+    },
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 18,
+     "total": 25
+    },
+    {
+     "destino": "ver_en_navegador",
+     "url": "https://view.email.mx.nestle.com/?vawpToken=%%tokenized_vawp_metadata%%",
+     "nombre": "Visualizar no navegador",
+     "unicos": 9,
+     "total": 23
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/0eQt7uf5",
+     "nombre": "recetasnestlmx.qcart.app/0eQt7uf5",
+     "unicos": 6,
+     "total": 13
+    }
+   ],
+   "_cks": {
+    "TMP-MAGGI-J8": 1
+   },
+   "clicks_medidos": 173
+  },
+  "005-P014": {
+   "pieza_id": "005-P014",
+   "links": 14,
+   "clicks_total": 242,
+   "clicks_unicos": 124,
+   "por_destino": {
+    "social": 22,
+    "legal": 7,
+    "baja_preferencias": 29,
+    "qcart": 34,
+    "ver_en_navegador": 4,
+    "contenido": 28
+   },
+   "top": [
+    {
+     "destino": "baja_preferencias",
+     "url": "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%",
+     "nombre": "unsub",
+     "unicos": 29,
+     "total": 41
+    },
+    {
+     "destino": "qcart",
+     "url": "https://recetasnestlmx.qcart.app/bfQ24tDq",
+     "nombre": "recetasnestlmx.qcart.app/bfQ24tDq",
+     "unicos": 29,
+     "total": 39
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/tropi-maggi-shot?utm_source=crm-hive&utm_medium=email&utm_campaign=maggi-ligamx",
+     "nombre": "recetasnestle.com.mx/recetas/tropi-maggi-shot",
+     "unicos": 14,
+     "total": 27
+    },
+    {
+     "destino": "social",
+     "url": "https://www.tiktok.com/@recetasnestlemx/video/7663506722383875349?utm_source=crm-hive&utm_medium=email&utm_campaign=magg",
+     "nombre": "tiktok.com/@recetasnestlemx/video/7663506722383875349",
+     "unicos": 14,
+     "total": 23
+    },
+    {
+     "destino": "contenido",
+     "url": "https://www.recetasnestle.com.mx/recetas/alitas-salsa-mango-habanero?utm_source=crm-hive&utm_medium=email&utm_campaign=m",
+     "nombre": "recetasnestle.com.mx/recetas/alitas-salsa-mango-habanero",
+     "unicos": 9,
+     "total": 17
+    }
+   ],
+   "_cks": {
+    "TMP-MAGGI-J9": 1
+   },
+   "clicks_medidos": 124
+  }
+ },
+ "auditoria": {
+  "piezas": 107,
+  "links": 976,
+  "clicks_unicos": 49217,
+  "sin_cruce_por_contentname": [
+   "001-P001",
+   "001-P002",
+   "001-P003",
+   "001-P004",
+   "001-P005",
+   "001-P006",
+   "001-P023",
+   "001-P024",
+   "001-P025",
+   "001-P026",
+   "001-P027",
+   "001-P028"
+  ],
+  "por_destino": {
+   "app": 4206,
+   "qcart": 5492,
+   "contenido": 15070,
+   "baja_preferencias": 3509,
+   "ver_en_navegador": 2475,
+   "social": 3722,
+   "legal": 532,
+   "retail": 14211
+  },
+  "descuadres": []
+ }
+}

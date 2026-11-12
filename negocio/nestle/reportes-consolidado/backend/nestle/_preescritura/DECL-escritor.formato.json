@@ -1,0 +1,15 @@
+{
+ "skill": "escritor",
+ "script": "escritor.formato.js",
+ "declarado": "2026-08-27",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "(la que reciba por --hoja)",
+   "grano": "una columna por ancho declarado",
+   "llave": "la posición de la columna en la hoja",
+   "celdas_esperadas": "0 celdas de dato — solo `cols`, `sheetViews` y `sheetFormatPr`"
+  }
+ ]
+}

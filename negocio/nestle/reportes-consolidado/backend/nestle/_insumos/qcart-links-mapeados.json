@@ -1,0 +1,529 @@
+{
+ "paso": "Q4",
+ "equivalencias": {
+  "lechera-junio": {
+   "camp": "Antojo Infinito",
+   "por": "La Lechera; sus utm_content (e-p1…e-c1) son los touchpoints de esa campaña"
+  },
+  "maggi-junio26": {
+   "camp": "Mundial",
+   "por": "Maggi Mundial de junio; utm_content por partido (e-botana1, e-cooking1…)"
+  },
+  "maggi-julio26": {
+   "camp": "Mundial",
+   "por": "Maggi Mundial de julio; misma serie de touchpoints"
+  },
+  "maggi-ligamx-agosto26": {
+   "camp": "Liga MX",
+   "por": "Liga MX de agosto; utm_content e-p1…e-p7"
+  }
+ },
+ "resueltos": [
+  {
+   "cod": "CDoLolmJ",
+   "nombre": "DIP de Pimiento Rostizado",
+   "pieza": "005-P002",
+   "fila": 95,
+   "campana": "Liga MX",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p2"
+   ],
+   "eventos": 7,
+   "tiendas": [
+    "walmart"
+   ],
+   "nota": ""
+  },
+  {
+   "cod": "TjDcVdNI",
+   "nombre": "Nachos con Carne",
+   "pieza": "005-P004",
+   "fila": 97,
+   "campana": "Liga MX",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p6"
+   ],
+   "eventos": 4,
+   "tiendas": [
+    "walmart"
+   ],
+   "nota": ""
+  },
+  {
+   "cod": "bgsOdlLo",
+   "nombre": "Sarten de Queso",
+   "pieza": "005-P004",
+   "fila": 97,
+   "campana": "Liga MX",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p6"
+   ],
+   "eventos": 3,
+   "tiendas": [
+    "(sin tienda)",
+    "walmart"
+   ],
+   "nota": ""
+  },
+  {
+   "cod": "J2Q8RKyO",
+   "nombre": "Maggi Shots Cerdito",
+   "pieza": "005-P004",
+   "fila": 97,
+   "campana": "Liga MX",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p6"
+   ],
+   "eventos": 2,
+   "tiendas": [
+    "walmart"
+   ],
+   "nota": ""
+  },
+  {
+   "cod": "piPZpvXp",
+   "nombre": "Papas Nacho",
+   "pieza": "005-P003",
+   "fila": 96,
+   "campana": "Liga MX",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p4"
+   ],
+   "eventos": 4,
+   "tiendas": [
+    "walmart"
+   ],
+   "nota": ""
+  },
+  {
+   "cod": "CVCPHfND",
+   "nombre": "Aceitunas Toreadas",
+   "pieza": "005-P003",
+   "fila": 96,
+   "campana": "Liga MX",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p4"
+   ],
+   "eventos": 4,
+   "tiendas": [
+    "(sin tienda)",
+    "walmart"
+   ],
+   "nota": ""
+  },
+  {
+   "cod": "SD0eqGtK",
+   "nombre": "Nachos con Carne",
+   "pieza": "005-P001",
+   "fila": 94,
+   "campana": "Liga MX",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p1"
+   ],
+   "eventos": 9,
+   "tiendas": [
+    "walmart"
+   ],
+   "nota": ""
+  },
+  {
+   "cod": "GQnvqqP3",
+   "nombre": "Papas Nacho",
+   "pieza": "005-P001",
+   "fila": 94,
+   "campana": "Liga MX",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p1"
+   ],
+   "eventos": 3,
+   "tiendas": [
+    "walmart"
+   ],
+   "nota": ""
+  }
+ ],
+ "sin_pieza": [
+  {
+   "cod": "AwsreGWs",
+   "nombre": "Gelatina de Mazapán_C",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p1"
+   ],
+   "eventos": 19,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p1"
+  },
+  {
+   "cod": "aPFwXeaG",
+   "nombre": "Carlota Práctica de Durazno_C",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p1"
+   ],
+   "eventos": 10,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p1"
+  },
+  {
+   "cod": "L5rqwrzD",
+   "nombre": "Papas Antojo Supremo_W",
+   "utm_campaign": "maggi-junio26",
+   "utm_content": [
+    "e-botana1"
+   ],
+   "eventos": 46,
+   "motivo": "no hay pieza de «Mundial» con touchpoint e-botana1"
+  },
+  {
+   "cod": "yj8PKdRr",
+   "nombre": "Alitas Agridulces_C",
+   "utm_campaign": "maggi-junio26",
+   "utm_content": [
+    "e-cooking1"
+   ],
+   "eventos": 19,
+   "motivo": "no hay pieza de «Mundial» con touchpoint e-cooking1"
+  },
+  {
+   "cod": "JPrNSrwn",
+   "nombre": "Piñarindo_W",
+   "utm_campaign": "maggi-junio26",
+   "utm_content": [
+    "e-bebida1"
+   ],
+   "eventos": 22,
+   "motivo": "no hay pieza de «Mundial» con touchpoint e-bebida1"
+  },
+  {
+   "cod": "P8IcwfWJ",
+   "nombre": "Camaronera",
+   "utm_campaign": "maggi-julio26",
+   "utm_content": [
+    "e-bebida5",
+    "e-bebida3"
+   ],
+   "eventos": 30,
+   "motivo": "no hay pieza de «Mundial» con touchpoint e-bebida5/e-bebida3"
+  },
+  {
+   "cod": "oJclpobS",
+   "nombre": "Carlota Práctica de Durazno_W",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p1"
+   ],
+   "eventos": 7,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p1"
+  },
+  {
+   "cod": "lfFYbUfy",
+   "nombre": "Carlota de limón fácil_C",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p2"
+   ],
+   "eventos": 12,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p2"
+  },
+  {
+   "cod": "3Lb6FbAa",
+   "nombre": "Flan de queso sin horno_W",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p2"
+   ],
+   "eventos": 10,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p2"
+  },
+  {
+   "cod": "Cj0XkO1h",
+   "nombre": "Gelatina de Mazapán_W",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p1"
+   ],
+   "eventos": 9,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p1"
+  },
+  {
+   "cod": "M67vOg1g",
+   "nombre": "Flan de queso sin horno_C",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p2"
+   ],
+   "eventos": 9,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p2"
+  },
+  {
+   "cod": "znjG7J6r",
+   "nombre": "Botana fresca",
+   "utm_campaign": "maggi-julio26",
+   "utm_content": [
+    "e-botanas5",
+    "e-botanas3",
+    "e-bebida3"
+   ],
+   "eventos": 16,
+   "motivo": "no hay pieza de «Mundial» con touchpoint e-botanas5/e-botanas3/e-bebida3"
+  },
+  {
+   "cod": "5NnTxarc",
+   "nombre": "Gomipapas",
+   "utm_campaign": "maggi-julio26",
+   "utm_content": [
+    "e-cooking5",
+    "e-cooking3"
+   ],
+   "eventos": 21,
+   "motivo": "no hay pieza de «Mundial» con touchpoint e-cooking5/e-cooking3"
+  },
+  {
+   "cod": "8IlcZ2pI",
+   "nombre": "Manteconchas_W",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p4"
+   ],
+   "eventos": 5,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p4"
+  },
+  {
+   "cod": "TMECSIho",
+   "nombre": "Arroz con Leche y coco_C",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p3"
+   ],
+   "eventos": 8,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p3"
+  },
+  {
+   "cod": "y6hReRB5",
+   "nombre": "Capirotada_C",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p3"
+   ],
+   "eventos": 3,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p3"
+  },
+  {
+   "cod": "dlO6lyOM",
+   "nombre": "Manteconchas_C",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p4"
+   ],
+   "eventos": 4,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p4"
+  },
+  {
+   "cod": "SgKfnrbu",
+   "nombre": "Trufas de Nuez_C",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p4"
+   ],
+   "eventos": 7,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p4"
+  },
+  {
+   "cod": "tErzItBY",
+   "nombre": "Arroz con Leche y coco_W",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p3"
+   ],
+   "eventos": 7,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p3"
+  },
+  {
+   "cod": "pkuRXYX1",
+   "nombre": "Carlota de Limón fácil_W",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p2"
+   ],
+   "eventos": 10,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p2"
+  },
+  {
+   "cod": "ePytHRi3",
+   "nombre": "Capirotada_W",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p3"
+   ],
+   "eventos": 3,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p3"
+  },
+  {
+   "cod": "3vn9NQfR",
+   "nombre": "Trufas de nuez_W",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-p4"
+   ],
+   "eventos": 2,
+   "motivo": "no hay pieza de «Antojo Infinito» con touchpoint e-p4"
+  },
+  {
+   "cod": "YMwwJWdM",
+   "nombre": "Hambuguesa Perfecta_W_2",
+   "utm_campaign": "maggi-junio26",
+   "utm_content": [
+    "e-cooking2"
+   ],
+   "eventos": 7,
+   "motivo": "no hay pieza de «Mundial» con touchpoint e-cooking2"
+  },
+  {
+   "cod": "2x7oNuzI",
+   "nombre": "Pay de Queso sin Horno_W",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-c1"
+   ],
+   "eventos": 2,
+   "motivo": "2 piezas candidatas: 003-P001, 003-P002"
+  },
+  {
+   "cod": "DmrKXQ1D",
+   "nombre": "Pay de Queso sin Horno_C",
+   "utm_campaign": "lechera-junio",
+   "utm_content": [
+    "e-c1"
+   ],
+   "eventos": 2,
+   "motivo": "2 piezas candidatas: 003-P001, 003-P002"
+  },
+  {
+   "cod": "BdN0ck7t",
+   "nombre": "Brochetas de pollo",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p5"
+   ],
+   "eventos": 4,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p5"
+  },
+  {
+   "cod": "hwVjW6u0",
+   "nombre": "Tropi Maggi Shot",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p7"
+   ],
+   "eventos": 3,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p7"
+  },
+  {
+   "cod": "dgtFrwjE",
+   "nombre": "Maggi Shots Chipocludo",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p7"
+   ],
+   "eventos": 4,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p7"
+  },
+  {
+   "cod": "lmbcEdCW",
+   "nombre": "Papitas con Elote",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p7"
+   ],
+   "eventos": 2,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p7"
+  },
+  {
+   "cod": "k4hC6ZLT",
+   "nombre": "Miche Maggi",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p7"
+   ],
+   "eventos": 3,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p7"
+  },
+  {
+   "cod": "Deqv4KA3",
+   "nombre": "Maggi Shots Arbolito",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p5"
+   ],
+   "eventos": 4,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p5"
+  },
+  {
+   "cod": "okUSdwJk",
+   "nombre": "Cebollitas Maggi",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p5"
+   ],
+   "eventos": 3,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p5"
+  },
+  {
+   "cod": "t2Xsff9R",
+   "nombre": "Brochetas de pollo",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p3"
+   ],
+   "eventos": 6,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p3"
+  },
+  {
+   "cod": "heWpZFIA",
+   "nombre": "Maggi Coctel",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p3"
+   ],
+   "eventos": 4,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p3"
+  },
+  {
+   "cod": "0dr0ela7",
+   "nombre": "Nachos con Carne",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p5"
+   ],
+   "eventos": 2,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p5"
+  },
+  {
+   "cod": "p6BjfLqz",
+   "nombre": "Cebollitas Maggi",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p3"
+   ],
+   "eventos": 4,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p3"
+  },
+  {
+   "cod": "vfzb8qQ6",
+   "nombre": "Maggi Shots",
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "utm_content": [
+    "e-p3"
+   ],
+   "eventos": 3,
+   "motivo": "no hay pieza de «Liga MX» con touchpoint e-p3"
+  }
+ ]
+}

@@ -1,0 +1,581 @@
+{
+ "paso": "N1h",
+ "autoridad": "C:\\Users\\Ricardo.Aguilar/OneDrive - OneWorkplace/Marketing Automation Kinesso - Librería-Sharepoint-MAK/Nestlé/Reportes-Nestlé/ReportesQcart/Qcart-Links Mails-Hive- MX.xlsx",
+ "contradice": [
+  {
+   "cod": "uDEM0jlX",
+   "pieza": "001-P005",
+   "tp_catalogo": "E-P1",
+   "tp_maestro": "Email 1",
+   "audiencia_maestro": "Tradicional Parents",
+   "receta": "Tinga de Pollo",
+   "campana": "ao-recetasnestlé",
+   "fila": 6,
+   "columna": "Cod_Walmart_4"
+  },
+  {
+   "cod": "vgMqmCrL",
+   "pieza": "001-P005",
+   "tp_catalogo": "E-P1",
+   "tp_maestro": "Email 1",
+   "audiencia_maestro": "Tradicional Parents",
+   "receta": "Carne para Hamburguesa",
+   "campana": "ao-recetasnestlé",
+   "fila": 6,
+   "columna": "Cod_Walmart_3"
+  },
+  {
+   "cod": "ETJFEOzD",
+   "pieza": "001-P003",
+   "tp_catalogo": "E-P3",
+   "tp_maestro": "Email 2",
+   "audiencia_maestro": "New Parents",
+   "receta": "Espagueti Rojo Cremoso",
+   "campana": "ao-recetasnestlé",
+   "fila": 4,
+   "columna": "Cod_Walmart_2"
+  },
+  {
+   "cod": "1iqH9Tx7",
+   "pieza": "001-P003",
+   "tp_catalogo": "E-P3",
+   "tp_maestro": "Email 2",
+   "audiencia_maestro": "New Parents",
+   "receta": "Molletes",
+   "campana": "ao-recetasnestlé",
+   "fila": 4,
+   "columna": "Cod_Walmart_3"
+  },
+  {
+   "cod": "E8RDSsHg",
+   "pieza": "001-P001",
+   "tp_catalogo": "E-P4",
+   "tp_maestro": "Email 3",
+   "audiencia_maestro": "Career Focused Parents",
+   "receta": "Salmón a las finas hierbas",
+   "campana": "ao-recetasnestlé",
+   "fila": 2,
+   "columna": "Cod_Walmart_2"
+  },
+  {
+   "cod": "9Bm8slOi",
+   "pieza": "001-P001",
+   "tp_catalogo": "E-P4",
+   "tp_maestro": "Email 3",
+   "audiencia_maestro": "Career Focused Parents",
+   "receta": "Wraps de atún",
+   "campana": "ao-recetasnestlé",
+   "fila": 2,
+   "columna": "Cod_Walmart_3"
+  },
+  {
+   "cod": "hWaJfDxS",
+   "pieza": "004-P002",
+   "tp_catalogo": "E-P1",
+   "tp_maestro": "e-cooking1",
+   "audiencia_maestro": "new-cooking",
+   "receta": "Alitas Agridulces",
+   "campana": "maggi-junio26",
+   "fila": 37,
+   "columna": "Cod_Chedraui_1"
+  },
+  {
+   "cod": "3NIh2kYW",
+   "pieza": "004-P020",
+   "tp_catalogo": "E-P2",
+   "tp_maestro": "e-cooking2",
+   "audiencia_maestro": "new-cooking",
+   "receta": "Alitas Agridulces",
+   "campana": "maggi-junio26",
+   "fila": 116,
+   "columna": "Cod_Chedraui_2"
+  },
+  {
+   "cod": "3QfdZN2Q",
+   "pieza": "004-P004",
+   "tp_catalogo": "E-P2",
+   "tp_maestro": "e-bebida2",
+   "audiencia_maestro": "bebidas",
+   "receta": "Gomichela",
+   "campana": "maggi-junio26",
+   "fila": 39,
+   "columna": "Cod_Walmart_1"
+  },
+  {
+   "cod": "SN2YWvgo",
+   "pieza": "004-P004",
+   "tp_catalogo": "E-P2",
+   "tp_maestro": "e-bebida2",
+   "audiencia_maestro": "bebidas",
+   "receta": "Gomichela",
+   "campana": "maggi-junio26",
+   "fila": 39,
+   "columna": "Cod_Chedraui_2"
+  },
+  {
+   "cod": "ZJ3SmPMy",
+   "pieza": "004-P020",
+   "tp_catalogo": "E-P2",
+   "tp_maestro": "e-cooking2",
+   "audiencia_maestro": "new-cooking",
+   "receta": "Hambuguesa Perfecta",
+   "campana": "maggi-junio26",
+   "fila": 116,
+   "columna": "Cod_Walmart_3"
+  },
+  {
+   "cod": "wdvsBDby",
+   "pieza": "004-P020",
+   "tp_catalogo": "E-P2",
+   "tp_maestro": "e-cooking2",
+   "audiencia_maestro": "new-cooking",
+   "receta": "Hambuguesa Perfecta",
+   "campana": "maggi-junio26",
+   "fila": 116,
+   "columna": "Cod_Chedraui_4"
+  },
+  {
+   "cod": "LJQsq5T9",
+   "pieza": "004-P020",
+   "tp_catalogo": "E-P2",
+   "tp_maestro": "e-cooking-alitas",
+   "audiencia_maestro": "new-cooking",
+   "receta": "Alitas agridulces",
+   "campana": "maggi-junio26",
+   "fila": 116,
+   "columna": "Cod_Walmart_1"
+  },
+  {
+   "cod": "sbH9gVge",
+   "pieza": "004-P017",
+   "tp_catalogo": "Semifinal A",
+   "tp_maestro": "e-botanas6",
+   "audiencia_maestro": "botanas",
+   "receta": "Baguette 3 quesos",
+   "campana": "maggi-julio14",
+   "fila": 86,
+   "columna": "Cod_Walmart_1"
+  },
+  {
+   "cod": "Agy5v9Yb",
+   "pieza": "004-P017",
+   "tp_catalogo": "Semifinal A",
+   "tp_maestro": "e-botanas6",
+   "audiencia_maestro": "botanas",
+   "receta": "Tapas Berenjenas",
+   "campana": "maggi-julio14",
+   "fila": 86,
+   "columna": "Cod_Walmart_2"
+  },
+  {
+   "cod": "2YWR8c3Z",
+   "pieza": "004-P018",
+   "tp_catalogo": "Semifinal B",
+   "tp_maestro": "e-botanas7",
+   "audiencia_maestro": "botanas",
+   "receta": "Deditos de pescado",
+   "campana": "maggi-julio15",
+   "fila": 87,
+   "columna": "Cod_Walmart_1"
+  },
+  {
+   "cod": "haPs2HHU",
+   "pieza": "004-P018",
+   "tp_catalogo": "Semifinal B",
+   "tp_maestro": "e-botanas7",
+   "audiencia_maestro": "botanas",
+   "receta": "Choripan",
+   "campana": "maggi-julio15",
+   "fila": 87,
+   "columna": "Cod_Walmart_2"
+  },
+  {
+   "cod": "LO8RxwsM",
+   "pieza": "004-P019",
+   "tp_catalogo": "Final",
+   "tp_maestro": "wa-final-aceitunas",
+   "audiencia_maestro": "final",
+   "receta": "Aceitunas preparadas: receta simple y rápida",
+   "campana": "maggi-julio26",
+   "fila": 88,
+   "columna": "Cod_Walmart_2"
+  },
+  {
+   "cod": "2Yn9L0bD",
+   "pieza": "004-P019",
+   "tp_catalogo": "Final",
+   "tp_maestro": "wa-final-empanadas",
+   "audiencia_maestro": "final",
+   "receta": "Empanadas tipo argentina",
+   "campana": "maggi-julio26",
+   "fila": 88,
+   "columna": "Cod_Walmart_1"
+  },
+  {
+   "cod": "uv5JZ8U7",
+   "pieza": "004-P019",
+   "tp_catalogo": "Final",
+   "tp_maestro": "wa-final-botana-salsa",
+   "audiencia_maestro": "final",
+   "receta": "Salsa picante",
+   "campana": "maggi-julio26",
+   "fila": 88,
+   "columna": "Cod_Walmart_3"
+  },
+  {
+   "cod": "hTHNLqzL",
+   "pieza": "005-P006",
+   "tp_catalogo": "E-J4",
+   "tp_maestro": "e-j7",
+   "audiencia_maestro": "regionunificada",
+   "receta": "Aceitunas Toreadas",
+   "campana": "Maggi-LigaMx-agosto26",
+   "fila": 106,
+   "columna": "Cod_Walmart_2"
+  }
+ ],
+ "en_dos_piezas": [
+  {
+   "cod": "hTHNLqzL",
+   "maestro": {
+    "hoja": "Septiembre",
+    "fila": 5,
+    "utm_campaign": "Maggi-LigaMx-agosto26",
+    "fecha_envio": "46269",
+    "utm_content": "e-j7",
+    "utm_content_heredado": false,
+    "utm_term": "regionunificada",
+    "receta": "Aceitunas Toreadas",
+    "retailer": "Walmart",
+    "codigo": "hTHNLqzL",
+    "codigo_via": "columna"
+   },
+   "piezas": [
+    "005-P006",
+    "005-P010"
+   ]
+  }
+ ],
+ "sin_declarar": [
+  {
+   "cod": "tJEICO87",
+   "maestro": {
+    "hoja": "Junio",
+    "fila": 5,
+    "utm_campaign": "maggi-junio26",
+    "fecha_envio": "46183",
+    "utm_content": "e-botana1",
+    "utm_content_heredado": false,
+    "utm_term": "botanas",
+    "receta": "Papas Antojo Supremo",
+    "retailer": "Walmart",
+    "codigo": "tJEICO87",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "Z8W0ZouI",
+   "maestro": {
+    "hoja": "Junio",
+    "fila": 6,
+    "utm_campaign": "maggi-junio26",
+    "fecha_envio": "46183",
+    "utm_content": "e-botana1",
+    "utm_content_heredado": false,
+    "utm_term": "botanas",
+    "receta": "Papas Antojo Supremo",
+    "retailer": "Chedraui",
+    "codigo": "Z8W0ZouI",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "rr0VvKTb",
+   "maestro": {
+    "hoja": "Junio",
+    "fila": 7,
+    "utm_campaign": "maggi-junio26",
+    "fecha_envio": "46183",
+    "utm_content": "e-bebida1",
+    "utm_content_heredado": false,
+    "utm_term": "bebidas",
+    "receta": "Piñarindo",
+    "retailer": "Walmart",
+    "codigo": "rr0VvKTb",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "dHfqmS7n",
+   "maestro": {
+    "hoja": "Junio",
+    "fila": 8,
+    "utm_campaign": "maggi-junio26",
+    "fecha_envio": "46183",
+    "utm_content": "e-bebida1",
+    "utm_content_heredado": false,
+    "utm_term": "bebidas",
+    "receta": "Piñarindo",
+    "retailer": "Chedraui",
+    "codigo": "dHfqmS7n",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "HcDJTsRH",
+   "maestro": {
+    "hoja": "Junio",
+    "fila": 13,
+    "utm_campaign": "maggi-junio26",
+    "fecha_envio": "46190",
+    "utm_content": "e-botana2",
+    "utm_content_heredado": false,
+    "utm_term": "botanas",
+    "receta": "Vaso Botanero",
+    "retailer": "Walmart",
+    "codigo": "HcDJTsRH",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "rueO2xbY",
+   "maestro": {
+    "hoja": "Junio",
+    "fila": 14,
+    "utm_campaign": "maggi-junio26",
+    "fecha_envio": "46190",
+    "utm_content": "e-botana2",
+    "utm_content_heredado": false,
+    "utm_term": "botanas",
+    "receta": "Vaso Botanero",
+    "retailer": "Chedraui",
+    "codigo": "rueO2xbY",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "o41ObWyu",
+   "maestro": {
+    "hoja": "Junio",
+    "fila": 17,
+    "utm_campaign": "lechera-junio",
+    "fecha_envio": "46594",
+    "utm_content": "e-c1",
+    "utm_content_heredado": false,
+    "utm_term": "consider",
+    "receta": "Carlota Ligera de Limón",
+    "retailer": "Walmart",
+    "codigo": "o41ObWyu",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "PJrhl5GT",
+   "maestro": {
+    "hoja": "Junio",
+    "fila": 18,
+    "utm_campaign": "lechera-junio",
+    "fecha_envio": "46594",
+    "utm_content": "e-c1",
+    "utm_content_heredado": false,
+    "utm_term": "consider",
+    "receta": "Carlota Ligera de Limón",
+    "retailer": "Chedraui",
+    "codigo": "PJrhl5GT",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "P8IcwfWJ",
+   "maestro": {
+    "hoja": "Julio",
+    "fila": 10,
+    "utm_campaign": "maggi-julio26",
+    "fecha_envio": "No salió",
+    "utm_content": "e-bebida5",
+    "utm_content_heredado": false,
+    "utm_term": "bebidas",
+    "receta": "Camaronera",
+    "retailer": "Walmart",
+    "codigo": "P8IcwfWJ",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "znjG7J6r",
+   "maestro": {
+    "hoja": "Julio",
+    "fila": 11,
+    "utm_campaign": "maggi-julio26",
+    "fecha_envio": "No salió",
+    "utm_content": "e-botanas5",
+    "utm_content_heredado": false,
+    "utm_term": "botanas",
+    "receta": "Botana fresca",
+    "retailer": "Walmart",
+    "codigo": "znjG7J6r",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "5NnTxarc",
+   "maestro": {
+    "hoja": "Julio",
+    "fila": 12,
+    "utm_campaign": "maggi-julio26",
+    "fecha_envio": "No salió",
+    "utm_content": "e-cooking5",
+    "utm_content_heredado": false,
+    "utm_term": "new-cooking",
+    "receta": "Gomipapas",
+    "retailer": "Walmart",
+    "codigo": "5NnTxarc",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "kzSTHGEd",
+   "maestro": {
+    "hoja": "Septiembre",
+    "fila": 13,
+    "utm_campaign": "Maggi-LigaMx-sep26",
+    "fecha_envio": "46290",
+    "utm_content": "e-j10",
+    "utm_content_heredado": false,
+    "utm_term": "regionunificada-part-c-email",
+    "receta": "Dips Botaneros",
+    "retailer": "Walmart",
+    "codigo": "kzSTHGEd",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "jhMxJiSo",
+   "maestro": {
+    "hoja": "Septiembre",
+    "fila": 14,
+    "utm_campaign": "Maggi-LigaMx-sep26",
+    "fecha_envio": "46290",
+    "utm_content": "e-j10",
+    "utm_content_heredado": false,
+    "utm_term": "regionunificada-part-c-email",
+    "receta": "Pepimiche",
+    "retailer": "Walmart",
+    "codigo": "jhMxJiSo",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "uCV8KGHm",
+   "maestro": {
+    "hoja": "Septiembre",
+    "fila": 15,
+    "utm_campaign": "Maggi-LigaMx-sep26",
+    "fecha_envio": "46289",
+    "utm_content": "wa-j10",
+    "utm_content_heredado": false,
+    "utm_term": "regionunificada-part-c-wa",
+    "receta": "Papitas elote",
+    "retailer": "Walmart",
+    "codigo": "uCV8KGHm",
+    "codigo_via": "columna"
+   }
+  },
+  {
+   "cod": "b48Oay1D",
+   "maestro": {
+    "hoja": "Septiembre",
+    "fila": 16,
+    "utm_campaign": "Maggi-LigaMx-sep29",
+    "fecha_envio": "46294",
+    "utm_content": "wa-SNM1",
+    "utm_content_heredado": false,
+    "utm_term": "regionunificada-SNM1",
+    "receta": "Ceviche Pescado",
+    "retailer": "Walmart",
+    "codigo": "b48Oay1D",
+    "codigo_via": "columna"
+   }
+  }
+ ],
+ "de_mas": [
+  {
+   "cod": "cartanywhere ; tJEICO87 ; Z8W0ZouI",
+   "pieza": "004-P001",
+   "campana": "Mundial",
+   "tp": "E-P1"
+  },
+  {
+   "cod": "Y8umAAnA",
+   "pieza": "004-P001",
+   "campana": "Mundial",
+   "tp": "E-P1"
+  },
+  {
+   "cod": "cCFb2xEx",
+   "pieza": "004-P002",
+   "campana": "Mundial",
+   "tp": "E-P1"
+  },
+  {
+   "cod": "rr0VvKTb ; dHfqmS7n",
+   "pieza": "004-P003",
+   "campana": "Mundial",
+   "tp": "E-P1"
+  },
+  {
+   "cod": "w5r9LWOP",
+   "pieza": "004-P003",
+   "campana": "Mundial",
+   "tp": "E-P1"
+  },
+  {
+   "cod": "HcDJTsRH ; rueO2xbY",
+   "pieza": "004-P005",
+   "campana": "Mundial",
+   "tp": "E-P2"
+  },
+  {
+   "cod": "vk67sh2J",
+   "pieza": "004-P006",
+   "campana": "Mundial",
+   "tp": "E-P3"
+  },
+  {
+   "cod": "YJOatjQs",
+   "pieza": "004-P007",
+   "campana": "Mundial",
+   "tp": "E-P3"
+  },
+  {
+   "cod": "xka2NWrW",
+   "pieza": "004-P008",
+   "campana": "Mundial",
+   "tp": "E-P3"
+  },
+  {
+   "cod": "o41ObWyu ; PDy0MeF9",
+   "pieza": "003-P001",
+   "campana": "Antojo Infinito",
+   "tp": "E-C1"
+  },
+  {
+   "cod": "r0J2KBES ; PJrhl5GT",
+   "pieza": "003-P001",
+   "campana": "Antojo Infinito",
+   "tp": "E-C1"
+  },
+  {
+   "cod": "GblUR93I",
+   "pieza": "001-P021",
+   "campana": "AON",
+   "tp": "E-P4"
+  },
+  {
+   "cod": "fDAdN8Qa",
+   "pieza": "001-P021",
+   "campana": "AON",
+   "tp": "E-P4"
+  }
+ ]
+}

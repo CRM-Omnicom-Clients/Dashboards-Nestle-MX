@@ -1,0 +1,6 @@
+{
+ "version": 1,
+ "_que_es": "Decisiones ya tomadas sobre conflictos entre fuentes. APPEND-ONLY. Un conflicto que aparece aquí NO se vuelve a preguntar nunca — es el equivalente de un alias, pero para conflictos.",
+ "_llave": "campo ¦ valorA ¦ valorB  (ordenados, para que el orden no importe)",
+ "decisiones": {}
+}

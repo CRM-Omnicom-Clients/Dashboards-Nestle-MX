@@ -1,0 +1,66 @@
+{
+ "paso": "N8",
+ "modo": "seco",
+ "origen": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+ "hallazgos": [
+  {
+   "destino": 1,
+   "ruta": "C:\\Users\\Ricardo.Aguilar\\OneDrive - OneWorkplace/Archivos de Leslie Monserrat Monterrosas (Omnicom) - Nestlé 2026/Marcas/CRM General/Reporte-CRM-Consolidado-Nestle-2026.xlsx",
+   "soloDestino": [
+    "Report_Mensual",
+    "Report_Campana+Qcart",
+    "Report_CompletoQcart",
+    "Report_Insights_Operativo",
+    "Data_Qcart",
+    "Catalog_Campanas",
+    "Catalog_Recetas_Qcart",
+    "Catalog_Productos_Nestle",
+    "Catalog_Benchmarks_BAU",
+    "Protocol_IA_Email",
+    "Protocol_IA_Reportes",
+    "Protocol_IA_Qcart",
+    "Protocol_IA_Auditoria",
+    "Protocol_IA_Prompts",
+    "Control_IA_Auditoria",
+    "Control_IA_Bitacora",
+    "Soporte_IA_Qcart_Productos",
+    "Soporte_IA_Stage_Carts",
+    "Soporte_IA_Stage_Products",
+    "Soporte_IA_Contexto"
+   ],
+   "soloOrigen": [
+    "Maggi Reporte",
+    "Exclusiones",
+    "Reporte_julio",
+    "Catalogo_Piezas",
+    "Sheet1",
+    "Catalogo_Referencias",
+    "Data_Qcart_Carritos",
+    "Data_Qcart_Productos"
+   ],
+   "filas": [
+    {
+     "hoja": "Report_Resumen",
+     "origen": 89,
+     "destino": 64,
+     "delta": 25
+    },
+    {
+     "hoja": "Data_Email",
+     "origen": 108,
+     "destino": 264,
+     "delta": -156
+    },
+    {
+     "hoja": "Data_WhatsApp",
+     "origen": 19,
+     "destino": 6,
+     "delta": 13
+    }
+   ]
+  }
+ ],
+ "bloqueos": [
+  "destino 1: la copia perderia 20 hoja(s) del destino — hace falta copia hoja por hoja"
+ ]
+}

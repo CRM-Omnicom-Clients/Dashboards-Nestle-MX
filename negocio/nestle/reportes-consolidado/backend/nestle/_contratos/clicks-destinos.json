@@ -1,0 +1,133 @@
+{
+ "paso": "motor-clicks",
+ "version": 1,
+ "fecha": "2026-09-19",
+ "que_es": "EL DICCIONARIO DE LOS CLICKS. Qué es cada tipo de click, qué links lo componen, y a qué familia pertenece. Es la ÚNICA fuente: el clasificador lo lee de aquí, el reporte se nombra desde aquí, y el auditor valida contra esto. Un patrón escrito en código y no aquí es un patrón que nadie puede revisar.",
+ "por_que_existe": "Rick, 19-sep-2026: «necesito que tengamos un diccionario claro de qué es cada métrica, qué links toma, y cómo doble validas que sí se están calculando únicamente ese tipo de links». Nace de un defecto real: el clasificador buscaba `unsub|optout|baja|desuscri` y la URL de baja de Nestlé es `www.nestle.com.mx/centro-de-preferencias`, que no matchea ninguno. 1,005 clicks al centro de preferencias, 1,009 a ver-en-navegador y 479 al aviso de privacidad se estaban contando como CONTENIDO, o sea como intención.",
+
+ "reglas": {
+  "sin_catch_all": "🔴 NINGUNA clase es catch-all. Lo que no matchea ningún patrón cae en `por_clasificar` y se DECLARA con sus clicks. Ésa es la corrección de fondo: antes `web` se quedaba con todo lo desconocido y por eso el defecto sobrevivió meses. Una URL nueva ahora aparece como pregunta, no como intención.",
+  "el_orden_importa": "Se evalúa en el orden de esta lista y gana la PRIMERA que matchea. `baja_preferencias` va antes que `contenido` porque el centro de preferencias vive en el dominio corporativo; si `contenido` fuera primero, se lo quedaría.",
+  "la_url_no_el_nombre": "Se clasifica por `Link_URL`. `Link_Name` viene vacío en casi todas las filas de la DE, así que no se puede usar como autoridad — se mira solo como refuerzo.",
+  "el_desglose_cuadra": "Σ de las clases == Σ de los links de la pieza. Un desglose que no suma su propio total no sirve.",
+  "unico_por_link": "🔴 `Clicks_Unique` de esta DE es único por LINK, no por persona. Sumar clases cuenta a una persona una vez por cada link que tocó. El número de PERSONAS es `Email_Unique_Clicks` de `CRM_Email_Piezas`, y NO se puede repartir con estos datos. Los dos números son correctos y miden cosas distintas; confundirlos es el error clásico."
+ },
+
+ "familias": {
+  "intencion": {
+   "que_es": "El click que el negocio quiere: la persona fue hacia el producto o el contenido.",
+   "clases": ["qcart", "retail", "app", "contenido"]
+  },
+  "engagement": {
+   "que_es": "Redes sociales del footer. Es interés de marca, no intención de compra ni de receta. Se reporta aparte a propósito: meterlo en intención infla la métrica con clicks del pie del correo.",
+   "clases": ["social"]
+  },
+  "mecanica": {
+   "que_es": "🔴 NO ES INTENCIÓN. Son clicks a la plomería del correo: darse de baja, abrirlo en el navegador, leer el aviso legal. Contarlos como intención es exactamente el defecto que originó este contrato.",
+   "clases": ["baja_preferencias", "ver_en_navegador", "legal"]
+  },
+  "sin_resolver": {
+   "que_es": "Destinos que ningún patrón reconoce. No se reparten a ojo: se declaran para que alguien los clasifique.",
+   "clases": ["por_clasificar"]
+  }
+ },
+
+ "clases": [
+  {
+   "id": "qcart",
+   "nombre": "Qcart",
+   "que_es": "El carrito de Qcart. Cada shortlink pertenece a UNA pieza; es el ancla de la atribución de carritos (R2).",
+   "patrones": ["qcart\\.app"],
+   "ejemplos_reales": ["recetasnestlmx.qcart.app/PySVWRVY", "recetasnestlmx.qcart.app/hTHNLqzL"],
+   "clicks_al_19_sep": 4701
+  },
+  {
+   "id": "retail",
+   "nombre": "Retail",
+   "que_es": "Compra directa en un retailer: Amazon, Walmart. 🔴 SE SEPARÓ DE `contenido` EL 19-SEP y es el hallazgo más grande de esa revisión: son 14,009 clicks —31% de toda la actividad— y estaban mezclados con las recetas. `008-P001` de Tercer Tiempo sola tiene 10,913 a un único link de Amazon, y es el destino con mejor CTOR del sistema (9.43%). Medirlo junto al contenido hacía invisible el canal de venta.",
+   "patrones": ["amazon\\.com", "walmart\\.com", "chedraui\\.com", "soriana\\.com", "lacomer\\.com\\.mx", "superama"],
+   "ejemplos_reales": ["www.amazon.com.mx/Nescafé-Clásico-Coleccionable", "www.amazon.com.mx/stores", "www.walmart.com.mx/ip"],
+   "clicks_al_19_sep": 14009
+  },
+  {
+   "id": "app",
+   "nombre": "App",
+   "que_es": "Las tiendas de aplicaciones.",
+   "patrones": ["apps\\.apple\\.com", "play\\.google\\.com", "itunes\\.apple\\.com"],
+   "ejemplos_reales": ["play.google.com/store", "apps.apple.com/us"],
+   "clicks_al_19_sep": 4178
+  },
+  {
+   "id": "baja_preferencias",
+   "nombre": "Baja y preferencias",
+   "que_es": "🔴 EL QUE ORIGINÓ TODO. El centro de preferencias y cualquier link de baja. Un click aquí NO ES una baja: la persona llegó a la página, donde puede darse de baja, cambiar preferencias o simplemente irse. Y al revés, la baja casi nunca pasa por aquí: solo el 6.3% de las 49,517 bajas tiene un click a este destino — el resto usa el botón nativo del buzón (`List-Unsubscribe`), que Gmail y Yahoo exigen a remitentes masivos y que no es un link del correo.",
+   "patrones": ["centro-de-preferencias", "preferenc", "unsub", "optout", "opt-out", "desuscri", "\\bbaja\\b"],
+   "ejemplos_reales": ["www.nestle.com.mx/centro-de-preferencias"],
+   "clicks_al_19_sep": 3117,
+   "no_confundir_con": "Email_Unique_Unsubs de CRM_Email_Piezas, que son 49,517 y es OTRO evento."
+  },
+  {
+   "id": "ver_en_navegador",
+   "nombre": "Ver en navegador",
+   "que_es": "El link de «ver este correo en el navegador». Es plomería: no dice nada del interés en el contenido.",
+   "patrones": ["view\\.email", "vawptoken", "view.*browser", "visualizar", "navegador"],
+   "ejemplos_reales": ["view.email.mx.nestle.com/?vawpToken=..."],
+   "clicks_al_19_sep": 2264
+  },
+  {
+   "id": "legal",
+   "nombre": "Legal",
+   "que_es": "Aviso de privacidad, términos y condiciones. Obligatorios en el pie; no son intención.",
+   "patrones": ["aviso-privacidad", "aviso-de-privacidad", "aviso-legal", "privacy", "terminos-y-condiciones", "politica-sobre-cookies", "nestle\\.com\\.mx/info"],
+   "ejemplos_reales": ["www.nestle.com.mx/info/aviso-privacidad-consumidores-pce", "purina.com.mx/purina/terminos-y-condiciones", "purina.com.mx/purina/politica-sobre-cookies"],
+   "clicks_al_19_sep": 479
+  },
+  {
+   "id": "social",
+   "nombre": "Social",
+   "que_es": "Los iconos de redes del footer.",
+   "patrones": ["facebook\\.com", "instagram\\.com", "youtube\\.com", "tiktok\\.com", "pinterest\\.com", "twitter\\.com", "//x\\.com", "open\\.spotify\\.com"],
+   "ejemplos_reales": ["www.instagram.com/recetasnestle", "www.facebook.com/RecetasNestleMX", "open.spotify.com/user/…"],
+   "clicks_al_19_sep": 3610
+  },
+  {
+   "id": "contenido",
+   "nombre": "Contenido",
+   "que_es": "Recetas, micrositios de campaña, sitios de marca, dinámicas. Va al final de la lista, pero sus patrones son PRECISOS: no depende del orden para no robarle links a `legal` ni a `baja_preferencias`.",
+   "nota_precision": "🔴 19-sep-2026: la primera versión traía `nestle\\.com\\.mx` y `purina\\.com` a secas, y el auditor lo cazó — matcheaban el centro de preferencias, el aviso de privacidad y los términos, y solo el ORDEN evitaba que se los quedara. Que el orden haga ese trabajo es frágil: basta reordenar la lista para romperlo en silencio. Se quitó `nestle\\.com\\.mx` (comprobado: en ese dominio, fuera de recetasnestle, SOLO existen el centro de preferencias y el aviso de privacidad — no hay contenido que reclamar) y `purina\\.com` lleva ahora un lookahead que excluye sus páginas legales.",
+   "nota_cloudpages": "🔴 `pages.email.mx.nestle.com` se agregó el 20-sep-2026 y NO es una suposición: es la forma RESUELTA del mismo AMPscript que ya estaba aquí. La DE `CRM_Email_Links` guarda el link como `%%=RedirectTo(CONCAT(CloudPagesURL(276,'MGSC',@MGSC)...` —sin resolver— y `ClickEvent` lo guarda ya resuelto como `pages.email.mx.nestle.com/page.aspx?qs=...`. Son el mismo destino visto desde dos fuentes; sin este patrón, 1,167 clicks del micrositio MGSC caían en `por_clasificar`. ⚠ Una CloudPage puede alojar cualquier cosa: si algún día aparece una que no sea contenido, hay que partir el patrón por su `qs`.",
+   "nota_acortador": "🔴 `nes.tl` es el acortador propio de Nestlé y lo RESOLVIÓ RICK, no un patrón: el 19-sep-2026 preguntó «nes.tl/31266c, ni idea de qué correo es» y al ver la evidencia confirmó «seguro sí es CTA, consideralo así». La evidencia: ese link solo aparece en `004-P002` (Mundial · E-P1 · Modern Cooking, «Las alitas favoritas para la inauguración», 133,903 envíos) y se lleva **847 de los 1,045 clicks únicos de ese correo — el 81%**. Un link que concentra 4 de cada 5 clicks de un correo de receta es su CTA principal. ⚠ Un acortador no dice a dónde apunta: si aparece otro `nes.tl/*` en un correo que NO sea de receta, hay que mirarlo antes de dejarlo caer aquí.",
+   "nota_formsubmit": "`submit.mc-content.com` con `Link_Name: formSubmit` es el ENVÍO del formulario de enriquecimiento de Nescafé ICE (`E-ENRICH1` y su FUP, 7 clicks). Llenar el formulario ES el objetivo de un correo de enrichment, así que es intención, no plomería.",
+   "patrones": ["recetasnestle\\.com", "nescafe\\.com", "purina\\.com\\.mx/(?!purina/(aviso-de-privacidad|terminos-y-condiciones|politica-sobre-cookies))", "qualifioapp\\.com", "pages\\.email\\.mx\\.nestle\\.com", "nes\\.tl/", "submit\\.mc-content\\.com", "^%%="],
+   "ejemplos_reales": ["www.recetasnestle.com.mx/recetas/hot-cakes-esponjosos", "%%=Redirectto(MicrositeURL(276,'MGSC',@MGSC))=%%"],
+   "clicks_al_19_sep": 21931
+  }
+ ],
+
+ "por_clasificar_conocidos": [],
+
+ "resueltos_por_rick": [
+  {
+   "url": "nes.tl/31266c",
+   "clicks_unicos": 847,
+   "clase": "contenido",
+   "quien": "Rick, 19-sep-2026",
+   "como": "se le enseñó de qué correo es (004-P002 · Mundial · E-P1 · Modern Cooking) y qué peso tiene (81% de los clicks de ese correo); confirmó «seguro sí es CTA»"
+  },
+  {
+   "url": "submit.mc-content.com",
+   "clicks_unicos": 7,
+   "clase": "contenido",
+   "quien": "19-sep-2026",
+   "como": "`Link_Name: formSubmit` en los dos correos de enrichment de Nescafé ICE — el submit del formulario es el objetivo de ese correo"
+  }
+ ],
+
+ "como_se_doble_valida": [
+  "1 · `motor.auditar-destinos.js` lista TODAS las URLs de cada clase con sus clicks. Se puede leer y decir «sí, eso es Qcart» o «no, eso no».",
+  "2 · Comprueba que Σ de las clases == Σ de los links de cada pieza. Si una clase se come links de otra, el total no cambia pero el auditor enseña el movimiento.",
+  "3 · Comprueba que NINGÚN patrón matchee una URL que ya reclamó una clase anterior (solapamiento). Dos clases que matchean la misma URL es una llave ambigua.",
+  "4 · Declara `por_clasificar` con sus clicks. Si crece por encima del 1% de la actividad, AVISA: significa que la fuente empezó a mandar destinos nuevos.",
+  "5 · Compara contra el detalle crudo de SFMC (`ClickEvent` por job) en una pieza de muestra: la suma por URL del auditor tiene que coincidir con lo que devuelve la plataforma."
+ ]
+}

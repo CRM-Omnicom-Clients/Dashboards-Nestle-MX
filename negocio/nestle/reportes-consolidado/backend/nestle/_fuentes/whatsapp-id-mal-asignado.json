@@ -1,0 +1,38 @@
+{
+ "paso": "B1c",
+ "cuando": "2026-08-21",
+ "que_es": "Un pieza_id de WhatsApp que aparece con dos touchpoints distintos. No es un duplicado (los datos difieren): es un id mal asignado.",
+ "por_que_no_se_toca": "Reasignar el id o borrar una fila necesita la fuente de WhatsApp y el criterio de Rick. Adivinar del naming rompe la atribución.",
+ "para_rick": "Decidir a qué pieza pertenece cada uno de estos dos envíos de WhatsApp, o confirmar que ambos son 004-P013 en dos touchpoints.",
+ "casos": [
+  {
+   "pieza_id": "004-P013",
+   "touchpoint_catalogo": "Partido 3",
+   "filas": [
+    {
+     "fila": 10,
+     "touchpoint": "WA-P2",
+     "send_date": "46199",
+     "read_rate": "0.752"
+    },
+    {
+     "fila": 11,
+     "touchpoint": "WA-P3",
+     "send_date": "",
+     "read_rate": "0.808"
+    }
+   ],
+   "candidatos_por_touchpoint": {
+    "WA-P2": [
+     "004-P011 (Bebidas)",
+     "004-P012 (Modern Cooking)"
+    ],
+    "WA-P3": [
+     "004-P014 (Botana)",
+     "004-P015 (Modern Cooking)",
+     "004-P016 (Activos)"
+    ]
+   }
+  }
+ ]
+}

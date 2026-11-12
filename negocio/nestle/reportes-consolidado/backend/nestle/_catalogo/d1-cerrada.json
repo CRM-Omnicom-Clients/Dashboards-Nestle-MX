@@ -1,0 +1,547 @@
+{
+ "paso": "E1.7",
+ "fecha": "2026-08-24",
+ "que_cierra": "La deuda D1: 31 piezas sin quincena y sin fecha, 12 de ellas Pro Plan con envios reales.",
+ "como": "SFMC entrega Fecha_Primer_Envio en 98/98 y un Segmento mas especifico. No faltaba el dato: faltaba cargarlo.",
+ "regla_dura": "Pro Plan son 17 piezas y se mantienen TODAS. Este paso carga lo que las separa, no las fusiona.",
+ "cambios": [
+  {
+   "fila": 2,
+   "id": "001-P001",
+   "col": "Quincena_Lanzamiento",
+   "antes": "2026-03-Q1",
+   "ahora": "2026-03-Q2",
+   "porque": "la fecha de SFMC (3/19/2026 ) cae en 2026-03-Q2 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 79469."
+  },
+  {
+   "fila": 2,
+   "id": "001-P001",
+   "col": "Fecha_Primer_Envio",
+   "antes": "2026-03-14",
+   "ahora": "2026-03-19",
+   "porque": "la fecha del catálogo contradecía a SFMC; con la de SFMC la quincena se re-deriva y ya no se contradicen."
+  },
+  {
+   "fila": 3,
+   "id": "001-P002",
+   "col": "Fecha_Primer_Envio",
+   "antes": "2026-03-17",
+   "ahora": "2026-03-20",
+   "porque": "la fecha del catálogo contradecía a SFMC; con la de SFMC la quincena se re-deriva y ya no se contradicen."
+  },
+  {
+   "fila": 6,
+   "id": "001-P005",
+   "col": "Quincena_Lanzamiento",
+   "antes": "2026-03-Q1",
+   "ahora": "2026-03-Q2",
+   "porque": "la fecha de SFMC (3/18/2026 ) cae en 2026-03-Q2 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 79320."
+  },
+  {
+   "fila": 6,
+   "id": "001-P005",
+   "col": "Fecha_Primer_Envio",
+   "antes": "2026-03-14",
+   "ahora": "2026-03-18",
+   "porque": "la fecha del catálogo contradecía a SFMC; con la de SFMC la quincena se re-deriva y ya no se contradicen."
+  },
+  {
+   "fila": 7,
+   "id": "001-P006",
+   "col": "Fecha_Primer_Envio",
+   "antes": "2026-03-17",
+   "ahora": "2026-03-20",
+   "porque": "la fecha del catálogo contradecía a SFMC; con la de SFMC la quincena se re-deriva y ya no se contradicen."
+  },
+  {
+   "fila": 52,
+   "id": "009-P001",
+   "col": "Email_ID (de la DE de SFMC)",
+   "antes": "83347",
+   "ahora": "83356",
+   "porque": "el catálogo declaraba el EmailID 83347, que SFMC ya no conoce. Cruzando por Email_Name (la llave natural) la pieza es el eid 83356. SFMC es la autoridad."
+  },
+  {
+   "fila": 98,
+   "id": "009-P006",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q1",
+   "porque": "la fecha de SFMC (7/13/2026 ) cae en 2026-07-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 83762."
+  },
+  {
+   "fila": 98,
+   "id": "009-P006",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-13",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 98,
+   "id": "009-P006",
+   "col": "Segmento",
+   "antes": "Pro Plan Pet Parents",
+   "ahora": "Pro Plan Pet Parents · Perros",
+   "porque": "SFMC entrega el segmento COMPLETO y el catálogo guardaba el corto. Es lo que distingue las piezas de Pro Plan entre sí — sin esto colisionan en la llave del reporte."
+  },
+  {
+   "fila": 99,
+   "id": "009-P007",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q1",
+   "porque": "la fecha de SFMC (7/13/2026 ) cae en 2026-07-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 83763."
+  },
+  {
+   "fila": 99,
+   "id": "009-P007",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-13",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 99,
+   "id": "009-P007",
+   "col": "Segmento",
+   "antes": "Pro Plan Pet Parents",
+   "ahora": "Pro Plan Pet Parents · Gatos",
+   "porque": "SFMC entrega el segmento COMPLETO y el catálogo guardaba el corto. Es lo que distingue las piezas de Pro Plan entre sí — sin esto colisionan en la llave del reporte."
+  },
+  {
+   "fila": 100,
+   "id": "009-P008",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q1",
+   "porque": "la fecha de SFMC (7/13/2026 ) cae en 2026-07-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 83766."
+  },
+  {
+   "fila": 100,
+   "id": "009-P008",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-13",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 100,
+   "id": "009-P008",
+   "col": "Segmento",
+   "antes": "Pro Plan Aspiracionales",
+   "ahora": "Pro Plan Aspiracionales · Gatos",
+   "porque": "SFMC entrega el segmento COMPLETO y el catálogo guardaba el corto. Es lo que distingue las piezas de Pro Plan entre sí — sin esto colisionan en la llave del reporte."
+  },
+  {
+   "fila": 101,
+   "id": "009-P009",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q1",
+   "porque": "la fecha de SFMC (7/13/2026 ) cae en 2026-07-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 83767."
+  },
+  {
+   "fila": 101,
+   "id": "009-P009",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-13",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 101,
+   "id": "009-P009",
+   "col": "Segmento",
+   "antes": "Pro Plan Aspiracionales",
+   "ahora": "Pro Plan Aspiracionales · Mixto",
+   "porque": "SFMC entrega el segmento COMPLETO y el catálogo guardaba el corto. Es lo que distingue las piezas de Pro Plan entre sí — sin esto colisionan en la llave del reporte."
+  },
+  {
+   "fila": 102,
+   "id": "009-P010",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q1",
+   "porque": "la fecha de SFMC (7/13/2026 ) cae en 2026-07-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 83769."
+  },
+  {
+   "fila": 102,
+   "id": "009-P010",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-13",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 102,
+   "id": "009-P010",
+   "col": "Segmento",
+   "antes": "Pro Plan Educated Pet Owners",
+   "ahora": "Pro Plan Educated Pet Owners · Gatos",
+   "porque": "SFMC entrega el segmento COMPLETO y el catálogo guardaba el corto. Es lo que distingue las piezas de Pro Plan entre sí — sin esto colisionan en la llave del reporte."
+  },
+  {
+   "fila": 103,
+   "id": "009-P011",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q1",
+   "porque": "la fecha de SFMC (7/13/2026 ) cae en 2026-07-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 83770."
+  },
+  {
+   "fila": 103,
+   "id": "009-P011",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-13",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 103,
+   "id": "009-P011",
+   "col": "Segmento",
+   "antes": "Pro Plan Educated Pet Owners",
+   "ahora": "Pro Plan Educated Pet Owners · Mixto",
+   "porque": "SFMC entrega el segmento COMPLETO y el catálogo guardaba el corto. Es lo que distingue las piezas de Pro Plan entre sí — sin esto colisionan en la llave del reporte."
+  },
+  {
+   "fila": 104,
+   "id": "009-P012",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q2",
+   "porque": "la fecha de SFMC (7/23/2026 ) cae en 2026-07-Q2 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía Email_Name."
+  },
+  {
+   "fila": 104,
+   "id": "009-P012",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-23",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 104,
+   "id": "009-P012",
+   "col": "Segmento",
+   "antes": "Pro Plan Pet Parents",
+   "ahora": "Pro Plan Pet Parents · Perros",
+   "porque": "SFMC entrega el segmento COMPLETO y el catálogo guardaba el corto. Es lo que distingue las piezas de Pro Plan entre sí — sin esto colisionan en la llave del reporte."
+  },
+  {
+   "fila": 104,
+   "id": "009-P012",
+   "col": "Email_ID (de la DE de SFMC)",
+   "antes": "83930",
+   "ahora": "84317",
+   "porque": "el catálogo declaraba el EmailID 83930, que SFMC ya no conoce. Cruzando por Email_Name (la llave natural) la pieza es el eid 84317. SFMC es la autoridad."
+  },
+  {
+   "fila": 105,
+   "id": "009-P013",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q2",
+   "porque": "la fecha de SFMC (7/30/2026 ) cae en 2026-07-Q2 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84320."
+  },
+  {
+   "fila": 105,
+   "id": "009-P013",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-30",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 105,
+   "id": "009-P013",
+   "col": "Segmento",
+   "antes": "Pro Plan Pet Parents",
+   "ahora": "Pro Plan Pet Parents · Gatos",
+   "porque": "SFMC entrega el segmento COMPLETO y el catálogo guardaba el corto. Es lo que distingue las piezas de Pro Plan entre sí — sin esto colisionan en la llave del reporte."
+  },
+  {
+   "fila": 106,
+   "id": "009-P014",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q2",
+   "porque": "la fecha de SFMC (7/27/2026 ) cae en 2026-07-Q2 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84321."
+  },
+  {
+   "fila": 106,
+   "id": "009-P014",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-27",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 106,
+   "id": "009-P014",
+   "col": "Segmento",
+   "antes": "Pro Plan Pet Parents",
+   "ahora": "Pro Plan Pet Parents · Mixto",
+   "porque": "SFMC entrega el segmento COMPLETO y el catálogo guardaba el corto. Es lo que distingue las piezas de Pro Plan entre sí — sin esto colisionan en la llave del reporte."
+  },
+  {
+   "fila": 107,
+   "id": "009-P015",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q2",
+   "porque": "la fecha de SFMC (7/27/2026 ) cae en 2026-07-Q2 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84322."
+  },
+  {
+   "fila": 107,
+   "id": "009-P015",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-27",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 107,
+   "id": "009-P015",
+   "col": "Segmento",
+   "antes": "Aspiracionales + Educated Pet Owners",
+   "ahora": "Aspiracionales + Educated Pet Owners · Perros",
+   "porque": "SFMC declara el desglose por mascota (· Perros) y es lo único que separa estas piezas entre sí. Se toma SOLO el sufijo: el nombre del catálogo se conserva porque Rick descartó «PAE» y «Aspiracionales + Educated Pet Owners» es la lectura buena."
+  },
+  {
+   "fila": 108,
+   "id": "009-P016",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q2",
+   "porque": "la fecha de SFMC (7/27/2026 ) cae en 2026-07-Q2 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84323."
+  },
+  {
+   "fila": 108,
+   "id": "009-P016",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-27",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 108,
+   "id": "009-P016",
+   "col": "Segmento",
+   "antes": "Aspiracionales + Educated Pet Owners",
+   "ahora": "Aspiracionales + Educated Pet Owners · Gatos",
+   "porque": "SFMC declara el desglose por mascota (· Gatos) y es lo único que separa estas piezas entre sí. Se toma SOLO el sufijo: el nombre del catálogo se conserva porque Rick descartó «PAE» y «Aspiracionales + Educated Pet Owners» es la lectura buena."
+  },
+  {
+   "fila": 109,
+   "id": "009-P017",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-07-Q2",
+   "porque": "la fecha de SFMC (7/23/2026 ) cae en 2026-07-Q2 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía Email_Name."
+  },
+  {
+   "fila": 109,
+   "id": "009-P017",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-07-23",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 109,
+   "id": "009-P017",
+   "col": "Segmento",
+   "antes": "Aspiracionales + Educated Pet Owners",
+   "ahora": "Aspiracionales + Educated Pet Owners · Mixto",
+   "porque": "SFMC declara el desglose por mascota (· Mixto) y es lo único que separa estas piezas entre sí. Se toma SOLO el sufijo: el nombre del catálogo se conserva porque Rick descartó «PAE» y «Aspiracionales + Educated Pet Owners» es la lectura buena."
+  },
+  {
+   "fila": 109,
+   "id": "009-P017",
+   "col": "Email_ID (de la DE de SFMC)",
+   "antes": "84261",
+   "ahora": "84324",
+   "porque": "el catálogo declaraba el EmailID 84261, que SFMC ya no conoce. Cruzando por Email_Name (la llave natural) la pieza es el eid 84324. SFMC es la autoridad."
+  },
+  {
+   "fila": 111,
+   "id": "001-P029",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/12/2026 ) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84566."
+  },
+  {
+   "fila": 111,
+   "id": "001-P029",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-12",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 112,
+   "id": "001-P030",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/13/2026 ) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84594."
+  },
+  {
+   "fila": 112,
+   "id": "001-P030",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-13",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 113,
+   "id": "001-P031",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/13/2026 ) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84595."
+  },
+  {
+   "fila": 113,
+   "id": "001-P031",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-13",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 114,
+   "id": "005-P005",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/15/2026 ) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84969."
+  },
+  {
+   "fila": 114,
+   "id": "005-P005",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-15",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 115,
+   "id": "005-P006",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/15/2026 ) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84970."
+  },
+  {
+   "fila": 115,
+   "id": "005-P006",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-15",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 116,
+   "id": "006-P004",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/5/2026 1) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84655."
+  },
+  {
+   "fila": 116,
+   "id": "006-P004",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-05",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 117,
+   "id": "006-P005",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/9/2026 1) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84697."
+  },
+  {
+   "fila": 117,
+   "id": "006-P005",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-09",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 118,
+   "id": "007-P005",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/6/2026 1) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84742."
+  },
+  {
+   "fila": 118,
+   "id": "007-P005",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-06",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 119,
+   "id": "007-P006",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/12/2026 ) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84747."
+  },
+  {
+   "fila": 119,
+   "id": "007-P006",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-12",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  },
+  {
+   "fila": 120,
+   "id": "007-P007",
+   "col": "Quincena_Lanzamiento",
+   "antes": "(vacía)",
+   "ahora": "2026-08-Q1",
+   "porque": "la fecha de SFMC (8/14/2026 ) cae en 2026-08-Q1 con la regla día 1-15 = Q1 · 16-fin = Q2. Vía EmailID 84984."
+  },
+  {
+   "fila": 120,
+   "id": "007-P007",
+   "col": "Fecha_Primer_Envio",
+   "antes": "(vacía)",
+   "ahora": "2026-08-14",
+   "porque": "SFMC la entrega y el catálogo no la tenía. Con ella la quincena se re-deriva sin volver a la fuente."
+  }
+ ],
+ "piezas_sin_fuente": [
+  {
+   "id": "005-P002",
+   "canal": "Email",
+   "estado": "Sin email cargado"
+  },
+  {
+   "id": "005-P003",
+   "canal": "Email",
+   "estado": "Sin email cargado"
+  },
+  {
+   "id": "005-P004",
+   "canal": "Email",
+   "estado": "Sin email cargado"
+  }
+ ],
+ "proplan_en_catalogo": 17
+}

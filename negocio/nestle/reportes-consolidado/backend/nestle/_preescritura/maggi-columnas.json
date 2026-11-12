@@ -1,0 +1,961 @@
+{
+ "fecha": "2026-09-30",
+ "calibracion": {
+  "activacion": {
+   "ok": 11,
+   "dif": [
+    {
+     "fila": 7,
+     "tp": "E-P3",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 8,
+     "tp": "E-P3",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 9,
+     "tp": "E-P3",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 10,
+     "tp": "E-P4",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 11,
+     "tp": "Partido 2",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 12,
+     "tp": "Partido 3",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 18,
+     "tp": "E-J5",
+     "suyo": "46276 (2026-09-11)",
+     "mio": "46256 (2026-08-22)"
+    },
+    {
+     "fila": 19,
+     "tp": "E-J5",
+     "suyo": "N/A (null)",
+     "mio": "46256 (2026-08-22)"
+    },
+    {
+     "fila": 20,
+     "tp": "E-J6",
+     "suyo": "46276 (2026-09-11)",
+     "mio": "46262 (2026-08-28)"
+    },
+    {
+     "fila": 21,
+     "tp": "E-J7",
+     "suyo": "46269 (2026-09-04)",
+     "mio": "46249 (2026-08-15)"
+    },
+    {
+     "fila": 22,
+     "tp": "WA-J8",
+     "suyo": "46277 (2026-09-12)",
+     "mio": "46275 (2026-09-10)"
+    },
+    {
+     "fila": 24,
+     "tp": "E-J9",
+     "suyo": "46281 (2026-09-16)",
+     "mio": "46283 (2026-09-18)"
+    },
+    {
+     "fila": 25,
+     "tp": "WA-J9",
+     "suyo": "46281 (2026-09-16)",
+     "mio": "46284 (2026-09-19)"
+    }
+   ]
+  },
+  "primer_carrito": {
+   "ok": 14,
+   "dif": [
+    {
+     "fila": 7,
+     "tp": "E-P3",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 8,
+     "tp": "E-P3",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 9,
+     "tp": "E-P3",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 10,
+     "tp": "E-P4",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 11,
+     "tp": "Partido 2",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 12,
+     "tp": "Partido 3",
+     "suyo": "N/A (null)",
+     "mio": "null (null)"
+    },
+    {
+     "fila": 19,
+     "tp": "E-J5",
+     "suyo": "N/A (null)",
+     "mio": "46285 (2026-09-20)"
+    },
+    {
+     "fila": 22,
+     "tp": "WA-J8",
+     "suyo": "46277 (2026-09-12)",
+     "mio": "46275 (2026-09-10)"
+    },
+    {
+     "fila": 24,
+     "tp": "E-J9",
+     "suyo": "46281 (2026-09-16)",
+     "mio": "46283 (2026-09-18)"
+    },
+    {
+     "fila": 25,
+     "tp": "WA-J9",
+     "suyo": "46281 (2026-09-16)",
+     "mio": "46284 (2026-09-19)"
+    }
+   ]
+  }
+ },
+ "tabla": [
+  {
+   "fila": 2,
+   "campana": "Mundial",
+   "touchpoint": "E-P1",
+   "segmento": "Bebidas",
+   "quincena": "2026-06-Q1",
+   "piezas": [
+    "004-P003"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Piñarindo",
+    "SHORTLINKS ASIGNADOS": "rr0VvKTb · dHfqmS7n · w5r9LWOP",
+    "UTMS CONTENT ORIGEN": "e-bebida1 · (no está en el maestro)",
+    "UTMS CONTENT MODIFICADAS": "e-bebida1 · (sin carritos)",
+    "Medición desde": 46183,
+    "Medición hasta": 46293
+   },
+   "cand": {
+    "activacion": "2026-06-10",
+    "primer_carrito": "2026-06-10"
+   },
+   "iso": {
+    "desde": "2026-06-10",
+    "hasta": "2026-09-28"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "rr0VvKTb · dHfqmS7n · w5r9LWOP",
+    "Medición desde": "46183",
+    "Medición hasta": "46254"
+   }
+  },
+  {
+   "fila": 3,
+   "campana": "Mundial",
+   "touchpoint": "E-P1",
+   "segmento": "Botana",
+   "quincena": "2026-06-Q1",
+   "piezas": [
+    "004-P001"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Papas Antojo Supremo",
+    "SHORTLINKS ASIGNADOS": "tJEICO87 · Z8W0ZouI · Y8umAAnA",
+    "UTMS CONTENT ORIGEN": "e-botana1 · (no está en el maestro)",
+    "UTMS CONTENT MODIFICADAS": "e-botana1 · (sin carritos)",
+    "Medición desde": 46183,
+    "Medición hasta": 46253
+   },
+   "cand": {
+    "activacion": "2026-06-10",
+    "primer_carrito": "2026-06-10"
+   },
+   "iso": {
+    "desde": "2026-06-10",
+    "hasta": "2026-08-19"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "tJEICO87 · Z8W0ZouI · Y8umAAnA",
+    "Medición desde": "46183",
+    "Medición hasta": "46253"
+   }
+  },
+  {
+   "fila": 4,
+   "campana": "Mundial",
+   "touchpoint": "E-P1",
+   "segmento": "Modern Cooking",
+   "quincena": "2026-06-Q1",
+   "piezas": [
+    "004-P002"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Alitas Agridulces",
+    "SHORTLINKS ASIGNADOS": "cCFb2xEx · hWaJfDxS",
+    "UTMS CONTENT ORIGEN": "(no está en el maestro) · e-cooking1",
+    "UTMS CONTENT MODIFICADAS": "(sin carritos) · new-cooking",
+    "Medición desde": 46183,
+    "Medición hasta": 46293
+   },
+   "cand": {
+    "activacion": "2026-06-10",
+    "primer_carrito": "2026-06-10"
+   },
+   "iso": {
+    "desde": "2026-06-10",
+    "hasta": "2026-09-28"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "cCFb2xEx · hWaJfDxS",
+    "Medición desde": "46183",
+    "Medición hasta": "46276"
+   }
+  },
+  {
+   "fila": 5,
+   "campana": "Mundial",
+   "touchpoint": "E-P2",
+   "segmento": "Bebidas",
+   "quincena": "2026-06-Q2",
+   "piezas": [
+    "004-P004"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Gomichela",
+    "SHORTLINKS ASIGNADOS": "3QfdZN2Q · SN2YWvgo",
+    "UTMS CONTENT ORIGEN": "e-bebida2",
+    "UTMS CONTENT MODIFICADAS": "e-botana2",
+    "Medición desde": 46190,
+    "Medición hasta": 46273
+   },
+   "cand": {
+    "activacion": "2026-06-17",
+    "primer_carrito": "2026-06-17"
+   },
+   "iso": {
+    "desde": "2026-06-17",
+    "hasta": "2026-09-08"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "3QfdZN2Q · SN2YWvgo",
+    "Medición desde": "46190",
+    "Medición hasta": "46273"
+   }
+  },
+  {
+   "fila": 6,
+   "campana": "Mundial",
+   "touchpoint": "E-P2",
+   "segmento": "Botana",
+   "quincena": "2026-06-Q2",
+   "piezas": [
+    "004-P005"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Vaso Botanero",
+    "SHORTLINKS ASIGNADOS": "HcDJTsRH · rueO2xbY",
+    "UTMS CONTENT ORIGEN": "e-botana2",
+    "UTMS CONTENT MODIFICADAS": "e-bebida2",
+    "Medición desde": 46190,
+    "Medición hasta": 46293
+   },
+   "cand": {
+    "activacion": "2026-06-17",
+    "primer_carrito": "2026-06-17"
+   },
+   "iso": {
+    "desde": "2026-06-17",
+    "hasta": "2026-09-28"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "HcDJTsRH · rueO2xbY",
+    "Medición desde": "46190",
+    "Medición hasta": "46253"
+   }
+  },
+  {
+   "fila": 7,
+   "campana": "Mundial",
+   "touchpoint": "E-P3",
+   "segmento": "Bebidas",
+   "quincena": "2026-06-Q2",
+   "piezas": [
+    "004-P006"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Chelada Norteña",
+    "SHORTLINKS ASIGNADOS": "vk67sh2J",
+    "UTMS CONTENT ORIGEN": "(no está en el maestro)",
+    "UTMS CONTENT MODIFICADAS": "(sin carritos)",
+    "Medición desde": null,
+    "Medición hasta": null
+   },
+   "cand": {
+    "activacion": null,
+    "primer_carrito": null
+   },
+   "iso": {
+    "desde": null,
+    "hasta": null
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "vk67sh2J",
+    "Medición desde": "N/A",
+    "Medición hasta": "N/A"
+   }
+  },
+  {
+   "fila": 8,
+   "campana": "Mundial",
+   "touchpoint": "E-P3",
+   "segmento": "Botana",
+   "quincena": "2026-06-Q2",
+   "piezas": [
+    "004-P008"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Papas Locas",
+    "SHORTLINKS ASIGNADOS": "xka2NWrW",
+    "UTMS CONTENT ORIGEN": "(no está en el maestro)",
+    "UTMS CONTENT MODIFICADAS": "(sin carritos)",
+    "Medición desde": null,
+    "Medición hasta": null
+   },
+   "cand": {
+    "activacion": null,
+    "primer_carrito": null
+   },
+   "iso": {
+    "desde": null,
+    "hasta": null
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "xka2NWrW",
+    "Medición desde": "N/A",
+    "Medición hasta": "N/A"
+   }
+  },
+  {
+   "fila": 9,
+   "campana": "Mundial",
+   "touchpoint": "E-P3",
+   "segmento": "Modern Cooking",
+   "quincena": "2026-06-Q2",
+   "piezas": [
+    "004-P007"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Hot Dog Sonorense",
+    "SHORTLINKS ASIGNADOS": "YJOatjQs",
+    "UTMS CONTENT ORIGEN": "(no está en el maestro)",
+    "UTMS CONTENT MODIFICADAS": "(sin carritos)",
+    "Medición desde": null,
+    "Medición hasta": null
+   },
+   "cand": {
+    "activacion": null,
+    "primer_carrito": null
+   },
+   "iso": {
+    "desde": null,
+    "hasta": null
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "YJOatjQs",
+    "Medición desde": "N/A",
+    "Medición hasta": "N/A"
+   }
+  },
+  {
+   "fila": 10,
+   "campana": "Mundial",
+   "touchpoint": "E-P4",
+   "segmento": "Bebidas",
+   "quincena": "2026-06-Q2",
+   "piezas": [
+    "004-P009"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "",
+    "SHORTLINKS ASIGNADOS": "",
+    "UTMS CONTENT ORIGEN": "",
+    "UTMS CONTENT MODIFICADAS": "",
+    "Medición desde": null,
+    "Medición hasta": null
+   },
+   "cand": {
+    "activacion": null,
+    "primer_carrito": null
+   },
+   "iso": {
+    "desde": null,
+    "hasta": null
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "N/A",
+    "Medición desde": "N/A",
+    "Medición hasta": "N/A"
+   }
+  },
+  {
+   "fila": 11,
+   "campana": "Mundial",
+   "touchpoint": "Partido 2",
+   "segmento": "WA-opt-in Cooking, WA-opt-in Botanas, WA-opt-in Bebidas",
+   "quincena": "2026-06-Q2",
+   "piezas": [
+    "004-P010"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "",
+    "SHORTLINKS ASIGNADOS": "",
+    "UTMS CONTENT ORIGEN": "",
+    "UTMS CONTENT MODIFICADAS": "",
+    "Medición desde": null,
+    "Medición hasta": null
+   },
+   "cand": {
+    "activacion": null,
+    "primer_carrito": null
+   },
+   "iso": {
+    "desde": null,
+    "hasta": null
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "N/A",
+    "Medición desde": "N/A",
+    "Medición hasta": "N/A"
+   }
+  },
+  {
+   "fila": 12,
+   "campana": "Mundial",
+   "touchpoint": "Partido 3",
+   "segmento": "WA-opt-in Cooking, WA-opt-in Botanas, WA-opt-in Bebidas",
+   "quincena": "2026-06-Q2",
+   "piezas": [
+    "004-P013"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "",
+    "SHORTLINKS ASIGNADOS": "",
+    "UTMS CONTENT ORIGEN": "",
+    "UTMS CONTENT MODIFICADAS": "",
+    "Medición desde": null,
+    "Medición hasta": null
+   },
+   "cand": {
+    "activacion": null,
+    "primer_carrito": null
+   },
+   "iso": {
+    "desde": null,
+    "hasta": null
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "N/A",
+    "Medición desde": "N/A",
+    "Medición hasta": "N/A"
+   }
+  },
+  {
+   "fila": 13,
+   "campana": "Mundial",
+   "touchpoint": "Semifinal A",
+   "segmento": "Wa-opt-in-allsegments",
+   "quincena": "2026-07-Q1",
+   "piezas": [
+    "004-P017"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Baguette 3 quesos · Tapas Berenjenas",
+    "SHORTLINKS ASIGNADOS": "sbH9gVge · Agy5v9Yb",
+    "UTMS CONTENT ORIGEN": "e-botanas6",
+    "UTMS CONTENT MODIFICADAS": "e-botanas6",
+    "Medición desde": 46217,
+    "Medición hasta": 46286
+   },
+   "cand": {
+    "activacion": "2026-07-14",
+    "primer_carrito": "2026-07-14"
+   },
+   "iso": {
+    "desde": "2026-07-14",
+    "hasta": "2026-09-21"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "sbH9gVge · Agy5v9Yb",
+    "Medición desde": "46217",
+    "Medición hasta": "46273"
+   }
+  },
+  {
+   "fila": 14,
+   "campana": "Mundial",
+   "touchpoint": "Semifinal B",
+   "segmento": "Wa-opt-in-allsegments",
+   "quincena": "2026-07-Q1",
+   "piezas": [
+    "004-P018"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Deditos de pescado · Choripan",
+    "SHORTLINKS ASIGNADOS": "2YWR8c3Z · haPs2HHU",
+    "UTMS CONTENT ORIGEN": "e-botanas7",
+    "UTMS CONTENT MODIFICADAS": "e-botanas7",
+    "Medición desde": 46218,
+    "Medición hasta": 46232
+   },
+   "cand": {
+    "activacion": "2026-07-15",
+    "primer_carrito": "2026-07-15"
+   },
+   "iso": {
+    "desde": "2026-07-15",
+    "hasta": "2026-07-29"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "2YWR8c3Z · haPs2HHU",
+    "Medición desde": "46218",
+    "Medición hasta": "46232"
+   }
+  },
+  {
+   "fila": 15,
+   "campana": "Mundial",
+   "touchpoint": "Final",
+   "segmento": "Wa-opt-in-allsegments",
+   "quincena": "2026-07-Q2",
+   "piezas": [
+    "004-P019"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Empanadas tipo argentina · Aceitunas preparadas: receta simple y rápida · Salsa picante",
+    "SHORTLINKS ASIGNADOS": "2Yn9L0bD · LO8RxwsM · uv5JZ8U7",
+    "UTMS CONTENT ORIGEN": "wa-final-empanadas · wa-final-aceitunas · wa-final-botana-salsa",
+    "UTMS CONTENT MODIFICADAS": "wa-final-empanadas · wa-final-aceitunas · (sin carritos)",
+    "Medición desde": 46222,
+    "Medición hasta": 46284
+   },
+   "cand": {
+    "activacion": "2026-07-19",
+    "primer_carrito": "2026-07-19"
+   },
+   "iso": {
+    "desde": "2026-07-19",
+    "hasta": "2026-09-19"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "2Yn9L0bD · LO8RxwsM · uv5JZ8U7",
+    "Medición desde": "46222",
+    "Medición hasta": "46277"
+   }
+  },
+  {
+   "fila": 16,
+   "campana": "Liga MX",
+   "touchpoint": "E-J4",
+   "segmento": "Usuarios CON región",
+   "quincena": "2026-08-Q1",
+   "piezas": [
+    "005-P005"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Botana de Jamaica · Tropi MAGGI® Shot",
+    "SHORTLINKS ASIGNADOS": "i8LZ55bd · HThaf6bT",
+    "UTMS CONTENT ORIGEN": "e-j4",
+    "UTMS CONTENT MODIFICADAS": "e-p1",
+    "Medición desde": 46249,
+    "Medición hasta": 46253
+   },
+   "cand": {
+    "activacion": "2026-08-15",
+    "primer_carrito": "2026-08-15"
+   },
+   "iso": {
+    "desde": "2026-08-15",
+    "hasta": "2026-08-19"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "i8LZ55bd · HThaf6bT",
+    "Medición desde": "46249",
+    "Medición hasta": "46253"
+   }
+  },
+  {
+   "fila": 17,
+   "campana": "Liga MX",
+   "touchpoint": "E-J4",
+   "segmento": "Usuarios sin región",
+   "quincena": "2026-08-Q1",
+   "piezas": [
+    "005-P006"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Nachos con carne · Aceitunas Toreadas",
+    "SHORTLINKS ASIGNADOS": "4tBsCXTp · hTHNLqzL",
+    "UTMS CONTENT ORIGEN": "e-j4",
+    "UTMS CONTENT MODIFICADAS": "e-p1 · e-p1 (50) · e-j7 (15) · ⚠ hTHNLqzL compartido con otra jornada (Agosto/e-j4 y Septiembre/e-j7)",
+    "Medición desde": 46249,
+    "Medición hasta": 46276
+   },
+   "cand": {
+    "activacion": "2026-08-15",
+    "primer_carrito": "2026-08-15"
+   },
+   "iso": {
+    "desde": "2026-08-15",
+    "hasta": "2026-09-11"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "4tBsCXTp · hTHNLqzL (15-ago→04-sep · 48 carritos)",
+    "Medición desde": "46249",
+    "Medición hasta": "46276"
+   }
+  },
+  {
+   "fila": 18,
+   "campana": "Liga MX",
+   "touchpoint": "E-J5",
+   "segmento": "Usuarios CON región",
+   "quincena": "2026-08-Q2",
+   "piezas": [
+    "005-P008"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Esquites MAGGI® · Dip de Pimiento Rostizado",
+    "SHORTLINKS ASIGNADOS": "UhCnTNuz · TYZa8g47",
+    "UTMS CONTENT ORIGEN": "e-j5",
+    "UTMS CONTENT MODIFICADAS": "e-p2 · e-p4",
+    "Medición desde": 46276,
+    "Medición hasta": 46286
+   },
+   "cand": {
+    "activacion": "2026-08-22",
+    "primer_carrito": "2026-09-11"
+   },
+   "iso": {
+    "desde": "2026-09-11",
+    "hasta": "2026-09-21"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "UhCnTNuz · TYZa8g47",
+    "Medición desde": "46276",
+    "Medición hasta": "46276"
+   }
+  },
+  {
+   "fila": 19,
+   "campana": "Liga MX",
+   "touchpoint": "E-J5",
+   "segmento": "Usuarios sin región",
+   "quincena": "2026-08-Q2",
+   "piezas": [
+    "005-P007"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Botana de Carnes · MAGGI® Shots / Cerdito enchilado",
+    "SHORTLINKS ASIGNADOS": "9isauWgY · Hqa0fbOM",
+    "UTMS CONTENT ORIGEN": "e-j5",
+    "UTMS CONTENT MODIFICADAS": "e-p2",
+    "Medición desde": 46285,
+    "Medición hasta": 46288
+   },
+   "cand": {
+    "activacion": "2026-08-22",
+    "primer_carrito": "2026-09-20"
+   },
+   "iso": {
+    "desde": "2026-09-20",
+    "hasta": "2026-09-23"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "9isauWgY · Hqa0fbOM",
+    "Medición desde": "N/A",
+    "Medición hasta": "N/A"
+   }
+  },
+  {
+   "fila": 20,
+   "campana": "Liga MX",
+   "touchpoint": "E-J6",
+   "segmento": "Usuarios CON región · Región Sur · Partición C",
+   "quincena": "2026-08-Q2",
+   "piezas": [
+    "005-P009"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Brochetas de Pollo con Salsa de Piña · Cebollitas Maggi®",
+    "SHORTLINKS ASIGNADOS": "BdN0ck7t · okUSdwJk",
+    "UTMS CONTENT ORIGEN": "e-j6",
+    "UTMS CONTENT MODIFICADAS": "e-p5",
+    "Medición desde": 46276,
+    "Medición hasta": 46276
+   },
+   "cand": {
+    "activacion": "2026-08-28",
+    "primer_carrito": "2026-09-11"
+   },
+   "iso": {
+    "desde": "2026-09-11",
+    "hasta": "2026-09-11"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "BdN0ck7t · okUSdwJk",
+    "Medición desde": "46276",
+    "Medición hasta": "46276"
+   }
+  },
+  {
+   "fila": 21,
+   "campana": "Liga MX",
+   "touchpoint": "E-J7",
+   "segmento": "Región unificada",
+   "quincena": "2026-09-Q1",
+   "piezas": [
+    "005-P010"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Aceitunas Toreadas · Papas Nacho",
+    "SHORTLINKS ASIGNADOS": "hTHNLqzL · GQnvqqP3",
+    "UTMS CONTENT ORIGEN": "e-j4 · e-j7",
+    "UTMS CONTENT MODIFICADAS": "e-p1 (50) · e-j7 (15) · e-j7 · ⚠ hTHNLqzL compartido con otra jornada (Agosto/e-j4 y Septiembre/e-j7)",
+    "Medición desde": 46269,
+    "Medición hasta": 46289
+   },
+   "cand": {
+    "activacion": "2026-08-15",
+    "primer_carrito": "2026-09-04"
+   },
+   "iso": {
+    "desde": "2026-09-04",
+    "hasta": "2026-09-24"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "hTHNLqzL (04-sep→18-sep · 14 carritos) · GQnvqqP3",
+    "Medición desde": "46269",
+    "Medición hasta": "46278"
+   }
+  },
+  {
+   "fila": 22,
+   "campana": "Liga MX",
+   "touchpoint": "WA-J8",
+   "segmento": "Región unificada · Partición A",
+   "quincena": "2026-09-Q1",
+   "piezas": [
+    "005-P011"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Sarten Queso Jalapeño",
+    "SHORTLINKS ASIGNADOS": "DTuqPqBo",
+    "UTMS CONTENT ORIGEN": "wa-j8",
+    "UTMS CONTENT MODIFICADAS": "wa-j8",
+    "Medición desde": 46275,
+    "Medición hasta": 46289
+   },
+   "cand": {
+    "activacion": "2026-09-10",
+    "primer_carrito": "2026-09-10"
+   },
+   "iso": {
+    "desde": "2026-09-10",
+    "hasta": "2026-09-24"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "DTuqPqBo",
+    "Medición desde": "46277",
+    "Medición hasta": "46278"
+   }
+  },
+  {
+   "fila": 23,
+   "campana": "Liga MX",
+   "touchpoint": "E-J8",
+   "segmento": "Región unificada · Partición A",
+   "quincena": "2026-09-Q1",
+   "piezas": [
+    "005-P012"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Nachos con carne / Nachos MAGGI · Sarten Queso Jalapeño",
+    "SHORTLINKS ASIGNADOS": "0oSrtaxX · 0eQt7uf5",
+    "UTMS CONTENT ORIGEN": "e-j8",
+    "UTMS CONTENT MODIFICADAS": "e-j8",
+    "Medición desde": 46277,
+    "Medición hasta": 46290
+   },
+   "cand": {
+    "activacion": "2026-09-12",
+    "primer_carrito": "2026-09-12"
+   },
+   "iso": {
+    "desde": "2026-09-12",
+    "hasta": "2026-09-25"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "0oSrtaxX · 0eQt7uf5",
+    "Medición desde": "46277",
+    "Medición hasta": "46278"
+   }
+  },
+  {
+   "fila": 24,
+   "campana": "Liga MX",
+   "touchpoint": "E-J9",
+   "segmento": "Región unificada",
+   "quincena": "2026-09-Q2",
+   "piezas": [
+    "005-P014"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Alitas Salsa Mango · Tropi Maggi",
+    "SHORTLINKS ASIGNADOS": "bfQ24tDq · xTaSfQ2y",
+    "UTMS CONTENT ORIGEN": "e-j9",
+    "UTMS CONTENT MODIFICADAS": "e-j9",
+    "Medición desde": 46283,
+    "Medición hasta": 46289
+   },
+   "cand": {
+    "activacion": "2026-09-18",
+    "primer_carrito": "2026-09-18"
+   },
+   "iso": {
+    "desde": "2026-09-18",
+    "hasta": "2026-09-24"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "bfQ24tDq · xTaSfQ2y",
+    "Medición desde": "46281",
+    "Medición hasta": "46285"
+   }
+  },
+  {
+   "fila": 25,
+   "campana": "Liga MX",
+   "touchpoint": "WA-J9",
+   "segmento": "Región unificada",
+   "quincena": "2026-09-Q2",
+   "piezas": [
+    "005-P013"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Alitas Salsa Mango",
+    "SHORTLINKS ASIGNADOS": "ymh2OT4x",
+    "UTMS CONTENT ORIGEN": "wa-j9",
+    "UTMS CONTENT MODIFICADAS": "wa-j9",
+    "Medición desde": 46284,
+    "Medición hasta": 46289
+   },
+   "cand": {
+    "activacion": "2026-09-19",
+    "primer_carrito": "2026-09-19"
+   },
+   "iso": {
+    "desde": "2026-09-19",
+    "hasta": "2026-09-24"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "ymh2OT4x",
+    "Medición desde": "46281",
+    "Medición hasta": "46285"
+   }
+  },
+  {
+   "fila": 26,
+   "campana": "Liga MX",
+   "touchpoint": "E-J10",
+   "segmento": "Región unificada",
+   "quincena": "2026-09-Q2",
+   "piezas": [
+    "005-P015"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Dips Botaneros · Pepimiche",
+    "SHORTLINKS ASIGNADOS": "kzSTHGEd · jhMxJiSo",
+    "UTMS CONTENT ORIGEN": "e-j10",
+    "UTMS CONTENT MODIFICADAS": "e-j10",
+    "Medición desde": 46290,
+    "Medición hasta": 46293
+   },
+   "cand": {
+    "activacion": "2026-09-25",
+    "primer_carrito": "2026-09-25"
+   },
+   "iso": {
+    "desde": "2026-09-25",
+    "hasta": "2026-09-28"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "",
+    "Medición desde": "",
+    "Medición hasta": ""
+   }
+  },
+  {
+   "fila": 27,
+   "campana": "Liga MX",
+   "touchpoint": "WA-J10",
+   "segmento": "Región unificada",
+   "quincena": "2026-09-Q2",
+   "piezas": [
+    "005-P016"
+   ],
+   "valores": {
+    "RECETAS ASIGNADAS": "Papitas elote",
+    "SHORTLINKS ASIGNADOS": "uCV8KGHm",
+    "UTMS CONTENT ORIGEN": "wa-j10",
+    "UTMS CONTENT MODIFICADAS": "wa-j10",
+    "Medición desde": 46289,
+    "Medición hasta": 46292
+   },
+   "cand": {
+    "activacion": "2026-09-24",
+    "primer_carrito": "2026-09-24"
+   },
+   "iso": {
+    "desde": "2026-09-24",
+    "hasta": "2026-09-27"
+   },
+   "yaTenia": {
+    "SHORTLINKS ASIGNADOS": "",
+    "Medición desde": "",
+    "Medición hasta": ""
+   }
+  }
+ ]
+}

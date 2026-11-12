@@ -1,0 +1,1596 @@
+{
+ "paso": "qcart-activacion · fecha de activación de Qcart",
+ "generado_por": "fuentes-qcart.activacion-qcart.js",
+ "autoridad": {
+  "archivo": "Qcart-Links Mails-Hive- MX.xlsx",
+  "ruta": "C:\\Users\\Ricardo.Aguilar\\OneDrive - OneWorkplace\\Marketing Automation Kinesso - Librería-Sharepoint-MAK\\Nestlé\\Reportes-Nestlé/ReportesQcart/Qcart-Links Mails-Hive- MX.xlsx",
+  "hojas": [
+   {
+    "hoja": "Reemplazos",
+    "codigos": 0,
+    "invalidos": 0,
+    "nota": "no es un calendario de envíos"
+   },
+   {
+    "hoja": "Cuaresma",
+    "codigos": 0,
+    "invalidos": 0,
+    "nota": "⛔ EXCLUIDA por decisión: no tiene columna de fecha, sus links no se pueden fechar"
+   },
+   {
+    "hoja": "Junio",
+    "encabezado_en_fila": 4,
+    "codigos": 26,
+    "invalidos": 10
+   },
+   {
+    "hoja": "Julio",
+    "encabezado_en_fila": 4,
+    "codigos": 16,
+    "invalidos": 4
+   },
+   {
+    "hoja": "Agosto",
+    "encabezado_en_fila": 4,
+    "codigos": 10,
+    "invalidos": 0
+   },
+   {
+    "hoja": "Septiembre",
+    "encabezado_en_fila": 4,
+    "codigos": 12,
+    "invalidos": 0
+   },
+   {
+    "hoja": "Resultados",
+    "codigos": 0,
+    "invalidos": 0,
+    "nota": "no es un calendario de envíos"
+   },
+   {
+    "hoja": "Mayo",
+    "encabezado_en_fila": 8,
+    "codigos": 4,
+    "invalidos": 0
+   },
+   {
+    "hoja": "Abril",
+    "encabezado_en_fila": 8,
+    "codigos": 9,
+    "invalidos": 0
+   },
+   {
+    "hoja": "Marzo",
+    "encabezado_en_fila": 8,
+    "codigos": 6,
+    "invalidos": 0
+   },
+   {
+    "hoja": "Reagendar",
+    "encabezado_en_fila": 4,
+    "codigos": 20,
+    "invalidos": 20
+   },
+   {
+    "hoja": "Roadmap",
+    "codigos": 0,
+    "invalidos": 0,
+    "nota": "no es un calendario de envíos"
+   },
+   {
+    "hoja": "UTMs",
+    "nota": "sin encabezado reconocible"
+   },
+   {
+    "hoja": "Borradores",
+    "codigos": 0,
+    "invalidos": 0,
+    "nota": "no es un calendario de envíos"
+   }
+  ]
+ },
+ "campo_nuevo": {
+  "nombre": "Fecha_Activacion_Qcart",
+  "donde": "Catalogo_Piezas",
+  "que_es": "el día en que el link de Qcart se envió, según el doc de links del equipo",
+  "para_que": "filtrar el tráfico: solo cuenta de esa fecha en adelante. Antes es prueba o de otra campaña, y contarlo infla los números",
+  "regla_de_validez": "si su «Fecha de envío» no es una fecha (p.ej. «No seleccionado»), el link NO es válido y su tráfico no entra"
+ },
+ "links_validos": {
+  "tJEICO87": {
+   "codigo": "tJEICO87",
+   "fecha_activacion": "2026-06-10",
+   "hoja": "Junio",
+   "fila": 5,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "botanas",
+   "utm_content": "e-botana1",
+   "receta": "Papas Antojo Supremo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "Z8W0ZouI": {
+   "codigo": "Z8W0ZouI",
+   "fecha_activacion": "2026-06-10",
+   "hoja": "Junio",
+   "fila": 6,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "botanas",
+   "utm_content": "e-botana1",
+   "receta": "Papas Antojo Supremo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "rr0VvKTb": {
+   "codigo": "rr0VvKTb",
+   "fecha_activacion": "2026-06-10",
+   "hoja": "Junio",
+   "fila": 7,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "bebidas",
+   "utm_content": "e-bebida1",
+   "receta": "Piñarindo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "dHfqmS7n": {
+   "codigo": "dHfqmS7n",
+   "fecha_activacion": "2026-06-10",
+   "hoja": "Junio",
+   "fila": 8,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "bebidas",
+   "utm_content": "e-bebida1",
+   "receta": "Piñarindo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "hWaJfDxS": {
+   "codigo": "hWaJfDxS",
+   "fecha_activacion": "2026-06-10",
+   "hoja": "Junio",
+   "fila": 9,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "new-cooking",
+   "utm_content": "e-cooking1",
+   "receta": "Alitas Agridulces",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "3NIh2kYW": {
+   "codigo": "3NIh2kYW",
+   "fecha_activacion": "2026-06-10",
+   "hoja": "Junio",
+   "fila": 10,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "new-cooking",
+   "utm_content": "e-cooking2",
+   "receta": "Alitas Agridulces",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "3QfdZN2Q": {
+   "codigo": "3QfdZN2Q",
+   "fecha_activacion": "2026-06-17",
+   "hoja": "Junio",
+   "fila": 11,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "bebidas",
+   "utm_content": "e-bebida2",
+   "receta": "Gomichela",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "SN2YWvgo": {
+   "codigo": "SN2YWvgo",
+   "fecha_activacion": "2026-06-17",
+   "hoja": "Junio",
+   "fila": 12,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "bebidas",
+   "utm_content": "e-bebida2",
+   "receta": "Gomichela",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "HcDJTsRH": {
+   "codigo": "HcDJTsRH",
+   "fecha_activacion": "2026-06-17",
+   "hoja": "Junio",
+   "fila": 13,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "botanas",
+   "utm_content": "e-botana2",
+   "receta": "Vaso Botanero",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "rueO2xbY": {
+   "codigo": "rueO2xbY",
+   "fecha_activacion": "2026-06-17",
+   "hoja": "Junio",
+   "fila": 14,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "botanas",
+   "utm_content": "e-botana2",
+   "receta": "Vaso Botanero",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "ZJ3SmPMy": {
+   "codigo": "ZJ3SmPMy",
+   "fecha_activacion": "2026-06-17",
+   "hoja": "Junio",
+   "fila": 15,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "new-cooking",
+   "utm_content": "e-cooking2",
+   "receta": "Hambuguesa Perfecta",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "wdvsBDby": {
+   "codigo": "wdvsBDby",
+   "fecha_activacion": "2026-06-17",
+   "hoja": "Junio",
+   "fila": 16,
+   "fecha_fin": null,
+   "campana": "maggi-junio26",
+   "utm_term": "new-cooking",
+   "utm_content": "e-cooking2",
+   "receta": "Hambuguesa Perfecta",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "junio 2026"
+  },
+  "o41ObWyu": {
+   "codigo": "o41ObWyu",
+   "fecha_activacion": "2027-07-26",
+   "hoja": "Junio",
+   "fila": 17,
+   "fecha_fin": null,
+   "campana": "lechera-junio",
+   "utm_term": "consider",
+   "utm_content": "e-c1",
+   "receta": "Carlota Ligera de Limón",
+   "meses_vs_hoja": 13,
+   "hoja_referencia": "junio 2026"
+  },
+  "r0J2KBES": {
+   "codigo": "r0J2KBES",
+   "fecha_activacion": "2027-07-26",
+   "hoja": "Junio",
+   "fila": 17,
+   "fecha_fin": null,
+   "campana": "lechera-junio",
+   "utm_term": "consider",
+   "utm_content": "e-c1",
+   "receta": "Carlota Ligera de Limón",
+   "meses_vs_hoja": 13,
+   "hoja_referencia": "junio 2026"
+  },
+  "PJrhl5GT": {
+   "codigo": "PJrhl5GT",
+   "fecha_activacion": "2027-07-26",
+   "hoja": "Junio",
+   "fila": 18,
+   "fecha_fin": null,
+   "campana": "lechera-junio",
+   "utm_term": "consider",
+   "utm_content": "e-c1",
+   "receta": "Carlota Ligera de Limón",
+   "meses_vs_hoja": 13,
+   "hoja_referencia": "junio 2026"
+  },
+  "PDy0MeF9": {
+   "codigo": "PDy0MeF9",
+   "fecha_activacion": "2027-07-26",
+   "hoja": "Junio",
+   "fila": 18,
+   "fecha_fin": null,
+   "campana": "lechera-junio",
+   "utm_term": "consider",
+   "utm_content": "e-c1",
+   "receta": "Carlota Ligera de Limón",
+   "meses_vs_hoja": 13,
+   "hoja_referencia": "junio 2026"
+  },
+  "PySVWRVY": {
+   "codigo": "PySVWRVY",
+   "fecha_activacion": "2026-07-22",
+   "hoja": "Julio",
+   "fila": 5,
+   "fecha_fin": null,
+   "campana": "aon-rn-julio26",
+   "utm_term": "productive-adults",
+   "utm_content": "e-p1",
+   "receta": "Tinga de Pollo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "xj2gTnHI": {
+   "codigo": "xj2gTnHI",
+   "fecha_activacion": "2026-07-22",
+   "hoja": "Julio",
+   "fila": 6,
+   "fecha_fin": null,
+   "campana": "aon-rn-julio26",
+   "utm_term": "young-creatives",
+   "utm_content": "e-p2",
+   "receta": "Agua de Horchata con Mango",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "KO3vgQok": {
+   "codigo": "KO3vgQok",
+   "fecha_activacion": "2026-07-25",
+   "hoja": "Julio",
+   "fila": 7,
+   "fecha_fin": null,
+   "campana": "aon-rn-julio26",
+   "utm_term": "wellness-navigators",
+   "utm_content": "e-p3",
+   "receta": "Huarache de nopal con atún a la mexicana",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "hhzYOf18": {
+   "codigo": "hhzYOf18",
+   "fecha_activacion": "2026-07-22",
+   "hoja": "Julio",
+   "fila": 8,
+   "fecha_fin": null,
+   "campana": "aon-rn-julio26",
+   "utm_term": "general-sin-cluster",
+   "utm_content": "e-p4",
+   "receta": "Tinga de Pollo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "GblUR93I": {
+   "codigo": "GblUR93I",
+   "fecha_activacion": "2026-07-22",
+   "hoja": "Julio",
+   "fila": 8,
+   "fecha_fin": null,
+   "campana": "aon-rn-julio26",
+   "utm_term": "general-sin-cluster",
+   "utm_content": "e-p4",
+   "receta": "Tinga de Pollo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "fDAdN8Qa": {
+   "codigo": "fDAdN8Qa",
+   "fecha_activacion": "2026-07-22",
+   "hoja": "Julio",
+   "fila": 8,
+   "fecha_fin": null,
+   "campana": "aon-rn-julio26",
+   "utm_term": "general-sin-cluster",
+   "utm_content": "e-p4",
+   "receta": "Tinga de Pollo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "sbH9gVge": {
+   "codigo": "sbH9gVge",
+   "fecha_activacion": "2026-07-14",
+   "hoja": "Julio",
+   "fila": 13,
+   "fecha_fin": null,
+   "campana": "maggi-julio14",
+   "utm_term": "botanas",
+   "utm_content": "e-botanas6",
+   "receta": "Baguette 3 quesos",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "Agy5v9Yb": {
+   "codigo": "Agy5v9Yb",
+   "fecha_activacion": "2026-07-14",
+   "hoja": "Julio",
+   "fila": 14,
+   "fecha_fin": null,
+   "campana": "maggi-julio14",
+   "utm_term": "botanas",
+   "utm_content": "e-botanas6",
+   "receta": "Tapas Berenjenas",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "2YWR8c3Z": {
+   "codigo": "2YWR8c3Z",
+   "fecha_activacion": "2026-07-15",
+   "hoja": "Julio",
+   "fila": 15,
+   "fecha_fin": null,
+   "campana": "maggi-julio15",
+   "utm_term": "botanas",
+   "utm_content": "e-botanas7",
+   "receta": "Deditos de pescado",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "haPs2HHU": {
+   "codigo": "haPs2HHU",
+   "fecha_activacion": "2026-07-15",
+   "hoja": "Julio",
+   "fila": 16,
+   "fecha_fin": null,
+   "campana": "maggi-julio15",
+   "utm_term": "botanas",
+   "utm_content": "e-botanas7",
+   "receta": "Choripan",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "LO8RxwsM": {
+   "codigo": "LO8RxwsM",
+   "fecha_activacion": "2026-07-19",
+   "hoja": "Julio",
+   "fila": 18,
+   "fecha_fin": null,
+   "campana": "maggi-julio26",
+   "utm_term": "final",
+   "utm_content": "wa-final-aceitunas",
+   "receta": "Aceitunas preparadas: receta simple y rápida",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "2Yn9L0bD": {
+   "codigo": "2Yn9L0bD",
+   "fecha_activacion": "2026-07-19",
+   "hoja": "Julio",
+   "fila": 19,
+   "fecha_fin": null,
+   "campana": "maggi-julio26",
+   "utm_term": "final",
+   "utm_content": "wa-final-empanadas",
+   "receta": "Empanadas tipo argentina",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "julio 2026"
+  },
+  "4tBsCXTp": {
+   "codigo": "4tBsCXTp",
+   "fecha_activacion": "2026-08-15",
+   "hoja": "Agosto",
+   "fila": 5,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "sinregion",
+   "utm_content": "e-j4",
+   "receta": "Nachos con carne",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "hTHNLqzL": {
+   "codigo": "hTHNLqzL",
+   "fecha_activacion": "2026-08-15",
+   "hoja": "Agosto",
+   "fila": 6,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "sinregion",
+   "utm_content": "e-j4",
+   "receta": "Aceitunas Toreadas",
+   "otras_fechas": [
+    "2026-09-04 (Septiembre · e-j7)"
+   ],
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "i8LZ55bd": {
+   "codigo": "i8LZ55bd",
+   "fecha_activacion": "2026-08-15",
+   "hoja": "Agosto",
+   "fila": 7,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "conregion",
+   "utm_content": "e-j4",
+   "receta": "Botana de Jamaica",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "HThaf6bT": {
+   "codigo": "HThaf6bT",
+   "fecha_activacion": "2026-08-15",
+   "hoja": "Agosto",
+   "fila": 8,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "conregion",
+   "utm_content": "e-j4",
+   "receta": "Tropi MAGGI® Shot",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "9isauWgY": {
+   "codigo": "9isauWgY",
+   "fecha_activacion": "2026-08-22",
+   "hoja": "Agosto",
+   "fila": 9,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "sinregion",
+   "utm_content": "e-j5",
+   "receta": "Botana de Carnes",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "Hqa0fbOM": {
+   "codigo": "Hqa0fbOM",
+   "fecha_activacion": "2026-08-22",
+   "hoja": "Agosto",
+   "fila": 10,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "sinregion",
+   "utm_content": "e-j5",
+   "receta": "MAGGI® Shots / Cerdito enchilado",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "UhCnTNuz": {
+   "codigo": "UhCnTNuz",
+   "fecha_activacion": "2026-08-22",
+   "hoja": "Agosto",
+   "fila": 11,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "conregion",
+   "utm_content": "e-j5",
+   "receta": "Esquites MAGGI®",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "TYZa8g47": {
+   "codigo": "TYZa8g47",
+   "fecha_activacion": "2026-08-22",
+   "hoja": "Agosto",
+   "fila": 12,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "conregion",
+   "utm_content": "e-j5",
+   "receta": "Dip de Pimiento Rostizado",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "BdN0ck7t": {
+   "codigo": "BdN0ck7t",
+   "fecha_activacion": "2026-08-28",
+   "hoja": "Agosto",
+   "fila": 13,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "conregion",
+   "utm_content": "e-j6",
+   "receta": "Brochetas de Pollo con Salsa de Piña",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "okUSdwJk": {
+   "codigo": "okUSdwJk",
+   "fecha_activacion": "2026-08-28",
+   "hoja": "Agosto",
+   "fila": 14,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "conregion",
+   "utm_content": "e-j6",
+   "receta": "Cebollitas Maggi®",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "agosto 2026"
+  },
+  "GQnvqqP3": {
+   "codigo": "GQnvqqP3",
+   "fecha_activacion": "2026-09-04",
+   "hoja": "Septiembre",
+   "fila": 6,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "regionunificada",
+   "utm_content": "e-j7",
+   "receta": "Papas Nacho",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "0oSrtaxX": {
+   "codigo": "0oSrtaxX",
+   "fecha_activacion": "2026-09-12",
+   "hoja": "Septiembre",
+   "fila": 7,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "regionunificada-part-a",
+   "utm_content": "e-j8",
+   "receta": "Nachos con carne / Nachos MAGGI",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "0eQt7uf5": {
+   "codigo": "0eQt7uf5",
+   "fecha_activacion": "2026-09-12",
+   "hoja": "Septiembre",
+   "fila": 8,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "regionunificada-part-a",
+   "utm_content": "e-j8",
+   "receta": "Sarten Queso Jalapeño",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "DTuqPqBo": {
+   "codigo": "DTuqPqBo",
+   "fecha_activacion": "2026-09-10",
+   "hoja": "Septiembre",
+   "fila": 9,
+   "fecha_fin": "2026-09-12",
+   "campana": "Maggi-LigaMx-agosto26",
+   "utm_term": "regionunificada-part-a-wa",
+   "utm_content": "wa-j8",
+   "receta": "Sarten Queso Jalapeño",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "bfQ24tDq": {
+   "codigo": "bfQ24tDq",
+   "fecha_activacion": "2026-09-18",
+   "hoja": "Septiembre",
+   "fila": 10,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-sep26",
+   "utm_term": "regionunificada-part-b-email",
+   "utm_content": "e-j9",
+   "receta": "Alitas Salsa Mango",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "xTaSfQ2y": {
+   "codigo": "xTaSfQ2y",
+   "fecha_activacion": "2026-09-18",
+   "hoja": "Septiembre",
+   "fila": 11,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-sep26",
+   "utm_term": "regionunificada-part-b-email",
+   "utm_content": "e-j9",
+   "receta": "Tropi Maggi",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "ymh2OT4x": {
+   "codigo": "ymh2OT4x",
+   "fecha_activacion": "2026-09-19",
+   "hoja": "Septiembre",
+   "fila": 12,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-sep26",
+   "utm_term": "regionunificada-part-b-wa",
+   "utm_content": "wa-j9",
+   "receta": "Alitas Salsa Mango",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "kzSTHGEd": {
+   "codigo": "kzSTHGEd",
+   "fecha_activacion": "2026-09-25",
+   "hoja": "Septiembre",
+   "fila": 13,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-sep26",
+   "utm_term": "regionunificada-part-c-email",
+   "utm_content": "e-j10",
+   "receta": "Dips Botaneros",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "jhMxJiSo": {
+   "codigo": "jhMxJiSo",
+   "fecha_activacion": "2026-09-25",
+   "hoja": "Septiembre",
+   "fila": 14,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-sep26",
+   "utm_term": "regionunificada-part-c-email",
+   "utm_content": "e-j10",
+   "receta": "Pepimiche",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "uCV8KGHm": {
+   "codigo": "uCV8KGHm",
+   "fecha_activacion": "2026-09-24",
+   "hoja": "Septiembre",
+   "fila": 15,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-sep26",
+   "utm_term": "regionunificada-part-c-wa",
+   "utm_content": "wa-j10",
+   "receta": "Papitas elote",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "b48Oay1D": {
+   "codigo": "b48Oay1D",
+   "fecha_activacion": "2026-09-29",
+   "hoja": "Septiembre",
+   "fila": 16,
+   "fecha_fin": null,
+   "campana": "Maggi-LigaMx-sep29",
+   "utm_term": "regionunificada-SNM1",
+   "utm_content": "wa-SNM1",
+   "receta": "Ceviche Pescado",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "septiembre 2026"
+  },
+  "NhrllATy": {
+   "codigo": "NhrllATy",
+   "fecha_activacion": "2026-05-20",
+   "hoja": "Mayo",
+   "fila": 9,
+   "fecha_fin": null,
+   "campana": "hotcakes-abril",
+   "utm_term": "Saludables (Segmento de TD)",
+   "utm_content": "E-P1",
+   "receta": "Hot cakes de avena y linaza",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "mayo 2026"
+  },
+  "3o1GDbRc": {
+   "codigo": "3o1GDbRc",
+   "fecha_activacion": "2026-05-20",
+   "hoja": "Mayo",
+   "fila": 10,
+   "fecha_fin": null,
+   "campana": "hotcakes-abril",
+   "utm_term": "Practicos",
+   "utm_content": "E-P2",
+   "receta": "Hot cakes platano con Avena",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "mayo 2026"
+  },
+  "qrMAKnjA": {
+   "codigo": "qrMAKnjA",
+   "fecha_activacion": "2026-05-20",
+   "hoja": "Mayo",
+   "fila": 11,
+   "fecha_fin": null,
+   "campana": "hotcakes-abril",
+   "utm_term": "Indulgentes",
+   "utm_content": "E-P3",
+   "receta": "Hot cakes red velvet",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "mayo 2026"
+  },
+  "LU7k7fMB": {
+   "codigo": "LU7k7fMB",
+   "fecha_activacion": "2026-05-20",
+   "hoja": "Mayo",
+   "fila": 12,
+   "fecha_fin": null,
+   "campana": "hotcakes-abril",
+   "utm_term": "Familias",
+   "utm_content": "E-P4",
+   "receta": "Mini hot cakes de manzana",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "mayo 2026"
+  },
+  "0varyzKZ": {
+   "codigo": "0varyzKZ",
+   "fecha_activacion": "2026-04-14",
+   "hoja": "Abril",
+   "fila": 9,
+   "fecha_fin": null,
+   "campana": "hotcakes-abril",
+   "utm_term": "Inpiration",
+   "utm_content": "E-I1",
+   "receta": "Hot cakes esponjosos",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "abril 2026"
+  },
+  "a4NBepmo": {
+   "codigo": "a4NBepmo",
+   "fecha_activacion": "2026-04-14",
+   "hoja": "Abril",
+   "fila": 10,
+   "fecha_fin": null,
+   "campana": "hotcakes-abril",
+   "utm_term": "Inpiration",
+   "utm_content": "E-I1",
+   "receta": "Hotcakes de Cocoa con Avena",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "abril 2026"
+  },
+  "bd2KESe4": {
+   "codigo": "bd2KESe4",
+   "fecha_activacion": "2026-04-14",
+   "hoja": "Abril",
+   "fila": 11,
+   "fecha_fin": null,
+   "campana": "hotcakes-abril",
+   "utm_term": "Inpiration",
+   "utm_content": "E-I2",
+   "receta": "Hot cakes de chocolate para desayunar",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "abril 2026"
+  },
+  "VbE5Jnb4": {
+   "codigo": "VbE5Jnb4",
+   "fecha_activacion": "2026-04-14",
+   "hoja": "Abril",
+   "fila": 12,
+   "fecha_fin": null,
+   "campana": "hotcakes-abril",
+   "utm_term": "Inpiration",
+   "utm_content": "E-I2",
+   "receta": "Hot cakes capuchino",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "abril 2026"
+  },
+  "SGm6GxjJ": {
+   "codigo": "SGm6GxjJ",
+   "fecha_activacion": "2026-04-30",
+   "hoja": "Abril",
+   "fila": 13,
+   "fecha_fin": null,
+   "campana": "aon-rn-abril-purchase",
+   "utm_term": "FamilyFocused",
+   "utm_content": "E-P1",
+   "receta": "Mini Hambuguesas de Pollo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "abril 2026"
+  },
+  "kzFAiKMv": {
+   "codigo": "kzFAiKMv",
+   "fecha_activacion": "2026-04-30",
+   "hoja": "Abril",
+   "fila": 14,
+   "fecha_fin": null,
+   "campana": "aon-rn-abril-purchase",
+   "utm_term": "FamilyFocused",
+   "utm_content": "E-P1",
+   "receta": "Mini Cheesecake sin Horno",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "abril 2026"
+  },
+  "YdlUlPrm": {
+   "codigo": "YdlUlPrm",
+   "fecha_activacion": "2026-04-30",
+   "hoja": "Abril",
+   "fila": 15,
+   "fecha_fin": null,
+   "campana": "aon-rn-abril-purchase",
+   "utm_term": "Dinkys",
+   "utm_content": "E-P2",
+   "receta": "Jocho de sushi | Recetas Nestlé",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "abril 2026"
+  },
+  "os3U6hWb": {
+   "codigo": "os3U6hWb",
+   "fecha_activacion": "2026-04-30",
+   "hoja": "Abril",
+   "fila": 16,
+   "fecha_fin": null,
+   "campana": "aon-rn-abril-purchase",
+   "utm_term": "NewParentes",
+   "utm_content": "E-P3",
+   "receta": "Rollitos de calabaza con queso y brócoli | Recetas Nestlé",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "abril 2026"
+  },
+  "Mb4KvUvP": {
+   "codigo": "Mb4KvUvP",
+   "fecha_activacion": "2026-04-30",
+   "hoja": "Abril",
+   "fila": 17,
+   "fecha_fin": null,
+   "campana": "aon-rn-abril-purchase",
+   "utm_term": "CareerFocused",
+   "utm_content": "E-P4",
+   "receta": "Tartara de atún | Recetas Nestlé",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "abril 2026"
+  },
+  "uDEM0jlX": {
+   "codigo": "uDEM0jlX",
+   "fecha_activacion": "2026-03-13",
+   "hoja": "Marzo",
+   "fila": 9,
+   "fecha_fin": "2026-03-31",
+   "campana": "ao-recetasnestlé",
+   "utm_term": "",
+   "utm_content": "",
+   "receta": "Tinga de Pollo",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "marzo 2026"
+  },
+  "vgMqmCrL": {
+   "codigo": "vgMqmCrL",
+   "fecha_activacion": "2026-03-13",
+   "hoja": "Marzo",
+   "fila": 10,
+   "fecha_fin": "2026-03-31",
+   "campana": "ao-recetasnestlé",
+   "utm_term": "",
+   "utm_content": "",
+   "receta": "Carne para Hamburguesa",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "marzo 2026"
+  },
+  "ETJFEOzD": {
+   "codigo": "ETJFEOzD",
+   "fecha_activacion": "2026-03-13",
+   "hoja": "Marzo",
+   "fila": 11,
+   "fecha_fin": "2026-03-31",
+   "campana": "ao-recetasnestlé",
+   "utm_term": "",
+   "utm_content": "",
+   "receta": "Espagueti Rojo Cremoso",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "marzo 2026"
+  },
+  "1iqH9Tx7": {
+   "codigo": "1iqH9Tx7",
+   "fecha_activacion": "2026-03-13",
+   "hoja": "Marzo",
+   "fila": 12,
+   "fecha_fin": "2026-03-31",
+   "campana": "ao-recetasnestlé",
+   "utm_term": "",
+   "utm_content": "",
+   "receta": "Molletes",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "marzo 2026"
+  },
+  "E8RDSsHg": {
+   "codigo": "E8RDSsHg",
+   "fecha_activacion": "2026-03-13",
+   "hoja": "Marzo",
+   "fila": 13,
+   "fecha_fin": "2026-03-31",
+   "campana": "ao-recetasnestlé",
+   "utm_term": "",
+   "utm_content": "",
+   "receta": "Salmón a las finas hierbas",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "marzo 2026"
+  },
+  "9Bm8slOi": {
+   "codigo": "9Bm8slOi",
+   "fecha_activacion": "2026-03-13",
+   "hoja": "Marzo",
+   "fila": 14,
+   "fecha_fin": "2026-03-31",
+   "campana": "ao-recetasnestlé",
+   "utm_term": "",
+   "utm_content": "",
+   "receta": "Wraps de atún",
+   "meses_vs_hoja": 0,
+   "hoja_referencia": "marzo 2026"
+  }
+ },
+ "links_invalidos": [
+  {
+   "codigo": "LJQsq5T9",
+   "hoja": "Junio",
+   "fila": 19,
+   "valor_de_fecha": "Envío Federación",
+   "campana": "maggi-junio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "L5rqwrzD",
+   "hoja": "Junio",
+   "fila": 20,
+   "valor_de_fecha": "No enviado",
+   "campana": "maggi-junio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "Y8umAAnA",
+   "hoja": "Junio",
+   "fila": 21,
+   "valor_de_fecha": "No enviado",
+   "campana": "maggi-junio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "JPrNSrwn",
+   "hoja": "Junio",
+   "fila": 22,
+   "valor_de_fecha": "No enviado",
+   "campana": "maggi-junio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "w5r9LWOP",
+   "hoja": "Junio",
+   "fila": 23,
+   "valor_de_fecha": "No enviado",
+   "campana": "maggi-junio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "cCFb2xEx",
+   "hoja": "Junio",
+   "fila": 24,
+   "valor_de_fecha": "No enviado",
+   "campana": "maggi-junio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "yj8PKdRr",
+   "hoja": "Junio",
+   "fila": 25,
+   "valor_de_fecha": "No enviado",
+   "campana": "maggi-junio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "vk67sh2J",
+   "hoja": "Junio",
+   "fila": 26,
+   "valor_de_fecha": "No enviado",
+   "campana": "maggi-junio24",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "xka2NWrW",
+   "hoja": "Junio",
+   "fila": 27,
+   "valor_de_fecha": "No enviado",
+   "campana": "maggi-junio24",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "YJOatjQs",
+   "hoja": "Junio",
+   "fila": 28,
+   "valor_de_fecha": "No enviado",
+   "campana": "maggi-junio24",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "P8IcwfWJ",
+   "hoja": "Julio",
+   "fila": 10,
+   "valor_de_fecha": "No salió",
+   "campana": "maggi-julio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "znjG7J6r",
+   "hoja": "Julio",
+   "fila": 11,
+   "valor_de_fecha": "No salió",
+   "campana": "maggi-julio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "5NnTxarc",
+   "hoja": "Julio",
+   "fila": 12,
+   "valor_de_fecha": "No salió",
+   "campana": "maggi-julio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "uv5JZ8U7",
+   "hoja": "Julio",
+   "fila": 20,
+   "valor_de_fecha": "No salió",
+   "campana": "maggi-julio26",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "Cj0XkO1h",
+   "hoja": "Reagendar",
+   "fila": 5,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "oJclpobS",
+   "hoja": "Reagendar",
+   "fila": 5,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "AwsreGWs",
+   "hoja": "Reagendar",
+   "fila": 6,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "aPFwXeaG",
+   "hoja": "Reagendar",
+   "fila": 6,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "pkuRXYX1",
+   "hoja": "Reagendar",
+   "fila": 7,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "3Lb6FbAa",
+   "hoja": "Reagendar",
+   "fila": 7,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "lfFYbUfy",
+   "hoja": "Reagendar",
+   "fila": 8,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "M67vOg1g",
+   "hoja": "Reagendar",
+   "fila": 8,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "tErzItBY",
+   "hoja": "Reagendar",
+   "fila": 9,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "ePytHRi3",
+   "hoja": "Reagendar",
+   "fila": 9,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "TMECSIho",
+   "hoja": "Reagendar",
+   "fila": 10,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "y6hReRB5",
+   "hoja": "Reagendar",
+   "fila": 10,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "iDe8mevx",
+   "hoja": "Reagendar",
+   "fila": 11,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "7WMWBfdH",
+   "hoja": "Reagendar",
+   "fila": 11,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "1pG56IWV",
+   "hoja": "Reagendar",
+   "fila": 12,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "Kmwj525C",
+   "hoja": "Reagendar",
+   "fila": 12,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "8IlcZ2pI",
+   "hoja": "Reagendar",
+   "fila": 13,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "3vn9NQfR",
+   "hoja": "Reagendar",
+   "fila": 13,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "dlO6lyOM",
+   "hoja": "Reagendar",
+   "fila": 14,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  },
+  {
+   "codigo": "SgKfnrbu",
+   "hoja": "Reagendar",
+   "fila": 14,
+   "valor_de_fecha": "Por reagendar",
+   "campana": "lechera-junio",
+   "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+  }
+ ],
+ "activacion_por_pieza": {
+  "001-P001": {
+   "fecha": "2026-03-13",
+   "codigos": 3,
+   "fechas_distintas": 2
+  },
+  "001-P003": {
+   "fecha": "2026-03-13",
+   "codigos": 3,
+   "fechas_distintas": 2
+  },
+  "001-P005": {
+   "fecha": "2026-03-13",
+   "codigos": 4,
+   "fechas_distintas": 2
+  },
+  "001-P011": {
+   "fecha": "2026-04-30",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "002-P001": {
+   "fecha": "2026-05-20",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "002-P002": {
+   "fecha": "2026-05-20",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "002-P003": {
+   "fecha": "2026-05-20",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "002-P004": {
+   "fecha": "2026-05-20",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "002-P017": {
+   "fecha": "2026-04-14",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "002-P019": {
+   "fecha": "2026-04-14",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "004-P001": {
+   "fecha": "2026-06-10",
+   "codigos": 3,
+   "fechas_distintas": 1
+  },
+  "004-P002": {
+   "fecha": "2026-06-10",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "004-P003": {
+   "fecha": "2026-06-10",
+   "codigos": 3,
+   "fechas_distintas": 1
+  },
+  "004-P004": {
+   "fecha": "2026-06-17",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "004-P005": {
+   "fecha": "2026-06-17",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "004-P006": {
+   "fecha": null,
+   "motivo": "ninguno de sus códigos tiene fecha en el doc"
+  },
+  "004-P007": {
+   "fecha": null,
+   "motivo": "ninguno de sus códigos tiene fecha en el doc"
+  },
+  "004-P008": {
+   "fecha": null,
+   "motivo": "ninguno de sus códigos tiene fecha en el doc"
+  },
+  "003-P001": {
+   "fecha": "2027-07-26",
+   "codigos": 4,
+   "fechas_distintas": 1
+  },
+  "001-P015": {
+   "fecha": "2026-07-22",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "001-P017": {
+   "fecha": "2026-07-22",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "001-P019": {
+   "fecha": "2026-07-25",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "001-P021": {
+   "fecha": "2026-07-22",
+   "codigos": 3,
+   "fechas_distintas": 1
+  },
+  "004-P017": {
+   "fecha": "2026-07-14",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "004-P018": {
+   "fecha": "2026-07-15",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "004-P019": {
+   "fecha": "2026-07-19",
+   "codigos": 3,
+   "fechas_distintas": 1
+  },
+  "005-P005": {
+   "fecha": "2026-08-15",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "005-P006": {
+   "fecha": "2026-08-15",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "005-P007": {
+   "fecha": "2026-08-22",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "005-P008": {
+   "fecha": "2026-08-22",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "004-P020": {
+   "fecha": "2026-06-10",
+   "codigos": 4,
+   "fechas_distintas": 2
+  },
+  "005-P009": {
+   "fecha": "2026-08-28",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "005-P010": {
+   "fecha": "2026-08-15",
+   "codigos": 2,
+   "fechas_distintas": 2
+  },
+  "005-P011": {
+   "fecha": "2026-09-10",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "005-P012": {
+   "fecha": "2026-09-12",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "005-P013": {
+   "fecha": "2026-09-19",
+   "codigos": 1,
+   "fechas_distintas": 1
+  },
+  "005-P014": {
+   "fecha": "2026-09-18",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "005-P015": {
+   "fecha": "2026-09-25",
+   "codigos": 2,
+   "fechas_distintas": 1
+  },
+  "005-P016": {
+   "fecha": "2026-09-24",
+   "codigos": 1,
+   "fechas_distintas": 1
+  }
+ },
+ "mapeo": {
+  "codigos_en_catalogo": 75,
+  "codigos_en_autoridad": 68,
+  "mapeados": 67,
+  "validos_sin_pieza": [
+   "b48Oay1D"
+  ],
+  "en_catalogo_sin_fecha": [],
+  "invalidos_usados_por_una_pieza": [
+   {
+    "codigo": "LJQsq5T9",
+    "hoja": "Junio",
+    "fila": 19,
+    "valor_de_fecha": "Envío Federación",
+    "campana": "maggi-junio26",
+    "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+   },
+   {
+    "codigo": "Y8umAAnA",
+    "hoja": "Junio",
+    "fila": 21,
+    "valor_de_fecha": "No enviado",
+    "campana": "maggi-junio26",
+    "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+   },
+   {
+    "codigo": "w5r9LWOP",
+    "hoja": "Junio",
+    "fila": 23,
+    "valor_de_fecha": "No enviado",
+    "campana": "maggi-junio26",
+    "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+   },
+   {
+    "codigo": "cCFb2xEx",
+    "hoja": "Junio",
+    "fila": 24,
+    "valor_de_fecha": "No enviado",
+    "campana": "maggi-junio26",
+    "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+   },
+   {
+    "codigo": "vk67sh2J",
+    "hoja": "Junio",
+    "fila": 26,
+    "valor_de_fecha": "No enviado",
+    "campana": "maggi-junio24",
+    "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+   },
+   {
+    "codigo": "xka2NWrW",
+    "hoja": "Junio",
+    "fila": 27,
+    "valor_de_fecha": "No enviado",
+    "campana": "maggi-junio24",
+    "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+   },
+   {
+    "codigo": "YJOatjQs",
+    "hoja": "Junio",
+    "fila": 28,
+    "valor_de_fecha": "No enviado",
+    "campana": "maggi-junio24",
+    "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+   },
+   {
+    "codigo": "uv5JZ8U7",
+    "hoja": "Julio",
+    "fila": 20,
+    "valor_de_fecha": "No salió",
+    "campana": "maggi-julio26",
+    "motivo": "su «Fecha de envío» no es una fecha ni un rango de fechas → el link no se envió, no cuenta"
+   }
+  ]
+ },
+ "fechas_imposibles": {
+  "hoy": "2026-10-03",
+  "incoherentes_con_su_campana": [
+   {
+    "codigo": "o41ObWyu",
+    "fecha_activacion": "2027-07-26",
+    "hoja": "Junio",
+    "fila": 17,
+    "fecha_fin": null,
+    "campana": "lechera-junio",
+    "utm_term": "consider",
+    "utm_content": "e-c1",
+    "receta": "Carlota Ligera de Limón",
+    "meses_vs_hoja": 13,
+    "hoja_referencia": "junio 2026"
+   },
+   {
+    "codigo": "r0J2KBES",
+    "fecha_activacion": "2027-07-26",
+    "hoja": "Junio",
+    "fila": 17,
+    "fecha_fin": null,
+    "campana": "lechera-junio",
+    "utm_term": "consider",
+    "utm_content": "e-c1",
+    "receta": "Carlota Ligera de Limón",
+    "meses_vs_hoja": 13,
+    "hoja_referencia": "junio 2026"
+   },
+   {
+    "codigo": "PJrhl5GT",
+    "fecha_activacion": "2027-07-26",
+    "hoja": "Junio",
+    "fila": 18,
+    "fecha_fin": null,
+    "campana": "lechera-junio",
+    "utm_term": "consider",
+    "utm_content": "e-c1",
+    "receta": "Carlota Ligera de Limón",
+    "meses_vs_hoja": 13,
+    "hoja_referencia": "junio 2026"
+   },
+   {
+    "codigo": "PDy0MeF9",
+    "fecha_activacion": "2027-07-26",
+    "hoja": "Junio",
+    "fila": 18,
+    "fecha_fin": null,
+    "campana": "lechera-junio",
+    "utm_term": "consider",
+    "utm_content": "e-c1",
+    "receta": "Carlota Ligera de Limón",
+    "meses_vs_hoja": 13,
+    "hoja_referencia": "junio 2026"
+   }
+  ],
+  "programados_a_futuro_ok": [],
+  "antes_de_2026": [],
+  "por_que_importa": "una activación en el futuro hace que el filtro borre el 100% del tráfico de esa pieza, y el resultado se ve normal"
+ },
+ "para_el_siguiente": {
+  "que_es": "qcart-bloque filtra los CSV con esto: solo códigos válidos, y solo desde su fecha de activación",
+  "unidad_del_filtro": "shortlink code — NO la pieza. Una pieza puede tener dos envíos con links distintos (001-P001 manda en marzo y abril y su único código es el de abril): una sola fecha para toda la pieza recortaría el tráfico del otro envío.",
+  "ojo": "un código sin fecha de activación NO se puede filtrar → su tráfico no entra hasta resolverlo"
+ }
+}

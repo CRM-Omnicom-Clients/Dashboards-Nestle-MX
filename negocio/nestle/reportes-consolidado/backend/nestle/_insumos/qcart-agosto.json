@@ -1,0 +1,91 @@
+{
+ "paso": "Q1",
+ "archivos": [
+  {
+   "archivo": "Fullcarritos-MarzoAgosto.csv",
+   "tipo": "carritos",
+   "filas": 3953,
+   "desde": "2026-03-01",
+   "hasta": "2026-08-12",
+   "columnas": [
+    "date",
+    "shortlink code",
+    "shortlink name",
+    "utm_campaign",
+    "utm_medium",
+    "utm_source",
+    "utm_content",
+    "utm_term",
+    "store",
+    "impressions",
+    "views",
+    "total shown price"
+   ]
+  },
+  {
+   "archivo": "fullproductos-marzoagosto.csv",
+   "tipo": "productos",
+   "filas": 1199,
+   "desde": "2026-03-01",
+   "hasta": "2026-08-11",
+   "columnas": [
+    "date",
+    "shortlink code",
+    "shortlink name",
+    "utm_campaign",
+    "utm_medium",
+    "utm_source",
+    "utm_content",
+    "utm_term",
+    "product",
+    "store",
+    "impressions",
+    "views",
+    "total shown price"
+   ]
+  },
+  {
+   "archivo": "recetas-nestle-mx-carts-raw-2026-08-01-2026-08-21.csv",
+   "tipo": "carritos",
+   "filas": 803,
+   "desde": "2026-07-31",
+   "hasta": "2026-08-20",
+   "columnas": [
+    "date",
+    "shortlink code",
+    "shortlink name",
+    "utm_campaign",
+    "utm_medium",
+    "utm_source",
+    "utm_content",
+    "utm_term",
+    "store",
+    "impressions",
+    "views",
+    "total shown price"
+   ]
+  },
+  {
+   "archivo": "recetas-nestle-mx-products-raw-2026-08-01-2026-08-21.csv",
+   "tipo": "productos",
+   "filas": 447,
+   "desde": "2026-07-31",
+   "hasta": "2026-08-19",
+   "columnas": [
+    "date",
+    "shortlink code",
+    "shortlink name",
+    "utm_campaign",
+    "utm_medium",
+    "utm_source",
+    "utm_content",
+    "utm_term",
+    "product",
+    "store",
+    "impressions",
+    "views",
+    "total shown price"
+   ]
+  }
+ ]
+}

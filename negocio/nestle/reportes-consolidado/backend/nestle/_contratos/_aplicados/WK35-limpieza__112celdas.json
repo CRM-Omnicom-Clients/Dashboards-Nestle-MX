@@ -1,0 +1,986 @@
+{
+ "corte": "WK35-limpieza",
+ "celdas": 112,
+ "columnas": 13,
+ "hojas_regeneradas": 0,
+ "respaldo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-WK35-limpieza.xlsx",
+ "cambios": [
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 6,
+   "columna": "Tasa_Productos_a_Carritos",
+   "valor": "0.6981132075471698",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 12,
+   "columna": "Tasa_Productos_a_Carritos",
+   "valor": "0.23076923076923078",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 27,
+   "columna": "Tasa_Productos_a_Carritos",
+   "valor": "0.14516129032258066",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 29,
+   "columna": "Tasa_Productos_a_Carritos",
+   "valor": "0.0975609756097561",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 54,
+   "columna": "Tasa_Productos_a_Carritos",
+   "valor": "0.18556701030927836",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 6,
+   "columna": "Views_vs_Clicks_%",
+   "valor": "0.10787671232876712",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 12,
+   "columna": "Views_vs_Clicks_%",
+   "valor": "212",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 27,
+   "columna": "Views_vs_Clicks_%",
+   "valor": "3.1397379912663754",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 29,
+   "columna": "Views_vs_Clicks_%",
+   "valor": "0.08856502242152467",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 54,
+   "columna": "Views_vs_Clicks_%",
+   "valor": "1.7631296891747053",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 6,
+   "columna": "Carritos_vs_Clicks_%",
+   "valor": "0.022688356164383562",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 12,
+   "columna": "Carritos_vs_Clicks_%",
+   "valor": "143",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 27,
+   "columna": "Carritos_vs_Clicks_%",
+   "valor": "1.6244541484716157",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 29,
+   "columna": "Carritos_vs_Clicks_%",
+   "valor": "0.04596412556053812",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 54,
+   "columna": "Carritos_vs_Clicks_%",
+   "valor": "0.6237942122186495",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 3,
+   "columna": "P_Subject",
+   "valor": "%%[  IF EMPTY([FIRST_NAME]) THEN  ]%% ¡Hola!, recetas rendidoras para toda la familia 🍽️ %%[  ELSE  ]%% %%=ProperCase([",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 4,
+   "columna": "P_Subject",
+   "valor": "¡Hola!, soluciones prácticas para tu semana ocupada",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 6,
+   "columna": "P_Subject",
+   "valor": "Recetas frescas y fáciles en tu app",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 7,
+   "columna": "P_Subject",
+   "valor": "Ideas para días calurosos en tu App Recetas Nestlé",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 8,
+   "columna": "P_Subject",
+   "valor": "%%[  IF EMPTY([FIRST_NAME]) THEN  ]%% ¡Hola!, recetas rendidoras para toda la familia 🍽️ %%[  ELSE  ]%% %%=ProperCase([",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 11,
+   "columna": "P_Subject",
+   "valor": "¡Hola!, soluciones prácticas para tu semana ocupada",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 12,
+   "columna": "P_Subject",
+   "valor": "Llena de sabor tu ritual mañanero",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 14,
+   "columna": "P_Subject",
+   "valor": "Disfruta de un ritual de bienestar esponjoso",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 15,
+   "columna": "P_Subject",
+   "valor": "Tu ritual rápido de desayuno",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 16,
+   "columna": "P_Subject",
+   "valor": "Antojo sabroso y dulce para tu ritual mañanero",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 17,
+   "columna": "P_Subject",
+   "valor": "Ritual riquísimo para disfrutar con tus hijos",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 18,
+   "columna": "P_Subject",
+   "valor": "Comparte tu receta saludable",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 19,
+   "columna": "P_Subject",
+   "valor": "¿Cómo resuelves tus hot cakes del día?",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 20,
+   "columna": "P_Subject",
+   "valor": "Ese antojo esponjoso tuyo inspira",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 21,
+   "columna": "P_Subject",
+   "valor": "Tu mejor momento hot cake en familia es inspirador",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 26,
+   "columna": "P_Subject",
+   "valor": "La michelada estelar para la gran inauguración",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 27,
+   "columna": "P_Subject",
+   "valor": "Inauguración, emoción y la mejor botana",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 28,
+   "columna": "P_Subject",
+   "valor": "Las alitas favoritas para la inauguración",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 29,
+   "columna": "P_Subject",
+   "valor": "Hay antojos que se preparan con cariño y se disfrutan en todo momento",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 30,
+   "columna": "P_Subject",
+   "valor": "%%=ProperCase([FIRST_NAME])=%%, alcanzar lo excepcional no es por casualidad⚽🏆",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 32,
+   "columna": "P_Subject",
+   "valor": "Ponle MAGGI ® Miche al grito de  GOOOOL ⚽",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 33,
+   "columna": "P_Subject",
+   "valor": "El partido sabe aún mejor con esta botana y MAGGI ®",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 34,
+   "columna": "P_Subject",
+   "valor": "Échale 5 y lleva el sabor norteño hasta la cancha 🤠",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 35,
+   "columna": "P_Subject",
+   "valor": "Crujientes, picositas y con el toque especial de MAGGI®",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 36,
+   "columna": "P_Subject",
+   "valor": "El doggo que juega de titular con MAGGI®",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 37,
+   "columna": "P_Subject",
+   "valor": "¡Échale 5 de MAGGI® Miche para que la Selección pase al quinto!",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 38,
+   "columna": "P_Subject",
+   "valor": "Mientras haya NESCAFÉ®, el partido no termina.",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 39,
+   "columna": "P_Subject",
+   "valor": "Tu taza coleccionable NESCAFÉ® ya está aquí",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 40,
+   "columna": "P_Subject",
+   "valor": "Después del partido un buen NESCAFÉ® para continuar la plática",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 54,
+   "columna": "P_Subject",
+   "valor": "Tu tinga de hoy, lista en un click",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 55,
+   "columna": "P_Subject",
+   "valor": "¿Ya caíste en la horchata con mango?",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 56,
+   "columna": "P_Subject",
+   "valor": "¿Comida ligera hoy? Huarache de nopal en minutos",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 57,
+   "columna": "P_Subject",
+   "valor": "¿Qué se te antoja hoy? Elige tu receta favorita",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-20 y tenía dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 2,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 3,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 4,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 5,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 6,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 7,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 8,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 9,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 10,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 11,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 12,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 13,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 14,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 15,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 16,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 17,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 18,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 19,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 20,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 21,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 22,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 23,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 24,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 25,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 26,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 27,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 28,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 29,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 30,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 31,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 32,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 33,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 34,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 35,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 36,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 37,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 38,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 39,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 40,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 41,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 42,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 45,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 48,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 50,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 52,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 53,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 54,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 55,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 56,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 57,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 64,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 65,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 66,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 67,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 68,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 69,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 70,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 71,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 72,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 73,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 74,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 75,
+   "columna": "Canal",
+   "valor": "email",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 76,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "fila": 77,
+   "columna": "Canal",
+   "valor": "whatsapp",
+   "porque": "columna RECUPERADA: se perdió el 2026-08-24 y tenía dato en 76 filas"
+  }
+ ],
+ "columnas_nuevas": [
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "nombre": "Tasa_Productos_a_Carritos",
+   "porque": "columna RECUPERADA: se perdio el 2026-08-20 y tenia dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "nombre": "Views_vs_Clicks_%",
+   "porque": "columna RECUPERADA: se perdio el 2026-08-20 y tenia dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "nombre": "Carritos_vs_Clicks_%",
+   "porque": "columna RECUPERADA: se perdio el 2026-08-20 y tenia dato en 9 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "nombre": "P_Subject",
+   "porque": "columna RECUPERADA: se perdio el 2026-08-20 y tenia dato en 48 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "nombre": "Canal",
+   "porque": "columna RECUPERADA: se perdio el 2026-08-24 y tenia dato en 76 filas"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Catalogo_Piezas",
+   "nombre": "Receta_5",
+   "porque": "columna recuperada (estaba vacía): se conserva el hueco para no perder la estructura"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Catalogo_Piezas",
+   "nombre": "URL_Receta_5",
+   "porque": "columna recuperada (estaba vacía): se conserva el hueco para no perder la estructura"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Catalogo_Piezas",
+   "nombre": "Cod_Walmart_5",
+   "porque": "columna recuperada (estaba vacía): se conserva el hueco para no perder la estructura"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Catalogo_Piezas",
+   "nombre": "Carritos_Walmart_5",
+   "porque": "columna recuperada (estaba vacía): se conserva el hueco para no perder la estructura"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Catalogo_Piezas",
+   "nombre": "Cod_Chedraui_5",
+   "porque": "columna recuperada (estaba vacía): se conserva el hueco para no perder la estructura"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Catalogo_Piezas",
+   "nombre": "Carritos_Chedraui_5",
+   "porque": "columna recuperada (estaba vacía): se conserva el hueco para no perder la estructura"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "nombre": "Unsubs_Total",
+   "porque": "columna recuperada (estaba vacía): se conserva el hueco para no perder la estructura"
+  },
+  {
+   "paso": "S5",
+   "hoja": "Report_Resumen",
+   "nombre": "% Unsuscribe",
+   "porque": "columna recuperada (estaba vacía): se conserva el hueco para no perder la estructura"
+  }
+ ],
+ "hojas": []
+}

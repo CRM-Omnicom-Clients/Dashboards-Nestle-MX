@@ -1,0 +1,53 @@
+{
+ "cuando": "2026-09-30T19:58:12.097Z",
+ "ataques": [
+  {
+   "nombre": "A1 · clase de click sin columna declarada",
+   "intenta": "meter un destino inventado en repartir() para que su tráfico se cuele en una columna",
+   "atrapado": true,
+   "como": "tronó como debe: clase de click sin columna declarada en lib-clicks-destino: \"destino_q"
+  },
+  {
+   "nombre": "A2 · el total colado como si fuera un destino",
+   "intenta": "que Clicks_Medidos aparezca en columnas() y repartir() lo trate como una clase más",
+   "atrapado": true,
+   "como": "columnas() son solo los 3 destinos; el total vive aparte en columnasReporte()"
+  },
+  {
+   "nombre": "A3 · un desglose mayor que su total",
+   "intenta": "construir un bloque cuyo desglose sume más que su Clicks_Medidos",
+   "atrapado": true,
+   "como": "totalMedido() = 325 = la suma exacta: por construcción no puede quedar por debajo"
+  },
+  {
+   "nombre": "A4 · el check que se compara consigo mismo",
+   "intenta": "comprobar que motor.links.js ya NO valida el desglose contra clicks_unicos (ambos del mismo campo)",
+   "atrapado": true,
+   "como": "el check circular ya no está, y hay contraste contra el DETALLE (fuente externa)"
+  },
+  {
+   "nombre": "A5 · el desglose armado con clicks TOTALES",
+   "intenta": "que por_destino vuelva a sumarse con Clicks_Total, que producía ratios de 90× contra Clicks",
+   "atrapado": true,
+   "como": "por_destino se arma con Clicks_Unique (31 excesos, peor 4×) y no con Clicks_Total (87 excesos, peor 90×)"
+  },
+  {
+   "nombre": "A8 · una fila con Clicks = 0 y desglose > 0",
+   "intenta": "buscar en el reporte filas que digan cero clicks y a la vez desglosen clicks",
+   "atrapado": true,
+   "como": "ninguna fila dice 0 clicks con desglose"
+  },
+  {
+   "nombre": "A6 · la columna nueva fuera de la fila de totales",
+   "intenta": "que SUMABLES no reconozca Clicks_Medidos y la fila Total le escriba N/A encima",
+   "atrapado": true,
+   "como": "SUMABLES reconoce las tres: la fila de totales las suma"
+  },
+  {
+   "nombre": "A7 · CTOR contaminado con clicks totales",
+   "intenta": "que el desglose por totales se haya filtrado a *_Clicks y por tanto a CTOR",
+   "atrapado": true,
+   "como": "siguen distintos: únicos 41,846 vs medidos 49,198"
+  }
+ ]
+}

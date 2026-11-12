@@ -1,0 +1,59 @@
+{
+ "paso": "A5",
+ "regla": "CONJUNTO CERRADO. Ningún paso puede introducir un valor que no esté aquí — ni aunque la fuente lo sugiera, ni aunque el nombre sea obvio. Si aparece uno nuevo, se para y se pregunta. Ampliar esta lista es decisión de Rick.",
+ "por_que_existe": "El handoff de SFMC traía la campaña «Espresso Con» marcada con `*` (lectura del equipo, no dato) y el sistema dio de alta una campaña nueva y una marca nueva del mismo nombre, sin que nada chistara. La campaña real era «Hackea tu café», marca «Concentrate», y ya existía. Seis guardianes cuidaban las cantidades y ninguno miraba los nombres.",
+ "se_edita": "A MANO. No se regenera desde el catálogo: si se regenerara, un valor inventado se auto-legitimaría en la siguiente corrida.",
+ "revisado_por": "Rick, 21-ago-2026",
+
+ "campañas": [
+  "AON",
+  "Antojo Infinito",
+  "Fuel for life",
+  "Hackea tu café",
+  "Hotcakes",
+  "Liga MX",
+  "Mundial",
+  "Tercer Tiempo",
+  "The Freshers"
+ ],
+ "marcas": [
+  "Carnation, La Lechera",
+  "Clásico",
+  "Concentrate",
+  "ICE",
+  "La Lechera",
+  "Maggi",
+  "Pro Plan",
+  "Recetas Nestlé"
+ ],
+ "bu": [
+  "Nescafé",
+  "Purina",
+  "RN"
+ ],
+ "objetivos": [
+  "Awareness",
+  "Consider",
+  "Descarga App",
+  "Enrichment",
+  "Inspiration",
+  "Loyalty",
+  "Prevención de Churn",
+  "Purchase"
+ ],
+
+ "retirados": {
+  "campañas": {
+   "Espresso Con": "NUNCA EXISTIÓ. La inventé el 21-ago a partir de un valor inferido del handoff. Sus 3 piezas pertenecen a «Hackea tu café». No se reutiliza el nombre.",
+   "ICE": "era la campaña de la pieza de WhatsApp 010-P001. Rick decidió el 20-ago que ICE es la MARCA (Nescafé ICE) y la campaña es «The Freshers». El código de campaña 010 queda retirado."
+  },
+  "marcas": {
+   "Espresso Con": "inventada junto con la campaña del mismo nombre. La marca real es «Concentrate»."
+  }
+ },
+
+ "ojo": {
+  "La Lechera vs Carnation, La Lechera": "son dos marcas distintas y las dos son válidas: Antojo Infinito es solo La Lechera; Hotcakes es la combinación. No se unifican.",
+  "multivalor": "una marca puede ser coma-separada («Carnation, La Lechera»). Eso NO significa que se pueda inventar una combinación nueva: solo son válidas las que están en la lista."
+ }
+}

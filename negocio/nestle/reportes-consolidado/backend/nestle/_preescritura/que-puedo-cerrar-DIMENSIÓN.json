@@ -1,0 +1,18 @@
+{
+ "cuando": "2026-09-15T00:49:54.319Z",
+ "grupo": "DIMENSIÓN",
+ "si": [],
+ "na": [],
+ "no": [
+  {
+   "id": "001-P032",
+   "col": "Oleada",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "001-P033",
+   "col": "Oleada",
+   "por": "sin regla declarada para esta columna"
+  }
+ ]
+}

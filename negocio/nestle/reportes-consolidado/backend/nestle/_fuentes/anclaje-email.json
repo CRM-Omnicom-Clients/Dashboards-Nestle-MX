@@ -1,0 +1,12 @@
+{
+ "paso": "B7",
+ "filas": 264,
+ "via": {
+  "sfmc": 249,
+  "catalogo": 15,
+  "sin": 0
+ },
+ "cobertura_pct": 100,
+ "sends_sin_ancla": 0,
+ "sin_ancla": []
+}

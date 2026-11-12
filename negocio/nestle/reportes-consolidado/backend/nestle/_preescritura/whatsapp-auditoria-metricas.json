@@ -1,0 +1,285 @@
+{
+ "fecha": "2026-09-30",
+ "metodo_unico": {
+  "pct_entrega": "entregados / envíos",
+  "pct_no_entrega": "no_entregados / envíos",
+  "pct_read": "leídos / entregados",
+  "pct_click": "clicks / leídos",
+  "regla_clicks": "WA-Clicks Qcart ≡ Carritos_Total de la pieza (en WhatsApp no hay tracking de clicks)"
+ },
+ "quien_divide_hoy": [
+  "motor.motor.js",
+  "fuentes-whatsapp.whatsapp.js",
+  "lib-valores-resumen.js"
+ ],
+ "envios": [
+  {
+   "pieza": "002-P021",
+   "hoja": "Hotcakes",
+   "journey": "",
+   "sends": 312,
+   "deliveries": 226,
+   "read": 170,
+   "clicks": 19,
+   "tasas": {
+    "entrega": 0.7243589743589743,
+    "noEntrega": 0.27564102564102566,
+    "read": 0.7522123893805309,
+    "click": 0.11176470588235295
+   }
+  },
+  {
+   "pieza": "002-P022",
+   "hoja": "Hotcakes",
+   "journey": "",
+   "sends": 285,
+   "deliveries": 239,
+   "read": 177,
+   "clicks": 29,
+   "tasas": {
+    "entrega": 0.8385964912280702,
+    "noEntrega": 0.16140350877192983,
+    "read": 0.7405857740585774,
+    "click": 0.1638418079096045
+   }
+  },
+  {
+   "pieza": "002-P023",
+   "hoja": "Hotcakes",
+   "journey": "",
+   "sends": 519,
+   "deliveries": 419,
+   "read": 276,
+   "clicks": 33,
+   "tasas": {
+    "entrega": 0.8073217726396917,
+    "noEntrega": 0.1926782273603083,
+    "read": 0.6587112171837709,
+    "click": 0.11956521739130435
+   }
+  },
+  {
+   "pieza": "002-P024",
+   "hoja": "Hotcakes",
+   "journey": "",
+   "sends": 445,
+   "deliveries": 372,
+   "read": 287,
+   "clicks": 52,
+   "tasas": {
+    "entrega": 0.8359550561797753,
+    "noEntrega": 0.16404494382022472,
+    "read": 0.771505376344086,
+    "click": 0.18118466898954705
+   }
+  },
+  {
+   "pieza": "004-P010",
+   "hoja": "Maggi Mundial",
+   "journey": "Segundo Partido",
+   "sends": 162,
+   "deliveries": 125,
+   "read": 94,
+   "clicks": 17,
+   "tasas": {
+    "entrega": 0.7716049382716049,
+    "noEntrega": 0.22839506172839505,
+    "read": 0.752,
+    "click": 0.18085106382978725
+   }
+  },
+  {
+   "pieza": "004-P013",
+   "hoja": "Maggi Mundial",
+   "journey": "Tercer Partido",
+   "sends": 162,
+   "deliveries": 125,
+   "read": 101,
+   "clicks": 26,
+   "tasas": {
+    "entrega": 0.7716049382716049,
+    "noEntrega": 0.22839506172839505,
+    "read": 0.808,
+    "click": 0.25742574257425743
+   }
+  },
+  {
+   "pieza": "004-P017",
+   "hoja": "Maggi Mundial",
+   "journey": "Semifinal A",
+   "sends": 1981,
+   "deliveries": 1525,
+   "read": 872,
+   "clicks": 174,
+   "tasas": {
+    "entrega": 0.7698132256436143,
+    "noEntrega": 0.23018677435638565,
+    "read": 0.5718032786885245,
+    "click": 0.19954128440366972
+   }
+  },
+  {
+   "pieza": "004-P018",
+   "hoja": "Maggi Mundial",
+   "journey": "Semifinal B",
+   "sends": 999,
+   "deliveries": 722,
+   "read": 411,
+   "clicks": 252,
+   "tasas": {
+    "entrega": 0.7227227227227228,
+    "noEntrega": 0.2772772772772773,
+    "read": 0.5692520775623269,
+    "click": 0.6131386861313869
+   }
+  },
+  {
+   "pieza": "004-P019",
+   "hoja": "Maggi Mundial",
+   "journey": "Finales",
+   "sends": 1965,
+   "deliveries": 1520,
+   "read": 917,
+   "clicks": 383,
+   "tasas": {
+    "entrega": 0.7735368956743003,
+    "noEntrega": 0.22646310432569974,
+    "read": 0.6032894736842105,
+    "click": 0.4176663031624864
+   }
+  },
+  {
+   "pieza": "008-P007",
+   "hoja": "Tercer Tiempo",
+   "journey": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_WA_A_V1_948953",
+   "sends": 1817,
+   "deliveries": 1631,
+   "read": 1124,
+   "clicks": null,
+   "tasas": {
+    "entrega": 0.8976334617501376,
+    "noEntrega": 0.10236653824986242,
+    "read": 0.6891477621091355,
+    "click": null
+   }
+  },
+  {
+   "pieza": "008-P008",
+   "hoja": "Tercer Tiempo",
+   "journey": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_WA_A_V1_948959\r\n\r\nO_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_WA_B_V1_972359",
+   "sends": 3996,
+   "deliveries": 2890,
+   "read": 2405,
+   "clicks": null,
+   "tasas": {
+    "entrega": 0.7232232232232232,
+    "noEntrega": 0.27677677677677676,
+    "read": 0.8321799307958477,
+    "click": null
+   }
+  },
+  {
+   "pieza": "005-P011",
+   "hoja": "Maggi Liga MX",
+   "journey": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-JORNADA-4PM_CN_WA_A_V1_065900",
+   "sends": 985,
+   "deliveries": 835,
+   "read": 510,
+   "clicks": 44,
+   "tasas": {
+    "entrega": 0.8477157360406091,
+    "noEntrega": 0.15228426395939088,
+    "read": 0.6107784431137725,
+    "click": 0.08627450980392157
+   }
+  },
+  {
+   "pieza": "005-P011",
+   "hoja": "Maggi Liga MX",
+   "journey": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-JORNADA-5PM_CN_WA_A_V1_065900",
+   "sends": 977,
+   "deliveries": 764,
+   "read": 439,
+   "clicks": 0,
+   "tasas": {
+    "entrega": 0.781985670419652,
+    "noEntrega": 0.218014329580348,
+    "read": 0.574607329842932,
+    "click": 0
+   }
+  },
+  {
+   "pieza": "005-P013",
+   "hoja": "Maggi Liga MX",
+   "journey": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-J9-4PM_CN_WA_A_V1_074969",
+   "sends": 2000,
+   "deliveries": 1698,
+   "read": 929,
+   "clicks": 32,
+   "tasas": {
+    "entrega": 0.849,
+    "noEntrega": 0.151,
+    "read": 0.5471142520612485,
+    "click": 0.03444564047362755
+   }
+  },
+  {
+   "pieza": "005-P013",
+   "hoja": "Maggi Liga MX",
+   "journey": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-J9-5PM_CN_WA_A_V1_074969",
+   "sends": 560,
+   "deliveries": 463,
+   "read": 278,
+   "clicks": 0,
+   "tasas": {
+    "entrega": 0.8267857142857142,
+    "noEntrega": 0.1732142857142857,
+    "read": 0.6004319654427646,
+    "click": 0
+   }
+  },
+  {
+   "pieza": "006-P003",
+   "hoja": "ICE",
+   "journey": "O_Nescafé-ICE-NC000817_1_IBS_CFEE_NESC_NCFAAIW_MX_ES_NA_AC_WA_A_NA_000611",
+   "sends": 2000,
+   "deliveries": 1599,
+   "read": 893,
+   "clicks": 171,
+   "tasas": {
+    "entrega": 0.7995,
+    "noEntrega": 0.2005,
+    "read": 0.5584740462789243,
+    "click": 0.19148936170212766
+   }
+  }
+ ],
+ "incoherentes_en_la_fuente": [
+  {
+   "pieza": "002-P022",
+   "journey": "",
+   "entregados_hoja": 247,
+   "conciliado": 239
+  },
+  {
+   "pieza": "008-P007",
+   "journey": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_WA_A_V1_948953",
+   "entregados_hoja": 1817,
+   "conciliado": 1631
+  },
+  {
+   "pieza": "008-P008",
+   "journey": "O_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_WA_A_V1_948959\r\n\r\nO_Welcome-NC007067_1_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_CN_WA_B_V1_972359",
+   "entregados_hoja": 3949,
+   "conciliado": 2890
+  },
+  {
+   "pieza": "005-P013",
+   "journey": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-J9-5PM_CN_WA_A_V1_074969",
+   "entregados_hoja": 486,
+   "conciliado": 463
+  }
+ ],
+ "divergencias_entre_capas": [],
+ "clicks_vs_carritos": []
+}

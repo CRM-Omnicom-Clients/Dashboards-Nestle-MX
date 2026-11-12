@@ -1,0 +1,1017 @@
+{
+ "cuando": "2026-09-07T18:47:37.060Z",
+ "conBloque": [
+  {
+   "id": "004-P017",
+   "campana": "Mundial",
+   "tp": "Semifinal A",
+   "seg": "Wa-opt-in-allsegments",
+   "huecos": 2,
+   "cols": [
+    "Cod_Chedraui_1",
+    "Cod_Chedraui_2"
+   ],
+   "tieneQcart": "Sí",
+   "bloque": "Julio ¦ maggi-julio14 ¦ e-botanas6 ¦ botanas",
+   "codigos": [
+    "sbH9gVge",
+    "Agy5v9Yb"
+   ]
+  },
+  {
+   "id": "004-P018",
+   "campana": "Mundial",
+   "tp": "Semifinal B",
+   "seg": "Wa-opt-in-allsegments",
+   "huecos": 2,
+   "cols": [
+    "Cod_Chedraui_1",
+    "Cod_Chedraui_2"
+   ],
+   "tieneQcart": "Sí",
+   "bloque": "Julio ¦ maggi-julio15 ¦ e-botanas7 ¦ botanas",
+   "codigos": [
+    "2YWR8c3Z",
+    "haPs2HHU"
+   ]
+  },
+  {
+   "id": "004-P019",
+   "campana": "Mundial",
+   "tp": "Final",
+   "seg": "Wa-opt-in-allsegments",
+   "huecos": 3,
+   "cols": [
+    "Cod_Chedraui_1",
+    "Cod_Chedraui_2",
+    "Cod_Chedraui_3"
+   ],
+   "tieneQcart": "Sí",
+   "bloque": "Julio ¦ maggi-julio26 ¦ wa-final-aceitunas ¦ final",
+   "codigos": [
+    "LO8RxwsM"
+   ]
+  },
+  {
+   "id": "005-P007",
+   "campana": "Liga MX",
+   "tp": "E-J5",
+   "seg": "Usuarios sin región",
+   "huecos": 11,
+   "cols": [
+    "Carritos_Total",
+    "Views_Total",
+    "URL_Receta_1",
+    "Carritos_Walmart_1",
+    "Carritos_Chedraui_1",
+    "URL_Receta_2",
+    "Carritos_Walmart_2",
+    "Carritos_Chedraui_2",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "Sí",
+   "bloque": "Agosto ¦ Maggi-LigaMx-agosto26 ¦ e-j5 ¦ sinregion",
+   "codigos": [
+    "9isauWgY",
+    "Hqa0fbOM"
+   ]
+  },
+  {
+   "id": "005-P008",
+   "campana": "Liga MX",
+   "tp": "E-J5",
+   "seg": "Usuarios CON región",
+   "huecos": 11,
+   "cols": [
+    "Carritos_Total",
+    "Views_Total",
+    "URL_Receta_1",
+    "Carritos_Walmart_1",
+    "Carritos_Chedraui_1",
+    "URL_Receta_2",
+    "Carritos_Walmart_2",
+    "Carritos_Chedraui_2",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "Sí",
+   "bloque": "Agosto ¦ Maggi-LigaMx-agosto26 ¦ e-j5 ¦ conregion",
+   "codigos": [
+    "UhCnTNuz",
+    "TYZa8g47"
+   ]
+  },
+  {
+   "id": "004-P020",
+   "campana": "Mundial",
+   "tp": "E-P2",
+   "seg": "Modern Cooking",
+   "huecos": 17,
+   "cols": [
+    "Carritos_Total",
+    "Views_Total",
+    "URL_Receta_1",
+    "Carritos_Walmart_1",
+    "Carritos_Chedraui_1",
+    "URL_Receta_2",
+    "Carritos_Walmart_2",
+    "Carritos_Chedraui_2",
+    "URL_Receta_3",
+    "Carritos_Walmart_3",
+    "Carritos_Chedraui_3",
+    "URL_Receta_4",
+    "Carritos_Walmart_4",
+    "Carritos_Chedraui_4",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "Sí",
+   "bloque": "Junio ¦ maggi-junio26 ¦ e-cooking-alitas ¦ new-cooking",
+   "codigos": [
+    "LJQsq5T9"
+   ]
+  },
+  {
+   "id": "005-P009",
+   "campana": "Liga MX",
+   "tp": "E-J6",
+   "seg": "Usuarios CON región",
+   "huecos": 11,
+   "cols": [
+    "Carritos_Total",
+    "Views_Total",
+    "URL_Receta_1",
+    "Carritos_Walmart_1",
+    "Carritos_Chedraui_1",
+    "URL_Receta_2",
+    "Carritos_Walmart_2",
+    "Carritos_Chedraui_2",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "Sí",
+   "bloque": "Agosto ¦ Maggi-LigaMx-agosto26 ¦ e-j6 ¦ conregion",
+   "codigos": [
+    "BdN0ck7t",
+    "okUSdwJk"
+   ]
+  }
+ ],
+ "sinBloque": [
+  {
+   "id": "001-P005",
+   "campana": "AON",
+   "tp": "E-P1",
+   "seg": "Traditional Parents",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "002-P001",
+   "campana": "Hotcakes",
+   "tp": "E-P1",
+   "seg": "Saludables",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "002-P002",
+   "campana": "Hotcakes",
+   "tp": "E-P2",
+   "seg": "Prácticos",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "002-P003",
+   "campana": "Hotcakes",
+   "tp": "E-P3",
+   "seg": "Indulgentes",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "002-P004",
+   "campana": "Hotcakes",
+   "tp": "E-P4",
+   "seg": "FamilyKids",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "002-P017",
+   "campana": "Hotcakes",
+   "tp": "E-I2",
+   "seg": "Interés Salado",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "002-P019",
+   "campana": "Hotcakes",
+   "tp": "E-I1",
+   "seg": "Interés Salado",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "004-P001",
+   "campana": "Mundial",
+   "tp": "E-P1",
+   "seg": "Botana",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "004-P002",
+   "campana": "Mundial",
+   "tp": "E-P1",
+   "seg": "Modern Cooking",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "004-P003",
+   "campana": "Mundial",
+   "tp": "E-P1",
+   "seg": "Bebidas",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "004-P005",
+   "campana": "Mundial",
+   "tp": "E-P2",
+   "seg": "Botana",
+   "huecos": 2,
+   "cols": [
+    "Cod_Chedraui_1",
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "004-P006",
+   "campana": "Mundial",
+   "tp": "E-P3",
+   "seg": "Bebidas",
+   "huecos": 4,
+   "cols": [
+    "Cod_Chedraui_1",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart",
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "004-P007",
+   "campana": "Mundial",
+   "tp": "E-P3",
+   "seg": "Modern Cooking",
+   "huecos": 4,
+   "cols": [
+    "Cod_Chedraui_1",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart",
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "004-P008",
+   "campana": "Mundial",
+   "tp": "E-P3",
+   "seg": "Botana",
+   "huecos": 4,
+   "cols": [
+    "Cod_Chedraui_1",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart",
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "003-P001",
+   "campana": "Antojo Infinito",
+   "tp": "E-C1",
+   "seg": "Combinado",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "001-P015",
+   "campana": "AON",
+   "tp": "E-P1",
+   "seg": "Productive Adults",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "001-P017",
+   "campana": "AON",
+   "tp": "E-P2",
+   "seg": "Young Creatives",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "001-P019",
+   "campana": "AON",
+   "tp": "E-P3",
+   "seg": "Wellness Navigators",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "001-P021",
+   "campana": "AON",
+   "tp": "E-P4",
+   "seg": "Sin Cluster",
+   "huecos": 1,
+   "cols": [
+    "Codigos_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "005-P001",
+   "campana": "Liga MX",
+   "tp": "E-P1",
+   "seg": "Futboleros Liga MX",
+   "huecos": 6,
+   "cols": [
+    "Cod_Walmart_1",
+    "Cod_Walmart_2",
+    "Cod_Walmart_3",
+    "Cod_Walmart_4",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "005-P002",
+   "campana": "Liga MX",
+   "tp": "E-P2",
+   "seg": "Futboleros Liga MX",
+   "huecos": 2,
+   "cols": [
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "No"
+  },
+  {
+   "id": "005-P003",
+   "campana": "Liga MX",
+   "tp": "E-P4",
+   "seg": "Futboleros Liga MX",
+   "huecos": 6,
+   "cols": [
+    "URL_Receta_2",
+    "Carritos_Walmart_2",
+    "URL_Receta_3",
+    "Carritos_Walmart_3",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "005-P004",
+   "campana": "Liga MX",
+   "tp": "E-P6",
+   "seg": "Futboleros Liga MX",
+   "huecos": 6,
+   "cols": [
+    "URL_Receta_3",
+    "Carritos_Walmart_3",
+    "URL_Receta_4",
+    "Carritos_Walmart_4",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "Sí"
+  },
+  {
+   "id": "009-P006",
+   "campana": "Fuel for life",
+   "tp": "E-E3",
+   "seg": "Pro Plan Pet Parents · Perros",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P007",
+   "campana": "Fuel for life",
+   "tp": "E-E3",
+   "seg": "Pro Plan Pet Parents · Gatos",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P008",
+   "campana": "Fuel for life",
+   "tp": "E-E3",
+   "seg": "Pro Plan Aspiracionales · Gatos",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P009",
+   "campana": "Fuel for life",
+   "tp": "E-E3",
+   "seg": "Pro Plan Aspiracionales · Mixto",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P010",
+   "campana": "Fuel for life",
+   "tp": "E-E3",
+   "seg": "Pro Plan Educated Pet Owners · Gatos",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P011",
+   "campana": "Fuel for life",
+   "tp": "E-E3",
+   "seg": "Pro Plan Educated Pet Owners · Mixto",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P012",
+   "campana": "Fuel for life",
+   "tp": "E-E4",
+   "seg": "Pro Plan Pet Parents · Perros",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P013",
+   "campana": "Fuel for life",
+   "tp": "E-E4",
+   "seg": "Pro Plan Pet Parents · Gatos",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P014",
+   "campana": "Fuel for life",
+   "tp": "E-E4",
+   "seg": "Pro Plan Pet Parents · Mixto",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P015",
+   "campana": "Fuel for life",
+   "tp": "E-E4",
+   "seg": "Aspiracionales + Educated Pet Owners · Perros",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P016",
+   "campana": "Fuel for life",
+   "tp": "E-E4",
+   "seg": "Aspiracionales + Educated Pet Owners · Gatos",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P017",
+   "campana": "Fuel for life",
+   "tp": "E-E4",
+   "seg": "Aspiracionales + Educated Pet Owners · Mixto",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "001-P029",
+   "campana": "AON",
+   "tp": "E-APP",
+   "seg": "Usuarios activos sin click en App",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "001-P030",
+   "campana": "AON",
+   "tp": "E-PROP2",
+   "seg": "Usuarios re-enganchables: nuevos del último año que nunca han interactuado",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "001-P031",
+   "campana": "AON",
+   "tp": "E-PROP2",
+   "seg": "Usuarios re-enganchables: nuevos del último año que nunca han interactuado",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "005-P005",
+   "campana": "Liga MX",
+   "tp": "E-J4",
+   "seg": "Usuarios CON región",
+   "huecos": 11,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "URL_Receta_1",
+    "Carritos_Walmart_1",
+    "URL_Receta_2",
+    "Carritos_Walmart_2",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "005-P006",
+   "campana": "Liga MX",
+   "tp": "E-J4",
+   "seg": "Usuarios sin región",
+   "huecos": 11,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "URL_Receta_1",
+    "Carritos_Walmart_1",
+    "URL_Receta_2",
+    "Carritos_Walmart_2",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "006-P004",
+   "campana": "The Freshers",
+   "tp": "E-ENRICH1",
+   "seg": "Gen Z Cafés",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "006-P005",
+   "campana": "The Freshers",
+   "tp": "E-ENRICH1",
+   "seg": "Gen Z Cafés",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "007-P005",
+   "campana": "Hackea tu café",
+   "tp": "E-Rit1",
+   "seg": "Premium Cafés",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "007-P006",
+   "campana": "Hackea tu café",
+   "tp": "E-Rit1",
+   "seg": "Premium Cafés",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "007-P007",
+   "campana": "Hackea tu café",
+   "tp": "E-Rit2",
+   "seg": "Premium Cafés",
+   "huecos": 7,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Fuente_Qcart",
+    "Fecha_Activacion_Qcart",
+    "Activaciones_Qcart"
+   ],
+   "tieneQcart": "PENDIENTE"
+  },
+  {
+   "id": "009-P018",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Pro Plan Pet Parents",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P019",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Pro Plan Pet Parents",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P020",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Pro Plan Aspiracionales",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P021",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Pro Plan Aspiracionales",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P022",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Pro Plan Educated Pet Owners",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P023",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Pro Plan Educated Pet Owners",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P024",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Pro Plan Pet Parents",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P025",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Pro Plan Pet Parents",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P026",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Pro Plan Pet Parents",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P027",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Aspiracionales + Educated Pet Owners",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P028",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Aspiracionales + Educated Pet Owners",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "009-P029",
+   "campana": "Fuel for life",
+   "tp": "POR DEFINIR",
+   "seg": "Aspiracionales + Educated Pet Owners",
+   "huecos": 3,
+   "cols": [
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "POR DEFINIR"
+  },
+  {
+   "id": "006-P006",
+   "campana": "The Freshers",
+   "tp": "E-P1",
+   "seg": "Gen Z Cafés",
+   "huecos": 1,
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "No"
+  },
+  {
+   "id": "001-P032",
+   "campana": "AON",
+   "tp": "E-PROP1",
+   "seg": "Tibios",
+   "huecos": 1,
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "No"
+  },
+  {
+   "id": "001-P033",
+   "campana": "AON",
+   "tp": "E-PROP1",
+   "seg": "Tibios",
+   "huecos": 1,
+   "cols": [
+    "Fuente_Qcart"
+   ],
+   "tieneQcart": "No"
+  }
+ ]
+}

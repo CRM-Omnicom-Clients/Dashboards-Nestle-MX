@@ -1,0 +1,141 @@
+{
+ "que_es": "Lo que un consumidor externo (dashboard de Treasure Data, sesión de SFMC) puede tomar del catálogo y cómo cruzarlo. Generado del archivo vivo — no se edita a mano.",
+ "generado": "2026-09-22 20:08",
+ "fuente": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx · hoja Catalogo_Piezas",
+ "huella": {
+  "filas": 136,
+  "piezas": 125,
+  "email": 107,
+  "whatsapp": 18,
+  "no_piezas": 11,
+  "suma_sends": 9083877
+ },
+ "como_usar_la_huella": "Antes de confiar en este contrato, cuenta las filas y sus piezas. Si no coinciden con `huella`, estás leyendo otro catálogo: REGENERA. El reconciliador del 14-sep citaba 4 piezas ya retiradas por no hacer esto.",
+ "universo": {
+  "regla": "Una fila es pieza si su Pieza_ID tiene la forma NNN-PNNN. Lo resuelve `lib-es-pieza.js` — no se reimplementa.",
+  "no_son_piezas": [
+   {
+    "fila": 124,
+    "texto": "NOTAS CATALOGO VARIOS DATOS YA ESTABAN",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 125,
+    "texto": "REVISAR A DETALLE QCART",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 126,
+    "texto": "ATRIBUCIÓN DE CLICKS Y AGRUPACIÓN",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 127,
+    "texto": "CADA COSA POR SEPARADO",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 131,
+    "texto": "",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 132,
+    "texto": "",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 133,
+    "texto": "",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 134,
+    "texto": "",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 135,
+    "texto": "",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 136,
+    "texto": "",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   },
+   {
+    "fila": 137,
+    "texto": "",
+    "motivo": "sin Pieza_ID — no es un registro, es una fila suelta (probablemente una nota a mano)"
+   }
+  ],
+  "por_canal": {
+   "Email": {
+    "n": 107,
+    "fuente": "SFMC · prod_sfmc_emailengagement.prod_sfmc_sends"
+   },
+   "WhatsApp": {
+    "n": 18,
+    "fuente": "whatsapp_leads.* — NO vive en SFMC"
+   }
+  },
+  "sin_canal": []
+ },
+ "reglas_de_match": [
+  {
+   "id": "M1",
+   "regla": "Cruzar SOLO las piezas de canal Email contra SFMC.",
+   "por_que": "WhatsApp no vive ahí por diseño. Contarlas como «no encontradas» produjo 17 falsas discrepancias de 38."
+  },
+  {
+   "id": "M2",
+   "regla": "Normalizar el Email_Name antes de comparar: quitar el sufijo « - AAAAMM» y el «-B-C».",
+   "por_que": "SFMC publica «…LIGAMX-J9-B-C_AQ…» donde el catálogo guarda el nombre planeado. Es la misma pieza.",
+   "mecanismo": "lib-es-pieza.normalizar()"
+  },
+  {
+   "id": "M3",
+   "regla": "Un Email_Name puede traer VARIOS nombres separados por « · ». Se prueban todos.",
+   "por_que": "el catálogo guarda las variantes conocidas de un mismo envío",
+   "mecanismo": "lib-es-pieza.nombresDe()"
+  },
+  {
+   "id": "M4",
+   "regla": "Comparar envíos ÚNICOS contra únicos y totales contra totales, nunca cruzado.",
+   "por_que": "001-P030 aparece con +89.1% y sus únicos (42,667) coinciden con el catálogo (42,629): es un re-envío a la misma audiencia, no un descuadre."
+  }
+ ],
+ "lo_que_el_catalogo_garantiza": [
+  "Pieza_ID único y estable — es la llave.",
+  "Email_Name es la llave natural del envío (probada única).",
+  "Las dimensiones (campaña, marca, segmento, objetivo) son la AUTORIDAD: no se deducen del naming."
+ ],
+ "lo_que_el_catalogo_NO_garantiza": [
+  {
+   "cosa": "Sends al día",
+   "detalle": "El catálogo es una FOTO. Las piezas always-on siguen acumulando en el CDP. Una diferencia de 1-3% en always-on es esperada, no un error: compara contra la fecha de corte del catálogo, no contra hoy."
+  },
+  {
+   "cosa": "Los mismos Sends que el CDP",
+   "detalle": "El catálogo RESTA los jobs de prueba (<10 envíos por job, criterio único en lib-fechas-envio.js). El CDP no. Por eso Pro Plan sale +1.6% a +13.2%: son 1 a 5 correos de prueba."
+  },
+  {
+   "cosa": "Que toda pieza tenga Email_Name",
+   "detalle": "Las piezas en POR DEFINIR / PENDIENTE existen porque el doc de Qcart las declara, pero no se han lanzado. No son un error de datos."
+  },
+  {
+   "cosa": "Métricas de WhatsApp",
+   "detalle": "No están en SFMC. Nunca."
+  }
+ ],
+ "decisiones_abiertas": [
+  "D1",
+  "D2",
+  "D3",
+  "D4",
+  "D5",
+  "D6"
+ ],
+ "regla_de_las_decisiones": "Mientras una decisión esté ABIERTA, su pieza se consume MARCADA como provisional. No se elige una opción por cuenta propia: elegir sin decidir es inventar una atribución, y la suma cuadra igual."
+}

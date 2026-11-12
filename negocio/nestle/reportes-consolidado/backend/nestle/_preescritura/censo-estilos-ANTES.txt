@@ -1,0 +1,17 @@
+════════ CENSO DE ESTILOS ════════
+
+  archivo                                fills  c/color  fonts  negrita  c/color  bordes   xfs
+  _base.xlsx                                35       33     16        6       16       1   110
+
+  ── _base.xlsx   ·   encabezados con relleno / con negrita, por hoja
+     Report_Resumen            84 /   84 de  84   pestaña: rgb="FFFFC000"
+     Maggi Reporte             53 /   51 de  53   pestaña: rgb="FFFFC000"
+     Exclusiones                0 /    0 de   1   pestaña: rgb="FFFFC000"
+     Reporte_julio             58 /   58 de  58   pestaña: rgb="FFFFC000"
+     Catalogo_Piezas           85 /   85 de  85   pestaña: rgb="FFFF0000"
+     Sheet1                     0 /    0 de   5   (sin color de pestaña)
+     Catalogo_Referencias      11 /   11 de  11   (sin color de pestaña)
+     Data_Email                45 /   45 de  47   pestaña: rgb="FF0070C0"
+     Data_WhatsApp              0 /    0 de  33   pestaña: rgb="FF0070C0"
+     Data_Qcart_Carritos        0 /    0 de  31   (sin color de pestaña)
+     Data_Qcart_Productos       0 /    0 de  32   (sin color de pestaña)

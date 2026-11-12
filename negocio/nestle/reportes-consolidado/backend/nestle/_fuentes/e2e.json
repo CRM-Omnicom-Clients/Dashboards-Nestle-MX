@@ -1,0 +1,57 @@
+{
+ "paso": "N11",
+ "rapido": false,
+ "excel": "ABRE",
+ "checks": [
+  {
+   "check": "la rejilla existe y tiene celdas",
+   "ok": true,
+   "dato": "71 celdas (campaña × objetivo × TP × segmento × quincena)"
+  },
+  {
+   "check": "BLOQUE → REJILLA: no se pierde nada sin declararlo",
+   "ok": true,
+   "dato": "6,454,554 en rejilla + 0 declarados fuera = 6,454,554  vs bloque 6,454,554"
+  },
+  {
+   "check": "REJILLA → REPORTE: el reporte no inventa ni pierde",
+   "ok": true,
+   "dato": "6,454,554 vs 6,454,554"
+  },
+  {
+   "check": "FUENTE → REPORTE: la cifra del reporte se explica entera",
+   "ok": true,
+   "dato": "6,454,554 + 0 = 6,454,554 vs 6,454,554"
+  },
+  {
+   "check": "WhatsApp llega entero a la rejilla",
+   "ok": true,
+   "dato": "14,643 = 14,643"
+  },
+  {
+   "check": "la 2a corrida termina sin fallos",
+   "ok": true,
+   "dato": "0 fallos"
+  },
+  {
+   "check": "la 2a corrida tarda menos de 30 min",
+   "ok": true,
+   "dato": "166s"
+  },
+  {
+   "check": "la 2a corrida da EXACTAMENTE el mismo resultado",
+   "ok": true,
+   "dato": "huella identica"
+  },
+  {
+   "check": "Excel abre el libro",
+   "ok": true,
+   "dato": "10 hojas"
+  },
+  {
+   "check": "Excel ve las mismas hojas que el lector",
+   "ok": true,
+   "dato": "10 = 10"
+  }
+ ]
+}

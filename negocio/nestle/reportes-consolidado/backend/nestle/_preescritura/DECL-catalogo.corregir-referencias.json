@@ -1,0 +1,15 @@
+{
+ "skill": "nestle-catalogo",
+ "script": "catalogo.corregir-referencias.js",
+ "declarado": "2026-08-27",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Catalogo_Referencias",
+   "grano": "una fila por REFERENCIA (alias · vocabulario · excluido)",
+   "llave": "Dimension + Valor_Crudo + Contexto — un alias es contextual, no global",
+   "celdas_esperadas": "3 canónicos reescritos · 4 filas nuevas"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+---
+name: nescafe-winback-journeys-oct2026
+description: "Revisión (26-oct-2026) y alta (27-oct) de los dos journeys Winback de Nescafé Classic (V1 103603 'semi zombies', V2 103604 'zombies'): estructura, 2 defectos en V2, resultados, throttle, consentimiento, las 6 piezas REGISTRADAS (BU Nescafé · Marca Masterbrand · touchpoints E-SemiZ-A/B/C y E-Zombies-A/B/C · Principal), audiencias mapeadas y el defecto del Journey_Name de prueba"
+metadata:
+  node_type: memory
+  type: project
+  originSessionId: 3fcc95e0-6a7f-416d-8815-86a488810f41
+  modified: 2026-10-27T19:53:22.608Z
+---
+
+**Lo que Rick pidió (26-oct-2026):** «revisar estos dos journeys y sus resultados»: `J_Nescafe-Classic-NC002832_1_IBS_CFEE_NESC_NCF_AAJR_MX_ES_CDP_Nescafe_Winback_AC_EM_A_V1_103603` (V1) y `…_AC_EM_A_V2_103604` (V2). Todo leído de las vistas de datos y la Interaction API (solo lectura); NADA registrado ni editado.
+
+**Identidad (journey ≠ EmailName):** el nombre del journey V1 coincide con el EmailName del email A, pero **el nombre del journey V2 NO existe como EmailName**: sus emails se llaman `_V1_103604` (`…Winback_SA_AC_EM_A_V1_103604`, `…SB_AC_EM_B_V1_103604`, `…SC_AC_EM_C_V1_103604`, assets 87031/87050/87051). V1: `…AC_EM_A_V1_103603` (asset 86886), `…EM_B…` (87097), `…EM_C…` (87098). Los assets 87050/87051 se RENOMBRARON después de las pruebas del 20-oct (`SB_AC_EM_A`, `SC_AC_EM_A`): las pruebas quedaron con el nombre viejo; los envíos reales llevan el nuevo. Hay 16 job-días de prueba (34 envíos, <10 cada uno; asuntos `[Test]` o journeys `zombies_winback_MX` / `TEST_SEMI_ZOMBIES__WIN…`) que no cuentan.
+
+**Journeys** (Running; ambos con entrada EmailAudience recurrente DIARIA 17:00 hora Central México hasta 31-dic-2026, con high watermark = entran solo filas nuevas de la DE):
+- **V1** `99FE38D9-D0DA-4FD4-94C4-862F7F4A4784`, publicado 23-oct 12:22, DE **«semi zombies winback»** (203,530 filas). Split 50/50 (la 2ª rama = misma secuencia con 1 día de espera, no es una prueba): STO → **A** «Tu cuenta sigue activa y NESCAFÉ® quiere premiarte» → espera 14 d → ¿abrió? No → **B** «Tu regreso a NESCAFÉ® puede tener recompensa» → 14 d → ¿abrió? No → **C** «1,500 pesos para tu próxima meta». Las 4 decisiones apuntan al email correcto.
+- **V2** `06CD9964-46A6-4293-9159-4243C2CFB7F1`, publicado 23-oct 12:15, DE **«Zombies»** (980,626 filas, correos y consumer_ID únicos). Split en 8 cohortes (13/13/13/13/12/12/12/12 %) que arrancan con 0…7 días de espera; cada una: STO → **SA** «Te quedas sin un año de ViX{, Nombre}» → 14 d → ¿abrió? No → **SB** «Participa por un año de ViX con NESCAFÉ®.» → 14 d → ¿abrió? No → **SC** «¿Un año de ViX{, Nombre} sin pagar nada?». 24 emails, 16 decisiones.
+- 🔴 **Defecto 1 (V2, rama 1):** la 2ª decisión (`ENGAGEMENTSPLITV2-2`, «Open SA1») mira a `EMAILV2-1` (SA1) en vez de `EMAILV2-10` (SB1): quien abrió SB1 pero no SA1 sigue recibiendo SC1. Afecta a la cohorte del día 0 (~122 mil contactos).
+- 🔴 **Defecto 2 (V2, rama 6):** el 3er email (`EMAILV2-22`) es una copia de **SB** (asset 87050) en vez de **SC** (87051); no existe SC6. Esa cohorte (12 %) recibe SB dos veces y nunca SC.
+- Corregirlos exige parar/versionar el journey en Journey Builder (yo no edito journeys). Los primeros SC salen ~21-22 nov y los SB ~7-8 nov, así que hay tiempo.
+
+**Envío:** cada actividad de email tiene **throttle 5,000/hora y ventana 11:00–20:00** (`throttleLimit 5000`, `throttleOpens 11:00`, `throttleCloses 20:00`): los envíos salen planos a ~5,000 por hora (17–19 h el primer día, 11–19 h los siguientes). Una cohorte de ~122 mil tarda ~2.7 días; la primera oleada de V2 termina ~3-nov. El throttle manda sobre el STO (los envíos no siguen una hora óptima por persona). Mismo remitente en todo: `Nescafé México <nescafe@email.mx.nestle.com>`. Los jobs aparecen «Sending» mientras dura.
+
+**Resultados (cohortes del 24 y 25-oct, ya maduras; cortes 26-oct 11:25 Central; las del 26 aún no cuentan):**
+| | V1 (A, 2 ramas) | V2 (SA, cohortes día 0 y +1) |
+|---|---|---|
+| Enviados / entregados | 75,631 / 72,738 | 75,435 / 72,599 |
+| Rebote (duro) | 3.83 % (0.97 %) | 3.76 % (1.31 %) |
+| Aperturas únicas (OR) | 1,828 (2.51 %) | 2,861 (3.94 %) |
+| Clicks únicos (sobre entregados) / CTOR | 337 (0.46 %) / 18.4 % | 400 (0.55 %) / 14.0 % |
+| Bajas / quejas | 44 (0.06 %) / 2 | 22 (0.03 %) / 1 |
+Contexto del propio reporte (111 piezas con ≥5,000 entregados): OR mediana 35.6 % (aquí percentil 2 y 6: audiencias dormidas, sin las aperturas automáticas que inflan el resto), CTR mediana 0.38 % (aquí p68 y p76), rebote mediana 0.70 % / p75 0.99 % (aquí p98: el más alto del reporte, antes 2.6 %). Rebotes: ~70 % blandos «Mailbox Full», duros sobre todo «Inactive Account» y «User Unknown». Cada suscriptor recibió cada job UNA vez (0 repetidos); solo 115 contactos están en ambas audiencias. Clicks: ~92 % al quiz de Qualifio (V1 quiz 1837502, V2 quiz 1837506; sin UTM), T&C 7/20, centro de preferencias 10/16.
+**Comparar V1 con V2 no es limpio:** audiencias distintas y no aleatorias (V2 tiene mejor OR y CTR con una audiencia supuestamente MÁS dormida; el asunto con premio y nombre probablemente ayuda, pero no está demostrado).
+
+**Consentimiento (a confirmar con quien lo gobierne, NO es un hallazgo cerrado):** `MARKETING_GROUP_SERVICE_CODE` es RG* (registro/T&C, no suscripción) en 27.3 % de V2 (267,653) y 12.9 % de V1 (26,160); V1 es 59 % `MXnestlegrp_SBmktprogram`, 12 % `MXqualifio_RGprivacypolicy`; solo 0.3 % tiene grupo propio de Nescafé (V2: 39 %). 7 contactos con REVOCATION_DATE (4+3), todos re-aceptaron después y ninguno recibió el job.
+
+**Modelo de piezas (aclarado el 27-oct):** son **6 piezas** (una por email/EmailName), NO una por cohorte: las 8 cohortes de V2 (SA1…SA8) y las 2 ramas de V1 (A, A2) son actividades del journey que reusan los mismos 3 emails; el reporte identifica por EmailName, así que las cohortes quedan sumadas (visibles solo por JobID). Los demás EmailNames de SFMC son restos de prueba (<10 envíos: `…SB_AC_EM_A`, `…SC_AC_EM_A`, `…AC_EM_A_V1_103604`) y NO se registran. Si alguien renombra un asset en Content Builder (ya pasó con 87050/87051 el 20-21 oct) el EmailName cambia y la pieza se parte.
+
+**Registradas el 27-oct-2026 (`agregar-pieza.js`, 6 filas insertadas y releídas; catálogo 142 → 148)** con los valores de Rick: **BU Nescafé · Marca Masterbrand (valor NUEVO) · Type Principal en las 6** · Touchpoints **E-SemiZ-A/B/C** (V1, audiencia «semi zombies winback») y **E-Zombies-A/B/C** (V2, audiencia «Zombies»). Rick NO confirmó (siguen con asterisco = inferido): **Campaña «Winback\*»** (valor nuevo; sale del nombre de los emails) y **Segmento «Semi zombies\*» / «Zombies\*»** (de los nombres de las DE). ConfigKey internas `TMP-MASTERBRAND-E-SEMIZ-A` … `TMP-MASTERBRAND-E-ZOMBIES-C`; CodigoNC NC002832 (el mismo de Checo); EmailID 86886/87097/87098 (V1) y 87031/87050/87051 (V2). Notas: «PROVISIONAL - alta 2026-10-27 … paso N de 3».
+Pendiente: que Rick confirme/quite el asterisco de Campaña y Segmento; que las agregue a su libro `Catalogo_Piezas` (lo edita solo él; la sincronía del libro con SFMC las marcará como pendientes). Los EmailNames exactos están arriba; el prefijo común es `J_Nescafe-Classic-NC002832_1_IBS_CFEE_NESC_NCF_AAJR_MX_ES_CDP_Nescafe_Winback_`.
+
+**Audiencias mapeadas el 27-oct** (`audiencias.js` una pieza a la vez, con `--journey-uuid` de PRODUCCIÓN: V1 `99FE38D9-…`, V2 `06CD9964-…`): las 3 de V1 → DE «semi zombies winback» (201,643 filas ese día; 203,530 el 26-oct), las 3 de V2 → DE «Zombies» (981,246; 980,626 el 26-oct). `CRM_Audiencias` 139 → 145 filas; la query Vol pasó de 70 a 72 DEs (validada en query temporal). `Audience_Volume` = tamaño ACTUAL de la DE de entrada (cambia a diario) y para B/C/SB/SC sobreestima el alcance (solo reciben no-aperturas).
+⚠️ **El Journey_Name/UUID de Piezas y Detalle sale contaminado por los journeys de PRUEBA** (`MAX()` del nombre y del UUID): E-Zombies-A muestra `zombies_winback_MX` + UUID `BADD9D0E-…` (prueba) en vez del V2 real; E-SemiZ-A muestra nombre `TEST_SEMI_ZOMBIES__WINBACK_MX` con el UUID real; E-SemiZ-B/C el UUID de prueba `5C52F893-…`; E-Zombies-B/C sin journey. Por eso `audiencias.js` por defecto habría mapeado el journey equivocado. Arreglo de raíz = que Detalle/Piezas elijan el journey con más envíos (cambio de query de producción): pendiente del OK de Rick; es el mismo defecto del «SIMULATION» de NAN. Avisado en `docs/PROCESOS.md` (kit, commit 8b886d5).
+**Refresco y verificación del 27-oct:** refresco (links, Detalle 2 intentos / 14 min, Piezas, Auditoría) y luego Piezas+Auditoría otra vez para ver la audiencia. Las 6 aterrizaron; Auditoría OK, asset declarado = real, `Piezas_Mismo_Asset` = 1. Conciliación contra las vistas de datos a la misma hora: envíos y rebotes IDÉNTICOS en los 6 lotes cerrados (24 y 25-oct), aperturas/clicks ±1. B, C, SB y SC solo traen envíos de prueba (5, 5, 1, 2) hasta que arranquen los follow-ups (~7 nov y ~21 nov).

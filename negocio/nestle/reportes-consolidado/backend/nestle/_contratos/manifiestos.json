@@ -1,0 +1,651 @@
+{
+ "paso": "L4",
+ "derivado_de": "los literales de cada script",
+ "scripts": {
+  "N5-motor": {
+   "archivo": "motor.motor.js",
+   "que": "convierte los bloques en la rejilla",
+   "ids": [
+    "catalogo.content_id",
+    "catalogo.emailname",
+    "catalogo.fecha_activacion_qcart",
+    "catalogo.mascota",
+    "catalogo.oleada",
+    "catalogo.pieza_id",
+    "catalogo.subsegmento"
+   ],
+   "nombres_en_el_codigo": [
+    "Content_ID",
+    "EmailName",
+    "Fecha_Activacion_Qcart",
+    "Mascota",
+    "Oleada",
+    "Pieza_ID",
+    "Subsegmento"
+   ],
+   "ambiguos": [
+    {
+     "nombre": "Touchpoint",
+     "ids": [
+      "catalogo.touchpoint",
+      "data_email.touchpoint",
+      "data_wa.touchpoint",
+      "de_detalle.touchpoint",
+      "de_piezas.touchpoint",
+      "de_links.touchpoint",
+      "de_config.touchpoint"
+     ]
+    },
+    {
+     "nombre": "Segmento",
+     "ids": [
+      "resumen.segmento",
+      "catalogo.segmento",
+      "de_detalle.segmento",
+      "de_piezas.segmento",
+      "de_links.segmento",
+      "de_config.segmento"
+     ]
+    },
+    {
+     "nombre": "Email_Type",
+     "ids": [
+      "catalogo.email_type",
+      "data_email.email_type"
+     ]
+    },
+    {
+     "nombre": "Canal",
+     "ids": [
+      "catalogo.canal",
+      "data_email.canal",
+      "data_wa.canal"
+     ]
+    },
+    {
+     "nombre": "Quincena_Lanzamiento",
+     "ids": [
+      "resumen.quincena_lanzamiento",
+      "catalogo.quincena_lanzamiento"
+     ]
+    },
+    {
+     "nombre": "Campaña",
+     "ids": [
+      "resumen.campana",
+      "catalogo.campana",
+      "data_wa.campana"
+     ]
+    },
+    {
+     "nombre": "Objetivo",
+     "ids": [
+      "resumen.objetivo",
+      "catalogo.objetivo",
+      "data_wa.objetivo"
+     ]
+    }
+   ],
+   "deuda": 14
+  },
+  "N6-resumen": {
+   "archivo": "orquestador.resumen.js",
+   "que": "escribe Report_Resumen",
+   "ids": [
+    "catalogo.content_id",
+    "catalogo.emailname",
+    "data_email.email_subject_raw",
+    "data_email.subject_clean",
+    "resumen.audiencia_de",
+    "resumen.audiencia_volumen",
+    "resumen.carritos_chedraui",
+    "resumen.carritos_walmart",
+    "resumen.clicks_app",
+    "resumen.clicks_links_total",
+    "resumen.clicks_qcart",
+    "resumen.clicks_social",
+    "resumen.clicks_unsub",
+    "resumen.clicks_ver_navegador",
+    "resumen.clicks_web",
+    "resumen.content_id_sfmc",
+    "resumen.email_id_sfmc",
+    "resumen.fechaqcart_desde",
+    "resumen.fechaqcart_hasta",
+    "resumen.fup_click_rate",
+    "resumen.fup_clicks",
+    "resumen.fup_ctor",
+    "resumen.fup_deliveries",
+    "resumen.fup_open_rate",
+    "resumen.fup_opens",
+    "resumen.fup_sends",
+    "resumen.fup_subject",
+    "resumen.intencion_nestle_mxn",
+    "resumen.intencion_total_mxn",
+    "resumen.medio",
+    "resumen.pct_penetracion_nestle",
+    "resumen.principal_click_rate",
+    "resumen.principal_clicks",
+    "resumen.principal_ctor",
+    "resumen.principal_deliveries",
+    "resumen.principal_open_rate",
+    "resumen.principal_opens",
+    "resumen.principal_sends",
+    "resumen.qcart",
+    "resumen.receta_representativa",
+    "resumen.ticket_carrito_mxn",
+    "resumen.ticket_producto_mxn",
+    "resumen.tot_click_rate",
+    "resumen.tot_clicks",
+    "resumen.tot_ctor",
+    "resumen.tot_deliveries",
+    "resumen.tot_open_rate",
+    "resumen.tot_opens",
+    "resumen.tot_sends",
+    "resumen.touchpoint",
+    "resumen.unsubs_total",
+    "resumen.unsubs_unicos",
+    "resumen.views_carrito",
+    "resumen.views_productos_nestle",
+    "resumen.wa_clicks",
+    "resumen.wa_entregados",
+    "resumen.wa_envios",
+    "resumen.wa_leidos",
+    "resumen.wa_no_entregados",
+    "resumen.wa_pct_click_vs_read",
+    "resumen.wa_pct_entrega",
+    "resumen.wa_pct_no_entrega",
+    "resumen.wa_pct_read_vs_entrega"
+   ],
+   "nombres_en_el_codigo": [
+    "Content_ID",
+    "EmailName",
+    "Email_Subject_Raw",
+    "Subject_Clean",
+    "Audiencia_DE",
+    "Audiencia_Volumen",
+    "Carritos_Chedraui",
+    "Carritos_Walmart",
+    "Clicks_App",
+    "Clicks_Links_Total",
+    "Clicks_Qcart",
+    "Clicks_Social",
+    "Clicks_Unsub",
+    "Clicks_Ver_Navegador",
+    "Clicks_Web",
+    "Content_ID (SFMC)",
+    "Email_ID (SFMC)",
+    "FechaQcart_Desde",
+    "FechaQcart_Hasta",
+    "FUP_Click_Rate",
+    "FUP_Clicks",
+    "FUP_CTOR",
+    "FUP_Deliveries",
+    "FUP_Open_Rate",
+    "FUP_Opens",
+    "FUP_Sends",
+    "FUP_Subject",
+    "Intencion_Nestle_MXN",
+    "Intencion_Total_MXN",
+    "Medio",
+    "Pct_Penetracion_Nestle",
+    "Principal_Click_Rate",
+    "Principal_Clicks",
+    "Principal_CTOR",
+    "Principal_Deliveries",
+    "Principal_Open_Rate",
+    "Principal_Opens",
+    "Principal_Sends",
+    "QCART?",
+    "Receta_Representativa",
+    "Ticket_Carrito_MXN",
+    "Ticket_Producto_MXN",
+    "Tot_Click_Rate",
+    "Tot_Clicks",
+    "Tot_CTOR",
+    "Tot_Deliveries",
+    "Tot_Open_Rate",
+    "Tot_Opens",
+    "Tot_Sends",
+    "TouchPoint",
+    "Unsubs_Total",
+    "Unsubs_Unicos",
+    "Views_Carrito",
+    "Views_Productos_Nestle",
+    "WA-Clicks",
+    "WA-Entregados",
+    "WA-Envíos",
+    "WA-Leídos",
+    "WA-No entregados",
+    "WA-%Click vs Read",
+    "WA-%Entrega",
+    "WA-%No entrega",
+    "WA-%Read vs entrega"
+   ],
+   "ambiguos": [
+    {
+     "nombre": "pieza_id",
+     "ids": [
+      "data_email.pieza_id",
+      "data_wa.pieza_id",
+      "qcart_carritos.pieza_id",
+      "qcart_productos.pieza_id"
+     ]
+    },
+    {
+     "nombre": "Email_Type",
+     "ids": [
+      "catalogo.email_type",
+      "data_email.email_type"
+     ]
+    },
+    {
+     "nombre": "Campaña",
+     "ids": [
+      "resumen.campana",
+      "catalogo.campana",
+      "data_wa.campana"
+     ]
+    },
+    {
+     "nombre": "Objetivo",
+     "ids": [
+      "resumen.objetivo",
+      "catalogo.objetivo",
+      "data_wa.objetivo"
+     ]
+    },
+    {
+     "nombre": "Segmento",
+     "ids": [
+      "resumen.segmento",
+      "catalogo.segmento",
+      "de_detalle.segmento",
+      "de_piezas.segmento",
+      "de_links.segmento",
+      "de_config.segmento"
+     ]
+    },
+    {
+     "nombre": "Quincena_Lanzamiento",
+     "ids": [
+      "resumen.quincena_lanzamiento",
+      "catalogo.quincena_lanzamiento"
+     ]
+    },
+    {
+     "nombre": "Email_ID",
+     "ids": [
+      "de_detalle.email_id",
+      "de_piezas.email_id",
+      "de_links.email_id"
+     ]
+    },
+    {
+     "nombre": "Carritos_Total",
+     "ids": [
+      "resumen.carritos_total",
+      "catalogo.carritos_total"
+     ]
+    }
+   ],
+   "deuda": 71
+  },
+  "N7-puerta2": {
+   "archivo": "fuentes-cuadre.puerta2.js",
+   "que": "la puerta del reporte",
+   "ids": [
+    "resumen.email_id_sfmc",
+    "resumen.tot_clicks",
+    "resumen.tot_deliveries",
+    "resumen.tot_opens",
+    "resumen.tot_sends",
+    "resumen.touchpoint",
+    "resumen.wa_envios"
+   ],
+   "nombres_en_el_codigo": [
+    "Email_ID (SFMC)",
+    "Tot_Clicks",
+    "Tot_Deliveries",
+    "Tot_Opens",
+    "Tot_Sends",
+    "TouchPoint",
+    "WA-Envíos"
+   ],
+   "ambiguos": [
+    {
+     "nombre": "Campaña",
+     "ids": [
+      "resumen.campana",
+      "catalogo.campana",
+      "data_wa.campana"
+     ]
+    },
+    {
+     "nombre": "Objetivo",
+     "ids": [
+      "resumen.objetivo",
+      "catalogo.objetivo",
+      "data_wa.objetivo"
+     ]
+    },
+    {
+     "nombre": "Segmento",
+     "ids": [
+      "resumen.segmento",
+      "catalogo.segmento",
+      "de_detalle.segmento",
+      "de_piezas.segmento",
+      "de_links.segmento",
+      "de_config.segmento"
+     ]
+    },
+    {
+     "nombre": "Quincena_Lanzamiento",
+     "ids": [
+      "resumen.quincena_lanzamiento",
+      "catalogo.quincena_lanzamiento"
+     ]
+    },
+    {
+     "nombre": "Carritos_Total",
+     "ids": [
+      "resumen.carritos_total",
+      "catalogo.carritos_total"
+     ]
+    }
+   ],
+   "deuda": 12
+  },
+  "NB-email-sfmc": {
+   "archivo": "orquestador.nb-email-sfmc.js",
+   "que": "arma el bloque de email desde la DE",
+   "ids": [
+    "catalogo.content_name",
+    "catalogo.pieza_id"
+   ],
+   "nombres_en_el_codigo": [
+    "Content_Name",
+    "Pieza_ID"
+   ],
+   "ambiguos": [
+    {
+     "nombre": "Campaña",
+     "ids": [
+      "resumen.campana",
+      "catalogo.campana",
+      "data_wa.campana"
+     ]
+    },
+    {
+     "nombre": "Segmento",
+     "ids": [
+      "resumen.segmento",
+      "catalogo.segmento",
+      "de_detalle.segmento",
+      "de_piezas.segmento",
+      "de_links.segmento",
+      "de_config.segmento"
+     ]
+    },
+    {
+     "nombre": "Objetivo",
+     "ids": [
+      "resumen.objetivo",
+      "catalogo.objetivo",
+      "data_wa.objetivo"
+     ]
+    },
+    {
+     "nombre": "Touchpoint",
+     "ids": [
+      "catalogo.touchpoint",
+      "data_email.touchpoint",
+      "data_wa.touchpoint",
+      "de_detalle.touchpoint",
+      "de_piezas.touchpoint",
+      "de_links.touchpoint",
+      "de_config.touchpoint"
+     ]
+    },
+    {
+     "nombre": "pieza_id",
+     "ids": [
+      "data_email.pieza_id",
+      "data_wa.pieza_id",
+      "qcart_carritos.pieza_id",
+      "qcart_productos.pieza_id"
+     ]
+    },
+    {
+     "nombre": "ConfigKey",
+     "ids": [
+      "de_detalle.configkey",
+      "de_piezas.configkey",
+      "de_links.configkey",
+      "de_audiencias.configkey",
+      "de_config.configkey",
+      "de_auditoria.configkey"
+     ]
+    },
+    {
+     "nombre": "Es_FUP",
+     "ids": [
+      "de_detalle.es_fup",
+      "de_piezas.es_fup"
+     ]
+    }
+   ],
+   "deuda": 9
+  },
+  "FI-normalizador": {
+   "archivo": "fuentes-cuadre.normalizador.js",
+   "que": "coherencia cruzando hojas",
+   "ids": [
+    "catalogo.fuente_dato",
+    "catalogo.pieza_id",
+    "resumen.email_id_sfmc",
+    "resumen.fup_sends",
+    "resumen.principal_sends",
+    "resumen.tot_sends",
+    "resumen.touchpoint",
+    "resumen.wa_envios"
+   ],
+   "nombres_en_el_codigo": [
+    "Fuente_Dato",
+    "Pieza_ID",
+    "Email_ID (SFMC)",
+    "FUP_Sends",
+    "Principal_Sends",
+    "Tot_Sends",
+    "TouchPoint",
+    "WA-Envíos"
+   ],
+   "ambiguos": [
+    {
+     "nombre": "Canal",
+     "ids": [
+      "catalogo.canal",
+      "data_email.canal",
+      "data_wa.canal"
+     ]
+    },
+    {
+     "nombre": "Campaña",
+     "ids": [
+      "resumen.campana",
+      "catalogo.campana",
+      "data_wa.campana"
+     ]
+    },
+    {
+     "nombre": "Touchpoint",
+     "ids": [
+      "catalogo.touchpoint",
+      "data_email.touchpoint",
+      "data_wa.touchpoint",
+      "de_detalle.touchpoint",
+      "de_piezas.touchpoint",
+      "de_links.touchpoint",
+      "de_config.touchpoint"
+     ]
+    },
+    {
+     "nombre": "pieza_id",
+     "ids": [
+      "data_email.pieza_id",
+      "data_wa.pieza_id",
+      "qcart_carritos.pieza_id",
+      "qcart_productos.pieza_id"
+     ]
+    },
+    {
+     "nombre": "Estado",
+     "ids": [
+      "catalogo.estado",
+      "de_config.estado",
+      "de_auditoria.estado"
+     ]
+    },
+    {
+     "nombre": "Notas",
+     "ids": [
+      "referencias.notas",
+      "catalogo.notas",
+      "data_wa.notas",
+      "de_config.notas"
+     ]
+    },
+    {
+     "nombre": "Segmento",
+     "ids": [
+      "resumen.segmento",
+      "catalogo.segmento",
+      "de_detalle.segmento",
+      "de_piezas.segmento",
+      "de_links.segmento",
+      "de_config.segmento"
+     ]
+    },
+    {
+     "nombre": "Quincena_Lanzamiento",
+     "ids": [
+      "resumen.quincena_lanzamiento",
+      "catalogo.quincena_lanzamiento"
+     ]
+    },
+    {
+     "nombre": "Carritos_Total",
+     "ids": [
+      "resumen.carritos_total",
+      "catalogo.carritos_total"
+     ]
+    },
+    {
+     "nombre": "Objetivo",
+     "ids": [
+      "resumen.objetivo",
+      "catalogo.objetivo",
+      "data_wa.objetivo"
+     ]
+    },
+    {
+     "nombre": "EmailID",
+     "ids": [
+      "catalogo.emailid",
+      "de_config.emailid"
+     ]
+    },
+    {
+     "nombre": "Sends",
+     "ids": [
+      "catalogo.sends",
+      "data_wa.sends"
+     ]
+    },
+    {
+     "nombre": "Clicks_Medidos",
+     "ids": [
+      "catalogo.clicks_medidos",
+      "data_wa.clicks_medidos"
+     ]
+    },
+    {
+     "nombre": "CTOR",
+     "ids": [
+      "data_email.ctor",
+      "data_wa.ctor",
+      "de_detalle.ctor",
+      "de_piezas.ctor"
+     ]
+    }
+   ],
+   "deuda": 22
+  },
+  "FG-diff": {
+   "archivo": "orquestador.diff-explicado.js",
+   "que": "el diff explicado",
+   "ids": [
+    "resumen.intencion_total_mxn",
+    "resumen.tot_clicks",
+    "resumen.tot_deliveries",
+    "resumen.tot_opens",
+    "resumen.tot_sends",
+    "resumen.touchpoint",
+    "resumen.wa_envios"
+   ],
+   "nombres_en_el_codigo": [
+    "Intencion_Total_MXN",
+    "Tot_Clicks",
+    "Tot_Deliveries",
+    "Tot_Opens",
+    "Tot_Sends",
+    "TouchPoint",
+    "WA-Envíos"
+   ],
+   "ambiguos": [
+    {
+     "nombre": "Campaña",
+     "ids": [
+      "resumen.campana",
+      "catalogo.campana",
+      "data_wa.campana"
+     ]
+    },
+    {
+     "nombre": "Objetivo",
+     "ids": [
+      "resumen.objetivo",
+      "catalogo.objetivo",
+      "data_wa.objetivo"
+     ]
+    },
+    {
+     "nombre": "Segmento",
+     "ids": [
+      "resumen.segmento",
+      "catalogo.segmento",
+      "de_detalle.segmento",
+      "de_piezas.segmento",
+      "de_links.segmento",
+      "de_config.segmento"
+     ]
+    },
+    {
+     "nombre": "Quincena_Lanzamiento",
+     "ids": [
+      "resumen.quincena_lanzamiento",
+      "catalogo.quincena_lanzamiento"
+     ]
+    },
+    {
+     "nombre": "Carritos_Total",
+     "ids": [
+      "resumen.carritos_total",
+      "catalogo.carritos_total"
+     ]
+    }
+   ],
+   "deuda": 12
+  }
+ }
+}

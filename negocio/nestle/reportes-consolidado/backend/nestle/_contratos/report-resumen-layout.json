@@ -1,0 +1,149 @@
+{
+ "paso": "A1",
+ "hoja": "Report_Resumen",
+ "congelado": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+ "regla": "LA HOJA MANDA LA FORMA. El escritor llena valores por NOMBRE de columna; nunca agrega, mueve, renombra ni reordena.",
+ "columnas": [
+  "Campaña",
+  "Medio",
+  "Objetivo",
+  "TouchPoint",
+  "Tipo  Email",
+  "Segmento",
+  "QCART?",
+  "Quincena_Lanzamiento",
+  "Mes",
+  "Mes (#)",
+  "Marca",
+  "BU",
+  "Content_ID (SFMC)",
+  "Email_ID (SFMC)",
+  "Principal_Sends",
+  "Principal_Deliveries",
+  "Principal_Opens",
+  "Principal_Clicks",
+  "Principal_Open_Rate",
+  "Principal_CTOR",
+  "Principal_Click_Rate",
+  "FUP_Subject",
+  "FUP_Sends",
+  "FUP_Deliveries",
+  "FUP_Opens",
+  "FUP_Clicks",
+  "FUP_Open_Rate",
+  "FUP_CTOR",
+  "FUP_Click_Rate",
+  "Tot_Sends",
+  "Tot_Deliveries",
+  "Tot_Opens",
+  "Tot_Clicks",
+  "Tot_Open_Rate",
+  "Tot_CTOR",
+  "Tot_Click_Rate",
+  "WA-Envíos",
+  "WA-Entregados",
+  "WA-No entregados",
+  "WA-Leídos",
+  "WA-Clicks",
+  "WA-%Entrega",
+  "WA-%No entrega",
+  "WA-%Read vs entrega",
+  "WA-%Click vs Read",
+  "Receta_Representativa",
+  "FechaQcart_Desde",
+  "FechaQcart_Hasta",
+  "Carritos_Walmart",
+  "Carritos_Chedraui",
+  "Carritos_Total",
+  "Views_Carrito",
+  "Views_Productos_Nestle",
+  "Intencion_Total_MXN",
+  "Intencion_Nestle_MXN",
+  "Pct_Penetracion_Nestle",
+  "Ticket_Carrito_MXN",
+  "Ticket_Producto_MXN"
+ ],
+ "n_columnas": 58,
+ "n_filas": 73,
+ "llave_de_fila": [
+  "Campaña",
+  "Objetivo",
+  "TouchPoint",
+  "Segmento",
+  "Quincena_Lanzamiento"
+ ],
+ "filas_de_rick": [
+  {
+   "fila": 51,
+   "llave": "Mundial¦Purchase¦Partido 2¦¦Jun-Q2-2026"
+  },
+  {
+   "fila": 56,
+   "llave": "Fuel for life¦Enrichment¦E-E3¦Pro Plan Aspiracionales — Perros¦Jul-Q1-2026"
+  },
+  {
+   "fila": 57,
+   "llave": "Fuel for life¦Enrichment¦E-E3¦Pro Plan Educated Pet Owners — Perros¦Jul-Q1-2026"
+  },
+  {
+   "fila": 58,
+   "llave": "Fuel for life¦Enrichment¦E-E3¦Pro Plan Pet Parents — Mixto¦Jul-Q1-2026"
+  },
+  {
+   "fila": 62,
+   "llave": "The Freshers¦Awareness¦WA-A1¦¦Jul-Q2-2026"
+  },
+  {
+   "fila": 63,
+   "llave": "Mundial¦Purchase¦Partido 3¦¦Jul-Q1-2026"
+  },
+  {
+   "fila": 64,
+   "llave": "Mundial¦Purchase¦Semifinal A¦¦Jul-Q2-2026"
+  },
+  {
+   "fila": 65,
+   "llave": "Mundial¦Purchase¦Semifinal B¦Wa-opt-in-allsegments¦Jul-Q1-2026"
+  },
+  {
+   "fila": 66,
+   "llave": "Mundial¦Purchase¦Final¦Wa-opt-in-allsegments¦Jul-Q1-2026"
+  },
+  {
+   "fila": 67,
+   "llave": "Fuel for life¦Enrichment¦E-E3¦Pro Plan Pet Parents — Perros¦Jul-Q1-2026"
+  },
+  {
+   "fila": 68,
+   "llave": "Fuel for life¦Enrichment¦E-E3¦Pro Plan Pet Parents — Gatos¦Jul-Q1-2026"
+  },
+  {
+   "fila": 69,
+   "llave": "Fuel for life¦Enrichment¦E-E3¦Pro Plan Aspiracionales — Gatos¦Jul-Q1-2026"
+  },
+  {
+   "fila": 70,
+   "llave": "Fuel for life¦Enrichment¦E-E3¦Pro Plan Aspiracionales — Mixto¦Jul-Q1-2026"
+  },
+  {
+   "fila": 71,
+   "llave": "Fuel for life¦Enrichment¦E-E3¦Pro Plan Educated Pet Owners — Gatos¦Jul-Q1-2026"
+  },
+  {
+   "fila": 72,
+   "llave": "Fuel for life¦Enrichment¦E-E3¦Pro Plan Educated Pet Owners — Mixto¦Jul-Q1-2026"
+  },
+  {
+   "fila": 73,
+   "llave": "AON¦Purchase¦E-P1¦Traditional Parents¦Abr-Q2-2026"
+  },
+  {
+   "fila": 74,
+   "llave": "Total¦¦¦¦"
+  }
+ ],
+ "columnas_que_el_sistema_NO_llena": [
+  "Tipo  Email",
+  "Mes (#)"
+ ]
+}

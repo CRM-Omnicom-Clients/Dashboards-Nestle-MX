@@ -1,0 +1,1103 @@
+{
+ "cuando": "2026-09-15T00:43:19.969Z",
+ "grupo": "QCART",
+ "si": [
+  {
+   "id": "009-P006",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P007",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P008",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P009",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P010",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P011",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P012",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P013",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P014",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P015",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P016",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P017",
+   "col": "Tiene_Qcart",
+   "fuente": "no declara códigos → No",
+   "valor": "No"
+  },
+  {
+   "id": "009-P006",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P007",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P008",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P009",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P010",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P011",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P012",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P013",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P014",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P015",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P016",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "009-P017",
+   "col": "N_Recetas",
+   "fuente": "cuenta de sus códigos declarados: 0",
+   "valor": "0"
+  },
+  {
+   "id": "005-P005",
+   "col": "Carritos_Total",
+   "fuente": "el bloque: 13 carritos atribuidos",
+   "valor": "13"
+  },
+  {
+   "id": "005-P006",
+   "col": "Carritos_Total",
+   "fuente": "el bloque: 111 carritos atribuidos",
+   "valor": "111"
+  },
+  {
+   "id": "005-P007",
+   "col": "Carritos_Total",
+   "fuente": "el bloque: 0 carritos atribuidos",
+   "valor": "0"
+  },
+  {
+   "id": "005-P008",
+   "col": "Carritos_Total",
+   "fuente": "el bloque: 1 carritos atribuidos",
+   "valor": "1"
+  },
+  {
+   "id": "004-P020",
+   "col": "Carritos_Total",
+   "fuente": "el bloque: 49 carritos atribuidos",
+   "valor": "49"
+  },
+  {
+   "id": "005-P009",
+   "col": "Carritos_Total",
+   "fuente": "el bloque: 2 carritos atribuidos",
+   "valor": "2"
+  },
+  {
+   "id": "005-P010",
+   "col": "Carritos_Total",
+   "fuente": "el bloque: 13 carritos atribuidos",
+   "valor": "13"
+  },
+  {
+   "id": "005-P011",
+   "col": "Carritos_Total",
+   "fuente": "el bloque: 5 carritos atribuidos",
+   "valor": "5"
+  },
+  {
+   "id": "005-P012",
+   "col": "Carritos_Total",
+   "fuente": "el bloque: 5 carritos atribuidos",
+   "valor": "5"
+  },
+  {
+   "id": "005-P005",
+   "col": "Views_Total",
+   "fuente": "el bloque: 23 views",
+   "valor": "23"
+  },
+  {
+   "id": "005-P006",
+   "col": "Views_Total",
+   "fuente": "el bloque: 286 views",
+   "valor": "286"
+  },
+  {
+   "id": "005-P007",
+   "col": "Views_Total",
+   "fuente": "el bloque: 0 views",
+   "valor": "0"
+  },
+  {
+   "id": "005-P008",
+   "col": "Views_Total",
+   "fuente": "el bloque: 1 views",
+   "valor": "1"
+  },
+  {
+   "id": "004-P020",
+   "col": "Views_Total",
+   "fuente": "el bloque: 59 views",
+   "valor": "59"
+  },
+  {
+   "id": "005-P009",
+   "col": "Views_Total",
+   "fuente": "el bloque: 2 views",
+   "valor": "2"
+  },
+  {
+   "id": "005-P010",
+   "col": "Views_Total",
+   "fuente": "el bloque: 15 views",
+   "valor": "15"
+  },
+  {
+   "id": "005-P011",
+   "col": "Views_Total",
+   "fuente": "el bloque: 13 views",
+   "valor": "13"
+  },
+  {
+   "id": "005-P012",
+   "col": "Views_Total",
+   "fuente": "el bloque: 4 views",
+   "valor": "4"
+  },
+  {
+   "id": "005-P005",
+   "col": "Carritos_Walmart_1",
+   "fuente": "el bloque, por shortlink+tienda: 10",
+   "valor": "10"
+  },
+  {
+   "id": "005-P006",
+   "col": "Carritos_Walmart_1",
+   "fuente": "el bloque, por shortlink+tienda: 59",
+   "valor": "59"
+  },
+  {
+   "id": "005-P007",
+   "col": "Carritos_Walmart_1",
+   "fuente": "el bloque, por shortlink+tienda: 0",
+   "valor": "0"
+  },
+  {
+   "id": "005-P008",
+   "col": "Carritos_Walmart_1",
+   "fuente": "el bloque, por shortlink+tienda: 0",
+   "valor": "0"
+  },
+  {
+   "id": "004-P020",
+   "col": "Carritos_Walmart_1",
+   "fuente": "el bloque, por shortlink+tienda: 0",
+   "valor": "0"
+  },
+  {
+   "id": "005-P009",
+   "col": "Carritos_Walmart_1",
+   "fuente": "el bloque, por shortlink+tienda: 1",
+   "valor": "1"
+  },
+  {
+   "id": "005-P010",
+   "col": "Carritos_Walmart_1",
+   "fuente": "el bloque, por shortlink+tienda: 8",
+   "valor": "8"
+  },
+  {
+   "id": "005-P011",
+   "col": "Carritos_Walmart_1",
+   "fuente": "el bloque, por shortlink+tienda: 4",
+   "valor": "4"
+  },
+  {
+   "id": "005-P012",
+   "col": "Carritos_Walmart_1",
+   "fuente": "el bloque, por shortlink+tienda: 2",
+   "valor": "2"
+  },
+  {
+   "id": "005-P003",
+   "col": "Carritos_Walmart_2",
+   "fuente": "el bloque, por shortlink+tienda: 1",
+   "valor": "1"
+  },
+  {
+   "id": "005-P005",
+   "col": "Carritos_Walmart_2",
+   "fuente": "el bloque, por shortlink+tienda: 3",
+   "valor": "3"
+  },
+  {
+   "id": "005-P006",
+   "col": "Carritos_Walmart_2",
+   "fuente": "el bloque, por shortlink+tienda: 43",
+   "valor": "43"
+  },
+  {
+   "id": "005-P007",
+   "col": "Carritos_Walmart_2",
+   "fuente": "el bloque, por shortlink+tienda: 0",
+   "valor": "0"
+  },
+  {
+   "id": "005-P008",
+   "col": "Carritos_Walmart_2",
+   "fuente": "el bloque, por shortlink+tienda: 1",
+   "valor": "1"
+  },
+  {
+   "id": "005-P009",
+   "col": "Carritos_Walmart_2",
+   "fuente": "el bloque, por shortlink+tienda: 1",
+   "valor": "1"
+  },
+  {
+   "id": "005-P010",
+   "col": "Carritos_Walmart_2",
+   "fuente": "el bloque, por shortlink+tienda: 3",
+   "valor": "3"
+  },
+  {
+   "id": "005-P012",
+   "col": "Carritos_Walmart_2",
+   "fuente": "el bloque, por shortlink+tienda: 1",
+   "valor": "1"
+  },
+  {
+   "id": "004-P020",
+   "col": "Carritos_Chedraui_2",
+   "fuente": "el bloque, por shortlink+tienda: 11",
+   "valor": "11"
+  },
+  {
+   "id": "005-P003",
+   "col": "Carritos_Walmart_3",
+   "fuente": "el bloque, por shortlink+tienda: 1",
+   "valor": "1"
+  },
+  {
+   "id": "005-P004",
+   "col": "Carritos_Walmart_3",
+   "fuente": "el bloque, por shortlink+tienda: 0",
+   "valor": "0"
+  },
+  {
+   "id": "004-P020",
+   "col": "Carritos_Walmart_3",
+   "fuente": "el bloque, por shortlink+tienda: 12",
+   "valor": "12"
+  },
+  {
+   "id": "005-P004",
+   "col": "Carritos_Walmart_4",
+   "fuente": "el bloque, por shortlink+tienda: 0",
+   "valor": "0"
+  },
+  {
+   "id": "004-P020",
+   "col": "Carritos_Chedraui_4",
+   "fuente": "el bloque, por shortlink+tienda: 5",
+   "valor": "5"
+  },
+  {
+   "id": "005-P005",
+   "col": "Fecha_Activacion_Qcart",
+   "fuente": "el maestro: 2026-08-15 (la más temprana de 2)",
+   "valor": "2026-08-15"
+  },
+  {
+   "id": "005-P006",
+   "col": "Fecha_Activacion_Qcart",
+   "fuente": "el maestro: 2026-08-15 (la más temprana de 2)",
+   "valor": "2026-08-15"
+  },
+  {
+   "id": "005-P007",
+   "col": "Fecha_Activacion_Qcart",
+   "fuente": "el maestro: 2026-08-22 (la más temprana de 2)",
+   "valor": "2026-08-22"
+  },
+  {
+   "id": "005-P008",
+   "col": "Fecha_Activacion_Qcart",
+   "fuente": "el maestro: 2026-08-22 (la más temprana de 2)",
+   "valor": "2026-08-22"
+  },
+  {
+   "id": "004-P020",
+   "col": "Fecha_Activacion_Qcart",
+   "fuente": "el maestro: 2026-06-10 (la más temprana de 3)",
+   "valor": "2026-06-10"
+  },
+  {
+   "id": "005-P009",
+   "col": "Fecha_Activacion_Qcart",
+   "fuente": "el maestro: 2026-08-28 (la más temprana de 2)",
+   "valor": "2026-08-28"
+  },
+  {
+   "id": "005-P010",
+   "col": "Fecha_Activacion_Qcart",
+   "fuente": "el maestro: 2026-08-15 (la más temprana de 2)",
+   "valor": "2026-08-15"
+  },
+  {
+   "id": "005-P011",
+   "col": "Fecha_Activacion_Qcart",
+   "fuente": "el maestro: 2026-09-12",
+   "valor": "2026-09-12"
+  },
+  {
+   "id": "005-P012",
+   "col": "Fecha_Activacion_Qcart",
+   "fuente": "el maestro: 2026-09-12 (la más temprana de 2)",
+   "valor": "2026-09-12"
+  },
+  {
+   "id": "005-P005",
+   "col": "Activaciones_Qcart",
+   "fuente": "el maestro: 2026-08-15 (la más temprana de 2)",
+   "valor": "2026-08-15"
+  },
+  {
+   "id": "005-P006",
+   "col": "Activaciones_Qcart",
+   "fuente": "el maestro: 2026-08-15 (la más temprana de 2)",
+   "valor": "2026-08-15"
+  },
+  {
+   "id": "005-P007",
+   "col": "Activaciones_Qcart",
+   "fuente": "el maestro: 2026-08-22 (la más temprana de 2)",
+   "valor": "2026-08-22"
+  },
+  {
+   "id": "005-P008",
+   "col": "Activaciones_Qcart",
+   "fuente": "el maestro: 2026-08-22 (la más temprana de 2)",
+   "valor": "2026-08-22"
+  },
+  {
+   "id": "004-P020",
+   "col": "Activaciones_Qcart",
+   "fuente": "el maestro: 2026-06-10 (la más temprana de 3)",
+   "valor": "2026-06-10"
+  },
+  {
+   "id": "005-P009",
+   "col": "Activaciones_Qcart",
+   "fuente": "el maestro: 2026-08-28 (la más temprana de 2)",
+   "valor": "2026-08-28"
+  },
+  {
+   "id": "005-P010",
+   "col": "Activaciones_Qcart",
+   "fuente": "el maestro: 2026-08-15 (la más temprana de 2)",
+   "valor": "2026-08-15"
+  },
+  {
+   "id": "005-P011",
+   "col": "Activaciones_Qcart",
+   "fuente": "el maestro: 2026-09-12",
+   "valor": "2026-09-12"
+  },
+  {
+   "id": "005-P012",
+   "col": "Activaciones_Qcart",
+   "fuente": "el maestro: 2026-09-12 (la más temprana de 2)",
+   "valor": "2026-09-12"
+  }
+ ],
+ "na": [
+  {
+   "id": "009-P006",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P007",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P008",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P009",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P010",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P011",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P012",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P013",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P014",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P015",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P016",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P017",
+   "col": "Carritos_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P006",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P007",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P008",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P009",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P010",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P011",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P012",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P013",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P014",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P015",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P016",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "009-P017",
+   "col": "Views_Total",
+   "por": "la pieza no lleva Qcart"
+  },
+  {
+   "id": "004-P005",
+   "col": "Cod_Chedraui_1",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "004-P006",
+   "col": "Cod_Chedraui_1",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "004-P007",
+   "col": "Cod_Chedraui_1",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "004-P008",
+   "col": "Cod_Chedraui_1",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "004-P017",
+   "col": "Cod_Chedraui_1",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "004-P018",
+   "col": "Cod_Chedraui_1",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "004-P019",
+   "col": "Cod_Chedraui_1",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "005-P007",
+   "col": "Carritos_Chedraui_1",
+   "por": "la pieza no declara código de Chedraui en la posición 1: no aplica"
+  },
+  {
+   "id": "005-P008",
+   "col": "Carritos_Chedraui_1",
+   "por": "la pieza no declara código de Chedraui en la posición 1: no aplica"
+  },
+  {
+   "id": "004-P020",
+   "col": "Carritos_Chedraui_1",
+   "por": "la pieza no declara código de Chedraui en la posición 1: no aplica"
+  },
+  {
+   "id": "005-P009",
+   "col": "Carritos_Chedraui_1",
+   "por": "la pieza no declara código de Chedraui en la posición 1: no aplica"
+  },
+  {
+   "id": "005-P010",
+   "col": "Carritos_Chedraui_1",
+   "por": "la pieza no declara código de Chedraui en la posición 1: no aplica"
+  },
+  {
+   "id": "005-P011",
+   "col": "Carritos_Chedraui_1",
+   "por": "la pieza no declara código de Chedraui en la posición 1: no aplica"
+  },
+  {
+   "id": "005-P012",
+   "col": "Carritos_Chedraui_1",
+   "por": "la pieza no declara código de Chedraui en la posición 1: no aplica"
+  },
+  {
+   "id": "004-P020",
+   "col": "Carritos_Walmart_2",
+   "por": "la pieza no declara código de Walmart en la posición 2: no aplica"
+  },
+  {
+   "id": "004-P017",
+   "col": "Cod_Chedraui_2",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "004-P018",
+   "col": "Cod_Chedraui_2",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "004-P019",
+   "col": "Cod_Chedraui_2",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "005-P007",
+   "col": "Carritos_Chedraui_2",
+   "por": "la pieza no declara código de Chedraui en la posición 2: no aplica"
+  },
+  {
+   "id": "005-P008",
+   "col": "Carritos_Chedraui_2",
+   "por": "la pieza no declara código de Chedraui en la posición 2: no aplica"
+  },
+  {
+   "id": "005-P009",
+   "col": "Carritos_Chedraui_2",
+   "por": "la pieza no declara código de Chedraui en la posición 2: no aplica"
+  },
+  {
+   "id": "005-P010",
+   "col": "Carritos_Chedraui_2",
+   "por": "la pieza no declara código de Chedraui en la posición 2: no aplica"
+  },
+  {
+   "id": "005-P012",
+   "col": "Carritos_Chedraui_2",
+   "por": "la pieza no declara código de Chedraui en la posición 2: no aplica"
+  },
+  {
+   "id": "004-P019",
+   "col": "Cod_Chedraui_3",
+   "por": "si el maestro no declara un link de Chedraui en esa posición, la celda NO APLICA — no es un pendiente"
+  },
+  {
+   "id": "004-P020",
+   "col": "Carritos_Chedraui_3",
+   "por": "la pieza no declara código de Chedraui en la posición 3: no aplica"
+  },
+  {
+   "id": "004-P020",
+   "col": "Carritos_Walmart_4",
+   "por": "la pieza no declara código de Walmart en la posición 4: no aplica"
+  },
+  {
+   "id": "009-P006",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P007",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P008",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P009",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P010",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P011",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P012",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P013",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P014",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P015",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P016",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P017",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P006",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P007",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P008",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P009",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P010",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P011",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P012",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P013",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P014",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P015",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P016",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  },
+  {
+   "id": "009-P017",
+   "col": "Activaciones_Qcart",
+   "por": "la pieza no lleva Qcart: no hay link que activar"
+  }
+ ],
+ "no": [
+  {
+   "id": "005-P005",
+   "col": "URL_Receta_1",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P006",
+   "col": "URL_Receta_1",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P007",
+   "col": "URL_Receta_1",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P008",
+   "col": "URL_Receta_1",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "004-P020",
+   "col": "URL_Receta_1",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P009",
+   "col": "URL_Receta_1",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P010",
+   "col": "URL_Receta_1",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P011",
+   "col": "URL_Receta_1",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P012",
+   "col": "URL_Receta_1",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P003",
+   "col": "URL_Receta_2",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P005",
+   "col": "URL_Receta_2",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P006",
+   "col": "URL_Receta_2",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P007",
+   "col": "URL_Receta_2",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P008",
+   "col": "URL_Receta_2",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "004-P020",
+   "col": "URL_Receta_2",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P009",
+   "col": "URL_Receta_2",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P010",
+   "col": "URL_Receta_2",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P012",
+   "col": "URL_Receta_2",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P003",
+   "col": "URL_Receta_3",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P004",
+   "col": "URL_Receta_3",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "004-P020",
+   "col": "URL_Receta_3",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "005-P004",
+   "col": "URL_Receta_4",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "004-P020",
+   "col": "URL_Receta_4",
+   "por": "el maestro no trae la URL de ese link"
+  },
+  {
+   "id": "009-P006",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P007",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P008",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P009",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P010",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P011",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P012",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P013",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P014",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P015",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P016",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "009-P017",
+   "col": "Fuente_Qcart",
+   "por": "ninguno de sus códigos está en el maestro"
+  },
+  {
+   "id": "004-P006",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "sus códigos no están en el maestro"
+  },
+  {
+   "id": "004-P007",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "sus códigos no están en el maestro"
+  },
+  {
+   "id": "004-P008",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "sus códigos no están en el maestro"
+  },
+  {
+   "id": "005-P003",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "sus códigos no están en el maestro"
+  },
+  {
+   "id": "005-P004",
+   "col": "Fecha_Activacion_Qcart",
+   "por": "sus códigos no están en el maestro"
+  },
+  {
+   "id": "004-P006",
+   "col": "Activaciones_Qcart",
+   "por": "sus códigos no están en el maestro"
+  },
+  {
+   "id": "004-P007",
+   "col": "Activaciones_Qcart",
+   "por": "sus códigos no están en el maestro"
+  },
+  {
+   "id": "004-P008",
+   "col": "Activaciones_Qcart",
+   "por": "sus códigos no están en el maestro"
+  },
+  {
+   "id": "005-P003",
+   "col": "Activaciones_Qcart",
+   "por": "sus códigos no están en el maestro"
+  },
+  {
+   "id": "005-P004",
+   "col": "Activaciones_Qcart",
+   "por": "sus códigos no están en el maestro"
+  }
+ ]
+}

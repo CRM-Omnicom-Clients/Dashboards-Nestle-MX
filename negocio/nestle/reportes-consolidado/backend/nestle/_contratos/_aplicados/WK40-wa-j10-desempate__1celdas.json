@@ -1,0 +1,19 @@
+{
+ "corte": "WK40-wa-j10-desempate",
+ "celdas": 1,
+ "columnas": 0,
+ "hojas_regeneradas": 0,
+ "respaldo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-WK40-wa-j10-desempate.xlsx",
+ "cambios": [
+  {
+   "paso": "escritor.desempatar-envio-wa",
+   "hoja": "Data_WhatsApp",
+   "fila": 19,
+   "columna": "Whatsapp_Name",
+   "valor": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-J10-SAB-2PM_CN_WA_A_V1_089420",
+   "porque": "La llave de escritura de Data_WhatsApp era pieza_id+campana_raw+SENDS, y los dos envíos SAB de WA-J10 mandaron 1,085 cada uno: el escritor emparejó las dos filas con el mismo registro y esta quedó como copia de su hermana, perdiendo _CN_WA_A_V1_089420 (read 343, deliv 912). Se le devuelve el nombre para que la llave nueva (whatsapp_name) pueda emparejarla bien. El reporte nunca estuvo mal: sale del bloque, que sí tiene los tres envíos."
+  }
+ ],
+ "columnas_nuevas": [],
+ "hojas": []
+}

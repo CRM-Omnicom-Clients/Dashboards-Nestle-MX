@@ -1,0 +1,219 @@
+// EL CONTRATO DE HOJA — qué columna se llena con qué. Declarado, no programado.
+//
+// 🔴 POR QUÉ EXISTE. Esta tabla vivía como código dentro del escritor: un `switch` de 20 casos
+//    en `N3-07`, con una SEGUNDA COPIA en `N3-05`. Con el conocimiento de negocio ahí adentro,
+//    el escritor no es un copiador: decide. Y decidir en dos lugares distintos es cómo se
+//    separan. Aquí se declara una vez y el escritor solo obedece.
+//
+// 🔴 LOS CANÓNICOS SE LLAMAN DISTINTO EN CADA HOJA. `Data_Email` dice `BU_Canonico`,
+//    `Data_WhatsApp` dice `BU`, y `Data_Qcart_*` no los tenía. Por eso cada columna canónica
+//    declara su DIMENSIÓN LÓGICA (`bu`, `marca`, `campana`, `segmento`): así se puede exigir
+//    —como pidió Rick— que el mismo `pieza_id` muestre el mismo valor en TODAS las hojas,
+//    aunque la columna se llame distinto en cada una.
+//
+// Cada columna declara de dónde sale. Cinco orígenes, y ninguno se adivina:
+//
+//   bloque    · lo trae el bloque de la fuente        → se escribe
+//   catalogo  · sale de Catalogo_Piezas por pieza_id  → se escribe  (🔴 manda el catálogo)
+//   derivado  · se calcula de otra columna del propio bloque (mes, quincena) → se escribe
+//   n5        · es una tasa o un flag: los calcula N5 → NO se toca
+//   conservar · la hoja lo tiene y NINGUNA fuente lo reproduce → NO se toca, y se declara
+//
+// ⚠ `conservar` es deuda, no una categoría cómoda. Cada columna ahí es una columna que, si se
+//   borrara, nadie podría reponer. Están listadas a propósito para que se vean.
+
+var DIMENSION = { bu: 'bu', marca: 'marca', campana: 'campana', segmento: 'segmento' };
+
+module.exports = {
+  dimensiones: DIMENSION,
+
+  hojas: {
+
+    // ══════════════════════════════════════════════════════════════════════════════
+    Data_Email: {
+      bloque: 'email', registros: 'envios',
+      // La llave empareja una fila de la hoja con un registro del bloque, y CADA parte declara
+      // su columna y su tipo. Antes el escritor lo adivinaba por nombre y se equivocaba:
+      //   · `journey_id` del bloque es un GUID (o vacio); la columna `Journey_ID` de la hoja
+      //     guarda el JID NUMERICO. Son identificadores distintos — 66 filas quedaban sin pareja
+      //     y las 198 que si emparejaban estaban pareando filas equivocadas.
+      //   · `content_name` SOLO tampoco sirve: 264 registros comparten 88 nombres (15 repetidos).
+      // La buena es content_name + fecha, que es la llave que el propio bloque declara.
+      llave: [
+        { campo: 'content_name', columna: 'Email_Content_Name' },
+        { campo: 'fecha', columna: 'Send_Date', tipo: 'fecha' }
+      ],
+      columnas: {
+        // identidad cruda que sí trae el bloque
+        // 🔴 RECLASIFICADAS TRAS MIRAR EL DIFF. Las tenia como 'bloque' por el parecido del
+        //    nombre, y escribirlas habria DESTRUIDO datos. El diff lo probo celda por celda:
+        //      Campaign  : el bloque habria vaciado 104 celdas y metido el CONTENT NAME en otras
+        //                  («O_AO-RECETAS-NESTLE-NC000600...» -> Campaign). `campana_raw` del
+        //                  bloque no es lo que guarda esta columna.
+        //      Segment   : habria vaciado 80 celdas con valores reales («Career Focused»,
+        //                  «New Parents»): el bloque trae `segmento_raw` vacio en esas filas.
+        //    El parecido de los nombres es justo lo que el sistema prohibe usar como criterio.
+        Campaign: { de: 'conservar', deuda: 'el bloque trae campana_raw, que NO es esta columna: escribirlo vaciaria 104 celdas y meteria el content name' },
+        Segment: { de: 'conservar', deuda: 'el bloque trae segmento_raw vacio en 80 filas que aqui SI tienen valor' },
+        Email_Type: { de: 'bloque', campo: 'email_type' },
+        Touchpoint: { de: 'bloque', campo: 'touchpoint_raw' },
+        //      Journey_ID: el bloque trae el GUID y esta columna guarda el JID NUMERICO. Son
+        //                  identificadores distintos — escribirlo pisaria 60 y vaciaria 6.
+        //      Source    : la hoja dice «Datorama WK32» (el corte); el bloque, el nombre del
+        //                  archivo. Escribirlo pierde de que semana es el dato.
+        Journey_ID: { de: 'conservar', deuda: 'el bloque trae el GUID; esta columna guarda el JID numerico. Identificadores distintos' },
+        Source: { de: 'conservar', deuda: 'la hoja guarda el corte (Datorama WK32) y el bloque el nombre del archivo' },
+        Send_Date: { de: 'bloque', campo: 'fecha', tipo: 'fecha' },
+        Canal: { de: 'bloque', campo: 'canal' },
+        Nombre_Journey: { de: 'bloque', campo: 'nombre_journey' },
+        Email_Content_Name: { de: 'bloque', campo: 'content_name' },
+        Audience_Name: { de: 'bloque', campo: 'audiencia' },
+        Email_Sends: { de: 'bloque', campo: 'email_sends', tipo: 'numero' },
+        Email_Deliveries: { de: 'bloque', campo: 'email_deliveries', tipo: 'numero' },
+        Email_Unique_Opens: { de: 'bloque', campo: 'email_unique_opens', tipo: 'numero' },
+        Email_Unique_Clicks: { de: 'bloque', campo: 'email_unique_clicks', tipo: 'numero' },
+        Email_Bounces: { de: 'bloque', campo: 'email_bounces', tipo: 'numero' },
+        //      Excluido_Motivo: la hoja tiene motivos escritos a mano («BASE INSUFICIENTE»,
+        //                  «DUPLICADO») y el bloque solo sabe decir «sin pareja en el export».
+        //                  El del bloque es mas pobre: escribirlo borraria 18 motivos reales.
+        Excluido_Motivo: { de: 'conservar', deuda: 'los motivos de la hoja son mas ricos que el estado_diff del bloque' },
+
+        // 🔴 EL ANCLA. Sin esta columna la regla «los canonicos coinciden entre todas las hojas»
+        //    no se puede comprobar fila a fila: N6-99 solo podia cruzar las dos hojas de Qcart,
+        //    que son las unicas que la tenian, y ninguna pieza estaba en las dos a la vez.
+        //    Con el pieza_id en las cuatro, la invariante deja de ser una intencion.
+        pieza_id: { de: 'bloque', campo: 'pieza_id', nueva: true },
+
+        // 🔴 LAS CANÓNICAS — manda el catálogo (decisión de Rick, 20-ago-2026)
+        BU_Canonico: { de: 'catalogo', campo: 'BU', dimension: DIMENSION.bu },
+        Marca: { de: 'catalogo', campo: 'Marca', dimension: DIMENSION.marca },
+        Campana_Canonica: { de: 'catalogo', campo: 'Campaña', dimension: DIMENSION.campana },
+        Segmento_Canonico: { de: 'catalogo', campo: 'Segmento', dimension: DIMENSION.segmento },
+
+        // derivadas de la fecha del propio bloque
+        Send_Month: { de: 'derivado', formula: 'mes', desde: 'fecha' },
+        Send_Quincena: { de: 'derivado', formula: 'quincena', desde: 'fecha' },
+        // 🔴 MANDA EL CALCULO (decision de Rick, 20-ago-2026). Lo cargado y el calculo ISO
+        //    discrepaban una semana: para el envio del 2026-05-02 la hoja decia WK19 y el
+        //    calendario ISO 2026 pone esa fecha en la semana 18 (27-abr a 3-may). Se derivan
+        //    las dos de la fecha del propio bloque, que es la unica forma de que no vuelvan a
+        //    separarse: una etiqueta escrita a mano se queda quieta cuando la fecha cambia.
+        Send_Week: { de: 'derivado', formula: 'lunes_serial', desde: 'fecha', tipo: 'numero' },
+        Send_Week_Label: { de: 'derivado', formula: 'semana_iso', desde: 'fecha' },
+
+        // las calcula N5 — aquí no se tocan
+        Delivery_Rate: { de: 'n5' }, Open_Rate: { de: 'n5' }, Click_Rate: { de: 'n5' },
+        CTOR: { de: 'n5' }, Bounce_Rate: { de: 'n5' },
+        Flag_Zero_Sends: { de: 'n5' }, Flag_Negative_Values: { de: 'n5' }, Flag_Rate_Mismatch: { de: 'n5' },
+
+        // ⚠ DEUDA: la hoja las tiene y ninguna fuente las reproduce. Si se borran, no vuelven.
+        BU: { de: 'conservar', deuda: 'el export no trae el BU crudo; el canónico está en BU_Canonico' },
+        Journey: { de: 'conservar', deuda: 'la columna se llama Journey pero guarda el OBJETIVO («Purchase»). El bloque no lo trae' },
+        Version: { de: 'conservar', deuda: 'solo 80 de 264 filas la tienen; el export no la entrega' },
+        Subject_Clean: { de: 'conservar', deuda: 'el asunto limpio se escribió a mano; el export trae Email_Subject_Raw' },
+        Report_Period: { de: 'conservar', deuda: 'el WK del pull viejo; hoy la fecha ya lo determina' },
+        Email_Sender_Name: { de: 'conservar', deuda: 'no está en el bloque' },
+        Datorama_Campaign: { de: 'conservar', deuda: 'no está en el bloque' },
+        Datorama_Campaign_ID: { de: 'conservar', deuda: 'no está en el bloque' },
+        Email_Subject_Raw: { de: 'conservar', deuda: 'no está en el bloque' },
+        Brand: { de: 'conservar', deuda: 'solo 75 de 264; se solapa con Marca' }
+      }
+    },
+
+    // ══════════════════════════════════════════════════════════════════════════════
+    Data_WhatsApp: {
+      bloque: 'whatsapp', registros: 'envios',
+      llave: [
+        { campo: 'campana_raw', columna: 'Campana_Raw' },
+        { campo: 'sends', columna: 'Sends', tipo: 'numero' }
+      ],
+      columnas: {
+        Campaña: { de: 'bloque', campo: 'campana_raw' },
+        Campana_Raw: { de: 'bloque', campo: 'campana_raw' },
+        Objetivo: { de: 'bloque', campo: 'objetivo' },
+        Segmento_WA_Raw: { de: 'bloque', campo: 'segmento_raw' },
+        Canal: { de: 'bloque', campo: 'canal' },
+        Send_Date: { de: 'bloque', campo: 'fecha', tipo: 'fecha' },
+        Sends: { de: 'bloque', campo: 'sends', tipo: 'numero' },
+        Deliveries: { de: 'bloque', campo: 'deliveries', tipo: 'numero' },
+        Opens_Read: { de: 'bloque', campo: 'opens_read', tipo: 'numero' },
+        Clicks: { de: 'bloque', campo: 'clicks', tipo: 'numero' },
+        Clicks_Medidos: { de: 'bloque', campo: 'clicks_medidos' },
+        Errores: { de: 'bloque', campo: 'errores', tipo: 'numero' },
+        Aud_Original: { de: 'bloque', campo: 'aud_original', tipo: 'numero' },
+        Aud_Filtros: { de: 'bloque', campo: 'aud_filtros', tipo: 'numero' },
+        Aud_Final: { de: 'bloque', campo: 'aud_final', tipo: 'numero' },
+        utm_content: { de: 'bloque', campo: 'utm_content' },
+        URL: { de: 'bloque', campo: 'url' },
+        Notas: { de: 'bloque', campo: 'notas_compuestas' },
+
+        pieza_id: { de: 'bloque', campo: 'pieza_id', nueva: true },
+
+        // 🔴 las mismas cuatro dimensiones, con OTROS nombres de columna
+        BU: { de: 'catalogo', campo: 'BU', dimension: DIMENSION.bu },
+        Marca: { de: 'catalogo', campo: 'Marca', dimension: DIMENSION.marca },
+        Segmento_Canonico: { de: 'catalogo', campo: 'Segmento', dimension: DIMENSION.segmento },
+        Touchpoint: { de: 'catalogo', campo: 'Touchpoint' },
+
+        Send_Month: { de: 'derivado', formula: 'mes', desde: 'fecha' },
+        Send_Quincena: { de: 'derivado', formula: 'quincena', desde: 'fecha' },
+
+        Delivery_Rate: { de: 'n5' }, Read_Rate: { de: 'n5' }, CTOR: { de: 'n5' }, Pct_Error: { de: 'n5' },
+
+        Logins: { de: 'conservar', deuda: 'vacía en las 13 filas; la fuente no la trae' },
+        Recetas_Capturadas: { de: 'conservar', deuda: 'vacía en las 13 filas' },
+        Errores_Meta_Detalle: { de: 'conservar', deuda: 'el desglose por código Meta no se está leyendo de la fuente' }
+      }
+    },
+
+    // ══════════════════════════════════════════════════════════════════════════════
+    // Qcart: eran las únicas hojas 1:1 con su bloque. Se les AGREGAN las 4 canónicas para
+    // que la regla «los canónicos coinciden en todas las hojas» se pueda comprobar aquí también.
+    Data_Qcart_Carritos: {
+      bloque: 'qcart', registros: 'carritos',
+      llave: [
+        { campo: 'pieza_id', columna: 'pieza_id' },
+        { campo: 'fila_en_csv', columna: 'fila_en_csv', tipo: 'numero' },
+        { campo: 'fuente', columna: 'fuente' }
+      ],
+      columnas: {
+        pieza_id: { de: 'bloque', campo: 'pieza_id' },
+        fecha: { de: 'bloque', campo: 'fecha' }, hora: { de: 'bloque', campo: 'hora' },
+        shortlink_code: { de: 'bloque', campo: 'shortlink_code' },
+        shortlink_name: { de: 'bloque', campo: 'shortlink_name' },
+        utm_campaign: { de: 'bloque', campo: 'utm_campaign' },
+        utm_medium: { de: 'bloque', campo: 'utm_medium' },
+        utm_source: { de: 'bloque', campo: 'utm_source' },
+        utm_content: { de: 'bloque', campo: 'utm_content' },
+        utm_term: { de: 'bloque', campo: 'utm_term' },
+        store: { de: 'bloque', campo: 'store' },
+        n_tiendas: { de: 'bloque', campo: 'n_tiendas', tipo: 'numero' },
+        impressions: { de: 'bloque', campo: 'impressions', tipo: 'numero' },
+        views: { de: 'bloque', campo: 'views', tipo: 'numero' },
+        total_shown_price: { de: 'bloque', campo: 'total_shown_price', tipo: 'numero' },
+        activacion_link: { de: 'bloque', campo: 'activacion_link' },
+        link_campana: { de: 'bloque', campo: 'link_campana' },
+        fuente: { de: 'bloque', campo: 'fuente' },
+        fila_en_csv: { de: 'bloque', campo: 'fila_en_csv', tipo: 'numero' },
+        aviso: { de: 'bloque', campo: 'aviso' },
+        BU: { de: 'catalogo', campo: 'BU', dimension: DIMENSION.bu, nueva: true },
+        Marca: { de: 'catalogo', campo: 'Marca', dimension: DIMENSION.marca, nueva: true },
+        Campana_Canonica: { de: 'catalogo', campo: 'Campaña', dimension: DIMENSION.campana, nueva: true },
+        Segmento_Canonico: { de: 'catalogo', campo: 'Segmento', dimension: DIMENSION.segmento, nueva: true }
+      }
+    },
+
+    Data_Qcart_Productos: {
+      bloque: 'qcart', registros: 'productos',
+      llave: [
+        { campo: 'pieza_id', columna: 'pieza_id' },
+        { campo: 'fila_en_csv', columna: 'fila_en_csv', tipo: 'numero' },
+        { campo: 'fuente', columna: 'fuente' }
+      ],
+      hereda: 'Data_Qcart_Carritos',
+      columnas: {
+        product: { de: 'bloque', campo: 'product' }
+      }
+    }
+  }
+};

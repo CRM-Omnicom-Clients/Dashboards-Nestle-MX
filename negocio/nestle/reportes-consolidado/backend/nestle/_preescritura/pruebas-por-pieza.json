@@ -1,0 +1,616 @@
+{
+ "cuando": "2026-09-24T20:29:48.901Z",
+ "volcado": "sfmc-detalle-2026-09-22.txt",
+ "umbral": 10,
+ "cuadra_con_agregada": true,
+ "total_prueba": {
+  "Email_Sends": 212,
+  "Email_Deliveries": 212,
+  "Email_Unique_Opens": 209,
+  "Email_Unique_Clicks": 93,
+  "Email_Bounces": 0,
+  "Email_Unique_Unsubs": 1,
+  "Email_Total_Unsubs": 2
+ },
+ "total_detalle": {
+  "Email_Sends": 10355553,
+  "Email_Deliveries": 10205584,
+  "Email_Unique_Opens": 2689868,
+  "Email_Unique_Clicks": 41837,
+  "Email_Bounces": 149969,
+  "Email_Unique_Unsubs": 58475,
+  "Email_Total_Unsubs": 60038
+ },
+ "por_pieza": {
+  "001-P005": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 1,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "001-P001": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 1,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "001-P003": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 1,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "001-P007": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "001-P009": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "002-P005": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 1,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "002-P001": {
+   "Email_Sends": 8,
+   "Email_Deliveries": 8,
+   "Email_Unique_Opens": 8,
+   "Email_Unique_Clicks": 5,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 7
+  },
+  "002-P002": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 4,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "002-P003": {
+   "Email_Sends": 6,
+   "Email_Deliveries": 6,
+   "Email_Unique_Opens": 6,
+   "Email_Unique_Clicks": 2,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 6
+  },
+  "002-P004": {
+   "Email_Sends": 7,
+   "Email_Deliveries": 7,
+   "Email_Unique_Opens": 7,
+   "Email_Unique_Clicks": 4,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 7
+  },
+  "001-P026": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "001-P014": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "004-P002": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 5,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "009-P005": {
+   "Email_Sends": 12,
+   "Email_Deliveries": 12,
+   "Email_Unique_Opens": 12,
+   "Email_Unique_Clicks": 3,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 12
+  },
+  "008-P001": {
+   "Email_Sends": 7,
+   "Email_Deliveries": 7,
+   "Email_Unique_Opens": 7,
+   "Email_Unique_Clicks": 5,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 7
+  },
+  "004-P007": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "004-P008": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "004-P006": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "003-P001": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "009-P001": {
+   "Email_Sends": 11,
+   "Email_Deliveries": 11,
+   "Email_Unique_Opens": 11,
+   "Email_Unique_Clicks": 2,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 11
+  },
+  "008-P006": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 1,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "008-P003": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 1,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 1,
+   "Email_Total_Unsubs": 2,
+   "jobs": 1
+  },
+  "004-P009": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "009-P003": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 5,
+   "Email_Unique_Clicks": 4,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "009-P002": {
+   "Email_Sends": 4,
+   "Email_Deliveries": 4,
+   "Email_Unique_Opens": 4,
+   "Email_Unique_Clicks": 3,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 4
+  },
+  "009-P004": {
+   "Email_Sends": 4,
+   "Email_Deliveries": 4,
+   "Email_Unique_Opens": 4,
+   "Email_Unique_Clicks": 3,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 4
+  },
+  "001-P018": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "001-P017": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "001-P015": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "001-P021": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "001-P019": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "006-P002": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 1,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "006-P001": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "007-P001": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 5,
+   "Email_Unique_Clicks": 4,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "007-P003": {
+   "Email_Sends": 4,
+   "Email_Deliveries": 4,
+   "Email_Unique_Opens": 4,
+   "Email_Unique_Clicks": 4,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 4
+  },
+  "007-P004": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 2,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "009-TMP-PP-E3-P": {
+   "Email_Sends": 7,
+   "Email_Deliveries": 7,
+   "Email_Unique_Opens": 6,
+   "Email_Unique_Clicks": 4,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 7
+  },
+  "009-TMP-PP-E3-G": {
+   "Email_Sends": 4,
+   "Email_Deliveries": 4,
+   "Email_Unique_Opens": 4,
+   "Email_Unique_Clicks": 3,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 4
+  },
+  "009-TMP-PA-E3-G": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 5,
+   "Email_Unique_Clicks": 4,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "009-TMP-PA-E3-M": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 5,
+   "Email_Unique_Clicks": 3,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "009-TMP-PO-E3-G": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 5,
+   "Email_Unique_Clicks": 3,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "009-TMP-PO-E3-M": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 5,
+   "Email_Unique_Clicks": 3,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "009-TMP-PP-E4-P": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "009-TMP-PAE-E4-M": {
+   "Email_Sends": 4,
+   "Email_Deliveries": 4,
+   "Email_Unique_Opens": 4,
+   "Email_Unique_Clicks": 3,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 4
+  },
+  "009-TMP-PAE-E4-P": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 5,
+   "Email_Unique_Clicks": 5,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "009-TMP-PAE-E4-G": {
+   "Email_Sends": 5,
+   "Email_Deliveries": 5,
+   "Email_Unique_Opens": 5,
+   "Email_Unique_Clicks": 3,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 5
+  },
+  "009-TMP-PP-E4-M": {
+   "Email_Sends": 1,
+   "Email_Deliveries": 1,
+   "Email_Unique_Opens": 1,
+   "Email_Unique_Clicks": 1,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 1
+  },
+  "TMP-NESC-ICE": {
+   "Email_Sends": 3,
+   "Email_Deliveries": 3,
+   "Email_Unique_Opens": 3,
+   "Email_Unique_Clicks": 2,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 3
+  },
+  "TMP-NESC-ESPRESSO": {
+   "Email_Sends": 8,
+   "Email_Deliveries": 8,
+   "Email_Unique_Opens": 8,
+   "Email_Unique_Clicks": 4,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 8
+  },
+  "TMP-AON-EAPP": {
+   "Email_Sends": 3,
+   "Email_Deliveries": 3,
+   "Email_Unique_Opens": 3,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 3
+  },
+  "TMP-AON-EPROP2": {
+   "Email_Sends": 4,
+   "Email_Deliveries": 4,
+   "Email_Unique_Opens": 4,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 4
+  },
+  "TMP-AON-EPROP2-FUP": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "TMP-NESC-ESPRESSO-V3": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "TMP-RN-AON-PROP1": {
+   "Email_Sends": 7,
+   "Email_Deliveries": 7,
+   "Email_Unique_Opens": 6,
+   "Email_Unique_Clicks": 1,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 7
+  },
+  "TMP-NESC-ICE-ENRICH1": {
+   "Email_Sends": 8,
+   "Email_Deliveries": 8,
+   "Email_Unique_Opens": 8,
+   "Email_Unique_Clicks": 6,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 8
+  },
+  "TMP-MAGGI-J6-REGION-SUR": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  },
+  "TMP-MAGGI-J7-B-C": {
+   "Email_Sends": 4,
+   "Email_Deliveries": 4,
+   "Email_Unique_Opens": 4,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 4
+  },
+  "TMP-MAGGI-J8": {
+   "Email_Sends": 3,
+   "Email_Deliveries": 3,
+   "Email_Unique_Opens": 3,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 3
+  },
+  "TMP-MAGGI-J9": {
+   "Email_Sends": 2,
+   "Email_Deliveries": 2,
+   "Email_Unique_Opens": 2,
+   "Email_Unique_Clicks": 0,
+   "Email_Bounces": 0,
+   "Email_Unique_Unsubs": 0,
+   "Email_Total_Unsubs": 0,
+   "jobs": 2
+  }
+ }
+}

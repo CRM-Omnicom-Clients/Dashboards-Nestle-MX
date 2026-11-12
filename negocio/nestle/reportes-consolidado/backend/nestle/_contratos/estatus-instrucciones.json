@@ -1,0 +1,89 @@
+{
+ "generado_por": "S4",
+ "instrucciones": [
+  {
+   "n": 1,
+   "titulo": "A producción lo llevas tú",
+   "estado": "HECHO",
+   "medido": "el bucle NO publica: `N8-publicar` no está en la cadena (15 etapas, ninguna publica). Verificado en cadena-skills.json"
+  },
+  {
+   "n": 2,
+   "titulo": "Sin columnas fantasma, sin perder datos (se quedan AMBOS)",
+   "estado": "PENDIENTE",
+   "medido": "`EmailID` sigue conviviendo con `Email_ID (de la DE de SFMC)`: 0 filas con valor SOLO en la vieja. 1 columna(s) *_Legacy en el catálogo. Nada fusionado todavía"
+  },
+  {
+   "n": 3,
+   "titulo": "Borrar las 2 hojas `Soporte_IA_*`",
+   "estado": "HECHO",
+   "medido": "ya no están"
+  },
+  {
+   "n": 4,
+   "titulo": "`% Unsuscribe` solo se llena el del total",
+   "estado": "PENDIENTE",
+   "medido": "columna «% Unsuscribe»: 0 filas de datos con valor (deben ser 0) · 0 en la de totales (debe ser 1)"
+  },
+  {
+   "n": 5,
+   "titulo": "Liga MX: segmentos y Qcart separados",
+   "estado": "HECHO",
+   "medido": "2 filas · 2 segmentos distintos (Usuarios CON región · Usuarios sin región) · 2 con carritos"
+  },
+  {
+   "n": 6,
+   "titulo": "Cero celdas vacías en ninguna hoja (dato · N/A · POR DEFINIR)",
+   "estado": "PENDIENTE",
+   "medido": "21,860 celdas vacías en 8 hojas — Report_Resumen 1903 · Reporte_julio 417 · Catalogo_Piezas 13640 · Catalogo_Referencias 1083"
+  },
+  {
+   "n": 7,
+   "titulo": "Ni columnas fantasma ni duplicadas en ninguna hoja",
+   "estado": "PENDIENTE",
+   "medido": "duplicadas exactas/normalizadas: 0 · fantasmas: 2"
+  },
+  {
+   "n": 8,
+   "titulo": "HTML «Cadena de Skills» con las mismas dimensiones",
+   "estado": "HECHO",
+   "medido": "35 KB · 12 dimensiones · publicado como artifact"
+  },
+  {
+   "n": 9,
+   "titulo": "Corrida E2E encadenada por skills",
+   "estado": "HECHO",
+   "medido": "40 scripts de ejecución · 0 fallos · escritura"
+  },
+  {
+   "n": 10,
+   "titulo": "Respetar el ORDEN de la cadena, skill por skill",
+   "estado": "HECHO",
+   "medido": "15 etapas en orden · el ataque A4 comprueba que agrupar por skill NO reordenó la ejecución"
+  },
+  {
+   "n": 11,
+   "titulo": "Resumen sin duplicados · totales al FINAL · Reporte_julio intacto",
+   "estado": "HECHO",
+   "medido": "1 fila(s) «Total», y es la última · Reporte_julio presente e intacto"
+  },
+  {
+   "n": 12,
+   "titulo": "Migrar a la cadena de SKILLS · no volver a usar la de pasos",
+   "estado": "HECHO",
+   "medido": "12 skills · 15 etapas · 0 scripts de ejecución huérfanos · `ND-reporte` retirado · 8/8 ataques fallaron"
+  },
+  {
+   "n": 13,
+   "titulo": "Regla: vieja y nueva → SE QUEDAN AMBOS",
+   "estado": "DECLARADA, sin aplicar",
+   "medido": "escrita en `_contratos/fusion-fantasmas.json`; se aplica al fusionar (instrucción 2)"
+  },
+  {
+   "n": 14,
+   "titulo": "Renombrar los pasos con su skill",
+   "estado": "HECHO",
+   "medido": "20 de 20 scripts de ejecución con etiqueta `skill/Nx` — se ven así en cada corrida"
+  }
+ ]
+}

@@ -1,0 +1,312 @@
+{
+ "cuando": "2026-09-15T00:50:07.825Z",
+ "grupos": [
+  "SFMC",
+  "PROCEDENCIA"
+ ],
+ "aplicar": 43,
+ "celdas": [
+  {
+   "id": "001-P029",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "001-P030",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "001-P031",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "FUP",
+   "porque": "la DE: Es_FUP = Si"
+  },
+  {
+   "id": "005-P005",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "005-P006",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "006-P004",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "006-P005",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "FUP",
+   "porque": "la DE: Es_FUP = Si"
+  },
+  {
+   "id": "007-P005",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "007-P006",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "FUP",
+   "porque": "la DE: Es_FUP = Si"
+  },
+  {
+   "id": "007-P007",
+   "col": "Tipo_Envio",
+   "de": "PENDIENTE",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "006-P006",
+   "col": "Tipo_Envio",
+   "de": "POR DEFINIR",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "001-P032",
+   "col": "Tipo_Envio",
+   "de": "POR DEFINIR",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "005-P007",
+   "col": "Tipo_Envio",
+   "de": "POR DEFINIR",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "005-P008",
+   "col": "Tipo_Envio",
+   "de": "POR DEFINIR",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "005-P009",
+   "col": "Tipo_Envio",
+   "de": "POR DEFINIR",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "005-P010",
+   "col": "Tipo_Envio",
+   "de": "POR DEFINIR",
+   "a": "Principal",
+   "porque": "la DE: Es_FUP = No"
+  },
+  {
+   "id": "005-P010",
+   "col": "Email_ID (de la DE de SFMC)",
+   "de": "POR DEFINIR",
+   "a": "85487",
+   "porque": "la DE: Email_ID 85487"
+  },
+  {
+   "id": "005-P010",
+   "col": "Subject",
+   "de": "POR DEFINIR",
+   "a": "Prepárate esta delicia jugocita",
+   "porque": "la DE: «Prepárate esta delicia jugocit»"
+  },
+  {
+   "id": "006-P006",
+   "col": "Fuente_Dato",
+   "de": "POR DEFINIR",
+   "a": "SFMC · CRM_Email_Piezas",
+   "porque": "de dónde salió: la DE de SFMC"
+  },
+  {
+   "id": "001-P032",
+   "col": "Fuente_Dato",
+   "de": "POR DEFINIR",
+   "a": "SFMC · CRM_Email_Piezas",
+   "porque": "de dónde salió: la DE de SFMC"
+  },
+  {
+   "id": "005-P007",
+   "col": "Fuente_Dato",
+   "de": "POR DEFINIR",
+   "a": "SFMC · CRM_Email_Piezas",
+   "porque": "de dónde salió: la DE de SFMC"
+  },
+  {
+   "id": "005-P008",
+   "col": "Fuente_Dato",
+   "de": "POR DEFINIR",
+   "a": "SFMC · CRM_Email_Piezas",
+   "porque": "de dónde salió: la DE de SFMC"
+  },
+  {
+   "id": "004-P020",
+   "col": "Fuente_Dato",
+   "de": "POR DEFINIR",
+   "a": "SFMC · CRM_Email_Piezas",
+   "porque": "de dónde salió: la DE de SFMC"
+  },
+  {
+   "id": "001-P033",
+   "col": "Fuente_Dato",
+   "de": "POR DEFINIR",
+   "a": "SFMC · CRM_Email_Piezas",
+   "porque": "de dónde salió: la DE de SFMC"
+  },
+  {
+   "id": "001-P029",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "001-P030",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "001-P031",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "005-P005",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "005-P006",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "006-P004",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "006-P005",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "007-P005",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "007-P006",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "007-P007",
+   "col": "Clicks_Medidos",
+   "de": "PENDIENTE",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "006-P006",
+   "col": "Clicks_Medidos",
+   "de": "POR DEFINIR",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "001-P032",
+   "col": "Clicks_Medidos",
+   "de": "POR DEFINIR",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "005-P007",
+   "col": "Clicks_Medidos",
+   "de": "POR DEFINIR",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "005-P008",
+   "col": "Clicks_Medidos",
+   "de": "POR DEFINIR",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "004-P020",
+   "col": "Clicks_Medidos",
+   "de": "POR DEFINIR",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "005-P009",
+   "col": "Clicks_Medidos",
+   "de": "POR DEFINIR",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "001-P033",
+   "col": "Clicks_Medidos",
+   "de": "POR DEFINIR",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "005-P010",
+   "col": "Clicks_Medidos",
+   "de": "POR DEFINIR",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  },
+  {
+   "id": "005-P012",
+   "col": "Clicks_Medidos",
+   "de": "POR DEFINIR",
+   "a": "Sí",
+   "porque": "el email SIEMPRE mide clicks: SFMC los entrega por envío"
+  }
+ ],
+ "saltadas": 0
+}

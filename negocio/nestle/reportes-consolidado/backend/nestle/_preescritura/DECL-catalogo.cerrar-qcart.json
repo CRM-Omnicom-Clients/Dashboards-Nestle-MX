@@ -1,0 +1,15 @@
+{
+ "skill": "nestle-catalogo",
+ "script": "catalogo.cerrar-qcart.js",
+ "declarado": "2026-09-29",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Catalogo_Piezas",
+   "grano": "una CELDA — pieza × columna de Qcart",
+   "llave": "Pieza_ID + nombre de columna",
+   "celdas_esperadas": "los POR DEFINIR de Qcart: N/A donde la pieza no lleva carrito, dato donde el maestro lo tiene"
+  }
+ ]
+}

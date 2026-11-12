@@ -1,0 +1,136 @@
+{
+ "que_es": "Las dudas del catálogo que solo Rick puede cerrar. `decision` se queda en null hasta que él la llene — ningún script la rellena.",
+ "regla": "Una decisión abierta se MIDE contra el archivo vivo, no se recuerda. Las que no se pueden medir desde el catálogo se declaran NO_MEDIBLE_AQUI, que no es lo mismo que «pasa».",
+ "generado": "2026-09-22 20:08",
+ "huella": {
+  "filas": 136,
+  "piezas": 125,
+  "email": 107,
+  "whatsapp": 18,
+  "no_piezas": 11,
+  "suma_sends": 9083877
+ },
+ "decisiones": [
+  {
+   "id": "D1",
+   "titulo": "Las gemelas de Traditional Parents: el mismo envío bajo dos nombres",
+   "estado": "ABIERTA",
+   "medicion": "siguen con nombres distintos y ambas con Sends",
+   "que_hay_que_aclarar": "¿001-P005/P006 y 001-P025/P027 son la misma pieza? SFMC publica el envío bajo el nombre con journey 863587 (el de P025/P027); el catálogo guarda además el de 803867 (P005/P006), que NO existe en el CDP.",
+   "impacto_si_no_se_decide": "Sumar las cuatro cuenta el mismo envío dos veces: 37,374 + 38,093 para un solo envío de Principal. El dashboard lo va a reportar inflado.",
+   "opciones": [
+    "retirar P005/P006 y dejar P025/P027",
+    "retirar P025/P027 y corregir el Email_Name de P005/P006",
+    "declararlas variantes de una misma pieza y sumar UNA sola vez"
+   ],
+   "ojo": "hay 4,085 referencias vivas a esos ids — no se retira nada sin las 5 pruebas de `catalogo.probar-gemelas.js`",
+   "quien_la_toma": "Rick",
+   "bloquea_a": [
+    "dashboard Treasure Data",
+    "sesión SFMC"
+   ],
+   "decision": null,
+   "decidido_por": null,
+   "fecha_decision": null
+  },
+  {
+   "id": "D2",
+   "titulo": "E-J8 lleva el Email_Name de J7",
+   "estado": "ABIERTA",
+   "medicion": "J8 sigue apuntando al nombre de J7",
+   "que_hay_que_aclarar": "005-P012 (E-J8) tiene como Email_Name «…LIGAMX-J7-B-C…_0359270 - 202609», que es el nombre de 005-P010 (E-J7). ¿Cuál es el nombre real del J8 en SFMC?",
+   "impacto_si_no_se_decide": "Cualquier cruce por Email_Name pisa J7 con J8. El dashboard va a atribuir los envíos de una jornada a la otra y la suma va a cuadrar igual.",
+   "opciones": [
+    "corregir el Email_Name de 005-P012 con el que SFMC publica para J8",
+    "declarar que J8 se envió bajo el nombre de J7 (reuso) y marcarlo"
+   ],
+   "ojo": null,
+   "quien_la_toma": "Rick + quien creó el envío en SFMC",
+   "bloquea_a": [
+    "dashboard Treasure Data"
+   ],
+   "decision": null,
+   "decidido_por": null,
+   "fecha_decision": null
+  },
+  {
+   "id": "D3",
+   "titulo": "El FUP de E-PROP1: 158,056 en el catálogo vs 1,286,701 en el CDP",
+   "estado": "NO_MEDIBLE_AQUI",
+   "medicion": "NO_MEDIBLE_AQUI — la evidencia vive en el CDP, no en el catálogo",
+   "que_hay_que_aclarar": "¿El nombre del FUP (001-P033) está capturando el blast del 2-sep (1,172,646 envíos en un día)? El Principal 001-P032 tiene 1,337,766.",
+   "impacto_si_no_se_decide": "Son ~1.13M envíos cuya atribución entre Principal y FUP no está resuelta. Es la discrepancia más grande del reconciliador (+714%).",
+   "opciones": [
+    "partir por JobID y día en el CDP y repartir",
+    "declarar que el nombre del FUP se reusó y no sirve como llave"
+   ],
+   "ojo": "NO se resuelve por Email_Name: se resuelve por JobID/día. El blast fue el job 1292673.",
+   "quien_la_toma": "Rick",
+   "bloquea_a": [
+    "dashboard Treasure Data"
+   ],
+   "decision": null,
+   "decidido_por": null,
+   "fecha_decision": null
+  },
+  {
+   "id": "D4",
+   "titulo": "Mundial E-P2 × Modern Cooking sigue POR DEFINIR",
+   "estado": "ABIERTA",
+   "medicion": "sigue sin Email_Name",
+   "que_hay_que_aclarar": "004-P020 no tiene Email_Name ni Sends. Es la pieza que faltaba y cuyos ~49 carritos estaban cayendo dentro de Bebidas.",
+   "impacto_si_no_se_decide": "Sus carritos se atribuyen al segmento de al lado y la suma cuadra igual — ninguna puerta lo ve.",
+   "opciones": [
+    "darle de alta su Email_Name real",
+    "declarar que esa pieza nunca se envió y marcarla N/A"
+   ],
+   "ojo": null,
+   "quien_la_toma": "Rick",
+   "bloquea_a": [
+    "reporte Qcart",
+    "dashboard Treasure Data"
+   ],
+   "decision": null,
+   "decidido_por": null,
+   "fecha_decision": null
+  },
+  {
+   "id": "D5",
+   "titulo": "w5r9LWOP: un shortlink de WhatsApp dentro de una pieza de email",
+   "estado": "ABIERTA",
+   "medicion": "sigue en la pieza de email 004-P003",
+   "que_hay_que_aclarar": "El código está declarado en el maestro (Junio f23) con utm «wa-bebida1» (WhatsApp) pero vive en el catálogo de 004-P003, que es Email. Además el maestro lo marca «No se envío a Qcart» y tiene 0 carritos.",
+   "impacto_si_no_se_decide": "Hoy no mueve ninguna cifra (0 carritos), pero si algún día genera tráfico se atribuiría a email lo que es de WhatsApp.",
+   "opciones": [
+    "quitarlo de la pieza de email",
+    "dejarlo y declarar que fue un reuso deliberado"
+   ],
+   "ojo": null,
+   "quien_la_toma": "Rick",
+   "bloquea_a": [],
+   "decision": null,
+   "decidido_por": null,
+   "fecha_decision": null
+  },
+  {
+   "id": "D6",
+   "titulo": "009-P003: una variante del CDP con 22,819 envíos contra 180 del catálogo",
+   "estado": "NO_MEDIBLE_AQUI",
+   "medicion": "NO_MEDIBLE_AQUI — la evidencia vive en el CDP",
+   "que_hay_que_aclarar": "El reconciliador reporta «Sends CDP (var.) 22,819» para una pieza de Pro Plan cuyo catálogo dice 180. Es 126× más grande.",
+   "impacto_si_no_se_decide": "O la variante está mal emparejada, o hay un envío grande sin registrar en el catálogo.",
+   "opciones": [
+    "revisar qué Email_Name está casando como variante",
+    "dar de alta la pieza que falte"
+   ],
+   "ojo": null,
+   "quien_la_toma": "Rick",
+   "bloquea_a": [
+    "dashboard Treasure Data"
+   ],
+   "decision": null,
+   "decidido_por": null,
+   "fecha_decision": null
+  }
+ ]
+}

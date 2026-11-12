@@ -1,0 +1,37 @@
+{
+ "version": 1,
+ "_que_es": "Decisiones que NO puede tomar el sistema, con su evidencia ya reunida y su via de salida. Mismo patron que conflictos.json: append-only. Una decision pendiente que no se escribe se re-investiga cada sesion — eso ya paso.",
+ "_regla": "Nadie vuelve a levantar la evidencia de cero. Si llega informacion nueva, se agrega a 'evidencia'; la decision se cierra moviendola a 'resueltas' con quien y por que.",
+ "pendientes": {
+  "engagement-multiventana": {
+   "que": "Cuantas aperturas contarle a un envio cuando el export las trae partidas en varias ventanas de tiempo",
+   "planteado": "2026-08-17",
+   "quien_decide": "Rick",
+   "estado": "PARQUEADA · pendiente de conectar el MCP de SFMC (requiere permiso)",
+
+   "evidencia_ya_levantada": {
+    "estructura": "El export trae UNA fila para el mes del envio (con sends) y N filas DIARIAS para los meses posteriores (sends=0, opens/clicks reales). No son meses: son dias.",
+    "prueba_1_ventanas_disjuntas": "Comparados WK29 (17-jul) vs WK32.1 (13-ago): la fila del mes del envio quedo IDENTICA en 125 de 125 envios, 0 crecieron. Ninguna fila se actualiza -> cada una es su propia ventana cerrada -> las posteriores son aperturas que antes no existian, no una re-medicion.",
+    "prueba_2_techo": "0 de 247 envios superan sus deliveries al sumar (maximo 94.3%). Si se doblara sistematicamente, varios pasarian de 100%.",
+    "contraindicacion": "7 envios de base grande dan OR >=60% al sumar (88% sobre 198,517 entregas; 74% sobre 245,064). Eso no es real: ahi domina el RE-ABRIDOR, contado una vez por ventana. Es un open nuevo, no una persona nueva.",
+    "impacto": {
+     "opens": "1,691,423 (MAX) -> 1,957,961 (SUMA) = +15.8%",
+     "clicks": "27,205 -> 31,070 = +14.2%",
+     "open_rate_global": "27.5% -> 31.8% (banda normal de CRM: 20-35%)",
+     "ctor_global": "1.6% -> 1.6% (no se mueve: sube numerador y denominador igual)"
+    }
+   },
+
+   "opciones": [
+    { "id": "MAX", "que": "solo la ventana mas grande", "problema": "subcuenta: ignora aperturas que demostrablemente ocurrieron", "es_lo_que_se_usa_hoy": true },
+    { "id": "SUMA", "que": "todas las ventanas", "problema": "cuenta dos veces a quien reabrio en otra ventana", "respaldo": "las ventanas son disjuntas y congeladas (prueba 1)" },
+    { "id": "SUMA_NOMBRADA", "que": "sumar, renombrar a Aperturas_Por_Ventana (no Unique_Opens) y MARCAR los envios donde el re-abridor domina (OR>=60% con base>1000) para que no se comparen contra benchmark", "problema": "cambia numeros que el cliente ya vio", "es_la_recomendacion": true },
+    { "id": "SFMC", "que": "pedir el numero real a SFMC", "estado": "VIA PREFERIDA — requiere permiso para conectar el MCP", "ojo": "Rick advierte que ni SFMC da un unico-por-usuario de por vida; puede que solo atribuya mejor, no que resuelva del todo" }
+   ],
+
+   "que_hacer_mientras": "NO se toca nada. Sigue MAX, y la suma queda guardada en cada envio (opens_suma_meses / clicks_suma_meses) para que el cambio sea un recalculo, no un re-analisis.",
+   "que_desbloquea": "permiso para conectar el MCP de SFMC en modo LECTURA, solo sobre los journeys del catalogo (el alcance que Rick ya declaro)"
+  }
+ },
+ "resueltas": {}
+}

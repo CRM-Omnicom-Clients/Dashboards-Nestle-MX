@@ -1,0 +1,395 @@
+{
+ "que_es": "QUÉ ES «UNO» EN CADA MÉTRICA. Los tres defectos que costaron un reporte equivocado en septiembre de 2026 son el MISMO defecto: nadie declaraba la unidad, así que dos números de distinta naturaleza acababan comparados en la misma fila y ninguna guarda lo veía —todas comparaban capas internas, que heredan la unidad del origen.",
+ "creado": "2026-09-24",
+ "los_tres_casos_que_lo_originan": [
+  "CLICKS · `Clicks` es único POR CORREO y el desglose sumaba únicos POR LINK. Quien toca dos links cuenta 1 arriba y 2 abajo, así que el desglose excedía al total en 98 de 101 piezas. Y el check que debía verlo comparaba Σ por_destino contra clicks_unicos: las dos del MISMO campo en el MISMO bucle.",
+  "QCART · un carrito se contaba como una FILA del CSV. Una fila es un bucket día × hora × shortlink × utm × tienda con su contador `views`: 3,077 filas son 7,503 vistas, e incluían 444 filas de `views = 0` (impresiones que nunca llegaron a una vista).",
+  "WHATSAPP · se impuso la regla `WA-Clicks ≡ Carritos_Total`. Qcart mide 949 clicks → 18 carritos en WA-J8: un click al shortlink es el paso ANTES del carrito, no el carrito."
+ ],
+ "la_regla": "Toda métrica de conteo publicada declara (1) su UNIDAD, (2) el campo de ORIGEN del que sale y (3) contra qué total SE COMPARA. Una métrica sin las tres no se publica: es un número que nadie puede contrastar.",
+ "unidades": {
+  "correo_unico": "una persona distinta que hizo la acción en un CORREO. Dedupe a nivel envío.",
+  "click_por_link": "una persona distinta que tocó UN link. La misma persona en dos links cuenta dos veces: por eso NUNCA se compara contra `correo_unico`.",
+  "mensaje_whatsapp": "un mensaje de WhatsApp.",
+  "click_whatsapp": "un toque al shortlink desde WhatsApp. NO es un carrito.",
+  "vista_carrito": "una vista de la página de carrito que Qcart registra. NO es una fila del CSV.",
+  "vista_producto": "una vista de un producto itemizado por Qcart.",
+  "peso_mxn": "pesos mexicanos.",
+  "no_es_metrica": "dimensión, fecha o identificador: no se suma ni se compara."
+ },
+ "metricas": {
+  "Principal_Sends": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · CRM_Email_Piezas · Email_Sends (sin jobs de prueba)",
+   "se_compara_con": null
+  },
+  "Principal_Deliveries": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Email_Deliveries",
+   "se_compara_con": "Principal_Sends"
+  },
+  "Principal_Opens": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Email_Unique_Opens",
+   "se_compara_con": "Principal_Deliveries"
+  },
+  "Principal_Clicks": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Email_Unique_Clicks",
+   "se_compara_con": "Principal_Opens",
+   "no_comparar_con": [
+    "Principal_Clicks_CTA",
+    "Principal_Clicks_Baja",
+    "Principal_Clicks_Redes+Navegador+Legal",
+    "Principal_Clicks_Medidos"
+   ],
+   "porque": "esas cuatro son click_por_link: la misma persona en dos links cuenta dos veces"
+  },
+  "Principal_Unsubs": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Email_Unique_Unsubs",
+   "se_compara_con": "Principal_Deliveries"
+  },
+  "Principal_Clicks_CTA": {
+   "unidad": "click_por_link",
+   "origen": "SFMC · CRM_Email_Links · Clicks_Unique",
+   "se_compara_con": "Principal_Clicks_Medidos"
+  },
+  "Principal_Clicks_Baja": {
+   "unidad": "click_por_link",
+   "origen": "SFMC · CRM_Email_Links · Clicks_Unique",
+   "se_compara_con": "Principal_Clicks_Medidos"
+  },
+  "Principal_Clicks_Redes+Navegador+Legal": {
+   "unidad": "click_por_link",
+   "origen": "SFMC · CRM_Email_Links · Clicks_Unique",
+   "se_compara_con": "Principal_Clicks_Medidos"
+  },
+  "Principal_Clicks_Medidos": {
+   "unidad": "click_por_link",
+   "origen": "suma de sus tres destinos",
+   "se_compara_con": null,
+   "porque": "es el total del bloque: existe justamente para que el desglose tenga contra qué compararse sin cruzar unidades"
+  },
+  "FUP_Sends": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Email_Sends",
+   "se_compara_con": null
+  },
+  "FUP_Deliveries": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Email_Deliveries",
+   "se_compara_con": "FUP_Sends"
+  },
+  "FUP_Opens": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Email_Unique_Opens",
+   "se_compara_con": "FUP_Deliveries"
+  },
+  "FUP_Clicks": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Email_Unique_Clicks",
+   "se_compara_con": "FUP_Opens",
+   "no_comparar_con": [
+    "FUP_Clicks_CTA",
+    "FUP_Clicks_Baja",
+    "FUP_Clicks_Redes+Navegador+Legal",
+    "FUP_Clicks_Medidos"
+   ]
+  },
+  "FUP_Unsubs": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Email_Unique_Unsubs",
+   "se_compara_con": "FUP_Deliveries"
+  },
+  "FUP_Clicks_CTA": {
+   "unidad": "click_por_link",
+   "origen": "SFMC · CRM_Email_Links · Clicks_Unique",
+   "se_compara_con": "FUP_Clicks_Medidos"
+  },
+  "FUP_Clicks_Baja": {
+   "unidad": "click_por_link",
+   "origen": "SFMC · CRM_Email_Links · Clicks_Unique",
+   "se_compara_con": "FUP_Clicks_Medidos"
+  },
+  "FUP_Clicks_Redes+Navegador+Legal": {
+   "unidad": "click_por_link",
+   "origen": "SFMC · CRM_Email_Links · Clicks_Unique",
+   "se_compara_con": "FUP_Clicks_Medidos"
+  },
+  "FUP_Clicks_Medidos": {
+   "unidad": "click_por_link",
+   "origen": "suma de sus tres destinos",
+   "se_compara_con": null
+  },
+  "Tot_Sends": {
+   "unidad": "correo_unico",
+   "origen": "Principal + FUP",
+   "se_compara_con": null
+  },
+  "Tot_Deliveries": {
+   "unidad": "correo_unico",
+   "origen": "Principal + FUP",
+   "se_compara_con": "Tot_Sends"
+  },
+  "Tot_Opens": {
+   "unidad": "correo_unico",
+   "origen": "Principal + FUP",
+   "se_compara_con": "Tot_Deliveries"
+  },
+  "Tot_Clicks": {
+   "unidad": "correo_unico",
+   "origen": "Principal + FUP",
+   "se_compara_con": "Tot_Opens",
+   "no_comparar_con": [
+    "Tot_Clicks_CTA",
+    "Tot_Clicks_Baja",
+    "Tot_Clicks_Redes+Navegador+Legal",
+    "Tot_Clicks_Medidos"
+   ]
+  },
+  "Tot_Unsubs": {
+   "unidad": "correo_unico",
+   "origen": "Principal + FUP",
+   "se_compara_con": "Tot_Deliveries"
+  },
+  "Tot_Clicks_CTA": {
+   "unidad": "click_por_link",
+   "origen": "Principal + FUP",
+   "se_compara_con": "Tot_Clicks_Medidos"
+  },
+  "Tot_Clicks_Baja": {
+   "unidad": "click_por_link",
+   "origen": "Principal + FUP",
+   "se_compara_con": "Tot_Clicks_Medidos"
+  },
+  "Tot_Clicks_Redes+Navegador+Legal": {
+   "unidad": "click_por_link",
+   "origen": "Principal + FUP",
+   "se_compara_con": "Tot_Clicks_Medidos"
+  },
+  "Tot_Clicks_Medidos": {
+   "unidad": "click_por_link",
+   "origen": "suma de sus tres destinos",
+   "se_compara_con": null
+  },
+  "WA-Envíos": {
+   "unidad": "mensaje_whatsapp",
+   "origen": "reporte interno de WhatsApp",
+   "se_compara_con": null
+  },
+  "WA-Entregados": {
+   "unidad": "mensaje_whatsapp",
+   "origen": "reporte interno de WhatsApp",
+   "se_compara_con": "WA-Envíos"
+  },
+  "WA-No entregados": {
+   "unidad": "mensaje_whatsapp",
+   "origen": "reporte interno de WhatsApp",
+   "se_compara_con": "WA-Envíos"
+  },
+  "WA-Leídos": {
+   "unidad": "mensaje_whatsapp",
+   "origen": "reporte interno de WhatsApp",
+   "se_compara_con": "WA-Entregados"
+  },
+  "WA-Clicks": {
+   "unidad": "click_whatsapp",
+   "origen": "reporte interno de WhatsApp",
+   "se_compara_con": "WA-Leídos",
+   "embudo": true,
+   "embudo_porque": "cruza unidades A PROPÓSITO y por eso va declarado: hay que LEER el mensaje antes de hacer clic, así que un click no puede exceder a las lecturas aunque sean cosas distintas. Un cruce de unidades sin este flag es el defecto que costó los clicks y Qcart, y el guardián lo bloquea.",
+   "no_comparar_con": [
+    "Carritos_Total"
+   ],
+   "porque": "🔴 la regla `WA-Clicks ≡ Carritos_Total` que se impuso el 22-sep-2026 está REFUTADA: Qcart mide 949 clicks → 18 carritos en WA-J8. Un click al shortlink es el paso ANTES del carrito."
+  },
+  "Carritos_Total": {
+   "unidad": "vista_carrito",
+   "origen": "Qcart · carts-raw · campo `views`",
+   "se_compara_con": null,
+   "no_es": "el número de filas del CSV. Una fila es un bucket día × hora × shortlink × utm × tienda.",
+   "mordio": "24-sep-2026 · contar filas decía 3,077 donde Qcart dice 7,503, con 444 filas de `views = 0`"
+  },
+  "Views_Carrito": {
+   "unidad": "vista_carrito",
+   "origen": "Qcart · carts-raw · campo `views`",
+   "se_compara_con": null,
+   "duplicado_de": "Carritos_Total",
+   "pendiente_rick": "el export crudo trae UN solo contador de volumen, así que las dos columnas dicen lo mismo (7,503). Retirar una es decisión suya."
+  },
+  "Carritos_Walmart": {
+   "unidad": "vista_carrito",
+   "origen": "Qcart · carts-raw · `views` filtrado por tienda",
+   "se_compara_con": "Carritos_Total"
+  },
+  "Carritos_Chedraui": {
+   "unidad": "vista_carrito",
+   "origen": "Qcart · carts-raw · `views` filtrado por tienda",
+   "se_compara_con": "Carritos_Total"
+  },
+  "Views_Productos_Nestle": {
+   "unidad": "vista_producto",
+   "origen": "Qcart · products-raw · campo `views`",
+   "se_compara_con": null
+  },
+  "Intencion_Total_MXN": {
+   "unidad": "peso_mxn",
+   "origen": "Qcart · carts-raw · `total shown price`",
+   "se_compara_con": null,
+   "ojo": "🔴 el decimal es COMA: «1144,45» son 1,144.45. Un parser que la borre infla 100×."
+  },
+  "Intencion_Nestle_MXN": {
+   "unidad": "peso_mxn",
+   "origen": "Qcart · products-raw · `total shown price`",
+   "se_compara_con": "Intencion_Total_MXN"
+  },
+  "Ticket_Carrito_MXN": {
+   "unidad": "peso_mxn",
+   "origen": "Intencion_Total_MXN / Carritos_Total",
+   "se_compara_con": null
+  },
+  "Ticket_Producto_MXN": {
+   "unidad": "peso_mxn",
+   "origen": "Intencion_Nestle_MXN / Views_Productos_Nestle",
+   "se_compara_con": null
+  },
+  "Mes (#)": {
+   "unidad": "no_es_metrica"
+  },
+  "Audiencia_Volumen SFMC": {
+   "unidad": "correo_unico",
+   "origen": "SFMC · Audience_Volume",
+   "se_compara_con": null
+  },
+  "Content ID (Final del Email Name) Principal": {
+   "unidad": "no_es_metrica"
+  },
+  "Email_ID (de la DE de SFMC)": {
+   "unidad": "no_es_metrica"
+  },
+  "Content ID (Final del Email Name) _ FUP": {
+   "unidad": "no_es_metrica"
+  },
+  "Email_ID (de la DE de SFMC) _ FUP": {
+   "unidad": "no_es_metrica"
+  },
+  "Principal_Fecha_Envio": {
+   "unidad": "no_es_metrica"
+  },
+  "FUP_Fecha_Envio": {
+   "unidad": "no_es_metrica"
+  },
+  "FechaQcart_Desde": {
+   "unidad": "no_es_metrica"
+  },
+  "FechaQcart_Hasta": {
+   "unidad": "no_es_metrica"
+  }
+ },
+ "fuentes_con_contador": [
+  {
+   "fuente": "Qcart · carts-raw",
+   "contador": "views",
+   "prohibido": "contar sus filas como carritos",
+   "mordio": "24-sep-2026 · 3,077 filas se reportaban como 3,077 carritos cuando son 7,503 vistas"
+  },
+  {
+   "fuente": "Qcart · products-raw",
+   "contador": "views",
+   "prohibido": "contar sus filas como productos"
+  }
+ ],
+ "medida_externa": {
+  "la_regla": "🔴 Cada fuente declara con QUÉ se contrasta desde fuera del sistema. Las puertas comparan capas internas —bloque, rejilla, reporte— y las tres descienden del mismo origen: si la unidad del origen está mal, las tres coinciden y la puerta pasa en verde. Sin una medida externa, un corte solo prueba que es CONSISTENTE.",
+  "por_fuente": {
+   "email": {
+    "externa": "la DE agregada de SFMC vs el detalle día por día",
+    "estado": "activa"
+   },
+   "qcart": {
+    "externa": "el export AGREGADO de Qcart (`carts-<periodo>.csv`), que es su propio resumen",
+    "estado": "activa desde el 24-sep-2026",
+    "como": "comparar Σ views por shortlink; el 24-sep dio 62 de 121 exactas y, de ésas, el importe coincidió en 61"
+   },
+   "whatsapp": {
+    "externa": "🔴 NINGUNA. El reporte interno de WhatsApp es la única fuente y nada lo contrasta.",
+    "estado": "HUECO DECLARADO"
+   }
+  }
+ },
+ "conteo_por_filas": {
+  "que_es": "Donde SI es legitimo contar filas del bloque de Qcart, declarado archivo por archivo con su razon. U4 barre TODOS los scripts buscando la forma del defecto; lo que esta aqui no lo marca.",
+  "por_que_declarado": "U4 nacio escaneando 5 patrones LITERALES en 3 archivos fijos — el texto exacto de defectos ya arreglados. Eso es una prueba de regresion, no una guarda: no ve el mismo defecto escrito de otra forma ni en un cuarto archivo. Y asi paso fuentes-whatsapp.whatsapp.js, que sumaba +1 por fila y reportaba 21 y 12 clicks de Liga MX donde hay 43 y 30 carritos. Al generalizar la busqueda aparecen usos legitimos, y la unica manera de que un guardia general no se vuelva ruido es que la excepcion se DECLARE aqui, no que se ablande el patron.",
+  "permitido": [
+   {
+    "archivo": "lib-qcart-filtro.js",
+    "razon": "sus contadores describen a donde fue cada FILA del CSV; ademas lleva el desglose gemelo en vistas con su propio cuadre"
+   },
+   {
+    "archivo": "fuentes-qcart.qcart.js",
+    "razon": "imprime «N eventos» como conteo de filas del bloque, que es lo que son; la metrica de carritos la calcula el motor"
+   },
+   {
+    "archivo": "fuentes-qcart.probar-filtro.js",
+    "razon": "probador: el cuadre de disposicion es por filas a proposito"
+   },
+   {
+    "archivo": "fuentes-qcart.refutar-metricas.js",
+    "razon": "refutador: PLANTA el patron malo como señuelo, tiene que poder escribirlo"
+   },
+   {
+    "archivo": "fuentes-qcart.medida-externa.js",
+    "razon": "reporta filas del agregado junto a sus vistas, las dos etiquetadas"
+   },
+   {
+    "archivo": "orquestador.guardian-unidades.js",
+    "razon": "es el guardian: lleva los patrones prohibidos en su propio codigo"
+   },
+   {
+    "archivo": "catalogo.auditar-ligamx.js",
+    "razon": "mide COBERTURA DE ANCLAJE: cuantas filas del crudo quedaron sin shortlink declarado. La pregunta es de filas — una fila sin ancla es una fila que nadie pudo atribuir— y ninguna cifra de carritos sale de aqui"
+   },
+   {
+    "archivo": "fuentes-qcart.auditar-shortlinks.js",
+    "razon": "compara filas del CRUDO contra filas del BLOQUE por shortlink, para ver si el trafico de un link llega o se queda en el camino. Las dos patas son filas, asi que la comparacion es valida; convertirla a vistas no la haria mas verdadera"
+   },
+   {
+    "archivo": "fuentes-qcart.probar-lector.js",
+    "razon": "probador del lector: cuenta filas por etiqueta de tienda para listar que etiquetas aparecen tras normalizar. Es un censo de valores, no una metrica"
+   },
+   {
+    "archivo": "fuentes-qcart.purgar-no-nuestros.js",
+    "razon": "la purga OPERA sobre filas, asi que el conteo de filas es la cifra correcta de lo que se borra; ademas reporta las vistas al lado, porque quien autoriza una purga tiene que ver cuanto pesa"
+   },
+   {
+    "archivo": "fuentes-qcart.simular-nuevo.js",
+    "razon": "checksum de la bitacora de APPEND, que lleva su cuenta en filas: ya_estaban === carritos.length compara filas contra filas. Convertirlo a vistas romperia la comparacion, no la mejoraria"
+   },
+   {
+    "archivo": "fuentes-qcart.refutar.js",
+    "razon": "cuenta llaves de evento REPETIDAS para probar que el dedupe funciona. Un duplicado es una fila duplicada: las filas son la unidad de la pregunta"
+   },
+   {
+    "archivo": "maggi.calcular-columnas.js",
+    "razon": "censo de valores: cuenta filas por utm_content solo para etiquetar cual utm predomina en un shortlink. El contador d.n ademas esta MUERTO — se asigna y nadie lo lee"
+   },
+   {
+    "archivo": "qcart.utms-por-pieza.js",
+    "razon": "censo de valores: lista que utms aparecen por pieza; ninguna cifra de carritos sale de aqui"
+   },
+   {
+    "archivo": "fuentes-qcart.declarar-exclusion.js",
+    "razon": "la exclusion OPERA sobre filas, asi que el conteo de filas es la cifra de lo que sale; ya reporta las vistas al lado — «N fila(s) = N CARRITO(S)»— porque informa una decision de Rick"
+   },
+   {
+    "archivo": "orquestador.probar-guardian-unidades.js",
+    "razon": "es el probador: PLANTA el patron prohibido como señuelo (S5 escribe g.qcart.carritos++ sobre una copia), asi que tiene que poder contenerlo en su propio codigo"
+   },
+   {
+    "archivo": "fuentes-qcart.purgar-sin-fecha.js",
+    "razon": "cuadre de una PURGA DE FILAS: compara las filas que quedan contra las que el plan dijo que quedarian (carritos.length === res.carritos.queda). Las dos patas son filas, asi que la comparacion es valida; pasarla a vistas la romperia. Lo destapo U4 al dejar de excluir las lineas con console.log, porque esta imprime Y compara."
+   }
+  ]
+ }
+}

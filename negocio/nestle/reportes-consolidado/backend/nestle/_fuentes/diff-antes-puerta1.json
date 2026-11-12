@@ -1,0 +1,33 @@
+{
+ "cuando": "2026-08-20T00:10",
+ "archivo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+ "cambios": [
+  "Data_Email: 3 filas actualizan métricas",
+  "se crean 2 hojas nuevas de Qcart con 3,185 eventos",
+  "Data_WhatsApp: de 6 a 26 filas"
+ ],
+ "peligros": [
+  {
+   "que": "277 celdas escritas a mano en las 4 columnas canónicas de Data_Email",
+   "mitigacion": "la escritura es por CELDA y solo sobre las columnas de métricas; las canónicas ni se abren"
+  }
+ ],
+ "email": {
+  "hoy": 264,
+  "bloque": 264,
+  "cambian": 3,
+  "nuevas": 0,
+  "iguales": 261,
+  "celdas_a_mano": 277
+ },
+ "qcart": {
+  "crea_hojas": true,
+  "eventos": 3185,
+  "data_qcart_intacta": 118
+ },
+ "whatsapp": {
+  "hoy": 6,
+  "bloque": 26,
+  "se_perderian": 0
+ }
+}

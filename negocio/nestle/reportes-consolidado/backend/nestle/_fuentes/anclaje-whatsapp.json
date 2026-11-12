@@ -1,0 +1,63 @@
+{
+ "paso": "D2",
+ "filas": 12,
+ "ancladas": 6,
+ "sin_ancla": [
+  {
+   "fila": 8,
+   "campana": "Mundial",
+   "tp": "Partido 2",
+   "sends": 162,
+   "candidatas": 10,
+   "motivo": "el catálogo tiene 10 piezas WA de Mundial separadas POR SEGMENTO, y este envío salió a TODOS los segmentos juntos: repartirlo sería inventar la atribución"
+  },
+  {
+   "fila": 9,
+   "campana": "Mundial",
+   "tp": "Partido 3",
+   "sends": 162,
+   "candidatas": 10,
+   "motivo": "el catálogo tiene 10 piezas WA de Mundial separadas POR SEGMENTO, y este envío salió a TODOS los segmentos juntos: repartirlo sería inventar la atribución"
+  },
+  {
+   "fila": 10,
+   "campana": "Mundial",
+   "tp": "Semifinal A",
+   "sends": 1981,
+   "candidatas": 10,
+   "motivo": "el catálogo tiene 10 piezas WA de Mundial separadas POR SEGMENTO, y este envío salió a TODOS los segmentos juntos: repartirlo sería inventar la atribución"
+  },
+  {
+   "fila": 11,
+   "campana": "Mundial",
+   "tp": "Semifinal B",
+   "sends": 999,
+   "candidatas": 10,
+   "motivo": "el catálogo tiene 10 piezas WA de Mundial separadas POR SEGMENTO, y este envío salió a TODOS los segmentos juntos: repartirlo sería inventar la atribución"
+  },
+  {
+   "fila": 12,
+   "campana": "Mundial",
+   "tp": "Final",
+   "sends": 1965,
+   "candidatas": 10,
+   "motivo": "el catálogo tiene 10 piezas WA de Mundial separadas POR SEGMENTO, y este envío salió a TODOS los segmentos juntos: repartirlo sería inventar la atribución"
+  },
+  {
+   "fila": 13,
+   "campana": "ICE",
+   "tp": "",
+   "sends": 2000,
+   "candidatas": 0,
+   "motivo": "el catálogo no tiene ninguna pieza de WhatsApp de esa campaña"
+  }
+ ],
+ "consolidadas": [
+  {
+   "campana": "Mundial",
+   "tp": "Final",
+   "sends": 1965
+  }
+ ],
+ "decision_pendiente": "modelo de piezas WA de Mundial: por segmento vs allsegments; y alta de ICE"
+}

@@ -1,0 +1,303 @@
+{
+ "cuando": "2026-09-07T16:53:31.757Z",
+ "volcado": "sfmc-piezas-2026-09-04.txt",
+ "cols": {
+  "Fecha_Primer_Envio": {
+   "llenar": [],
+   "corregir": [],
+   "sin_fuente": [
+    {
+     "id": "004-P011",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P012",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P014",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P015",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P016",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "005-P001",
+     "campana": "Liga MX",
+     "canal": "Email"
+    },
+    {
+     "id": "005-P002",
+     "campana": "Liga MX",
+     "canal": "Email"
+    },
+    {
+     "id": "005-P003",
+     "campana": "Liga MX",
+     "canal": "Email"
+    },
+    {
+     "id": "005-P004",
+     "campana": "Liga MX",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P018",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P019",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P020",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P021",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P022",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P023",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P024",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P025",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P026",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P027",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P028",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P029",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "004-P020",
+     "campana": "Mundial",
+     "canal": "Email"
+    }
+   ],
+   "iguales": 104,
+   "atras": []
+  },
+  "Fecha_Ultimo_Envio": {
+   "llenar": [],
+   "corregir": [],
+   "sin_fuente": [
+    {
+     "id": "002-P021",
+     "campana": "Hotcakes",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "002-P022",
+     "campana": "Hotcakes",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "002-P023",
+     "campana": "Hotcakes",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "002-P024",
+     "campana": "Hotcakes",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "008-P007",
+     "campana": "Tercer Tiempo",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "008-P008",
+     "campana": "Tercer Tiempo",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P010",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P011",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P012",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P013",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P014",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P015",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P016",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P017",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P018",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "004-P019",
+     "campana": "Mundial",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "005-P001",
+     "campana": "Liga MX",
+     "canal": "Email"
+    },
+    {
+     "id": "005-P002",
+     "campana": "Liga MX",
+     "canal": "Email"
+    },
+    {
+     "id": "005-P003",
+     "campana": "Liga MX",
+     "canal": "Email"
+    },
+    {
+     "id": "005-P004",
+     "campana": "Liga MX",
+     "canal": "Email"
+    },
+    {
+     "id": "006-P003",
+     "campana": "The Freshers",
+     "canal": "WhatsApp"
+    },
+    {
+     "id": "009-P018",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P019",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P020",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P021",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P022",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P023",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P024",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P025",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P026",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P027",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P028",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "009-P029",
+     "campana": "Fuel for life",
+     "canal": "Email"
+    },
+    {
+     "id": "004-P020",
+     "campana": "Mundial",
+     "canal": "Email"
+    }
+   ],
+   "iguales": 104,
+   "atras": []
+  }
+ },
+ "mueven_quincena": []
+}

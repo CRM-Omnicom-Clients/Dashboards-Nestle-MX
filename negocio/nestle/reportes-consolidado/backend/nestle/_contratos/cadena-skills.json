@@ -1,0 +1,1685 @@
+{
+ "version": 3,
+ "fuera_de_ciclo": [
+  {
+   "script": "catalogo.probar-gemelas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.probar-indice-nombres.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.probar-mapeo-sfmc.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.probar-mundial-por-segmento.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.prueba-alias.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.prueba-anclas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.prueba-crecer2.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.prueba-uso.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.refutar-variantes.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.refutar.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.simular-n3.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.simular-tasas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "escritor.probar-retiro.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "fuentes-cuadre.refuta-probar-que-cierra.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-cuadre.refutar.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-cuadre.simular-siguiente.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-email.medir-pruebas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-insumos.simular-siguiente.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-manual.refutar.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-manual.simular-primer-dato.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-manual.simular-siguiente.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.probar-filtro.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.probar-guardian-distribucion.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.probar-lector.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.refutar-metricas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.simular-nuevo.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.simular-siguiente.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-whatsapp.simular-nuevo.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-whatsapp.simular-siguiente.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "motor.probar-vara-clicks.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "motor.refutar-clicks.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.probar-columna.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.probar-entorno.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.probar-flexible.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.probar-guardas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.probar-guardian-unidades.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.probar-idempotencia.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.probar-renombre.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.refutar-cadena.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.validar-capacidades.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "ADVERSARIAL",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.catalogo-limpieza.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.codigos-maestro.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.medir-contra-sfmc.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.medir-fechas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.medir-qcart-huecos.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.medir-quincenas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "escritor.cierre.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "escritor.restaurar.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "escritor.retirar.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "fuentes-qcart.revalidar-grano.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "lib-hoja-xml.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "maggi.ajustar-filas-nuevas.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "maggi.copiar-del-reporte.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "motor.medir-brecha-clicks.js",
+   "skill": "crm-reporte-motor",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "motor.medir-cobertura-filas.js",
+   "skill": "crm-reporte-motor",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "motor.medir-links-huerfanos.js",
+   "skill": "crm-reporte-motor",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.censo-scripts.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.columnas-perdidas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.e2e.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.inventario-hojas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.medir-divergencia.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.medir-duplicacion.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.reconciliar.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.retiro.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.revalidar-todo.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.trazabilidad.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "resumen.censo-estilos.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "resumen.restaurar-estilos.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "HERRAMIENTA",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "escritor.escribir-todo.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "ESCRITOR",
+   "escribe_excel": true,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.alta-piezas-declaradas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.auditar-ligamx.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.barrer-por-definir.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.buscar-piezas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.cerrar-por-definir.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.cerrar-qcart.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.columnas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.contrato-consumo.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.corregir-celdas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.corregir-fechas-envio.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.corregir-referencias.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.diff-sends.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.esquema-llave-whatsapp.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.estado-maggi.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.informe-por-definir.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.limpiar-notas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.limpiar-sends-duplicados.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.limpiar-variantes-usurpadas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.llenar-desde-sfmc.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.mirar-notas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.nombrar-whatsapp.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.piezas-gemelas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.plegar-mundial.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.que-puedo-cerrar.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.realinear-codigos-qcart.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.registrar-whatsapp-name.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.retirar-clones.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.retirar-columnas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.retirar-ep-ligamx.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.retirar-gemelas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.retirar-mundial-por-segmento.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "catalogo.sincronizar-ids.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.ver-nombres-ambiguos.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "escritor.desempatar-envio-wa.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "escritor.retirar-hojas.js",
+   "skill": "crm-reporte-escritor",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "fuentes-email.copia-de-local.js",
+   "skill": "crm-reporte-fuentes-email",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-email.reconstruir-data-email.js",
+   "skill": "crm-reporte-fuentes-email",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "fuentes-insumos.agregar-pieza-sfmc.js",
+   "skill": "crm-reporte-fuentes-insumos",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-insumos.deriva-sfmc.js",
+   "skill": "crm-reporte-fuentes-insumos",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-insumos.refrescar-metricas.js",
+   "skill": "crm-reporte-fuentes-insumos",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.alinear-doc-piezas.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.auditar-pauta.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.auditar-shortlinks.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.declarar-exclusion.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.doc-sobre-piezas.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.medida-externa.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.purgar-no-nuestros.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.purgar-sin-fecha.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.reanclar-huerfanos.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-qcart.rebasar-distribucion.js",
+   "skill": "crm-reporte-fuentes-qcart",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-whatsapp.auditar-entregas.js",
+   "skill": "crm-reporte-fuentes-whatsapp",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-whatsapp.auditar-metricas.js",
+   "skill": "crm-reporte-fuentes-whatsapp",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-whatsapp.ver-conciliacion.js",
+   "skill": "crm-reporte-fuentes-whatsapp",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "fuentes-whatsapp.ver-hoja-cruda.js",
+   "skill": "crm-reporte-fuentes-whatsapp",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "motor.auditar-destinos.js",
+   "skill": "crm-reporte-motor",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "motor.clicks-desde-plataforma.js",
+   "skill": "crm-reporte-motor",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.anclar-al-catalogo.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.declarar-escrituras.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.diff-explicado.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.foto-hojas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.guardian-hojas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.guardian-no-perdida.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.huella-formato.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.instalar.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.linea-base.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.lista-por-definir.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.llevar-a-carpeta.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.manifiestos.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.mapa-carpeta.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.mapa-final.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.migrar-a-dirname.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.migrar-a-entorno.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.migrar-herramientas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.publicar.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.que-cambio-rick.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.que-viaja.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.quitar-usuario-hardcodeado.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.reducir.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.resumen.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.sanear-fundacion.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.validar-reglas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.verificar-estado-docs.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "paid.crear-catalogo-plantilla.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "resumen.agregar-columna.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "resumen.comparar-formato.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "resumen.mover-columnas.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "resumen.piezas-por-quincena.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "resumen.quincena-principal-fup.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "resumen.rastrear-pieza.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "resumen.reordenar-encabezados.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "resumen.ver-encabezados.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "resumen.ver-whatsapp.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "resumen.verificar-clicks.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "resumen.verificar-unsub.js",
+   "skill": "crm-reporte-resumen",
+   "papel": "FUERA-DE-CICLO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "orquestador.reporte.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "RETIRADO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "catalogo.fusionar-fantasmas.js",
+   "skill": "crm-reporte-nestle-catalogo",
+   "papel": "VIVO",
+   "escribe_excel": true,
+   "vigilar": true
+  },
+  {
+   "script": "fuentes-email.refrescar-volcado.js",
+   "skill": "crm-reporte-fuentes-email",
+   "papel": "VIVO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "maggi.valores-de-rick.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "VIVO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.cadena-skills.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "VIVO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.declarar-en-skills.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "VIVO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.guardas.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "VIVO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.mapa-skills.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "VIVO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.orquestador.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "VIVO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "orquestador.renombrar-skills.js",
+   "skill": "crm-reporte-orquestador",
+   "papel": "VIVO",
+   "escribe_excel": false,
+   "vigilar": false
+  },
+  {
+   "script": "resumen.asegurar-columnas.js",
+   "skill": "crm-reporte-nestle-insights",
+   "papel": "VIVO",
+   "escribe_excel": true,
+   "vigilar": true
+  }
+ ],
+ "nota_fuera_de_ciclo": "Tienen skill y papel declarados, pero NO turno en el corte. Declarar no es ejecutar.",
+ "que_es": "La cadena de SKILLS. El skill es la unidad; el script vive dentro de una etapa de un skill.",
+ "regla": "La el sistema plano anterior no se vuelve a usar (Rick, 25-ago-2026). Un paso solo se corre desde su skill.",
+ "derivado_de": "el array SCRIPTS de orquestador.orquestador.js — el orden que de verdad se ejecuta",
+ "dirige": "crm-reporte-orquestador",
+ "skills": [
+  {
+   "id": "crm-reporte-escritor",
+   "dirige": false,
+   "etapas": [
+    1,
+    10,
+    14,
+    16
+   ],
+   "scripts": 5,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-fuentes-cuadre",
+   "dirige": false,
+   "etapas": [
+    9,
+    17
+   ],
+   "scripts": 3,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-fuentes-email",
+   "dirige": false,
+   "etapas": [
+    5
+   ],
+   "scripts": 1,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-fuentes-insumos",
+   "dirige": false,
+   "etapas": [
+    2
+   ],
+   "scripts": 1,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-fuentes-manual",
+   "dirige": false,
+   "etapas": [
+    8
+   ],
+   "scripts": 1,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-fuentes-qcart",
+   "dirige": false,
+   "etapas": [
+    3,
+    6
+   ],
+   "scripts": 2,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-fuentes-whatsapp",
+   "dirige": false,
+   "etapas": [
+    7
+   ],
+   "scripts": 1,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-motor",
+   "dirige": false,
+   "etapas": [
+    11
+   ],
+   "scripts": 3,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-nestle-catalogo",
+   "dirige": false,
+   "etapas": [
+    4
+   ],
+   "scripts": 2,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-nestle-insights",
+   "dirige": false,
+   "etapas": [
+    13
+   ],
+   "scripts": 1,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-orquestador",
+   "dirige": false,
+   "etapas": [
+    15
+   ],
+   "scripts": 1,
+   "tiene_skill_md": true
+  },
+  {
+   "id": "crm-reporte-resumen",
+   "dirige": false,
+   "etapas": [
+    12
+   ],
+   "scripts": 2,
+   "tiene_skill_md": true
+  }
+ ],
+ "etapas": [
+  {
+   "orden": 1,
+   "skill": "crm-reporte-escritor",
+   "scripts": [
+    {
+     "id": "escritor-neutralizar",
+     "nombre": "neutralizar fórmulas muertas",
+     "script": "escritor.neutralizar-muertas.js",
+     "escribe": true,
+     "salida": "_neutro.xlsx",
+     "suites": [],
+     "razon": "neutraliza fórmulas muertas ANTES de escribir — es parte de la doctrina de escritura",
+     "etiqueta": "escritor/escritor-neutralizar"
+    }
+   ]
+  },
+  {
+   "orden": 2,
+   "skill": "crm-reporte-fuentes-insumos",
+   "scripts": [
+    {
+     "id": "insumos-validar",
+     "nombre": "insumos",
+     "script": "fuentes-insumos.insumos.js",
+     "suites": [
+      "fuentes-insumos.validar.js",
+      "fuentes-insumos.cruce-sfmc.js"
+     ],
+     "razon": "valida las descargas antes de que nada las consuma",
+     "etiqueta": "fuentes-insumos/insumos-validar"
+    }
+   ]
+  },
+  {
+   "orden": 3,
+   "skill": "crm-reporte-fuentes-qcart",
+   "scripts": [
+    {
+     "id": "qcart-activacion",
+     "nombre": "activación de Qcart",
+     "script": "fuentes-qcart.activacion-qcart.js",
+     "suites": [],
+     "razon": "la activación de un link de Qcart es un hecho de Qcart",
+     "etiqueta": "fuentes-qcart/qcart-activacion"
+    }
+   ]
+  },
+  {
+   "orden": 4,
+   "skill": "crm-reporte-nestle-catalogo",
+   "scripts": [
+    {
+     "id": "catalogo-leer",
+     "nombre": "leer correcciones del catálogo",
+     "script": "catalogo.leer-correcciones.js",
+     "opcional": true,
+     "suites": [],
+     "razon": "lee las correcciones declaradas para el catálogo",
+     "etiqueta": "nestle-catalogo/catalogo-leer"
+    },
+    {
+     "id": "catalogo-aplicar",
+     "nombre": "aplicar correcciones al catálogo",
+     "script": "catalogo.corregir-catalogo.js",
+     "escribe": true,
+     "salida": "_cat1f.xlsx",
+     "opcional": true,
+     "suites": [],
+     "razon": "las aplica — el catálogo es la autoridad de dimensiones",
+     "etiqueta": "nestle-catalogo/catalogo-aplicar"
+    }
+   ]
+  },
+  {
+   "orden": 5,
+   "skill": "crm-reporte-fuentes-email",
+   "scripts": [
+    {
+     "id": "email-bloque",
+     "nombre": "bloque email (SFMC)",
+     "script": "fuentes-email.email-piezas.js",
+     "flagEscribir": true,
+     "suites": [
+      "fuentes-email.validar.js"
+     ],
+     "razon": "arma el bloque de email desde SFMC",
+     "etiqueta": "fuentes-email/email-bloque"
+    }
+   ]
+  },
+  {
+   "orden": 6,
+   "skill": "crm-reporte-fuentes-qcart",
+   "scripts": [
+    {
+     "id": "qcart-bloque",
+     "nombre": "bloque qcart",
+     "script": "fuentes-qcart.qcart.js",
+     "suites": [
+      "fuentes-qcart.validar.js",
+      "fuentes-qcart.refutar.js"
+     ],
+     "razon": "arma carritos y productos",
+     "etiqueta": "fuentes-qcart/qcart-bloque"
+    }
+   ]
+  },
+  {
+   "orden": 7,
+   "skill": "crm-reporte-fuentes-whatsapp",
+   "scripts": [
+    {
+     "id": "whatsapp-bloque",
+     "nombre": "bloque whatsapp",
+     "script": "fuentes-whatsapp.whatsapp.js",
+     "suites": [
+      "fuentes-whatsapp.validar.js",
+      "fuentes-whatsapp.refutar.js"
+     ],
+     "razon": "arma el bloque de WhatsApp y lo ancla al catálogo",
+     "etiqueta": "fuentes-whatsapp/whatsapp-bloque"
+    }
+   ]
+  },
+  {
+   "orden": 8,
+   "skill": "crm-reporte-fuentes-manual",
+   "scripts": [
+    {
+     "id": "manual-bloque",
+     "nombre": "bloque manual",
+     "script": "fuentes-manual.manual.js",
+     "suites": [
+      "fuentes-manual.validar.js"
+     ],
+     "razon": "el bloque manual — vacío es su estado normal",
+     "etiqueta": "fuentes-manual/manual-bloque"
+    }
+   ]
+  },
+  {
+   "orden": 9,
+   "skill": "crm-reporte-fuentes-cuadre",
+   "scripts": [
+    {
+     "id": "PUERTA-1",
+     "nombre": "PUERTA 1 · cuadre de los bloques",
+     "script": "fuentes-cuadre.cuadre.js",
+     "puerta": true,
+     "suites": [],
+     "razon": "PUERTA 1 · cruza los cuatro bloques entre ellos y contra el catálogo",
+     "etiqueta": "fuentes-cuadre/PUERTA-1"
+    }
+   ]
+  },
+  {
+   "orden": 10,
+   "skill": "crm-reporte-escritor",
+   "scripts": [
+    {
+     "id": "escritor-datos",
+     "nombre": "escritura de datos",
+     "script": "escritor.escribir.js",
+     "escribe": true,
+     "salida": "_n4.xlsx",
+     "suites": [
+      "escritor.validar-contrato.js",
+      "escritor.canonicos-coinciden.js"
+     ],
+     "razon": "el escritor que obedece los contratos de las fuentes",
+     "etiqueta": "escritor/escritor-datos"
+    },
+    {
+     "id": "escritor-formato-datos",
+     "nombre": "formato de las hojas",
+     "script": "escritor.formato.js",
+     "escribe": true,
+     "soloConEscritura": true,
+     "salida": "_fmt.xlsx",
+     "sinFlag": true,
+     "suites": [],
+     "razon": "anchos y encabezado congelado de las hojas de datos",
+     "etiqueta": "escritor/escritor-formato-datos"
+    }
+   ]
+  },
+  {
+   "orden": 11,
+   "skill": "crm-reporte-motor",
+   "scripts": [
+    {
+     "id": "motor-clicks",
+     "nombre": "clicks por destino",
+     "script": "motor.links.js",
+     "suites": [],
+     "razon": "clicks por destino — insumo del cálculo",
+     "etiqueta": "motor/motor-clicks"
+    },
+    {
+     "id": "motor-calculo",
+     "nombre": "motor de cálculo",
+     "script": "motor.motor.js",
+     "suites": [
+      "motor.validar.js",
+      "fuentes-qcart.guardian-distribucion.js"
+     ],
+     "razon": "el motor de cálculo: tasas y agregados",
+     "etiqueta": "motor/motor-calculo"
+    },
+    {
+     "id": "motor-rejilla",
+     "nombre": "links a la rejilla",
+     "script": "motor.links-a-rejilla.js",
+     "suites": [],
+     "razon": "lleva los links a la rejilla",
+     "etiqueta": "motor/motor-rejilla"
+    }
+   ]
+  },
+  {
+   "orden": 12,
+   "skill": "crm-reporte-resumen",
+   "scripts": [
+    {
+     "id": "resumen-fusionar",
+     "nombre": "fusionar Principal y FUP",
+     "script": "resumen.fusionar-fup.js",
+     "flagEscribir": true,
+     "suites": [],
+     "razon": "fusiona Principal y FUP en una fila",
+     "etiqueta": "resumen/resumen-fusionar"
+    },
+    {
+     "id": "resumen-regenerar",
+     "nombre": "reporte Resumen (regenera)",
+     "script": "resumen.regenerar.js",
+     "escribe": true,
+     "salida": "_n6r.xlsx",
+     "suites": [
+      "resumen.validar.js"
+     ],
+     "razon": "regenera Report_Resumen desde la rejilla",
+     "etiqueta": "resumen/resumen-regenerar"
+    }
+   ]
+  },
+  {
+   "orden": 13,
+   "skill": "crm-reporte-nestle-insights",
+   "scripts": [
+    {
+     "id": "insights-redactar",
+     "nombre": "insights",
+     "script": "insights.insights.js",
+     "escribe": true,
+     "salida": "_n6b.xlsx",
+     "suites": [],
+     "razon": "redacta la columna de insights",
+     "etiqueta": "nestle-insights/insights-redactar"
+    }
+   ]
+  },
+  {
+   "orden": 14,
+   "skill": "crm-reporte-escritor",
+   "scripts": [
+    {
+     "id": "escritor-formato-resumen",
+     "nombre": "formato del Resumen",
+     "script": "escritor.formato.js",
+     "escribe": true,
+     "soloConEscritura": true,
+     "salida": "_fmt.xlsx",
+     "sinFlag": true,
+     "args": "--hoja Report_Resumen",
+     "suites": [],
+     "razon": "el mismo formateador, sobre el Resumen ya construido",
+     "etiqueta": "escritor/escritor-formato-resumen"
+    }
+   ]
+  },
+  {
+   "orden": 15,
+   "skill": "crm-reporte-orquestador",
+   "scripts": [
+    {
+     "id": "vacios-medir",
+     "nombre": "medir las celdas vacías (no escribe)",
+     "script": "orquestador.medir-vacios.js",
+     "sinFlag": true,
+     "suites": [],
+     "razon": "mide TODAS las celdas vacías y las clasifica con las reglas de cada skill. No escribe",
+     "etiqueta": "orquestador/vacios-medir"
+    }
+   ]
+  },
+  {
+   "orden": 16,
+   "skill": "crm-reporte-escritor",
+   "scripts": [
+    {
+     "id": "vacios-llenar",
+     "nombre": "llenar vacías: N/A · cero · POR DEFINIR",
+     "script": "escritor.aplicar-vacios.js",
+     "escribe": true,
+     "soloConEscritura": true,
+     "suites": [],
+     "razon": "transcribe la tabla ya decidida: N/A con su razón, cero donde el cero es dato, POR DEFINIR a la lista de Rick",
+     "etiqueta": "escritor/vacios-llenar"
+    }
+   ]
+  },
+  {
+   "orden": 17,
+   "skill": "crm-reporte-fuentes-cuadre",
+   "scripts": [
+    {
+     "id": "cuadre-coherencia",
+     "nombre": "coherencia entre hojas (no repara, reporta)",
+     "script": "fuentes-cuadre.normalizador.js",
+     "avisa": true,
+     "suites": [],
+     "razon": "el tercer cruce: coherencia entre hojas del libro ya escrito. Avisa y NO repara — varias filas las escribió Rick a mano",
+     "etiqueta": "fuentes-cuadre/cuadre-coherencia"
+    },
+    {
+     "id": "PUERTA-2",
+     "nombre": "PUERTA 2 · el reporte contra la rejilla",
+     "script": "fuentes-cuadre.puerta2.js",
+     "puerta": true,
+     "suites": [
+      "fuentes-cuadre.probar-que-cierra.js",
+      "orquestador.guardian-unidades.js",
+      "orquestador.guardian-hojas-vs-bloques.js"
+     ],
+     "razon": "PUERTA 2 · el reporte contra la rejilla. Las dos puertas, un solo dueño: quien decide si se puede escribir decide también si lo escrito dice la verdad",
+     "etiqueta": "fuentes-cuadre/PUERTA-2"
+    }
+   ]
+  }
+ ]
+}

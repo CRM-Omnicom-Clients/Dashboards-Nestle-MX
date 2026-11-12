@@ -1,0 +1,144 @@
+{
+ "paso": "S5",
+ "principio": "ningún paso borra por su cuenta; ante la duda se conserva",
+ "renombradas": 40,
+ "relevadas": 57,
+ "perdidas": [
+  {
+   "hoja": "Report_Resumen",
+   "col": "Tasa_Productos_a_Carritos",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__2026-08-20_antes-ciclo-completo.xlsx",
+   "cuando": "2026-08-20T11:58:12.167Z",
+   "conDato": 9,
+   "filas": 70
+  },
+  {
+   "hoja": "Report_Resumen",
+   "col": "Views_vs_Clicks_%",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__2026-08-20_antes-ciclo-completo.xlsx",
+   "cuando": "2026-08-20T11:58:12.167Z",
+   "conDato": 9,
+   "filas": 70
+  },
+  {
+   "hoja": "Report_Resumen",
+   "col": "Carritos_vs_Clicks_%",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__2026-08-20_antes-ciclo-completo.xlsx",
+   "cuando": "2026-08-20T11:58:12.167Z",
+   "conDato": 9,
+   "filas": 70
+  },
+  {
+   "hoja": "Report_Resumen",
+   "col": "P_Subject",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__2026-08-20_antes-ciclo-completo.xlsx",
+   "cuando": "2026-08-20T11:58:12.167Z",
+   "conDato": 48,
+   "filas": 70
+  },
+  {
+   "hoja": "Report_Resumen",
+   "col": "Fecha_Desde",
+   "backup": "v8_antes-fix-autocierre.xlsx",
+   "cuando": "2026-08-14T00:20:55.673Z",
+   "conDato": 64,
+   "filas": 68
+  },
+  {
+   "hoja": "Report_Resumen",
+   "col": "Fecha_Hasta",
+   "backup": "PROD_pre-lim.xlsx",
+   "cuando": "2026-08-14T00:33:56.409Z",
+   "conDato": 64,
+   "filas": 68
+  },
+  {
+   "hoja": "Catalogo_Piezas",
+   "col": "Nombre_Pieza",
+   "backup": "v8_antes-P6_1787000820034.xlsx",
+   "cuando": "2026-08-17T19:03:53.565Z",
+   "conDato": 92,
+   "filas": 92
+  },
+  {
+   "hoja": "Catalogo_Piezas",
+   "col": "Nombre_Pieza_Raw",
+   "backup": "v8_antes-P6_1787000820034.xlsx",
+   "cuando": "2026-08-17T19:03:53.565Z",
+   "conDato": 92,
+   "filas": 92
+  },
+  {
+   "hoja": "Catalogo_Piezas",
+   "col": "Receta_5",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8 - Copy200826.xlsx",
+   "cuando": "2026-08-20T17:57:21.000Z",
+   "conDato": 0,
+   "filas": 96
+  },
+  {
+   "hoja": "Catalogo_Piezas",
+   "col": "URL_Receta_5",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8 - Copy200826.xlsx",
+   "cuando": "2026-08-20T17:57:21.000Z",
+   "conDato": 0,
+   "filas": 96
+  },
+  {
+   "hoja": "Catalogo_Piezas",
+   "col": "Cod_Walmart_5",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8 - Copy200826.xlsx",
+   "cuando": "2026-08-20T17:57:21.000Z",
+   "conDato": 0,
+   "filas": 96
+  },
+  {
+   "hoja": "Catalogo_Piezas",
+   "col": "Carritos_Walmart_5",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8 - Copy200826.xlsx",
+   "cuando": "2026-08-20T17:57:21.000Z",
+   "conDato": 0,
+   "filas": 96
+  },
+  {
+   "hoja": "Catalogo_Piezas",
+   "col": "Cod_Chedraui_5",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8 - Copy200826.xlsx",
+   "cuando": "2026-08-20T17:57:21.000Z",
+   "conDato": 0,
+   "filas": 96
+  },
+  {
+   "hoja": "Catalogo_Piezas",
+   "col": "Carritos_Chedraui_5",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8 - Copy200826.xlsx",
+   "cuando": "2026-08-20T17:57:21.000Z",
+   "conDato": 0,
+   "filas": 96
+  },
+  {
+   "hoja": "Report_Resumen",
+   "col": "Unsubs_Total",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-unificar-segmentos-21ago.xlsx",
+   "cuando": "2026-08-21T21:07:00.636Z",
+   "conDato": 0,
+   "filas": 87
+  },
+  {
+   "hoja": "Report_Resumen",
+   "col": "% Unsuscribe",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-etapa8-alias-v2.xlsx",
+   "cuando": "2026-08-24T23:27:00.569Z",
+   "conDato": 0,
+   "filas": 77
+  },
+  {
+   "hoja": "Report_Resumen",
+   "col": "Canal",
+   "backup": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-etapa8-alias-v2.xlsx",
+   "cuando": "2026-08-24T23:27:00.569Z",
+   "conDato": 76,
+   "filas": 77
+  }
+ ]
+}

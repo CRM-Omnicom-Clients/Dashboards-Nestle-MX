@@ -1,0 +1,270 @@
+{
+ "paso": "fuentes-qcart.auditar-pauta",
+ "regla": "un bloque MES×campaña×touchpoint×segmento del doc = UNA pieza Principal",
+ "hojas": [
+  {
+   "hoja": "Marzo",
+   "leida": true,
+   "fila_encabezado": 8,
+   "filas": 6,
+   "codigos_de_url": 0,
+   "columnas": [
+    "campana",
+    "touchpoint",
+    "segmento",
+    "fecha",
+    "receta",
+    "codigo",
+    "url"
+   ]
+  },
+  {
+   "hoja": "Abril",
+   "leida": true,
+   "fila_encabezado": 8,
+   "filas": 9,
+   "codigos_de_url": 0,
+   "columnas": [
+    "campana",
+    "touchpoint",
+    "segmento",
+    "fecha",
+    "receta",
+    "codigo",
+    "url"
+   ]
+  },
+  {
+   "hoja": "Mayo",
+   "leida": true,
+   "fila_encabezado": 8,
+   "filas": 4,
+   "codigos_de_url": 4,
+   "columnas": [
+    "campana",
+    "touchpoint",
+    "segmento",
+    "fecha",
+    "receta",
+    "retailer",
+    "url"
+   ]
+  },
+  {
+   "hoja": "Junio",
+   "leida": true,
+   "fila_encabezado": 4,
+   "filas": 15,
+   "codigos_de_url": 0,
+   "columnas": [
+    "campana",
+    "touchpoint",
+    "segmento",
+    "fecha",
+    "receta",
+    "retailer",
+    "codigo",
+    "url"
+   ]
+  },
+  {
+   "hoja": "Julio",
+   "leida": true,
+   "fila_encabezado": 4,
+   "filas": 14,
+   "codigos_de_url": 0,
+   "columnas": [
+    "campana",
+    "touchpoint",
+    "segmento",
+    "fecha",
+    "receta",
+    "retailer",
+    "codigo",
+    "url"
+   ]
+  },
+  {
+   "hoja": "Agosto",
+   "leida": true,
+   "fila_encabezado": 4,
+   "filas": 12,
+   "codigos_de_url": 0,
+   "columnas": [
+    "campana",
+    "touchpoint",
+    "segmento",
+    "fecha",
+    "receta",
+    "retailer",
+    "codigo",
+    "url"
+   ]
+  }
+ ],
+ "bloques": 38,
+ "con_una_pieza": 31,
+ "sin_pieza": [
+  {
+   "llave": "Agosto ¦ Maggi-LigaMx-agosto26 ¦ (sin touchpoint) ¦ (sin segmento)",
+   "mes": "Agosto",
+   "campana": "Maggi-LigaMx-agosto26",
+   "touchpoint": "(sin touchpoint)",
+   "segmento": "(sin segmento)",
+   "fecha_envio": "46262",
+   "codigos": [
+    "t2Xsff9R",
+    "p6BjfLqz",
+    "vfzb8qQ6",
+    "heWpZFIA"
+   ],
+   "recetas": [
+    "Brochetas de Pollo con Salsa de Piña",
+    "Cebollitas Maggi®",
+    "MAGGI® Shots / Chipocludo Shot",
+    "MAGGI Cóctel"
+   ]
+  },
+  {
+   "llave": "Julio ¦ maggi-julio26 ¦ e-bebida5 ¦ bebidas",
+   "mes": "Julio",
+   "campana": "maggi-julio26",
+   "touchpoint": "e-bebida5",
+   "segmento": "bebidas",
+   "fecha_envio": "No salió",
+   "codigos": [
+    "P8IcwfWJ"
+   ],
+   "recetas": [
+    "Camaronera"
+   ]
+  },
+  {
+   "llave": "Julio ¦ maggi-julio26 ¦ e-botanas5 ¦ botanas",
+   "mes": "Julio",
+   "campana": "maggi-julio26",
+   "touchpoint": "e-botanas5",
+   "segmento": "botanas",
+   "fecha_envio": "No salió",
+   "codigos": [
+    "znjG7J6r"
+   ],
+   "recetas": [
+    "Botana fresca"
+   ]
+  },
+  {
+   "llave": "Julio ¦ maggi-julio26 ¦ e-cooking5 ¦ new-cooking",
+   "mes": "Julio",
+   "campana": "maggi-julio26",
+   "touchpoint": "e-cooking5",
+   "segmento": "new-cooking",
+   "fecha_envio": "No salió",
+   "codigos": [
+    "5NnTxarc"
+   ],
+   "recetas": [
+    "Gomipapas"
+   ]
+  },
+  {
+   "llave": "Junio ¦ maggi-junio26 ¦ e-cooking-alitas ¦ new-cooking",
+   "mes": "Junio",
+   "campana": "maggi-junio26",
+   "touchpoint": "e-cooking-alitas",
+   "segmento": "new-cooking",
+   "fecha_envio": "Envío Federación",
+   "codigos": [
+    "LJQsq5T9"
+   ],
+   "recetas": [
+    "Alitas agridulces"
+   ]
+  }
+ ],
+ "repartidos": [
+  {
+   "bloque": "Agosto ¦ Maggi-LigaMx-agosto26 ¦ e-j5 ¦ conregion",
+   "piezas": [
+    "005-P002",
+    "005-P008"
+   ]
+  },
+  {
+   "bloque": "Agosto ¦ Maggi-LigaMx-agosto26 ¦ e-j5 ¦ sinregion",
+   "piezas": [
+    "005-P002",
+    "005-P007"
+   ]
+  }
+ ],
+ "en_fup": [],
+ "codigos_fuera_del_doc": {
+  "004-P001": [
+   "Y8umAAnA"
+  ],
+  "004-P002": [
+   "cCFb2xEx"
+  ],
+  "004-P003": [
+   "w5r9LWOP"
+  ],
+  "004-P004": [
+   "PENDIENTE",
+   "PENDIENTE"
+  ],
+  "004-P005": [
+   "PENDIENTE"
+  ],
+  "004-P006": [
+   "PENDIENTE",
+   "vk67sh2J"
+  ],
+  "004-P007": [
+   "PENDIENTE",
+   "YJOatjQs"
+  ],
+  "004-P008": [
+   "PENDIENTE",
+   "xka2NWrW"
+  ],
+  "004-P017": [
+   "PENDIENTE",
+   "PENDIENTE"
+  ],
+  "004-P018": [
+   "PENDIENTE",
+   "PENDIENTE"
+  ],
+  "004-P019": [
+   "PENDIENTE",
+   "PENDIENTE",
+   "PENDIENTE"
+  ],
+  "005-P001": [
+   "PENDIENTE",
+   "PENDIENTE",
+   "PENDIENTE",
+   "PENDIENTE"
+  ],
+  "003-P001": [
+   "PDy0MeF9",
+   "r0J2KBES"
+  ],
+  "001-P021": [
+   "GblUR93I",
+   "fDAdN8Qa"
+  ],
+  "005-P003": [
+   "dwIwoYUs",
+   "piPZpvXp",
+   "CVCPHfND"
+  ],
+  "005-P004": [
+   "Z9JrTGrX",
+   "oV564aAb",
+   "TjDcVdNI",
+   "bgsOdlLo"
+  ]
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "nodo": "orquestador.medir-divergencia",
+ "medido": "etapa 7",
+ "que_es": "Copias del mismo idioma que YA NO dicen lo mismo. Una copia que diverge dejó de ser una copia: es una segunda regla, sin dueño y sin declarar.",
+ "total_divergentes": 13,
+ "divergentes_en_el_corte": 4,
+ "regla": "No se consolida a ciegas: sustituir todas por la canónica CAMBIARÍA el comportamiento de las divergentes. Se decide con la evidencia delante.",
+ "idiomas": {
+  "mil": {
+   "variantes": 4,
+   "canonica": {
+    "cuerpo": "function mil(n) { return Number(n || 0).toLocaleString('es-MX'); }",
+    "copias": 25,
+    "en_corte": 19
+   },
+   "divergentes": [
+    {
+     "cuerpo": "function mil(n) { return Number(n).toLocaleString('es-MX'); }",
+     "copias": 5,
+     "en_corte": 3,
+     "archivos": [
+      "fuentes-qcart.qcart.js",
+      "fuentes-qcart.refutar.js",
+      "fuentes-qcart.simular-nuevo.js",
+      "fuentes-qcart.simular-siguiente.js",
+      "fuentes-qcart.validar.js"
+     ]
+    },
+    {
+     "cuerpo": "function mil(n) { return n.toLocaleString('es-MX'); }",
+     "copias": 1,
+     "en_corte": 0,
+     "archivos": [
+      "fuentes-qcart.probar-filtro.js"
+     ]
+    },
+    {
+     "cuerpo": "function mil(n) { return Number(Math.round(n || 0)).toLocaleString('es-MX'); }",
+     "copias": 1,
+     "en_corte": 1,
+     "archivos": [
+      "insights.insights.js"
+     ]
+    }
+   ]
+  },
+  "num": {
+   "variantes": 1,
+   "canonica": {
+    "cuerpo": "function num(v) { var n = Number(t(v).replace(/[, ]/g, '')); return isFinite(n) ? n : null; }",
+    "copias": 2,
+    "en_corte": 2
+   },
+   "divergentes": []
+  },
+  "t (trim)": {
+   "variantes": 2,
+   "canonica": {
+    "cuerpo": "var t = function (v) { return String(v == null ? '' : v).trim(); };",
+    "copias": 53,
+    "en_corte": 22
+   },
+   "divergentes": [
+    {
+     "cuerpo": "var t = function (v) { return v === null || v === undefined ? '' : String(v); };",
+     "copias": 2,
+     "en_corte": 0,
+     "archivos": [
+      "escritor.cierre.js",
+      "escritor.restaurar.js"
+     ]
+    }
+   ]
+  },
+  "letra/col": {
+   "variantes": 3,
+   "canonica": {
+    "cuerpo": "function col(n) { var s = ''; n++; while (n > 0) { var m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = (n - m - 1) / 26; }",
+    "copias": 6,
+    "en_corte": 5
+   },
+   "divergentes": [
+    {
+     "cuerpo": "function letraDeNum(n) { var s = ''; while (n > 0) { var m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = (n - m - 1) / 26; }",
+     "copias": 3,
+     "en_corte": 0,
+     "archivos": [
+      "catalogo.fusionar-fantasmas.js",
+      "escritor.retirar.js",
+      "resumen.agregar-columna.js"
+     ]
+    },
+    {
+     "cuerpo": "function col(n) { return COLS.indexOf(n); }",
+     "copias": 1,
+     "en_corte": 0,
+     "archivos": [
+      "N2a-96-simular-nuevo.js"
+     ]
+    }
+   ]
+  }
+ }
+}

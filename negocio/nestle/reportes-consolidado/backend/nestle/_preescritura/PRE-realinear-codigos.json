@@ -1,0 +1,71 @@
+{
+ "paso": "catalogo.realinear-codigos-qcart",
+ "cuando": "2026-08-27",
+ "regla": "los códigos de una pieza son exactamente los de sus bloques del doc",
+ "cambios": [
+  {
+   "pieza": "004-P004",
+   "hoy": [
+    "3QfdZN2Q",
+    "SN2YWvgo",
+    "3NIh2kYW",
+    "ZJ3SmPMy",
+    "wdvsBDby"
+   ],
+   "salen": [
+    "3NIh2kYW",
+    "ZJ3SmPMy",
+    "wdvsBDby"
+   ],
+   "queda": [
+    "3QfdZN2Q",
+    "SN2YWvgo"
+   ],
+   "recetas": [
+    {
+     "codigo": "3QfdZN2Q",
+     "receta": "Gomichela",
+     "chedraui": false
+    },
+    {
+     "codigo": "SN2YWvgo",
+     "receta": "Gomichela",
+     "chedraui": true
+    }
+   ]
+  },
+  {
+   "pieza": "004-P020",
+   "hoy": [],
+   "salen": [],
+   "queda": [
+    "LJQsq5T9",
+    "3NIh2kYW",
+    "ZJ3SmPMy",
+    "wdvsBDby"
+   ],
+   "recetas": [
+    {
+     "codigo": "LJQsq5T9",
+     "receta": "Alitas agridulces",
+     "chedraui": false
+    },
+    {
+     "codigo": "3NIh2kYW",
+     "receta": "Alitas Agridulces",
+     "chedraui": true
+    },
+    {
+     "codigo": "ZJ3SmPMy",
+     "receta": "Hambuguesa Perfecta",
+     "chedraui": false
+    },
+    {
+     "codigo": "wdvsBDby",
+     "receta": "Hambuguesa Perfecta",
+     "chedraui": true
+    }
+   ]
+  }
+ ]
+}

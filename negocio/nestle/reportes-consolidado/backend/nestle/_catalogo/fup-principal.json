@@ -1,0 +1,350 @@
+{
+ "paso": "E1.6",
+ "fecha": "2026-08-24",
+ "que_es": "La foranea FUP -> Principal, declarada pieza por pieza.",
+ "regla": "El Principal de la MISMA campana, touchpoint y segmento cuya fecha sea la mas cercana ANTERIOR al FUP.",
+ "por_que": "Deducirlo de las dimensiones falla: el FUP sale en otra quincena (9 de 31) y las oleadas colisionan.",
+ "emparejamientos": [
+  {
+   "fup": "001-P002",
+   "principal": "001-P001",
+   "dim": "AON|E-P4|Career Focused",
+   "via": "el Principal más cercano ANTERIOR (2 candidatos)",
+   "fecha_fup": "2026-03-20",
+   "fecha_principal": "2026-03-19",
+   "quincena_fup": "2026-03-Q2",
+   "quincena_principal": "2026-03-Q2"
+  },
+  {
+   "fup": "001-P004",
+   "principal": "001-P003",
+   "dim": "AON|E-P3|New Parents",
+   "via": "el Principal más cercano ANTERIOR (2 candidatos)",
+   "fecha_fup": "2026-03-17",
+   "fecha_principal": "2026-03-14",
+   "quincena_fup": "2026-03-Q2",
+   "quincena_principal": "2026-03-Q1"
+  },
+  {
+   "fup": "001-P006",
+   "principal": "001-P005",
+   "dim": "AON|E-P1|Traditional Parents",
+   "via": "el Principal más cercano ANTERIOR (2 candidatos)",
+   "fecha_fup": "2026-03-20",
+   "fecha_principal": "2026-03-18",
+   "quincena_fup": "2026-03-Q2",
+   "quincena_principal": "2026-03-Q2"
+  },
+  {
+   "fup": "001-P008",
+   "principal": "001-P007",
+   "dim": "AON|E-D1|Activos",
+   "via": "único candidato",
+   "fecha_fup": "2026-04-24",
+   "fecha_principal": "2026-04-20",
+   "quincena_fup": "2026-04-Q2",
+   "quincena_principal": "2026-04-Q2"
+  },
+  {
+   "fup": "001-P010",
+   "principal": "001-P009",
+   "dim": "AON|E-D2|Activos",
+   "via": "único candidato",
+   "fecha_fup": "2026-04-27",
+   "fecha_principal": "2026-04-20",
+   "quincena_fup": "2026-04-Q2",
+   "quincena_principal": "2026-04-Q2"
+  },
+  {
+   "fup": "001-P012",
+   "principal": "001-P011",
+   "dim": "AON|E-P2|Dinkies y Empty Nesters",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-03",
+   "fecha_principal": "2026-04-30",
+   "quincena_fup": "2026-05-Q1",
+   "quincena_principal": "2026-04-Q2"
+  },
+  {
+   "fup": "001-P014",
+   "principal": "001-P013",
+   "dim": "AON|E-L1|Usuarios con Engagement",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-16",
+   "fecha_principal": "2026-05-13",
+   "quincena_fup": "2026-05-Q2",
+   "quincena_principal": "2026-05-Q1"
+  },
+  {
+   "fup": "002-P005",
+   "principal": "002-P001",
+   "dim": "Hotcakes|E-P1|Saludables",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-13",
+   "fecha_principal": "2026-05-13",
+   "quincena_fup": "2026-05-Q1",
+   "quincena_principal": "2026-05-Q1"
+  },
+  {
+   "fup": "002-P006",
+   "principal": "002-P002",
+   "dim": "Hotcakes|E-P2|Prácticos",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-23",
+   "fecha_principal": "2026-05-13",
+   "quincena_fup": "2026-05-Q2",
+   "quincena_principal": "2026-05-Q1"
+  },
+  {
+   "fup": "002-P007",
+   "principal": "002-P003",
+   "dim": "Hotcakes|E-P3|Indulgentes",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-23",
+   "fecha_principal": "2026-05-13",
+   "quincena_fup": "2026-05-Q2",
+   "quincena_principal": "2026-05-Q1"
+  },
+  {
+   "fup": "002-P008",
+   "principal": "002-P004",
+   "dim": "Hotcakes|E-P4|FamilyKids",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-23",
+   "fecha_principal": "2026-05-13",
+   "quincena_fup": "2026-05-Q2",
+   "quincena_principal": "2026-05-Q1"
+  },
+  {
+   "fup": "002-P013",
+   "principal": "002-P009",
+   "dim": "Hotcakes|E-L1|Saludables",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-30",
+   "fecha_principal": "2026-05-27",
+   "quincena_fup": "2026-05-Q2",
+   "quincena_principal": "2026-05-Q2"
+  },
+  {
+   "fup": "002-P014",
+   "principal": "002-P010",
+   "dim": "Hotcakes|E-L2|Prácticos",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-30",
+   "fecha_principal": "2026-05-27",
+   "quincena_fup": "2026-05-Q2",
+   "quincena_principal": "2026-05-Q2"
+  },
+  {
+   "fup": "002-P015",
+   "principal": "002-P011",
+   "dim": "Hotcakes|E-L3|Indulgentes",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-30",
+   "fecha_principal": "2026-05-27",
+   "quincena_fup": "2026-05-Q2",
+   "quincena_principal": "2026-05-Q2"
+  },
+  {
+   "fup": "002-P016",
+   "principal": "002-P012",
+   "dim": "Hotcakes|E-L4|FamilyKids",
+   "via": "único candidato",
+   "fecha_fup": "2026-05-30",
+   "fecha_principal": "2026-05-27",
+   "quincena_fup": "2026-05-Q2",
+   "quincena_principal": "2026-05-Q2"
+  },
+  {
+   "fup": "002-P018",
+   "principal": "002-P017",
+   "dim": "Hotcakes|E-I2|Interés Salado",
+   "via": "único candidato",
+   "fecha_fup": "2026-04-20",
+   "fecha_principal": "2026-04-17",
+   "quincena_fup": "2026-04-Q2",
+   "quincena_principal": "2026-04-Q2"
+  },
+  {
+   "fup": "002-P020",
+   "principal": "002-P019",
+   "dim": "Hotcakes|E-I1|Interés Salado",
+   "via": "único candidato",
+   "fecha_fup": "2026-04-17",
+   "fecha_principal": "2026-04-14",
+   "quincena_fup": "2026-04-Q2",
+   "quincena_principal": "2026-04-Q1"
+  },
+  {
+   "fup": "008-P002",
+   "principal": "008-P001",
+   "dim": "Tercer Tiempo|E-P1|Futboleros",
+   "via": "único candidato",
+   "fecha_fup": "2026-06-23",
+   "fecha_principal": "2026-06-19",
+   "quincena_fup": "2026-06-Q2",
+   "quincena_principal": "2026-06-Q2"
+  },
+  {
+   "fup": "008-P004",
+   "principal": "008-P003",
+   "dim": "Tercer Tiempo|E-P1|Amazon",
+   "via": "único candidato",
+   "fecha_fup": "2026-06-29",
+   "fecha_principal": "2026-06-26",
+   "quincena_fup": "2026-06-Q2",
+   "quincena_principal": "2026-06-Q2"
+  },
+  {
+   "fup": "003-P002",
+   "principal": "003-P001",
+   "dim": "Antojo Infinito|E-C1|Combinado",
+   "via": "único candidato",
+   "fecha_fup": "2026-06-29",
+   "fecha_principal": "2026-06-25",
+   "quincena_fup": "2026-06-Q2",
+   "quincena_principal": "2026-06-Q2"
+  },
+  {
+   "fup": "008-P005",
+   "principal": "008-P006",
+   "dim": "Tercer Tiempo|E-P1|Walmart",
+   "via": "único candidato",
+   "fecha_fup": "2026-06-29",
+   "fecha_principal": "2026-06-26",
+   "quincena_fup": "2026-06-Q2",
+   "quincena_principal": "2026-06-Q2"
+  },
+  {
+   "fup": "001-P016",
+   "principal": "001-P015",
+   "dim": "AON|E-P1|Productive Adults",
+   "via": "único candidato",
+   "fecha_fup": "2026-07-25",
+   "fecha_principal": "2026-07-20",
+   "quincena_fup": "2026-07-Q2",
+   "quincena_principal": "2026-07-Q2"
+  },
+  {
+   "fup": "001-P018",
+   "principal": "001-P017",
+   "dim": "AON|E-P2|Young Creatives",
+   "via": "único candidato",
+   "fecha_fup": "2026-07-20",
+   "fecha_principal": "2026-07-20",
+   "quincena_fup": "2026-07-Q2",
+   "quincena_principal": "2026-07-Q2"
+  },
+  {
+   "fup": "001-P020",
+   "principal": "001-P019",
+   "dim": "AON|E-P3|Wellness Navigators",
+   "via": "único candidato",
+   "fecha_fup": "2026-07-28",
+   "fecha_principal": "2026-07-20",
+   "quincena_fup": "2026-07-Q2",
+   "quincena_principal": "2026-07-Q2"
+  },
+  {
+   "fup": "001-P022",
+   "principal": "001-P021",
+   "dim": "AON|E-P4|Sin Cluster",
+   "via": "único candidato",
+   "fecha_fup": "2026-07-25",
+   "fecha_principal": "2026-07-20",
+   "quincena_fup": "2026-07-Q2",
+   "quincena_principal": "2026-07-Q2"
+  },
+  {
+   "fup": "006-P002",
+   "principal": "006-P001",
+   "dim": "The Freshers|E-A1|Gen Z Cafés",
+   "via": "único candidato",
+   "fecha_fup": "2026-07-21",
+   "fecha_principal": "2026-07-21",
+   "quincena_fup": "2026-07-Q2",
+   "quincena_principal": "2026-07-Q2"
+  },
+  {
+   "fup": "007-P002",
+   "principal": "007-P001",
+   "dim": "Hackea tu café|E-Hack1|Premium Cafés",
+   "via": "único candidato",
+   "fecha_fup": "2026-07-28",
+   "fecha_principal": "2026-07-24",
+   "quincena_fup": "2026-07-Q2",
+   "quincena_principal": "2026-07-Q2"
+  },
+  {
+   "fup": "001-P026",
+   "principal": "001-P024",
+   "dim": "AON|E-P3|New Parents",
+   "via": "el Principal más cercano ANTERIOR (2 candidatos)",
+   "fecha_fup": "2026-05-03",
+   "fecha_principal": "2026-04-30",
+   "quincena_fup": "2026-05-Q1",
+   "quincena_principal": "2026-04-Q2"
+  },
+  {
+   "fup": "001-P027",
+   "principal": "001-P025",
+   "dim": "AON|E-P1|Traditional Parents",
+   "via": "el Principal más cercano ANTERIOR (2 candidatos)",
+   "fecha_fup": "2026-05-03",
+   "fecha_principal": "2026-04-30",
+   "quincena_fup": "2026-05-Q1",
+   "quincena_principal": "2026-04-Q2"
+  },
+  {
+   "fup": "001-P028",
+   "principal": "001-P023",
+   "dim": "AON|E-P4|Career Focused",
+   "via": "el Principal más cercano ANTERIOR (2 candidatos)",
+   "fecha_fup": "2026-05-03",
+   "fecha_principal": "2026-04-30",
+   "quincena_fup": "2026-05-Q1",
+   "quincena_principal": "2026-04-Q2"
+  },
+  {
+   "fup": "007-P004",
+   "principal": "007-P003",
+   "dim": "Hackea tu café|E-Hack2|Premium Cafés",
+   "via": "único candidato",
+   "fecha_fup": "2026-07-27",
+   "fecha_principal": "2026-07-27",
+   "quincena_fup": "2026-07-Q2",
+   "quincena_principal": "2026-07-Q2"
+  },
+  {
+   "fup": "001-P031",
+   "principal": "001-P030",
+   "dim": "AON|E-PROP2|Propensión",
+   "via": "único candidato",
+   "fecha_fup": "2026-08-13",
+   "fecha_principal": "2026-08-13",
+   "quincena_fup": "2026-08-Q1",
+   "quincena_principal": "2026-08-Q1"
+  },
+  {
+   "fup": "006-P005",
+   "principal": "006-P004",
+   "dim": "The Freshers|E-A|Gen Z Cafés",
+   "via": "único candidato",
+   "fecha_fup": "2026-08-09",
+   "fecha_principal": "2026-08-05",
+   "quincena_fup": "2026-08-Q1",
+   "quincena_principal": "2026-08-Q1"
+  },
+  {
+   "fup": "007-P006",
+   "principal": "007-P005",
+   "dim": "Hackea tu café|E-Rit1|Premium Cafés",
+   "via": "único candidato",
+   "fecha_fup": "2026-08-12",
+   "fecha_principal": "2026-08-06",
+   "quincena_fup": "2026-08-Q1",
+   "quincena_principal": "2026-08-Q1"
+  }
+ ],
+ "sin_principal": []
+}

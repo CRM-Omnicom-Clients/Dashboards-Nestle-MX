@@ -1,0 +1,1335 @@
+{
+ "cuando": "2026-10-02T20:28:59.344Z",
+ "filas": 25258,
+ "sin_codigo": 1469,
+ "shortlinks_maestro": [
+  {
+   "c": "0eQt7uf5",
+   "hoja": "Septiembre",
+   "utm": "e-j8",
+   "act": "2026-09-12",
+   "receta": "Sarten Queso Jalapeño",
+   "trafico": 13,
+   "nuestro": 11,
+   "dentro": 5,
+   "pz": [
+    "005-P012"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P012"
+   ]
+  },
+  {
+   "c": "0oSrtaxX",
+   "hoja": "Septiembre",
+   "utm": "e-j8",
+   "act": "2026-09-12",
+   "receta": "Nachos con carne / Nachos MAGGI",
+   "trafico": 18,
+   "nuestro": 18,
+   "dentro": 7,
+   "pz": [
+    "005-P012"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P012"
+   ]
+  },
+  {
+   "c": "0varyzKZ",
+   "hoja": "Abril",
+   "utm": "E-I1",
+   "act": "2026-04-14",
+   "receta": "Hot cakes esponjosos",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 56,
+   "pz": [
+    "002-P019"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "002-P019"
+   ]
+  },
+  {
+   "c": "1iqH9Tx7",
+   "hoja": "Marzo",
+   "utm": "",
+   "act": "2026-03-13",
+   "receta": "Molletes",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 27,
+   "pz": [
+    "001-P003"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "001-P003"
+   ]
+  },
+  {
+   "c": "2YWR8c3Z",
+   "hoja": "Julio",
+   "utm": "e-botanas7",
+   "act": "2026-07-15",
+   "receta": "Deditos de pescado",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 18,
+   "pz": [
+    "004-P018"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "004-P018"
+   ]
+  },
+  {
+   "c": "2Yn9L0bD",
+   "hoja": "Julio",
+   "utm": "wa-final-empanadas",
+   "act": "2026-07-19",
+   "receta": "Empanadas tipo argentina",
+   "trafico": 9,
+   "nuestro": 9,
+   "dentro": 18,
+   "pz": [
+    "004-P019"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "004-P019"
+   ]
+  },
+  {
+   "c": "3NIh2kYW",
+   "hoja": "Junio",
+   "utm": "e-cooking2",
+   "act": "2026-06-10",
+   "receta": "Alitas Agridulces",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 0,
+   "pz": [
+    "004-P020"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": []
+  },
+  {
+   "c": "3QfdZN2Q",
+   "hoja": "Junio",
+   "utm": "e-bebida2",
+   "act": "2026-06-17",
+   "receta": "Gomichela",
+   "trafico": 2,
+   "nuestro": 2,
+   "dentro": 53,
+   "pz": [
+    "004-P004"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "004-P004"
+   ]
+  },
+  {
+   "c": "3o1GDbRc",
+   "hoja": "Mayo",
+   "utm": "E-P2",
+   "act": "2026-05-20",
+   "receta": "Hot cakes platano con Avena",
+   "trafico": 2,
+   "nuestro": 0,
+   "dentro": 47,
+   "pz": [
+    "002-P002"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "002-P002"
+   ]
+  },
+  {
+   "c": "4tBsCXTp",
+   "hoja": "Agosto",
+   "utm": "e-j4",
+   "act": "2026-08-15",
+   "receta": "Nachos con carne",
+   "trafico": 2,
+   "nuestro": 2,
+   "dentro": 63,
+   "pz": [],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P006"
+   ]
+  },
+  {
+   "c": "9Bm8slOi",
+   "hoja": "Marzo",
+   "utm": "",
+   "act": "2026-03-13",
+   "receta": "Wraps de atún",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 60,
+   "pz": [
+    "001-P001"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "001-P001"
+   ]
+  },
+  {
+   "c": "9isauWgY",
+   "hoja": "Agosto",
+   "utm": "e-j5",
+   "act": "2026-08-22",
+   "receta": "Botana de Carnes",
+   "trafico": 3,
+   "nuestro": 3,
+   "dentro": 3,
+   "pz": [
+    "005-P007"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P007"
+   ]
+  },
+  {
+   "c": "Agy5v9Yb",
+   "hoja": "Julio",
+   "utm": "e-botanas6",
+   "act": "2026-07-14",
+   "receta": "Tapas Berenjenas",
+   "trafico": 1,
+   "nuestro": 1,
+   "dentro": 3,
+   "pz": [
+    "004-P017"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "004-P017"
+   ]
+  },
+  {
+   "c": "BdN0ck7t",
+   "hoja": "Agosto",
+   "utm": "e-j6",
+   "act": "2026-08-28",
+   "receta": "Brochetas de Pollo con Salsa de Piña",
+   "trafico": 2,
+   "nuestro": 2,
+   "dentro": 1,
+   "pz": [
+    "005-P009"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P009"
+   ]
+  },
+  {
+   "c": "DTuqPqBo",
+   "hoja": "Septiembre",
+   "utm": "wa-j8",
+   "act": "2026-09-10",
+   "receta": "Sarten Queso Jalapeño",
+   "trafico": 28,
+   "nuestro": 28,
+   "dentro": 22,
+   "pz": [
+    "005-P011"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P011"
+   ]
+  },
+  {
+   "c": "E8RDSsHg",
+   "hoja": "Marzo",
+   "utm": "",
+   "act": "2026-03-13",
+   "receta": "Salmón a las finas hierbas",
+   "trafico": 2,
+   "nuestro": 0,
+   "dentro": 74,
+   "pz": [
+    "001-P001"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "001-P001"
+   ]
+  },
+  {
+   "c": "ETJFEOzD",
+   "hoja": "Marzo",
+   "utm": "",
+   "act": "2026-03-13",
+   "receta": "Espagueti Rojo Cremoso",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 31,
+   "pz": [
+    "001-P003"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "001-P003"
+   ]
+  },
+  {
+   "c": "GQnvqqP3",
+   "hoja": "Septiembre",
+   "utm": "e-j7",
+   "act": "2026-09-04",
+   "receta": "Papas Nacho",
+   "trafico": 11,
+   "nuestro": 11,
+   "dentro": 8,
+   "pz": [
+    "005-P010"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P010"
+   ]
+  },
+  {
+   "c": "GblUR93I",
+   "hoja": "Julio",
+   "utm": "e-p4",
+   "act": "2026-07-22",
+   "receta": "Tinga de Pollo",
+   "trafico": 5,
+   "nuestro": 5,
+   "dentro": 154,
+   "pz": [],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "001-P021"
+   ]
+  },
+  {
+   "c": "HThaf6bT",
+   "hoja": "Agosto",
+   "utm": "e-j4",
+   "act": "2026-08-15",
+   "receta": "Tropi MAGGI® Shot",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 3,
+   "pz": [],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "005-P005"
+   ]
+  },
+  {
+   "c": "HcDJTsRH",
+   "hoja": "Junio",
+   "utm": "e-botana2",
+   "act": "2026-06-17",
+   "receta": "Vaso Botanero",
+   "trafico": 37,
+   "nuestro": 37,
+   "dentro": 62,
+   "pz": [
+    "004-P005"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "004-P005"
+   ]
+  },
+  {
+   "c": "Hqa0fbOM",
+   "hoja": "Agosto",
+   "utm": "e-j5",
+   "act": "2026-08-22",
+   "receta": "MAGGI® Shots / Cerdito enchilado",
+   "trafico": 3,
+   "nuestro": 3,
+   "dentro": 3,
+   "pz": [
+    "005-P007"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P007"
+   ]
+  },
+  {
+   "c": "KO3vgQok",
+   "hoja": "Julio",
+   "utm": "e-p3",
+   "act": "2026-07-25",
+   "receta": "Huarache de nopal con atún a la mexicana",
+   "trafico": 6,
+   "nuestro": 6,
+   "dentro": 66,
+   "pz": [
+    "001-P019"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "001-P019"
+   ]
+  },
+  {
+   "c": "LO8RxwsM",
+   "hoja": "Julio",
+   "utm": "wa-final-aceitunas",
+   "act": "2026-07-19",
+   "receta": "Aceitunas preparadas: receta simple y rápida",
+   "trafico": 9,
+   "nuestro": 9,
+   "dentro": 52,
+   "pz": [
+    "004-P019"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "004-P019"
+   ]
+  },
+  {
+   "c": "LU7k7fMB",
+   "hoja": "Mayo",
+   "utm": "E-P4",
+   "act": "2026-05-20",
+   "receta": "Mini hot cakes de manzana",
+   "trafico": 1,
+   "nuestro": 0,
+   "dentro": 79,
+   "pz": [
+    "002-P004"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "002-P004"
+   ]
+  },
+  {
+   "c": "Mb4KvUvP",
+   "hoja": "Abril",
+   "utm": "E-P4",
+   "act": "2026-04-30",
+   "receta": "Tartara de atún | Recetas Nestlé",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 96,
+   "pz": [
+    "001-P001"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "001-P001"
+   ]
+  },
+  {
+   "c": "NhrllATy",
+   "hoja": "Mayo",
+   "utm": "E-P1",
+   "act": "2026-05-20",
+   "receta": "Hot cakes de avena y linaza",
+   "trafico": 2,
+   "nuestro": 0,
+   "dentro": 17,
+   "pz": [
+    "002-P001"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "002-P001"
+   ]
+  },
+  {
+   "c": "PDy0MeF9",
+   "hoja": "Junio",
+   "utm": "e-c1",
+   "act": "2027-07-26",
+   "receta": "Carlota Ligera de Limón",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 23,
+   "pz": [],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "003-P001"
+   ]
+  },
+  {
+   "c": "PJrhl5GT",
+   "hoja": "Junio",
+   "utm": "e-c1",
+   "act": "2027-07-26",
+   "receta": "Carlota Ligera de Limón",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 36,
+   "pz": [
+    "003-P001"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "003-P001"
+   ]
+  },
+  {
+   "c": "PySVWRVY",
+   "hoja": "Julio",
+   "utm": "e-p1",
+   "act": "2026-07-22",
+   "receta": "Tinga de Pollo",
+   "trafico": 166,
+   "nuestro": 166,
+   "dentro": 270,
+   "pz": [
+    "001-P015"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "001-P015"
+   ]
+  },
+  {
+   "c": "SGm6GxjJ",
+   "hoja": "Abril",
+   "utm": "E-P1",
+   "act": "2026-04-30",
+   "receta": "Mini Hambuguesas de Pollo",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 66,
+   "pz": [
+    "001-P005"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "001-P005"
+   ]
+  },
+  {
+   "c": "SN2YWvgo",
+   "hoja": "Junio",
+   "utm": "e-bebida2",
+   "act": "2026-06-17",
+   "receta": "Gomichela",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 13,
+   "pz": [
+    "004-P004"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "004-P004"
+   ]
+  },
+  {
+   "c": "TYZa8g47",
+   "hoja": "Agosto",
+   "utm": "e-j5",
+   "act": "2026-08-22",
+   "receta": "Dip de Pimiento Rostizado",
+   "trafico": 5,
+   "nuestro": 5,
+   "dentro": 4,
+   "pz": [
+    "005-P008"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P008"
+   ]
+  },
+  {
+   "c": "UhCnTNuz",
+   "hoja": "Agosto",
+   "utm": "e-j5",
+   "act": "2026-08-22",
+   "receta": "Esquites MAGGI®",
+   "trafico": 1,
+   "nuestro": 1,
+   "dentro": 1,
+   "pz": [
+    "005-P008"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P008"
+   ]
+  },
+  {
+   "c": "VbE5Jnb4",
+   "hoja": "Abril",
+   "utm": "E-I2",
+   "act": "2026-04-14",
+   "receta": "Hot cakes capuchino",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 19,
+   "pz": [
+    "002-P017"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "002-P017"
+   ]
+  },
+  {
+   "c": "YdlUlPrm",
+   "hoja": "Abril",
+   "utm": "E-P2",
+   "act": "2026-04-30",
+   "receta": "Jocho de sushi | Recetas Nestlé",
+   "trafico": 3,
+   "nuestro": 0,
+   "dentro": 146,
+   "pz": [
+    "001-P011"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "001-P011"
+   ]
+  },
+  {
+   "c": "Z8W0ZouI",
+   "hoja": "Junio",
+   "utm": "e-botana1",
+   "act": "2026-06-10",
+   "receta": "Papas Antojo Supremo",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 22,
+   "pz": [
+    "004-P001"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "004-P001"
+   ]
+  },
+  {
+   "c": "ZJ3SmPMy",
+   "hoja": "Junio",
+   "utm": "e-cooking2",
+   "act": "2026-06-17",
+   "receta": "Hambuguesa Perfecta",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 0,
+   "pz": [
+    "004-P020"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": []
+  },
+  {
+   "c": "a4NBepmo",
+   "hoja": "Abril",
+   "utm": "E-I1",
+   "act": "2026-04-14",
+   "receta": "Hotcakes de Cocoa con Avena",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 83,
+   "pz": [
+    "002-P019"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "002-P019"
+   ]
+  },
+  {
+   "c": "b48Oay1D",
+   "hoja": "Septiembre",
+   "utm": "wa-SNM1",
+   "act": "2026-09-29",
+   "receta": "Ceviche Pescado",
+   "trafico": 3,
+   "nuestro": 3,
+   "dentro": 0,
+   "pz": [],
+   "estado": "⏸  todo antes de activación",
+   "det": "tráfico 2026-09-28→2026-09-28 · activa 2026-09-29",
+   "piezas": []
+  },
+  {
+   "c": "bd2KESe4",
+   "hoja": "Abril",
+   "utm": "E-I2",
+   "act": "2026-04-14",
+   "receta": "Hot cakes de chocolate para desayunar",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 27,
+   "pz": [
+    "002-P017"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "002-P017"
+   ]
+  },
+  {
+   "c": "bfQ24tDq",
+   "hoja": "Septiembre",
+   "utm": "e-j9",
+   "act": "2026-09-18",
+   "receta": "Alitas Salsa Mango",
+   "trafico": 27,
+   "nuestro": 27,
+   "dentro": 25,
+   "pz": [
+    "005-P014"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P014"
+   ]
+  },
+  {
+   "c": "dHfqmS7n",
+   "hoja": "Junio",
+   "utm": "e-bebida1",
+   "act": "2026-06-10",
+   "receta": "Piñarindo",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 22,
+   "pz": [
+    "004-P003"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "004-P003"
+   ]
+  },
+  {
+   "c": "fDAdN8Qa",
+   "hoja": "Julio",
+   "utm": "e-p4",
+   "act": "2026-07-22",
+   "receta": "Tinga de Pollo",
+   "trafico": 3,
+   "nuestro": 3,
+   "dentro": 97,
+   "pz": [],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "001-P021"
+   ]
+  },
+  {
+   "c": "hTHNLqzL",
+   "hoja": "Agosto",
+   "utm": "e-j4",
+   "act": "2026-08-15",
+   "receta": "Aceitunas Toreadas",
+   "trafico": 29,
+   "nuestro": 29,
+   "dentro": 65,
+   "pz": [
+    "005-P010"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P006",
+    "005-P010"
+   ]
+  },
+  {
+   "c": "hWaJfDxS",
+   "hoja": "Junio",
+   "utm": "e-cooking1",
+   "act": "2026-06-10",
+   "receta": "Alitas Agridulces",
+   "trafico": 30,
+   "nuestro": 30,
+   "dentro": 126,
+   "pz": [
+    "004-P002"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "004-P002"
+   ]
+  },
+  {
+   "c": "haPs2HHU",
+   "hoja": "Julio",
+   "utm": "e-botanas7",
+   "act": "2026-07-15",
+   "receta": "Choripan",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 24,
+   "pz": [
+    "004-P018"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "004-P018"
+   ]
+  },
+  {
+   "c": "hhzYOf18",
+   "hoja": "Julio",
+   "utm": "e-p4",
+   "act": "2026-07-22",
+   "receta": "Tinga de Pollo",
+   "trafico": 1,
+   "nuestro": 1,
+   "dentro": 143,
+   "pz": [
+    "001-P021"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "001-P021"
+   ]
+  },
+  {
+   "c": "i8LZ55bd",
+   "hoja": "Agosto",
+   "utm": "e-j4",
+   "act": "2026-08-15",
+   "receta": "Botana de Jamaica",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 10,
+   "pz": [],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "005-P005"
+   ]
+  },
+  {
+   "c": "jhMxJiSo",
+   "hoja": "Septiembre",
+   "utm": "e-j10",
+   "act": "2026-09-25",
+   "receta": "Pepimiche",
+   "trafico": 4,
+   "nuestro": 4,
+   "dentro": 3,
+   "pz": [],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P015"
+   ]
+  },
+  {
+   "c": "kzFAiKMv",
+   "hoja": "Abril",
+   "utm": "E-P1",
+   "act": "2026-04-30",
+   "receta": "Mini Cheesecake sin Horno",
+   "trafico": 1,
+   "nuestro": 0,
+   "dentro": 124,
+   "pz": [
+    "001-P005"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "001-P005"
+   ]
+  },
+  {
+   "c": "kzSTHGEd",
+   "hoja": "Septiembre",
+   "utm": "e-j10",
+   "act": "2026-09-25",
+   "receta": "Dips Botaneros",
+   "trafico": 11,
+   "nuestro": 11,
+   "dentro": 4,
+   "pz": [],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P015"
+   ]
+  },
+  {
+   "c": "o41ObWyu",
+   "hoja": "Junio",
+   "utm": "e-c1",
+   "act": "2027-07-26",
+   "receta": "Carlota Ligera de Limón",
+   "trafico": 1,
+   "nuestro": 1,
+   "dentro": 44,
+   "pz": [
+    "003-P001"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "003-P001"
+   ]
+  },
+  {
+   "c": "okUSdwJk",
+   "hoja": "Agosto",
+   "utm": "e-j6",
+   "act": "2026-08-28",
+   "receta": "Cebollitas Maggi®",
+   "trafico": 2,
+   "nuestro": 2,
+   "dentro": 1,
+   "pz": [
+    "005-P009"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P009"
+   ]
+  },
+  {
+   "c": "os3U6hWb",
+   "hoja": "Abril",
+   "utm": "E-P3",
+   "act": "2026-04-30",
+   "receta": "Rollitos de calabaza con queso y brócoli | Recetas Nestlé",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 71,
+   "pz": [
+    "001-P003"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "001-P003"
+   ]
+  },
+  {
+   "c": "qrMAKnjA",
+   "hoja": "Mayo",
+   "utm": "E-P3",
+   "act": "2026-05-20",
+   "receta": "Hot cakes red velvet",
+   "trafico": 2,
+   "nuestro": 0,
+   "dentro": 42,
+   "pz": [
+    "002-P003"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "002-P003"
+   ]
+  },
+  {
+   "c": "r0J2KBES",
+   "hoja": "Junio",
+   "utm": "e-c1",
+   "act": "2027-07-26",
+   "receta": "Carlota Ligera de Limón",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 20,
+   "pz": [],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "003-P001"
+   ]
+  },
+  {
+   "c": "rr0VvKTb",
+   "hoja": "Junio",
+   "utm": "e-bebida1",
+   "act": "2026-06-10",
+   "receta": "Piñarindo",
+   "trafico": 9,
+   "nuestro": 9,
+   "dentro": 124,
+   "pz": [
+    "004-P003"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "004-P003"
+   ]
+  },
+  {
+   "c": "rueO2xbY",
+   "hoja": "Junio",
+   "utm": "e-botana2",
+   "act": "2026-06-17",
+   "receta": "Vaso Botanero",
+   "trafico": 41,
+   "nuestro": 41,
+   "dentro": 63,
+   "pz": [
+    "004-P005"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "004-P005"
+   ]
+  },
+  {
+   "c": "sbH9gVge",
+   "hoja": "Julio",
+   "utm": "e-botanas6",
+   "act": "2026-07-14",
+   "receta": "Baguette 3 quesos",
+   "trafico": 3,
+   "nuestro": 3,
+   "dentro": 34,
+   "pz": [
+    "004-P017"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "004-P017"
+   ]
+  },
+  {
+   "c": "tJEICO87",
+   "hoja": "Junio",
+   "utm": "e-botana1",
+   "act": "2026-06-10",
+   "receta": "Papas Antojo Supremo",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 59,
+   "pz": [
+    "004-P001"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "004-P001"
+   ]
+  },
+  {
+   "c": "uCV8KGHm",
+   "hoja": "Septiembre",
+   "utm": "wa-j10",
+   "act": "2026-09-24",
+   "receta": "Papitas elote",
+   "trafico": 12,
+   "nuestro": 12,
+   "dentro": 7,
+   "pz": [],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P016"
+   ]
+  },
+  {
+   "c": "uDEM0jlX",
+   "hoja": "Marzo",
+   "utm": "",
+   "act": "2026-03-13",
+   "receta": "Tinga de Pollo",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 91,
+   "pz": [],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "001-P005"
+   ]
+  },
+  {
+   "c": "vgMqmCrL",
+   "hoja": "Marzo",
+   "utm": "",
+   "act": "2026-03-13",
+   "receta": "Carne para Hamburguesa",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 86,
+   "pz": [],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": [
+    "001-P005"
+   ]
+  },
+  {
+   "c": "wdvsBDby",
+   "hoja": "Junio",
+   "utm": "e-cooking2",
+   "act": "2026-06-17",
+   "receta": "Hambuguesa Perfecta",
+   "trafico": 0,
+   "nuestro": 0,
+   "dentro": 0,
+   "pz": [
+    "004-P020"
+   ],
+   "estado": "·  sin tráfico",
+   "det": "",
+   "piezas": []
+  },
+  {
+   "c": "xTaSfQ2y",
+   "hoja": "Septiembre",
+   "utm": "e-j9",
+   "act": "2026-09-18",
+   "receta": "Tropi Maggi",
+   "trafico": 19,
+   "nuestro": 19,
+   "dentro": 14,
+   "pz": [
+    "005-P014"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P014"
+   ]
+  },
+  {
+   "c": "xj2gTnHI",
+   "hoja": "Julio",
+   "utm": "e-p2",
+   "act": "2026-07-22",
+   "receta": "Agua de Horchata con Mango",
+   "trafico": 1,
+   "nuestro": 1,
+   "dentro": 98,
+   "pz": [
+    "001-P017"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "001-P017"
+   ]
+  },
+  {
+   "c": "ymh2OT4x",
+   "hoja": "Septiembre",
+   "utm": "wa-j9",
+   "act": "2026-09-19",
+   "receta": "Alitas Salsa Mango",
+   "trafico": 21,
+   "nuestro": 21,
+   "dentro": 14,
+   "pz": [
+    "005-P013"
+   ],
+   "estado": "✔  atribuido",
+   "det": "",
+   "piezas": [
+    "005-P013"
+   ]
+  }
+ ],
+ "huerfanos_nuestros": [
+  {
+   "c": "CDoLolmJ",
+   "n": 2,
+   "receta": "DIP de Pimiento Rostizado",
+   "camp": [
+    "maggi-ligamx-agosto26"
+   ],
+   "utm": [
+    "e-p2"
+   ]
+  },
+  {
+   "c": "piPZpvXp",
+   "n": 2,
+   "receta": "Papas Nacho",
+   "camp": [
+    "maggi-ligamx-agosto26"
+   ],
+   "utm": [
+    "e-p4"
+   ]
+  },
+  {
+   "c": "CVCPHfND",
+   "n": 2,
+   "receta": "Aceitunas Toreadas",
+   "camp": [
+    "maggi-ligamx-agosto26"
+   ],
+   "utm": [
+    "e-p4"
+   ]
+  },
+  {
+   "c": "cCFb2xEx",
+   "n": 2,
+   "receta": "Alitas Agridulces_W",
+   "camp": [
+    "maggi-junio26"
+   ],
+   "utm": [
+    "new-cooking"
+   ]
+  },
+  {
+   "c": "Y8umAAnA",
+   "n": 2,
+   "receta": "Papas Antojo Supremo_C",
+   "camp": [
+    "maggi-junio26"
+   ],
+   "utm": [
+    "e-botana1"
+   ]
+  },
+  {
+   "c": "lmbcEdCW",
+   "n": 1,
+   "receta": "Papitas con Elote",
+   "camp": [
+    "maggi-ligamx-agosto26"
+   ],
+   "utm": [
+    "e-p7"
+   ]
+  },
+  {
+   "c": "JPrNSrwn",
+   "n": 1,
+   "receta": "Piñarindo_W",
+   "camp": [
+    "maggi-junio26"
+   ],
+   "utm": [
+    "e-bebida1"
+   ]
+  },
+  {
+   "c": "vk67sh2J",
+   "n": 1,
+   "receta": "Chelada Norteña_W",
+   "camp": [
+    "maggi-junio24"
+   ],
+   "utm": [
+    "e-bebida3"
+   ]
+  },
+  {
+   "c": "yj8PKdRr",
+   "n": 1,
+   "receta": "Alitas Agridulces_C",
+   "camp": [
+    "maggi-junio26"
+   ],
+   "utm": [
+    "e-cooking1"
+   ]
+  },
+  {
+   "c": "P8IcwfWJ",
+   "n": 1,
+   "receta": "Camaronera",
+   "camp": [
+    "maggi-julio26"
+   ],
+   "utm": [
+    "e-bebida5"
+   ]
+  },
+  {
+   "c": "xka2NWrW",
+   "n": 1,
+   "receta": "Papas Locas_W",
+   "camp": [
+    "maggi-junio24"
+   ],
+   "utm": [
+    "e-botanas3"
+   ]
+  },
+  {
+   "c": "L5rqwrzD",
+   "n": 1,
+   "receta": "Papas Antojo Supremo_W",
+   "camp": [
+    "maggi-junio26"
+   ],
+   "utm": [
+    "e-botana1"
+   ]
+  }
+ ],
+ "ambiguos": [
+  "hTHNLqzL"
+ ]
+}

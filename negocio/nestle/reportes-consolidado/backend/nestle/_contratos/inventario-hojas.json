@@ -1,0 +1,705 @@
+{
+ "paso": "S0 · inventario de hojas",
+ "generado_por": "orquestador.inventario-hojas.js",
+ "archivo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+ "hojas": [
+  {
+   "hoja": "Report_Resumen",
+   "intocable": false,
+   "filas": 77,
+   "columnas": 88,
+   "col_sin_nombre": 0,
+   "dup_exactas": [],
+   "dup_normalizadas": [],
+   "fantasmas": [],
+   "filas_datos": 77,
+   "vacias_por_col": [
+    {
+     "col": "Clicks_App",
+     "vacias": 69,
+     "de": 77
+    },
+    {
+     "col": "WA-%Click vs Read",
+     "vacias": 66,
+     "de": 77
+    },
+    {
+     "col": "WA-%Entrega",
+     "vacias": 64,
+     "de": 77
+    },
+    {
+     "col": "WA-%No entrega",
+     "vacias": 64,
+     "de": 77
+    },
+    {
+     "col": "WA-%Read vs entrega",
+     "vacias": 64,
+     "de": 77
+    },
+    {
+     "col": "Views_vs_Clicks_%",
+     "vacias": 55,
+     "de": 77
+    },
+    {
+     "col": "Carritos_vs_Clicks_%",
+     "vacias": 55,
+     "de": 77
+    },
+    {
+     "col": "Ticket_Producto_MXN",
+     "vacias": 53,
+     "de": 77
+    },
+    {
+     "col": "Receta_Representativa",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "FechaQcart_Desde",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "FechaQcart_Hasta",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Carritos_Walmart",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Carritos_Chedraui",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Carritos_Total",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Views_Carrito",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Views_Productos_Nestle",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Intencion_Total_MXN",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Intencion_Nestle_MXN",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Pct_Penetracion_Nestle",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Ticket_Carrito_MXN",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Tasa_Productos_a_Carritos",
+     "vacias": 52,
+     "de": 77
+    },
+    {
+     "col": "Clicks_Unsub",
+     "vacias": 49,
+     "de": 77
+    },
+    {
+     "col": "Clicks_Qcart",
+     "vacias": 47,
+     "de": 77
+    },
+    {
+     "col": "Clicks_Ver_Navegador",
+     "vacias": 45,
+     "de": 77
+    },
+    {
+     "col": "FUP_Open_Rate",
+     "vacias": 42,
+     "de": 77
+    },
+    {
+     "col": "FUP_CTOR",
+     "vacias": 42,
+     "de": 77
+    },
+    {
+     "col": "FUP_Click_Rate",
+     "vacias": 42,
+     "de": 77
+    },
+    {
+     "col": "Clicks_Social",
+     "vacias": 29,
+     "de": 77
+    },
+    {
+     "col": "Unsubs_Unicos",
+     "vacias": 17,
+     "de": 77
+    },
+    {
+     "col": "Audiencia_DE SFMC",
+     "vacias": 14,
+     "de": 77
+    },
+    {
+     "col": "Audiencia_Volumen SFMC",
+     "vacias": 14,
+     "de": 77
+    },
+    {
+     "col": "Clicks_Web",
+     "vacias": 13,
+     "de": 77
+    },
+    {
+     "col": "Email_ID (de la DE de SFMC)",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "Principal_Subject",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "Principal_Open_Rate",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "Principal_CTOR",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "Principal_Click_Rate",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "Tot_Open_Rate",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "Tot_CTOR",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "Tot_Click_Rate",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "%_Unsub",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "Clicks_Unicos_Total",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "%_Qcart",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "%_App",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "%_Social",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "%_Web",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "%_Ver_Navegador",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "P_Subject",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "% Unsuscribe",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "% Unsub vs Clicks",
+     "vacias": 12,
+     "de": 77
+    },
+    {
+     "col": "WA-Clicks",
+     "vacias": 2,
+     "de": 77
+    }
+   ],
+   "celdas_vacias": 1738,
+   "col_100_vacias": 0
+  },
+  {
+   "hoja": "Reporte_julio",
+   "intocable": true,
+   "filas": 44,
+   "columnas": 58,
+   "col_sin_nombre": 0,
+   "dup_exactas": [],
+   "dup_normalizadas": [],
+   "fantasmas": [],
+   "filas_datos": 23,
+   "vacias_por_col": [
+    {
+     "col": "FUP_Subject",
+     "vacias": 23,
+     "de": 23
+    },
+    {
+     "col": "Receta_Representativa",
+     "vacias": 19,
+     "de": 23
+    },
+    {
+     "col": "FechaQcart_Desde",
+     "vacias": 19,
+     "de": 23
+    },
+    {
+     "col": "FechaQcart_Hasta",
+     "vacias": 19,
+     "de": 23
+    },
+    {
+     "col": "WA-%Entrega",
+     "vacias": 17,
+     "de": 23
+    },
+    {
+     "col": "WA-%No entrega",
+     "vacias": 17,
+     "de": 23
+    },
+    {
+     "col": "WA-%Read vs entrega",
+     "vacias": 17,
+     "de": 23
+    },
+    {
+     "col": "WA-%Click vs Read",
+     "vacias": 17,
+     "de": 23
+    },
+    {
+     "col": "Carritos_Walmart",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Carritos_Chedraui",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Carritos_Total",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Views_Carrito",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Views_Productos_Nestle",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Intencion_Total_MXN",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Intencion_Nestle_MXN",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Pct_Penetracion_Nestle",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Ticket_Carrito_MXN",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Ticket_Producto_MXN",
+     "vacias": 15,
+     "de": 23
+    },
+    {
+     "col": "Email_ID (SFMC)",
+     "vacias": 9,
+     "de": 23
+    },
+    {
+     "col": "BU",
+     "vacias": 7,
+     "de": 23
+    },
+    {
+     "col": "Content_ID (SFMC)",
+     "vacias": 7,
+     "de": 23
+    },
+    {
+     "col": "Principal_Open_Rate",
+     "vacias": 6,
+     "de": 23
+    },
+    {
+     "col": "Principal_CTOR",
+     "vacias": 6,
+     "de": 23
+    },
+    {
+     "col": "Principal_Click_Rate",
+     "vacias": 6,
+     "de": 23
+    },
+    {
+     "col": "FUP_Open_Rate",
+     "vacias": 6,
+     "de": 23
+    },
+    {
+     "col": "FUP_CTOR",
+     "vacias": 6,
+     "de": 23
+    },
+    {
+     "col": "FUP_Click_Rate",
+     "vacias": 6,
+     "de": 23
+    },
+    {
+     "col": "Tot_Open_Rate",
+     "vacias": 6,
+     "de": 23
+    },
+    {
+     "col": "Tot_CTOR",
+     "vacias": 6,
+     "de": 23
+    },
+    {
+     "col": "Tot_Click_Rate",
+     "vacias": 6,
+     "de": 23
+    },
+    {
+     "col": "Segmento",
+     "vacias": 5,
+     "de": 23
+    },
+    {
+     "col": "WA-Clicks",
+     "vacias": 3,
+     "de": 23
+    },
+    {
+     "col": "Medio",
+     "vacias": 2,
+     "de": 23
+    },
+    {
+     "col": "Objetivo",
+     "vacias": 2,
+     "de": 23
+    },
+    {
+     "col": "TouchPoint",
+     "vacias": 2,
+     "de": 23
+    },
+    {
+     "col": "Tipo  Email",
+     "vacias": 2,
+     "de": 23
+    },
+    {
+     "col": "QCART?",
+     "vacias": 2,
+     "de": 23
+    },
+    {
+     "col": "Quincena_Lanzamiento",
+     "vacias": 2,
+     "de": 23
+    },
+    {
+     "col": "Mes",
+     "vacias": 2,
+     "de": 23
+    },
+    {
+     "col": "Mes (#)",
+     "vacias": 2,
+     "de": 23
+    },
+    {
+     "col": "Marca",
+     "vacias": 2,
+     "de": 23
+    },
+    {
+     "col": "Campaña",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "Principal_Deliveries",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "Principal_Opens",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "Principal_Clicks",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "FUP_Sends",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "FUP_Deliveries",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "FUP_Opens",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "FUP_Clicks",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "Tot_Sends",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "Tot_Deliveries",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "Tot_Opens",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "Tot_Clicks",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "WA-Envíos",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "WA-Entregados",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "WA-No entregados",
+     "vacias": 1,
+     "de": 23
+    },
+    {
+     "col": "WA-Leídos",
+     "vacias": 1,
+     "de": 23
+    }
+   ],
+   "celdas_vacias": 417,
+   "col_100_vacias": 1
+  },
+  {
+   "hoja": "Catalogo_Piezas",
+   "intocable": false,
+   "filas": 131,
+   "columnas": 86,
+   "col_sin_nombre": 0,
+   "dup_exactas": [],
+   "dup_normalizadas": [],
+   "fantasmas": [],
+   "filas_datos": 131,
+   "vacias_por_col": [],
+   "celdas_vacias": 0,
+   "col_100_vacias": 0
+  },
+  {
+   "hoja": "Catalogo_Referencias",
+   "intocable": false,
+   "filas": 268,
+   "columnas": 11,
+   "col_sin_nombre": 0,
+   "dup_exactas": [],
+   "dup_normalizadas": [],
+   "fantasmas": [],
+   "filas_datos": 268,
+   "vacias_por_col": [],
+   "celdas_vacias": 0,
+   "col_100_vacias": 0
+  },
+  {
+   "hoja": "Data_Email",
+   "intocable": false,
+   "filas": 98,
+   "columnas": 47,
+   "col_sin_nombre": 0,
+   "dup_exactas": [],
+   "dup_normalizadas": [],
+   "fantasmas": [],
+   "filas_datos": 98,
+   "vacias_por_col": [
+    {
+     "col": "Nombre_Journey",
+     "vacias": 96,
+     "de": 98
+    },
+    {
+     "col": "Audience_Name",
+     "vacias": 1,
+     "de": 98
+    }
+   ],
+   "celdas_vacias": 97,
+   "col_100_vacias": 0
+  },
+  {
+   "hoja": "Data_WhatsApp",
+   "intocable": false,
+   "filas": 12,
+   "columnas": 35,
+   "col_sin_nombre": 0,
+   "dup_exactas": [],
+   "dup_normalizadas": [],
+   "fantasmas": [],
+   "filas_datos": 12,
+   "vacias_por_col": [
+    {
+     "col": "Objetivo",
+     "vacias": 7,
+     "de": 12
+    },
+    {
+     "col": "URL",
+     "vacias": 6,
+     "de": 12
+    },
+    {
+     "col": "Segmento_WA_Raw",
+     "vacias": 3,
+     "de": 12
+    },
+    {
+     "col": "utm_content",
+     "vacias": 3,
+     "de": 12
+    }
+   ],
+   "celdas_vacias": 19,
+   "col_100_vacias": 0
+  },
+  {
+   "hoja": "Data_Qcart_Carritos",
+   "intocable": false,
+   "filas": 2645,
+   "columnas": 31,
+   "col_sin_nombre": 0,
+   "dup_exactas": [],
+   "dup_normalizadas": [],
+   "fantasmas": [],
+   "filas_datos": 2645,
+   "vacias_por_col": [
+    {
+     "col": "utm_content",
+     "vacias": 722,
+     "de": 2645
+    }
+   ],
+   "celdas_vacias": 722,
+   "col_100_vacias": 0
+  },
+  {
+   "hoja": "Data_Qcart_Productos",
+   "intocable": false,
+   "filas": 696,
+   "columnas": 32,
+   "col_sin_nombre": 0,
+   "dup_exactas": [],
+   "dup_normalizadas": [],
+   "fantasmas": [],
+   "filas_datos": 696,
+   "vacias_por_col": [
+    {
+     "col": "utm_content",
+     "vacias": 202,
+     "de": 696
+    }
+   ],
+   "celdas_vacias": 202,
+   "col_100_vacias": 0
+  }
+ ]
+}

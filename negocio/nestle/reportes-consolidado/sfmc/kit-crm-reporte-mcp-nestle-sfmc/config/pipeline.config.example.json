@@ -1,0 +1,29 @@
+{
+  "_comentario": "PLANTILLA. Aqui NO van secretos. Corre 'node scripts/descubrir.js' y genera config/pipeline.config.json con los IDs reales de TU BU. Los NOMBRES son el contrato; los key/id/carpetas los descubre el script (o se llenan a mano).",
+  "version": 1,
+  "bu": { "nombre": "NMX - Nestle Mexico", "mid": null, "offsetUtcHoras": -6 },
+  "mcpServerName": "sfmc-nestle",
+  "prefijoTemporales": "CRM_Tmp_",
+  "carpetas": { "de": null, "query": null },
+  "des": {
+    "catalogo":   { "nombre": "CRM_Reporte_Config",    "key": null },
+    "audiencias": { "nombre": "CRM_Audiencias",        "key": null },
+    "detalle":    { "nombre": "CRM_Email_Detalle",     "key": null },
+    "piezas":     { "nombre": "CRM_Email_Piezas",      "key": null },
+    "auditoria":  { "nombre": "CRM_Reporte_Auditoria", "key": null },
+    "links":      { "nombre": "CRM_Email_Links",       "key": null }
+  },
+  "queries": {
+    "vol":       { "nombre": "CRM_Audiencias_Vol_Load",    "id": null },
+    "detalle":   { "nombre": "CRM_Email_Detalle_Load",     "id": null },
+    "piezas":    { "nombre": "CRM_Email_Piezas_Load",      "id": null },
+    "auditoria": { "nombre": "CRM_Reporte_Auditoria_Load", "id": null },
+    "links":     { "nombre": "CRM_Email_Links_Load",       "id": null }
+  },
+  "automation": {
+    "nombre": "CRM_Reporte_Diario",
+    "id": null,
+    "pasosEsperados": [["vol", "links"], ["detalle"], ["piezas"], ["auditoria"]]
+  },
+  "esquema": { "llavePieza": "auto" }
+}

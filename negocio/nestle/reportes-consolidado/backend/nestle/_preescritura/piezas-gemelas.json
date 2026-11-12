@@ -1,0 +1,101 @@
+{
+ "cuando": "2026-09-04T07:17:41.854Z",
+ "huerfanas": [
+  {
+   "pieza": "009-P018",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Pro Plan Pet Parents",
+   "sends": 19213,
+   "gemela_de": "009-P006"
+  },
+  {
+   "pieza": "009-P019",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Pro Plan Pet Parents",
+   "sends": 3421,
+   "gemela_de": "009-P007"
+  },
+  {
+   "pieza": "009-P020",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Pro Plan Aspiracionales",
+   "sends": 2988,
+   "gemela_de": "009-P008"
+  },
+  {
+   "pieza": "009-P021",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Pro Plan Aspiracionales",
+   "sends": 153,
+   "gemela_de": "009-P009"
+  },
+  {
+   "pieza": "009-P022",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Pro Plan Educated Pet Owners",
+   "sends": 315,
+   "gemela_de": "009-P010"
+  },
+  {
+   "pieza": "009-P023",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Pro Plan Educated Pet Owners",
+   "sends": 43,
+   "gemela_de": "009-P011"
+  },
+  {
+   "pieza": "009-P024",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Pro Plan Pet Parents",
+   "sends": 3411,
+   "gemela_de": "009-P012"
+  },
+  {
+   "pieza": "009-P025",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Pro Plan Pet Parents",
+   "sends": 703,
+   "gemela_de": "009-P013"
+  },
+  {
+   "pieza": "009-P026",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Pro Plan Pet Parents",
+   "sends": 39,
+   "gemela_de": "009-P014"
+  },
+  {
+   "pieza": "009-P027",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Aspiracionales + Educated Pet Owners",
+   "sends": 14768,
+   "gemela_de": "009-P015"
+  },
+  {
+   "pieza": "009-P028",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Aspiracionales + Educated Pet Owners",
+   "sends": 4026,
+   "gemela_de": "009-P016"
+  },
+  {
+   "pieza": "009-P029",
+   "campana": "Fuel for life",
+   "touchpoint": "POR DEFINIR",
+   "segmento": "Aspiracionales + Educated Pet Owners",
+   "sends": 157,
+   "gemela_de": "009-P017"
+  }
+ ]
+}

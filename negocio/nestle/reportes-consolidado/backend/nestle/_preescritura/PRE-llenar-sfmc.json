@@ -1,0 +1,656 @@
+{
+ "cuando": "2026-09-04T06:55:45.433Z",
+ "volcado": "sfmc-piezas-2026-09-04.txt",
+ "plan": [
+  {
+   "pieza": "006-P006",
+   "fila": 133,
+   "col": "Fecha_Primer_Envio",
+   "ref": "O133",
+   "valor": "2026-08-12",
+   "desde": "Fecha_Primer_Envio"
+  },
+  {
+   "pieza": "001-P032",
+   "fila": 134,
+   "col": "Fecha_Primer_Envio",
+   "ref": "O134",
+   "valor": "2026-08-03",
+   "desde": "Fecha_Primer_Envio"
+  },
+  {
+   "pieza": "005-P007",
+   "fila": 135,
+   "col": "Fecha_Primer_Envio",
+   "ref": "O135",
+   "valor": "2026-08-22",
+   "desde": "Fecha_Primer_Envio"
+  },
+  {
+   "pieza": "005-P008",
+   "fila": 136,
+   "col": "Fecha_Primer_Envio",
+   "ref": "O136",
+   "valor": "2026-08-22",
+   "desde": "Fecha_Primer_Envio"
+  },
+  {
+   "pieza": "005-P009",
+   "fila": 138,
+   "col": "Fecha_Primer_Envio",
+   "ref": "O138",
+   "valor": "2026-08-28",
+   "desde": "Fecha_Primer_Envio"
+  },
+  {
+   "pieza": "001-P033",
+   "fila": 139,
+   "col": "Fecha_Primer_Envio",
+   "ref": "O139",
+   "valor": "2026-08-27",
+   "desde": "Fecha_Primer_Envio"
+  },
+  {
+   "pieza": "006-P006",
+   "fila": 133,
+   "col": "Quincena",
+   "ref": "R133",
+   "valor": "2026-08-Q1",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P032",
+   "fila": 134,
+   "col": "Quincena",
+   "ref": "R134",
+   "valor": "2026-08-Q1",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P007",
+   "fila": 135,
+   "col": "Quincena",
+   "ref": "R135",
+   "valor": "2026-08-Q2",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P008",
+   "fila": 136,
+   "col": "Quincena",
+   "ref": "R136",
+   "valor": "2026-08-Q2",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P006",
+   "fila": 98,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q98",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P007",
+   "fila": 99,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q99",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P008",
+   "fila": 100,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q100",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P009",
+   "fila": 101,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q101",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P010",
+   "fila": 102,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q102",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P011",
+   "fila": 103,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q103",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P012",
+   "fila": 104,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q104",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P013",
+   "fila": 105,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q105",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P014",
+   "fila": 106,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q106",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P015",
+   "fila": 107,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q107",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P016",
+   "fila": 108,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q108",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "009-P017",
+   "fila": 109,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q109",
+   "valor": "2026-07",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P029",
+   "fila": 111,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q111",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P030",
+   "fila": 112,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q112",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P031",
+   "fila": 113,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q113",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P005",
+   "fila": 114,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q114",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P006",
+   "fila": 115,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q115",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "006-P004",
+   "fila": 116,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q116",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "006-P005",
+   "fila": 117,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q117",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "007-P005",
+   "fila": 118,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q118",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "007-P006",
+   "fila": 119,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q119",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "007-P007",
+   "fila": 120,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q120",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "006-P006",
+   "fila": 133,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q133",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P032",
+   "fila": 134,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q134",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P007",
+   "fila": 135,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q135",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P008",
+   "fila": 136,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q136",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P009",
+   "fila": 138,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q138",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P033",
+   "fila": 139,
+   "col": "Mes_Lanzamiento",
+   "ref": "Q139",
+   "valor": "2026-08",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "006-P006",
+   "fila": 133,
+   "col": "Mes",
+   "ref": "BZ133",
+   "valor": "Agosto",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P032",
+   "fila": 134,
+   "col": "Mes",
+   "ref": "BZ134",
+   "valor": "Agosto",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P007",
+   "fila": 135,
+   "col": "Mes",
+   "ref": "BZ135",
+   "valor": "Agosto",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P008",
+   "fila": 136,
+   "col": "Mes",
+   "ref": "BZ136",
+   "valor": "Agosto",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P009",
+   "fila": 138,
+   "col": "Mes",
+   "ref": "BZ138",
+   "valor": "Agosto",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P033",
+   "fila": 139,
+   "col": "Mes",
+   "ref": "BZ139",
+   "valor": "Agosto",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "006-P006",
+   "fila": 133,
+   "col": "Mes (#)",
+   "ref": "CA133",
+   "valor": "8",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P032",
+   "fila": 134,
+   "col": "Mes (#)",
+   "ref": "CA134",
+   "valor": "8",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P007",
+   "fila": 135,
+   "col": "Mes (#)",
+   "ref": "CA135",
+   "valor": "8",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P008",
+   "fila": 136,
+   "col": "Mes (#)",
+   "ref": "CA136",
+   "valor": "8",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "005-P009",
+   "fila": 138,
+   "col": "Mes (#)",
+   "ref": "CA138",
+   "valor": "8",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "001-P033",
+   "fila": 139,
+   "col": "Mes (#)",
+   "ref": "CA139",
+   "valor": "8",
+   "desde": "Fecha_Primer_Envio (derivada)"
+  },
+  {
+   "pieza": "006-P006",
+   "fila": 133,
+   "col": "Subject",
+   "ref": "BY133",
+   "valor": "Entre más Fresh, más oportunidades para el Festival Vaivén 🎟️",
+   "desde": "Email_Subject"
+  },
+  {
+   "pieza": "001-P032",
+   "fila": 134,
+   "col": "Subject",
+   "ref": "BY134",
+   "valor": "¿Cocinamos algo rico hoy? Tenemos ideas nuevas",
+   "desde": "Email_Subject"
+  },
+  {
+   "pieza": "005-P007",
+   "fila": 135,
+   "col": "Subject",
+   "ref": "BY135",
+   "valor": "Sábado de partidos y algo riqui",
+   "desde": "Email_Subject"
+  },
+  {
+   "pieza": "005-P008",
+   "fila": 136,
+   "col": "Subject",
+   "ref": "BY136",
+   "valor": "Sábado de partidos y algo riqui",
+   "desde": "Email_Subject"
+  },
+  {
+   "pieza": "005-P009",
+   "fila": 138,
+   "col": "Subject",
+   "ref": "BY138",
+   "valor": "Lo más jugosooo en tu mesa",
+   "desde": "Email_Subject"
+  },
+  {
+   "pieza": "001-P033",
+   "fila": 139,
+   "col": "Subject",
+   "ref": "BY139",
+   "valor": "Tu próxima receta favorita te espera",
+   "desde": "Email_Subject"
+  },
+  {
+   "pieza": "001-P029",
+   "fila": 111,
+   "col": "Sends",
+   "ref": "AE111",
+   "valor": "427217",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "001-P030",
+   "fila": 112,
+   "col": "Sends",
+   "ref": "AE112",
+   "valor": "42633",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "001-P031",
+   "fila": 113,
+   "col": "Sends",
+   "ref": "AE113",
+   "valor": "38188",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "005-P005",
+   "fila": 114,
+   "col": "Sends",
+   "ref": "AE114",
+   "valor": "7995",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "005-P006",
+   "fila": 115,
+   "col": "Sends",
+   "ref": "AE115",
+   "valor": "128759",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "006-P004",
+   "fila": 116,
+   "col": "Sends",
+   "ref": "AE116",
+   "valor": "114361",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "006-P005",
+   "fila": 117,
+   "col": "Sends",
+   "ref": "AE117",
+   "valor": "72464",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "007-P005",
+   "fila": 118,
+   "col": "Sends",
+   "ref": "AE118",
+   "valor": "44590",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "007-P006",
+   "fila": 119,
+   "col": "Sends",
+   "ref": "AE119",
+   "valor": "26603",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "007-P007",
+   "fila": 120,
+   "col": "Sends",
+   "ref": "AE120",
+   "valor": "42000",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "006-P006",
+   "fila": 133,
+   "col": "Sends",
+   "ref": "AE133",
+   "valor": "104709",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "001-P032",
+   "fila": 134,
+   "col": "Sends",
+   "ref": "AE134",
+   "valor": "1337773",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "005-P007",
+   "fila": 135,
+   "col": "Sends",
+   "ref": "AE135",
+   "valor": "43188",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "005-P008",
+   "fila": 136,
+   "col": "Sends",
+   "ref": "AE136",
+   "valor": "2708",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "005-P009",
+   "fila": 138,
+   "col": "Sends",
+   "ref": "AE138",
+   "valor": "2735",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "001-P033",
+   "fila": 139,
+   "col": "Sends",
+   "ref": "AE139",
+   "valor": "158056",
+   "desde": "Email_Sends"
+  },
+  {
+   "pieza": "006-P006",
+   "fila": 133,
+   "col": "Email_ID",
+   "ref": "BS133",
+   "valor": "84936",
+   "desde": "Email_ID"
+  },
+  {
+   "pieza": "001-P032",
+   "fila": 134,
+   "col": "Email_ID",
+   "ref": "BS134",
+   "valor": "84562",
+   "desde": "Email_ID"
+  },
+  {
+   "pieza": "005-P007",
+   "fila": 135,
+   "col": "Email_ID",
+   "ref": "BS135",
+   "valor": "85166",
+   "desde": "Email_ID"
+  },
+  {
+   "pieza": "005-P008",
+   "fila": 136,
+   "col": "Email_ID",
+   "ref": "BS136",
+   "valor": "85190",
+   "desde": "Email_ID"
+  },
+  {
+   "pieza": "005-P009",
+   "fila": 138,
+   "col": "Email_ID",
+   "ref": "BS138",
+   "valor": "85340",
+   "desde": "Email_ID"
+  },
+  {
+   "pieza": "001-P033",
+   "fila": 139,
+   "col": "Email_ID",
+   "ref": "BS139",
+   "valor": "84565",
+   "desde": "Email_ID"
+  }
+ ],
+ "discrepan": [
+  {
+   "pieza": "001-P033",
+   "col": "Email_Type",
+   "hoja": "FollowUp",
+   "sfmc": "Follow Up"
+  },
+  {
+   "pieza": "006-P001",
+   "col": "Sends",
+   "hoja": "126067",
+   "sfmc": "125394"
+  },
+  {
+   "pieza": "006-P002",
+   "col": "Sends",
+   "hoja": "79565",
+   "sfmc": "79056"
+  },
+  {
+   "pieza": "009-P001",
+   "col": "Email_ID",
+   "hoja": "83347",
+   "sfmc": "83356"
+  }
+ ]
+}

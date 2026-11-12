@@ -1,0 +1,168 @@
+{
+ "paso": "A8",
+ "cuando": "2026-08-21",
+ "que_es": "Catalogo_Piezas tenía dos columnas con el mismo hecho. Aquí queda cada fila donde no coincidían y quién ganó.",
+ "regla": "si la pieza tiene EmailID, manda el nombre que SFMC declara para ese id; si no, se declara de dónde salió",
+ "discrepancias": [
+  {
+   "fila": 6,
+   "pieza_id": "001-P005",
+   "canal": "Email",
+   "content_name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_803867",
+   "email_name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_863587",
+   "email_id": "79320",
+   "gana": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_803867",
+   "via": "SFMC(79320)"
+  },
+  {
+   "fila": 7,
+   "pieza_id": "001-P006",
+   "canal": "Email",
+   "content_name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS-FP_AC_EM_A_V1_803867",
+   "email_name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_FUP-TRADITIONAL-PARENTS_AC_EM_A_V1_863587",
+   "email_id": "79541",
+   "gana": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS-FP_AC_EM_A_V1_803867",
+   "via": "SFMC(79541)"
+  },
+  {
+   "fila": 72,
+   "pieza_id": "001-P025",
+   "canal": "Email",
+   "content_name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_PURCHASE-EP1_AC_EM_A_V1_863587",
+   "email_name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_803867",
+   "email_id": "80879",
+   "gana": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_PURCHASE-EP1_AC_EM_A_V1_863587",
+   "via": "SFMC(80879)"
+  },
+  {
+   "fila": 74,
+   "pieza_id": "001-P027",
+   "canal": "Email",
+   "content_name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_FUP-PURCHASE-EP1_AC_EM_A_V1_863587",
+   "email_name": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS-FP_AC_EM_A_V1_803867",
+   "email_id": "81286",
+   "gana": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_FUP-PURCHASE-EP1_AC_EM_A_V1_863587",
+   "via": "SFMC(81286)"
+  },
+  {
+   "fila": 98,
+   "pieza_id": "009-P006",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+   "email_name": "User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+   "email_id": "83762",
+   "gana": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+   "via": "SFMC(83762)"
+  },
+  {
+   "fila": 99,
+   "pieza_id": "009-P007",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+   "email_name": "User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+   "email_id": "83763",
+   "gana": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+   "via": "SFMC(83763)"
+  },
+  {
+   "fila": 100,
+   "pieza_id": "009-P008",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+   "email_name": "User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+   "email_id": "83766",
+   "gana": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+   "via": "SFMC(83766)"
+  },
+  {
+   "fila": 101,
+   "pieza_id": "009-P009",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+   "email_name": "User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+   "email_id": "83767",
+   "gana": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+   "via": "SFMC(83767)"
+  },
+  {
+   "fila": 102,
+   "pieza_id": "009-P010",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+   "email_name": "User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+   "email_id": "83769",
+   "gana": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+   "via": "SFMC(83769)"
+  },
+  {
+   "fila": 103,
+   "pieza_id": "009-P011",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+   "email_name": "User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+   "email_id": "83770",
+   "gana": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+   "via": "SFMC(83770)"
+  },
+  {
+   "fila": 104,
+   "pieza_id": "009-P012",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E4A1.NA",
+   "email_name": "User.Perros.Comunidad.CDP_Proplan_PP_E4A1.NA",
+   "email_id": "83930",
+   "gana": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E4A1.NA",
+   "via": "⚠ difieren y no hay EmailID → gana Content_Name"
+  },
+  {
+   "fila": 105,
+   "pieza_id": "009-P013",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E4A2.NA",
+   "email_name": "User.Gatos.Comunidad.CDP_Proplan_PP_E4A2.NA",
+   "email_id": "84320",
+   "gana": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E4A2.NA",
+   "via": "SFMC(84320)"
+  },
+  {
+   "fila": 106,
+   "pieza_id": "009-P014",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PP_E4A3.NA",
+   "email_name": "User.Mixto.Comunidad.CDP_Proplan_PP_E4A3.NA",
+   "email_id": "84321",
+   "gana": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PP_E4A3.NA",
+   "via": "SFMC(84321)"
+  },
+  {
+   "fila": 107,
+   "pieza_id": "009-P015",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PAE_E4B1.NA",
+   "email_name": "User.Perros.Comunidad.CDP_Proplan_PAE_E4B1.NA",
+   "email_id": "84322",
+   "gana": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PAE_E4B1.NA",
+   "via": "SFMC(84322)"
+  },
+  {
+   "fila": 108,
+   "pieza_id": "009-P016",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PAE_E4B2.NA",
+   "email_name": "User.Gatos.Comunidad.CDP_Proplan_PAE_E4B2.NA",
+   "email_id": "84323",
+   "gana": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PAE_E4B2.NA",
+   "via": "SFMC(84323)"
+  },
+  {
+   "fila": 109,
+   "pieza_id": "009-P017",
+   "canal": "Email",
+   "content_name": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PAE_E4B3.NA",
+   "email_name": "User.Mixto.Comunidad.CDP_Proplan_PAE_E4B3.NA",
+   "email_id": "84261",
+   "gana": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PAE_E4B3.NA",
+   "via": "⚠ difieren y no hay EmailID → gana Content_Name"
+  }
+ ]
+}

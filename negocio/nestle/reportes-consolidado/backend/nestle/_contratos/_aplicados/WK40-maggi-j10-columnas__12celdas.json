@@ -1,0 +1,107 @@
+{
+ "corte": "WK40-maggi-j10-columnas",
+ "celdas": 12,
+ "columnas": 0,
+ "hojas_regeneradas": 0,
+ "respaldo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-WK40-maggi-j10-columnas.xlsx",
+ "cambios": [
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 28,
+   "columna": "RECETAS ASIGNADAS",
+   "valor": "Dips Botaneros · Pepimiche",
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 28,
+   "columna": "SHORTLINKS ASIGNADOS",
+   "valor": "kzSTHGEd · jhMxJiSo",
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 28,
+   "columna": "UTMS CONTENT ORIGEN",
+   "valor": "e-j10",
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 28,
+   "columna": "UTMS CONTENT MODIFICADAS",
+   "valor": "e-j10",
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 28,
+   "columna": "Medición desde",
+   "valor": 46290,
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 28,
+   "columna": "Medición hasta",
+   "valor": 46293,
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 29,
+   "columna": "RECETAS ASIGNADAS",
+   "valor": "Papitas elote",
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 29,
+   "columna": "SHORTLINKS ASIGNADOS",
+   "valor": "uCV8KGHm",
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 29,
+   "columna": "UTMS CONTENT ORIGEN",
+   "valor": "wa-j10",
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 29,
+   "columna": "UTMS CONTENT MODIFICADAS",
+   "valor": "wa-j10",
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 29,
+   "columna": "Medición desde",
+   "valor": 46289,
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  },
+  {
+   "paso": "maggi-j10-columnas",
+   "hoja": "Maggi Reporte",
+   "fila": 29,
+   "columna": "Medición hasta",
+   "valor": 46292,
+   "porque": "Fila nueva de J10 en Maggi Reporte: sus 6 columnas propias las calcula maggi.calcular-columnas.js desde el maestro de links. El reporte no tiene estas columnas, asi que al copiar quedaron vacias."
+  }
+ ],
+ "columnas_nuevas": [],
+ "hojas": []
+}

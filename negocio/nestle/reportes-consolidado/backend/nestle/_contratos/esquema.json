@@ -1,0 +1,388 @@
+{
+ "paso": "E0.1",
+ "version": 1,
+ "fecha": "2026-08-24",
+ "que_es": "El diccionario de datos del sistema: entidades, llaves, relaciones y grano. Ningún skill debe hardcodear una llave: la pide aquí.",
+ "como_se_usa": "require lib-esquema.js — prefijo(), llaveDe(hoja), foraneas(hoja), admiteNA(hoja, col)",
+ "regla_de_oro": "Un dato, una autoridad. Si dos lugares guardan el mismo hecho, uno es la autoridad y el otro es una vista verificada por un guardián.",
+ "prefijo_dimensional": [
+  {
+   "orden": 1,
+   "id": "dim.campana",
+   "nombre": "Campaña",
+   "tipo": "texto",
+   "vocabulario": "cerrado",
+   "na": false
+  },
+  {
+   "orden": 2,
+   "id": "dim.canal",
+   "nombre": "Canal",
+   "tipo": "texto",
+   "vocabulario": "cerrado",
+   "na": false
+  },
+  {
+   "orden": 3,
+   "id": "dim.objetivo",
+   "nombre": "Objetivo",
+   "tipo": "texto",
+   "vocabulario": "cerrado",
+   "na": true
+  },
+  {
+   "orden": 4,
+   "id": "dim.touchpoint",
+   "nombre": "TouchPoint",
+   "tipo": "texto",
+   "vocabulario": "abierto",
+   "na": false
+  },
+  {
+   "orden": 5,
+   "id": "dim.segmento",
+   "nombre": "Segmento",
+   "tipo": "texto",
+   "vocabulario": "abierto",
+   "na": true
+  },
+  {
+   "orden": 6,
+   "id": "dim.quincena",
+   "nombre": "Quincena",
+   "tipo": "texto",
+   "formato": "AAAA-MM-Qn",
+   "na": false
+  },
+  {
+   "orden": 7,
+   "id": "dim.mes",
+   "nombre": "Mes",
+   "tipo": "texto",
+   "na": false
+  },
+  {
+   "orden": 8,
+   "id": "dim.mes_num",
+   "nombre": "Mes (#)",
+   "tipo": "entero",
+   "na": false
+  },
+  {
+   "orden": 9,
+   "id": "dim.marca",
+   "nombre": "Marca",
+   "tipo": "texto",
+   "vocabulario": "cerrado",
+   "na": false
+  },
+  {
+   "orden": 10,
+   "id": "dim.bu",
+   "nombre": "BU",
+   "tipo": "texto",
+   "vocabulario": "cerrado",
+   "na": false
+  },
+  {
+   "orden": 11,
+   "id": "dim.pieza_id",
+   "nombre": "Pieza_ID",
+   "tipo": "texto",
+   "formato": "CCC-Pnnn",
+   "na": true
+  },
+  {
+   "orden": 12,
+   "id": "dim.email_name",
+   "nombre": "Email_Name",
+   "tipo": "texto",
+   "na": true
+  }
+ ],
+ "entidades": {
+  "campana": {
+   "que_es": "La campaña de marketing. Vocabulario CERRADO: ningún paso puede introducir una nueva.",
+   "llave_primaria": "Camp_ID",
+   "llave_natural": "Campaña",
+   "vive_en": "_contratos/vocabulario.json",
+   "hijos": [
+    "pieza"
+   ]
+  },
+  "pieza": {
+   "que_es": "Una pieza enviable identificable. En email = un correo (Principal o FUP). En WhatsApp = un envío.",
+   "llave_primaria": "Pieza_ID",
+   "llave_natural": {
+    "Email": "Email_Name",
+    "WhatsApp": "Whatsapp_Name"
+   },
+   "nota_llave_natural": "La identidad de una pieza es el nombre con el que SU FUENTE la publica, y las fuentes son dos. Email: `Email_Name`, probado único (107 piezas con nombre, 107 nombres distintos). WhatsApp: `Whatsapp_Name`, creado el 2026-09-15 — 18 piezas, 24 nombres distintos contando variantes, ninguno repetido. Una pieza puede tener VARIOS nombres físicos para el mismo id lógico (`*_Names_Variantes`): pasa cuando operación reusa un asset (005-P010 y 005-P012 en email) o cuando dos journeys comparten un shortlink y por tanto no se pueden separar (005-P011 en WhatsApp). El id lógico es inmutable; el nombre físico cambia.",
+   "foraneas": {
+    "Camp_ID": "campana",
+    "Pieza_Principal_ID": "pieza · apunta al Principal del que este FUP es seguimiento. N/A si no es FUP."
+   },
+   "vive_en": "Catalogo_Piezas",
+   "grano": "una fila = una pieza",
+   "hijos": [
+    "envio_email",
+    "envio_whatsapp",
+    "link_qcart"
+   ],
+   "ojo_pro_plan": "🔴 Pro Plan (Fuel for life) tiene 17 piezas reales y SE MANTIENEN TODAS. Su desglose es touchpoint (E-E3 · E-E4) × audiencia (Pet Parents · Aspiracionales · Educated Pet Owners) × mascota (Perros · Gatos · Mixto). El catálogo guarda el segmento corto y por eso 7 piezas colisionan; SFMC entrega el segmento COMPLETO («Pro Plan Pet Parents · Perros») y ESO es lo que las distingue. Ningún paso puede agrupar Pro Plan a un segmento corto: destruiría el desglose que el reporte existe para dar.",
+   "historia": [
+    {
+     "cuando": "2026-09-15",
+     "campo": "llave_natural",
+     "decia": "Email_Name",
+     "por": "Rick pidió una llave propia para WhatsApp: «de WA deberíamos tener una especie de Whatsapp Name». Con una sola llave natural, las 18 piezas de WhatsApp quedaban fuera de toda exigencia de identidad."
+    }
+   ]
+  },
+  "envio_email": {
+   "que_es": "Las métricas de SFMC de una pieza de email.",
+   "llave_primaria": "Email_ID",
+   "nota": "Email_ID es el número de la DE. Content_ID es la colita del Email_Name. NO son lo mismo.",
+   "foraneas": {
+    "Pieza_ID": "pieza"
+   },
+   "vive_en": "Data_Email",
+   "grano": "una fila = una pieza"
+  },
+  "envio_whatsapp": {
+   "que_es": "Las métricas de un envío de WhatsApp. Su llave natural es `Whatsapp_Name` (desde el 2026-09-15). No tiene Subject: la fuente no lo entrega → `N/A`.",
+   "llave_primaria": "Pieza_ID + TouchPoint",
+   "foraneas": {
+    "Pieza_ID": "pieza"
+   },
+   "vive_en": "Data_WhatsApp",
+   "grano": "una fila = un envío",
+   "historia": [
+    {
+     "cuando": "2026-09-15",
+     "campo": "que_es",
+     "decia": "Las métricas de un envío de WhatsApp. No tiene Email_Name ni Subject → N/A.",
+     "por": "la frase describía un hueco que ya se cerró; leída hoy autorizaba dejar WhatsApp sin nombre."
+    }
+   ],
+   "llave_natural": "Whatsapp_Name"
+  },
+  "link_qcart": {
+   "que_es": "Un shortlink de Qcart. Pertenece a UNA pieza, por tanto a UN touchpoint × UNA audiencia.",
+   "llave_primaria": "shortlink_code",
+   "autoridad": "Qcart-Links Mails-Hive-MX.xlsx — lo que no está ahí no cuenta",
+   "foraneas": {
+    "Pieza_ID": "pieza"
+   },
+   "vive_en": "Catalogo_Piezas (columnas Cod_*) + _catalogo/activacion-qcart.json"
+  },
+  "evento_qcart": {
+   "que_es": "Un carrito o un producto. Solo cuenta desde la fecha de activación de su link.",
+   "llave_primaria": "fecha_hora + shortlink_code + tienda + producto",
+   "foraneas": {
+    "shortlink_code": "link_qcart"
+   },
+   "vive_en": "Data_Qcart_Carritos · Data_Qcart_Productos",
+   "grano": "una fila = un evento"
+  },
+  "fila_reporte": {
+   "que_es": "La unidad de reporte: agrega N piezas. Principal y FUP van FUSIONADOS en una fila.",
+   "llave_primaria": "Campaña + TouchPoint + Segmento + Quincena_del_Principal",
+   "nota_llave": "Sin la quincena hay 13 colisiones MEDIDAS: las oleadas de AON (marzo y abril) comparten campaña, touchpoint y segmento pero son piezas distintas.",
+   "vive_en": "Report_Resumen",
+   "grano": "una fila = campaña × touchpoint × segmento × quincena"
+  }
+ },
+ "estados_de_celda": {
+  "valor": "el dato",
+  "N/A": "NO APLICA a esta fila por naturaleza — Email_Name en WhatsApp, FUP_Sends sin FUP, Pieza_Principal_ID en un Principal",
+  "PENDIENTE": "SÍ aplica y lo debemos — un subject que la fuente todavía no entrega",
+  "regla": "Ninguna celda vacía. Llenar todo de N/A cerraría el archivo pero borraría la señal de qué falta; con tres estados un guardián puede exigir que PENDIENTE tienda a cero.",
+  "meta_del_corte": "0 vacías · 0 PENDIENTE"
+ },
+ "hojas": {
+  "Report_Resumen": {
+   "entidad": "fila_reporte",
+   "prefijo": true,
+   "escribe": "resumen.regenerar.js"
+  },
+  "Catalogo_Piezas": {
+   "entidad": "pieza",
+   "prefijo": true,
+   "escribe": "los skills de catálogo vía el acumulador"
+  },
+  "Data_Email": {
+   "entidad": "envio_email",
+   "prefijo": true,
+   "escribe": "fuentes-email.reconstruir-data-email.js"
+  },
+  "Data_WhatsApp": {
+   "entidad": "envio_whatsapp",
+   "prefijo": true,
+   "escribe": "el skill de fuente WhatsApp"
+  },
+  "Data_Qcart_Carritos": {
+   "entidad": "evento_qcart",
+   "prefijo": true,
+   "escribe": "el skill de fuente Qcart"
+  },
+  "Data_Qcart_Productos": {
+   "entidad": "evento_qcart",
+   "prefijo": true,
+   "escribe": "el skill de fuente Qcart"
+  },
+  "Catalogo_Referencias": {
+   "entidad": "normalizacion",
+   "prefijo": true,
+   "escribe": "vista de _contratos/normalizacion.json",
+   "puente": [
+    "Pieza_IDs",
+    "Dimension",
+    "Valor_Canonico"
+   ]
+  },
+  "Reporte_julio": {
+   "entidad": "histórico",
+   "prefijo": false,
+   "escribe": "NADIE — congelado, modelo viejo"
+  },
+  "Maggi Reporte": {
+   "entidad": "reporte_de_rick",
+   "prefijo": false,
+   "escribe": "RICK. El sistema solo llena columnas que él pide, celda por celda (lib-celda-xml), nunca regenera la hoja",
+   "nota": "La creó Rick a mano. Un script que le escribe celdas es un invitado, no su dueño: no decide su layout, ni su orden de filas, ni sus columnas."
+  },
+  "Exclusiones": {
+   "entidad": "notas_de_rick",
+   "prefijo": false,
+   "escribe": "NADIE — ningún script la toca",
+   "nota": "«ECOSISTEMA DE EXCLUSIONES». Notas de trabajo de Rick. Se declara para que deje de contar como hoja suelta."
+  },
+  "Sheet1": {
+   "entidad": "notas_de_rick",
+   "prefijo": false,
+   "escribe": "NADIE — ningún script la toca",
+   "nota": "Borrador de Rick. Se declara para que deje de contar como hoja suelta."
+  }
+ },
+ "verificado_contra_el_archivo": {
+  "cuando": "2026-08-24",
+  "checks_ok": 10,
+  "checks_mal": 0,
+  "email_name_unico": true,
+  "pieza_id_unico": true,
+  "llave_reporte_sin_colision": false,
+  "prefijo_faltante_por_hoja": [
+   {
+    "hoja": "Report_Resumen",
+    "faltan": [
+     "Pieza_ID",
+     "Email_Name"
+    ]
+   },
+   {
+    "hoja": "Catalogo_Piezas",
+    "faltan": [
+     "Mes",
+     "Mes (#)"
+    ]
+   },
+   {
+    "hoja": "Data_Email",
+    "faltan": [
+     "Campaña",
+     "Objetivo",
+     "Segmento",
+     "Quincena",
+     "Mes",
+     "Mes (#)"
+    ]
+   },
+   {
+    "hoja": "Data_WhatsApp",
+    "faltan": [
+     "Segmento",
+     "Quincena",
+     "Mes",
+     "Mes (#)",
+     "Email_Name"
+    ]
+   },
+   {
+    "hoja": "Data_Qcart_Carritos",
+    "faltan": [
+     "Campaña",
+     "Canal",
+     "Objetivo",
+     "TouchPoint",
+     "Segmento",
+     "Quincena",
+     "Mes",
+     "Mes (#)",
+     "Email_Name"
+    ]
+   },
+   {
+    "hoja": "Data_Qcart_Productos",
+    "faltan": [
+     "Campaña",
+     "Canal",
+     "Objetivo",
+     "TouchPoint",
+     "Segmento",
+     "Quincena",
+     "Mes",
+     "Mes (#)",
+     "Email_Name"
+    ]
+   },
+   {
+    "hoja": "Catalogo_Referencias",
+    "faltan": [
+     "Campaña",
+     "Canal",
+     "Objetivo",
+     "TouchPoint",
+     "Segmento",
+     "Quincena",
+     "Mes",
+     "Mes (#)",
+     "Marca",
+     "BU",
+     "Pieza_ID",
+     "Email_Name"
+    ]
+   }
+  ]
+ },
+ "deuda_conocida": [
+  {
+   "que": "La llave del reporte colisiona 7 veces",
+   "causa": "31 piezas del catálogo no tienen Quincena_Lanzamiento, y ninguna tiene fecha. De ellas, 12 son Pro Plan CONFIRMADAS con envíos reales.",
+   "por_que_no_bloquea": "El dato existe en la fuente: SFMC entrega Fecha_Primer_Envio en 98/98 piezas y un Segmento más específico que desambigua Pro Plan. No falta el dato: falta cargarlo.",
+   "lo_cierra": "paso 2.6 — cargar fecha y segmento completo desde SFMC",
+   "colisiones": [
+    "Fuel for life|E-E3|Pro Plan Pet Parents|",
+    "Fuel for life|E-E3|Pro Plan Aspiracionales|",
+    "Fuel for life|E-E3|Pro Plan Educated Pet Owners|",
+    "Fuel for life|E-E4|Pro Plan Pet Parents|",
+    "Fuel for life|E-E4|Pro Plan Pet Parents|",
+    "Fuel for life|E-E4|Aspiracionales + Educated Pet Owners|",
+    "Fuel for life|E-E4|Aspiracionales + Educated Pet Owners|"
+   ],
+   "guardian": "antes de la Puerta 2, deuda_conocida debe estar VACÍA"
+  },
+  {
+   "que": "🔴 El reporte y el catálogo NO SE PUEDEN CRUZAR: 0 de 86 filas emparejan",
+   "causa": "La quincena está en DOS formatos para el mismo hecho: Report_Resumen usa «Mar-Q1-2026» y Catalogo_Piezas usa «2026-03-Q1». Ninguna llave compuesta que la incluya puede funcionar.",
+   "medido": "tal como están: 0/86 cruzan · normalizando el formato: 64/86",
+   "por_que_importa": "Es la causa concreta de que la atribución dependa de buscar el dato a mano. No es un problema de contenido sino de FORMA: el dato es el mismo.",
+   "formato_canonico": "AAAA-MM-Qn (el del catálogo) — ordenable alfabéticamente, sin ambigüedad de idioma",
+   "lo_cierra": "paso 3.1 — lib-quincena: una sola regla (día 1-15 = Q1, 16-fin = Q2) y un solo formato",
+   "guardian": "ninguna hoja puede escribir una quincena que no case con AAAA-MM-Qn"
+  }
+ ],
+ "decisiones_que_lo_originan": "_orquesta/plan-modelo-datos-y-skills.md — las 22 decisiones",
+ "ultimo_cambio": "2026-09-22 · se declaran las 3 hojas de Rick (Maggi Reporte, Exclusiones, Sheet1) y se retiran Data_Clicks y Dic_Clicks, que ningún esquema declaró nunca",
+ "regla_de_las_hojas": "El libro no puede tener una hoja que este esquema no declare. Lo vigila orquestador.guardian-hojas.js en cada corte. Una hoja sin declarar no es autoridad de nada, y si tampoco es la vista de nadie, es una copia huérfana — fue el caso de Data_Clicks y Dic_Clicks, retiradas el 22-sep-2026."
+}

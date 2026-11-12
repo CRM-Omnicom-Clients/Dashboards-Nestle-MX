@@ -1,0 +1,1412 @@
+{
+ "paso": "Q3",
+ "eventos": 6402,
+ "desconocidos": 1761,
+ "nuestros": 1222,
+ "ajenos": 539,
+ "campanas_nuestras": [
+  {
+   "utm_campaign": "cachoreada_de_mariscos",
+   "eventos": 18,
+   "links": [
+    "iByENXvc"
+   ],
+   "desde": "2026-03-01",
+   "hasta": "2026-08-12",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "chilaquiles_al_mar",
+   "eventos": 14,
+   "links": [
+    "P3CWcgqr"
+   ],
+   "desde": "2026-03-01",
+   "hasta": "2026-08-20",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "lechera-junio",
+   "eventos": 165,
+   "links": [
+    "AwsreGWs",
+    "aPFwXeaG",
+    "oJclpobS",
+    "lfFYbUfy",
+    "3Lb6FbAa",
+    "Cj0XkO1h",
+    "M67vOg1g",
+    "8IlcZ2pI",
+    "TMECSIho",
+    "y6hReRB5",
+    "dlO6lyOM",
+    "SgKfnrbu",
+    "tErzItBY",
+    "pkuRXYX1",
+    "ePytHRi3",
+    "3vn9NQfR",
+    "2x7oNuzI",
+    "DmrKXQ1D",
+    "",
+    "Kg64xDpZ"
+   ],
+   "desde": "2026-05-27",
+   "hasta": "2026-08-11",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "crm-hive",
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": [
+    "e-p1",
+    "e-p2",
+    "e-p4",
+    "e-p3",
+    "e-c1"
+   ]
+  },
+  {
+   "utm_campaign": "papas_bbq_fuego",
+   "eventos": 238,
+   "links": [
+    "M6WMA8VB"
+   ],
+   "desde": "2026-03-26",
+   "hasta": "2026-08-11",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "maggi-junio26",
+   "eventos": 149,
+   "links": [
+    "L5rqwrzD",
+    "yj8PKdRr",
+    "JPrNSrwn",
+    "LJQsq5T9",
+    "P8IcwfWJ",
+    "znjG7J6r",
+    "5NnTxarc",
+    "YMwwJWdM"
+   ],
+   "desde": "2026-06-01",
+   "hasta": "2026-08-20",
+   "medios": [
+    "whatsapp",
+    "email"
+   ],
+   "fuentes": [
+    "crm-hive",
+    "maggi-federacion"
+   ],
+   "utm_content": [
+    "e-botana1",
+    "e-cooking1",
+    "e-bebida1",
+    "e-cooking-alitas",
+    "e-bebida3",
+    "e-botanas3",
+    "e-cooking3",
+    "e-cooking2"
+   ]
+  },
+  {
+   "utm_campaign": "maggi-ligamx-agosto26",
+   "eventos": 86,
+   "links": [
+    "CDoLolmJ",
+    "TjDcVdNI",
+    "BdN0ck7t",
+    "hwVjW6u0",
+    "dgtFrwjE",
+    "lmbcEdCW",
+    "k4hC6ZLT",
+    "Deqv4KA3",
+    "bgsOdlLo",
+    "okUSdwJk",
+    "J2Q8RKyO",
+    "t2Xsff9R",
+    "heWpZFIA",
+    "piPZpvXp",
+    "CVCPHfND",
+    "SD0eqGtK",
+    "0dr0ela7",
+    "p6BjfLqz",
+    "GQnvqqP3",
+    "vfzb8qQ6",
+    ""
+   ],
+   "desde": "2026-08-10",
+   "hasta": "2026-08-19",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "crm-hive"
+   ],
+   "utm_content": [
+    "e-p2",
+    "e-p6",
+    "e-p5",
+    "e-p7",
+    "e-p3",
+    "e-p4",
+    "e-p1"
+   ]
+  },
+  {
+   "utm_campaign": "ceviche_de_zanahoria",
+   "eventos": 9,
+   "links": [
+    "1A8GjyWH"
+   ],
+   "desde": "2026-03-01",
+   "hasta": "2026-08-18",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "gorditas_pulpo_a_la_diabla",
+   "eventos": 12,
+   "links": [
+    "xw3PcYtO"
+   ],
+   "desde": "2026-03-09",
+   "hasta": "2026-08-17",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "ensalada_de_atún",
+   "eventos": 19,
+   "links": [
+    "YvPwV6Xv"
+   ],
+   "desde": "2026-03-01",
+   "hasta": "2026-08-17",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "mocktail_de_naranja",
+   "eventos": 9,
+   "links": [
+    "hpCxcjHz"
+   ],
+   "desde": "2026-03-01",
+   "hasta": "2026-08-04",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "ensalada_pollo,_mango_y_queso_cabra",
+   "eventos": 9,
+   "links": [
+    "xVmHxi1A"
+   ],
+   "desde": "2026-03-01",
+   "hasta": "2026-08-04",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "ensalada_de_quinoa",
+   "eventos": 11,
+   "links": [
+    "ou4hFVhQ"
+   ],
+   "desde": "2026-06-05",
+   "hasta": "2026-08-04",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "maggi-julio26",
+   "eventos": 30,
+   "links": [
+    "P8IcwfWJ",
+    "znjG7J6r",
+    "5NnTxarc"
+   ],
+   "desde": "2026-07-02",
+   "hasta": "2026-08-20",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "crm-hive"
+   ],
+   "utm_content": [
+    "e-bebida5",
+    "e-botanas5",
+    "e-cooking5"
+   ]
+  },
+  {
+   "utm_campaign": "flan_chocolate_almendras",
+   "eventos": 6,
+   "links": [
+    "SoT7bHyz"
+   ],
+   "desde": "2026-03-05",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "cupcakes_de_fresa",
+   "eventos": 9,
+   "links": [
+    "F9dS2vLj"
+   ],
+   "desde": "2026-03-08",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "pizza_platano",
+   "eventos": 5,
+   "links": [
+    "OlTDMAlZ"
+   ],
+   "desde": "2026-06-23",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "carlota_de_dulce",
+   "eventos": 8,
+   "links": [
+    "n1H4ukFC"
+   ],
+   "desde": "2026-03-08",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "nieve_de_sandía_con_salsa_de_fresa",
+   "eventos": 4,
+   "links": [
+    "nWMtYnjm"
+   ],
+   "desde": "2026-03-04",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "carpaccio_de_betabel",
+   "eventos": 9,
+   "links": [
+    "50nM5J6U"
+   ],
+   "desde": "2026-03-02",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "chiles_rellenos_de_queso",
+   "eventos": 6,
+   "links": [
+    "mwJgtfLZ"
+   ],
+   "desde": "2026-03-03",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "pastel_fresa_con_crema",
+   "eventos": 9,
+   "links": [
+    "8phhPhSu"
+   ],
+   "desde": "2026-03-08",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "crema_de_calabaza",
+   "eventos": 3,
+   "links": [
+    "vqbXWtEA"
+   ],
+   "desde": "2026-07-01",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "alitas_con_salsa_de_piña_picante",
+   "eventos": 7,
+   "links": [
+    "fac70ojH"
+   ],
+   "desde": "2026-03-04",
+   "hasta": "2026-08-03",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "yfdufeb-whavb",
+   "eventos": 2,
+   "links": [
+    ""
+   ],
+   "desde": "2026-08-02",
+   "hasta": "2026-08-02",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "dez-uvif"
+   ],
+   "utm_content": [
+    "e-c1"
+   ]
+  },
+  {
+   "utm_campaign": "fresas_con_coco",
+   "eventos": 10,
+   "links": [
+    "jHg0FMCP"
+   ],
+   "desde": "2026-03-09",
+   "hasta": "2026-07-30",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "gelatina_de_mango_y_tapioca",
+   "eventos": 5,
+   "links": [
+    "Nm1f23Sl"
+   ],
+   "desde": "2026-06-30",
+   "hasta": "2026-07-30",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "tarta_de_queso",
+   "eventos": 5,
+   "links": [
+    "e1PrcHd9"
+   ],
+   "desde": "2026-03-06",
+   "hasta": "2026-07-27",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "paletas_heladas_de_mojito",
+   "eventos": 4,
+   "links": [
+    "eJ9u8OtT"
+   ],
+   "desde": "2026-06-23",
+   "hasta": "2026-08-20",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "ceviche_de_mango",
+   "eventos": 12,
+   "links": [
+    "3Ewqmj3M"
+   ],
+   "desde": "2026-03-04",
+   "hasta": "2026-07-24",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "ensalada_pollo_cacahuates",
+   "eventos": 9,
+   "links": [
+    "JO9VRf2y"
+   ],
+   "desde": "2026-03-09",
+   "hasta": "2026-07-24",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "cocktail_de_zanahorias",
+   "eventos": 18,
+   "links": [
+    "9XYh7B7k"
+   ],
+   "desde": "2026-03-01",
+   "hasta": "2026-08-19",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "aguachile_de_queso_panela",
+   "eventos": 4,
+   "links": [
+    "SvJP3g5r"
+   ],
+   "desde": "2026-06-23",
+   "hasta": "2026-07-15",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "ensalada_mixta_al_pimentó",
+   "eventos": 2,
+   "links": [
+    "DmIOHFks"
+   ],
+   "desde": "2026-06-30",
+   "hasta": "2026-07-15",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "tacos_de_pescado_estilo_california",
+   "eventos": 4,
+   "links": [
+    "pGR8Beae"
+   ],
+   "desde": "2026-03-01",
+   "hasta": "2026-07-15",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "arranca_la_previa",
+   "eventos": 23,
+   "links": [
+    "Ty0YTntY"
+   ],
+   "desde": "2026-03-25",
+   "hasta": "2026-07-14",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "mango_fresh",
+   "eventos": 8,
+   "links": [
+    "KALALRC7"
+   ],
+   "desde": "2026-03-02",
+   "hasta": "2026-07-13",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "cuaresma2026",
+   "eventos": 78,
+   "links": [
+    "jHg0FMCP",
+    "JO9VRf2y",
+    "ou4hFVhQ",
+    "KALALRC7",
+    "MdU4V4ZS"
+   ],
+   "desde": "2026-03-23",
+   "hasta": "2026-07-06",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "journey_tp"
+   ],
+   "utm_content": [
+    "cta2"
+   ]
+  },
+  {
+   "utm_campaign": "mousse_de_chocolate_y_plátano",
+   "eventos": 4,
+   "links": [
+    "YH8BTSB1"
+   ],
+   "desde": "2026-03-04",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "gelatina_mosaico_pie_de_limón",
+   "eventos": 9,
+   "links": [
+    "XBNw1XVP"
+   ],
+   "desde": "2026-03-08",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "costillas_de_cerdo_al_ajo",
+   "eventos": 4,
+   "links": [
+    "Q0pYKNsR"
+   ],
+   "desde": "2026-03-04",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "gelatina_de_arroz_con_fresas",
+   "eventos": 5,
+   "links": [
+    "Fj21ipg9"
+   ],
+   "desde": "2026-03-05",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "pastel_aniversario_berry_crocker",
+   "eventos": 6,
+   "links": [
+    "tyMKOk1t"
+   ],
+   "desde": "2026-03-08",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "gelatina_3_leches_arandano",
+   "eventos": 6,
+   "links": [
+    "JnXM1jop"
+   ],
+   "desde": "2026-03-08",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "costillas_a_las_finas_hierbas",
+   "eventos": 2,
+   "links": [
+    "f9mFvLGH"
+   ],
+   "desde": "2026-06-23",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "tiramisu_fresa",
+   "eventos": 6,
+   "links": [
+    "ZnGhiZpn",
+    "KFt4Wxu1"
+   ],
+   "desde": "2026-03-05",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "explosion_chocolate",
+   "eventos": 2,
+   "links": [
+    "VHEdN4k1"
+   ],
+   "desde": "2026-03-03",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "green_burrito",
+   "eventos": 9,
+   "links": [
+    "Imib3LDp"
+   ],
+   "desde": "2026-03-04",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "sopa_tarasca",
+   "eventos": 7,
+   "links": [
+    "cvl0Ms9N"
+   ],
+   "desde": "2026-03-04",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "pozole_de_mariscos",
+   "eventos": 7,
+   "links": [
+    "Dfup740O"
+   ],
+   "desde": "2026-03-23",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "cheescake_de_arroz_con_jamaica",
+   "eventos": 6,
+   "links": [
+    "TWP9h3SQ"
+   ],
+   "desde": "2026-03-08",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "menudo_de_setas",
+   "eventos": 3,
+   "links": [
+    "xbROChH3"
+   ],
+   "desde": "2026-03-04",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "cupcakes_de_rosca_de_reyes",
+   "eventos": 7,
+   "links": [
+    "vXdsla6r"
+   ],
+   "desde": "2026-03-01",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "chili_dog_de_pollo",
+   "eventos": 3,
+   "links": [
+    "ottuhmbv"
+   ],
+   "desde": "2026-03-02",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "lengua_de_res",
+   "eventos": 3,
+   "links": [
+    "XyZMrH0h"
+   ],
+   "desde": "2026-03-04",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "tamales_de_huitlacoche_y_queso_oaxaca",
+   "eventos": 2,
+   "links": [
+    "OeZJ1CFQ"
+   ],
+   "desde": "2026-06-23",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "chocoflan_sin_horno",
+   "eventos": 8,
+   "links": [
+    "xAtY15v5",
+    "DsOa9uT5"
+   ],
+   "desde": "2026-03-05",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "mixiote_de_cerdo",
+   "eventos": 1,
+   "links": [
+    "gSDNFMJ2"
+   ],
+   "desde": "2026-07-01",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "mojarra",
+   "eventos": 1,
+   "links": [
+    "l2j3zDzP"
+   ],
+   "desde": "2026-07-01",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "pastel_chocolate_carlos_v",
+   "eventos": 9,
+   "links": [
+    "DKtoKJLf"
+   ],
+   "desde": "2026-03-08",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "costilla_salsa_agridulce",
+   "eventos": 2,
+   "links": [
+    "JDfsuF7d"
+   ],
+   "desde": "2026-06-23",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "tarta_de_chocolate",
+   "eventos": 3,
+   "links": [
+    "ldImbfrl"
+   ],
+   "desde": "2026-03-09",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "tacos_de_pollo",
+   "eventos": 14,
+   "links": [
+    "vnRzTNv5",
+    "p3HCI9FC",
+    ""
+   ],
+   "desde": "2026-03-16",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "panque_de_platano",
+   "eventos": 2,
+   "links": [
+    "FWlNFRcI"
+   ],
+   "desde": "2026-06-23",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "pastel_mousse_mandarina",
+   "eventos": 1,
+   "links": [
+    "l9725HM6"
+   ],
+   "desde": "2026-07-01",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "torta_de_hojarasca",
+   "eventos": 1,
+   "links": [
+    "NJdYVt4o"
+   ],
+   "desde": "2026-07-01",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "tlacoyos_de_brócoli_con_nopales",
+   "eventos": 1,
+   "links": [
+    "HNhEw4bE"
+   ],
+   "desde": "2026-07-01",
+   "hasta": "2026-07-01",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "hotcake_mazapan",
+   "eventos": 7,
+   "links": [
+    "jNbrM4Ig"
+   ],
+   "desde": "2026-03-23",
+   "hasta": "2026-06-30",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "(vacío)",
+   "eventos": 2,
+   "links": [
+    "DB5JTZCZ",
+    "Z61C3QsL"
+   ],
+   "desde": "2026-06-25",
+   "hasta": "2026-06-30",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "19_sept_hamburguesa",
+   "eventos": 2,
+   "links": [
+    "POiiBTIZ"
+   ],
+   "desde": "2026-06-04",
+   "hasta": "2026-06-05",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_nestlé_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "brocheta_de_frutas",
+   "eventos": 13,
+   "links": [
+    "kWPNxH2s"
+   ],
+   "desde": "2026-03-05",
+   "hasta": "2026-04-30",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "hotcake_calabaza",
+   "eventos": 8,
+   "links": [
+    "dhaqzoHd"
+   ],
+   "desde": "2026-03-23",
+   "hasta": "2026-03-30",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "hotcake_naranja",
+   "eventos": 4,
+   "links": [
+    "47kVK0ah"
+   ],
+   "desde": "2026-03-24",
+   "hasta": "2026-03-25",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "hotcakes",
+   "eventos": 6,
+   "links": [
+    "VnqjSb2a"
+   ],
+   "desde": "2026-03-23",
+   "hasta": "2026-03-25",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "hotcake_quinoa",
+   "eventos": 4,
+   "links": [
+    "HH6fEwnL"
+   ],
+   "desde": "2026-03-24",
+   "hasta": "2026-03-25",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "espaguetti_hotcake",
+   "eventos": 2,
+   "links": [
+    "5S9pFqMY"
+   ],
+   "desde": "2026-03-25",
+   "hasta": "2026-03-25",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "hotcake_paylimon",
+   "eventos": 2,
+   "links": [
+    "HffqwpDk"
+   ],
+   "desde": "2026-03-24",
+   "hasta": "2026-03-25",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "alitas_bbq",
+   "eventos": 11,
+   "links": [
+    "srTBJgKs"
+   ],
+   "desde": "2026-03-16",
+   "hasta": "2026-03-24",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "pastel_para_festejar",
+   "eventos": 4,
+   "links": [
+    "EpbOAdg7"
+   ],
+   "desde": "2026-03-08",
+   "hasta": "2026-03-11",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_recetas_nestle_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "dulce_de_calabaza",
+   "eventos": 1,
+   "links": [
+    "nTbfaJfg"
+   ],
+   "desde": "2026-03-02",
+   "hasta": "2026-03-02",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_nestlé_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "pan_de_muerto",
+   "eventos": 1,
+   "links": [
+    "Ixb500aj"
+   ],
+   "desde": "2026-03-02",
+   "hasta": "2026-03-02",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_nestlé_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "crema_de_elote",
+   "eventos": 1,
+   "links": [
+    "Hz3ypj8Z"
+   ],
+   "desde": "2026-03-02",
+   "hasta": "2026-03-02",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_nestlé_mx"
+   ],
+   "utm_content": []
+  },
+  {
+   "utm_campaign": "galletas_de_calabaza_especiada",
+   "eventos": 1,
+   "links": [
+    "JmyZEzWL"
+   ],
+   "desde": "2026-03-02",
+   "hasta": "2026-03-02",
+   "medios": [
+    "email"
+   ],
+   "fuentes": [
+    "qc_nestlé_mx"
+   ],
+   "utm_content": []
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "paso": "B2",
+ "que_es": "La llave que hace unica a una fila de cada hoja. Declarada, no adivinada: cada hoja tiene su forma. Con esto un guardian de duplicados corre en cada corte sin re-descubrir la llave.",
+ "regla": "un duplicado es dos filas con la MISMA llave. Se conserva la primera. Las hojas marcadas reescrita:true se regeneran desde el backend, asi que ahi el guardian AVISA en vez de BLOQUEAR.",
+ "hojas": {
+  "Data_Email":           { "cols": ["pieza_id"], "reescrita": true,  "nota": "grano dia-de-envio hoy; C2 la reconstruye a 98 por pieza" },
+  "Data_WhatsApp":        { "cols": ["pieza_id", "Touchpoint"], "reescrita": false, "nota": "un envio es pieza + touchpoint, nunca solo pieza" },
+  "Data_Qcart_Carritos":  { "cols": ["fecha", "hora", "shortlink_code", "store", "utm_content"], "reescrita": true },
+  "Data_Qcart_Productos": { "cols": ["fecha", "hora", "shortlink_code", "store", "product"], "reescrita": true },
+  "Catalogo_Piezas":      { "cols": ["Pieza_ID"], "reescrita": false },
+  "Catalogo_Referencias": { "cols": ["Tipo", "Dimension", "Valor_Crudo", "Valor_Canonico", "Contexto"], "reescrita": false, "nota": "mezcla vocabulario (por Canonico) y la escalera de alias (por Contexto)" }
+ }
+}

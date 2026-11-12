@@ -1,0 +1,15 @@
+{
+ "skill": "crm-reporte-resumen",
+ "script": "resumen.asegurar-columnas.js",
+ "declarado": "2026-09-24",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Report_Resumen",
+   "grano": "una CELDA de encabezado por columna exigida que falte",
+   "llave": "el nombre del encabezado — no hay filas de datos en juego",
+   "celdas_esperadas": "hasta 21 encabezado(s) · 0 celdas de datos"
+  }
+ ]
+}

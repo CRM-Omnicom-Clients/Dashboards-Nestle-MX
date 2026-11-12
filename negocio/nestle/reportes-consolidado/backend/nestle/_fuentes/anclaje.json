@@ -1,0 +1,114 @@
+{
+ "paso": "B7",
+ "archivo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+ "piezas": 109,
+ "por_hoja": [
+  {
+   "hoja": "Data_Email",
+   "filas": 264,
+   "conAncla": 264,
+   "sinAncla": 0,
+   "pct": 100,
+   "huerfanos": [],
+   "volSin": 0,
+   "colId": "pieza_id"
+  },
+  {
+   "hoja": "Data_WhatsApp",
+   "filas": 12,
+   "conAncla": 12,
+   "sinAncla": 0,
+   "pct": 100,
+   "huerfanos": [],
+   "volSin": 0,
+   "colId": "pieza_id"
+  },
+  {
+   "hoja": "Data_Qcart_Carritos",
+   "filas": 2538,
+   "conAncla": 2538,
+   "sinAncla": 0,
+   "pct": 100,
+   "huerfanos": [],
+   "volSin": 0,
+   "colId": "pieza_id"
+  },
+  {
+   "hoja": "Data_Qcart_Productos",
+   "filas": 647,
+   "conAncla": 647,
+   "sinAncla": 0,
+   "pct": 100,
+   "huerfanos": [],
+   "volSin": 0,
+   "colId": "pieza_id"
+  }
+ ],
+ "mudas": [
+  "004-P011",
+  "004-P012",
+  "004-P014",
+  "004-P015",
+  "004-P016",
+  "005-P001",
+  "005-P002",
+  "005-P003",
+  "005-P004",
+  "009-P006",
+  "009-P007",
+  "009-P008",
+  "009-P009",
+  "009-P010",
+  "009-P011",
+  "009-P012",
+  "009-P013",
+  "009-P014",
+  "009-P015",
+  "009-P016",
+  "009-P017"
+ ],
+ "huerfanos": [],
+ "choques": [],
+ "checks": [
+  {
+   "ok": true,
+   "check": "1 · todo Pieza_ID del catálogo cumple NNN-PNNN",
+   "dato": "los 109 bien formados"
+  },
+  {
+   "ok": true,
+   "check": "2 · el catálogo no repite ningún Pieza_ID",
+   "dato": "ninguno repetido"
+  },
+  {
+   "ok": true,
+   "check": "3a · toda hoja de datos tiene su columna de Pieza_ID",
+   "dato": "las 4 la tienen"
+  },
+  {
+   "ok": true,
+   "check": "3b · ningún id usado en datos falta en el catálogo",
+   "dato": "ninguno huérfano"
+  },
+  {
+   "ok": true,
+   "check": "5 · toda fila de datos tiene ancla",
+   "dato": "todas ancladas"
+  },
+  {
+   "ok": false,
+   "check": "4 · toda pieza del catálogo tiene datos",
+   "dato": "21 sin datos (puede ser normal: aún no salen)"
+  },
+  {
+   "ok": true,
+   "check": "3c · Catalogo_Referencias cruza al catalogo",
+   "dato": "931 ids cruzan desde 212 filas"
+  },
+  {
+   "ok": true,
+   "check": "6 · el mismo Pieza_ID da las mismas dimensiones en todas las hojas",
+   "dato": "coherente en las 4 hojas"
+  }
+ ]
+}

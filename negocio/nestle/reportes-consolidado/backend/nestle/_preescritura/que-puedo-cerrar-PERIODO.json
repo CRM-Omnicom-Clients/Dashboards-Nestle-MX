@@ -1,0 +1,433 @@
+{
+ "cuando": "2026-09-15T00:49:49.544Z",
+ "grupo": "PERIODO",
+ "si": [],
+ "na": [],
+ "no": [
+  {
+   "id": "004-P020",
+   "col": "Fecha_Primer_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Fecha_Primer_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "002-P021",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "002-P022",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "002-P023",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "002-P024",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P010",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P013",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P017",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P018",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P019",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Fecha_Ultimo_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Mes_Lanzamiento",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P010",
+   "col": "Quincenas_Activas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P013",
+   "col": "Quincenas_Activas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P017",
+   "col": "Quincenas_Activas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P018",
+   "col": "Quincenas_Activas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P019",
+   "col": "Quincenas_Activas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "Quincenas_Activas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Quincenas_Activas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "Quincenas_Activas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Quincenas_Activas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "N_Quincenas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "N_Quincenas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "N_Quincenas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "N_Quincenas",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P010",
+   "col": "Meses_Activos",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P013",
+   "col": "Meses_Activos",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "Meses_Activos",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Meses_Activos",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "Meses_Activos",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Meses_Activos",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "N_Meses",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "N_Meses",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "N_Meses",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "N_Meses",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P006",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P007",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P008",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P009",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P010",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P011",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P012",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P013",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P014",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P015",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P016",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "009-P017",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "001-P029",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "001-P030",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "001-P031",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P005",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P006",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P004",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P005",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "007-P005",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "007-P006",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "007-P007",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P006",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "001-P032",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P007",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P008",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P009",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "001-P033",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P010",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "N_Envios_Fechados",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "Granularidad_Periodo",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Granularidad_Periodo",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "Granularidad_Periodo",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Granularidad_Periodo",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "006-P003",
+   "col": "Fecha_Origen",
+   "por": "la pieza no cruza con la DE: no hay detalle del cual sacar la fecha"
+  },
+  {
+   "id": "004-P020",
+   "col": "Fecha_Origen",
+   "por": "la pieza no cruza con la DE: no hay detalle del cual sacar la fecha"
+  },
+  {
+   "id": "005-P011",
+   "col": "Fecha_Origen",
+   "por": "la pieza no cruza con la DE: no hay detalle del cual sacar la fecha"
+  },
+  {
+   "id": "005-P012",
+   "col": "Fecha_Origen",
+   "por": "la pieza no cruza con la DE: no hay detalle del cual sacar la fecha"
+  },
+  {
+   "id": "006-P003",
+   "col": "Dias_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Dias_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P011",
+   "col": "Dias_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "005-P012",
+   "col": "Dias_Envio",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Mes",
+   "por": "sin regla declarada para esta columna"
+  },
+  {
+   "id": "004-P020",
+   "col": "Mes (#)",
+   "por": "sin regla declarada para esta columna"
+  }
+ ]
+}

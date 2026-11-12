@@ -1,0 +1,24 @@
+{
+ "medido": "2026-10-03T02:44:40.840Z",
+ "barridos": 93,
+ "con_excepcion_declarada": [
+  "catalogo.auditar-ligamx.js",
+  "fuentes-qcart.auditar-shortlinks.js",
+  "fuentes-qcart.declarar-exclusion.js",
+  "fuentes-qcart.medida-externa.js",
+  "fuentes-qcart.probar-filtro.js",
+  "fuentes-qcart.probar-lector.js",
+  "fuentes-qcart.purgar-no-nuestros.js",
+  "fuentes-qcart.purgar-sin-fecha.js",
+  "fuentes-qcart.qcart.js",
+  "fuentes-qcart.refutar-metricas.js",
+  "fuentes-qcart.refutar.js",
+  "fuentes-qcart.simular-nuevo.js",
+  "lib-qcart-filtro.js",
+  "maggi.calcular-columnas.js",
+  "orquestador.guardian-unidades.js",
+  "orquestador.probar-guardian-unidades.js",
+  "qcart.utms-por-pieza.js"
+ ],
+ "hallazgos": []
+}

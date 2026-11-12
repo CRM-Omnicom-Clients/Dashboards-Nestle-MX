@@ -1,0 +1,83 @@
+[
+ {
+  "codigo": "vgMqmCrL",
+  "activacion": "2026-03-13",
+  "de": "001-P005",
+  "a": "001-P025",
+  "eventos": 107,
+  "envio_destino": "2026-03-18",
+  "dias": 5
+ },
+ {
+  "codigo": "uDEM0jlX",
+  "activacion": "2026-03-13",
+  "de": "001-P005",
+  "a": "001-P025",
+  "eventos": 133,
+  "envio_destino": "2026-03-18",
+  "dias": 5
+ },
+ {
+  "codigo": "bd2KESe4",
+  "activacion": "2026-04-14",
+  "de": "002-P017",
+  "a": "002-P019",
+  "eventos": 42,
+  "envio_destino": "2026-04-14",
+  "dias": 0
+ },
+ {
+  "codigo": "VbE5Jnb4",
+  "activacion": "2026-04-14",
+  "de": "002-P017",
+  "a": "002-P019",
+  "eventos": 30,
+  "envio_destino": "2026-04-14",
+  "dias": 0
+ },
+ {
+  "codigo": "kzFAiKMv",
+  "activacion": "2026-04-30",
+  "de": "001-P005",
+  "a": "001-P025",
+  "eventos": 133,
+  "envio_destino": "2026-03-18",
+  "dias": 43
+ },
+ {
+  "codigo": "os3U6hWb",
+  "activacion": "2026-04-30",
+  "de": "001-P003",
+  "a": "001-P024",
+  "eventos": 90,
+  "envio_destino": "2026-04-30",
+  "dias": 0
+ },
+ {
+  "codigo": "SGm6GxjJ",
+  "activacion": "2026-04-30",
+  "de": "001-P005",
+  "a": "001-P025",
+  "eventos": 86,
+  "envio_destino": "2026-03-18",
+  "dias": 43
+ },
+ {
+  "codigo": "Mb4KvUvP",
+  "activacion": "2026-04-30",
+  "de": "001-P001",
+  "a": "001-P023",
+  "eventos": 129,
+  "envio_destino": "2026-04-30",
+  "dias": 0
+ },
+ {
+  "codigo": "3NIh2kYW",
+  "activacion": "2026-06-10",
+  "de": "004-P004",
+  "a": "004-P003",
+  "eventos": 20,
+  "envio_destino": "2026-06-11",
+  "dias": 1
+ }
+]

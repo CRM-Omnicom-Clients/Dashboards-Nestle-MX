@@ -1,0 +1,218 @@
+[
+ {
+  "id": "DEF-N1-001",
+  "detectado_por": "N2a · N2a-97-refutar.js (check C4)",
+  "detectado_el": "2026-08-19",
+  "nodo_afectado": "N1 · catálogo raíz",
+  "hoja": "Catalogo_Piezas",
+  "que": "seis piezas listan en Content_Names_Variantes content_names que no les pertenecen",
+  "piezas": [
+   "001-P023",
+   "001-P024",
+   "001-P025",
+   "001-P026",
+   "001-P027",
+   "001-P028"
+  ],
+  "patron": "cada una es el duplicado de una-quincena de una pieza multi-quincena: 001-P005 cubre 2026-03-Q2 ; 2026-04-Q2 y 001-P025 solo 2026-03-Q2, con el MISMO Content_Name canónico",
+  "lo_que_esta_bien": {
+   "total_catalogo": 6454554,
+   "total_data_email": 6454554,
+   "envios_huerfanos": 0,
+   "nota": "la columna Sends de cada pieza es correcta. El defecto NO mueve ninguna cifra agregada."
+  },
+  "lo_que_esta_mal": {
+   "envios_reclamados_por_dos_piezas": 8,
+   "sends_que_se_inflarian": 223790,
+   "porcentaje": "3.5% del total",
+   "cuando_haria_daño": "cuando un paso atribuya envío→pieza recorriendo Content_Names_Variantes y sume por esa vía"
+  },
+  "por_que_las_suites_de_N1_no_lo_vieron": "validan totales y cuadres agregados, y los agregados están correctos. El defecto solo aparece al cruzar cada envío contra su pieza — es decir, desde el paso siguiente. Es la lección de siempre: la prueba que no es circular es simular el consumidor.",
+  "mitigacion_ya_aplicada": {
+   "donde": "N2a-97-refutar.js · function atribuir()",
+   "cascada": [
+    "1 · content_name canónico",
+    "2 · canónico + sends",
+    "3 · variante única",
+    "4 · variante + sends",
+    "AMBIGUA → se declara con candidatas, no se fuerza"
+   ],
+   "resultado": "de 8 ambiguos con cruce ingenuo a 2 con la cascada (0.76% de 264)",
+   "residuo": [
+    "001-P005/001-P025",
+    "001-P006/001-P027"
+   ]
+  },
+  "arreglo_de_raiz": "quitar de Content_Names_Variantes de las 6 piezas los content_names que ya tienen dueño canónico en otra pieza, o eliminar las piezas duplicadas de una-quincena si el diseño acordado es UNA pieza multi-quincena con columnas de reparto.",
+  "estado": "CERRADO 19-ago-2026 · es de DATOS, y el sistema ya lo maneja",
+  "clase": "dato sucio, no defecto del sistema",
+  "por_que_se_cierra": "Las cifras del catalogo estan correctas (suma exacta, 0 huerfanos). Lo inflado son las LISTAS de variantes, y el sistema NO se apoya en ellas a ciegas: la cascada de atribucion baja de 8 ambiguos a 2, y esos 2 se DECLARAN con sus candidatas en vez de forzarse. Es exactamente el comportamiento que se le pide al sistema ante un dato ambiguo.",
+  "cuando_desaparece": "al recargar el catalogo con los datos nuevos, las listas se regeneran. No hay que arreglar el dato de hoy: se va a reemplazar entero.",
+  "lo_que_queda_como_capacidad": "la cascada y el AMBIGUA-declarado se quedan: no son un parche para estos 8 casos, son como el sistema atribuye siempre."
+ },
+ {
+  "id": "DEF-QC-001",
+  "detectado_por": "N2b · fuentes-qcart.validar.js",
+  "detectado_el": "2026-08-19",
+  "nodo_afectado": "catálogo de links (Qcart-Links Mails-Hive- MX.xlsx) + Catalogo_Piezas",
+  "que": "9 shortlinks con tráfico real, hoy presentes en Data_Qcart, no están NI en el doc de links NI en Catalogo_Piezas",
+  "codigos": [
+   "lfFYbUfy",
+   "3Lb6FbAa",
+   "M67vOg1g",
+   "AwsreGWs",
+   "aPFwXeaG",
+   "oJclpobS",
+   "TMECSIho",
+   "y6hReRB5",
+   "tErzItBY"
+  ],
+  "campanas": "8 de Mundial (Maggi), 1 de Hotcakes",
+  "evidencia": "cada uno tiene entre 3 y 10 eventos en Fullcarritos, y entre 1 y 15 carritos en Data_Qcart",
+  "efecto": "con la regla de pertenencia NO entran al bloque, así que su tráfico desaparece del reporte nuevo",
+  "no_es_un_fallo_del_nodo": "el paso aplica la regla pedida. El hueco está en el catálogo de links.",
+  "arreglo": "darlos de alta en el doc de links con su fecha de envío, y en Catalogo_Piezas en Cod_Walmart_*/Cod_Chedraui_* de su pieza",
+  "estado": "RESUELTO 19-ago-2026",
+  "resolucion": "los 9 SI estaban en el doc, en la hoja `Reagendar`, que el lector excluia por error. Su fecha dice «Por reagendar» → no se enviaron → su trafico no entra, que es lo correcto. Ya no son «desconocidos»: quedan declarados invalidos con su motivo.",
+  "hallazgo_adicional": "🔴 Data_Qcart los tiene MAL ATRIBUIDOS: el CSV dice lechera-junio con recetas de postre (Carlota, Flan, Gelatina) y la hoja los pone en Mundial y Hotcakes con recetas que no son. Es un error de la hoja vieja, no del bloque."
+ },
+ {
+  "id": "DEF-QC-002",
+  "detectado_por": "N1c · fuentes-qcart.activacion-qcart.js",
+  "detectado_el": "2026-08-19",
+  "nodo_afectado": "Qcart-Links Mails-Hive- MX.xlsx · hoja Junio, filas 17-18",
+  "que": "4 códigos de La Lechera tienen fecha de envío 2027-07-26 para una campaña de junio-2026",
+  "codigos": [
+   "o41ObWyu",
+   "PDy0MeF9",
+   "r0J2KBES",
+   "PJrhl5GT"
+  ],
+  "efecto": "INCOHERENTES pasa de 4 a 0, y ya no hace falta la excepcion: la ventana se aplica normal. El trafico del 3 al 25 de junio de esos 4 links queda fuera por ser anterior al envio.",
+  "mitigacion": "el filtro DETECTA la incoherencia y NO aplica la ventana a esos links: 118 carritos y 17 productos entraron marcados",
+  "arreglo": "corregir 2027 → 2026 en la hoja Junio del doc de links",
+  "estado": "RESUELTO 19-ago-2026",
+  "resolucion": "corregido en el doc: hoja Junio B17 y B18, 46594 (2027-07-26) → 46199 (2026-06-26). Verificado releyendo el archivo escrito. La fecha sale de cuatro senales que coinciden: campania lechera-junio, hoja Junio, utm_content e-c1, y el envio de email E-C1 del 2026-06-26."
+ },
+ {
+  "id": "DEF-QC-003",
+  "detectado_por": "N1c",
+  "detectado_el": "2026-08-19",
+  "nodo_afectado": "Catalogo_Piezas",
+  "que": "9 piezas apuntan a un link que el doc declara NO enviado («No enviado» / «No salió» / «No seleccionado»)",
+  "efecto": "218 eventos de carritos y 61 de productos quedan fuera. Si esos links sí se enviaron, falta corregir el doc; si no, la pieza apunta a un link equivocado",
+  "piezas": "005-P001, 004-P019, 004-P001, 004-P002, 004-P003, 004-P006, 004-P008",
+  "estado": "CONFIRMADO COMO CORRECTO 19-ago-2026",
+  "resolucion": "Rick: «si dice no enviado pues no se agrega a data qcart, de acuerdo». El comportamiento ya era ese; queda confirmado como regla, no como deuda."
+ },
+ {
+  "id": "DEF-QC-004",
+  "detectado_por": "N1c",
+  "detectado_el": "2026-08-19",
+  "nodo_afectado": "Qcart-Links Mails-Hive- MX.xlsx · hoja Cuaresma",
+  "que": "la hoja Cuaresma no tiene columna de fecha de envío: sus 19 links no se pueden fechar",
+  "efecto": "distinto de «no se envió» — falta el dato, no dice que no salió. Sin fecha no se les puede aplicar la ventana",
+  "estado": "RESUELTO 19-ago-2026",
+  "resolucion": "Rick: «Cuaresma no va, no hay links fechados pues no funciona». La hoja se EXCLUYE explicitamente en lib-qcart-links, con su motivo escrito. Sus 5 shortlinks con trafico (78 eventos) quedan fuera y se reportan en vocabulario_nuevo."
+ },
+ {
+  "id": "DEF-WA-001",
+  "detectado_por": "N2c · lib-whatsapp.js",
+  "detectado_el": "2026-08-19",
+  "clase": "dato · mitigado por el sistema",
+  "que": "tres hojas de la fuente traen una fila «Totales» que repite la suma de sus filas",
+  "cifras": "Hotcakes 1,561 · Tercer Tiempo 5,813 · Maggi 0 → 7,374 sends que se duplicarian",
+  "mitigacion": "el lector las detecta buscando la etiqueta en CUALQUIER celda y las CONFIRMA con la aritmetica antes de excluirlas. Si una etiquetada «Totales» no cuadra con la suma, se declara en vez de descartarse.",
+  "estado": "CERRADO · el sistema lo maneja"
+ },
+ {
+  "id": "DEF-WA-002",
+  "detectado_por": "N2c",
+  "detectado_el": "2026-08-19",
+  "clase": "dato · declarado, no corregible desde el sistema",
+  "que": "los clicks de Tercer Tiempo NO estan medidos: la fuente los deriva de Read x un CTOR asumido (x0.10 / x0.12 / x0.1462)",
+  "efecto": "cargarlos como medicion daria un CTOR de exactamente 12% siempre, que es la firma del numero inventado",
+  "mitigacion": "clicks=null y clicks_medidos=No, con el factor citado. N5 sabe que ahi el CTOR no se puede calcular, y no lo confunde con un cero.",
+  "estado": "CERRADO · el sistema lo declara correctamente"
+ },
+ {
+  "id": "DEF-WA-003",
+  "detectado_por": "N2c",
+  "detectado_el": "2026-08-19",
+  "clase": "dato",
+  "que": "Data_WhatsApp tiene 6 de los 26 envios de la fuente",
+  "efecto": "faltan 8,835 sends: Maggi Mundial (11 envios), Maggi (8) e ICE (1)",
+  "causa_probable": "la mayoria no se puede atribuir a una pieza, y probablemente por eso no se cargaron",
+  "estado": "CERRADO 19-ago-2026 · Data_WhatsApp tiene los 13 envios del bloque, Sigma 14,643"
+ },
+ {
+  "id": "DEF-WA-004",
+  "detectado_por": "N2c",
+  "detectado_el": "2026-08-19",
+  "clase": "catalogo",
+  "que": "las 10 piezas WA de Mundial (004-P010..P019) estan vacias: sends=0 y sin fecha. Y no existe ninguna pieza de ICE.",
+  "efecto": "11 envios quedan AMBIGUOS porque no hay con que desempatar, y 9 SIN PIEZA",
+  "estado": "ABIERTO · se resuelve al recargar el catalogo con los datos nuevos"
+ },
+ {
+  "id": "DEF-WA-005",
+  "titulo": "el lector de WhatsApp leia cada hoja con UN solo encabezado",
+  "gravedad": "ALTA · corrompia cifras sin dar ningun error",
+  "detectado": "2026-08-19",
+  "como_se_detecto": "RENDERIZANDO la hoja Data_WhatsApp a PNG y mirandola. Ninguna suma lo veia: la auditoria del bloque cuadraba consigo misma.",
+  "que_pasaba": [
+   "Las hojas traen TABLAS APILADAS con encabezados distintos y el lector buscaba un encabezado por hoja.",
+   "Maggi f9-f10 y f14-f16: leidas con el encabezado de la tabla de arriba, la columna ENVIOS caia sobre Read. sends=94 cuando el envio real fue de 162; sends=411 cuando fue de 999.",
+   "Maggi f2-f4: una tabla de LINKS sin una sola metrica entro como 3 envios.",
+   "Maggi Mundial f48-f53: seis filas de SESIONES DE GOOGLE ANALYTICS (Session source / Sessions) entraron como envios de WhatsApp.",
+   "Ademas Maggi y Maggi Mundial describen la MISMA campana (una por journey, otra resumida): cargar las dos duplicaba. Probado por aritmetica sobre tres metricas: 982+983=1965 envios, 749+771=1520 entregas, 440+477=917 leidos."
+  ],
+  "arreglo": [
+   "lib-whatsapp.js v2: parte cada hoja en BLOQUES por filas vacias, le busca su encabezado a cada bloque, y solo carga la tabla que tenga columna de envios. La que no la tiene se DECLARA y se descarta.",
+   "Una fila necesita al menos UNA metrica para ser un envio: fecha y segmento solos son un plan, no un resultado.",
+   "Deteccion de solape entre tablas por aritmetica sobre dos metricas independientes. Gana el DESAGREGADO.",
+   "LECTOR = 2: cuando cambia la version del lector, el append RECONSTRUYE en vez de sumar lo corregido a lo corrupto.",
+   "Aviso nuevo: envios sin fecha (no se pueden ubicar en ningun periodo) y deriva hoja-vs-fuente."
+  ],
+  "efecto": "el bloque paso de 26 envios / 16,209 sends (14 de ellos mal) a 13 envios / 14,643 sends. Data_WhatsApp reescrita.",
+  "estado": "CERRADO · lector v2 + Data_WhatsApp reescrita y revalidada",
+  "leccion": "Una auditoria que compara el bloque consigo mismo es circular. Lo que rompio el circulo fue MIRAR el render."
+ },
+ {
+  "id": "DEF-WA-006",
+  "titulo": "Data_WhatsApp y la fuente no coinciden en las fechas de Hotcakes",
+  "gravedad": "MEDIA · cambia de quincena 3 envios",
+  "detectado": "2026-08-19",
+  "que_pasa": "La hoja fecha los 4 envios de Hotcakes en 3 dias distintos (2-jun, 3-jun, 5-jun) y la fuente dice que los 4 salieron el 2-jun.",
+  "por_que_nadie_lo_veia": "El append da una fila por presente con su llave y no vuelve a mirar el resto de sus campos. Si la hoja y la fuente se separan en algo que no es la llave, no se entera nadie.",
+  "arreglo_del_sistema": "fuentes-whatsapp.whatsapp.js compara ahora lo ya cargado contra la fuente y lo declara como aviso deriva_hoja_vs_fuente.",
+  "no_se_toco": "Son filas anteriores a la Puerta 1 y Rick edita a mano: se DECLARA, no se sobrescribe.",
+  "estado": "CERRADO 19-ago-2026 · manda la fuente, aplicado y verificado releyendo",
+  "decision_de_rick": "MANDA LA FUENTE (19-ago-2026)",
+  "arreglo": [
+   "N2c declara la deriva con la correccion exacta a aplicar (columna, valor de la hoja, valor de la fuente): asi el escritor no vuelve a deducirla por su cuenta — dos deducciones se separan.",
+   "N3-07 corrige la celda y deja en Notas lo que decia antes: el valor viejo no se borra, cambia de sitio.",
+   "El limite queda escrito: manda la fuente SOLO en los campos que la fuente mide. Las columnas canonicas (BU_Canonico, Campana_Canonica, Segmento_Canonico) no estan en la fuente y son de Rick.",
+   "El check de deriva se arreglo tambien para el caso «la hoja vacia y la fuente con dato» — antes lo saltaba, y era justo el de Semifinal A."
+  ],
+  "efecto": "los 4 envios de Hotcakes quedaron los cuatro en 2026-06-02, como dice la fuente. El aviso de deriva ya no aparece."
+ },
+ {
+  "id": "DEF-WA-007",
+  "titulo": "un envio de WhatsApp sin fecha (Maggi Mundial Semifinal A, 1981 envios)",
+  "gravedad": "MEDIA",
+  "detectado": "2026-08-19",
+  "que_pasa": "La tabla Maggi Mundial f1 no tiene columna de fecha. Sus envios no se pueden ubicar en ningun mes, quincena ni semana, y todo reporte pivota por periodo: se caerian en silencio.",
+  "arreglo_del_sistema": "el bloque lo declara con aviso envios_sin_fecha y la fila lleva el motivo escrito en Notas.",
+  "estado": "CERRADO 19-ago-2026 · fecha derivada del doc de links, declarada y cruzada",
+  "decision_de_rick": "la fecha sale de la ACTIVACION del link en el doc de Qcart-Links (19-ago-2026)",
+  "arreglo": [
+   "N2c enriquece: busca los codigos del utm_content en activacion-qcart.json (la autoridad que resuelve N1c) y toma la primera activacion.",
+   "Se DECLARA, no se disimula: el envio lleva fecha_via y fecha_nota, y la celda Notas de la hoja dice que la fecha es derivada.",
+   "La prueba no es circular: se cruza contra la tabla-calendario de la propia hoja, que es una afirmacion independiente. 3/3 coinciden.",
+   "Para que ese cruce fuera posible, el lector ahora guarda las FILAS de las tablas que descarta: se descartan para cargar, no para saber.",
+   "Los solapes se resuelven DESPUES de enriquecer: su desempate usa la fecha, y resolverlos antes desempataba con menos informacion. Al reordenar, pasaron de 1 a 3 los envios con fecha derivada y de 0 a 3 las comprobaciones cruzadas."
+  ],
+  "efecto": "Maggi Mundial Semifinal A (1,981 envios) quedo en 2026-07-14, confirmado por el calendario de su hoja. Ninguna fila de Data_WhatsApp queda sin fecha."
+ }
+]

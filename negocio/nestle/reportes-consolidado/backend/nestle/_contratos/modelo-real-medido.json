@@ -1,0 +1,191 @@
+{
+ "fup": {
+  "principal": 64,
+  "fup": 34,
+  "colisiones_principal": [
+   "AON | E-P4 | Career Focused",
+   "AON | E-P3 | New Parents",
+   "AON | E-P1 | Traditional Parents",
+   "Fuel for life | E-E3 | Pro Plan Pet Parents",
+   "Fuel for life | E-E3 | Pro Plan Pet Parents",
+   "Fuel for life | E-E3 | Pro Plan Aspiracionales",
+   "Fuel for life | E-E3 | Pro Plan Aspiracionales",
+   "Fuel for life | E-E3 | Pro Plan Educated Pet Owners",
+   "Fuel for life | E-E3 | Pro Plan Educated Pet Owners",
+   "Fuel for life | E-E4 | Pro Plan Pet Parents",
+   "Fuel for life | E-E4 | Pro Plan Pet Parents",
+   "Fuel for life | E-E4 | Aspiracionales + Educated Pet Owners",
+   "Fuel for life | E-E4 | Aspiracionales + Educated Pet Owners"
+  ],
+  "colisiones_fup": [
+   "AON | E-P3 | New Parents",
+   "AON | E-P1 | Traditional Parents",
+   "AON | E-P4 | Career Focused"
+  ],
+  "fup_sin_principal": [],
+  "principal_con_fup": 31,
+  "fup_otra_quincena": 9
+ },
+ "email_name": {
+  "con_nombre": 99,
+  "distintos": 99,
+  "repetidos": [],
+  "multi_nombre": [
+   "AON|E-P4|Career Focused|Principal",
+   "AON|E-P4|Career Focused|Follow Up",
+   "AON|E-P3|New Parents|Principal",
+   "AON|E-P3|New Parents|Follow Up",
+   "AON|E-P1|Traditional Parents|Principal",
+   "AON|E-P1|Traditional Parents|Follow Up",
+   "Fuel for life|E-E3|Pro Plan Aspiracionales|Principal",
+   "Fuel for life|E-E3|Pro Plan Pet Parents|Principal",
+   "Fuel for life|E-E3|Pro Plan Educated Pet Owners|Principal",
+   "Fuel for life|E-E4|Pro Plan Pet Parents|Principal",
+   "Fuel for life|E-E4|Aspiracionales + Educated Pet Owners|Principal"
+  ]
+ },
+ "dimensiones": [
+  {
+   "dimension": "Campaña",
+   "Report_Resumen": "A",
+   "Catalogo_Piezas": "D",
+   "Data_Email": null,
+   "Data_WhatsApp": "C",
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  },
+  {
+   "dimension": "Medio",
+   "Report_Resumen": "B",
+   "Catalogo_Piezas": null,
+   "Data_Email": null,
+   "Data_WhatsApp": null,
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  },
+  {
+   "dimension": "Objetivo",
+   "Report_Resumen": "C",
+   "Catalogo_Piezas": "H",
+   "Data_Email": null,
+   "Data_WhatsApp": "E",
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  },
+  {
+   "dimension": "TouchPoint",
+   "Report_Resumen": "D",
+   "Catalogo_Piezas": "I",
+   "Data_Email": "F",
+   "Data_WhatsApp": "I",
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  },
+  {
+   "dimension": "Tipo Email",
+   "Report_Resumen": "E",
+   "Catalogo_Piezas": null,
+   "Data_Email": null,
+   "Data_WhatsApp": null,
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  },
+  {
+   "dimension": "Segmento",
+   "Report_Resumen": "F",
+   "Catalogo_Piezas": "C",
+   "Data_Email": null,
+   "Data_WhatsApp": null,
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  },
+  {
+   "dimension": "Quincena_Lanzamiento",
+   "Report_Resumen": "H",
+   "Catalogo_Piezas": "R",
+   "Data_Email": null,
+   "Data_WhatsApp": null,
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  },
+  {
+   "dimension": "Mes",
+   "Report_Resumen": "I",
+   "Catalogo_Piezas": null,
+   "Data_Email": null,
+   "Data_WhatsApp": null,
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  },
+  {
+   "dimension": "Mes (#)",
+   "Report_Resumen": "I",
+   "Catalogo_Piezas": null,
+   "Data_Email": null,
+   "Data_WhatsApp": null,
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  },
+  {
+   "dimension": "Marca",
+   "Report_Resumen": "K",
+   "Catalogo_Piezas": "B",
+   "Data_Email": "Q",
+   "Data_WhatsApp": "B",
+   "Data_Qcart_Carritos": "V",
+   "Data_Qcart_Productos": "W"
+  },
+  {
+   "dimension": "BU",
+   "Report_Resumen": "L",
+   "Catalogo_Piezas": "A",
+   "Data_Email": "A",
+   "Data_WhatsApp": "A",
+   "Data_Qcart_Carritos": "U",
+   "Data_Qcart_Productos": "V"
+  },
+  {
+   "dimension": "Pieza_ID",
+   "Report_Resumen": null,
+   "Catalogo_Piezas": "E",
+   "Data_Email": "AR",
+   "Data_WhatsApp": "AF",
+   "Data_Qcart_Carritos": "A",
+   "Data_Qcart_Productos": "A"
+  },
+  {
+   "dimension": "Email_Name",
+   "Report_Resumen": null,
+   "Catalogo_Piezas": "AF",
+   "Data_Email": "W",
+   "Data_WhatsApp": null,
+   "Data_Qcart_Carritos": null,
+   "Data_Qcart_Productos": null
+  }
+ ],
+ "referencias": {
+  "total": 265,
+  "por_tipo": {
+   "vocabulario · Bu": 4,
+   "vocabulario · Marca": 16,
+   "vocabulario · Campana": 23,
+   "vocabulario · Objetivo": 11,
+   "vocabulario · Canal": 2,
+   "vocabulario · Segmento": 29,
+   "vocabulario · Touchpoint": 28,
+   "vocabulario · Tienda": 2,
+   "alias · Campaña": 15,
+   "alias · Segmento": 24,
+   "alias · Objetivo": 6,
+   "alias · Partido": 1,
+   "alias · Touchpoint": 83,
+   "excluido · Link Qcart": 16,
+   "excluido · Tienda": 2,
+   "excluido · Touchpoint": 3
+  },
+  "con_mapeo_crudo": 129,
+  "ligadas_a_piezas": 212,
+  "uno_a_uno": 34,
+  "n_a_m": 178
+ }
+}

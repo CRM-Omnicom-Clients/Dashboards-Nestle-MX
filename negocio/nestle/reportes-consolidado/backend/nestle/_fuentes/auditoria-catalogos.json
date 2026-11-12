@@ -1,0 +1,679 @@
+{
+ "paso": "H1",
+ "archivo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+ "piezas": 109,
+ "columnas": 74,
+ "columnas_detalle": [
+  {
+   "col": "BU",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Marca",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Campaña",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Pieza_ID",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Camp_ID",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Journey_ID",
+   "aplica": 92,
+   "llenas": 92,
+   "pct": 100,
+   "acotada": true
+  },
+  {
+   "col": "Objetivo",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Touchpoint",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Touchpoint_Raw",
+   "aplica": 109,
+   "llenas": 96,
+   "pct": 88,
+   "acotada": false
+  },
+  {
+   "col": "Segmento",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Segmentos_Combinados",
+   "aplica": 109,
+   "llenas": 4,
+   "pct": 4,
+   "acotada": false
+  },
+  {
+   "col": "Canal",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Email_Type",
+   "aplica": 92,
+   "llenas": 88,
+   "pct": 96,
+   "acotada": true
+  },
+  {
+   "col": "Tipo_Envio",
+   "aplica": 109,
+   "llenas": 108,
+   "pct": 99,
+   "acotada": false
+  },
+  {
+   "col": "Fecha_Primer_Envio",
+   "aplica": 109,
+   "llenas": 88,
+   "pct": 81,
+   "acotada": false
+  },
+  {
+   "col": "Fecha_Ultimo_Envio",
+   "aplica": 109,
+   "llenas": 75,
+   "pct": 69,
+   "acotada": false
+  },
+  {
+   "col": "Mes_Lanzamiento",
+   "aplica": 109,
+   "llenas": 92,
+   "pct": 84,
+   "acotada": false
+  },
+  {
+   "col": "Quincena_Lanzamiento",
+   "aplica": 109,
+   "llenas": 88,
+   "pct": 81,
+   "acotada": false
+  },
+  {
+   "col": "Quincenas_Activas",
+   "aplica": 109,
+   "llenas": 82,
+   "pct": 75,
+   "acotada": false
+  },
+  {
+   "col": "N_Quincenas",
+   "aplica": 109,
+   "llenas": 96,
+   "pct": 88,
+   "acotada": false
+  },
+  {
+   "col": "Meses_Activos",
+   "aplica": 109,
+   "llenas": 89,
+   "pct": 82,
+   "acotada": false
+  },
+  {
+   "col": "N_Meses",
+   "aplica": 109,
+   "llenas": 96,
+   "pct": 88,
+   "acotada": false
+  },
+  {
+   "col": "Sends_Por_Quincena",
+   "aplica": 109,
+   "llenas": 82,
+   "pct": 75,
+   "acotada": false
+  },
+  {
+   "col": "Sends_Por_Mes",
+   "aplica": 109,
+   "llenas": 82,
+   "pct": 75,
+   "acotada": false
+  },
+  {
+   "col": "N_Envios_Fechados",
+   "aplica": 109,
+   "llenas": 96,
+   "pct": 88,
+   "acotada": false
+  },
+  {
+   "col": "Granularidad_Periodo",
+   "aplica": 109,
+   "llenas": 96,
+   "pct": 88,
+   "acotada": false
+  },
+  {
+   "col": "Fecha_Origen",
+   "aplica": 109,
+   "llenas": 96,
+   "pct": 88,
+   "acotada": false
+  },
+  {
+   "col": "Dias_Envio",
+   "aplica": 109,
+   "llenas": 96,
+   "pct": 88,
+   "acotada": false
+  },
+  {
+   "col": "Fuente_Dato",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Clicks_Medidos",
+   "aplica": 109,
+   "llenas": 108,
+   "pct": 99,
+   "acotada": false
+  },
+  {
+   "col": "Sends",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Content_Name",
+   "aplica": 92,
+   "llenas": 88,
+   "pct": 96,
+   "acotada": true
+  },
+  {
+   "col": "Content_Names_Variantes",
+   "aplica": 109,
+   "llenas": 76,
+   "pct": 70,
+   "acotada": false
+  },
+  {
+   "col": "N_Content_Names",
+   "aplica": 109,
+   "llenas": 76,
+   "pct": 70,
+   "acotada": false
+  },
+  {
+   "col": "Asset_ID",
+   "aplica": 109,
+   "llenas": 82,
+   "pct": 75,
+   "acotada": false
+  },
+  {
+   "col": "Codigo_NC",
+   "aplica": 109,
+   "llenas": 73,
+   "pct": 67,
+   "acotada": false
+  },
+  {
+   "col": "ID_SFMC",
+   "aplica": 109,
+   "llenas": 23,
+   "pct": 21,
+   "acotada": false
+  },
+  {
+   "col": "Tiene_Qcart",
+   "aplica": 109,
+   "llenas": 97,
+   "pct": 89,
+   "acotada": false
+  },
+  {
+   "col": "N_Recetas",
+   "aplica": 30,
+   "llenas": 30,
+   "pct": 100,
+   "acotada": true
+  },
+  {
+   "col": "Carritos_Total",
+   "aplica": 30,
+   "llenas": 30,
+   "pct": 100,
+   "acotada": true
+  },
+  {
+   "col": "Views_Total",
+   "aplica": 30,
+   "llenas": 30,
+   "pct": 100,
+   "acotada": true
+  },
+  {
+   "col": "Receta_1",
+   "aplica": 109,
+   "llenas": 30,
+   "pct": 28,
+   "acotada": false
+  },
+  {
+   "col": "URL_Receta_1",
+   "aplica": 109,
+   "llenas": 30,
+   "pct": 28,
+   "acotada": false
+  },
+  {
+   "col": "Cod_Walmart_1",
+   "aplica": 109,
+   "llenas": 30,
+   "pct": 28,
+   "acotada": false
+  },
+  {
+   "col": "Carritos_Walmart_1",
+   "aplica": 109,
+   "llenas": 30,
+   "pct": 28,
+   "acotada": false
+  },
+  {
+   "col": "Cod_Chedraui_1",
+   "aplica": 109,
+   "llenas": 4,
+   "pct": 4,
+   "acotada": false
+  },
+  {
+   "col": "Carritos_Chedraui_1",
+   "aplica": 109,
+   "llenas": 30,
+   "pct": 28,
+   "acotada": false
+  },
+  {
+   "col": "Receta_2",
+   "aplica": 109,
+   "llenas": 13,
+   "pct": 12,
+   "acotada": false
+  },
+  {
+   "col": "URL_Receta_2",
+   "aplica": 109,
+   "llenas": 13,
+   "pct": 12,
+   "acotada": false
+  },
+  {
+   "col": "Cod_Walmart_2",
+   "aplica": 109,
+   "llenas": 13,
+   "pct": 12,
+   "acotada": false
+  },
+  {
+   "col": "Carritos_Walmart_2",
+   "aplica": 109,
+   "llenas": 13,
+   "pct": 12,
+   "acotada": false
+  },
+  {
+   "col": "Cod_Chedraui_2",
+   "aplica": 109,
+   "llenas": 0,
+   "pct": 0,
+   "acotada": false
+  },
+  {
+   "col": "Carritos_Chedraui_2",
+   "aplica": 109,
+   "llenas": 12,
+   "pct": 11,
+   "acotada": false
+  },
+  {
+   "col": "Receta_3",
+   "aplica": 109,
+   "llenas": 8,
+   "pct": 7,
+   "acotada": false
+  },
+  {
+   "col": "URL_Receta_3",
+   "aplica": 109,
+   "llenas": 8,
+   "pct": 7,
+   "acotada": false
+  },
+  {
+   "col": "Cod_Walmart_3",
+   "aplica": 109,
+   "llenas": 8,
+   "pct": 7,
+   "acotada": false
+  },
+  {
+   "col": "Carritos_Walmart_3",
+   "aplica": 109,
+   "llenas": 8,
+   "pct": 7,
+   "acotada": false
+  },
+  {
+   "col": "Cod_Chedraui_3",
+   "aplica": 109,
+   "llenas": 1,
+   "pct": 1,
+   "acotada": false
+  },
+  {
+   "col": "Carritos_Chedraui_3",
+   "aplica": 109,
+   "llenas": 7,
+   "pct": 6,
+   "acotada": false
+  },
+  {
+   "col": "Receta_4",
+   "aplica": 109,
+   "llenas": 3,
+   "pct": 3,
+   "acotada": false
+  },
+  {
+   "col": "URL_Receta_4",
+   "aplica": 109,
+   "llenas": 3,
+   "pct": 3,
+   "acotada": false
+  },
+  {
+   "col": "Cod_Walmart_4",
+   "aplica": 109,
+   "llenas": 3,
+   "pct": 3,
+   "acotada": false
+  },
+  {
+   "col": "Carritos_Walmart_4",
+   "aplica": 109,
+   "llenas": 3,
+   "pct": 3,
+   "acotada": false
+  },
+  {
+   "col": "Cod_Chedraui_4",
+   "aplica": 109,
+   "llenas": 0,
+   "pct": 0,
+   "acotada": false
+  },
+  {
+   "col": "Carritos_Chedraui_4",
+   "aplica": 109,
+   "llenas": 3,
+   "pct": 3,
+   "acotada": false
+  },
+  {
+   "col": "Estado",
+   "aplica": 109,
+   "llenas": 109,
+   "pct": 100,
+   "acotada": false
+  },
+  {
+   "col": "Fuente_Qcart",
+   "aplica": 109,
+   "llenas": 30,
+   "pct": 28,
+   "acotada": false
+  },
+  {
+   "col": "Notas",
+   "aplica": 109,
+   "llenas": 36,
+   "pct": 33,
+   "acotada": false
+  },
+  {
+   "col": "Subsegmento",
+   "aplica": 17,
+   "llenas": 15,
+   "pct": 88,
+   "acotada": true
+  },
+  {
+   "col": "EmailName",
+   "aplica": 92,
+   "llenas": 88,
+   "pct": 96,
+   "acotada": true
+  },
+  {
+   "col": "Content_ID",
+   "aplica": 92,
+   "llenas": 88,
+   "pct": 96,
+   "acotada": true
+  },
+  {
+   "col": "EmailID",
+   "aplica": 92,
+   "llenas": 88,
+   "pct": 96,
+   "acotada": true
+  },
+  {
+   "col": "Oleada",
+   "aplica": 109,
+   "llenas": 12,
+   "pct": 11,
+   "acotada": false
+  },
+  {
+   "col": "Mascota",
+   "aplica": 17,
+   "llenas": 15,
+   "pct": 88,
+   "acotada": true
+  }
+ ],
+ "no_existen": [],
+ "dif_fechas": [
+  "001-P001: catálogo 2026-03-Q1 vs SFMC 2026-03-Q2 (2026-03-19)",
+  "001-P025: catálogo 2026-04-Q2 vs SFMC 2026-03-Q2 (2026-03-18)",
+  "001-P027: catálogo 2026-05-Q1 vs SFMC 2026-03-Q2 (2026-03-20)"
+ ],
+ "dif_sends": [
+  {
+   "id": "001-P025",
+   "cat": 38093,
+   "real": 74748,
+   "d": 36655
+  },
+  {
+   "id": "001-P001",
+   "cat": 34450,
+   "real": 68900,
+   "d": 34450
+  },
+  {
+   "id": "001-P027",
+   "cat": 29136,
+   "real": 57658,
+   "d": 28522
+  },
+  {
+   "id": "001-P002",
+   "cat": 26508,
+   "real": 53016,
+   "d": 26508
+  },
+  {
+   "id": "009-P003",
+   "cat": 185,
+   "real": 22803,
+   "d": 22618
+  },
+  {
+   "id": "001-P003",
+   "cat": 5969,
+   "real": 11936,
+   "d": 5967
+  },
+  {
+   "id": "001-P004",
+   "cat": 5397,
+   "real": 10794,
+   "d": 5397
+  },
+  {
+   "id": "009-P002",
+   "cat": 15988,
+   "real": 19115,
+   "d": 3127
+  },
+  {
+   "id": "001-P005",
+   "cat": 37375,
+   "real": 38093,
+   "d": 718
+  },
+  {
+   "id": "009-P004",
+   "cat": 1105,
+   "real": 1449,
+   "d": 344
+  },
+  {
+   "id": "001-P006",
+   "cat": 28829,
+   "real": 29136,
+   "d": 307
+  }
+ ],
+ "campanas_sin_alta": [],
+ "falta": [
+  "columna VACÍA en el catálogo: Cod_Chedraui_2",
+  "columna VACÍA en el catálogo: Cod_Chedraui_4",
+  "EmailID: 6 con formato inválido",
+  "fecha: 001-P001: catálogo 2026-03-Q1 vs SFMC 2026-03-Q2 (2026-03-19)",
+  "fecha: 001-P025: catálogo 2026-04-Q2 vs SFMC 2026-03-Q2 (2026-03-18)",
+  "fecha: 001-P027: catálogo 2026-05-Q1 vs SFMC 2026-03-Q2 (2026-03-20)",
+  "Sends 001-P025: catálogo 38,093 vs real 74,748",
+  "Sends 001-P001: catálogo 34,450 vs real 68,900",
+  "Sends 001-P027: catálogo 29,136 vs real 57,658",
+  "Sends 001-P002: catálogo 26,508 vs real 53,016",
+  "Sends 009-P003: catálogo 185 vs real 22,803",
+  "Sends 001-P003: catálogo 5,969 vs real 11,936",
+  "Sends 001-P004: catálogo 5,397 vs real 10,794",
+  "Sends 009-P002: catálogo 15,988 vs real 19,115",
+  "Sends 001-P005: catálogo 37,375 vs real 38,093",
+  "Sends 009-P004: catálogo 1,105 vs real 1,449",
+  "Sends 001-P006: catálogo 28,829 vs real 29,136",
+  "Catalogo_Referencias: columna vacía Dato_2"
+ ],
+ "aviso": [
+  "columna parcial: Cod_Chedraui_3 1/109",
+  "columna parcial: Receta_4 3/109",
+  "columna parcial: URL_Receta_4 3/109",
+  "columna parcial: Cod_Walmart_4 3/109",
+  "columna parcial: Carritos_Walmart_4 3/109",
+  "columna parcial: Carritos_Chedraui_4 3/109",
+  "columna parcial: Segmentos_Combinados 4/109",
+  "columna parcial: Cod_Chedraui_1 4/109",
+  "columna parcial: Carritos_Chedraui_3 7/109",
+  "columna parcial: Receta_3 8/109",
+  "columna parcial: URL_Receta_3 8/109",
+  "columna parcial: Cod_Walmart_3 8/109",
+  "columna parcial: Carritos_Walmart_3 8/109",
+  "columna parcial: Carritos_Chedraui_2 12/109",
+  "columna parcial: Oleada 12/109",
+  "columna parcial: Receta_2 13/109",
+  "columna parcial: URL_Receta_2 13/109",
+  "columna parcial: Cod_Walmart_2 13/109",
+  "columna parcial: Carritos_Walmart_2 13/109",
+  "columna parcial: ID_SFMC 23/109",
+  "columna parcial: Receta_1 30/109",
+  "columna parcial: URL_Receta_1 30/109",
+  "columna parcial: Cod_Walmart_1 30/109",
+  "columna parcial: Carritos_Walmart_1 30/109",
+  "columna parcial: Carritos_Chedraui_1 30/109",
+  "columna parcial: Fuente_Qcart 30/109",
+  "columna parcial: Notas 36/109",
+  "columna parcial: Codigo_NC 73/109",
+  "columna parcial: Fecha_Ultimo_Envio 75/109",
+  "columna parcial: Content_Names_Variantes 76/109",
+  "columna parcial: N_Content_Names 76/109",
+  "columna parcial: Quincenas_Activas 82/109",
+  "columna parcial: Sends_Por_Quincena 82/109",
+  "columna parcial: Sends_Por_Mes 82/109",
+  "columna parcial: Asset_ID 82/109",
+  "columna parcial: Fecha_Primer_Envio 88/109",
+  "columna parcial: Quincena_Lanzamiento 88/109",
+  "columna parcial: Meses_Activos 89/109",
+  "columna parcial: Mes_Lanzamiento 92/109",
+  "columna parcial: Touchpoint_Raw 96/109",
+  "columna parcial: N_Quincenas 96/109",
+  "columna parcial: N_Meses 96/109",
+  "columna parcial: N_Envios_Fechados 96/109",
+  "columna parcial: Granularidad_Periodo 96/109",
+  "columna parcial: Fecha_Origen 96/109",
+  "columna parcial: Dias_Envio 96/109",
+  "columna parcial: Subsegmento 15/17",
+  "columna parcial: Mascota 15/17",
+  "columna parcial: Tiene_Qcart 97/109",
+  "columna parcial: Email_Type 88/92",
+  "columna parcial: Content_Name 88/92",
+  "columna parcial: EmailName 88/92",
+  "columna parcial: Content_ID 88/92",
+  "columna parcial: EmailID 88/92",
+  "columna parcial: Tipo_Envio 108/109",
+  "columna parcial: Clicks_Medidos 108/109"
+ ]
+}

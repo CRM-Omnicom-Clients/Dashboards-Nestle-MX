@@ -1,0 +1,53 @@
+{
+ "paso": "C3",
+ "cuando": "2026-08-21",
+ "hoja_filas": 264,
+ "hoja_piezas": 76,
+ "bloque_piezas": 98,
+ "solo_en_hoja": [],
+ "solo_en_bloque": [
+  "009-P008",
+  "009-P009",
+  "009-P016",
+  "009-P017",
+  "009-P015",
+  "009-P010",
+  "009-P011",
+  "009-P007",
+  "009-P006",
+  "009-P013",
+  "009-P014",
+  "009-P012",
+  "001-P029",
+  "001-P030",
+  "001-P031",
+  "005-P005",
+  "005-P006",
+  "011-P001",
+  "011-P002",
+  "011-P003",
+  "006-P004",
+  "006-P005"
+ ],
+ "conflictos_internos": [],
+ "difieren_del_bloque": [
+  {
+   "pieza": "009-P002",
+   "col": "Segmento_Canonico",
+   "a_mano": "Pro Plan Aspiracionales",
+   "bloque": "Pro Plan Aspiracionales — Perros"
+  },
+  {
+   "pieza": "009-P003",
+   "col": "Segmento_Canonico",
+   "a_mano": "Pro Plan Pet Parents",
+   "bloque": "Pro Plan Pet Parents — Mixto"
+  },
+  {
+   "pieza": "009-P004",
+   "col": "Segmento_Canonico",
+   "a_mano": "Pro Plan Educated Pet Owners",
+   "bloque": "Pro Plan Educated Pet Owners — Perros"
+  }
+ ]
+}

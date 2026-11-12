@@ -1,0 +1,15 @@
+{
+ "skill": "nestle-catalogo",
+ "script": "catalogo.llenar-desde-sfmc.js",
+ "declarado": "2026-09-04",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Catalogo_Piezas",
+   "grano": "una CELDA — pieza × columna, solo si la celda es un hueco",
+   "llave": "Pieza_ID + nombre de columna",
+   "celdas_esperadas": "los huecos de las columnas cuyo mapeo pasó `catalogo.probar-mapeo-sfmc.js`"
+  }
+ ]
+}

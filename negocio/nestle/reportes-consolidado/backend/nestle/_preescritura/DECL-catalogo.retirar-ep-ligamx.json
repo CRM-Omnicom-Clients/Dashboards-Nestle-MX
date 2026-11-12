@@ -1,0 +1,21 @@
+{
+ "skill": "nestle-catalogo",
+ "script": "catalogo.retirar-ep-ligamx.js",
+ "declarado": "2026-09-15",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Catalogo_Piezas",
+   "grano": "una FILA entera",
+   "llave": "Pieza_ID",
+   "celdas_esperadas": "4 filas retiradas"
+  },
+  {
+   "hoja": "Catalogo_Referencias",
+   "grano": "una FILA entera o una celda de lista",
+   "llave": "Valor_Crudo + Contexto",
+   "celdas_esperadas": "4 alias retirados · 7 listas depuradas"
+  }
+ ]
+}

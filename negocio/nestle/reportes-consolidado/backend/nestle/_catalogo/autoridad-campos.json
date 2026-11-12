@@ -1,0 +1,29 @@
+{
+ "_que_es": "Qué fuente manda para cada CAMPO. Se lee, no se adivina. Complementa a _orquesta/autoridades-reportes.md, que cubre las DIMENSIONES (BU, marca, campaña, segmento); esto cubre los ATRIBUTOS crudos de los datos.",
+ "_como_se_usa": "lib-conflictos.resolver() lo consulta en el peldaño 2. Si un campo no está aquí, cae a procedencia (peldaño 3) y, si eso tampoco resuelve, escala UNA vez.",
+ "campos": {
+  "journey_id": {
+   "autoridad": "Datorama",
+   "porque": "es el sistema que lo emite. Un GUID que no aparece en NINGÚN export de Datorama no tiene procedencia comprobable.",
+   "verificado": "17-ago-2026 · los 8 GUIDs cargados en conflicto no aparecen en ninguno de los 17 exports"
+  },
+  "email_sends": { "autoridad": "Datorama", "porque": "métrica de plataforma; el workbook es una copia" },
+  "email_deliveries": { "autoridad": "Datorama", "porque": "ídem" },
+  "email_unique_opens": { "autoridad": "Datorama", "porque": "ídem" },
+  "email_unique_clicks": { "autoridad": "Datorama", "porque": "ídem" },
+  "send_date": { "autoridad": "Datorama", "porque": "la fecha real del envío la da la plataforma; la del calendario es planeada y se recorre" },
+  "segmento": {
+   "autoridad": "Brief",
+   "porque": "el brief es la pieza real. Regla ya declarada en _orquesta/autoridades-reportes.md",
+   "nota": "Datorama trae 'Audience Name' = 'All Subscribers' en casi todo: no sirve"
+  },
+  "touchpoint": { "autoridad": "Brief", "porque": "confirmado contra SFMC por asunto+fecha exactos" },
+  "campana": { "autoridad": "Calendario", "porque": "es el acuerdo con el cliente" },
+  "objetivo": { "autoridad": "Calendario", "porque": "ídem" },
+  "carritos": { "autoridad": "Data_Qcart", "porque": "los números salen de la descarga; el documento maestro ATRIBUYE pero no cuenta" },
+  "atribucion_link": {
+   "autoridad": "Qcart-Links Mails-Hive- MX.xlsx",
+   "porque": "el documento maestro atribuye los links. La atribución de Data_Qcart está corrupta: no usarla"
+  }
+ }
+}

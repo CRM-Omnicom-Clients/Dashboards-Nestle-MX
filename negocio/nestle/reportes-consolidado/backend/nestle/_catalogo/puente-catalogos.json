@@ -1,0 +1,252 @@
+{
+ "paso": "N1b · puente entre catálogos",
+ "generado_por": "N1b-puente-catalogos.js",
+ "diagnostico": {
+  "formulas_que_leen_el_viejo": 1142,
+  "formulas_que_leen_el_nuevo": 0,
+  "scripts_que_leen_el_nuevo": "casi todos los del backend",
+  "veredicto": "el catálogo nuevo es la base CONCEPTUAL; el viejo sigue siendo la base OPERATIVA"
+ },
+ "altas_de_alias": [
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "Audiencias AON RN 2026H1",
+   "canonico": "Career Focused, New Parents, Traditional Parents",
+   "autoridad": "Catalog_Campanas fila 2"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "Recetas Nestlé",
+   "canonico": "AON",
+   "autoridad": "Catalog_Campanas fila 3"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "AON-APP",
+   "canonico": "Activos",
+   "autoridad": "Catalog_Campanas fila 3"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "AON-LOYALTY",
+   "canonico": "Usuarios con Engagement",
+   "autoridad": "Catalog_Campanas fila 12"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "Purina-Proplan",
+   "canonico": "Fuel for life",
+   "autoridad": "Catalog_Campanas fila 13"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "All Subscribers",
+   "canonico": "Activos",
+   "autoridad": "Catalog_Campanas fila 13"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "Purina-Proplan-Comunidad",
+   "canonico": "Fuel for life",
+   "autoridad": "Catalog_Campanas fila 14"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "Pet Aspiracionales",
+   "canonico": "Pro Plan Aspiracionales",
+   "autoridad": "Catalog_Campanas fila 14"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "Pet Owners",
+   "canonico": "Pro Plan Educated Pet Owners",
+   "autoridad": "Catalog_Campanas fila 15"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "Pet Parents",
+   "canonico": "Pro Plan Pet Parents",
+   "autoridad": "Catalog_Campanas fila 16"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "FamilyKid",
+   "canonico": "FamilyKids",
+   "autoridad": "Catalog_Campanas fila 18"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "Inspiration",
+   "canonico": "Interés Salado",
+   "autoridad": "Catalog_Campanas fila 21"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "Saludable",
+   "canonico": "Saludables",
+   "autoridad": "Catalog_Campanas fila 26"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "Maggi",
+   "canonico": "Mundial",
+   "autoridad": "Catalog_Campanas fila 27"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "Nescafé Tercer Tiempo",
+   "canonico": "Tercer Tiempo",
+   "autoridad": "Catalog_Campanas fila 36"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "NC007067",
+   "canonico": "The Freshers",
+   "autoridad": "Catalog_Campanas fila 97"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "TD-SFMC_GLOBAL_IPG_MEX_NESCAFE_ICE_GENZIDNULGENTS_20260717",
+   "canonico": "Gen Z Indulgentes",
+   "autoridad": "Catalog_Campanas fila 97"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "NC004682",
+   "canonico": "Hackea tu café",
+   "autoridad": "Catalog_Campanas fila 98"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "TD-SFMC_GLOBAL_IPG_MEX_NESCAFE_CONCENTRATE_PREMIUM_20260722",
+   "canonico": "Premium",
+   "autoridad": "Catalog_Campanas fila 98"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_ABRIL-AON-APP_AC_EM_A_V1_865439",
+   "canonico": "AON",
+   "autoridad": "Catalog_Campanas fila 100"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_HOTCAKES-INSPIRATION_AC_EM_A_V1_852761",
+   "canonico": "AON",
+   "autoridad": "Catalog_Campanas fila 101"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_CAREER-FOCUSED_AC_EM_A_V1_803867",
+   "canonico": "AON",
+   "autoridad": "Catalog_Campanas fila 102"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_NEW-PARENTS_AC_EM_A_V1_803867",
+   "canonico": "AON",
+   "autoridad": "Catalog_Campanas fila 103"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_803867",
+   "canonico": "AON",
+   "autoridad": "Catalog_Campanas fila 104"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_BEBIDAS_CN_EM_A_V1_948858",
+   "canonico": "Mundial",
+   "autoridad": "Catalog_Campanas fila 105"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "O_Welcome-NC007067_NA_IBS_FOOD_NEST_L60_ANMW_MX_ES_NA_AC_EM_A_NA_997024",
+   "canonico": "Tercer Tiempo",
+   "autoridad": "Catalog_Campanas fila 106"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-WELLNESS-NAVIGATORS_CN_EM_A_V2_9825257",
+   "canonico": "AON",
+   "autoridad": "Catalog_Campanas fila 107"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "O_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_JUN-AON-PRODUCTIVE-ADULTS_CN_EM_A_V2_982527",
+   "canonico": "AON",
+   "autoridad": "Catalog_Campanas fila 108"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "O_Nescafe-Espresso-Con-NC004682_1_IBS_CFEE_NESC_NCF_AAGW_MX_ES_Concentrate_AC_EM_A_V1_001577",
+   "canonico": "Hackea tu café",
+   "autoridad": "Catalog_Campanas fila 109"
+  },
+  {
+   "tipo": "Campana",
+   "campo": "Campana_SFMC_Raw",
+   "alias": "O_Nescafe-Espresso-Con-NC004682_2_IBS_CFEE_NESC_NCF_AAGW_MX_ES_Concentrate_AC_EM_B_V2_001576",
+   "canonico": "Hackea tu café",
+   "autoridad": "Catalog_Campanas fila 110"
+  },
+  {
+   "tipo": "Segmento",
+   "campo": "Segmento_SFMC_Raw",
+   "alias": "final",
+   "canonico": "Activos",
+   "autoridad": "Catalog_Campanas fila 115"
+  }
+ ],
+ "sin_autoridad": [],
+ "columnas_puente_faltantes": [
+  "Campana_SFMC_Raw",
+  "Segmento_SFMC_Raw"
+ ],
+ "campanas_declaradas_sin_datos": [
+  "Navidad",
+  "AON NAN",
+  "Especializados NAN",
+  "Crossbrand NIN+Purina",
+  "You Can",
+  "Perfilamiento Growth Drivers",
+  "Prevensión Churn",
+  "Winback",
+  "Marvel"
+ ],
+ "lo_que_falta_para_alinear": [
+  "1 · dar de alta 31 alias en Catalogo_Referencias (todos con autoridad en Catalog_Campanas)",
+  "2 · agregar a Catalogo_Piezas las columnas puente Campana_SFMC_Raw y Segmento_SFMC_Raw para que las fórmulas puedan apuntarle",
+  "3 · permitir filas sin datos (placeholder) para catalogar ANTES del primer envío",
+  "4 · repuntar las 1,142 fórmulas del viejo al nuevo — es el paso que toca producción"
+ ],
+ "no_se_hizo": "nada de esto se escribió: los 4 pasos tocan el workbook y requieren OK de Rick"
+}

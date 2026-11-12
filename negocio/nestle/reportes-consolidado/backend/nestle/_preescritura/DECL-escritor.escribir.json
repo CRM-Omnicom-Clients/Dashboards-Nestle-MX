@@ -1,0 +1,33 @@
+{
+ "skill": "escritor",
+ "script": "escritor.escribir.js",
+ "declarado": "2026-08-27",
+ "que_es": "Lo que este skill VA a escribir, declarado ANTES de tocar el Excel.",
+ "regla": "Rick, 26-ago: un skill no procede si no completó su loop de pre-escritura.",
+ "tablas": [
+  {
+   "hoja": "Data_Email",
+   "grano": "una fila por ENVÍO de email",
+   "llave": "Pieza_ID — nunca Email_Name: es una columna que este mismo escritor llena",
+   "celdas_esperadas": "98 filas × las columnas del contrato"
+  },
+  {
+   "hoja": "Data_WhatsApp",
+   "grano": "una fila por ENVÍO de WhatsApp",
+   "llave": "Pieza_ID",
+   "celdas_esperadas": "12 filas"
+  },
+  {
+   "hoja": "Data_Qcart_Carritos",
+   "grano": "una fila por EVENTO de carrito",
+   "llave": "shortlink + Pieza_ID",
+   "celdas_esperadas": "~2,645 filas"
+  },
+  {
+   "hoja": "Data_Qcart_Productos",
+   "grano": "una fila por PRODUCTO matcheado",
+   "llave": "shortlink + Pieza_ID",
+   "celdas_esperadas": "~696 filas"
+  }
+ ]
+}

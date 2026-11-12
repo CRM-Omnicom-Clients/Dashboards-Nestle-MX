@@ -1,0 +1,279 @@
+{
+ "skill": "whatsapp",
+ "fecha": "2026-08-24",
+ "que_es": "La tabla previa: lo que este skill VA a escribir, ya con la forma de cada hoja destino.",
+ "por_que": "Mueve la traduccion fuente->hoja hacia adelante, para que se pueda revisar ANTES de tocar el Excel. Antes ocurria dentro del escritor, tarde y sin revision.",
+ "notas": "Tabla previa de WhatsApp, generada con la fuente real.",
+ "tablas": [
+  {
+   "skill": "whatsapp",
+   "hoja": "Data_WhatsApp",
+   "grano": "una fila = un envío de WhatsApp",
+   "llave": "Pieza_ID + Touchpoint",
+   "ancla": null,
+   "no_toca": [
+    "Email_Name",
+    "Subject",
+    "las columnas Principal_* y FUP_*: van en N/A"
+   ],
+   "columnas_de_la_hoja": [
+    "BU",
+    "Marca",
+    "Campaña",
+    "Campana_Raw",
+    "Objetivo",
+    "Segmento_Canonico",
+    "Segmento_WA_Raw",
+    "Canal",
+    "Touchpoint",
+    "Send_Date",
+    "Send_Month",
+    "Send_Quincena",
+    "Sends",
+    "Deliveries",
+    "Opens_Read",
+    "Clicks",
+    "Clicks_Medidos",
+    "Errores",
+    "Delivery_Rate",
+    "Read_Rate",
+    "CTOR",
+    "Aud_Original",
+    "Aud_Filtros",
+    "Aud_Final",
+    "Logins",
+    "Recetas_Capturadas",
+    "Pct_Error",
+    "Errores_Meta_Detalle",
+    "utm_content",
+    "URL",
+    "Notas",
+    "pieza_id"
+   ],
+   "columnas_que_escribe": [
+    "BU",
+    "Marca",
+    "Campaña",
+    "Objetivo",
+    "Canal",
+    "Touchpoint",
+    "Sends",
+    "Deliveries",
+    "Opens_Read",
+    "Clicks",
+    "pieza_id"
+   ],
+   "filas": [
+    {
+     "BU": "RN",
+     "Marca": "Carnation, La Lechera",
+     "Campaña": "Hotcakes",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "WA-C1",
+     "Sends": 312,
+     "Deliveries": 226,
+     "Opens_Read": 170,
+     "Clicks": 19,
+     "pieza_id": "002-P021"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Carnation, La Lechera",
+     "Campaña": "Hotcakes",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "WA-C2",
+     "Sends": 285,
+     "Deliveries": 247,
+     "Opens_Read": 177,
+     "Clicks": 29,
+     "pieza_id": "002-P022"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Carnation, La Lechera",
+     "Campaña": "Hotcakes",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "WA-C3",
+     "Sends": 519,
+     "Deliveries": 419,
+     "Opens_Read": 276,
+     "Clicks": 33,
+     "pieza_id": "002-P023"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Carnation, La Lechera",
+     "Campaña": "Hotcakes",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "WA-C4",
+     "Sends": 445,
+     "Deliveries": 372,
+     "Opens_Read": 287,
+     "Clicks": 52,
+     "pieza_id": "002-P024"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "Partido 2",
+     "Sends": 162,
+     "Deliveries": 125,
+     "Opens_Read": 94,
+     "Clicks": 17,
+     "pieza_id": "004-P010"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "Partido 3",
+     "Sends": 162,
+     "Deliveries": 125,
+     "Opens_Read": 101,
+     "Clicks": 26,
+     "pieza_id": "004-P013"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "Semifinal A",
+     "Sends": 1981,
+     "Deliveries": 1525.3700000000001,
+     "Opens_Read": 872,
+     "pieza_id": "004-P017"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "Semifinal B",
+     "Sends": 999,
+     "Deliveries": 722,
+     "Opens_Read": 411,
+     "pieza_id": "004-P018"
+    },
+    {
+     "BU": "RN",
+     "Marca": "Maggi",
+     "Campaña": "Mundial",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "Final",
+     "Sends": 1965,
+     "Deliveries": 1520,
+     "Opens_Read": 917,
+     "pieza_id": "004-P019"
+    },
+    {
+     "BU": "Nescafé",
+     "Marca": "Clásico",
+     "Campaña": "Tercer Tiempo",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "WA-1",
+     "Sends": 1817,
+     "Deliveries": 1817,
+     "Opens_Read": 1124,
+     "pieza_id": "008-P007"
+    },
+    {
+     "BU": "Nescafé",
+     "Marca": "Clásico",
+     "Campaña": "Tercer Tiempo",
+     "Objetivo": "Purchase",
+     "Canal": "WhatsApp",
+     "Touchpoint": "WA-2",
+     "Sends": 3996,
+     "Deliveries": 3949,
+     "Opens_Read": 2405,
+     "pieza_id": "008-P008"
+    },
+    {
+     "BU": "Nescafé",
+     "Marca": "ICE",
+     "Campaña": "The Freshers",
+     "Objetivo": "Awareness",
+     "Canal": "WhatsApp",
+     "Touchpoint": "WA-A1",
+     "Sends": 2000,
+     "Deliveries": 1599,
+     "Opens_Read": 893,
+     "Clicks": 171,
+     "pieza_id": "006-P003"
+    }
+   ],
+   "n_filas": 12,
+   "cobertura": [
+    {
+     "columna": "BU",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Marca",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Campaña",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Objetivo",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Canal",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Touchpoint",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Sends",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Deliveries",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Opens_Read",
+     "llenas": 12,
+     "de": 12
+    },
+    {
+     "columna": "Clicks",
+     "llenas": 7,
+     "de": 12
+    },
+    {
+     "columna": "pieza_id",
+     "llenas": 12,
+     "de": 12
+    }
+   ]
+  }
+ ]
+}

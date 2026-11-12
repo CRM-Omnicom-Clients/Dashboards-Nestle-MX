@@ -1,0 +1,227 @@
+{
+ "fecha": "2026-09-21",
+ "total_vida": 818,
+ "total_ventana": 756,
+ "total_fila": 718,
+ "descuadres": 5,
+ "filas": [
+  {
+   "fila": 2,
+   "tp": "E-P1",
+   "codigos": [
+    "rr0VvKTb",
+    "dHfqmS7n"
+   ],
+   "vida": 141,
+   "ventana": 137,
+   "dice": 137,
+   "desde": "2026-06-10",
+   "hasta": "2026-08-20"
+  },
+  {
+   "fila": 3,
+   "tp": "E-P1",
+   "codigos": [
+    "tJEICO87",
+    "Z8W0ZouI"
+   ],
+   "vida": 81,
+   "ventana": 81,
+   "dice": 81,
+   "desde": "2026-06-10",
+   "hasta": "2026-08-19"
+  },
+  {
+   "fila": 4,
+   "tp": "E-P1",
+   "codigos": [
+    "hWaJfDxS"
+   ],
+   "vida": 117,
+   "ventana": 98,
+   "dice": 98,
+   "desde": "2026-06-10",
+   "hasta": "2026-09-11"
+  },
+  {
+   "fila": 5,
+   "tp": "E-P2",
+   "codigos": [
+    "3QfdZN2Q",
+    "SN2YWvgo"
+   ],
+   "vida": 66,
+   "ventana": 66,
+   "dice": 66,
+   "desde": "2026-06-17",
+   "hasta": "2026-09-08"
+  },
+  {
+   "fila": 6,
+   "tp": "E-P2",
+   "codigos": [
+    "HcDJTsRH",
+    "rueO2xbY"
+   ],
+   "vida": 48,
+   "ventana": 47,
+   "dice": 47,
+   "desde": "2026-06-17",
+   "hasta": "2026-08-19"
+  },
+  {
+   "fila": 13,
+   "tp": "Semifinal A",
+   "codigos": [
+    "sbH9gVge",
+    "Agy5v9Yb"
+   ],
+   "vida": 36,
+   "ventana": 35,
+   "dice": 35,
+   "desde": "2026-07-14",
+   "hasta": "2026-09-08"
+  },
+  {
+   "fila": 14,
+   "tp": "Semifinal B",
+   "codigos": [
+    "2YWR8c3Z",
+    "haPs2HHU"
+   ],
+   "vida": 42,
+   "ventana": 42,
+   "dice": 42,
+   "desde": "2026-07-15",
+   "hasta": "2026-07-29"
+  },
+  {
+   "fila": 15,
+   "tp": "Final",
+   "codigos": [
+    "2Yn9L0bD",
+    "LO8RxwsM"
+   ],
+   "vida": 70,
+   "ventana": 63,
+   "dice": 62,
+   "desde": "2026-07-19",
+   "hasta": "2026-09-12"
+  },
+  {
+   "fila": 16,
+   "tp": "E-J4",
+   "codigos": [
+    "i8LZ55bd",
+    "HThaf6bT"
+   ],
+   "vida": 13,
+   "ventana": 13,
+   "dice": 13,
+   "desde": "2026-08-15",
+   "hasta": "2026-08-19"
+  },
+  {
+   "fila": 17,
+   "tp": "E-J4",
+   "codigos": [
+    "4tBsCXTp",
+    "hTHNLqzL"
+   ],
+   "vida": 111,
+   "ventana": 111,
+   "dice": 111,
+   "desde": "2026-08-15",
+   "hasta": "2026-09-11"
+  },
+  {
+   "fila": 18,
+   "tp": "E-J5",
+   "codigos": [
+    "UhCnTNuz",
+    "TYZa8g47"
+   ],
+   "vida": 4,
+   "ventana": 1,
+   "dice": 1,
+   "desde": "2026-09-11",
+   "hasta": "2026-09-11"
+  },
+  {
+   "fila": 20,
+   "tp": "E-J6",
+   "codigos": [
+    "BdN0ck7t",
+    "okUSdwJk"
+   ],
+   "vida": 2,
+   "ventana": 2,
+   "dice": 2,
+   "desde": "2026-09-11",
+   "hasta": "2026-09-11"
+  },
+  {
+   "fila": 21,
+   "tp": "E-J7",
+   "codigos": [
+    "hTHNLqzL",
+    "GQnvqqP3"
+   ],
+   "vida": 21,
+   "ventana": 13,
+   "dice": 13,
+   "desde": "2026-09-04",
+   "hasta": "2026-09-13"
+  },
+  {
+   "fila": 22,
+   "tp": "WA-J8",
+   "codigos": [
+    "DTuqPqBo"
+   ],
+   "vida": 21,
+   "ventana": 6,
+   "dice": 5,
+   "desde": "2026-09-12",
+   "hasta": "2026-09-13"
+  },
+  {
+   "fila": 23,
+   "tp": "E-J8",
+   "codigos": [
+    "0oSrtaxX",
+    "0eQt7uf5"
+   ],
+   "vida": 11,
+   "ventana": 7,
+   "dice": 5,
+   "desde": "2026-09-12",
+   "hasta": "2026-09-13"
+  },
+  {
+   "fila": 24,
+   "tp": "E-J9",
+   "codigos": [
+    "bfQ24tDq",
+    "xTaSfQ2y"
+   ],
+   "vida": 24,
+   "ventana": 24,
+   "dice": null,
+   "desde": "2026-09-16",
+   "hasta": "2026-09-20"
+  },
+  {
+   "fila": 25,
+   "tp": "WA-J9",
+   "codigos": [
+    "ymh2OT4x"
+   ],
+   "vida": 10,
+   "ventana": 10,
+   "dice": null,
+   "desde": "2026-09-16",
+   "hasta": "2026-09-20"
+  }
+ ]
+}

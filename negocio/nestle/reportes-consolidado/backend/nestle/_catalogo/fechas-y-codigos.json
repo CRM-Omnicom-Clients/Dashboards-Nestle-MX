@@ -1,0 +1,1128 @@
+{
+ "paso": "B5+H2b",
+ "cambios": [
+  {
+   "fila": 2,
+   "pieza": "001-P001",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-19",
+   "a": "2026-03-14",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 2,
+   "pieza": "001-P001",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-03-Q2",
+   "a": "2026-03-Q1",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 2,
+   "pieza": "001-P001",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 2 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 3,
+   "pieza": "001-P002",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-20",
+   "a": "2026-03-17",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 3,
+   "pieza": "001-P002",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 2 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 4,
+   "pieza": "001-P003",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 2 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 5,
+   "pieza": "001-P004",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 2 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 6,
+   "pieza": "001-P005",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-18",
+   "a": "2026-03-14",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 6,
+   "pieza": "001-P005",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-03-Q2",
+   "a": "2026-03-Q1",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 6,
+   "pieza": "001-P005",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 2 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 7,
+   "pieza": "001-P006",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-20",
+   "a": "2026-03-17",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 7,
+   "pieza": "001-P006",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 2 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 8,
+   "pieza": "001-P007",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-04-21",
+   "a": "2026-04-20",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 8,
+   "pieza": "001-P007",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 9,
+   "pieza": "001-P008",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 10,
+   "pieza": "001-P009",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-04-24",
+   "a": "2026-04-20",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 10,
+   "pieza": "001-P009",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 2 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 11,
+   "pieza": "001-P010",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 2 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 12,
+   "pieza": "001-P011",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 13,
+   "pieza": "001-P012",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 14,
+   "pieza": "001-P013",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 15,
+   "pieza": "001-P014",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 16,
+   "pieza": "002-P001",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-05-20",
+   "a": "2026-05-13",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 16,
+   "pieza": "002-P001",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-05-Q2",
+   "a": "2026-05-Q1",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 16,
+   "pieza": "002-P001",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 17,
+   "pieza": "002-P002",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-05-20",
+   "a": "2026-05-13",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 17,
+   "pieza": "002-P002",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-05-Q2",
+   "a": "2026-05-Q1",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 17,
+   "pieza": "002-P002",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 18,
+   "pieza": "002-P003",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-05-20",
+   "a": "2026-05-13",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 18,
+   "pieza": "002-P003",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-05-Q2",
+   "a": "2026-05-Q1",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 18,
+   "pieza": "002-P003",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 19,
+   "pieza": "002-P004",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-05-20",
+   "a": "2026-05-13",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 19,
+   "pieza": "002-P004",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-05-Q2",
+   "a": "2026-05-Q1",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 19,
+   "pieza": "002-P004",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 20,
+   "pieza": "002-P005",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-05-23",
+   "a": "2026-05-13",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 20,
+   "pieza": "002-P005",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-05-Q2",
+   "a": "2026-05-Q1",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 20,
+   "pieza": "002-P005",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 21,
+   "pieza": "002-P006",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 22,
+   "pieza": "002-P007",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 23,
+   "pieza": "002-P008",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 24,
+   "pieza": "002-P009",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 25,
+   "pieza": "002-P010",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 26,
+   "pieza": "002-P011",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 27,
+   "pieza": "002-P012",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 28,
+   "pieza": "002-P013",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 29,
+   "pieza": "002-P014",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 30,
+   "pieza": "002-P015",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 31,
+   "pieza": "002-P016",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 32,
+   "pieza": "002-P017",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 19 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 33,
+   "pieza": "002-P018",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 19 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 34,
+   "pieza": "002-P019",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 16 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 35,
+   "pieza": "002-P020",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 16 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 36,
+   "pieza": "004-P001",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 37,
+   "pieza": "004-P002",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 38,
+   "pieza": "004-P003",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 39,
+   "pieza": "004-P004",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 40,
+   "pieza": "004-P005",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 41,
+   "pieza": "004-P006",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 42,
+   "pieza": "004-P007",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 43,
+   "pieza": "004-P008",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 44,
+   "pieza": "008-P001",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 45,
+   "pieza": "008-P002",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 46,
+   "pieza": "008-P003",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 47,
+   "pieza": "008-P004",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 48,
+   "pieza": "003-P001",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-06-26",
+   "a": "2026-06-25",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 48,
+   "pieza": "003-P001",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 49,
+   "pieza": "003-P002",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 50,
+   "pieza": "008-P005",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 51,
+   "pieza": "008-P006",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 52,
+   "pieza": "009-P001",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-06-26",
+   "a": "2026-06-25",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 52,
+   "pieza": "009-P001",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 53,
+   "pieza": "009-P002",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-17",
+   "a": "2026-07-13",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 53,
+   "pieza": "009-P002",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-07-Q2",
+   "a": "2026-07-Q1",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 53,
+   "pieza": "009-P002",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 3 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 54,
+   "pieza": "009-P003",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-17",
+   "a": "2026-07-13",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 54,
+   "pieza": "009-P003",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-07-Q2",
+   "a": "2026-07-Q1",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 54,
+   "pieza": "009-P003",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 3 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 55,
+   "pieza": "009-P004",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-17",
+   "a": "2026-07-13",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 55,
+   "pieza": "009-P004",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-07-Q2",
+   "a": "2026-07-Q1",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 55,
+   "pieza": "009-P004",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 3 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 56,
+   "pieza": "004-P009",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 57,
+   "pieza": "001-P015",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-22",
+   "a": "2026-07-20",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 57,
+   "pieza": "001-P015",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 21 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 58,
+   "pieza": "001-P016",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 18 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 59,
+   "pieza": "001-P017",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-22",
+   "a": "2026-07-20",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 59,
+   "pieza": "001-P017",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 60,
+   "pieza": "001-P018",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-25",
+   "a": "2026-07-20",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 60,
+   "pieza": "001-P018",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 61,
+   "pieza": "001-P019",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-25",
+   "a": "2026-07-20",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 61,
+   "pieza": "001-P019",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 19 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 62,
+   "pieza": "001-P020",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 16 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 63,
+   "pieza": "001-P021",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-22",
+   "a": "2026-07-20",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 63,
+   "pieza": "001-P021",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 64,
+   "pieza": "001-P022",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 65,
+   "pieza": "006-P001",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 10 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 66,
+   "pieza": "006-P002",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-24",
+   "a": "2026-07-21",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 66,
+   "pieza": "006-P002",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 7 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 67,
+   "pieza": "007-P001",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-25",
+   "a": "2026-07-24",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 67,
+   "pieza": "007-P001",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 9 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 68,
+   "pieza": "007-P002",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 69,
+   "pieza": "007-P003",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-07-31",
+   "a": "2026-07-27",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 69,
+   "pieza": "007-P003",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 9 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 70,
+   "pieza": "001-P023",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-19",
+   "a": "2026-04-30",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 70,
+   "pieza": "001-P023",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-03-Q2",
+   "a": "2026-04-Q2",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 70,
+   "pieza": "001-P023",
+   "col": "Mes_Lanzamiento",
+   "de": "2026-03",
+   "a": "2026-04",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 70,
+   "pieza": "001-P023",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 71,
+   "pieza": "001-P024",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-14",
+   "a": "2026-04-30",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 71,
+   "pieza": "001-P024",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-03-Q1",
+   "a": "2026-04-Q2",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 71,
+   "pieza": "001-P024",
+   "col": "Mes_Lanzamiento",
+   "de": "2026-03",
+   "a": "2026-04",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 71,
+   "pieza": "001-P024",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 72,
+   "pieza": "001-P025",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-18",
+   "a": "2026-04-30",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 72,
+   "pieza": "001-P025",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-03-Q2",
+   "a": "2026-04-Q2",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 72,
+   "pieza": "001-P025",
+   "col": "Mes_Lanzamiento",
+   "de": "2026-03",
+   "a": "2026-04",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 72,
+   "pieza": "001-P025",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 73,
+   "pieza": "001-P026",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-17",
+   "a": "2026-05-03",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 73,
+   "pieza": "001-P026",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-03-Q2",
+   "a": "2026-05-Q1",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 73,
+   "pieza": "001-P026",
+   "col": "Mes_Lanzamiento",
+   "de": "2026-03",
+   "a": "2026-05",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 73,
+   "pieza": "001-P026",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 74,
+   "pieza": "001-P027",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-20",
+   "a": "2026-05-03",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 74,
+   "pieza": "001-P027",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-03-Q2",
+   "a": "2026-05-Q1",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 74,
+   "pieza": "001-P027",
+   "col": "Mes_Lanzamiento",
+   "de": "2026-03",
+   "a": "2026-05",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 74,
+   "pieza": "001-P027",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 75,
+   "pieza": "001-P028",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-03-20",
+   "a": "2026-05-03",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 75,
+   "pieza": "001-P028",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-03-Q2",
+   "a": "2026-05-Q1",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 75,
+   "pieza": "001-P028",
+   "col": "Mes_Lanzamiento",
+   "de": "2026-03",
+   "a": "2026-05",
+   "motivo": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)"
+  },
+  {
+   "fila": 75,
+   "pieza": "001-P028",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 1 envío(s)",
+   "a": "CATALOGO-CORRECCIONES.md (SFMC no distingue el par)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 76,
+   "pieza": "007-P004",
+   "col": "Fecha_Primer_Envio",
+   "de": "2026-08-03",
+   "a": "2026-07-27",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 76,
+   "pieza": "007-P004",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-08-Q1",
+   "a": "2026-07-Q2",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 76,
+   "pieza": "007-P004",
+   "col": "Mes_Lanzamiento",
+   "de": "2026-08",
+   "a": "2026-07",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 76,
+   "pieza": "007-P004",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Date exacto · 8 envío(s)",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  },
+  {
+   "fila": 77,
+   "pieza": "009-P005",
+   "col": "Fecha_Primer_Envio",
+   "de": "",
+   "a": "2026-06-17",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 77,
+   "pieza": "009-P005",
+   "col": "Quincena_Lanzamiento",
+   "de": "2026-07-Q1",
+   "a": "2026-06-Q2",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 77,
+   "pieza": "009-P005",
+   "col": "Mes_Lanzamiento",
+   "de": "2026-07",
+   "a": "2026-06",
+   "motivo": "SFMC · min(SendDay)"
+  },
+  {
+   "fila": 77,
+   "pieza": "009-P005",
+   "col": "Fecha_Origen",
+   "de": "Data_Email · Send_Quincena declarada (2026-07-Q1) · la fuente no trae el día",
+   "a": "SFMC · min(SendDay)",
+   "motivo": "declarar la procedencia de la fecha"
+  }
+ ],
+ "mover": [],
+ "ambiguos": [],
+ "respetados_por_declaracion": [
+  "hhzYOf18→001-P021",
+  "qrMAKnjA→002-P003",
+  "GblUR93I→001-P021",
+  "LU7k7fMB→002-P004",
+  "bd2KESe4→002-P017",
+  "a4NBepmo→002-P019",
+  "rr0VvKTb→004-P003",
+  "PJrhl5GT→003-P001",
+  "3QfdZN2Q→004-P004",
+  "fDAdN8Qa→001-P021",
+  "r0J2KBES→003-P001",
+  "o41ObWyu→003-P001",
+  "PDy0MeF9→003-P001",
+  "hWaJfDxS→004-P002",
+  "sbH9gVge→004-P017",
+  "PySVWRVY→001-P015",
+  "kzFAiKMv→001-P005",
+  "KO3vgQok→001-P019",
+  "os3U6hWb→001-P003",
+  "xj2gTnHI→001-P017",
+  "LO8RxwsM→004-P019",
+  "wdvsBDby→004-P004",
+  "Agy5v9Yb→004-P017",
+  "tJEICO87→004-P001",
+  "SGm6GxjJ→001-P005",
+  "Mb4KvUvP→001-P001",
+  "VbE5Jnb4→002-P017",
+  "NhrllATy→002-P001",
+  "vgMqmCrL→001-P005",
+  "haPs2HHU→004-P018",
+  "2YWR8c3Z→004-P018",
+  "2Yn9L0bD→004-P019",
+  "uDEM0jlX→001-P005",
+  "YdlUlPrm→001-P011",
+  "0varyzKZ→002-P019",
+  "E8RDSsHg→001-P003",
+  "9Bm8slOi→001-P003",
+  "3o1GDbRc→002-P002",
+  "3NIh2kYW→004-P004",
+  "dHfqmS7n→004-P003",
+  "SN2YWvgo→004-P004",
+  "ETJFEOzD→001-P011",
+  "HcDJTsRH→004-P005",
+  "rueO2xbY→004-P005",
+  "1iqH9Tx7→001-P011",
+  "Z8W0ZouI→004-P001",
+  "ZJ3SmPMy→004-P004"
+ ]
+}

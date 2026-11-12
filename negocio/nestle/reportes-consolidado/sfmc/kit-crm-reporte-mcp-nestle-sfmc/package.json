@@ -1,0 +1,11 @@
+{
+  "name": "crm-reporte-mcp-nestle-sfmc",
+  "version": "1.0.0",
+  "description": "Kit portable para operar el pipeline de reporteo de email (SFMC): catalogo, refresco, automation, diagnostico. Sin dependencias externas.",
+  "private": true,
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test"
+  }
+}

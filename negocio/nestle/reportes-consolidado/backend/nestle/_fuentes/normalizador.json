@@ -1,0 +1,724 @@
+{
+ "paso": "cuadre-coherencia",
+ "libro": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+ "coherente": [
+  {
+   "area": "llaves",
+   "que": "Pieza_ID único en el catálogo",
+   "evidencia": "124 ids"
+  },
+  {
+   "area": "llaves",
+   "que": "Data_Email anclada al catálogo",
+   "evidencia": "108/108"
+  },
+  {
+   "area": "llaves",
+   "que": "Data_WhatsApp anclada al catálogo",
+   "evidencia": "19/19"
+  },
+  {
+   "area": "llaves",
+   "que": "Data_Qcart_Carritos anclada al catálogo",
+   "evidencia": "3198/3198"
+  },
+  {
+   "area": "llaves",
+   "que": "Data_Qcart_Productos anclada al catálogo",
+   "evidencia": "946/946"
+  },
+  {
+   "area": "por fila",
+   "que": "el canal de cada fila cuadra con el catálogo",
+   "evidencia": "89 filas evaluadas"
+  },
+  {
+   "area": "por fila",
+   "que": "toda fila con números tiene campaña, objetivo y quincena",
+   "evidencia": "89 filas"
+  },
+  {
+   "area": "duplicados",
+   "que": "ningún Email_ID aparece en dos filas",
+   "evidencia": "0 ids distintos"
+  },
+  {
+   "area": "duplicados",
+   "que": "toda coincidencia de volumen en WhatsApp tiene respaldo en el bloque",
+   "evidencia": "16 filas con WA"
+  },
+  {
+   "area": "periodo",
+   "que": "ninguna oleada se parte entre quincenas",
+   "evidencia": "60 touchpoints evaluados"
+  },
+  {
+   "area": "marcado",
+   "que": "el click no medido de WhatsApp va en null",
+   "evidencia": "2 envíos"
+  }
+ ],
+ "hallazgos": [
+  {
+   "area": "duplicados",
+   "que": "WhatsApp: el bloque y las filas no suman lo mismo",
+   "detalle": "bloque 21,963 vs filas 43,926",
+   "filas": []
+  },
+  {
+   "area": "marcado",
+   "que": "hay datos que faltan y no están marcados",
+   "detalle": "106 celda(s)",
+   "filas": [
+    {
+     "fila": 2,
+     "pieza": "001-P001",
+     "campo": "EmailID",
+     "porque": "es email con 34,449 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 3,
+     "pieza": "001-P002",
+     "campo": "EmailID",
+     "porque": "es email con 26,508 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 4,
+     "pieza": "001-P003",
+     "campo": "EmailID",
+     "porque": "es email con 5,968 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 5,
+     "pieza": "001-P004",
+     "campo": "EmailID",
+     "porque": "es email con 5,397 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 6,
+     "pieza": "001-P005",
+     "campo": "EmailID",
+     "porque": "es email con 37,374 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 7,
+     "pieza": "001-P006",
+     "campo": "EmailID",
+     "porque": "es email con 28,829 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 8,
+     "pieza": "001-P007",
+     "campo": "EmailID",
+     "porque": "es email con 556,864 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 9,
+     "pieza": "001-P008",
+     "campo": "EmailID",
+     "porque": "es email con 355,979 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 10,
+     "pieza": "001-P009",
+     "campo": "EmailID",
+     "porque": "es email con 225,246 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 11,
+     "pieza": "001-P010",
+     "campo": "EmailID",
+     "porque": "es email con 47,857 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 12,
+     "pieza": "001-P011",
+     "campo": "EmailID",
+     "porque": "es email con 75,942 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 13,
+     "pieza": "001-P012",
+     "campo": "EmailID",
+     "porque": "es email con 58,021 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 14,
+     "pieza": "001-P013",
+     "campo": "EmailID",
+     "porque": "es email con 246,251 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 15,
+     "pieza": "001-P014",
+     "campo": "EmailID",
+     "porque": "es email con 83,170 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 16,
+     "pieza": "002-P001",
+     "campo": "EmailID",
+     "porque": "es email con 9,880 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 17,
+     "pieza": "002-P002",
+     "campo": "EmailID",
+     "porque": "es email con 13,311 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 18,
+     "pieza": "002-P003",
+     "campo": "EmailID",
+     "porque": "es email con 22,069 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 19,
+     "pieza": "002-P004",
+     "campo": "EmailID",
+     "porque": "es email con 15,407 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 20,
+     "pieza": "002-P005",
+     "campo": "EmailID",
+     "porque": "es email con 7,226 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 21,
+     "pieza": "002-P006",
+     "campo": "EmailID",
+     "porque": "es email con 9,701 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 22,
+     "pieza": "002-P007",
+     "campo": "EmailID",
+     "porque": "es email con 15,688 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 23,
+     "pieza": "002-P008",
+     "campo": "EmailID",
+     "porque": "es email con 11,033 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 24,
+     "pieza": "002-P009",
+     "campo": "EmailID",
+     "porque": "es email con 3,192 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 25,
+     "pieza": "002-P010",
+     "campo": "EmailID",
+     "porque": "es email con 3,060 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 26,
+     "pieza": "002-P011",
+     "campo": "EmailID",
+     "porque": "es email con 5,732 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 27,
+     "pieza": "002-P012",
+     "campo": "EmailID",
+     "porque": "es email con 3,545 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 28,
+     "pieza": "002-P013",
+     "campo": "EmailID",
+     "porque": "es email con 822 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 29,
+     "pieza": "002-P014",
+     "campo": "EmailID",
+     "porque": "es email con 847 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 30,
+     "pieza": "002-P015",
+     "campo": "EmailID",
+     "porque": "es email con 1,353 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 31,
+     "pieza": "002-P016",
+     "campo": "EmailID",
+     "porque": "es email con 1,111 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 32,
+     "pieza": "002-P017",
+     "campo": "EmailID",
+     "porque": "es email con 15,011 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 33,
+     "pieza": "002-P018",
+     "campo": "EmailID",
+     "porque": "es email con 3,864 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 34,
+     "pieza": "002-P019",
+     "campo": "EmailID",
+     "porque": "es email con 111,015 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 35,
+     "pieza": "002-P020",
+     "campo": "EmailID",
+     "porque": "es email con 97,691 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 36,
+     "pieza": "004-P001",
+     "campo": "EmailID",
+     "porque": "es email con 75,679 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 37,
+     "pieza": "004-P002",
+     "campo": "EmailID",
+     "porque": "es email con 133,898 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 38,
+     "pieza": "004-P003",
+     "campo": "EmailID",
+     "porque": "es email con 14,138 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 39,
+     "pieza": "004-P004",
+     "campo": "EmailID",
+     "porque": "es email con 14,117 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 40,
+     "pieza": "004-P005",
+     "campo": "EmailID",
+     "porque": "es email con 75,518 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 41,
+     "pieza": "004-P006",
+     "campo": "EmailID",
+     "porque": "es email con 14,106 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 42,
+     "pieza": "004-P007",
+     "campo": "EmailID",
+     "porque": "es email con 133,511 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 43,
+     "pieza": "004-P008",
+     "campo": "EmailID",
+     "porque": "es email con 75,427 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 44,
+     "pieza": "008-P001",
+     "campo": "EmailID",
+     "porque": "es email con 316,037 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 45,
+     "pieza": "008-P002",
+     "campo": "EmailID",
+     "porque": "es email con 203,839 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 46,
+     "pieza": "008-P003",
+     "campo": "EmailID",
+     "porque": "es email con 467,714 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 47,
+     "pieza": "008-P004",
+     "campo": "EmailID",
+     "porque": "es email con 314,029 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 48,
+     "pieza": "003-P001",
+     "campo": "EmailID",
+     "porque": "es email con 91,378 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 49,
+     "pieza": "003-P002",
+     "campo": "EmailID",
+     "porque": "es email con 62,633 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 50,
+     "pieza": "008-P005",
+     "campo": "EmailID",
+     "porque": "es email con 314,661 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 51,
+     "pieza": "008-P006",
+     "campo": "EmailID",
+     "porque": "es email con 467,660 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 52,
+     "pieza": "009-P001",
+     "campo": "EmailID",
+     "porque": "es email con 10,557 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 53,
+     "pieza": "009-P002",
+     "campo": "EmailID",
+     "porque": "es email con 15,984 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 54,
+     "pieza": "009-P003",
+     "campo": "EmailID",
+     "porque": "es email con 180 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 55,
+     "pieza": "009-P004",
+     "campo": "EmailID",
+     "porque": "es email con 1,101 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 56,
+     "pieza": "004-P009",
+     "campo": "EmailID",
+     "porque": "es email con 13,457 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 57,
+     "pieza": "001-P015",
+     "campo": "EmailID",
+     "porque": "es email con 129,877 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 58,
+     "pieza": "001-P016",
+     "campo": "EmailID",
+     "porque": "es email con 81,945 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 59,
+     "pieza": "001-P017",
+     "campo": "EmailID",
+     "porque": "es email con 17,900 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 60,
+     "pieza": "001-P018",
+     "campo": "EmailID",
+     "porque": "es email con 11,522 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 61,
+     "pieza": "001-P019",
+     "campo": "EmailID",
+     "porque": "es email con 19,990 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 62,
+     "pieza": "001-P020",
+     "campo": "EmailID",
+     "porque": "es email con 13,000 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 63,
+     "pieza": "001-P021",
+     "campo": "EmailID",
+     "porque": "es email con 334,663 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 64,
+     "pieza": "001-P022",
+     "campo": "EmailID",
+     "porque": "es email con 190,730 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 65,
+     "pieza": "006-P001",
+     "campo": "EmailID",
+     "porque": "es email con 125,393 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 66,
+     "pieza": "006-P002",
+     "campo": "EmailID",
+     "porque": "es email con 79,054 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 67,
+     "pieza": "007-P001",
+     "campo": "EmailID",
+     "porque": "es email con 47,271 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 68,
+     "pieza": "007-P002",
+     "campo": "EmailID",
+     "porque": "es email con 30,047 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 69,
+     "pieza": "007-P003",
+     "campo": "EmailID",
+     "porque": "es email con 46,199 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 70,
+     "pieza": "001-P023",
+     "campo": "EmailID",
+     "porque": "es email con 35,970 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 71,
+     "pieza": "001-P024",
+     "campo": "EmailID",
+     "porque": "es email con 13,897 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 72,
+     "pieza": "001-P025",
+     "campo": "EmailID",
+     "porque": "es email con 38,093 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 73,
+     "pieza": "001-P026",
+     "campo": "EmailID",
+     "porque": "es email con 12,666 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 74,
+     "pieza": "001-P027",
+     "campo": "EmailID",
+     "porque": "es email con 29,136 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 75,
+     "pieza": "001-P028",
+     "campo": "EmailID",
+     "porque": "es email con 27,823 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 76,
+     "pieza": "007-P004",
+     "campo": "EmailID",
+     "porque": "es email con 28,970 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 77,
+     "pieza": "009-P005",
+     "campo": "EmailID",
+     "porque": "es email con 25,212 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 89,
+     "pieza": "009-P006",
+     "campo": "EmailID",
+     "porque": "es email con 19,206 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 90,
+     "pieza": "009-P007",
+     "campo": "EmailID",
+     "porque": "es email con 3,417 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 91,
+     "pieza": "009-P008",
+     "campo": "EmailID",
+     "porque": "es email con 2,983 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 92,
+     "pieza": "009-P009",
+     "campo": "EmailID",
+     "porque": "es email con 148 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 93,
+     "pieza": "009-P010",
+     "campo": "EmailID",
+     "porque": "es email con 310 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 94,
+     "pieza": "009-P011",
+     "campo": "EmailID",
+     "porque": "es email con 38 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 95,
+     "pieza": "009-P012",
+     "campo": "EmailID",
+     "porque": "es email con 3,409 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 96,
+     "pieza": "009-P013",
+     "campo": "EmailID",
+     "porque": "es email con 703 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 97,
+     "pieza": "009-P014",
+     "campo": "EmailID",
+     "porque": "es email con 38 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 98,
+     "pieza": "009-P015",
+     "campo": "EmailID",
+     "porque": "es email con 14,763 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 99,
+     "pieza": "009-P016",
+     "campo": "EmailID",
+     "porque": "es email con 4,021 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 100,
+     "pieza": "009-P017",
+     "campo": "EmailID",
+     "porque": "es email con 153 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 102,
+     "pieza": "001-P029",
+     "campo": "EmailID",
+     "porque": "es email con 427,214 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 103,
+     "pieza": "001-P030",
+     "campo": "EmailID",
+     "porque": "es email con 42,629 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 104,
+     "pieza": "001-P031",
+     "campo": "EmailID",
+     "porque": "es email con 38,186 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 105,
+     "pieza": "005-P005",
+     "campo": "EmailID",
+     "porque": "es email con 7,995 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 106,
+     "pieza": "005-P006",
+     "campo": "EmailID",
+     "porque": "es email con 128,759 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 107,
+     "pieza": "006-P004",
+     "campo": "EmailID",
+     "porque": "es email con 114,358 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 108,
+     "pieza": "006-P005",
+     "campo": "EmailID",
+     "porque": "es email con 72,464 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 109,
+     "pieza": "007-P005",
+     "campo": "EmailID",
+     "porque": "es email con 44,582 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 110,
+     "pieza": "007-P006",
+     "campo": "EmailID",
+     "porque": "es email con 26,603 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 111,
+     "pieza": "007-P007",
+     "campo": "EmailID",
+     "porque": "es email con 41,998 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 112,
+     "pieza": "006-P006",
+     "campo": "EmailID",
+     "porque": "es email con 104,701 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 113,
+     "pieza": "001-P032",
+     "campo": "EmailID",
+     "porque": "es email con 1,337,766 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 114,
+     "pieza": "005-P007",
+     "campo": "EmailID",
+     "porque": "es email con 43,188 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 115,
+     "pieza": "005-P008",
+     "campo": "EmailID",
+     "porque": "es email con 2,708 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 117,
+     "pieza": "005-P009",
+     "campo": "EmailID",
+     "porque": "es email con 2,733 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 118,
+     "pieza": "001-P033",
+     "campo": "EmailID",
+     "porque": "es email con 158,056 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 119,
+     "pieza": "005-P010",
+     "campo": "EmailID",
+     "porque": "es email con 91,580 envíos y no trae EmailID ni marca"
+    },
+    {
+     "fila": 121,
+     "pieza": "005-P012",
+     "campo": "EmailID",
+     "porque": "es email con 38,168 envíos y no trae EmailID ni marca"
+    }
+   ]
+  }
+ ],
+ "sin_evaluar": [
+  {
+   "area": "llaves",
+   "que": "piezas mudas",
+   "porque": "no hay ninguna"
+  },
+  {
+   "area": "totales",
+   "que": "filas fuera del rango",
+   "porque": "no encontré la fila de totales"
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "paso": "motor.clicks-desde-plataforma",
+ "generado": "2026-10-03",
+ "fuente": "SFMC · ClickEvent (SOAP), un job a la vez",
+ "que_es": "El desglose de clicks por destino desde la fuente COMPLETA. Complementa a CRM_Email_Links, que es ciega al link de baja porque SFMC lo tokeniza por suscriptor.",
+ "base": "los clicks son TOTALES por URL (no únicos por persona): ClickEvent es el evento",
+ "jobs": 8,
+ "eventos": 32432,
+ "por_clase": {
+  "app": 2885,
+  "legal": 970,
+  "social": 3751,
+  "ver_en_navegador": 1468,
+  "contenido": 5413,
+  "retail": 15021,
+  "baja_preferencias": 2924
+ },
+ "detalle": [
+  {
+   "job": "1196925",
+   "pieza": "001-P007",
+   "bloque": "PRIN",
+   "eventos": 3341,
+   "suscriptores_unicos": 1952,
+   "truncated": false,
+   "clases": {
+    "app": 2092,
+    "legal": 54,
+    "social": 196,
+    "ver_en_navegador": 447,
+    "contenido": 552
+   },
+   "total_clasificado": 3341,
+   "archivo": "mcp-sfmc-nestle-sfmc_get_clicks-1789878527199.txt"
+  },
+  {
+   "job": "1196926",
+   "pieza": "001-P008",
+   "bloque": "FUP",
+   "eventos": 1306,
+   "suscriptores_unicos": 776,
+   "truncated": false,
+   "clases": {
+    "app": 793,
+    "legal": 32,
+    "social": 68,
+    "contenido": 260,
+    "ver_en_navegador": 153
+   },
+   "total_clasificado": 1306,
+   "archivo": "mcp-sfmc-nestle-sfmc_get_clicks-1789878553292.txt"
+  },
+  {
+   "job": "1213309",
+   "pieza": "001-P013",
+   "bloque": "PRIN",
+   "eventos": 3115,
+   "suscriptores_unicos": 1758,
+   "truncated": false,
+   "clases": {
+    "social": 2284,
+    "contenido": 630,
+    "legal": 68,
+    "ver_en_navegador": 133
+   },
+   "total_clasificado": 3115,
+   "archivo": "mcp-sfmc-nestle-sfmc_get_clicks-1789878566661.txt"
+  },
+  {
+   "job": "1242058",
+   "pieza": "008-P001",
+   "bloque": "PRIN",
+   "eventos": 20381,
+   "suscriptores_unicos": 11479,
+   "truncated": false,
+   "clases": {
+    "retail": 14440,
+    "contenido": 3045,
+    "legal": 648,
+    "social": 907,
+    "baja_preferencias": 833,
+    "ver_en_navegador": 508
+   },
+   "total_clasificado": 20381,
+   "archivo": "mcp-sfmc-nestle-sfmc_get_clicks-1789877162777.txt"
+  },
+  {
+   "job": "1248012",
+   "pieza": "008-P003",
+   "bloque": "PRIN",
+   "eventos": 1380,
+   "suscriptores_unicos": 550,
+   "truncated": false,
+   "clases": {
+    "retail": 208,
+    "contenido": 353,
+    "social": 135,
+    "legal": 69,
+    "baja_preferencias": 531,
+    "ver_en_navegador": 84
+   },
+   "total_clasificado": 1380,
+   "archivo": "mcp-sfmc-nestle-sfmc_get_clicks-1789878544051.txt"
+  },
+  {
+   "job": "1248013",
+   "pieza": "008-P004",
+   "bloque": "FUP",
+   "eventos": 929,
+   "suscriptores_unicos": 614,
+   "truncated": false,
+   "clases": {
+    "retail": 136,
+    "contenido": 101,
+    "social": 17,
+    "legal": 8,
+    "baja_preferencias": 642,
+    "ver_en_navegador": 25
+   },
+   "total_clasificado": 929,
+   "archivo": "mcp-sfmc-nestle-sfmc_get_clicks-1789878555685.txt"
+  },
+  {
+   "job": "1248018",
+   "pieza": "008-P006",
+   "bloque": "PRIN",
+   "eventos": 1397,
+   "suscriptores_unicos": 539,
+   "truncated": false,
+   "clases": {
+    "retail": 172,
+    "contenido": 406,
+    "legal": 78,
+    "social": 132,
+    "baja_preferencias": 511,
+    "ver_en_navegador": 98
+   },
+   "total_clasificado": 1397,
+   "archivo": "mcp-sfmc-nestle-sfmc_get_clicks-1789878538044.txt"
+  },
+  {
+   "job": "1248019",
+   "pieza": "008-P005",
+   "bloque": "FUP",
+   "eventos": 583,
+   "suscriptores_unicos": 401,
+   "truncated": false,
+   "clases": {
+    "retail": 65,
+    "contenido": 66,
+    "legal": 13,
+    "social": 12,
+    "baja_preferencias": 407,
+    "ver_en_navegador": 20
+   },
+   "total_clasificado": 583,
+   "archivo": "mcp-sfmc-nestle-sfmc_get_clicks-1789878561370.txt"
+  }
+ ],
+ "truncados": []
+}

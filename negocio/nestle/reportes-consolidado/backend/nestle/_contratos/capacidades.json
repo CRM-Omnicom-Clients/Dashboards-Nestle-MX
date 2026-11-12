@@ -1,0 +1,120 @@
+{
+ "que_es": "Las CAPACIDADES del sistema: verbos parametrizados que los skills invocan. Sustituyen a los pasos como unidad.",
+ "fase": 4,
+ "principio": "El skill DECIDE, la capacidad EJECUTA, la declaración GUARDA la decisión. Una capacidad sin decisiones dentro no envejece cuando la decisión cambia.",
+ "por_que": "Medido en los 93 scripts vivos: 351 copias del mismo puñado de gestos. 56 escriben su propia funcion t(), 55 abren el libro a mano, 33 tienen su propio registrador de checks, y solo 8 releen el archivo para verificar lo que escribieron.",
+
+ "capa_mecanica": {
+  "que_es": "Determinística a propósito: escribir una celda tiene que funcionar igual siempre.",
+  "libs": ["lib-flexible", "lib-esquema", "lib-registro", "lib-quincena", "lib-cambios", "lib-celda-xml", "lib-preescritura", "lib-capacidades"]
+ },
+
+ "capacidades": [
+  { "id": "abrir",
+    "verbo": "abrir el libro vivo y leer hojas y bloques",
+    "vive_en": "lib-capacidades.abrir()",
+    "absorbe_idioma": ["abrir-libro", "leer-filas", "leer-encabezados", "copiar-a-temp", "leer-bloque"],
+    "copias_que_retira": 55,
+    "estado": "construida" },
+
+  { "id": "verificar-en-disco",
+    "verbo": "releer el archivo y comprobar que lo que se dijo, está",
+    "vive_en": "lib-capacidades.verificarEnDisco()",
+    "absorbe_idioma": ["releer-para-verificar"],
+    "copias_que_retira": 8,
+    "por_que_importa": "🔴 la que más falta: 55 scripts escriben y solo 8 comprueban. Sin ella un no-op se ve idéntico a un éxito -- el retiro de columnas anunció «88 → 86» sin quitar ninguna.",
+    "estado": "construida" },
+
+  { "id": "publicar",
+    "verbo": "publicar al vivo con las CINCO capas, validando antes de copiar",
+    "vive_en": "lib-capacidades.publicar()",
+    "absorbe_idioma": ["las-5-capas"],
+    "copias_que_retira": 11,
+    "reglas": ["valida ANTES de copiar: al revés, si la validación falla el vivo ya quedó pisado",
+               "se niega si el archivo está tomado: con Excel abierto OneDrive revierte sin dejar rastro"],
+    "estado": "construida" },
+
+  { "id": "checks",
+    "verbo": "registrar checks con TRES veredictos",
+    "vive_en": "lib-capacidades.checks()",
+    "absorbe_idioma": ["chequeo-propio"],
+    "copias_que_retira": 33,
+    "por_que_importa": "🔴 el tercer veredicto -- «no pude evaluar» -- es el que faltaba. Un check que truena DA PERMISO; uno que mide contra una regla vieja bloquea trabajo correcto. Los dos son invisibles si solo existen «pasa» y «falla».",
+    "estado": "construida" },
+
+  { "id": "formato",
+    "verbo": "leer números y formatearlos",
+    "vive_en": "lib-capacidades.num/mil/letra",
+    "absorbe_idioma": ["numero-propio", "mil-propio", "letra-columna", "trim-propio"],
+    "copias_que_retira": 121,
+    "estado": "construida" },
+
+  { "id": "nombrar",
+    "verbo": "pedir el nombre físico de una columna por su id lógico",
+    "vive_en": "lib-registro + hoja().col()",
+    "absorbe_idioma": ["normalizador-propio"],
+    "copias_que_retira": 4,
+    "por_que_importa": "🔴 40 scripts nombran columnas que YA NO EXISTEN (`Touchpoint` en 24, `Email_Content_Name` en 16).",
+    "estado": "construida" },
+
+  { "id": "llavear",
+    "verbo": "construir la llave de una entidad, pedida al esquema",
+    "vive_en": "lib-esquema.llaveDe() + lib-valores-resumen.llaveDeFila()",
+    "absorbe_idioma": ["llave-compuesta"],
+    "copias_que_retira": 14,
+    "por_que_importa": "la llave del reporte estaba escrita CUATRO veces y las cuatro dejaron de cruzar a la vez.",
+    "estado": "parcial · falta que los 14 la pidan" },
+
+  { "id": "armar-bloque",
+    "verbo": "armar el bloque de UNA fuente, con su declaración",
+    "vive_en": "por construir",
+    "absorbe_nodos": ["fuentes-email.email-piezas.js", "fuentes-qcart.qcart.js", "fuentes-whatsapp.whatsapp.js", "fuentes-manual.manual.js"],
+    "por_que_importa": "cuatro pasos con la misma forma. Arreglé la concatenación del subsegmento en email y la rejilla la volvió a doblar: el otro sitio no se enteró.",
+    "riesgo": "🔴 ALTO -- cada uno guarda reglas que solo viven ahí (clicks_medidos de WhatsApp, la protección del typo de Qcart). El colapso solo vale si reproduce la salida de los cuatro CIFRA POR CIFRA.",
+    "estado": "declarada · no construida" },
+
+  { "id": "escribir-segun-contrato",
+    "verbo": "bajar un bloque a su hoja obedeciendo el contrato",
+    "vive_en": "escritor.escribir.js",
+    "absorbe_idioma": ["escribir-celda-xml", "apuntar-cambio"],
+    "copias_que_retira": 8,
+    "nota": "las dos mecánicas ya existen en la fundación (`lib-celda-xml` y `lib-cambios`): esta capacidad las orquesta, no las reimplementa. Escribir una celda con un regex propio se comió las celdas vecinas dos veces en una sesión.",
+    "estado": "existe como paso · falta parametrizar" },
+
+  { "id": "calcular-rejilla",
+    "verbo": "el único que divide: tasas y agregados",
+    "vive_en": "motor.motor.js + motor.links.js + motor-rejilla",
+    "estado": "existe como paso" },
+
+  { "id": "proyectar-a-hoja",
+    "verbo": "escribir una rejilla a una hoja, con su fila de totales",
+    "vive_en": "resumen.regenerar.js",
+    "estado": "existe como paso" },
+
+  { "id": "refutar",
+    "verbo": "atacar un resultado para demostrar que está mal",
+    "vive_en": "25 scripts adversariales",
+    "adaptable": true,
+    "reglas": [
+     "🔴 NUNCA escribe -- no puede romper la hoja porque no la toca",
+     "🔴 sus criterios salen de las MISMAS declaraciones que lee el resto: cambia la decisión, se adapta solo",
+     "🔴 no puede quedarse callado: tres veredictos, y «no pude evaluar» es ruidoso"
+    ],
+    "por_que_no_deterministico": "Rick, 25-ago: un refutador fijo refuta contra las reglas de ayer. El guardián de WhatsApp declaró 12 envíos «sin llegar al reporte» porque medía con nombres viejos, y bloqueó trabajo correcto.",
+    "estado": "declarada · 17 de los 25 no se corren nunca" },
+
+  { "id": "puerta",
+    "verbo": "dictaminar si se puede escribir / si lo escrito dice la verdad",
+    "vive_en": "fuentes-cuadre.cuadre.js · fuentes-cuadre.puerta2.js",
+    "adaptable": true,
+    "reglas": ["el UMBRAL se declara, no se programa", "BLOQUEA vs AVISA lo decide la dirección de la diferencia"],
+    "estado": "existe como paso · umbral aún en el código" }
+ ],
+
+ "lo_que_falta": [
+  "que los 93 vivos dejen de reimplementar los idiomas y pidan la capacidad",
+  "construir `armar-bloque` y probar que reproduce los cuatro cifra por cifra",
+  "sacar los 39 umbrales del código a su declaración",
+  "reconectar los 17 adversariales que no se corren"
+ ]
+}

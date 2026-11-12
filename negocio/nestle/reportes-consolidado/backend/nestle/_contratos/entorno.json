@@ -1,0 +1,151 @@
+{
+ "que_es": "Dónde vive cada cosa. Es el ÚNICO sitio del sistema donde se escribe una ruta: todo lo demás se la pide a lib-entorno.js.",
+ "por_que": "Medido el 2-oct-2026: 165 scripts llevaban escrita la carpeta del cliente, 231 la del backend y 49 el nombre del libro. El sistema estaba cableado a una máquina, un OneDrive y un nombre de archivo, así que para otra persona no arrancaba. Esto es la misma regla que ya rige para las columnas —se piden, no se escriben— aplicada a las rutas.",
+ "como_se_resuelve": "Si una raíz trae `ruta`, manda esa (es lo que permite apuntar a la carpeta de SharePoint tras la migración). Si no, se BUSCA una carpeta cuyo nombre contenga todos sus `segmentos`, bajo `buscar_en` y hasta `hondo` niveles. Si hay varias candidatas NO se elige ninguna: se declaran y se truena, porque escribir en la carpeta equivocada de un cliente no se deshace.",
+ "raices": {
+  "proyecto": {
+   "que_es": "La carpeta del cliente: donde vive el libro, las descargas de Qcart y _orquesta.",
+   "segmentos": [
+    "Marketing Automation Kinesso",
+    "Nestl",
+    "Reportes-Nestl"
+   ],
+   "buscar_en": [
+    "~"
+   ],
+   "hondo": 5,
+   "nota": "El prefijo del OneDrive lleva el tenant y cambia por persona, por eso se busca por segmentos y no por la ruta entera."
+  },
+  "fuentes_externas": {
+   "que_es": "La carpeta que el equipo de cliente comparte: de ahí salen el archivo de WhatsApp y el consolidado productivo.",
+   "segmentos": [
+    "Archivos de Leslie",
+    "Nestl"
+   ],
+   "buscar_en": [
+    "~"
+   ],
+   "hondo": 4,
+   "nota": "🔴 Está COMPARTIDA, no es de Rick. Si a la persona nueva no se la comparten, esta raíz no resuelve y el sistema lo dice en vez de reportar «no hay datos de WhatsApp»."
+  }
+ },
+ "libro_vivo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8.xlsx",
+ "nota_libro": "🔴 NUNCA se renombra ni se mueve: está compartido con el equipo y les rompe los links. Si alguien lo renombra, se corrige AQUÍ, no en los scripts.",
+ "fuentes": {
+  "whatsapp": {
+   "que_es": "Resultados de WhatsApp, lo mantiene el equipo de cliente",
+   "raiz": "fuentes_externas",
+   "ruta": "Marcas/CRM General/(Interno) Resultados Whatsapp CRM 2026.xlsx",
+   "si_falta": "Esa carpeta se comparte por SharePoint. Pide que te la compartan y que sincronice en tu OneDrive."
+  },
+  "qcart_maestro": {
+   "que_es": "El maestro de links de Qcart: la autoridad de qué shortlink es de qué pieza y desde cuándo",
+   "ruta": "ReportesQcart/Qcart-Links Mails-Hive- MX.xlsx",
+   "si_falta": "Vive en la carpeta del proyecto. Si no está, no se puede atribuir ningún carrito."
+  },
+  "qcart_descargas": {
+   "que_es": "Los CSV crudos de Qcart que SÍ se cargan",
+   "ruta": "ReportesQcart/_vigentes",
+   "si_falta": "Ahí van las descargas nuevas de Qcart. Los `-raw-` se cargan; el agregado (sin `-raw-`) NO."
+  },
+  "orquesta": {
+   "que_es": "Los documentos de estado y los planes de corte",
+   "ruta": "_orquesta",
+   "si_falta": "Sin esta carpeta el proyecto no está montado."
+  }
+ },
+ "nomenclatura": {
+  "que_es": "Cómo se llaman los skills de este sistema. El nombre de un skill ES parte de una ruta (`skills/<nombre>/SKILL.md`), por eso vive aquí.",
+  "prefijo_skills": "crm-reporte-",
+  "por_que_se_pide": "🔴 El prefijo estaba ESCRITO en 25 sitios del código — para construir nombres (`'rick-reportes-' + sk`) y para recortarlos (`skill.replace('rick-reportes-', '')`) — más 937 menciones en el sistema. Renombrar con un find-replace lo arregla hoy y lo vuelve a romper el día que cambie otra vez. Es la misma idea del registro de columnas: el id lógico es inmutable (`escritor`, `motor`, `orquestador`), el nombre físico cambia, y se toca en UN solo lugar.",
+  "historia": [
+   {
+    "cuando": "2026-10-02",
+    "de": "rick-reportes-",
+    "a": "crm-reporte-",
+    "por_que": "Rick: el sistema lo va a usar gente externa, y el nombre de una persona no describe lo que hace. `crm-reporte-*` sí."
+   }
+  ],
+  "no_se_renombra": {
+   "por_que": "🔴 Es HISTORIA, no sistema: lo que CUENTA algo, no lo que APUNTA a algo. Renombrarlo dejaría frases sin sentido y borraría el rastro de cómo se llamaba el sistema cuando aquello pasó. Es la regla de los reemplazos masivos del CLAUDE.md de Rick.",
+   "patrones": [
+    "projects/",
+    "telemetry/",
+    "_archivo-sistema2/",
+    "_scripts/_aplicados/",
+    "/_archivo/",
+    "/_respaldos/",
+    "rick-copies/_historial/",
+    "/_tmp/",
+    "_preescritura/decisiones.json",
+    ".log"
+   ]
+  },
+  "se_regenera_en_vez_de_sustituir": {
+   "por_que": "Son PRODUCTOS de un generador. Sustituirles el texto Y además regenerarlos son dos caminos que pueden divergir, y entonces conviven dos verdades del mismo hecho — que es el defecto de los dos censos.",
+   "archivos": [
+    "_contratos/cadena-skills.json",
+    "_contratos/orquestador.censo-scripts.json"
+   ],
+   "y_los_bloques": "los @DECLARACION de los 12 SKILL.md, con `orquestador.declarar-en-skills.js --escribir`"
+  }
+ },
+ "intocables": {
+  "que_es": "Los scripts que SI llevan un literal a proposito — una ruta escrita o un nombre viejo — y por que. Vive aqui porque lo leen cuatro: el probador del entorno, el migrador, la guarda 7 y el probador del renombre. Una lista repetida en cuatro sitios se desfasa en el primer cambio: es la misma idea del registro de nombres, el nombre se toca en UN lugar.",
+  "lista": {
+   "lib-entorno.js": "es quien DEFINE las rutas; migrarlo sería una mordida circular",
+   "orquestador.probar-entorno.js": "las lleva en regexes para poder compararlas contra lo que resuelve el contrato",
+   "orquestador.migrar-a-entorno.js": "las lleva en su tabla de sustituciones",
+   "orquestador.probar-guardas.js": "las lleva como SEÑUELO: le planta a la guarda 7 la ruta escrita y exige que bloquee. Entró el 2-oct cuando el probador se puso rojo por este archivo — y el aviso era correcto: el archivo tiene literales. Lo que estaba mal era no haberlo declarado.",
+   "orquestador.migrar-a-dirname.js": "lleva la ruta del BACKEND en su tabla: es quien la cambia por `__dirname`",
+   "orquestador.migrar-herramientas.js": "lleva las de `tools` y del intérprete de python: es quien las cambia por el contrato",
+   "orquestador.quitar-usuario-hardcodeado.js": "GENERA el texto `os.homedir() + ` como reemplazo: es un migrador que QUITA el usuario hardcodeado de las rutas, asi que ese literal es su materia prima, no un defecto.",
+   "orquestador.atacar-migracion.js": "PLANTA rutas escritas como senuelo: le quita una pieza al sistema y exige que se niegue. El literal es el ataque.",
+   "orquestador.probar-copiador.js": "PLANTA una carpeta con el prefijo VIEJO para comprobar que el copiador la retira — si no, quedarian dos versiones del mismo skill en la carpeta del cliente. El nombre viejo es el senuelo."
+  },
+  "ojo_una_sola_cosa": "🔴 Esta lista dice QUIÉN PUEDE LLEVAR UNA RUTA ESCRITA, y nada más. No sirve para decidir a quién aplica una migración: `orquestador.migrar-a-dirname.js` la usó así en su primera versión —saltándose los 4 al cambiar la ruta del BACKEND— y su barrido también los excluía, así que habría dicho «ninguno ancla el backend» con cuatro anclados. Eran dos asuntos distintos compartiendo una lista.",
+  "por_que_importa": "Sin esta lista el probador se acusaba a sí mismo y bloqueó una migración que estaba bien. Un guardián que se muerde la cola no guarda, estorba."
+ },
+ "patrones_prohibidos": {
+  "que_es": "Lo que un script NO debe escribir nunca, porque amarra el sistema a una máquina. La guarda 7 los busca. Se declaran aquí y no en la guarda para que añadir uno no sea tocar código.",
+  "solo_cuenta_si_es_una_RUTA": "🔴 El patrón solo infringe cuando está pegado a una barra (`/` o `\\`), es decir cuando se está ARMANDO una ruta. NOMBRAR una carpeta dentro de una frase no es escribir una ruta: `orquestador.instalar.js` le dice a la persona nueva «pide que te compartan «Marketing Automation Kinesso - Librería-Sharepoint-MAK»», y ese nombre es justo lo que hace útil el mensaje. La primera versión de la guarda lo señaló, y señalar la ayuda es como se consigue que alguien apague el guardián. Un `/` delante o detrás distingue las dos cosas sin adivinar.",
+  "lista": [
+   {
+    "patron": "OneDrive - ",
+    "que_es": "la carpeta de la nube con el nombre de la organización dentro",
+    "pide_en_su_lugar": "ENT.PROYECTO · ENT.raiz('fuentes_externas') · ENT.NUBE"
+   },
+   {
+    "patron": "Marketing Automation Kinesso",
+    "que_es": "un segmento de la ruta del cliente",
+    "pide_en_su_lugar": "ENT.PROYECTO"
+   },
+   {
+    "patron": "Archivos de Leslie",
+    "que_es": "la carpeta compartida por el equipo de cliente",
+    "pide_en_su_lugar": "ENT.raiz('fuentes_externas')"
+   },
+   {
+    "patron": "@LIBRO_VIVO@",
+    "que_es": "el nombre del archivo del libro, que ya cambió una vez (v7 → v8). El patrón se sustituye por el valor real de `libro_vivo`, así que renombrarlo NO deja la guarda ciega.",
+    "pide_en_su_lugar": "ENT.LIBRO · require('path').basename(ENT.LIBRO) si solo se imprime"
+   },
+   {
+    "patron": ".claude/reportes-backend",
+    "que_es": "🔴 el BACKEND anclado al home. Es el peor de los cuatro: un script copiado a otra carpeta seguiría cargando sus librerías y sus contratos desde `~/.claude` de Rick, así que la copia nueva PARECERÍA funcionar mientras obedece a la vieja. Una fachada.",
+    "pide_en_su_lugar": "__dirname para una librería hermana · require('path').resolve(__dirname, '..') para la raíz"
+   },
+   {
+    "patron": ".claude/tools",
+    "que_es": "las herramientas: de ahí salen `node_modules` y las 5 capas de validación del Excel, sin las que no se publica nada",
+    "pide_en_su_lugar": "require(__dirname + '/lib-entorno.js').TOOLS"
+   },
+   {
+    "patron": "Programs/Python/Python",
+    "que_es": "el intérprete CON LA VERSIÓN escrita. El día que se instale un 3.14, los scripts apuntan a una carpeta que ya no existe — y uno de ellos es la 4ª capa de validación, «la que no se salta».",
+    "pide_en_su_lugar": "require(__dirname + '/lib-entorno.js').PYTHON"
+   }
+  ],
+  "y_las_dos_formas": "🔴 Un patrón se puede escribir con barras (`'/.claude/tools'`) o repartido en argumentos (`path.join(home, '.claude', 'tools')`). Buscar solo la primera forma ya dejó anclado `lib-entorno.js` —el archivo del que depende todo— con el barrido en verde. Es la misma familia que el home aliasado y el nombre del libro partido en dos: presumir la FORMA en que algo está escrito."
+ }
+}

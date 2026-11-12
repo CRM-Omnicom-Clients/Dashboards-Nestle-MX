@@ -1,0 +1,62 @@
+{
+ "cuando": "2026-10-03T03:58:05.211Z",
+ "origen": "C:\\Users\\Ricardo.Aguilar\\.claude\\reportes-backend\\nestle",
+ "copia": "C:\\Users\\Ricardo.Aguilar\\OneDrive - OneWorkplace\\Archivos de Leslie Monserrat Monterrosas (Omnicom) - Nestlé 2026\\Marcas\\CRM General\\Sistema-Reportes-CRM",
+ "comparado_por": "sha1 del contenido — nunca por fecha: OneDrive reescribe mtime al sincronizar",
+ "carpetas": [
+  {
+   "sub": "_scripts",
+   "filtro": {},
+   "completo": true
+  },
+  {
+   "sub": "_contratos",
+   "filtro": {},
+   "completo": true
+  },
+  {
+   "sub": "_catalogo",
+   "filtro": {},
+   "completo": true
+  },
+  {
+   "sub": "skills",
+   "arbol": true,
+   "completo": true,
+   "soloPrefijo": "crm-reporte-"
+  },
+  {
+   "sub": "tools",
+   "filtro": {},
+   "completo": false
+  },
+  {
+   "sub": "tools/reportes",
+   "filtro": {},
+   "completo": false
+  }
+ ],
+ "iguales": 429,
+ "solo_en_origen": [
+  "skills/crm-reporte-mcp-nestle-sfmc/tests/args.test.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/tests/catalogo.test.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/tests/sql-fuzz.test.js"
+ ],
+ "difieren": [
+  "skills/crm-reporte-mcp-nestle-sfmc/docs/INSTALAR.md",
+  "skills/crm-reporte-mcp-nestle-sfmc/lib/cli.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/lib/credenciales.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/scripts/agregar-pieza.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/scripts/audiencias.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/scripts/conectar.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/scripts/descubrir.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/scripts/doctor.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/scripts/refrescar-pieza.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/scripts/resolver-emailname.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/scripts/snapshot.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/tests/cliente-espia.test.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/tests/credenciales.test.js",
+  "skills/crm-reporte-mcp-nestle-sfmc/tests/sin-secretos.test.js"
+ ],
+ "solo_en_copia": []
+}

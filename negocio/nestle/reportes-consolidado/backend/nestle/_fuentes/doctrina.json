@@ -1,0 +1,30 @@
+{
+ "paso": "F",
+ "checks": [
+  {
+   "ok": true,
+   "check": "R1a · el escritor no puede emitir fórmulas (no existe <f> en su constructor)",
+   "dato": "lib-celda-xml solo escribe <v> e <is>"
+  },
+  {
+   "ok": true,
+   "check": "R1b · las fórmulas que hay son del humano, y se conservan",
+   "dato": "Report_Resumen:255  (se respetan)"
+  },
+  {
+   "ok": true,
+   "check": "R2+R3 · el escritor respeta forma y filas de la hoja",
+   "dato": "idéntico al congelado"
+  },
+  {
+   "ok": true,
+   "check": "R5 · los fetch grandes están persistidos en disco",
+   "dato": "sends-proplan-julio.json 52KB · sfmc-email-detalle.json 182KB"
+  },
+  {
+   "ok": true,
+   "check": "R-corto · existe el camino corto (orquestador.reporte.js)",
+   "dato": "motor→valida→reporte→publica→puerta, sin tocar hojas de datos"
+  }
+ ]
+}

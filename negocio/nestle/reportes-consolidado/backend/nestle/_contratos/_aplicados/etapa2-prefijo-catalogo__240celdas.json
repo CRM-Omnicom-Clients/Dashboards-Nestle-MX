@@ -1,0 +1,1944 @@
+{
+ "corte": "etapa2-prefijo-catalogo",
+ "celdas": 240,
+ "columnas": 2,
+ "hojas_regeneradas": 0,
+ "respaldo": "(Interno)-Reporte-Consolidado-Nestle-2026-v8__antes-etapa2-prefijo-catalogo.xlsx",
+ "cambios": [
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 1,
+   "columna": "Touchpoint",
+   "valor": "TouchPoint",
+   "porque": "PRE-Catalogo_Piezas · «Touchpoint» y «TouchPoint» son el MISMO hecho. Se renombra en vez de agregar una columna nueva: dejar el mismo dato en dos sitios es el defecto que costo 16 discrepancias entre Content_Name y EmailName. El contenido no se toca."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 1,
+   "columna": "Quincena_Lanzamiento",
+   "valor": "Quincena",
+   "porque": "PRE-Catalogo_Piezas · «Quincena_Lanzamiento» y «Quincena» son el MISMO hecho. Se renombra en vez de agregar una columna nueva: dejar el mismo dato en dos sitios es el defecto que costo 16 discrepancias entre Content_Name y EmailName. El contenido no se toca."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 2,
+   "columna": "Mes",
+   "valor": "Marzo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 2,
+   "columna": "Mes (#)",
+   "valor": 3,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 3,
+   "columna": "Mes",
+   "valor": "Marzo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 3,
+   "columna": "Mes (#)",
+   "valor": 3,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 4,
+   "columna": "Mes",
+   "valor": "Marzo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 4,
+   "columna": "Mes (#)",
+   "valor": 3,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 5,
+   "columna": "Mes",
+   "valor": "Marzo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 5,
+   "columna": "Mes (#)",
+   "valor": 3,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 6,
+   "columna": "Mes",
+   "valor": "Marzo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 6,
+   "columna": "Mes (#)",
+   "valor": 3,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 7,
+   "columna": "Mes",
+   "valor": "Marzo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 7,
+   "columna": "Mes (#)",
+   "valor": 3,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 8,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 8,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 9,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 9,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 10,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P009. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 10,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P009. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 11,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P010. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 11,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P010. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 12,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P011. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 12,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P011. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 13,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P012. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 13,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P012. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 14,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P013. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 14,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P013. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 15,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P014. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 15,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P014. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 16,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 16,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 17,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 17,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 18,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 18,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 19,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 19,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 20,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 20,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 21,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 21,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 22,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 22,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 23,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 23,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 24,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P009. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 24,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P009. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 25,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P010. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 25,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P010. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 26,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P011. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 26,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P011. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 27,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P012. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 27,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P012. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 28,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P013. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 28,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P013. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 29,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P014. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 29,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P014. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 30,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P015. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 30,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P015. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 31,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P016. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 31,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P016. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 32,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P017. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 32,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P017. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 33,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P018. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 33,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P018. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 34,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P019. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 34,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P019. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 35,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P020. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 35,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P020. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 36,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 36,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 37,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 37,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 38,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 38,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 39,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 39,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 40,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 40,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 41,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 41,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 42,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 42,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 43,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 43,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 44,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 44,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 45,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 45,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 46,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 46,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 47,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 47,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 48,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 003-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 48,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 003-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 49,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 003-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 49,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 003-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 50,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 50,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 51,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 51,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 52,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 52,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 53,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 53,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 54,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 54,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 55,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 55,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 56,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P009. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 56,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P009. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 57,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P015. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 57,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P015. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 58,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P016. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 58,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P016. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 59,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P017. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 59,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P017. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 60,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P018. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 60,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P018. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 61,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P019. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 61,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P019. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 62,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P020. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 62,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P020. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 63,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P021. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 63,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P021. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 64,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P022. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 64,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P022. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 65,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 65,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 66,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 66,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 67,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 67,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 68,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 68,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 69,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 69,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 70,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P023. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 70,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P023. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 71,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P024. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 71,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P024. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 72,
+   "columna": "Mes",
+   "valor": "Abril",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P025. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 72,
+   "columna": "Mes (#)",
+   "valor": 4,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P025. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 73,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P026. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 73,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P026. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 74,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P027. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 74,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P027. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 75,
+   "columna": "Mes",
+   "valor": "Mayo",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P028. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 75,
+   "columna": "Mes (#)",
+   "valor": 5,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P028. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 76,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 76,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 77,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 77,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 78,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P021. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 78,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P021. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 79,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P022. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 79,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P022. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 80,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P023. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 80,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P023. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 81,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P024. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 81,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 002-P024. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 82,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 82,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 83,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 83,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 008-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 84,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P010. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 84,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P010. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 85,
+   "columna": "Mes",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P011. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 85,
+   "columna": "Mes (#)",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P011. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 86,
+   "columna": "Mes",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P012. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 86,
+   "columna": "Mes (#)",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P012. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 87,
+   "columna": "Mes",
+   "valor": "Junio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P013. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 87,
+   "columna": "Mes (#)",
+   "valor": 6,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P013. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 88,
+   "columna": "Mes",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P014. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 88,
+   "columna": "Mes (#)",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P014. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 89,
+   "columna": "Mes",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P015. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 89,
+   "columna": "Mes (#)",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P015. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 90,
+   "columna": "Mes",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P016. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 90,
+   "columna": "Mes (#)",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P016. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 91,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P017. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 91,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P017. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 92,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P018. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 92,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P018. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 93,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P019. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 93,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 004-P019. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 94,
+   "columna": "Mes",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 94,
+   "columna": "Mes (#)",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P001. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 95,
+   "columna": "Mes",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 95,
+   "columna": "Mes (#)",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P002. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 96,
+   "columna": "Mes",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 96,
+   "columna": "Mes (#)",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 97,
+   "columna": "Mes",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 97,
+   "columna": "Mes (#)",
+   "valor": "N/A",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 98,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 98,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 99,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 99,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 100,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 100,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P008. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 101,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P009. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 101,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P009. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 102,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P010. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 102,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P010. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 103,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P011. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 103,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P011. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 104,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P012. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 104,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P012. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 105,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P013. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 105,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P013. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 106,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P014. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 106,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P014. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 107,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P015. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 107,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P015. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 108,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P016. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 108,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P016. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 109,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P017. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 109,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 009-P017. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 110,
+   "columna": "Mes",
+   "valor": "Julio",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 110,
+   "columna": "Mes (#)",
+   "valor": 7,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P003. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 111,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P029. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 111,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P029. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 112,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P030. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 112,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P030. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 113,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P031. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 113,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 001-P031. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 114,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 114,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 115,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 115,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 005-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 116,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 116,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P004. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 117,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 117,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 006-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 118,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 118,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P005. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 119,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 119,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P006. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 120,
+   "columna": "Mes",
+   "valor": "Agosto",
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P007. Nunca del naming."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "fila": 120,
+   "columna": "Mes (#)",
+   "valor": 8,
+   "porque": "PRE-Catalogo_Piezas · dimensión del prefijo, derivada del catálogo por Pieza_ID 007-P007. Nunca del naming."
+  }
+ ],
+ "columnas_nuevas": [
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "nombre": "Mes",
+   "porque": "PRE-Catalogo_Piezas · columna del prefijo dimensional: las mismas dimensiones, en el mismo orden, en todas las hojas."
+  },
+  {
+   "paso": "PRE-Catalogo_Piezas",
+   "hoja": "Catalogo_Piezas",
+   "nombre": "Mes (#)",
+   "porque": "PRE-Catalogo_Piezas · columna del prefijo dimensional: las mismas dimensiones, en el mismo orden, en todas las hojas."
+  }
+ ],
+ "hojas": []
+}

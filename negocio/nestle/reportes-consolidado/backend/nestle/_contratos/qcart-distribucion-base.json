@@ -1,0 +1,72 @@
+{
+ "suma": 7503,
+ "celdas": {
+  "Antojo Infinito ¦ E-C1 ¦ Combinado ¦ 2026-06-Q2": 192,
+  "AON ¦ E-P3 ¦ New Parents ¦ 2026-03-Q1": 205,
+  "AON ¦ E-P1 ¦ Traditional Parents ¦ 2026-03-Q2": 790,
+  "AON ¦ E-P2 ¦ Dinkies y Empty Nesters ¦ 2026-04-Q2": 364,
+  "AON ¦ E-P4 ¦ Career Focused ¦ 2026-04-Q2": 507,
+  "AON ¦ E-P1 ¦ Productive Adults ¦ 2026-07-Q2": 484,
+  "AON ¦ E-P2 ¦ Young Creatives ¦ 2026-07-Q2": 258,
+  "AON ¦ E-P3 ¦ Wellness Navigators ¦ 2026-07-Q2": 135,
+  "AON ¦ E-P4 ¦ Sin Cluster ¦ 2026-07-Q2": 1047,
+  "Hotcakes ¦ E-I1 ¦ Interés Salado ¦ 2026-04-Q1": 194,
+  "Hotcakes ¦ E-I2 ¦ Interés Salado ¦ 2026-04-Q2": 51,
+  "Hotcakes ¦ E-P1 ¦ Saludables ¦ 2026-05-Q2": 9,
+  "Hotcakes ¦ E-P2 ¦ Prácticos ¦ 2026-05-Q2": 61,
+  "Hotcakes ¦ E-P3 ¦ Indulgentes ¦ 2026-05-Q2": 46,
+  "Hotcakes ¦ E-P4 ¦ FamilyKids ¦ 2026-05-Q2": 110,
+  "Liga MX ¦ E-J4 ¦ Usuarios CON región ¦ 2026-08-Q1": 23,
+  "Liga MX ¦ E-J4 ¦ Usuarios sin región ¦ 2026-08-Q1": 286,
+  "Liga MX ¦ E-J5 ¦ Usuarios CON región ¦ 2026-08-Q2": 6,
+  "Liga MX ¦ E-J6 ¦ Usuarios CON región · Región Sur · Partición C ¦ 2026-08-Q2": 2,
+  "Liga MX ¦ E-J5 ¦ Usuarios sin región ¦ 2026-08-Q2": 5,
+  "Liga MX ¦ E-J7 ¦ Región unificada ¦ 2026-09-Q1": 22,
+  "Liga MX ¦ E-J8 ¦ Región unificada · Partición A ¦ 2026-09-Q1": 6,
+  "Liga MX ¦ WA-J8 ¦ Región unificada · Partición A ¦ 2026-09-Q1": 43,
+  "Liga MX ¦ E-J9 ¦ Región unificada ¦ 2026-09-Q2": 50,
+  "Liga MX ¦ WA-J9 ¦ Región unificada ¦ 2026-09-Q2": 30,
+  "Mundial ¦ E-P1 ¦ Botana ¦ 2026-06-Q1": 79,
+  "Mundial ¦ E-P1 ¦ Modern Cooking ¦ 2026-06-Q1": 180,
+  "Mundial ¦ E-P1 ¦ Bebidas ¦ 2026-06-Q1": 307,
+  "Mundial ¦ E-P2 ¦ Bebidas ¦ 2026-06-Q2": 139,
+  "Mundial ¦ E-P2 ¦ Botana ¦ 2026-06-Q2": 1063,
+  "Mundial ¦ Semifinal A ¦ Wa-opt-in-allsegments ¦ 2026-07-Q1": 174,
+  "Mundial ¦ Semifinal B ¦ Wa-opt-in-allsegments ¦ 2026-07-Q1": 252,
+  "Mundial ¦ Final ¦ Wa-opt-in-allsegments ¦ 2026-07-Q2": 383
+ },
+ "cuando": "2026-09-24T19:58:06.013Z",
+ "motivo": "24-sep-2026: un carrito es una VISTA, no una fila del CSV. Una fila del export de Qcart es un bucket dia x hora x shortlink x utm x tienda con su contador views; contar filas decia 3,077 donde Qcart dice 7,503 e incluia 444 filas con views=0, que son impresiones del link que nunca llegaron a una vista. Probado contra el export AGREGADO del propio Qcart: e-j7 da 221=221, y de los 62 shortlinks donde las vistas coinciden exacto el importe coincide en 61. Contando filas coincidian 36 de 121.",
+ "anterior": {
+  "celdas": 30,
+  "suma": 2797,
+  "cuando": "2026-09-15T18:36:53.735Z"
+ },
+ "movimientos": [],
+ "historia": [
+  {
+   "cuando": null,
+   "motivo": "(línea original)",
+   "celdas": 26,
+   "suma": 2769
+  },
+  {
+   "cuando": "2026-09-07T16:45:52.075Z",
+   "motivo": "Rick, 7-sep-2026: corregir las quincenas desde la fecha del envio REAL. Las 5 piezas de Hotcakes salieron el 20-may (Q2), no el 13-may (Q1): esa fecha era un job de prueba de 1 envio. Sus 4 celdas de Qcart se mueven con su pieza.",
+   "celdas": 26,
+   "suma": 2769
+  },
+  {
+   "cuando": "2026-09-07T16:51:48.860Z",
+   "motivo": "Rick, 7-sep-2026: quincenas corregidas desde la fecha del envio real (sin jobs de prueba). Re-base tras la corrida completa.",
+   "celdas": 26,
+   "suma": 2769
+  },
+  {
+   "cuando": "2026-09-15T18:36:53.735Z",
+   "motivo": "Mundial E-P2 Modern Cooking: el envío NUNCA salió. Rick, 15-sep-2026. SFMC publica solo Bebidas y Botana para E-P2; no hay correo de Modern Cooking. Sus 4 links quedaron declarados en _contratos/exclusiones.json y sus 49 carritos + 4 productos, apartados en _fuentes/qcart-excluidos.json.",
+   "celdas": 30,
+   "suma": 2797
+  }
+ ]
+}

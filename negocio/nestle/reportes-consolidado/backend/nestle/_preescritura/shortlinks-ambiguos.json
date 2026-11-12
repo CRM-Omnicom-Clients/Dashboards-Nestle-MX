@@ -1,0 +1,52 @@
+{
+ "fecha": "2026-09-21",
+ "total": 1,
+ "detalle": [
+  {
+   "codigo": "hTHNLqzL",
+   "carritos": 62,
+   "maestro": [
+    {
+     "hoja": "Agosto",
+     "fila": 6,
+     "utm_campaign": "Maggi-LigaMx-agosto26",
+     "fecha_envio": "46249",
+     "utm_content": "e-j4",
+     "utm_content_heredado": false,
+     "utm_term": "sinregion",
+     "receta": "Aceitunas Toreadas",
+     "retailer": "Walmart",
+     "codigo": "hTHNLqzL",
+     "codigo_via": "columna"
+    },
+    {
+     "hoja": "Septiembre",
+     "fila": 5,
+     "utm_campaign": "Maggi-LigaMx-agosto26",
+     "fecha_envio": "46269",
+     "utm_content": "e-j7",
+     "utm_content_heredado": false,
+     "utm_term": "regionunificada",
+     "receta": "Aceitunas Toreadas",
+     "retailer": "Walmart",
+     "codigo": "hTHNLqzL",
+     "codigo_via": "columna"
+    }
+   ],
+   "catalogo": [
+    {
+     "id": "005-P006",
+     "camp": "Liga MX",
+     "tp": "E-J4",
+     "seg": "Usuarios sin región"
+    },
+    {
+     "id": "005-P010",
+     "camp": "Liga MX",
+     "tp": "E-J7",
+     "seg": "Región unificada"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2326 @@
+{
+ "paso": "extraer-decisiones",
+ "fase": 3,
+ "que_es": "las decisiones que hoy viven DENTRO del código de los scripts vivos",
+ "regla": "es decisión si Rick podría cambiarlo mañana; es mecánica si no",
+ "no_reescribe": "encuentra y declara; mover cada una a su declaración es la fase 4",
+ "scripts": [
+  {
+   "script": "orquestador.resumen.js",
+   "skill": "orquestador",
+   "clase": "VIVO",
+   "decisiones": 89,
+   "hojas": [
+    "Report_Resumen",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Subject_Clean",
+    "Email_Subject_Raw",
+    "Email_Type",
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
+    "Campaña",
+    "Medio",
+    "Objetivo",
+    "TouchPoint",
+    "Segmento",
+    "Quincena_Lanzamiento",
+    "Tipo  Email",
+    "Mes (#)",
+    "Marca",
+    "Content_ID (final del Email_Name)",
+    "Email_ID (de la DE de SFMC)",
+    "Content_ID (SFMC)",
+    "Email_ID (SFMC)",
+    "Email_Name",
+    "EmailName",
+    "Content_ID",
+    "Email_ID",
+    "P_Subject",
+    "Principal_Subject",
+    "FUP_Subject",
+    "Principal_Sends",
+    "Principal_Deliveries",
+    "Principal_Opens",
+    "Principal_Clicks",
+    "Principal_Open_Rate",
+    "Principal_CTOR",
+    "Principal_Click_Rate",
+    "FUP_Sends",
+    "FUP_Deliveries",
+    "FUP_Opens",
+    "FUP_Clicks",
+    "FUP_Open_Rate",
+    "FUP_CTOR",
+    "FUP_Click_Rate",
+    "Tot_Sends",
+    "Tot_Deliveries",
+    "Tot_Opens",
+    "Tot_Clicks",
+    "Tot_Open_Rate",
+    "Tot_CTOR",
+    "Tot_Click_Rate",
+    "Audiencia_DE SFMC",
+    "Audiencia_Volumen SFMC",
+    "Unsubs_Unicos",
+    "Unsubs_Total",
+    "Clicks_Qcart",
+    "Clicks_App",
+    "Clicks_Social",
+    "Clicks_Web",
+    "Clicks_Ver_Navegador",
+    "Clicks_Unsub",
+    "Clicks_Unicos_Total",
+    "Clicks_Links_Total",
+    "Receta_Representativa",
+    "FechaQcart_Desde",
+    "FechaQcart_Hasta",
+    "Carritos_Walmart",
+    "Carritos_Chedraui",
+    "Carritos_Total",
+    "Views_Carrito",
+    "Views_Productos_Nestle",
+    "Intencion_Total_MXN",
+    "Intencion_Nestle_MXN",
+    "Pct_Penetracion_Nestle",
+    "Ticket_Carrito_MXN",
+    "Ticket_Producto_MXN",
+    "Views_vs_Clicks_%",
+    "Carritos_vs_Clicks_%",
+    "Tasa_Productos_a_Carritos",
+    "Insights"
+   ],
+   "negocio": [
+    "Principal",
+    "WhatsApp",
+    "Qcart"
+   ]
+  },
+  {
+   "script": "escritor.cierre.js",
+   "skill": "escritor",
+   "clase": "HERRAMIENTA",
+   "decisiones": 82,
+   "hojas": [
+    "Report_Resumen",
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email",
+    "Data_WhatsApp"
+   ],
+   "columnas": [
+    "Data_Qcart",
+    "Tienda",
+    "Touchpoint",
+    "Data_Maggi",
+    "Sin engagement cargado",
+    "Sin email cargado",
+    "Sin fecha en la fuente",
+    "Confirmado",
+    "Pieza_ID",
+    "Camp_ID",
+    "Journey_ID",
+    "Marca",
+    "Campaña",
+    "Objetivo",
+    "Touchpoint_Raw",
+    "Segmento",
+    "Segmentos_Combinados",
+    "Canal",
+    "Email_Type",
+    "Tipo_Envio",
+    "Fecha_Primer_Envio",
+    "Fecha_Ultimo_Envio",
+    "Mes_Lanzamiento",
+    "Quincena_Lanzamiento",
+    "Quincenas_Activas",
+    "N_Quincenas",
+    "Meses_Activos",
+    "N_Meses",
+    "Sends_Por_Quincena",
+    "Sends_Por_Mes",
+    "N_Envios_Fechados",
+    "Granularidad_Periodo",
+    "Fecha_Origen",
+    "Dias_Envio",
+    "Fuente_Dato",
+    "Clicks_Medidos",
+    "Sends",
+    "Content_Name",
+    "Content_Names_Variantes",
+    "N_Content_Names",
+    "Asset_ID",
+    "Codigo_NC",
+    "ID_SFMC",
+    "Tiene_Qcart",
+    "N_Recetas",
+    "Carritos_Total",
+    "Views_Total",
+    "Receta_",
+    "URL_Receta_",
+    "Cod_Walmart_",
+    "Carritos_Walmart_",
+    "Cod_Chedraui_",
+    "Carritos_Chedraui_",
+    "Estado",
+    "Fuente_Qcart",
+    "Notas",
+    "C77F0A",
+    "Dimension",
+    "Valor_Crudo",
+    "Valor_Canonico",
+    "Contexto",
+    "Dato_1",
+    "Dato_2",
+    "Fuente",
+    "N_Piezas",
+    "Pieza_IDs",
+    "Catalog_Campanas",
+    "Report_Mensual",
+    "Report_CompletoQcart",
+    "Report_Campana_Mes",
+    "Report_Insights_Operativo",
+    "Soporte_IA_Qcart_Productos",
+    "Soporte_IA_Stage_Carts",
+    "Soporte_IA_Stage_Products"
+   ],
+   "negocio": [
+    "Tercer Tiempo",
+    "WhatsApp",
+    "Link Qcart"
+   ]
+  },
+  {
+   "script": "orquestador.sembrar-registro.js",
+   "skill": "fuentes-email",
+   "clase": "VIVO",
+   "decisiones": 76,
+   "hojas": [
+    "Report_Resumen",
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email",
+    "Data_WhatsApp",
+    "Data_Qcart_Carritos",
+    "Data_Qcart_Productos"
+   ],
+   "columnas": [
+    "CRM_Email_Detalle",
+    "RowKey",
+    "JobID",
+    "SendDay",
+    "ConfigKey",
+    "Marca",
+    "Campana",
+    "Touchpoint",
+    "Segmento",
+    "Email_Content_Name",
+    "Email_Subject",
+    "Email_Sender_Name",
+    "Send_Date",
+    "Journey_Name",
+    "Journey_UUID",
+    "Journey_ID_Datorama",
+    "Codigo_NC",
+    "Email_Sends",
+    "Email_Deliveries",
+    "Email_Bounces",
+    "Email_Bounces_Soft",
+    "Email_Unique_Opens",
+    "Email_Total_Opens",
+    "Email_Unique_Clicks",
+    "Email_Total_Clicks",
+    "Email_Unique_Unsubs",
+    "Delivery_Rate",
+    "Open_Rate",
+    "Click_Rate",
+    "Bounce_Rate",
+    "LastRefresh",
+    "Email_ID",
+    "Es_FUP",
+    "Email_Total_Unsubs",
+    "Audience_DE",
+    "Audience_Volume",
+    "CRM_Email_Piezas",
+    "PiezaID",
+    "Fecha_Primer_Envio",
+    "Fecha_Ultimo_Envio",
+    "N_Jobs",
+    "Dias_Con_Envio",
+    "Piezas_Mismo_Asset",
+    "CRM_Email_Links",
+    "Link_Name",
+    "Link_URL",
+    "Clicks_Total",
+    "Clicks_Unique",
+    "CRM_Audiencias",
+    "CRM_Reporte_Config",
+    "ContentName",
+    "CodigoNC",
+    "JourneyUUID",
+    "EmailType",
+    "Estado",
+    "Activo",
+    "Notas",
+    "EmailID",
+    "CRM_Reporte_Auditoria",
+    "JobsEncontrados",
+    "DiasConEnvio",
+    "EnviosTotales",
+    "PrimerEnvio",
+    "UltimoEnvio",
+    "LastRun",
+    "Asset_Declarado",
+    "Asset_Real"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "fuentes-email.reconstruir-data-email.js",
+   "skill": "fuentes-email",
+   "clase": "VIVO",
+   "decisiones": 63,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
+    "EmailID",
+    "Pieza_ID",
+    "Campaign",
+    "Campaña",
+    "Journey",
+    "Objetivo",
+    "Segment",
+    "Segmento",
+    "Email_Type",
+    "Touchpoint",
+    "Version",
+    "Journey_ID",
+    "Subject_Clean",
+    "Report_Period",
+    "Source",
+    "Send_Date",
+    "Send_Week",
+    "Email_Sender_Name",
+    "Canal",
+    "Email",
+    "BU_Canonico",
+    "Marca",
+    "Campana_Canonica",
+    "Segmento_Canonico",
+    "Nombre_Journey",
+    "Content_Name",
+    "Datorama_Campaign",
+    "Datorama_Campaign_ID",
+    "Email_Name",
+    "Email_Subject_Raw",
+    "Audience_Name",
+    "Email_Sends",
+    "Email_Deliveries",
+    "Email_Unique_Opens",
+    "Email_Unique_Clicks",
+    "Email_Bounces",
+    "Delivery_Rate",
+    "Open_Rate",
+    "Click_Rate",
+    "Bounce_Rate",
+    "Flag_Zero_Sends",
+    "FALSE",
+    "Flag_Negative_Values",
+    "Flag_Rate_Mismatch",
+    "Send_Month",
+    "Send_Quincena",
+    "Brand",
+    "Send_Week_Label",
+    "Excluido_Motivo"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "catalogo.refutar.js",
+   "skill": "nestle-catalogo",
+   "clase": "ADVERSARIAL",
+   "decisiones": 43,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email",
+    "Data_WhatsApp"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Campaña",
+    "Data_Qcart",
+    "INDEPENDIENTE",
+    "Cod_Walmart_",
+    "Cod_Chedraui_",
+    "Pieza_ID",
+    "Valor_Crudo",
+    "Notas",
+    "Carritos_Total",
+    "Carritos_Walmart_",
+    "Carritos_Chedraui_",
+    "Sends",
+    "Email_Sends",
+    "Envios",
+    "Aud_Final",
+    "Carts_Total_All_Products",
+    "Shortlink_Code",
+    "Content_Name",
+    "Content_Names_Variantes",
+    "Tiene_Qcart",
+    "Receta_",
+    "URL_Receta_",
+    "Journey_ID",
+    "Fuente_Dato",
+    "Camp_ID",
+    "Touchpoint",
+    "Segmento",
+    "Fecha_Primer_Envio",
+    "Objetivo",
+    "Segmentos_Combinados",
+    "Clicks_Medidos",
+    "Fuente_Qcart",
+    "Quincena_Lanzamiento",
+    "Estado",
+    "Confirmado",
+    "Sends_Por_Quincena",
+    "N_Quincenas"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "orquestador.columnas-perdidas.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 43,
+   "hojas": [
+    "Report_Resumen",
+    "Reporte_julio",
+    "Catalogo_Piezas",
+    "Data_Email",
+    "Data_WhatsApp",
+    "Data_Qcart_Productos"
+   ],
+   "columnas": [
+    "Entregados",
+    "Tot_Deliveries",
+    "No entregados",
+    "Tot_Bounces",
+    "Leídos",
+    "Tot_Opens",
+    "Clicks",
+    "Tot_Clicks",
+    "Tasa_Clicks_a_Views",
+    "Views_por_Click",
+    "Carritos_por_Click",
+    "Tasa_Productos_a_Carritos",
+    "Views_vs_Clicks_%",
+    "Carritos_vs_Clicks_%",
+    "Fecha_Envío",
+    "Brand",
+    "Marca",
+    "Campaign",
+    "Campaña",
+    "Journey",
+    "TouchPoint",
+    "Segment",
+    "Segmento",
+    "Receta",
+    "Tienda",
+    "Producto_Nestle",
+    "Views_Producto",
+    "Marca_Nestle",
+    "Intencion_Producto_MXN",
+    "Ticket_Producto_MXN",
+    "Pct_del_Total_Carrito",
+    "Pieza_ID",
+    "Objetivo",
+    "Email_Name",
+    "Nombre_Pieza"
+   ],
+   "negocio": [
+    "Quincena_Lanzamiento Principal",
+    "Principal"
+   ]
+  },
+  {
+   "script": "N2a-email.js",
+   "skill": "fuentes-email",
+   "clase": "VIVO",
+   "decisiones": 42,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "MIXTA",
+    "Send_Date",
+    "Email Content Name",
+    "Send Date",
+    "Catalog_Campanas",
+    "Campana_SFMC_Raw",
+    "Segmento_SFMC_Raw",
+    "Campaña",
+    "Content_Names_Variantes",
+    "Content_Name",
+    "Segmento",
+    "Dimension",
+    "Valor_Crudo",
+    "Valor_Canonico",
+    "RETIRADA",
+    "Campana",
+    "Segmento_Canonico",
+    "Campana_Canonica",
+    "Campaign",
+    "Segment",
+    "Audience_Name",
+    "Audience Name",
+    "Touchpoint",
+    "Email_Type",
+    "Canal",
+    "Email",
+    "Nombre_Journey",
+    "Journey Name",
+    "NUEVO en ",
+    "MUERTA",
+    "PARCIAL",
+    "Journey_ID",
+    "Journey ID",
+    "Email Unique Opens",
+    "BU_Canonico",
+    "Marca",
+    "CORREGIDO"
+   ],
+   "negocio": [
+    "AON"
+   ]
+  },
+  {
+   "script": "catalogo.prueba-uso.js",
+   "skill": "nestle-catalogo",
+   "clase": "ADVERSARIAL",
+   "decisiones": 33,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email",
+    "Data_WhatsApp"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Campaña",
+    "Data_Qcart",
+    "Content_Name",
+    "Content_Names_Variantes",
+    "Asset_ID",
+    "Cod_Walmart_",
+    "Cod_Chedraui_",
+    "Dimension",
+    "Valor_Crudo",
+    "Valor_Canonico",
+    "Notas",
+    "Touchpoint",
+    "Segmento_Canonico",
+    "Segmento",
+    "Email_Type",
+    "Email_Sends",
+    "Canal",
+    "Segmentos_Combinados",
+    "Shortlink_Code",
+    "Tiene_Qcart",
+    "Fuente_Qcart",
+    "Campana",
+    "Marca",
+    "Objetivo",
+    "Tienda",
+    "Tipo_Envio",
+    "Fecha_Primer_Envio"
+   ],
+   "negocio": [
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "fuentes-cuadre.normalizador.js",
+   "skill": "orquestador",
+   "clase": "VIVO",
+   "decisiones": 32,
+   "hojas": [
+    "Report_Resumen",
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email",
+    "Data_WhatsApp",
+    "Data_Qcart_Carritos",
+    "Data_Qcart_Productos"
+   ],
+   "columnas": [
+    "Pieza_ID",
+    "Canal",
+    "Campaña",
+    "Touchpoint",
+    "Pieza_ID repetido en el catálogo",
+    "Pieza_ID único en el catálogo",
+    "Estado",
+    "Notas",
+    "TouchPoint",
+    "Principal_Sends",
+    "FUP_Sends",
+    "Segmento",
+    "Quincena_Lanzamiento",
+    "Tot_Sends",
+    "Carritos_Total",
+    "Objetivo",
+    "Email_ID (SFMC)",
+    "EmailID",
+    "Sends",
+    "Clicks_Medidos",
+    "Fuente_Dato"
+   ],
+   "negocio": [
+    "WhatsApp cuadra pieza por pieza",
+    "WhatsApp contra su bloque",
+    "CTOR de WhatsApp no medido",
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "orquestador.1-esquema.js",
+   "skill": "fuentes-email",
+   "clase": "VIVO",
+   "decisiones": 30,
+   "hojas": [
+    "Report_Resumen",
+    "Reporte_julio",
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email",
+    "Data_WhatsApp",
+    "Data_Qcart_Carritos",
+    "Data_Qcart_Productos"
+   ],
+   "columnas": [
+    "Campaña",
+    "Canal",
+    "Objetivo",
+    "TouchPoint",
+    "Segmento",
+    "Quincena",
+    "Mes (#)",
+    "Marca",
+    "Pieza_ID",
+    "Email_Name",
+    "Camp_ID",
+    "Pieza_Principal_ID",
+    "Email_ID",
+    "Pieza_IDs",
+    "Dimension",
+    "Valor_Canonico",
+    "Pieza_ID es único",
+    "Email_Type",
+    "Touchpoint",
+    "Quincena_Lanzamiento",
+    "La llave del reporte colisiona "
+   ],
+   "negocio": [
+    "Principal"
+   ]
+  },
+  {
+   "script": "motor.motor.js",
+   "skill": "motor",
+   "clase": "VIVO",
+   "decisiones": 30,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
+    "Pieza_ID",
+    "Marca",
+    "Campaña",
+    "TouchPoint",
+    "Touchpoint",
+    "Segmento",
+    "Email_Type",
+    "Oleada",
+    "Mascota",
+    "Canal",
+    "Quincena",
+    "Quincena_Lanzamiento",
+    "Objetivo",
+    "Subsegmento",
+    "Fecha_Activacion_Qcart"
+   ],
+   "negocio": [
+    "Qcart de ",
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "N2a-97-refutar.js",
+   "skill": "fuentes-email",
+   "clase": "ADVERSARIAL",
+   "decisiones": 29,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email"
+   ],
+   "columnas": [
+    "BU_Canonico",
+    "Marca",
+    "Campana_Canonica",
+    "Segmento_Canonico",
+    "Campana",
+    "Campaña",
+    "NO hay autoridad para journey_id",
+    "Email_Content_Name",
+    "Send_Date",
+    "Email_Sends",
+    "Email_Deliveries",
+    "Email_Unique_Opens",
+    "Email_Unique_Clicks",
+    "Email_Bounces",
+    "Follow Up",
+    "PrefijoNuevo",
+    "Pieza_ID",
+    "Sends",
+    "Content_Name",
+    "Content_Names_Variantes",
+    "AMBIGUA",
+    "SIN PIEZA",
+    "Canal",
+    "Email"
+   ],
+   "negocio": [
+    "Principal"
+   ]
+  },
+  {
+   "script": "catalogo.prueba-alias.js",
+   "skill": "nestle-catalogo",
+   "clase": "ADVERSARIAL",
+   "decisiones": 28,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias"
+   ],
+   "columnas": [
+    "Touchpoint",
+    "Career Focused",
+    "New Parents",
+    "Traditional Parents",
+    "Único",
+    "Prácticos",
+    "Partido 1",
+    "Bebidas",
+    "Segmento",
+    "Botana",
+    "BOTANA",
+    "Interes Salado",
+    "Interés Salado",
+    "Cluster Fantasma",
+    "Touchpoint_Raw",
+    "Campaña",
+    "Pieza_ID",
+    "Segmentos_Combinados",
+    "Dimension",
+    "Valor_Canonico",
+    "Valor_Crudo",
+    "Contexto"
+   ],
+   "negocio": [
+    "Hotcakes",
+    "Mundial",
+    "Liga MX",
+    "AON"
+   ]
+  },
+  {
+   "script": "catalogo.prueba-crecer2.js",
+   "skill": "nestle-catalogo",
+   "clase": "ADVERSARIAL",
+   "decisiones": 28,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias"
+   ],
+   "columnas": [
+    "Nuevo Cluster",
+    "Email",
+    "Navidad",
+    "Recetas Nestlé",
+    "Traditional Parents",
+    "Interés Salado",
+    "Follow Up",
+    "Único",
+    "Bebidas",
+    "Partido 1",
+    "Dimension",
+    "Touchpoint",
+    "Contexto",
+    "Valor_Crudo",
+    "Valor_Canonico",
+    "Touchpoint_Raw",
+    "Campaña",
+    "Segmento",
+    "Pieza_ID",
+    "Cod_Walmart_",
+    "Cod_Chedraui_"
+   ],
+   "negocio": [
+    "Principal",
+    "Hotcakes",
+    "WhatsApp",
+    "Mundial",
+    "AON"
+   ]
+  },
+  {
+   "script": "catalogo.simular-n3.js",
+   "skill": "nestle-catalogo",
+   "clase": "ADVERSARIAL",
+   "decisiones": 28,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Meses_Activos",
+    "Mes_Lanzamiento",
+    "Sends_Por_Mes",
+    "Camp_ID",
+    "Touchpoint",
+    "Segmento",
+    "Campaña",
+    "Marca",
+    "Objetivo",
+    "Canal",
+    "Pieza_ID",
+    "Mixto",
+    "Clicks_Medidos",
+    "Carritos_Total",
+    "Estado",
+    "Sends",
+    "N3 ",
+    "N_Meses",
+    "Deliveries",
+    "Opens",
+    "Clicks",
+    "Email_Opens",
+    "Email_Clicks",
+    "Unique_Opens"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "resumen.validar.js",
+   "skill": "resumen",
+   "clase": "VIVO",
+   "decisiones": 25,
+   "hojas": [
+    "Report_Resumen"
+   ],
+   "columnas": [
+    "Campaña",
+    "Quincena",
+    "Quincena_Lanzamiento",
+    "Objetivo",
+    "TouchPoint",
+    "Segmento",
+    "Principal_Sends",
+    "Principal_Deliveries",
+    "Principal_Opens",
+    "Principal_Clicks",
+    "FUP_Sends",
+    "FUP_Deliveries",
+    "Tot_Sends",
+    "Tot_Deliveries",
+    "Tot_Opens",
+    "Tot_Clicks",
+    "Carritos_Total",
+    "Marca",
+    "Insights",
+    "P_Subject",
+    "FUP_Subject",
+    "Audiencia_DE SFMC",
+    "Audiencia_Volumen SFMC"
+   ],
+   "negocio": [
+    "Principal"
+   ]
+  },
+  {
+   "script": "catalogo.prueba-anclas.js",
+   "skill": "nestle-catalogo",
+   "clase": "ADVERSARIAL",
+   "decisiones": 25,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Pieza_ID",
+    "Campaña",
+    "Touchpoint",
+    "Segmento",
+    "Canal",
+    "Journey_ID",
+    "Camp_ID",
+    "Dimension",
+    "Valor_Canonico",
+    "Campana",
+    "Marca",
+    "Objetivo",
+    "Segmentos_Combinados",
+    "Touchpoint_Raw",
+    "Cod_Walmart_",
+    "Cod_Chedraui_",
+    "Email_Content_Name",
+    "Data_Qcart",
+    "Shortlink_Code",
+    "Content_Name",
+    "Content_Names_Variantes"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "catalogo.simular-tasas.js",
+   "skill": "nestle-catalogo",
+   "clase": "ADVERSARIAL",
+   "decisiones": 25,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Campana_Canonica",
+    "Segmento_Canonico",
+    "Segmento",
+    "Touchpoint",
+    "Email_Type",
+    "Campaña",
+    "Asset_ID",
+    "Segmentos_Combinados",
+    "Send_Date",
+    "Mes_Lanzamiento",
+    "Camp_ID",
+    "Objetivo",
+    "Email_Sends",
+    "Email_Deliveries",
+    "Email_Unique_Opens",
+    "Email_Unique_Clicks",
+    "Sends",
+    "Deliveries",
+    "Unique_Opens",
+    "Unique_Clicks"
+   ],
+   "negocio": [
+    "Antojo Infinito"
+   ]
+  },
+  {
+   "script": "catalogo.corregir-catalogo.js",
+   "skill": "nestle-catalogo",
+   "clase": "VIVO",
+   "decisiones": 23,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Pieza_ID",
+    "EmailID",
+    "Oleada",
+    "Sends",
+    "Content_Name",
+    "Notas",
+    "Mascota",
+    "EmailID ",
+    "Marca",
+    "Campaña",
+    "Camp_ID",
+    "Journey_ID",
+    "Objetivo",
+    "Canal",
+    "Email_Type",
+    "Tipo_Envio",
+    "Fuente_Dato",
+    "Clicks_Medidos",
+    "Estado",
+    "Touchpoint",
+    "Segmento"
+   ],
+   "negocio": [
+    "AON"
+   ]
+  },
+  {
+   "script": "orquestador.trazabilidad.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 21,
+   "hojas": [
+    "Catalogo_Referencias",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Data_Qcart",
+    "Dimension",
+    "Touchpoint",
+    "Contexto",
+    "Valor_Crudo",
+    "Valor_Canonico",
+    "Segmento",
+    "Campana_Canonica",
+    "Segmento_Canonico",
+    "Email_Type",
+    "Shortlink_Code",
+    "Carts_Total_All_Products",
+    "Tienda",
+    "Cod_Walmart_",
+    "Cod_Chedraui_",
+    "Receta_",
+    "Cod_"
+   ],
+   "negocio": [
+    "Pro Plan"
+   ]
+  },
+  {
+   "script": "N2a-96-simular-nuevo.js",
+   "skill": "fuentes-email",
+   "clase": "VIVO",
+   "decisiones": 20,
+   "hojas": [],
+   "columnas": [
+    "Email Content Name",
+    "Recetas Nestle",
+    "Campaña Que No Existe",
+    "Send Date",
+    "Campaign",
+    "Journey ID",
+    "Email Sends",
+    "Email Deliveries",
+    "Email Unique Opens",
+    "Email Unique Clicks",
+    "Email Bounces",
+    "Follow Up",
+    "MUERTA",
+    "PARCIAL",
+    "MAX protege también los sends"
+   ],
+   "negocio": [
+    "Hotcakes",
+    "Principal",
+    "AON"
+   ]
+  },
+  {
+   "script": "fuentes-whatsapp.whatsapp.js",
+   "skill": "fuentes-whatsapp",
+   "clase": "VIVO",
+   "decisiones": 17,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Data_WhatsApp"
+   ],
+   "columnas": [
+    "EmailName",
+    "Cod_Walmart_",
+    "Cod_Chedraui_",
+    "Pieza_ID",
+    "Touchpoint",
+    "Nombre_Journey",
+    "Content_ID",
+    "Content_Name",
+    "Campaña",
+    "Sends",
+    "Opens_Read",
+    "Send_Date",
+    "Deliveries"
+   ],
+   "negocio": [
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "orquestador.estatus-instrucciones.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 17,
+   "hojas": [
+    "Report_Resumen",
+    "Reporte_julio",
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "A producción lo llevas tú",
+    "HECHO",
+    "EmailID",
+    "Email_ID (de la DE de SFMC)",
+    "PENDIENTE",
+    "Nada fusionado todavía",
+    "Campaña",
+    "Segmento",
+    "Carritos_Total",
+    "Corrida E2E encadenada por skills",
+    "PARCIAL",
+    "Renombrar los pasos con su skill"
+   ],
+   "negocio": [
+    "Liga MX"
+   ]
+  },
+  {
+   "script": "orquestador.diff-explicado.js",
+   "skill": "orquestador",
+   "clase": "VIVO",
+   "decisiones": 16,
+   "hojas": [
+    "Report_Resumen"
+   ],
+   "columnas": [
+    "TouchPoint",
+    "Campaña",
+    "Objetivo",
+    "Segmento",
+    "Quincena_Lanzamiento",
+    "Tot_Sends",
+    "Tot_Deliveries",
+    "Tot_Opens",
+    "Tot_Clicks",
+    "Carritos_Total",
+    "Intencion_Total_MXN"
+   ],
+   "negocio": [
+    "WhatsApp",
+    "Qcart"
+   ]
+  },
+  {
+   "script": "fuentes-email.email-piezas.js",
+   "skill": "fuentes-email",
+   "clase": "VIVO",
+   "decisiones": 16,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "ContentName (la llave)",
+    "FollowUp",
+    "Es_FUP declarado por SFMC",
+    "Email",
+    "Email_ID ",
+    "Es_FUP",
+    "Email_Subject",
+    "Journey_ID_Datorama",
+    "Email_Unique_Unsubs",
+    "Email_Total_Unsubs",
+    "Audience_DE",
+    "Audience_Volume",
+    "Piezas_Mismo_Asset"
+   ],
+   "negocio": [
+    "Principal",
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "orquestador.nb-email-sfmc.js",
+   "skill": "orquestador",
+   "clase": "VIVO",
+   "decisiones": 15,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Pieza_ID",
+    "FollowUp",
+    "Content_Name",
+    "Email",
+    "Marca",
+    "Campaña",
+    "Segmento",
+    "Objetivo",
+    "Touchpoint",
+    "SIN PIEZA en el catálogo",
+    "ConfigKey",
+    "Es_FUP"
+   ],
+   "negocio": [
+    "Principal",
+    "Pro Plan"
+   ]
+  },
+  {
+   "script": "catalogo.medir-quincenas.js",
+   "skill": "nestle-catalogo",
+   "clase": "HERRAMIENTA",
+   "decisiones": 15,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Content_Name",
+    "Content_Names_Variantes",
+    "Send_Date",
+    "Pieza_ID",
+    "Campaña",
+    "Touchpoint",
+    "Segmento",
+    "Fecha_Primer_Envio",
+    "Sends"
+   ],
+   "negocio": [
+    "Fuel for life",
+    "AON"
+   ]
+  },
+  {
+   "script": "insights.insights.js",
+   "skill": "nestle-insights",
+   "clase": "VIVO",
+   "decisiones": 14,
+   "hojas": [
+    "Report_Resumen"
+   ],
+   "columnas": [
+    "Probar un asunto nuevo contra el de ",
+    "Insights"
+   ],
+   "negocio": [
+    "Principal ",
+    "FUP ",
+    "Hotcakes"
+   ]
+  },
+  {
+   "script": "resumen.fusionar-fup.js",
+   "skill": "resumen",
+   "clase": "VIVO",
+   "decisiones": 14,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Pieza_ID",
+    "Pieza_Principal_ID",
+    "Email_Type",
+    "Email_Name",
+    "Content_ID (final del Email_Name)",
+    "Content_ID",
+    "Email_ID (de la DE de SFMC)",
+    "EmailID",
+    "Subject",
+    "Fusiono "
+   ],
+   "negocio": [
+    "FUP ",
+    "Qcart que llegó por el FUP (",
+    "Principal"
+   ]
+  },
+  {
+   "script": "catalogo.catalogo-limpieza.js",
+   "skill": "nestle-catalogo",
+   "clase": "HERRAMIENTA",
+   "decisiones": 14,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Email_ID (de la DE de SFMC)",
+    "EmailID",
+    "Email_Name",
+    "Codigos_Qcart",
+    "Pieza_ID",
+    "Canal",
+    "Content_ID (final del Email_Name)",
+    "Pieza_Principal_ID",
+    "Email_Type",
+    "Subsegmento",
+    "Fecha_Ultimo_Envio",
+    "Sends"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "orquestador.fantasmas-y-ligamx.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 14,
+   "hojas": [
+    "Report_Resumen",
+    "Catalogo_Piezas",
+    "Data_Qcart_Carritos"
+   ],
+   "columnas": [
+    "Email_ID (de la DE de SFMC)",
+    "EmailID",
+    "Email_Name",
+    "Pieza_ID",
+    "Campaña",
+    "Marca",
+    "Segmento",
+    "TouchPoint",
+    "Objetivo",
+    "Carritos_Total"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "fuentes-cuadre.puerta2.js",
+   "skill": "fuentes-cuadre",
+   "clase": "VIVO",
+   "decisiones": 13,
+   "hojas": [
+    "Report_Resumen"
+   ],
+   "columnas": [
+    "TouchPoint",
+    "Campaña",
+    "Objetivo",
+    "Segmento",
+    "Tot_Sends",
+    "Email_ID (SFMC)",
+    "Tot_Deliveries",
+    "Tot_Opens",
+    "Tot_Clicks",
+    "Carritos_Total",
+    "Insights"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "fuentes-whatsapp.simular-nuevo.js",
+   "skill": "fuentes-whatsapp",
+   "clase": "ADVERSARIAL",
+   "decisiones": 13,
+   "hojas": [],
+   "columnas": [
+    "SEGMENTO",
+    "Fecha de envío",
+    "ENVÍOS",
+    "ENTREGAS",
+    "ERRORES",
+    "OPENS",
+    "CLICKS",
+    "Nuevos",
+    "Recurrentes",
+    "Totales",
+    "CampanaNueva",
+    "NO cuadra"
+   ],
+   "negocio": [
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "escritor.escribir.js",
+   "skill": "escritor",
+   "clase": "VIVO",
+   "decisiones": 12,
+   "hojas": [],
+   "columnas": [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+   ],
+   "negocio": [
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "resumen.regenerar.js",
+   "skill": "resumen",
+   "clase": "VIVO",
+   "decisiones": 12,
+   "hojas": [
+    "Report_Resumen"
+   ],
+   "columnas": [
+    "Campaña",
+    "Medio",
+    "TouchPoint",
+    "Segmento",
+    "Tot_Sends",
+    "Carritos_Total",
+    "Total",
+    "Insights",
+    "Tipo  Email",
+    "Email_Name"
+   ],
+   "negocio": [
+    "Hackea"
+   ]
+  },
+  {
+   "script": "N2a-98-simular-siguiente.js",
+   "skill": "fuentes-email",
+   "clase": "ADVERSARIAL",
+   "decisiones": 12,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Pieza_ID",
+    "Sends",
+    "Content_Name",
+    "Content_Names_Variantes",
+    "Segmento",
+    "Canal",
+    "Email",
+    "Email_Content_Name",
+    "Send_Date"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "orquestador.html-cadena-skills.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 11,
+   "hojas": [],
+   "columnas": [
+    "Dirige",
+    "Entrada",
+    "Autoridad",
+    "Las cuatro fuentes",
+    "Las dos puertas",
+    "Escritura",
+    "Cálculo",
+    "El reporte"
+   ],
+   "negocio": [
+    "Mundial"
+   ]
+  },
+  {
+   "script": "orquestador.dx-carritos.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 11,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Carritos_Total",
+    "Sends_Por_Mes",
+    "Mes_Lanzamiento",
+    "Pieza_ID",
+    "Campaña",
+    "Touchpoint",
+    "Segmento",
+    "Canal",
+    "Estado",
+    "Fecha_Origen"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "fuentes-manual.simular-siguiente.js",
+   "skill": "fuentes-manual",
+   "clase": "ADVERSARIAL",
+   "decisiones": 10,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Data_Email",
+    "Data_WhatsApp"
+   ],
+   "columnas": [
+    "Content_Name",
+    "Content_Names_Variantes",
+    "Pieza_ID",
+    "PUERTA-1 puede sumar los 4 bloques por pieza",
+    "Email"
+   ],
+   "negocio": [
+    "WhatsApp",
+    "Liga MX"
+   ]
+  },
+  {
+   "script": "orquestador.censo-scripts.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 10,
+   "hojas": [],
+   "columnas": [
+    "ESCRITOR",
+    "HERRAMIENTA",
+    "APLICADO",
+    "CONGELADO",
+    "RETIRADO",
+    "ADVERSARIAL",
+    "LIBRERIA",
+    "SIN_CLASIFICAR"
+   ],
+   "negocio": [
+    "ligamx"
+   ]
+  },
+  {
+   "script": "orquestador.e2e.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 10,
+   "hojas": [
+    "Report_Resumen"
+   ],
+   "columnas": [
+    "Principal_Sends",
+    "FUP_Sends",
+    "Excel abre el libro",
+    "RECHAZADO",
+    "Excel ve las mismas hojas que el lector"
+   ],
+   "negocio": [
+    "WhatsApp llega entero a la rejilla",
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "orquestador.dx3.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 10,
+   "hojas": [
+    "Catalogo_Referencias",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Campana_Canonica",
+    "Segmento",
+    "Segmento_Canonico",
+    "Touchpoint",
+    "Email_Type",
+    "Email_Sends"
+   ],
+   "negocio": [
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "orquestador.dx4.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 10,
+   "hojas": [
+    "Catalogo_Referencias",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Campana_Canonica",
+    "Segmento",
+    "Segmento_Canonico",
+    "Touchpoint",
+    "Email_Type",
+    "Email_Sends"
+   ],
+   "negocio": [
+    "Antojo Infinito"
+   ]
+  },
+  {
+   "script": "fuentes-qcart.validar.js",
+   "skill": "fuentes-qcart",
+   "clase": "VIVO",
+   "decisiones": 9,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Data_Qcart",
+    "Brand",
+    "Campaign",
+    "Cod_Walmart_",
+    "Cod_Chedraui_",
+    "Pieza_ID",
+    "Shortlink_Code"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "orquestador.probar-renombre.js",
+   "skill": "nestle-catalogo",
+   "clase": "ADVERSARIAL",
+   "decisiones": 9,
+   "hojas": [
+    "Report_Resumen"
+   ],
+   "columnas": [
+    "Tot_Sends",
+    "Total_Envios",
+    "Content_ID (SFMC)",
+    "ContentID SFMC",
+    "Carritos_Total",
+    "Carritos Totales",
+    "Zeta_Experimental",
+    "Campaña"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "orquestador.dx2.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 9,
+   "hojas": [
+    "Catalogo_Referencias",
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Campana_Canonica",
+    "Segmento",
+    "Segmento_Canonico",
+    "Touchpoint",
+    "Email_Type",
+    "Email_Sends"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "N2a-99-validar.js",
+   "skill": "fuentes-email",
+   "clase": "VIVO",
+   "decisiones": 8,
+   "hojas": [
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Follow Up",
+    "BU_Canonico",
+    "Marca",
+    "Campana_Canonica",
+    "Segmento_Canonico"
+   ],
+   "negocio": [
+    "Principal"
+   ]
+  },
+  {
+   "script": "fuentes-qcart.simular-siguiente.js",
+   "skill": "fuentes-qcart",
+   "clase": "ADVERSARIAL",
+   "decisiones": 8,
+   "hojas": [
+    "Data_Qcart_Carritos",
+    "Data_Qcart_Productos"
+   ],
+   "columnas": [
+    "motor-calculo puede derivar la PENETRACIÓN",
+    "motor-calculo puede derivar el TICKET promedio",
+    "motor-calculo puede derivar el PRODUCTO TOP",
+    "motor-calculo puede cortar por TIENDA",
+    "Data_Qcart"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "catalogo.codigos-maestro.js",
+   "skill": "nestle-catalogo",
+   "clase": "HERRAMIENTA",
+   "decisiones": 8,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "PENDIENTE",
+    "POR DEFINIR",
+    "Pieza_ID",
+    "Campaña",
+    "TouchPoint",
+    "Segmento"
+   ],
+   "negocio": [
+    "Liga MX"
+   ]
+  },
+  {
+   "script": "fuentes-qcart.activacion-qcart.js",
+   "skill": "fuentes-qcart",
+   "clase": "VIVO",
+   "decisiones": 7,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Pieza_ID",
+    "Cod_Walmart_",
+    "Cod_Chedraui_",
+    "Fecha_Primer_Envio",
+    "Fecha_Activacion_Qcart"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "fuentes-qcart.qcart.js",
+   "skill": "fuentes-qcart",
+   "clase": "VIVO",
+   "decisiones": 7,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Data_Qcart_Carritos",
+    "Data_Qcart_Productos"
+   ],
+   "columnas": [
+    "Cod_Walmart_",
+    "Cod_Chedraui_",
+    "Pieza_ID"
+   ],
+   "negocio": [
+    "Liga MX"
+   ]
+  },
+  {
+   "script": "escritor.escribir-todo.js",
+   "skill": "escritor",
+   "clase": "ESCRITOR",
+   "decisiones": 7,
+   "hojas": [
+    "Report_Resumen",
+    "Catalogo_Piezas",
+    "Catalogo_Referencias",
+    "Data_Email",
+    "Data_WhatsApp",
+    "Data_Qcart_Carritos",
+    "Data_Qcart_Productos"
+   ],
+   "columnas": [],
+   "negocio": []
+  },
+  {
+   "script": "fuentes-manual.refutar.js",
+   "skill": "fuentes-manual",
+   "clase": "ADVERSARIAL",
+   "decisiones": 7,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Content_Name",
+    "Content_Names_Variantes",
+    "Pieza_ID",
+    "Campaña",
+    "Canal"
+   ],
+   "negocio": [
+    "Liga MX"
+   ]
+  },
+  {
+   "script": "fuentes-whatsapp.validar.js",
+   "skill": "fuentes-whatsapp",
+   "clase": "VIVO",
+   "decisiones": 6,
+   "hojas": [
+    "Data_WhatsApp"
+   ],
+   "columnas": [
+    "NINGUNA columna calculada en el bloque",
+    "AMBIGUA",
+    "Campaña",
+    "Sends"
+   ],
+   "negocio": [
+    "Maggi"
+   ]
+  },
+  {
+   "script": "motor.validar.js",
+   "skill": "motor",
+   "clase": "VIVO",
+   "decisiones": 6,
+   "hojas": [],
+   "columnas": [
+    "Delivery_Rate",
+    "Open_Rate",
+    "Click_Rate",
+    "Bounce_Rate"
+   ],
+   "negocio": [
+    "WhatsApp entra completo",
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "escritor.canonicos-coinciden.js",
+   "skill": "escritor",
+   "clase": "VIVO",
+   "decisiones": 6,
+   "hojas": [
+    "Catalogo_Piezas",
+    "Catalogo_Referencias"
+   ],
+   "columnas": [
+    "Marca",
+    "Campaña",
+    "Segmento"
+   ],
+   "negocio": [
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "orquestador.probar-flexible.js",
+   "skill": "orquestador",
+   "clase": "ADVERSARIAL",
+   "decisiones": 6,
+   "hojas": [],
+   "columnas": [
+    "Datos Marzo 2026",
+    "Marketing General",
+    "Resumen",
+    "Email Unsubscribes",
+    "Email Complaints"
+   ],
+   "negocio": [
+    "AON"
+   ]
+  },
+  {
+   "script": "fuentes-whatsapp.simular-siguiente.js",
+   "skill": "fuentes-whatsapp",
+   "clase": "ADVERSARIAL",
+   "decisiones": 6,
+   "hojas": [
+    "Data_WhatsApp"
+   ],
+   "columnas": [
+    "motor-calculo puede derivar el DELIVERY RATE",
+    "motor-calculo puede derivar el READ RATE",
+    "motor-calculo puede agrupar por campaña",
+    "Campaña"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "orquestador.dx-descuadre.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 6,
+   "hojas": [
+    "Data_Email"
+   ],
+   "columnas": [
+    "Email_Content_Name",
+    "Email_Sends",
+    "Touchpoint",
+    "Segmento_Canonico",
+    "Email_Type"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "catalogo.leer-correcciones.js",
+   "skill": "nestle-catalogo",
+   "clase": "VIVO",
+   "decisiones": 5,
+   "hojas": [],
+   "columnas": [
+    "EmailID ",
+    "EmailID",
+    "Oleada",
+    "Mascota"
+   ],
+   "negocio": [
+    "AON"
+   ]
+  },
+  {
+   "script": "fuentes-insumos.cruce-sfmc.js",
+   "skill": "fuentes-insumos",
+   "clase": "VIVO",
+   "decisiones": 5,
+   "hojas": [],
+   "columnas": [
+    "DUPLICADO",
+    "Datorama y SFMC coinciden",
+    "SFMC conoce todas las piezas del bloque"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "fuentes-manual.manual.js",
+   "skill": "fuentes-manual",
+   "clase": "VIVO",
+   "decisiones": 5,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Content_Name",
+    "Content_Names_Variantes",
+    "Pieza_ID"
+   ],
+   "negocio": [
+    "Liga MX"
+   ]
+  },
+  {
+   "script": "orquestador.reconciliar.js",
+   "skill": "fuentes-email",
+   "clase": "VIVO",
+   "decisiones": 4,
+   "hojas": [],
+   "columnas": [
+    "SIN EVIDENCIA SUFICIENTE"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "fuentes-insumos.insumos.js",
+   "skill": "fuentes-insumos",
+   "clase": "VIVO",
+   "decisiones": 4,
+   "hojas": [],
+   "columnas": [
+    "CON HALLAZGOS",
+    "LISTO"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "fuentes-qcart.probar-filtro.js",
+   "skill": "fuentes-qcart",
+   "clase": "ADVERSARIAL",
+   "decisiones": 4,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Cod_Walmart_",
+    "Cod_Chedraui_",
+    "Pieza_ID"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "fuentes-cuadre.refuta-probar-que-cierra.js",
+   "skill": "fuentes-cuadre",
+   "clase": "ADVERSARIAL",
+   "decisiones": 4,
+   "hojas": [],
+   "columnas": [
+    "NO GENERÓ VEREDICTO",
+    "Email",
+    "CIERRA cuando falta un bloque"
+   ],
+   "negocio": [
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "fuentes-qcart.refutar.js",
+   "skill": "fuentes-qcart",
+   "clase": "VIVO",
+   "decisiones": 3,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Pieza_ID"
+   ],
+   "negocio": [
+    "Mundial"
+   ]
+  },
+  {
+   "script": "fuentes-whatsapp.refutar.js",
+   "skill": "fuentes-whatsapp",
+   "clase": "VIVO",
+   "decisiones": 3,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "Pieza_ID"
+   ],
+   "negocio": [
+    "Maggi"
+   ]
+  },
+  {
+   "script": "fuentes-cuadre.cuadre.js",
+   "skill": "fuentes-cuadre",
+   "clase": "VIVO",
+   "decisiones": 3,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [
+    "PUERTA ABIERTA",
+    "PUERTA CERRADA"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "fuentes-email.validar.js",
+   "skill": "fuentes-email",
+   "clase": "VIVO",
+   "decisiones": 3,
+   "hojas": [],
+   "columnas": [
+    "FollowUp"
+   ],
+   "negocio": [
+    "Principal ",
+    "Principal"
+   ]
+  },
+  {
+   "script": "fuentes-insumos.simular-siguiente.js",
+   "skill": "fuentes-insumos",
+   "clase": "ADVERSARIAL",
+   "decisiones": 3,
+   "hojas": [],
+   "columnas": [
+    "email-bloque sabe qué archivo abrir",
+    "email-bloque arranca y lee filas con el handoff"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "fuentes-cuadre.simular-siguiente.js",
+   "skill": "fuentes-cuadre",
+   "clase": "ADVERSARIAL",
+   "decisiones": 3,
+   "hojas": [
+    "Data_Email",
+    "Data_WhatsApp"
+   ],
+   "columnas": [
+    "Catalogo_Piezas (ya presente)"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "orquestador.orquestador.js",
+   "skill": "orquestador",
+   "clase": "VIVO",
+   "decisiones": 2,
+   "hojas": [],
+   "columnas": [],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "motor.links.js",
+   "skill": "motor",
+   "clase": "VIVO",
+   "decisiones": 2,
+   "hojas": [
+    "Catalogo_Piezas"
+   ],
+   "columnas": [],
+   "negocio": [
+    "AON"
+   ]
+  },
+  {
+   "script": "orquestador.cadena-skills.js",
+   "skill": "orquestador",
+   "clase": "VIVO",
+   "decisiones": 2,
+   "hojas": [],
+   "columnas": [
+    "DIRIGE la cadena"
+   ],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "fuentes-qcart.probar-lector.js",
+   "skill": "fuentes-qcart",
+   "clase": "ADVERSARIAL",
+   "decisiones": 2,
+   "hojas": [],
+   "columnas": [],
+   "negocio": []
+  },
+  {
+   "script": "orquestador.manifiestos.js",
+   "skill": "orquestador",
+   "clase": "VIVO",
+   "decisiones": 1,
+   "hojas": [
+    "Report_Resumen"
+   ],
+   "columnas": [],
+   "negocio": []
+  },
+  {
+   "script": "escritor.neutralizar-muertas.js",
+   "skill": "escritor",
+   "clase": "VIVO",
+   "decisiones": 1,
+   "hojas": [],
+   "columnas": [],
+   "negocio": [
+    "Purina"
+   ]
+  },
+  {
+   "script": "fuentes-insumos.validar.js",
+   "skill": "fuentes-insumos",
+   "clase": "VIVO",
+   "decisiones": 1,
+   "hojas": [],
+   "columnas": [],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "escritor.validar-contrato.js",
+   "skill": "escritor",
+   "clase": "VIVO",
+   "decisiones": 1,
+   "hojas": [],
+   "columnas": [],
+   "negocio": [
+    "WhatsApp"
+   ]
+  },
+  {
+   "script": "escritor.formato.js",
+   "skill": "escritor",
+   "clase": "VIVO",
+   "decisiones": 1,
+   "hojas": [],
+   "columnas": [],
+   "negocio": []
+  },
+  {
+   "script": "motor.links-a-rejilla.js",
+   "skill": "motor",
+   "clase": "VIVO",
+   "decisiones": 1,
+   "hojas": [],
+   "columnas": [],
+   "negocio": [
+    "Principal"
+   ]
+  },
+  {
+   "script": "fuentes-cuadre.probar-que-cierra.js",
+   "skill": "fuentes-cuadre",
+   "clase": "VIVO",
+   "decisiones": 1,
+   "hojas": [],
+   "columnas": [],
+   "negocio": [
+    "Qcart"
+   ]
+  },
+  {
+   "script": "fuentes-qcart.simular-nuevo.js",
+   "skill": "fuentes-qcart",
+   "clase": "ADVERSARIAL",
+   "decisiones": 1,
+   "hojas": [],
+   "columnas": [
+    "ZZajeno99"
+   ],
+   "negocio": []
+  },
+  {
+   "script": "fuentes-manual.simular-primer-dato.js",
+   "skill": "fuentes-manual",
+   "clase": "ADVERSARIAL",
+   "decisiones": 1,
+   "hojas": [],
+   "columnas": [],
+   "negocio": [
+    "Liga MX"
+   ]
+  },
+  {
+   "script": "orquestador.refutar-cadena.js",
+   "skill": "orquestador",
+   "clase": "ADVERSARIAL",
+   "decisiones": 1,
+   "hojas": [],
+   "columnas": [],
+   "negocio": []
+  },
+  {
+   "script": "orquestador.inventario-hojas.js",
+   "skill": "orquestador",
+   "clase": "HERRAMIENTA",
+   "decisiones": 1,
+   "hojas": [
+    "Reporte_julio"
+   ],
+   "columnas": [],
+   "negocio": []
+  }
+ ],
+ "repetidas": {
+  "hojas": [
+   "Catalogo_Piezas",
+   "Data_Email",
+   "Catalogo_Referencias",
+   "Report_Resumen",
+   "Data_WhatsApp",
+   "Data_Qcart_Carritos",
+   "Data_Qcart_Productos",
+   "Reporte_julio"
+  ],
+  "columnas": [
+   "Campaña",
+   "Segmento",
+   "Pieza_ID",
+   "Touchpoint",
+   "Objetivo",
+   "Marca",
+   "Email_Type",
+   "Email_Content_Name",
+   "Canal",
+   "Content_Name",
+   "Carritos_Total",
+   "Sends",
+   "Segmento_Canonico",
+   "TouchPoint",
+   "Cod_Walmart_",
+   "Cod_Chedraui_",
+   "Content_Names_Variantes",
+   "Email_Sends",
+   "EmailID",
+   "Email",
+   "Campana_Canonica",
+   "Send_Date",
+   "Email_Name",
+   "Dimension",
+   "Valor_Canonico",
+   "Quincena_Lanzamiento",
+   "Camp_ID",
+   "Tot_Sends",
+   "Estado",
+   "Valor_Crudo",
+   "Data_Qcart",
+   "Journey_ID",
+   "Notas",
+   "Fecha_Primer_Envio",
+   "Segmentos_Combinados",
+   "Campaign",
+   "Tot_Deliveries",
+   "Tot_Opens",
+   "Tot_Clicks",
+   "Clicks_Medidos",
+   "Campana",
+   "Shortlink_Code",
+   "Insights",
+   "Email_ID (de la DE de SFMC)",
+   "Enero",
+   "Febrero",
+   "Marzo",
+   "Abril",
+   "Junio",
+   "Julio",
+   "Agosto",
+   "Septiembre",
+   "Octubre",
+   "Noviembre",
+   "Diciembre",
+   "BU_Canonico",
+   "Email_Deliveries",
+   "Email_Unique_Opens",
+   "Email_Unique_Clicks",
+   "Principal_Sends",
+   "FUP_Sends",
+   "Fuente_Dato",
+   "Follow Up",
+   "Touchpoint_Raw",
+   "Contexto",
+   "Tienda",
+   "Mes_Lanzamiento"
+  ],
+  "negocio": [
+   "WhatsApp",
+   "Qcart",
+   "Principal",
+   "AON",
+   "Liga MX",
+   "Hotcakes",
+   "Mundial"
+  ]
+ }
+}

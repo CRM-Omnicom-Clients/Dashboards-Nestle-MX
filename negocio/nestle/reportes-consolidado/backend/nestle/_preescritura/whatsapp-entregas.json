@@ -1,0 +1,317 @@
+{
+ "fecha": "2026-09-20",
+ "filas": 21,
+ "no_cierran": 10,
+ "envios": 22461,
+ "entregados_hoja": 20011.37,
+ "entregados_corregido": 17656.37,
+ "detalle": [
+  {
+   "hoja": "Hotcakes",
+   "fila": 2,
+   "etiqueta": "Saludables",
+   "envios": 312,
+   "aud": null,
+   "ent_hoja": 226,
+   "fallos_hoja": 86,
+   "cierra": true,
+   "ent_ok": 226,
+   "no_ok": 86,
+   "otros": []
+  },
+  {
+   "hoja": "Hotcakes",
+   "fila": 3,
+   "etiqueta": "Prácticos",
+   "envios": 285,
+   "aud": null,
+   "ent_hoja": 247,
+   "fallos_hoja": 46,
+   "cierra": false,
+   "ent_ok": 239,
+   "no_ok": 46,
+   "otros": []
+  },
+  {
+   "hoja": "Hotcakes",
+   "fila": 4,
+   "etiqueta": "indulgentes",
+   "envios": 519,
+   "aud": null,
+   "ent_hoja": 419,
+   "fallos_hoja": 100,
+   "cierra": true,
+   "ent_ok": 419,
+   "no_ok": 100,
+   "otros": []
+  },
+  {
+   "hoja": "Hotcakes",
+   "fila": 5,
+   "etiqueta": "FamilyKids",
+   "envios": 445,
+   "aud": null,
+   "ent_hoja": 372,
+   "fallos_hoja": 73,
+   "cierra": true,
+   "ent_ok": 372,
+   "no_ok": 73,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 2,
+   "etiqueta": "Segundo Partido",
+   "envios": 162,
+   "aud": null,
+   "ent_hoja": 125,
+   "fallos_hoja": 37,
+   "cierra": true,
+   "ent_ok": 125,
+   "no_ok": 37,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 3,
+   "etiqueta": "Tercer Partido",
+   "envios": 162,
+   "aud": null,
+   "ent_hoja": 125,
+   "fallos_hoja": 37,
+   "cierra": true,
+   "ent_ok": 125,
+   "no_ok": 37,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 4,
+   "etiqueta": "Semifinal A",
+   "envios": 1981,
+   "aud": null,
+   "ent_hoja": 1525.3700000000001,
+   "fallos_hoja": 455.6299999999999,
+   "cierra": true,
+   "ent_ok": 1525.3700000000001,
+   "no_ok": 455.6299999999999,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 5,
+   "etiqueta": "Semifinal B",
+   "envios": 999,
+   "aud": null,
+   "ent_hoja": 722,
+   "fallos_hoja": 277,
+   "cierra": true,
+   "ent_ok": 722,
+   "no_ok": 277,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 6,
+   "etiqueta": "Finales",
+   "envios": 1965,
+   "aud": null,
+   "ent_hoja": 1520,
+   "fallos_hoja": 445,
+   "cierra": true,
+   "ent_ok": 1520,
+   "no_ok": 445,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 28,
+   "etiqueta": "crm-hive",
+   "envios": 15,
+   "aud": null,
+   "ent_hoja": 0,
+   "fallos_hoja": 0,
+   "cierra": false,
+   "ent_ok": 15,
+   "no_ok": 0,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 29,
+   "etiqueta": "crm-hive",
+   "envios": 6,
+   "aud": null,
+   "ent_hoja": 0,
+   "fallos_hoja": 0,
+   "cierra": false,
+   "ent_ok": 6,
+   "no_ok": 0,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 30,
+   "etiqueta": "crm-hive",
+   "envios": 5,
+   "aud": null,
+   "ent_hoja": 0,
+   "fallos_hoja": 0,
+   "cierra": false,
+   "ent_ok": 5,
+   "no_ok": 0,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 31,
+   "etiqueta": "crm-hive",
+   "envios": 9,
+   "aud": null,
+   "ent_hoja": 0,
+   "fallos_hoja": 0,
+   "cierra": false,
+   "ent_ok": 9,
+   "no_ok": 0,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 32,
+   "etiqueta": "crm-hive",
+   "envios": 5,
+   "aud": null,
+   "ent_hoja": 0,
+   "fallos_hoja": 0,
+   "cierra": false,
+   "ent_ok": 5,
+   "no_ok": 0,
+   "otros": []
+  },
+  {
+   "hoja": "Maggi Mundial",
+   "fila": 33,
+   "etiqueta": "crm-hive",
+   "envios": 3,
+   "aud": null,
+   "ent_hoja": 0,
+   "fallos_hoja": 0,
+   "cierra": false,
+   "ent_ok": 3,
+   "no_ok": 0,
+   "otros": []
+  },
+  {
+   "hoja": "Tercer Tiempo",
+   "fila": 2,
+   "etiqueta": "O_Welcome-NC007067_1_IBS_FOOD_NEST",
+   "envios": 1817,
+   "aud": 2000,
+   "ent_hoja": 1817,
+   "fallos_hoja": 183,
+   "cierra": false,
+   "ent_ok": 1634,
+   "no_ok": 183,
+   "otros": [
+    {
+     "c": "Delivery Unknown",
+     "v": 3
+    }
+   ]
+  },
+  {
+   "hoja": "Tercer Tiempo",
+   "fila": 3,
+   "etiqueta": "O_Welcome-NC007067_1_IBS_FOOD_NEST",
+   "envios": 3996,
+   "aud": 5000,
+   "ent_hoja": 3949,
+   "fallos_hoja": 1059,
+   "cierra": false,
+   "ent_ok": 2937,
+   "no_ok": 1059,
+   "otros": [
+    {
+     "c": "Delivery Unknown",
+     "v": 47
+    }
+   ]
+  },
+  {
+   "hoja": "Tercer Tiempo",
+   "fila": 4,
+   "etiqueta": "",
+   "envios": 5813,
+   "aud": 7000,
+   "ent_hoja": 5766,
+   "fallos_hoja": 1242,
+   "cierra": false,
+   "ent_ok": 4571,
+   "no_ok": 1242,
+   "otros": [
+    {
+     "c": "Delivery Unknown",
+     "v": 50
+    }
+   ]
+  },
+  {
+   "hoja": "Maggi Liga MX",
+   "fila": 2,
+   "etiqueta": "O_Maggi-Seleccion-NC006537_1_IBS_F",
+   "envios": 985,
+   "aud": 993,
+   "ent_hoja": 835,
+   "fallos_hoja": 150,
+   "cierra": true,
+   "ent_ok": 835,
+   "no_ok": 150,
+   "otros": [
+    {
+     "c": "Delivery Unknown",
+     "v": 28
+    }
+   ]
+  },
+  {
+   "hoja": "Maggi Liga MX",
+   "fila": 3,
+   "etiqueta": "O_Maggi-Seleccion-NC006537_1_IBS_F",
+   "envios": 977,
+   "aud": 994,
+   "ent_hoja": 764,
+   "fallos_hoja": 213,
+   "cierra": true,
+   "ent_ok": 764,
+   "no_ok": 213,
+   "otros": [
+    {
+     "c": "Delivery Unknown",
+     "v": 27
+    }
+   ]
+  },
+  {
+   "hoja": "ICE",
+   "fila": 2,
+   "etiqueta": "O_Nescafé-ICE-NC000817_1_IBS_CFEE_",
+   "envios": 2000,
+   "aud": 2000,
+   "ent_hoja": 1599,
+   "fallos_hoja": 401,
+   "cierra": true,
+   "ent_ok": 1599,
+   "no_ok": 401,
+   "otros": [
+    {
+     "c": "Delivery Unknown",
+     "v": 26
+    },
+    {
+     "c": "Failed",
+     "v": 6
+    }
+   ]
+  }
+ ]
+}

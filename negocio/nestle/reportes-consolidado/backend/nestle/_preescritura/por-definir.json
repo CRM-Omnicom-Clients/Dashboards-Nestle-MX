@@ -1,0 +1,87 @@
+{
+ "que_es": "Lo que APLICA y no tenemos. Cada celda dice POR DEFINIR en el archivo y aparece aquí.",
+ "total": 27,
+ "por_columna": {
+  "Catalogo_Piezas · Quincenas_Activas": [
+   125
+  ],
+  "Catalogo_Piezas · N_Quincenas": [
+   125
+  ],
+  "Catalogo_Piezas · Meses_Activos": [
+   125
+  ],
+  "Catalogo_Piezas · N_Meses": [
+   125
+  ],
+  "Catalogo_Piezas · Sends_Por_Quincena": [
+   125
+  ],
+  "Catalogo_Piezas · Sends_Por_Mes": [
+   125
+  ],
+  "Catalogo_Piezas · N_Envios_Fechados": [
+   125
+  ],
+  "Catalogo_Piezas · Granularidad_Periodo": [
+   125
+  ],
+  "Catalogo_Piezas · Fecha_Origen": [
+   125
+  ],
+  "Catalogo_Piezas · Dias_Envio": [
+   125
+  ],
+  "Catalogo_Piezas · Fuente_Dato": [
+   125
+  ],
+  "Catalogo_Piezas · Sends": [
+   125
+  ],
+  "Catalogo_Piezas · Carritos_Total": [
+   125
+  ],
+  "Catalogo_Piezas · Views_Total": [
+   125
+  ],
+  "Catalogo_Piezas · Receta_1": [
+   125
+  ],
+  "Catalogo_Piezas · URL_Receta_1": [
+   125
+  ],
+  "Catalogo_Piezas · Carritos_Walmart_1": [
+   125
+  ],
+  "Catalogo_Piezas · Cod_Chedraui_1": [
+   125
+  ],
+  "Catalogo_Piezas · Carritos_Chedraui_1": [
+   125
+  ],
+  "Catalogo_Piezas · Fuente_Qcart": [
+   125
+  ],
+  "Catalogo_Piezas · Fecha_Activacion_Qcart": [
+   125
+  ],
+  "Catalogo_Piezas · Activaciones_Qcart": [
+   125
+  ],
+  "Catalogo_Piezas · Mes": [
+   125
+  ],
+  "Catalogo_Piezas · Mes (#)": [
+   125
+  ],
+  "Catalogo_Piezas · Codigos_Qcart": [
+   125
+  ],
+  "Catalogo_Piezas · Whatsapp_Names_Variantes": [
+   125
+  ],
+  "Catalogo_Piezas · N_Whatsapp_Names": [
+   125
+  ]
+ }
+}

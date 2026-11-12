@@ -1,0 +1,183 @@
+{
+ "paso": "E1.9",
+ "fecha": "2026-08-24",
+ "que_es": "Las DECISIONES de que NO cuenta. No son referencias: son decisiones, y por eso viven aparte.",
+ "regla": "Toda exclusion lleva motivo escrito. Nunca se excluye trafico en silencio.",
+ "por_dimension": {
+  "Link Qcart": [
+   {
+    "valor": "P8IcwfWJ",
+    "motivo": "link de un envío que NO se realizó (Data_Maggi)",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "znjG7J6r",
+    "motivo": "link de un envío que NO se realizó (Data_Maggi)",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "5NnTxarc",
+    "motivo": "link de un envío que NO se realizó (Data_Maggi)",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "lfFYbUfy",
+    "motivo": "link de la hoja Reagendar · fuera del alcance del documento vigente",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "3Lb6FbAa",
+    "motivo": "link de la hoja Reagendar · fuera del alcance del documento vigente",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "M67vOg1g",
+    "motivo": "link de la hoja Reagendar · fuera del alcance del documento vigente",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "AwsreGWs",
+    "motivo": "link de la hoja Reagendar · fuera del alcance del documento vigente",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "aPFwXeaG",
+    "motivo": "link de la hoja Reagendar · fuera del alcance del documento vigente",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "oJclpobS",
+    "motivo": "link de la hoja Reagendar · fuera del alcance del documento vigente",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "TMECSIho",
+    "motivo": "link de la hoja Reagendar · fuera del alcance del documento vigente",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "y6hReRB5",
+    "motivo": "link de la hoja Reagendar · fuera del alcance del documento vigente",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "tErzItBY",
+    "motivo": "link de la hoja Reagendar · fuera del alcance del documento vigente",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "LJQsq5T9",
+    "motivo": "Envío Federación · no está cargado en Data_Email, no hay pieza que lo reclame",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "L5rqwrzD",
+    "motivo": "el maestro marca \"No enviado\"",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "JPrNSrwn",
+    "motivo": "el maestro marca \"No enviado\"",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "yj8PKdRr",
+    "motivo": "el maestro marca \"No enviado\"",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "CVCPHfND",
+    "motivo": "aparece bajo e-j7 en la hoja de AGOSTO del maestro, pero la Jornada 7 solo tiene DOS codigos y son los de SEPTIEMBRE (hTHNLqzL, GQnvqqP3). Lo declaro Rick el 9-sep-2026: «j7 solo tiene 2 en el maestro, son los de septiembre. Los de agosto se descartan». Sus 6 carritos son anteriores al 4-sep y el filtro de activacion ya los descartaba; esto lo deja escrito para que nadie los agregue.",
+    "fuente": "Qcart-Links Mails-Hive- MX.xlsx · hoja Agosto",
+    "piezas": [
+     "005-P010"
+    ]
+   },
+   {
+    "valor": "piPZpvXp",
+    "motivo": "mismo caso que CVCPHfND: e-j7 en la hoja de AGOSTO, y la Jornada 7 son solo los dos codigos de SEPTIEMBRE. Declarado por Rick el 9-sep-2026.",
+    "fuente": "Qcart-Links Mails-Hive- MX.xlsx · hoja Agosto",
+    "piezas": [
+     "005-P010"
+    ]
+   },
+   {
+    "valor": "3NIh2kYW",
+    "motivo": "el envío NUNCA SALIÓ. Rick, 15-sep-2026: «ya recordé, nunca salió, esos carritos no deben de contar». Comprobado contra SFMC el mismo día: de Mundial E-P2 la DE publica DOS piezas —Bebidas (14,117 envíos) y Botana (75,518)— y ninguna de Modern Cooking. El maestro de junio sí declaró los links del bloque `e-cooking2 · new-cooking`, y de ahí nació la pieza `004-P020` el 27-ago («alta derivada del doc de links, no declarada por Rick»). Los links existieron y recibieron tráfico; el correo que debía mandarlos, no. Sin envío no hay atribución: 49 carritos y 4 productos que no pertenecen a ninguna pieza de CRM.",
+    "fuente": "Rick en chat, 15-sep-2026",
+    "declarado": "2026-09-15",
+    "piezas": [
+     "004-P020"
+    ]
+   },
+   {
+    "valor": "ZJ3SmPMy",
+    "motivo": "el envío NUNCA SALIÓ. Rick, 15-sep-2026: «ya recordé, nunca salió, esos carritos no deben de contar». Comprobado contra SFMC el mismo día: de Mundial E-P2 la DE publica DOS piezas —Bebidas (14,117 envíos) y Botana (75,518)— y ninguna de Modern Cooking. El maestro de junio sí declaró los links del bloque `e-cooking2 · new-cooking`, y de ahí nació la pieza `004-P020` el 27-ago («alta derivada del doc de links, no declarada por Rick»). Los links existieron y recibieron tráfico; el correo que debía mandarlos, no. Sin envío no hay atribución: 49 carritos y 4 productos que no pertenecen a ninguna pieza de CRM.",
+    "fuente": "Rick en chat, 15-sep-2026",
+    "declarado": "2026-09-15",
+    "piezas": [
+     "004-P020"
+    ]
+   },
+   {
+    "valor": "wdvsBDby",
+    "motivo": "el envío NUNCA SALIÓ. Rick, 15-sep-2026: «ya recordé, nunca salió, esos carritos no deben de contar». Comprobado contra SFMC el mismo día: de Mundial E-P2 la DE publica DOS piezas —Bebidas (14,117 envíos) y Botana (75,518)— y ninguna de Modern Cooking. El maestro de junio sí declaró los links del bloque `e-cooking2 · new-cooking`, y de ahí nació la pieza `004-P020` el 27-ago («alta derivada del doc de links, no declarada por Rick»). Los links existieron y recibieron tráfico; el correo que debía mandarlos, no. Sin envío no hay atribución: 49 carritos y 4 productos que no pertenecen a ninguna pieza de CRM.",
+    "fuente": "Rick en chat, 15-sep-2026",
+    "declarado": "2026-09-15",
+    "piezas": [
+     "004-P020"
+    ]
+   }
+  ],
+  "Tienda": [
+   {
+    "valor": "jumbo-cl",
+    "motivo": "tienda fuera de México · no lanzamos ahí",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   },
+   {
+    "valor": "santaisabel-cl",
+    "motivo": "tienda fuera de México · no lanzamos ahí",
+    "fuente": "Data_Qcart",
+    "piezas": []
+   }
+  ],
+  "Touchpoint": [
+   {
+    "valor": "e-bebida5",
+    "motivo": "Data_Maggi declara que ese envío no se realizó",
+    "fuente": "Data_Maggi",
+    "piezas": []
+   },
+   {
+    "valor": "e-botanas5",
+    "motivo": "Data_Maggi declara que ese envío no se realizó",
+    "fuente": "Data_Maggi",
+    "piezas": []
+   },
+   {
+    "valor": "e-cooking5",
+    "motivo": "Data_Maggi declara que ese envío no se realizó",
+    "fuente": "Data_Maggi",
+    "piezas": []
+   }
+  ]
+ }
+}

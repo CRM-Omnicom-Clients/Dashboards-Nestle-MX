@@ -1,0 +1,1005 @@
+{
+ "cuando": "2026-08-20",
+ "cambios": 123,
+ "altas": [],
+ "avisos": [
+  "⚠ 001-P001: el doc dice que traía 70,421 y la hoja tiene 34,449 — se corrige igual, pero míralo",
+  "⚠ 001-P002: el doc dice que traía 54,332 y la hoja tiene 26,508 — se corrige igual, pero míralo",
+  "⚠ 001-P003: el doc dice que traía 19,865 y la hoja tiene 5,968 — se corrige igual, pero míralo",
+  "⚠ 001-P004: el doc dice que traía 18,063 y la hoja tiene 5,397 — se corrige igual, pero míralo",
+  "⚠ 001-P005: el doc dice que traía 75,467 y la hoja tiene 37,374 — se corrige igual, pero míralo",
+  "⚠ 001-P006: el doc dice que traía 57,965 y la hoja tiene 28,829 — se corrige igual, pero míralo",
+  "⚠ 001-P023: el doc dice que traía 34,450 y la hoja tiene 35,970 — se corrige igual, pero míralo",
+  "⚠ 001-P024: el doc dice que traía 5,968 y la hoja tiene 13,897 — se corrige igual, pero míralo",
+  "⚠ 001-P025: el doc dice que traía 37,374 y la hoja tiene 38,093 — se corrige igual, pero míralo",
+  "⚠ 001-P026: el doc dice que traía 5,397 y la hoja tiene 12,666 — se corrige igual, pero míralo",
+  "⚠ 001-P027: el doc dice que traía 28,829 y la hoja tiene 29,136 — se corrige igual, pero míralo",
+  "⚠ 001-P028: el doc dice que traía 26,508 y la hoja tiene 27,823 — se corrige igual, pero míralo"
+ ],
+ "plan": [
+  {
+   "pieza": "001-P001",
+   "fila": 2,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "79469",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P002",
+   "fila": 3,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "79542",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P003",
+   "fila": 4,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "79472",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P004",
+   "fila": 5,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "79543",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P005",
+   "fila": 6,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "79320",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P006",
+   "fila": 7,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "79541",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P023",
+   "fila": 70,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80970",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P024",
+   "fila": 71,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80931",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P025",
+   "fila": 72,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80879",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P026",
+   "fila": 73,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81284",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P027",
+   "fila": 74,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81286",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P028",
+   "fila": 75,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81283",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "009-P003",
+   "fila": 54,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83764",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "009-P002",
+   "fila": 53,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83765",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "009-P004",
+   "fila": 55,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83768",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P007",
+   "fila": 8,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80690",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P008",
+   "fila": 9,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80836",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P009",
+   "fila": 10,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80790",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P010",
+   "fila": 11,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80837",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P011",
+   "fila": 12,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80928",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P012",
+   "fila": 13,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81285",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P013",
+   "fila": 14,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81050",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P014",
+   "fila": 15,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81653",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P015",
+   "fila": 57,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83810",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P016",
+   "fila": 58,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83829",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P017",
+   "fila": 59,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83830",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P018",
+   "fila": 60,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83828",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P019",
+   "fila": 61,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83826",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P020",
+   "fila": 62,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84083",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P021",
+   "fila": 63,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83831",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P022",
+   "fila": 64,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84084",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P001",
+   "fila": 16,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81598",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P002",
+   "fila": 17,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81605",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P003",
+   "fila": 18,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81607",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P004",
+   "fila": 19,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81609",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P005",
+   "fila": 20,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81602",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P006",
+   "fila": 21,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81606",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P007",
+   "fila": 22,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81608",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P008",
+   "fila": 23,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81610",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P009",
+   "fila": 24,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81587",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P010",
+   "fila": 25,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81593",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P011",
+   "fila": 26,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81596",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P012",
+   "fila": 27,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81597",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P013",
+   "fila": 28,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81655",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P014",
+   "fila": 29,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81656",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P015",
+   "fila": 30,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81657",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P016",
+   "fila": 31,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "81658",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P017",
+   "fila": 32,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80559",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P018",
+   "fila": 33,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80590",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P019",
+   "fila": 34,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80558",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "002-P020",
+   "fila": 35,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "80589",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "003-P001",
+   "fila": 48,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "82906",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "003-P002",
+   "fila": 49,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83123",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "004-P001",
+   "fila": 36,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "82588",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "004-P002",
+   "fila": 37,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "82608",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "004-P003",
+   "fila": 38,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "82598",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "004-P004",
+   "fila": 39,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "82982",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "004-P005",
+   "fila": 40,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "82997",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "004-P006",
+   "fila": 41,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83254",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "004-P007",
+   "fila": 42,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83256",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "004-P008",
+   "fila": 43,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83255",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "004-P009",
+   "fila": 56,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83435",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "006-P001",
+   "fila": 65,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84005",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "006-P002",
+   "fila": 66,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84085",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "007-P001",
+   "fila": 67,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84253",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "007-P002",
+   "fila": 68,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84319",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "007-P003",
+   "fila": 69,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84372",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "007-P004",
+   "fila": 76,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84377",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "008-P001",
+   "fila": 44,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83104",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "008-P002",
+   "fila": 45,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83126",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "008-P003",
+   "fila": 46,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83323",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "008-P004",
+   "fila": 47,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83372",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "008-P005",
+   "fila": 50,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83373",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "008-P006",
+   "fila": 51,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83352",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "009-P001",
+   "fila": 52,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83347",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "009-P005",
+   "fila": 77,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83004",
+   "motivo": "identificador del creativo en SFMC"
+  },
+  {
+   "pieza": "001-P001",
+   "fila": 2,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "MARZO",
+   "motivo": "la dimensión que faltaba: journey 803867"
+  },
+  {
+   "pieza": "001-P002",
+   "fila": 3,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "MARZO",
+   "motivo": "la dimensión que faltaba: journey 803867"
+  },
+  {
+   "pieza": "001-P003",
+   "fila": 4,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "MARZO",
+   "motivo": "la dimensión que faltaba: journey 803867"
+  },
+  {
+   "pieza": "001-P004",
+   "fila": 5,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "MARZO",
+   "motivo": "la dimensión que faltaba: journey 803867"
+  },
+  {
+   "pieza": "001-P005",
+   "fila": 6,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "MARZO",
+   "motivo": "la dimensión que faltaba: journey 803867"
+  },
+  {
+   "pieza": "001-P006",
+   "fila": 7,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "MARZO",
+   "motivo": "la dimensión que faltaba: journey 803867"
+  },
+  {
+   "pieza": "001-P023",
+   "fila": 70,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "ABRIL",
+   "motivo": "la dimensión que faltaba: journey 863587"
+  },
+  {
+   "pieza": "001-P024",
+   "fila": 71,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "ABRIL",
+   "motivo": "la dimensión que faltaba: journey 863587"
+  },
+  {
+   "pieza": "001-P025",
+   "fila": 72,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "ABRIL",
+   "motivo": "la dimensión que faltaba: journey 863587"
+  },
+  {
+   "pieza": "001-P025",
+   "fila": 72,
+   "columna": "Content_Name",
+   "de": "…",
+   "a": "PURCHASE-EP1_AC_EM_A_V1_863587",
+   "motivo": "traía el ContentName de MARZO siendo la fila de ABRIL"
+  },
+  {
+   "pieza": "001-P026",
+   "fila": 73,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "ABRIL",
+   "motivo": "la dimensión que faltaba: journey 863587"
+  },
+  {
+   "pieza": "001-P027",
+   "fila": 74,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "ABRIL",
+   "motivo": "la dimensión que faltaba: journey 863587"
+  },
+  {
+   "pieza": "001-P027",
+   "fila": 74,
+   "columna": "Content_Name",
+   "de": "…",
+   "a": "FUP-PURCHASE-EP1_AC_EM_A_V1_863587",
+   "motivo": "traía el ContentName de MARZO siendo la fila de ABRIL"
+  },
+  {
+   "pieza": "001-P028",
+   "fila": 75,
+   "columna": "Oleada",
+   "de": "(vacío)",
+   "a": "ABRIL",
+   "motivo": "la dimensión que faltaba: journey 863587"
+  },
+  {
+   "pieza": "001-P001",
+   "fila": 2,
+   "columna": "Notas",
+   "de": "«Oleada MARZO (journey 803867). Su par de»",
+   "a": "Oleada MARZO (journey 803867). Su par de abril es 001-P023.",
+   "motivo": "el diagnóstico «dígitos transpuestos» era FALSO: son dos journeys distintos"
+  },
+  {
+   "pieza": "001-P002",
+   "fila": 3,
+   "columna": "Notas",
+   "de": "«Oleada MARZO (journey 803867). Su par de»",
+   "a": "Oleada MARZO (journey 803867). Su par de abril es 001-P028.",
+   "motivo": "el diagnóstico «dígitos transpuestos» era FALSO: son dos journeys distintos"
+  },
+  {
+   "pieza": "001-P003",
+   "fila": 4,
+   "columna": "Notas",
+   "de": "«Oleada MARZO (journey 803867). Su par de»",
+   "a": "Oleada MARZO (journey 803867). Su par de abril es 001-P024.",
+   "motivo": "el diagnóstico «dígitos transpuestos» era FALSO: son dos journeys distintos"
+  },
+  {
+   "pieza": "001-P004",
+   "fila": 5,
+   "columna": "Notas",
+   "de": "«Oleada MARZO (journey 803867). Su par de»",
+   "a": "Oleada MARZO (journey 803867). Su par de abril es 001-P026.",
+   "motivo": "el diagnóstico «dígitos transpuestos» era FALSO: son dos journeys distintos"
+  },
+  {
+   "pieza": "001-P005",
+   "fila": 6,
+   "columna": "Notas",
+   "de": "«Oleada MARZO (journey 803867). Su par de»",
+   "a": "Oleada MARZO (journey 803867). Su par de abril es 001-P025.",
+   "motivo": "el diagnóstico «dígitos transpuestos» era FALSO: son dos journeys distintos"
+  },
+  {
+   "pieza": "001-P006",
+   "fila": 7,
+   "columna": "Notas",
+   "de": "«Oleada MARZO (journey 803867). Su par de»",
+   "a": "Oleada MARZO (journey 803867). Su par de abril es 001-P027.",
+   "motivo": "el diagnóstico «dígitos transpuestos» era FALSO: son dos journeys distintos"
+  },
+  {
+   "pieza": "009-P006",
+   "fila": 89,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Perros",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P006",
+   "fila": 89,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83762",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P007",
+   "fila": 90,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Gatos",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P007",
+   "fila": 90,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83763",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P003",
+   "fila": 54,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Mixto",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P002",
+   "fila": 53,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Perros",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P008",
+   "fila": 91,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Gatos",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P008",
+   "fila": 91,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83766",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P009",
+   "fila": 92,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Mixto",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P009",
+   "fila": 92,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83767",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P004",
+   "fila": 55,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Perros",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P010",
+   "fila": 93,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Gatos",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P010",
+   "fila": 93,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83769",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P011",
+   "fila": 94,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Mixto",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P011",
+   "fila": 94,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83770",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P012",
+   "fila": 95,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Perros",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P012",
+   "fila": 95,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "83930",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P013",
+   "fila": 96,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Gatos",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P013",
+   "fila": 96,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84320",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P014",
+   "fila": 97,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Mixto",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P014",
+   "fila": 97,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84321",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P015",
+   "fila": 98,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Perros",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P015",
+   "fila": 98,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84322",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P016",
+   "fila": 99,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Gatos",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P016",
+   "fila": 99,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84323",
+   "motivo": "SFMC"
+  },
+  {
+   "pieza": "009-P017",
+   "fila": 100,
+   "columna": "Mascota",
+   "de": "(vacío)",
+   "a": "Mixto",
+   "motivo": "la mascota es su propia dimensión, no parte del segmento"
+  },
+  {
+   "pieza": "009-P017",
+   "fila": 100,
+   "columna": "Email_ID (de la DE de SFMC)",
+   "de": "(vacío)",
+   "a": "84261",
+   "motivo": "SFMC"
+  }
+ ]
+}

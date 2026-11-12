@@ -1,0 +1,154 @@
+{
+ "fecha": "2026-09-20",
+ "compartidos": 20,
+ "detalle": [
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_CAREER-FOCUSED_AC_EM_A_V1_803867",
+   "piezas": [
+    "001-P001",
+    "001-P023"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_PURCHASE-EP4_AC_EM_A_V1_863587",
+   "piezas": [
+    "001-P001",
+    "001-P023"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_CAREER-FOCUSED-FUP_AC_EM_A_V1_803867",
+   "piezas": [
+    "001-P002",
+    "001-P028"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_FUP-PURCHASE-EP4_AC_EM_A_V1_863587",
+   "piezas": [
+    "001-P002",
+    "001-P028"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_NEW-PARENTS_AC_EM_A_V1_803867",
+   "piezas": [
+    "001-P003",
+    "001-P024"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_PURCHASE-EP3_AC_EM_A_V1_863587",
+   "piezas": [
+    "001-P003",
+    "001-P024"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_NEW-PARENTS-FUP_AC_EM_A_V1_803867",
+   "piezas": [
+    "001-P004",
+    "001-P026"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_FUP-PURCHASE-EP3_AC_EM_A_V1_863587",
+   "piezas": [
+    "001-P004",
+    "001-P026"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_803867",
+   "piezas": [
+    "001-P005",
+    "001-P025"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS_AC_EM_A_V1_863587",
+   "piezas": [
+    "001-P005",
+    "001-P025"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_PURCHASE-EP1_AC_EM_A_V1_863587",
+   "piezas": [
+    "001-P005",
+    "001-P025"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_TRADITIONAL-PARENTS-FP_AC_EM_A_V1_803867",
+   "piezas": [
+    "001-P006",
+    "001-P027"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_FUP-TRADITIONAL-PARENTS_AC_EM_A_V1_863587",
+   "piezas": [
+    "001-P006",
+    "001-P027"
+   ]
+  },
+  {
+   "nombre": "J_AO-RECETAS-NESTLÉ-NC000600_1_IBS_MULT_MULT_MLT_MLTS_MX_ES_FUP-PURCHASE-EP1_AC_EM_A_V1_863587",
+   "piezas": [
+    "001-P006",
+    "001-P027"
+   ]
+  },
+  {
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PA_E3B3.NA",
+   "piezas": [
+    "009-P002",
+    "009-P009"
+   ]
+  },
+  {
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PA_E3B2.NA",
+   "piezas": [
+    "009-P002",
+    "009-P008"
+   ]
+  },
+  {
+   "nombre": "MX.Proplan.ATM_JB.User.Perros.Comunidad.CDP_Proplan_PP_E3A1.NA",
+   "piezas": [
+    "009-P003",
+    "009-P006"
+   ]
+  },
+  {
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PP_E3A2.NA",
+   "piezas": [
+    "009-P003",
+    "009-P007"
+   ]
+  },
+  {
+   "nombre": "MX.Proplan.ATM_JB.User.Mixto.Comunidad.CDP_Proplan_PO_E3C3.NA",
+   "piezas": [
+    "009-P004",
+    "009-P011"
+   ]
+  },
+  {
+   "nombre": "MX.Proplan.ATM_JB.User.Gatos.Comunidad.CDP_Proplan_PO_E3C2.NA",
+   "piezas": [
+    "009-P004",
+    "009-P010"
+   ]
+  }
+ ],
+ "tmp_en_links": [
+  "009-TMP-PA-E3-G",
+  "009-TMP-PA-E3-M",
+  "009-TMP-PO-E3-G",
+  "009-TMP-PO-E3-M",
+  "009-TMP-PP-E3-G",
+  "009-TMP-PP-E3-P"
+ ]
+}

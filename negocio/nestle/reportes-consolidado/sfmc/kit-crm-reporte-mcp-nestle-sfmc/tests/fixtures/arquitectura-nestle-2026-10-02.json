@@ -1,0 +1,1251 @@
+{
+ "capturado": "2026-10-02T17:32:54.410Z",
+ "mid": "10966050",
+ "des": {
+  "CRM_Reporte_Config": {
+   "key": "03A9BE5F-0C95-4901-BEB9-3A3BEBF77C6D",
+   "categoryId": "445199",
+   "creada": "2026-08-19T18:22:18.153",
+   "campos": [
+    {
+     "name": "ConfigKey",
+     "type": "Text",
+     "length": 50,
+     "ordinal": 1,
+     "pk": true,
+     "required": true
+    },
+    {
+     "name": "PiezaID",
+     "type": "Text",
+     "length": 30,
+     "ordinal": 2,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "ContentName",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 3,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "CodigoNC",
+     "type": "Text",
+     "length": 20,
+     "ordinal": 4,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "JourneyUUID",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 5,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "BU",
+     "type": "Text",
+     "length": 30,
+     "ordinal": 6,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Marca",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 7,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Campana",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 8,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Touchpoint",
+     "type": "Text",
+     "length": 40,
+     "ordinal": 9,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Segmento",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 10,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "EmailType",
+     "type": "Text",
+     "length": 30,
+     "ordinal": 11,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Estado",
+     "type": "Text",
+     "length": 40,
+     "ordinal": 12,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Activo",
+     "type": "Text",
+     "length": 3,
+     "ordinal": 13,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Notas",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 14,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "EmailID",
+     "type": "Number",
+     "length": null,
+     "ordinal": 15,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "EmailName",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 16,
+     "pk": false,
+     "required": false
+    }
+   ],
+   "pk": [
+    "ConfigKey"
+   ],
+   "filas": 112
+  },
+  "CRM_Email_Detalle": {
+   "key": "E6A6AA43-BC30-443D-AA79-4ED324F45BA5",
+   "categoryId": "445199",
+   "creada": "2026-08-19T18:23:26.483",
+   "campos": [
+    {
+     "name": "RowKey",
+     "type": "Text",
+     "length": 40,
+     "ordinal": 1,
+     "pk": true,
+     "required": true
+    },
+    {
+     "name": "JobID",
+     "type": "Number",
+     "length": null,
+     "ordinal": 2,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "SendDay",
+     "type": "Date",
+     "length": null,
+     "ordinal": 3,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "ConfigKey",
+     "type": "Text",
+     "length": 50,
+     "ordinal": 4,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "BU",
+     "type": "Text",
+     "length": 30,
+     "ordinal": 5,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Marca",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 6,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Campana",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 7,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Touchpoint",
+     "type": "Text",
+     "length": 40,
+     "ordinal": 8,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Segmento",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 9,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Content_Name",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 10,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Subject",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 11,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Sender_Name",
+     "type": "Text",
+     "length": 100,
+     "ordinal": 12,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Send_Date",
+     "type": "Date",
+     "length": null,
+     "ordinal": 13,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Journey_Name",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 14,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Journey_UUID",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 15,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Journey_ID_Datorama",
+     "type": "Text",
+     "length": 20,
+     "ordinal": 16,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Codigo_NC",
+     "type": "Text",
+     "length": 20,
+     "ordinal": 17,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Sends",
+     "type": "Number",
+     "length": null,
+     "ordinal": 18,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Deliveries",
+     "type": "Number",
+     "length": null,
+     "ordinal": 19,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Bounces",
+     "type": "Number",
+     "length": null,
+     "ordinal": 20,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Bounces_Soft",
+     "type": "Number",
+     "length": null,
+     "ordinal": 21,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Unique_Opens",
+     "type": "Number",
+     "length": null,
+     "ordinal": 22,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Total_Opens",
+     "type": "Number",
+     "length": null,
+     "ordinal": 23,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Unique_Clicks",
+     "type": "Number",
+     "length": null,
+     "ordinal": 24,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Total_Clicks",
+     "type": "Number",
+     "length": null,
+     "ordinal": 25,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Unique_Unsubs",
+     "type": "Number",
+     "length": null,
+     "ordinal": 26,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Delivery_Rate",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 27,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Open_Rate",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 28,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Click_Rate",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 29,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "CTOR",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 30,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Bounce_Rate",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 31,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "LastRefresh",
+     "type": "Date",
+     "length": null,
+     "ordinal": 32,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_ID",
+     "type": "Number",
+     "length": null,
+     "ordinal": 33,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Es_FUP",
+     "type": "Text",
+     "length": 3,
+     "ordinal": 34,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Total_Unsubs",
+     "type": "Number",
+     "length": null,
+     "ordinal": 35,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Audience_DE",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 36,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Audience_Volume",
+     "type": "Number",
+     "length": null,
+     "ordinal": 37,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "EmailName",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 38,
+     "pk": false,
+     "required": false
+    }
+   ],
+   "pk": [
+    "RowKey"
+   ],
+   "filas": 752
+  },
+  "CRM_Email_Piezas": {
+   "key": "9DA78867-0F91-4CE9-97CD-B2F43BB7862E",
+   "categoryId": "445199",
+   "creada": "2026-08-19T18:23:52.877",
+   "campos": [
+    {
+     "name": "ConfigKey",
+     "type": "Text",
+     "length": 50,
+     "ordinal": 1,
+     "pk": true,
+     "required": true
+    },
+    {
+     "name": "PiezaID",
+     "type": "Text",
+     "length": 30,
+     "ordinal": 2,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Codigo_NC",
+     "type": "Text",
+     "length": 20,
+     "ordinal": 4,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Journey_Name",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 5,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Journey_UUID",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 6,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "BU",
+     "type": "Text",
+     "length": 30,
+     "ordinal": 7,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Marca",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 8,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Campana",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 9,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Touchpoint",
+     "type": "Text",
+     "length": 40,
+     "ordinal": 10,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Segmento",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 11,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Fecha_Primer_Envio",
+     "type": "Date",
+     "length": null,
+     "ordinal": 12,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Fecha_Ultimo_Envio",
+     "type": "Date",
+     "length": null,
+     "ordinal": 13,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "N_Jobs",
+     "type": "Number",
+     "length": null,
+     "ordinal": 14,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Dias_Con_Envio",
+     "type": "Number",
+     "length": null,
+     "ordinal": 15,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Sends",
+     "type": "Number",
+     "length": null,
+     "ordinal": 16,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Deliveries",
+     "type": "Number",
+     "length": null,
+     "ordinal": 17,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Bounces",
+     "type": "Number",
+     "length": null,
+     "ordinal": 18,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Unique_Opens",
+     "type": "Number",
+     "length": null,
+     "ordinal": 19,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Unique_Clicks",
+     "type": "Number",
+     "length": null,
+     "ordinal": 20,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Unique_Unsubs",
+     "type": "Number",
+     "length": null,
+     "ordinal": 21,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Delivery_Rate",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 22,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Open_Rate",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 23,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Click_Rate",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 24,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "CTOR",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 25,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Bounce_Rate",
+     "type": "Decimal",
+     "length": 6,
+     "ordinal": 26,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "LastRefresh",
+     "type": "Date",
+     "length": null,
+     "ordinal": 27,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_ID",
+     "type": "Number",
+     "length": null,
+     "ordinal": 28,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Subject",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 29,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Es_FUP",
+     "type": "Text",
+     "length": 3,
+     "ordinal": 30,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Journey_ID_Datorama",
+     "type": "Text",
+     "length": 20,
+     "ordinal": 31,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Piezas_Mismo_Asset",
+     "type": "Number",
+     "length": null,
+     "ordinal": 32,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Total_Unsubs",
+     "type": "Number",
+     "length": null,
+     "ordinal": 33,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Audience_DE",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 34,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Audience_Volume",
+     "type": "Number",
+     "length": null,
+     "ordinal": 35,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "EmailName",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 36,
+     "pk": false,
+     "required": false
+    }
+   ],
+   "pk": [
+    "ConfigKey"
+   ],
+   "filas": 111
+  },
+  "CRM_Reporte_Auditoria": {
+   "key": "3CC31E3D-0384-47E8-B851-575B6C5D08D0",
+   "categoryId": "445199",
+   "creada": "2026-08-19T18:24:25.4",
+   "campos": [
+    {
+     "name": "ConfigKey",
+     "type": "Text",
+     "length": 50,
+     "ordinal": 1,
+     "pk": true,
+     "required": true
+    },
+    {
+     "name": "PiezaID",
+     "type": "Text",
+     "length": 30,
+     "ordinal": 2,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Content_Name",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 3,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Campana",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 4,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Marca",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 5,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Activo",
+     "type": "Text",
+     "length": 3,
+     "ordinal": 6,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "JobsEncontrados",
+     "type": "Number",
+     "length": null,
+     "ordinal": 7,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "DiasConEnvio",
+     "type": "Number",
+     "length": null,
+     "ordinal": 8,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "EnviosTotales",
+     "type": "Number",
+     "length": null,
+     "ordinal": 9,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "PrimerEnvio",
+     "type": "Date",
+     "length": null,
+     "ordinal": 10,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "UltimoEnvio",
+     "type": "Date",
+     "length": null,
+     "ordinal": 11,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Estado",
+     "type": "Text",
+     "length": 20,
+     "ordinal": 12,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "LastRun",
+     "type": "Date",
+     "length": null,
+     "ordinal": 13,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Asset_Declarado",
+     "type": "Number",
+     "length": null,
+     "ordinal": 14,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Asset_Real",
+     "type": "Number",
+     "length": null,
+     "ordinal": 15,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Piezas_Mismo_Asset",
+     "type": "Number",
+     "length": null,
+     "ordinal": 16,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "EmailName",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 17,
+     "pk": false,
+     "required": false
+    }
+   ],
+   "pk": [
+    "ConfigKey"
+   ],
+   "filas": 112
+  },
+  "CRM_Email_Links": {
+   "key": "608FD76A-3398-4AAE-9269-A3C6B0D95810",
+   "categoryId": "445199",
+   "creada": "2026-08-20T15:26:24.43",
+   "campos": [
+    {
+     "name": "RowKey",
+     "type": "Text",
+     "length": 400,
+     "ordinal": 1,
+     "pk": true,
+     "required": true
+    },
+    {
+     "name": "ConfigKey",
+     "type": "Text",
+     "length": 50,
+     "ordinal": 2,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Campana",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 3,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Touchpoint",
+     "type": "Text",
+     "length": 40,
+     "ordinal": 4,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Segmento",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 5,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Content_Name",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 6,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_Subject",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 7,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Email_ID",
+     "type": "Number",
+     "length": null,
+     "ordinal": 8,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Link_Name",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 9,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Link_URL",
+     "type": "Text",
+     "length": 500,
+     "ordinal": 10,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Clicks_Total",
+     "type": "Number",
+     "length": null,
+     "ordinal": 11,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Clicks_Unique",
+     "type": "Number",
+     "length": null,
+     "ordinal": 12,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "LastRefresh",
+     "type": "Date",
+     "length": null,
+     "ordinal": 13,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "EmailName",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 14,
+     "pk": false,
+     "required": false
+    }
+   ],
+   "pk": [
+    "RowKey"
+   ],
+   "filas": 980
+  },
+  "CRM_Audiencias": {
+   "key": "F4811FBB-1BB6-4BD0-85EF-EBE08A97CB08",
+   "categoryId": "445199",
+   "creada": "2026-08-20T16:22:24.237",
+   "campos": [
+    {
+     "name": "ConfigKey",
+     "type": "Text",
+     "length": 50,
+     "ordinal": 1,
+     "pk": true,
+     "required": true
+    },
+    {
+     "name": "Journey_UUID",
+     "type": "Text",
+     "length": 60,
+     "ordinal": 2,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Audience_DE",
+     "type": "Text",
+     "length": 200,
+     "ordinal": 3,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "Audience_Volume",
+     "type": "Number",
+     "length": null,
+     "ordinal": 4,
+     "pk": false,
+     "required": false
+    },
+    {
+     "name": "LastRefresh",
+     "type": "Date",
+     "length": null,
+     "ordinal": 5,
+     "pk": false,
+     "required": false
+    }
+   ],
+   "pk": [
+    "ConfigKey"
+   ],
+   "filas": 99
+  }
+ },
+ "deLegacyYTemporales": [
+  {
+   "nombre": "CRM_RecetasJourney",
+   "key": "0FF146CB-BB34-492B-A00E-D7DB5F623705",
+   "categoryId": "294063",
+   "creada": "2021-10-01T06:32:13.653",
+   "sendable": "true"
+  },
+  {
+   "nombre": "CRM_Email_Performance",
+   "key": "E35FA166-C0DC-425A-B3C0-7EBC0CF0A419",
+   "categoryId": "445199",
+   "creada": "2026-08-02T22:52:12.373",
+   "sendable": "false"
+  }
+ ],
+ "queries": {
+  "CRM_Audiencias_Vol_Load": {
+   "id": "ee50e83c-f2c1-4389-b63f-2690cfcec8f9",
+   "key": "CRM_Audiencias_Vol_Load",
+   "name": "CRM_Audiencias_Vol_Load",
+   "categoryId": 460279,
+   "targetName": "CRM_Audiencias",
+   "targetKey": "F4811FBB-1BB6-4BD0-85EF-EBE08A97CB08",
+   "targetUpdateTypeId": 1,
+   "sqlLen": 5968,
+   "queryText": "/* CRM_Audiencias_Vol_Load — volumen por COUNT estatico. Regenerado 26-ago. */\nSELECT m.ConfigKey AS ConfigKey, m.Journey_UUID AS Journey_UUID, m.Audience_DE AS Audience_DE, ISNULL(cnt.N,0) AS Audience_Volume, GETDATE() AS LastRefresh\nFROM CRM_Audiencias m\nLEFT JOIN (\n    SELECT 'TD_SFMC_GLOBAL_IPG_MEX_RN_CARRER FOCUSED_MX_022026_FILTERED' AS DEName, COUNT(*) AS N FROM [TD_SFMC_GLOBAL_IPG_MEX_RN_CARRER FOCUSED_MX_022026_FILTERED]\n    UNION ALL\n    SELECT 'TD_SFMC_GLOBAL_IPG_MEX_RN_NEW PARENTS_MX_022026_FILTERED' AS DEName, COUNT(*) AS N FROM [TD_SFMC_GLOBAL_IPG_MEX_RN_NEW PARENTS_MX_022026_FILTERED]\n    UNION ALL\n    SELECT 'TD_SFMC_GLOBAL_IPG_MEX_RN_ACTIVOS_MX_031226_FILTERED' AS DEName, COUNT(*) AS N FROM [TD_SFMC_GLOBAL_IPG_MEX_RN_ACTIVOS_MX_031226_FILTERED]\n    UNION ALL\n    SELECT 'TD_SFMC_GLOBAL_IPG_MEX_RN_DINKIES Y EMPTY NESTERS_MX_022026_FILTERED' AS DEName, COUNT(*) AS N FROM [TD_SFMC_GLOBAL_IPG_MEX_RN_DINKIES Y EMPTY NESTERS_MX_022026_FILTERED]\n    UNION ALL\n    SELECT 'recetas_aon_loyalty_opens' AS DEName, COUNT(*) AS N FROM [recetas_aon_loyalty_opens]\n    UNION ALL\n    SELECT 'AON PRODUCTIVE ADULTS filtrado final' AS DEName, COUNT(*) AS N FROM [AON PRODUCTIVE ADULTS filtrado final]\n    UNION ALL\n    SELECT 'AON Young Creatives filtrado final' AS DEName, COUNT(*) AS N FROM [AON Young Creatives filtrado final]\n    UNION ALL\n    SELECT 'AON Wellness Navigators filtrado final' AS DEName, COUNT(*) AS N FROM [AON Wellness Navigators filtrado final]\n    UNION ALL\n    SELECT 'AON sin cluster exclusion segmentos' AS DEName, COUNT(*) AS N FROM [AON sin cluster exclusion segmentos]\n    UNION ALL\n    SELECT 'TD_SFMC_GLOBAL_IPG_MEX_RN_TRADITIONAL PARENTS_MX_022026_FILTERED' AS DEName, COUNT(*) AS N FROM [TD_SFMC_GLOBAL_IPG_MEX_RN_TRADITIONAL PARENTS_MX_022026_FILTERED]\n    UNION ALL\n    SELECT 'Test_majo_y_sofi' AS DEName, COUNT(*) AS N FROM [Test_majo_y_sofi]\n    UNION ALL\n    SELECT 'hotcakes_crafting_practicos_p2' AS DEName, COUNT(*) AS N FROM [hotcakes_crafting_practicos_p2]\n    UNION ALL\n    SELECT 'hotcakes_crafting_indulgentes_p3' AS DEName, COUNT(*) AS N FROM [hotcakes_crafting_indulgentes_p3]\n    UNION ALL\n    SELECT 'hotcakes_crafting_familykids_p4' AS DEName, COUNT(*) AS N FROM [hotcakes_crafting_familykids_p4]\n    UNION ALL\n    SELECT 'hotcakes_crafting_saludables_p1' AS DEName, COUNT(*) AS N FROM [hotcakes_crafting_saludables_p1]\n    UNION ALL\n    SELECT 'recetas_hotcakes_loyalty_p' AS DEName, COUNT(*) AS N FROM [recetas_hotcakes_loyalty_p]\n    UNION ALL\n    SELECT 'TD_SFMC_GLOBAL_IPG_MEX_RN_HOTCAKES_SALADOS_20260401' AS DEName, COUNT(*) AS N FROM [TD_SFMC_GLOBAL_IPG_MEX_RN_HOTCAKES_SALADOS_20260401]\n    UNION ALL\n    SELECT 'Lechera-AudienciasAON-2026 FINAL' AS DEName, COUNT(*) AS N FROM [Lechera-AudienciasAON-2026 FINAL]\n    UNION ALL\n    SELECT 'maggi_seleccion_botanas_FILTRADO' AS DEName, COUNT(*) AS N FROM [maggi_seleccion_botanas_FILTRADO]\n    UNION ALL\n    SELECT 'maggi_seleccion_moderncooking_FILTRADO' AS DEName, COUNT(*) AS N FROM [maggi_seleccion_moderncooking_FILTRADO]\n    UNION ALL\n    SELECT 'maggi_seleccion_bebidas_FILTRADO' AS DEName, COUNT(*) AS N FROM [maggi_seleccion_bebidas_FILTRADO]\n    UNION ALL\n    SELECT '4to partido bebidas filtrado' AS DEName, COUNT(*) AS N FROM [4to partido bebidas filtrado]\n    UNION ALL\n    SELECT 'ice_filtrado_final' AS DEName, COUNT(*) AS N FROM [ice_filtrado_final]\n    UNION ALL\n    SELECT '3001577_final_E-Hack1 Concentrate' AS DEName, COUNT(*) AS N FROM [3001577_final_E-Hack1 Concentrate]\n    UNION ALL\n    SELECT '3001576_final_E-Hack2 Concentrate' AS DEName, COUNT(*) AS N FROM [3001576_final_E-Hack2 Concentrate]\n    UNION ALL\n    SELECT '2948950_EMAIL_NESCAFE_DESPERTAR1_DE_FILTRADA' AS DEName, COUNT(*) AS N FROM [2948950_EMAIL_NESCAFE_DESPERTAR1_DE_FILTRADA]\n    UNION ALL\n    SELECT '2948954_EMAIL_NESCAFE_DESPERTAR2_DE_FILTRADA' AS DEName, COUNT(*) AS N FROM [2948954_EMAIL_NESCAFE_DESPERTAR2_DE_FILTRADA]\n    UNION ALL\n    SELECT '2952340_Envio1A PROPLAN_Filtrado' AS DEName, COUNT(*) AS N FROM [2952340_Envio1A PROPLAN_Filtrado]\n    UNION ALL\n    SELECT 'DE_CDP_Proplan_Envio3B' AS DEName, COUNT(*) AS N FROM [DE_CDP_Proplan_Envio3B]\n    UNION ALL\n    SELECT 'DE_CDP_Proplan_Envio3A' AS DEName, COUNT(*) AS N FROM [DE_CDP_Proplan_Envio3A]\n    UNION ALL\n    SELECT 'DE_CDP_Proplan_Envio3C' AS DEName, COUNT(*) AS N FROM [DE_CDP_Proplan_Envio3C]\n    UNION ALL\n    SELECT 'DE_CDP_Proplan_Envio4B' AS DEName, COUNT(*) AS N FROM [DE_CDP_Proplan_Envio4B]\n    UNION ALL\n    SELECT 'DE_CDP_Proplan_Envio4A' AS DEName, COUNT(*) AS N FROM [DE_CDP_Proplan_Envio4A]\n    UNION ALL\n    SELECT 'Junio AON 2 E-APP filtrado final' AS DEName, COUNT(*) AS N FROM [Junio AON 2 E-APP filtrado final]\n    UNION ALL\n    SELECT 'Junio AON 2 E-PROP2 filtrado final' AS DEName, COUNT(*) AS N FROM [Junio AON 2 E-PROP2 filtrado final]\n    UNION ALL\n    SELECT 'E-J4 Liga MX CON REGION filtrado' AS DEName, COUNT(*) AS N FROM [E-J4 Liga MX CON REGION filtrado]\n    UNION ALL\n    SELECT 'E-J4 Liga MX SIN REGION filtrado' AS DEName, COUNT(*) AS N FROM [E-J4 Liga MX SIN REGION filtrado]\n    UNION ALL\n    SELECT '3024241_Concentrate ERIT-1' AS DEName, COUNT(*) AS N FROM [3024241_Concentrate ERIT-1]\n    UNION ALL\n    SELECT '3024222_ICE Email Enrch 1' AS DEName, COUNT(*) AS N FROM [3024222_ICE Email Enrch 1]\n    UNION ALL\n    SELECT '3024242_Concentrate ERIT_2' AS DEName, COUNT(*) AS N FROM [3024242_Concentrate ERIT_2]\n    UNION ALL\n    SELECT 'ICE E-P1' AS DEName, COUNT(*) AS N FROM [ICE E-P1]\n    UNION ALL\n    SELECT 'Junio AON 2 E-PROP1 filtrado final' AS DEName, COUNT(*) AS N FROM [Junio AON 2 E-PROP1 filtrado final]\n    UNION ALL\n    SELECT 'E-J5 Liga MX SIN REGION filtrado PARTICION B' AS DEName, COUNT(*) AS N FROM [E-J5 Liga MX SIN REGION filtrado PARTICION B]\n    UNION ALL\n    SELECT 'E-J5 Liga MX CON REGION filtrado PARTICION B' AS DEName, COUNT(*) AS N FROM [E-J5 Liga MX CON REGION filtrado PARTICION B]\n) cnt ON cnt.DEName = m.Audience_DE",
+   "enRutinaDeAutomation": true
+  },
+  "CRM_Email_Detalle_Load": {
+   "id": "452234b4-4939-42a7-bc34-9b628782c896",
+   "key": "CRM_Email_Detalle_Load",
+   "name": "CRM_Email_Detalle_Load",
+   "categoryId": 460279,
+   "targetName": "CRM_Email_Detalle",
+   "targetKey": "E6A6AA43-BC30-443D-AA79-4ED324F45BA5",
+   "targetUpdateTypeId": 1,
+   "sqlLen": 8008,
+   "queryText": "/*  CRM_Email_Detalle — mantenida por Hive\n    Grano: 1 renglon por JobID x dia de ENVIO. Solo las piezas activas del catalogo.\n    Ventana: eventos desde 2026-03-01.  Update type: Update (upsert por RowKey).\n\n    ATRIBUCION: las aperturas/clicks/rebotes se cuentan en el dia en que SALIO el\n    correo, no en el dia del evento. Por eso cada evento se une de vuelta a _Sent por\n    JobID+ListID+BatchID+SubscriberID y hereda SU fecha. Sin esto aparecen dias con\n    aperturas y cero envios, y Delivered sale negativo.\n\n    RTRIM en el join: SFMC rellena _Job.EmailName a 100 chars con espacios; el\n    catalogo trae el nombre limpio. Sin RTRIM no matchea NADA.                      */\n\nSELECT\n    m.RowKey                                    AS RowKey,\n    m.JobID                                     AS JobID,\n    m.SendDay                                   AS SendDay,\n    MAX(c.ConfigKey)                            AS ConfigKey,\n    MAX(c.BU)                                   AS BU,\n    MAX(c.Marca)                                AS Marca,\n    MAX(c.Campana)                              AS Campana,\n    MAX(c.Touchpoint)                           AS Touchpoint,\n    MAX(c.Segmento)                             AS Segmento,\n    MAX(RTRIM(j.EmailName))                     AS EmailName,\n    MAX(RTRIM(j.EmailSubject))                  AS Email_Subject,\n    MAX(RTRIM(j.FromName))                      AS Email_Sender_Name,\n    m.SendDay                                   AS Send_Date,\n    MAX(RTRIM(jr.JourneyName))                  AS Journey_Name,\n    MAX(jr.JourneyID)                           AS Journey_UUID,\n    MAX(c.CodigoNC)                             AS Codigo_NC,\n    MAX(au.Audience_DE)                          AS Audience_DE,\n    MAX(au.Audience_Volume)                     AS Audience_Volume,\n\n    /*  Email_ID = identidad del CREATIVO en SFMC. Sobrevive a los renombres, asi que\n        delata cuando dos ConfigKey distintos apuntan al mismo correo. NO es llave: el\n        mismo creativo se reusa entre campanas y meses. La llave sigue siendo el JobID. */\n    MAX(j.EmailID)                              AS Email_ID,\n\n    /*  Es_FUP segun el NOMBRE en SFMC, no segun el catalogo: asi se puede contrastar\n        contra Touchpoint y ver donde no coinciden.                                     */\n    MAX(CASE WHEN RTRIM(j.EmailName) LIKE '%FUP%'\n               OR RTRIM(j.EmailName) LIKE '%-FP[_ -]%'\n               OR RTRIM(j.EmailName) LIKE '%-FP'\n             THEN 'Si' ELSE 'No' END)           AS Es_FUP,\n\n    /*  El numero final del Content Name = el ID de journey que usa Datorama\n        (803867 = AON marzo, 863587 = AON abril). Es el que permite cruzar.             */\n    MAX(CASE WHEN CHARINDEX('_', REVERSE(RTRIM(j.EmailName))) BETWEEN 2 AND 9\n               AND ISNUMERIC(RIGHT(RTRIM(j.EmailName),\n                     CHARINDEX('_', REVERSE(RTRIM(j.EmailName))) - 1)) = 1\n             THEN RIGHT(RTRIM(j.EmailName),\n                     CHARINDEX('_', REVERSE(RTRIM(j.EmailName))) - 1)\n             ELSE NULL END)                     AS Journey_ID_Datorama,\n    MAX(m.Sends)                                AS Email_Sends,\n    CASE WHEN MAX(m.Sends) - MAX(m.Bounces) < 0 THEN 0\n         ELSE MAX(m.Sends) - MAX(m.Bounces) END AS Email_Deliveries,\n    MAX(m.Bounces)                              AS Email_Bounces,\n    MAX(m.BouncesSoft)                          AS Email_Bounces_Soft,\n    MAX(m.UOpens)                               AS Email_Unique_Opens,\n    MAX(m.TOpens)                               AS Email_Total_Opens,\n    MAX(m.UClicks)                              AS Email_Unique_Clicks,\n    MAX(m.TClicks)                              AS Email_Total_Clicks,\n    MAX(m.Unsubs)                               AS Email_Total_Unsubs,\n    MAX(m.UUnsubs)                              AS Email_Unique_Unsubs,\n    CASE WHEN MAX(m.Sends) = 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * (MAX(m.Sends) - MAX(m.Bounces)) / MAX(m.Sends)) END AS Delivery_Rate,\n    CASE WHEN MAX(m.Sends) - MAX(m.Bounces) <= 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * MAX(m.UOpens) / (MAX(m.Sends) - MAX(m.Bounces))) END AS Open_Rate,\n    CASE WHEN MAX(m.Sends) - MAX(m.Bounces) <= 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * MAX(m.UClicks) / (MAX(m.Sends) - MAX(m.Bounces))) END AS Click_Rate,\n    CASE WHEN MAX(m.UOpens) = 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * MAX(m.UClicks) / MAX(m.UOpens)) END AS CTOR,\n    CASE WHEN MAX(m.Sends) = 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * MAX(m.Bounces) / MAX(m.Sends)) END AS Bounce_Rate,\n    GETDATE()                                   AS LastRefresh\nFROM (\n    SELECT\n        CONVERT(varchar(20), x.JobID) + '_' + CONVERT(varchar(8), x.SendDay, 112) AS RowKey,\n        x.JobID              AS JobID,\n        x.SendDay            AS SendDay,\n        SUM(x.Sends)         AS Sends,\n        SUM(x.Bounces)       AS Bounces,\n        SUM(x.BouncesSoft)   AS BouncesSoft,\n        SUM(x.UOpens)        AS UOpens,\n        SUM(x.TOpens)        AS TOpens,\n        SUM(x.UClicks)       AS UClicks,\n        SUM(x.TClicks)       AS TClicks,\n        SUM(x.Unsubs)        AS Unsubs,\n        SUM(x.UUnsubs)       AS UUnsubs\n    FROM (\n            SELECT JobID, CONVERT(date, EventDate) AS SendDay,\n                   COUNT(*) AS Sends, 0 AS Bounces, 0 AS BouncesSoft,\n                   0 AS UOpens, 0 AS TOpens, 0 AS UClicks, 0 AS TClicks, 0 AS Unsubs, 0 AS UUnsubs\n            FROM _Sent\n            WHERE EventDate >= '2026-03-01'\n            GROUP BY JobID, CONVERT(date, EventDate)\n        UNION ALL\n            SELECT s.JobID, CONVERT(date, s.EventDate),\n                   0, COUNT(*),\n                   SUM(CASE WHEN b.BounceCategory LIKE 'Soft%' THEN 1 ELSE 0 END),\n                   0, 0, 0, 0, 0, 0\n            FROM _Bounce b\n            JOIN _Sent s ON s.JobID = b.JobID AND s.ListID = b.ListID\n                        AND s.BatchID = b.BatchID AND s.SubscriberID = b.SubscriberID\n            WHERE s.EventDate >= '2026-03-01'\n            GROUP BY s.JobID, CONVERT(date, s.EventDate)\n        UNION ALL\n            SELECT s.JobID, CONVERT(date, s.EventDate),\n                   0, 0, 0,\n                   SUM(CASE WHEN o.IsUnique = 1 THEN 1 ELSE 0 END), COUNT(*),\n                   0, 0, 0, 0\n            FROM _Open o\n            JOIN _Sent s ON s.JobID = o.JobID AND s.ListID = o.ListID\n                        AND s.BatchID = o.BatchID AND s.SubscriberID = o.SubscriberID\n            WHERE s.EventDate >= '2026-03-01'\n            GROUP BY s.JobID, CONVERT(date, s.EventDate)\n        UNION ALL\n            SELECT s.JobID, CONVERT(date, s.EventDate),\n                   0, 0, 0, 0, 0,\n                   SUM(CASE WHEN k.IsUnique = 1 THEN 1 ELSE 0 END), COUNT(*),\n                   0, 0\n            FROM _Click k\n            JOIN _Sent s ON s.JobID = k.JobID AND s.ListID = k.ListID\n                        AND s.BatchID = k.BatchID AND s.SubscriberID = k.SubscriberID\n            WHERE s.EventDate >= '2026-03-01'\n            GROUP BY s.JobID, CONVERT(date, s.EventDate)\n        UNION ALL\n            SELECT s.JobID, CONVERT(date, s.EventDate),\n                   0, 0, 0, 0, 0, 0, 0,\n                   COUNT(*), COUNT(DISTINCT u.SubscriberID)\n            FROM _Unsubscribe u\n            JOIN _Sent s ON s.JobID = u.JobID AND s.ListID = u.ListID\n                        AND s.BatchID = u.BatchID AND s.SubscriberID = u.SubscriberID\n            WHERE s.EventDate >= '2026-03-01'\n            GROUP BY s.JobID, CONVERT(date, s.EventDate)\n    ) x\n    GROUP BY x.JobID, x.SendDay\n) m\nINNER JOIN _Job j\n        ON j.JobID = m.JobID\nINNER JOIN CRM_Reporte_Config c\n        ON RTRIM(j.EmailName) = c.EmailName\n       AND c.Activo = 'Si'\n       LEFT  JOIN CRM_Audiencias au ON au.ConfigKey = c.ConfigKey\nLEFT  JOIN _JourneyActivity ja\n        ON ja.JourneyActivityObjectID = j.TriggererSendDefinitionObjectID\nLEFT  JOIN _Journey jr\n        ON jr.VersionID = ja.VersionID\nGROUP BY m.RowKey, m.JobID, m.SendDay",
+   "enRutinaDeAutomation": true
+  },
+  "CRM_Email_Links_Load": {
+   "id": "9f4c9f45-d08a-43df-afc7-6d511157c7cd",
+   "key": "CRM_Email_Links_Load",
+   "name": "CRM_Email_Links_Load",
+   "categoryId": 460279,
+   "targetName": "CRM_Email_Links",
+   "targetKey": "608FD76A-3398-4AAE-9269-A3C6B0D95810",
+   "targetUpdateTypeId": 0,
+   "sqlLen": 3123,
+   "queryText": "/*  CRM_Email_Links — clicks por link/boton por pieza, filtrado por catalogo.\n    Link_Name: el nombre del boton en SFMC; si viene vacio (57% de los links no traen\n    LinkName), se deriva del destino (dominio + ruta). Link_URL: destino limpio (sin AMPscript). */\nSELECT\n    LEFT(c.ConfigKey + '|' + RTRIM(k.URL), 400)  AS RowKey,\n    MAX(c.ConfigKey)                             AS ConfigKey,\n    MAX(c.Campana)                               AS Campana,\n    MAX(c.Touchpoint)                            AS Touchpoint,\n    MAX(c.Segmento)                              AS Segmento,\n    MAX(RTRIM(j.EmailName))                      AS EmailName,\n    MAX(RTRIM(j.EmailSubject))                   AS Email_Subject,\n    MAX(j.EmailID)                               AS Email_ID,\n    CASE WHEN MAX(RTRIM(k.LinkName)) <> '' THEN MAX(RTRIM(k.LinkName))\n         ELSE LEFT(REPLACE(REPLACE(REPLACE(\n        CASE WHEN CHARINDEX('?', MAX(CASE WHEN CHARINDEX('http', RTRIM(k.URL)) > 0\n        THEN SUBSTRING(RTRIM(k.URL),\n               CHARINDEX('http', RTRIM(k.URL)),\n               CHARINDEX('''', RTRIM(k.URL) + '''', CHARINDEX('http', RTRIM(k.URL)))\n                 - CHARINDEX('http', RTRIM(k.URL)))\n        ELSE RTRIM(k.URL) END)) > 0\n             THEN LEFT(MAX(CASE WHEN CHARINDEX('http', RTRIM(k.URL)) > 0\n        THEN SUBSTRING(RTRIM(k.URL),\n               CHARINDEX('http', RTRIM(k.URL)),\n               CHARINDEX('''', RTRIM(k.URL) + '''', CHARINDEX('http', RTRIM(k.URL)))\n                 - CHARINDEX('http', RTRIM(k.URL)))\n        ELSE RTRIM(k.URL) END), CHARINDEX('?', MAX(CASE WHEN CHARINDEX('http', RTRIM(k.URL)) > 0\n        THEN SUBSTRING(RTRIM(k.URL),\n               CHARINDEX('http', RTRIM(k.URL)),\n               CHARINDEX('''', RTRIM(k.URL) + '''', CHARINDEX('http', RTRIM(k.URL)))\n                 - CHARINDEX('http', RTRIM(k.URL)))\n        ELSE RTRIM(k.URL) END)) - 1)\n             ELSE MAX(CASE WHEN CHARINDEX('http', RTRIM(k.URL)) > 0\n        THEN SUBSTRING(RTRIM(k.URL),\n               CHARINDEX('http', RTRIM(k.URL)),\n               CHARINDEX('''', RTRIM(k.URL) + '''', CHARINDEX('http', RTRIM(k.URL)))\n                 - CHARINDEX('http', RTRIM(k.URL)))\n        ELSE RTRIM(k.URL) END) END\n      , 'https://', ''), 'http://', ''), 'www.', ''), 120) END                       AS Link_Name,\n    LEFT(MAX(CASE WHEN CHARINDEX('http', RTRIM(k.URL)) > 0\n        THEN SUBSTRING(RTRIM(k.URL),\n               CHARINDEX('http', RTRIM(k.URL)),\n               CHARINDEX('''', RTRIM(k.URL) + '''', CHARINDEX('http', RTRIM(k.URL)))\n                 - CHARINDEX('http', RTRIM(k.URL)))\n        ELSE RTRIM(k.URL) END), 500)                   AS Link_URL,\n    COUNT(*)                                     AS Clicks_Total,\n    COUNT(DISTINCT k.SubscriberID)               AS Clicks_Unique,\n    GETDATE()                                    AS LastRefresh\nFROM _Click k\nINNER JOIN _Job j ON j.JobID = k.JobID\nINNER JOIN CRM_Reporte_Config c\n        ON RTRIM(j.EmailName) = c.EmailName AND c.Activo = 'Si'\nWHERE k.EventDate >= '2026-03-01'\nGROUP BY c.ConfigKey, LEFT(RTRIM(k.URL), 500), LEFT(c.ConfigKey + '|' + RTRIM(k.URL), 400)",
+   "enRutinaDeAutomation": true
+  },
+  "CRM_Email_Piezas_Load": {
+   "id": "27da9759-b444-4657-ade5-abcaeb940435",
+   "key": "CRM_Email_Piezas_Load",
+   "name": "CRM_Email_Piezas_Load",
+   "categoryId": 460279,
+   "targetName": "CRM_Email_Piezas",
+   "targetKey": "9DA78867-0F91-4CE9-97CD-B2F43BB7862E",
+   "targetUpdateTypeId": 0,
+   "sqlLen": 3156,
+   "queryText": "/*  CRM_Email_Piezas — mantenida por Hive\n    Una fila por pieza del catalogo. Agrega TODOS los dias de CRM_Email_Detalle.\n    Aqui viven Fecha_Primer_Envio y Fecha_Ultimo_Envio, que son de pieza, no de envio.\n    Update type: Overwrite — se recalcula entera, es barata.                          */\n\nSELECT\n    d.ConfigKey                         AS ConfigKey,\n    MAX(c.PiezaID)                      AS PiezaID,\n    MAX(d.EmailName)           AS EmailName,\n    MAX(d.Email_Subject)                AS Email_Subject,\n    MAX(d.Email_ID)                     AS Email_ID,\n    MAX(d.Audience_DE)                   AS Audience_DE,\n    MAX(d.Audience_Volume)              AS Audience_Volume,\n    MAX(d.Es_FUP)                       AS Es_FUP,\n    MAX(d.Journey_ID_Datorama)          AS Journey_ID_Datorama,\n    MAX(a.NPiezas)                      AS Piezas_Mismo_Asset,\n    MAX(d.Codigo_NC)                    AS Codigo_NC,\n    MAX(d.Journey_Name)                 AS Journey_Name,\n    MAX(d.Journey_UUID)                 AS Journey_UUID,\n    MAX(d.BU)                           AS BU,\n    MAX(d.Marca)                        AS Marca,\n    MAX(d.Campana)                      AS Campana,\n    MAX(d.Touchpoint)                   AS Touchpoint,\n    MAX(d.Segmento)                     AS Segmento,\n    MIN(d.SendDay)                      AS Fecha_Primer_Envio,\n    MAX(d.SendDay)                      AS Fecha_Ultimo_Envio,\n    COUNT(DISTINCT d.JobID)             AS N_Jobs,\n    COUNT(DISTINCT d.SendDay)           AS Dias_Con_Envio,\n    SUM(d.Email_Sends)                  AS Email_Sends,\n    SUM(d.Email_Deliveries)             AS Email_Deliveries,\n    SUM(d.Email_Bounces)                AS Email_Bounces,\n    SUM(d.Email_Unique_Opens)           AS Email_Unique_Opens,\n    SUM(d.Email_Unique_Clicks)          AS Email_Unique_Clicks,\n    SUM(d.Email_Total_Unsubs)          AS Email_Total_Unsubs,\n    SUM(d.Email_Unique_Unsubs)          AS Email_Unique_Unsubs,\n    CASE WHEN SUM(d.Email_Sends) = 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * SUM(d.Email_Deliveries) / SUM(d.Email_Sends)) END AS Delivery_Rate,\n    CASE WHEN SUM(d.Email_Deliveries) = 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * SUM(d.Email_Unique_Opens) / SUM(d.Email_Deliveries)) END AS Open_Rate,\n    CASE WHEN SUM(d.Email_Deliveries) = 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * SUM(d.Email_Unique_Clicks) / SUM(d.Email_Deliveries)) END AS Click_Rate,\n    CASE WHEN SUM(d.Email_Unique_Opens) = 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * SUM(d.Email_Unique_Clicks) / SUM(d.Email_Unique_Opens)) END AS CTOR,\n    CASE WHEN SUM(d.Email_Sends) = 0 THEN 0\n         ELSE CONVERT(decimal(6,2), 100.0 * SUM(d.Email_Bounces) / SUM(d.Email_Sends)) END AS Bounce_Rate,\n    GETDATE()                           AS LastRefresh\nFROM CRM_Email_Detalle d\nJOIN CRM_Reporte_Config c ON c.ConfigKey = d.ConfigKey\nLEFT JOIN (\n    SELECT j.EmailID AS Asset, COUNT(DISTINCT c.ConfigKey) AS NPiezas\n    FROM CRM_Reporte_Config c\n    INNER JOIN _Job j ON RTRIM(j.EmailName) = c.EmailName\n    WHERE c.Activo = 'Si'\n    GROUP BY j.EmailID\n) a ON a.Asset = d.Email_ID\nGROUP BY d.ConfigKey",
+   "enRutinaDeAutomation": true
+  },
+  "CRM_Reporte_Auditoria_Load": {
+   "id": "bfea3a5b-8324-409c-b6ec-28e520bcd0cf",
+   "key": "CRM_Reporte_Auditoria_Load",
+   "name": "CRM_Reporte_Auditoria_Load",
+   "categoryId": 460279,
+   "targetName": "CRM_Reporte_Auditoria",
+   "targetKey": "3CC31E3D-0384-47E8-B851-575B6C5D08D0",
+   "targetUpdateTypeId": 0,
+   "sqlLen": 2445,
+   "queryText": "/*  CRM_Reporte_Auditoria — mantenida por Hive\n    Una fila por pieza del catalogo. LEFT JOIN a proposito: una pieza SIN datos tiene\n    que salir con JobsEncontrados=0 y Estado='SIN MATCH'. Con INNER JOIN desapareceria,\n    que es exactamente el falso negativo que esta tabla existe para evitar.\n    DUPLICADO: dos piezas del catalogo con el MISMO ContentName. El dato se atribuye\n    a una sola por la PK; la otra no es una falla, es un duplicado que hay que resolver\n    en el catalogo. Sin este estado se veria igual que una pieza que de verdad falta.\n    Su fila del dia es ademas el semaforo de que la corrida termino.                   */\n\nSELECT\n    c.ConfigKey                                  AS ConfigKey,\n    c.PiezaID                                    AS PiezaID,\n    c.EmailName                                AS EmailName,\n    c.Campana                                    AS Campana,\n    c.Marca                                      AS Marca,\n    c.Activo                                     AS Activo,\n    ISNULL(p.N_Jobs, 0)                          AS JobsEncontrados,\n    ISNULL(p.Dias_Con_Envio, 0)                  AS DiasConEnvio,\n    ISNULL(p.Email_Sends, 0)                     AS EnviosTotales,\n    p.Fecha_Primer_Envio                         AS PrimerEnvio,\n    p.Fecha_Ultimo_Envio                         AS UltimoEnvio,\n    c.EmailID                                    AS Asset_Declarado,\n    p.Email_ID                                   AS Asset_Real,\n    ISNULL(p.Piezas_Mismo_Asset, 0)              AS Piezas_Mismo_Asset,\n    CASE WHEN c.Activo <> 'Si'         THEN 'INACTIVO'\n         WHEN ISNULL(p.N_Jobs, 0) = 0\n              AND EXISTS (SELECT 1 FROM CRM_Email_Piezas p2\n                          JOIN CRM_Reporte_Config c2 ON c2.ConfigKey = p2.ConfigKey\n                          WHERE c2.EmailName = c.EmailName)\n                                       THEN 'DUPLICADO'\n         WHEN ISNULL(p.N_Jobs, 0) = 0  THEN 'SIN MATCH'\n         WHEN c.EmailID IS NOT NULL AND p.Email_ID IS NOT NULL\n              AND c.EmailID <> p.Email_ID\n                                       THEN 'ASSET CAMBIO'\n         WHEN ISNULL(p.Piezas_Mismo_Asset, 0) > 1\n                                       THEN 'DUPLICADO'\n         ELSE 'OK' END                           AS Estado,\n    GETDATE()                                    AS LastRun\nFROM CRM_Reporte_Config c\nLEFT JOIN CRM_Email_Piezas p\n       ON p.ConfigKey = c.ConfigKey",
+   "enRutinaDeAutomation": true
+  }
+ },
+ "queriesOtras": [
+  {
+   "id": "0f9ffc39-c3a5-4928-85e6-b2ee43ac2d85",
+   "key": "CRM_Email_Performance_Load",
+   "name": "CRM_Email_Performance_Load",
+   "categoryId": 460279,
+   "targetName": "CRM_Email_Performance",
+   "targetKey": "E35FA166-C0DC-425A-B3C0-7EBC0CF0A419",
+   "targetUpdateTypeId": 0,
+   "sqlLen": 4007,
+   "queryText": "/*  CRM_Email_Performance  —  mantenida por Hive\n    Grano: 1 renglon por JobID. Metricas acumuladas a la fecha de refresco.\n    Ventana movil: 90 dias.  Update type: Overwrite.  PK: JobID.\n\n    ANCLA: el INNER JOIN contra 'sd' (envios dentro de la ventana) es lo que\n    define que jobs entran. Sin el, un job enviado ANTES de la ventana pero con\n    aperturas DENTRO entraba con Sent=0, y Delivered = 0 - Bounces salia\n    NEGATIVO. Verificado: pasaba en 6 de 1213 filas.\n\n    Por que las metricas se pre-agregan ANTES de unir con journey:\n    _JourneyActivity puede traer mas de un renglon por actividad. Si se uniera\n    primero, cada SUM se duplicaria. Aqui la subconsulta 'a' ya trae 1 renglon\n    por JobID y afuera se usa MAX(), asi un fan-out no altera los numeros.\n\n    SendDate: _Job.DeliveredTime viene NULL en muchos jobs (sobre todo triggered),\n    por eso cae a la primera fecha de _Sent, que siempre existe si hubo envio.    */\n\nSELECT\n    a.JobID                                     AS JobID,\n    MAX(j.EmailName)                            AS EmailName,\n    MAX(j.EmailSubject)                         AS EmailSubject,\n    MAX(ISNULL(j.DeliveredTime, sd.FirstSent))  AS SendDate,\n    MAX(jr.JourneyName)                         AS JourneyName,\n    MAX(jr.JourneyID)                           AS JourneyID,\n    MAX(jr.VersionNumber)                       AS JourneyVersion,\n    MAX(j.TriggererSendDefinitionObjectID)      AS TriggererSendDefID,\n    MAX(a.Sent)                                 AS Sent,\n    CASE WHEN MAX(a.Sent) - MAX(a.Bounces) < 0\n         THEN 0 ELSE MAX(a.Sent) - MAX(a.Bounces) END\n                                                AS Delivered,\n    MAX(a.Bounces)                              AS Bounces,\n    MAX(a.UniqueOpens)                          AS UniqueOpens,\n    MAX(a.TotalOpens)                           AS TotalOpens,\n    MAX(a.UniqueClicks)                         AS UniqueClicks,\n    MAX(a.TotalClicks)                          AS TotalClicks,\n    MAX(a.Unsubs)                               AS Unsubscribes,\n    GETDATE()                                   AS LastRefresh\nFROM (\n    SELECT\n        m.JobID              AS JobID,\n        SUM(m.Sent)          AS Sent,\n        SUM(m.Bounces)       AS Bounces,\n        SUM(m.UniqueOpens)   AS UniqueOpens,\n        SUM(m.TotalOpens)    AS TotalOpens,\n        SUM(m.UniqueClicks)  AS UniqueClicks,\n        SUM(m.TotalClicks)   AS TotalClicks,\n        SUM(m.Unsubs)        AS Unsubs\n    FROM (\n            SELECT JobID, COUNT(*) AS Sent, 0 AS Bounces,\n                   0 AS UniqueOpens, 0 AS TotalOpens,\n                   0 AS UniqueClicks, 0 AS TotalClicks, 0 AS Unsubs\n            FROM _Sent          WHERE EventDate >= DATEADD(day, -90, GETDATE()) GROUP BY JobID\n        UNION ALL\n            SELECT JobID, 0, COUNT(*), 0, 0, 0, 0, 0\n            FROM _Bounce        WHERE EventDate >= DATEADD(day, -90, GETDATE()) GROUP BY JobID\n        UNION ALL\n            SELECT JobID, 0, 0,\n                   SUM(CASE WHEN IsUnique = 1 THEN 1 ELSE 0 END), COUNT(*),\n                   0, 0, 0\n            FROM _Open          WHERE EventDate >= DATEADD(day, -90, GETDATE()) GROUP BY JobID\n        UNION ALL\n            SELECT JobID, 0, 0, 0, 0,\n                   SUM(CASE WHEN IsUnique = 1 THEN 1 ELSE 0 END), COUNT(*), 0\n            FROM _Click         WHERE EventDate >= DATEADD(day, -90, GETDATE()) GROUP BY JobID\n        UNION ALL\n            SELECT JobID, 0, 0, 0, 0, 0, 0, COUNT(*)\n            FROM _Unsubscribe   WHERE EventDate >= DATEADD(day, -90, GETDATE()) GROUP BY JobID\n    ) m\n    GROUP BY m.JobID\n) a\nINNER JOIN (\n    SELECT JobID, MIN(EventDate) AS FirstSent\n    FROM _Sent WHERE EventDate >= DATEADD(day, -90, GETDATE()) GROUP BY JobID\n) sd     ON sd.JobID = a.JobID\nINNER JOIN _Job j\n        ON j.JobID = a.JobID\nLEFT  JOIN _JourneyActivity ja\n        ON ja.JourneyActivityObjectID = j.TriggererSendDefinitionObjectID\nLEFT  JOIN _Journey jr\n        ON jr.VersionID = ja.VersionID\nGROUP BY a.JobID",
+   "enRutinaDeAutomation": false
+  },
+  {
+   "id": "a1577b42-16cb-46a5-bdda-820bc68ce3da",
+   "key": "A1577B42-16CB-46A5-BDDA-820BC68CE3DA",
+   "name": "CRM_Nido_Yogu",
+   "categoryId": 401808,
+   "targetName": "DE_Nido_Yogu",
+   "targetKey": "390AF1D8-E84A-49B9-85A0-E59C8DE8FA10",
+   "targetUpdateTypeId": 0,
+   "sqlLen": 1749,
+   "queryText": "SELECT SC.consumer_id ,\r\n       SC.email_value ,\r\n       SC.address_line_1 ,\r\n       SC.address_line_2 ,\r\n       SC.address_line_3 ,\r\n       SC.address_line_4 ,\r\n       SC.city ,\r\n       SC.zipcode ,\r\n       SC.region ,\r\n       SC.country_code ,\r\n       SC.title ,\r\n       SC.first_name ,\r\n       SC.last_name ,\r\n       SC.additional_name_1 ,\r\n       SC.additional_name_2 ,\r\n       SC.salutation ,\r\n       SC.marital_status ,\r\n       SC.education ,\r\n       SC.preferred_language_code ,\r\n       SC.gender ,\r\n       C.atopic_risk,\r\n       C.feeding,\r\n       C.is_woman_first_pregnancy,\r\n       C.multiple_birth,\r\n       SC.sfmc_entry_date ,\r\n       SC.sfmc_app_last_update_date ,\r\n       SC.consumer_type ,\r\n       SC.birthdate_reliability ,\r\n       SC.birthdate ,\r\n       SC.market_code ,\r\n       C.birthdate AS CHILD_BIRTHDATE ,\r\n       C.birthdate_reliability AS CHILD_BIRTHDATE_RELIABILITY ,\r\n       C.child_id ,\r\n       C.first_name AS CHILD_FIRST_NAME ,\r\n       C.gender AS CHILD_SEX ,\r\n       DATEDIFF(DAY, c.birthdate, GETDATE()) AS CHILD_AGE_TOTAL_DAY,\r\n       DATEDIFF(MONTH, c.birthdate, GETDATE()) AS CHILD_AGE_TOTAL_MONTH,\r\n       DATEDIFF(DAY, c.birthdate, GETDATE()) / 7 AS CHILD_AGE_TOTAL_WEEKS,\r\n       DATEDIFF(YEAR, c.birthdate, GETDATE()) AS CHILD_AGE_TOTAL_YEARS\r\nFROM [ma_consumer] AS SC \r\nINNER JOIN [ma_child] AS C ON SC.consumer_id = C.consumer_id\r\nINNER JOIN [ma_consumer_opt_in] AS OI ON SC.consumer_id = OI.consumer_id\r\nWHERE OI.marketing_group_service_code IN ('MXinfantnut_Sbbbyadvml', 'MXinfantnut_SBmktemail')\r\nAND (oi.REVOCATION_DATE IS NULL OR oi.ACCEPTANCE_DATE > oi.REVOCATION_DATE)\r\nAND c.birthdate IS NOT NULL\r\nAND c.birthdate >= DATEADD(MONTH, -36, GETDATE())\r\nAND c.birthdate <= DATEADD(MONTH, -24, GETDATE())\r\n",
+   "enRutinaDeAutomation": false
+  }
+ ],
+ "automation": {
+  "id": "8a8a7b31-f99c-45fb-8482-e7b75858968b",
+  "http": 200,
+  "name": "CRM_Reporte_Diario",
+  "status": "Scheduled",
+  "statusId": 6,
+  "typeId": 1,
+  "lastRunTime": "2026-10-02T00:08:01.13",
+  "schedule": {
+   "id": "6af9f752-8c47-4214-a032-c8a88eb6ac39",
+   "typeId": 3,
+   "startDate": "2026-08-21T00:08:00",
+   "endDate": "2079-06-06T00:00:00",
+   "scheduledTime": "2026-10-03T00:08:00",
+   "rangeTypeId": 1,
+   "occurrences": 19282,
+   "pattern": "<Pattern><PatternType>0</PatternType><DayInterval>1</DayInterval></Pattern>",
+   "icalRecur": "FREQ=DAILY;UNTIL=20790606;INTERVAL=1",
+   "timezoneName": "Central Standard Time (no DST)",
+   "scheduleStatus": "active",
+   "timezoneId": 1
+  },
+  "steps": [
+   {
+    "step": 1,
+    "activities": [
+     {
+      "name": "CRM_Audiencias_Vol_Load",
+      "objectTypeId": 300,
+      "activityObjectId": "ee50e83c-f2c1-4389-b63f-2690cfcec8f9",
+      "displayOrder": 1
+     },
+     {
+      "name": "CRM_Email_Links_Load",
+      "objectTypeId": 300,
+      "activityObjectId": "9f4c9f45-d08a-43df-afc7-6d511157c7cd",
+      "displayOrder": 2
+     }
+    ]
+   },
+   {
+    "step": 2,
+    "activities": [
+     {
+      "name": "CRM_Email_Detalle_Load",
+      "objectTypeId": 300,
+      "activityObjectId": "452234b4-4939-42a7-bc34-9b628782c896",
+      "displayOrder": 1
+     }
+    ]
+   },
+   {
+    "step": 3,
+    "activities": [
+     {
+      "name": "CRM_Email_Piezas_Load",
+      "objectTypeId": 300,
+      "activityObjectId": "27da9759-b444-4657-ade5-abcaeb940435",
+      "displayOrder": 1
+     }
+    ]
+   },
+   {
+    "step": 4,
+    "activities": [
+     {
+      "name": "CRM_Reporte_Auditoria_Load",
+      "objectTypeId": 300,
+      "activityObjectId": "bfea3a5b-8324-409c-b6ec-28e520bcd0cf",
+      "displayOrder": 1
+     }
+    ]
+   }
+  ]
+ }
+}
