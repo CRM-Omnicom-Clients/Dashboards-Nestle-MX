@@ -3,6 +3,11 @@
 -- Atribución: shortlink_code JOIN nmx_catalogo.dim_shortlink → pieza_id
 -- fecha/hora/quincena/mes derivados desde fecha_hora (formato: 2026-11-10T18:00:00)
 -- Fuente: nmx_insumos.land_qcart_carritos (normalizado desde CSV raw por reload_catalog.py)
+--
+-- Reglas de atribución:
+-- 1. Solo shortlinks con estado_link = 'USADO' (excluye NO SE ENVIO, LINK NO USADO)
+-- 2. Si un shortlink aparece en dos piezas con distintas fechas de activación (ej. hTHNLqzL),
+--    se asigna a la pieza con la fecha de activación más reciente que sea <= fecha del evento.
 
 SELECT
     s.pieza_id,
@@ -26,5 +31,10 @@ SELECT
 FROM nmx_insumos.land_qcart_carritos c
 JOIN nmx_catalogo.dim_shortlink s
     ON s.shortlink = c.shortlink_code
+   AND s.estado_link = 'USADO'
+   AND (s.fecha_activacion IS NULL OR SUBSTR(c.fecha_hora, 1, 10) >= s.fecha_activacion)
 WHERE c.shortlink_code IS NOT NULL AND c.shortlink_code <> ''
-  AND (s.fecha_activacion IS NULL OR SUBSTR(c.fecha_hora, 1, 10) >= s.fecha_activacion)
+QUALIFY ROW_NUMBER() OVER (
+    PARTITION BY c.fecha_hora, c.shortlink_code, c.store
+    ORDER BY COALESCE(s.fecha_activacion, '1900-01-01') DESC
+) = 1
