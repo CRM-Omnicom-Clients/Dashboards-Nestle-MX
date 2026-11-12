@@ -451,7 +451,15 @@ function go(){
   document.getElementById('nos').textContent=oF.length;
   document.getElementById('nwa').textContent=wF.length;
   document.getElementById('fcnt').textContent=(aF.length+oF.length+wF.length)+' filas';
-  const _allT=[...AON,...OS,...WA];const _maxT=Math.max(..._allT.map(r=>+(r.time||0)));if(_maxT>0){const _d=new Date(_maxT*1000);document.getElementById('upd').textContent='Email · WhatsApp · Qcart\u00a0|\u00a0Actualizado: 2026-11-12 15:26<div class="kpi" style="border-left-color:${c}"><div class="l">${l}</div><div class="v">${v}</div><div class="s">${s}</div></div>`;
+  const _allT=[...AON,...OS,...WA];const _maxT=Math.max(..._allT.map(r=>+(r.time||0)));if(_maxT>0){const _d=new Date(_maxT*1000);document.getElementById('upd').textContent='Email · WhatsApp · Qcart | Actualizado: '+_d.toLocaleString('es-MX',{timeZone:'America/Mexico_City',day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});}
+  setSH();
+}
+
+function rsm(aon,os,wa){
+  const sE=rows=>rows.reduce((a,r)=>{a.sn+=(r.p_sends||0);a.op+=(r.p_opens||0);a.cl+=(r.p_clicks_cta||0);return a;},{sn:0,op:0,cl:0});
+  const aS=sE(aon),oS=sE(os);
+  const wS=wa.reduce((a,r)=>{a.sn+=(r.sends||0);a.rd+=(r.opens_read||0);return a;},{sn:0,rd:0});
+  const kpi=(l,v,s,c)=>`<div class="kpi" style="border-left-color:${c}"><div class="l">${l}</div><div class="v">${v}</div><div class="s">${s}</div></div>`;
   return `<div class="kgrid">
     ${kpi('Email AON Sends',fmt(aS.sn),aon.length+' piezas · OR '+(aS.sn?pct(aS.op/aS.sn*100):'—'),'#0f766e')}
     ${kpi('Email OS Sends',fmt(oS.sn),os.length+' piezas · OR '+(oS.sn?pct(oS.op/oS.sn*100):'—'),'#7c3aed')}
