@@ -45,7 +45,13 @@ Más una síntesis **📋 Accionables** con 5 bullets.
 
 ---
 
-## Commits en producción
+## Commits en producción — exec-v1
+
+| Hash | Descripción |
+|---|---|
+| `28d2dfe` | **style(exec-v1)**: question 72px, accionables 24px+glow, S1a imágenes debajo de gráfica, S3b decisiones Bebas Neue 30px gold |
+
+## Commits en producción — V4
 
 | Hash | Descripción |
 |---|---|
