@@ -1,13 +1,13 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
 updated: 2026-11-12
-status: "Catálogo completo: 7 WA faltantes agregados (OI-09/OI-15 ✓). Qcart 71K filas cargadas. Pendiente: tipo_envio AON (Rick revisa) → reload_catalog → pipeline."
+status: "Pipeline v8 exitoso 2026-11-12. rpt_email: 108 filas, rpt_whatsapp: 28, rpt_qcart: 4. Dashboard-v1 generado con datos reales."
 owner: Rick Aguilar
 ---
 
 # ESTADO: Reporte Consolidado Nestlé México en TD
 
-> Fuente de verdad del proyecto — actualizado 2026-11-11.
+> Fuente de verdad del proyecto — actualizado 2026-11-12.
 > Para la arquitectura del sistema, ver `ARQUITECTURA.md`. Para correr, ver `OPERACIONES.md`.
 
 ---
@@ -16,11 +16,12 @@ owner: Rick Aguilar
 
 | Canal | Tabla fact | Estado | Tabla rpt | Estado |
 |-------|-----------|--------|-----------|--------|
-| Email | `fact_envio_email` | ✓ SQL actualizado | `rpt_email` | ✓ SQL v8 completo |
-| WhatsApp | `fact_envio_whatsapp` | ✓ sin cambios | `rpt_whatsapp` | ✓ SQL v8 completo |
-| Qcart | `fact_evento_qcart_*` | ✓ 71,117 filas cargadas | `rpt_qcart` | ✓ SQL v8 completo |
+| Email | `fact_envio_email` | ✓ SQL actualizado | `rpt_email` | ✓ 108 filas — pipeline exitoso |
+| WhatsApp | `fact_envio_whatsapp` | ✓ sin cambios | `rpt_whatsapp` | ✓ 28 filas — pipeline exitoso |
+| Qcart | `fact_evento_qcart_*` | ✓ 71,117 filas cargadas | `rpt_qcart` | ✓ 4 filas (pieza×quincena) — pipeline exitoso |
 
-> **Siguiente paso:** Rick confirma `tipo_envio` de 5 piezas AON → reload_catalog → correr pipeline.
+> **Pipeline v8 ejecutado exitosamente 2026-11-12T17:35Z. Dashboard-v1 generado con datos reales.**
+> **Fix aplicado:** `touchpoint_nombre` → `touchpoint_brief` en rebuild_rpt_qcart.sql
 
 ---
 
