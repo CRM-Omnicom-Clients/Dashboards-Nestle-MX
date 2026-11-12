@@ -1,7 +1,7 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12T20:30
-status: "Catálogo ✓ · WA insumos ✓ · Dashboard v1 ✓. Próximo: Etapa 4 (fix SQL pieza_segmento) + Etapa 3 (Qcart 71K)."
+updated: 2026-11-12T20:35
+status: "Catálogo ✓ · WA ✓ · Qcart 71K ✓ · OI-18 ✓ · hechos+reporte pipeline ✓. Dashboard pendiente refresh. Bloqueante: OI-13 (329 shortlinks sin mapeo)."
 owner: Rick Aguilar
 ---
 
@@ -18,7 +18,7 @@ owner: Rick Aguilar
 |-------|-----------|--------|-----------|-------|
 | Email | `fact_envio_email` | ✓ | `rpt_email` | AON 39 piezas · OS 99 piezas · ⚠️ 2× rows para 009-P015/016/017 (OI-18) |
 | WhatsApp | `fact_envio_whatsapp` | ✓ datos corregidos | `rpt_whatsapp` | ⚠️ 3× rows para 004-P010/013/017/018/019 (OI-18) |
-| Qcart | `fact_evento_qcart_*` | ⚠️ datos parciales | `rpt_qcart` | 25 filas raw; 71K pendientes (OI-16) |
+| Qcart | `fact_evento_qcart_*` | 🔄 rebuild en curso | `rpt_qcart` | 71K filas land ✓ · cobertura shortlinks 4.64% (OI-13 bloqueante) |
 
 > **Dashboard v1 publicado:** https://crm-omnicom-clients.github.io/Dashboards-Nestle-MX/dashboards/reporte-consolidado-crm.html
 >
@@ -35,14 +35,14 @@ owner: Rick Aguilar
 | 3 | Workflow Digdag: `hechos.dig` | ✓ COMPLETA |
 | 4a | `fact_envio_email` | ✓ 141 filas · 135 piezas |
 | 4b | `fact_envio_whatsapp` | ✓ datos corregidos · OI-15+17 resueltos |
-| 4c | `fact_evento_qcart_*` | ⚠️ PARCIAL — 25/71K filas (OI-16) |
-| 5a | `rpt_email` | ⚠️ SQL OK · fix pieza_segmento pendiente (OI-18) |
-| 5b | `rpt_whatsapp` | ⚠️ SQL OK · fix pieza_segmento pendiente (OI-18) |
-| 5c | `rpt_qcart` | ⚠️ SQL OK · fix pieza_segmento pendiente (OI-18) |
+| 4c | `fact_evento_qcart_*` | ✓ | land: 71,117 · fact: 2,991 (4.64% cobertura shortlinks — OI-13) |
+| 5a | `rpt_email` | ✓ OI-18 resuelto | 105 filas, 0 duplicados |
+| 5b | `rpt_whatsapp` | ✓ OI-18 resuelto | 18 filas, 0 duplicados |
+| 5c | `rpt_qcart` | ✓ SQL corregido | datos parciales por OI-13 |
 | 6 | Dashboard HTML v1 | ✓ Publicado · mejoras UI 2026-11-12 |
 | **P1** | **Catálogo rebuild (AON/OS verificado, 157 piezas)** | **✓ COMPLETA 2026-11-12** |
 | **P2** | **WA insumos corregidos (OI-15+17)** | **✓ COMPLETA 2026-11-12** |
-| **P3** | **Pipeline final con datos reales** | **🔲 EN CURSO — Etapa 4 siguiente** |
+| **P3** | **Pipeline final con datos reales** | **✓ COMPLETA 2026-11-12** |
 | P4 | Schedule semanal martes 22h | 🔲 PENDIENTE — después de P3 |
 
 ---
@@ -79,20 +79,24 @@ owner: Rick Aguilar
 - [x] `fact_envio_whatsapp` reconstruida con datos corregidos — 8 piezas verificadas ✓
 - [x] `load_catalogo.py` actualizado con `WA_SKIP_NOMBRES` y `WA_CLICKS_OVERRIDE` — reloads futuros no pierden correcciones
 
-### ETAPA 3 — Insumos Qcart 🔲 BLOQUEANTE
-- [ ] Cargar CSV 71K filas: `recetas-nestle-mx-carts-raw-2026-03-01-2026-11-11.csv`
-  - Archivo en repo: `insumos/recetas-nestle-mx-carts-raw-2026-03-01-2026-11-11.csv`
-  - Acción: correr `reload_catalog.py` o carga directa → `fact_evento_qcart_carritos` + `_productos`
-- [ ] Verificar que shortlinks en `dim_shortlink` (82 entries) cubren eventos del CSV
+### ETAPA 3 — Insumos Qcart ✓ COMPLETA (2026-11-12)
+- [x] Cargar CSV 71K filas: `land_qcart_carritos` = **71,117 filas** (carga paralela 8 workers × 1K/batch)
+- [x] Cargar productos: `land_qcart_productos` = **2,654 filas**
+- [x] Verificar cobertura OI-13: **4.64%** de eventos atribuibles (3,308/71,220)
+  - 408 shortlinks únicos en CSV; 82 mapeados en `dim_shortlink`; **329 sin mapeo → bloqueante para Rick**
+  - Rick debe completar hoja `Shortlinks` del catálogo con todos los shortlink_code → pieza_id
 
-### ETAPA 4 — Fix SQL: duplicados por pieza_segmento (OI-18) 🔲 PENDIENTE
-- [ ] `rebuild_rpt_whatsapp.sql` — subconsulta `MIN(segmento_nombre)` antes del JOIN (elimina 3× para 004-P\*)
-- [ ] `rebuild_rpt_email.sql` — subconsulta `STRING_AGG` para concatenar segmentos (elimina 2× para 009-P\*)
-- [ ] `rebuild_rpt_qcart.sql` — subconsulta `MIN(segmento_nombre)` antes del JOIN
+### ETAPA 4 — Fix SQL: duplicados por pieza_segmento (OI-18) ✓ COMPLETA (2026-11-12)
+- [x] `rebuild_rpt_whatsapp.sql` — subconsulta `MIN(segmento_nombre)` antes del JOIN (elimina 3× para 004-P\*)
+- [x] `rebuild_rpt_email.sql` — subconsulta `ARRAY_JOIN(ARRAY_AGG(DISTINCT ...))` para concatenar segmentos (elimina 2× para 009-P\*)
+- [x] `rebuild_rpt_qcart.sql` — subconsulta `MIN(segmento_nombre)` antes del JOIN
+- [x] Push commit `6d6ab24` a GitHub · workflow project re-pushed (rev 2026-11-12T20-18-24-732Z)
 
-### ETAPA 5 — Run pipeline completo 🔲 (después de 3+4)
-- [ ] Rebuild en orden: `nmx_crm_reporte.catalogo` → `nmx_crm_reporte.hechos` → `nmx_crm_reporte.reporte`
-- [ ] Validar conteos post-run: 0 piezas con count > 1 en rpt_*, clicks WA correctos
+### ETAPA 5 — Run pipeline completo ✓ COMPLETA (2026-11-12)
+- [x] hechos.dig (Attempt 1424123750): `fact_envio_email` ✓ · `fact_envio_whatsapp` ✓ · `fact_evento_qcart_carritos` ✓ (2,991 filas) · `fact_evento_qcart_productos` ✓
+  - Fix: `QUALIFY` → subquery ROW_NUMBER en `rebuild_fact_evento_qcart_carritos.sql`
+- [x] reporte.dig (Attempt 1424123947): `rpt_email` ✓ 105 filas · `rpt_whatsapp` ✓ 18 filas · `rpt_qcart` ✓
+  - OI-18 validado: **0 duplicados** en rpt_whatsapp y rpt_email
 
 ### ETAPA 6 — Dashboard 🔲
 - [ ] Regenerar `my/dashboard-v1.html` con datos frescos de TD
@@ -109,11 +113,11 @@ owner: Rick Aguilar
 |----|-------------|-------------|--------|
 | OI-02 | Base email de envíos BD (sin CDP Hive) | Rick | 🔲 Pendiente |
 | OI-09 | 4 nombres WA sin pieza_id: LALIGA-J10-SAB-12PM, LALIGA-J10-SAB-2PM, MEXVSCL-MAR-7PM | **Rick** | 🔲 Pendiente |
-| OI-13 | Shortlinks Qcart: verificar cobertura vs dim_shortlink (82 entries) | **Rick+Studio** | 🔲 Bloqueante |
+| OI-13 | Shortlinks Qcart: **329 de 408 sin mapeo** (4.64% cobertura actual) | **Rick** | 🔲 Bloqueante — completar hoja Shortlinks en catálogo |
 | OI-15 | WA-MUNDIAL-CRM-HIVE — 6 filas GA eliminadas de `land_wa_envios` | Studio | ✅ Resuelto 2026-11-12 |
-| OI-16 | `land_qcart_carritos`: 25/71K filas — cargar CSV completo | **Rick+Studio** | 🔲 Bloqueante |
+| OI-16 | `land_qcart_carritos`: 71,117 filas cargadas | Studio | ✅ Resuelto 2026-11-12 |
 | OI-17 | 8 piezas WA clicks corregidos en `land_wa_envios` y `fact_envio_whatsapp` | Studio | ✅ Resuelto 2026-11-12 |
-| OI-18 | Duplicados en `rpt_*` por LEFT JOIN pieza_segmento sin colapsar | Studio | 🔲 Pendiente Etapa 4 |
+| OI-18 | Duplicados en `rpt_*` por LEFT JOIN pieza_segmento sin colapsar | Studio | ✅ Resuelto 2026-11-12 |
 
 ### Detalle OI-18: Duplicados por pieza_segmento
 
