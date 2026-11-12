@@ -1,7 +1,7 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12T20:35
-status: "Catálogo ✓ · WA ✓ · Qcart 71K ✓ · OI-18 ✓ · hechos+reporte pipeline ✓. Dashboard pendiente refresh. Bloqueante: OI-13 (329 shortlinks sin mapeo)."
+updated: 2026-11-12T20:40
+status: "Etapas 1-6 completas. Bloqueante: OI-13 (329 shortlinks sin mapeo). Pendiente: Etapa 7 (schedule)."
 owner: Rick Aguilar
 ---
 
@@ -39,7 +39,7 @@ owner: Rick Aguilar
 | 5a | `rpt_email` | ✓ OI-18 resuelto | 105 filas, 0 duplicados |
 | 5b | `rpt_whatsapp` | ✓ OI-18 resuelto | 18 filas, 0 duplicados |
 | 5c | `rpt_qcart` | ✓ SQL corregido | datos parciales por OI-13 |
-| 6 | Dashboard HTML v1 | ✓ Publicado · mejoras UI 2026-11-12 |
+| 6 | Dashboard HTML v1 | ✓ Publicado · **refrescado 2026-11-12** · datos reales pipeline completo |
 | **P1** | **Catálogo rebuild (AON/OS verificado, 157 piezas)** | **✓ COMPLETA 2026-11-12** |
 | **P2** | **WA insumos corregidos (OI-15+17)** | **✓ COMPLETA 2026-11-12** |
 | **P3** | **Pipeline final con datos reales** | **✓ COMPLETA 2026-11-12** |
@@ -98,9 +98,10 @@ owner: Rick Aguilar
 - [x] reporte.dig (Attempt 1424123947): `rpt_email` ✓ 105 filas · `rpt_whatsapp` ✓ 18 filas · `rpt_qcart` ✓
   - OI-18 validado: **0 duplicados** en rpt_whatsapp y rpt_email
 
-### ETAPA 6 — Dashboard 🔲
-- [ ] Regenerar `my/dashboard-v1.html` con datos frescos de TD
-- [ ] Push a GitHub Pages → `dashboards/reporte-consolidado-crm.html`
+### ETAPA 6 — Dashboard ✓ COMPLETA (2026-11-12)
+- [x] Dashboard refrescado con datos frescos post-pipeline: 34 AON + 71 OS + 18 WA
+- [x] 26 piezas email con Qcart · 5 piezas WA con Qcart (limitado por OI-13)
+- [x] Push commit `493efee` → GitHub Pages live
 
 ### ETAPA 7 — Schedule 🔲
 - [ ] `tdx wf schedule` — martes 22:00h MX (`nmx_crm_reporte.nmx_crm_reporte`)
