@@ -1,28 +1,33 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12T21:00
-status: "Etapas 1-6 completas + validación Qcart. Bloqueante: OI-13 (329 shortlinks sin mapeo). Pendiente: Etapa 7 (schedule)."
+updated: 2026-11-12T21:30
+status: "Pipeline completo ✓. Dashboard live. OI-13 (shortlinks) pendiente Rick. OI-19 (validación email vs SFMC) abierto."
 owner: Rick Aguilar
 ---
 
 # ESTADO: Reporte Consolidado Nestlé México en TD
 
-> Fuente de verdad del proyecto — actualizado 2026-11-12T20:30.
+> Fuente de verdad del proyecto — actualizado 2026-11-12T21:30.
 > Para la arquitectura del sistema, ver `ARQUITECTURA.md`. Para correr, ver `OPERACIONES.md`.
 
 ---
 
 ## Resumen ejecutivo (2026-11-12)
 
-| Canal | Tabla fact | Estado | Tabla rpt | Notas |
-|-------|-----------|--------|-----------|-------|
-| Email | `fact_envio_email` | ✓ | `rpt_email` | AON 19 rows · OS 86 rows (105 total) |
-| WhatsApp | `fact_envio_whatsapp` | ✓ datos corregidos | `rpt_whatsapp` | 24 rows · 0 duplicados |
-| Qcart | `fact_evento_qcart_*` | ✓ validado | `rpt_qcart` | 2,991 eventos · 15 piezas email con Qcart · ticket avg \$281-\$461 MXN |
+| Canal | Tabla fact | Estado | Tabla rpt | Métricas finales |
+|-------|-----------|--------|-----------|-----------------|
+| Email | `fact_envio_email` | ✓ | `rpt_email` | 105 rows · 100 piezas únicas · AON 19 rows · OS 86 rows |
+| WhatsApp | `fact_envio_whatsapp` | ✓ corregido | `rpt_whatsapp` | 24 rows · 18 piezas · OI-15+17 resueltos |
+| Qcart | `fact_evento_qcart_*` | ✓ validado | `rpt_qcart` | 183 rows · 37 piezas · 7,185 carritos · $2.69M intención |
+
+**Cobertura Qcart en dashboard:**
+- Email con Qcart: **28 piezas** (8 AON + 20 OS) — antes se reportaron 15/26 por archivo truncado
+- WA con Qcart: **8 piezas** — antes se reportaban 5 por archivo truncado
+- `005-P012`: pieza en `rpt_qcart` sin envíos en email ni WA — investigar si es pieza sin envíos registrados (ver OI-20)
 
 > **Dashboard v1 publicado:** https://crm-omnicom-clients.github.io/Dashboards-Nestle-MX/dashboards/reporte-consolidado-crm.html
 >
-> **Dashboard actualizado 2026-11-12** — mejoras UI: 83 columnas ordenables, totales por campaña (P+FUP+Total+Qcart), paleta morado/rosa, fuente Gotham/Montserrat, timestamp dinámico, filtro Quincena, badge v1.
+> Última actualización: 2026-11-12 — datos pipeline completo, Qcart 183 rows, fórmulas validadas.
 
 ---
 
@@ -33,78 +38,80 @@ owner: Rick Aguilar
 | 1 | Setup DBs + catálogo base | ✓ COMPLETA |
 | 2 | Workflow Digdag: `catalogo.dig` | ✓ COMPLETA |
 | 3 | Workflow Digdag: `hechos.dig` | ✓ COMPLETA |
-| 4a | `fact_envio_email` | ✓ 141 filas · 135 piezas |
-| 4b | `fact_envio_whatsapp` | ✓ datos corregidos · OI-15+17 resueltos |
-| 4c | `fact_evento_qcart_*` | ✓ | land: 71,117 · fact: 2,991 (4.64% cobertura shortlinks — OI-13) |
-| 5a | `rpt_email` | ✓ OI-18 resuelto | 105 filas, 0 duplicados |
-| 5b | `rpt_whatsapp` | ✓ OI-18 resuelto | 18 filas, 0 duplicados |
-| 5c | `rpt_qcart` | ✓ SQL corregido | datos parciales por OI-13 |
-| 6 | Dashboard HTML v1 | ✓ Publicado · **refrescado 2026-11-12** · datos reales pipeline completo |
+| 4a | `fact_envio_email` | ✓ 105 filas · 100 piezas |
+| 4b | `fact_envio_whatsapp` | ✓ 24 filas corregidas |
+| 4c | `fact_evento_qcart_*` | ✓ 2,991 carritos · 37 piezas atribuidas |
+| 5a | `rpt_email` | ✓ OI-18 resuelto · 105 filas · 0 duplicados |
+| 5b | `rpt_whatsapp` | ✓ OI-18 resuelto · 24 filas · 0 duplicados |
+| 5c | `rpt_qcart` | ✓ 183 filas · 37 piezas · totales validados |
+| 6 | Dashboard HTML v1 | ✓ Publicado · datos reales · Qcart 28E+8WA piezas |
 | **P1** | **Catálogo rebuild (AON/OS verificado, 157 piezas)** | **✓ COMPLETA 2026-11-12** |
 | **P2** | **WA insumos corregidos (OI-15+17)** | **✓ COMPLETA 2026-11-12** |
-| **P3** | **Pipeline final con datos reales** | **✓ COMPLETA 2026-11-12** |
-| P4 | Schedule semanal martes 22h | 🔲 PENDIENTE — después de P3 |
+| **P3** | **Pipeline final + dashboard refrescado** | **✓ COMPLETA 2026-11-12** |
+| P4 | Schedule semanal martes 22h | 🔲 PENDIENTE |
+| **P5** | **Validación email vs SFMC (OI-19)** | **🔲 PENDIENTE — Rick conectará MCP** |
 
 ---
 
-## Plan completo para pipeline final
+## Fórmulas del dashboard (referencia)
 
-### ETAPA 1 — Catálogo ✓ COMPLETA (2026-11-12)
-- [x] Gate 1 = 0 errores — vocabularios y llaves sin inconsistencias
-- [x] Verificar tipo_envio AON/OS en `land_piezas`: correcto, sin piezas inesperadas
-- [x] Rebuild catalog chain ejecutado (`nmx_crm_reporte.catalogo` workflow):
-  - `tabla_piezas`: 157 piezas (Email AON 39 · Email OS 99 · WA 19)
-  - `dim_campana`: 13 · `dim_marca`: 11 · `dim_bu`: 5 · `dim_objetivo`: 11
-  - `dim_segmento`: 52 · `dim_touchpoint_brief`: 79
-  - `pieza_segmento`: 169 (12 piezas con 2–3 segmentos — ver OI-18)
-  - `tabla_nombres`: 158 · `dim_shortlink`: 82
-- [ ] Alta piezas nuevas CRM HIVE (si las hay — Rick confirma)
+### Email
+| Columna | Fórmula | Notas |
+|---------|---------|-------|
+| Open% | opens ÷ sends | OR = tasa de apertura |
+| CTOR% | clicks ÷ opens | Click-to-Open Rate |
+| UTOR% | unsubs ÷ sends | Unsubscribe rate sobre envíos |
+| %CTA/U | cta_clicks ÷ total_clicks | % de clicks que son CTA |
+| %Baja/U | baja_clicks ÷ total_clicks | % de clicks que son Baja |
+| Total P+FUP | Σ(p_* + fup_*) por pieza, luego Σ campaña | FUP solo cuando existe |
+| **Totales fila ∑** | Σ contadores luego ÷ — **NO promedio de tasas** | Ponderado correcto |
 
-### ETAPA 2 — Insumos WA ✓ COMPLETA (2026-11-12)
-- [x] **2A** DELETE 6 filas `WA-MUNDIAL-CRM-HIVE` de `land_wa_envios` (sesiones GA, no envíos reales)
-- [x] **2B** UPDATE clicks 8 piezas — valores del v8, verificados en `fact_envio_whatsapp`:
+### WhatsApp
+| Columna | Fórmula |
+|---------|---------|
+| Delivery% | deliveries ÷ sends |
+| No Ent% | no_entregados ÷ sends |
+| Read% | opens_read ÷ deliveries |
+| CTR/Read | clicks ÷ opens_read |
 
-  | Pieza | Nombre WA | Clicks |
-  |---|---|---|
-  | 004-P017 | WA-MUNDIAL-SEMIFINAL-A | 289 ✓ |
-  | 004-P018 | WA-MUNDIAL-SEMIFINAL-B | 369 ✓ |
-  | 004-P019 | WA-MUNDIAL-FINALES | 616 ✓ |
-  | 005-P011 | O_Maggi LALIGA-JORNADA-4PM | 53 ✓ |
-  | 005-P013 | O_Maggi LALIGA-J9-4PM | 53 ✓ |
-  | 005-P016 | O_Maggi LALIGA-J10-JUE | 42 ✓ |
-  | 005-P018 | O_Maggi MEXVSPER-2PM | 59 ✓ |
-  | 005-P021 | O_Maggi CDP-RN-LMXF | 109 ✓ |
+### Qcart (por pieza, agrega todas las quincenas)
+| Columna | Fórmula |
+|---------|---------|
+| Carritos Total | Σ views por (pieza×quincena) |
+| Intención Total | Σ total_shown_price — **precio acumulado, no por carrito** |
+| %Nestlé | Σ intencion_nestle ÷ Σ intencion_total |
+| Ticket Carrito | Σ intencion_total ÷ Σ carritos_total |
+| Ticket Producto | Σ intencion_nestle ÷ Σ views_productos_nestle |
 
-- [x] **2C** Welcome 008-P007 (134) y 008-P008 (288): clicks derivados, se mantienen como reales (decisión Rick 2026-11-12)
-- [x] `fact_envio_whatsapp` reconstruida con datos corregidos — 8 piezas verificadas ✓
-- [x] `load_catalogo.py` actualizado con `WA_SKIP_NOMBRES` y `WA_CLICKS_OVERRIDE` — reloads futuros no pierden correcciones
+> **Nota crítica Qcart:** `total_shown_price` en el CSV es el valor agregado de todos los views (no precio por carrito individual). Un evento con 1,408 views y $521K no es un carrito de $521K — es 1,408 carritos promedio ~$370 c/u.
 
-### ETAPA 3 — Insumos Qcart ✓ COMPLETA (2026-11-12)
-- [x] Cargar CSV 71K filas: `land_qcart_carritos` = **71,117 filas** (carga paralela 8 workers × 1K/batch)
-- [x] Cargar productos: `land_qcart_productos` = **2,654 filas**
-- [x] Verificar cobertura OI-13: **4.64%** de eventos atribuibles (3,308/71,220)
-  - 408 shortlinks únicos en CSV; 82 mapeados en `dim_shortlink`; **329 sin mapeo → bloqueante para Rick**
-  - Rick debe completar hoja `Shortlinks` del catálogo con todos los shortlink_code → pieza_id
+---
 
-### ETAPA 4 — Fix SQL: duplicados por pieza_segmento (OI-18) ✓ COMPLETA (2026-11-12)
-- [x] `rebuild_rpt_whatsapp.sql` — subconsulta `MIN(segmento_nombre)` antes del JOIN (elimina 3× para 004-P\*)
-- [x] `rebuild_rpt_email.sql` — subconsulta `ARRAY_JOIN(ARRAY_AGG(DISTINCT ...))` para concatenar segmentos (elimina 2× para 009-P\*)
-- [x] `rebuild_rpt_qcart.sql` — subconsulta `MIN(segmento_nombre)` antes del JOIN
-- [x] Push commit `6d6ab24` a GitHub · workflow project re-pushed (rev 2026-11-12T20-18-24-732Z)
+## Bugs resueltos en esta sesión
 
-### ETAPA 5 — Run pipeline completo ✓ COMPLETA (2026-11-12)
-- [x] hechos.dig (Attempt 1424123750): `fact_envio_email` ✓ · `fact_envio_whatsapp` ✓ · `fact_evento_qcart_carritos` ✓ (2,991 filas) · `fact_evento_qcart_productos` ✓
-  - Fix: `QUALIFY` → subquery ROW_NUMBER en `rebuild_fact_evento_qcart_carritos.sql`
-- [x] reporte.dig (Attempt 1424123947): `rpt_email` ✓ 105 filas · `rpt_whatsapp` ✓ 18 filas · `rpt_qcart` ✓
-  - OI-18 validado: **0 duplicados** en rpt_whatsapp y rpt_email
+### BUG-01: `_qc` inyectado como lista cruda → formato incorrecto
+- **Síntoma:** Columnas Qcart del dashboard mostraban `—` y los totales de campaña tampoco tenían datos Qcart
+- **Causa:** El script de inyección guardaba `_qc` como lista de rows de `rpt_qcart` con claves largas. `qcCols(q)` espera objeto con claves abreviadas `{cw, cc, ct, vc, vpn, itn, inn, rec, fd, fh, pct, tkt_c, tkt_p}`
+- **Fix:** `aggregate_qc_for_pieza()` suma todas las quincenas por pieza y renombra las claves. Recalcula `pct`, `tkt_c`, `tkt_p` desde sumas (no promedios de tasas)
+- **Commit:** `323c9a9`
 
-### ETAPA 6 — Dashboard ✓ COMPLETA (2026-11-12)
-- [x] Dashboard refrescado con datos frescos post-pipeline: 34 AON + 71 OS + 18 WA
-- [x] 26 piezas email con Qcart · 5 piezas WA con Qcart (limitado por OI-13)
-- [x] Push commit `493efee` → GitHub Pages live
+### BUG-02: Archivo `rpt_qcart.jsonl` truncado — 98/183 rows
+- **Síntoma:** Dashboard mostraba 15 piezas email con Qcart y 0 WA — debían ser 28 email + 8 WA
+- **Causa:** El archivo salvado venía de un output comprimido que solo tenía los primeros ~100 rows
+- **Fix:** Re-fetch con `tdx query --limit 300` → 183 rows completos
+- **Commit:** `(este push)`
 
-### ETAPA 7 — Schedule 🔲
-- [ ] `tdx wf schedule` — martes 22:00h MX (`nmx_crm_reporte.nmx_crm_reporte`)
+### BUG-03: Duplicados CSV antes de JOIN de atribución
+- **Síntoma:** 27,731 filas con misma clave (fecha_hora, shortlink, store) en `land_qcart_carritos` — ROW_NUMBER tiraba datos
+- **Causa real:** Duplicados no afectaban shortlinks atribuidos (0 duplicados entre los 82 de `dim_shortlink`)
+- **Fix preventivo:** CTE `land_collapsed` que hace GROUP BY + SUM antes del JOIN
+- **Commit:** `8aa4524`
+
+### BUG-04: `tipo_envio` incorrecto — "100 años", "Hotcakes", "Checo" en AON
+- **Síntoma:** Piezas one-shot aparecían en la pestaña AON del dashboard
+- **Causa:** `hechos.dig` + `reporte.dig` corrieron antes de `catalogo.dig` → `tabla_piezas` stale
+- **Fix:** Correr `catalogo.dig` primero (Attempt 1424125690), luego `reporte.dig` (Attempt 1424125825)
+- **Regla permanente:** Siempre `catalogo.dig` → `hechos.dig` → `reporte.dig`
 
 ---
 
@@ -117,17 +124,76 @@ owner: Rick Aguilar
 | OI-13 | Shortlinks Qcart: **329 de 408 sin mapeo** (4.64% cobertura actual) | **Rick** | 🔲 Bloqueante — completar hoja Shortlinks en catálogo |
 | OI-15 | WA-MUNDIAL-CRM-HIVE — 6 filas GA eliminadas de `land_wa_envios` | Studio | ✅ Resuelto 2026-11-12 |
 | OI-16 | `land_qcart_carritos`: 71,117 filas cargadas | Studio | ✅ Resuelto 2026-11-12 |
-| OI-17 | 8 piezas WA clicks corregidos en `land_wa_envios` y `fact_envio_whatsapp` | Studio | ✅ Resuelto 2026-11-12 |
-| OI-18 | Duplicados en `rpt_*` por LEFT JOIN pieza_segmento sin colapsar | Studio | ✅ Resuelto 2026-11-12 |
+| OI-17 | 8 piezas WA clicks corregidos | Studio | ✅ Resuelto 2026-11-12 |
+| OI-18 | Duplicados en `rpt_*` por pieza_segmento sin colapsar | Studio | ✅ Resuelto 2026-11-12 |
+| **OI-19** | **Validación email vs SFMC: posibles discrepancias en métricas** | **Studio + Rick** | **🔲 Abierto — ver plan abajo** |
+| **OI-20** | **`005-P012` aparece en rpt_qcart pero no en rpt_email ni rpt_whatsapp** | Studio | 🔲 Investigar |
 
-### Detalle OI-18: Duplicados por pieza_segmento
+---
 
-Los tres `rpt_*` hacen `LEFT JOIN pieza_segmento → dim_segmento` sin agrupar antes. Con >1 segmento por pieza se multiplican filas:
-- `rpt_whatsapp`: 004-P010/013/017/018/019 aparecen **3×** (3 segmentos cada una)
-- `rpt_email`: 009-P015/016/017 aparecen **2×** (2 segmentos cada una)
-- `rpt_qcart`: misma vulnerabilidad
+## Plan OI-19: Validación email vs SFMC
 
-Fix (Etapa 4): subconsulta que colapsa a 1 fila por pieza antes del JOIN.
+### Contexto
+Rick indica que hay datos en `fact_envio_email` / `rpt_email` que no coinciden con lo que muestra SFMC. Se conectará un MCP para doble validación directa contra SFMC.
+
+### Hipótesis a revisar
+
+1. **Desfase temporal / sync:** Los envíos de SFMC se sincronizan a TD con algún delay. Si el CSV de insumos se generó antes de que terminaran de procesarse todos los opens/clicks en SFMC, los números serán menores en TD.
+
+2. **Deduplicación de opens/clicks:** SFMC reporta únicos (Unique Opens, Unique Clicks). TD puede estar contando todos los eventos incluyendo re-opens/re-clicks. Verificar si `fact_envio_email` usa conteos únicos o totales.
+
+3. **Filtro de piezas:** El catálogo de TD incluye solo las piezas CRM registradas. Si SFMC tiene envíos adicionales (transaccionales, batch no-CRM) que no están en `land_piezas`, TD no los va a mostrar.
+
+4. **Job IDs / Email Names:** La unión entre SFMC y TD se hace por `job_id` o `email_name`. Si hay discrepancia en los identificadores (typos, versiones, A/B sends), algunas piezas no van a matchear.
+
+5. **Supresiones y bounces:** SFMC reporta Sends después de supresiones. TD puede tener Sends brutas del CSV. Verificar qué definición usa cada tabla.
+
+6. **Métricas FUP:** Verificar que los `fup_*` de TD coincidan con los datos del FUP en SFMC (pueden estar en jobs separados).
+
+### Checklist de validación (cuando esté el MCP)
+
+```
+Para cada pieza con discrepancia:
+□ Comparar p_sends (TD) vs Sends (SFMC) → ¿mismo Job ID?
+□ Comparar p_opens (TD) vs Unique Opens (SFMC) → ¿son únicos en ambos?
+□ Comparar p_clicks (TD) vs Unique Clicks (SFMC)
+□ Revisar fecha de extracción del CSV vs fecha de corte SFMC
+□ Verificar que email_name en TD matchea exactamente con Job Name en SFMC
+□ Revisar si hay splits A/B no consolidados
+□ Confirmar que los FUPs están correctamente vinculados (mismo job o jobs separados)
+```
+
+### Tablas a comparar
+- `nmx_insumos.land_email_envios` (raw del CSV de SFMC) vs SFMC directo
+- `nmx_hechos.fact_envio_email` (procesado) vs SFMC
+- Foco inicial: piezas con mayor volumen donde la discrepancia sea más visible
+
+---
+
+## Plan ETAPA 7: Schedule semanal
+
+```bash
+tdx wf schedule nmx_crm_reporte.nmx_crm_reporte \
+  --cron "0 22 * * 2" \
+  --timezone "America/Mexico_City"
+```
+
+> Martes 22:00h MX. Ejecuta el workflow completo (`catalogo.dig` → `hechos.dig` → `reporte.dig`) en ese orden.
+> **Pendiente:** Confirmar que `nmx_crm_reporte.nmx_crm_reporte` es el workflow master que llama a los 3 en secuencia, o crear uno nuevo.
+
+---
+
+## Catálogo de commits relevantes
+
+| Commit | Descripción |
+|--------|-------------|
+| `323c9a9` | fix: _qc formato correcto en dashboard (lista → objeto agregado) |
+| `4455581` | data: validación totales Qcart + fix duplicados CSV |
+| `8aa4524` | fix: colapsar dupes CSV antes de atribución fact_qcart |
+| `849809d` | docs: ESTADO.md validación Qcart completa |
+| `77a8de9` | fix tipo_envio: 100años/Hotcakes/Checo → One-Shot |
+| `493efee` | refresh dashboard datos reales post-pipeline |
+| `6d6ab24` | fix OI-18: 0 duplicados en rpt_* |
 
 ---
 
@@ -135,7 +201,8 @@ Fix (Etapa 4): subconsulta que colapsa a 1 fila por pieza antes del JOIN.
 
 - Repo: `catalogo/` · `insumos/` · `referencia/` · `workflow/queries/{catalogo,hechos,reporte}/`
 - `load_catalogo.py` / `reload_catalog.py`: lee XLSX raw directamente + `WA_SKIP_NOMBRES` + `WA_CLICKS_OVERRIDE`
-- `fix_wa_envios.py` en `my/scripts/`: corrección ad hoc de `land_wa_envios` sin re-fetch del XLSX
-- Fact tables: formato v8 con Principal+FUP wide, clicks desglosados CTA/Baja/Medidos
-- `rpt_qcart` grain: `(pieza_id, quincena)` — agrega a nivel pieza en el dashboard
+- `fix_wa_envios.py` en `my/scripts/`: corrección ad hoc de `land_wa_envios`
+- Fact tables: formato v8 Principal+FUP wide, clicks desglosados CTA/Baja/Medidos
+- `rpt_qcart` grain: `(pieza_id, quincena)` — agrega en dashboard con `aggregate_qc_for_pieza()`
 - Dashboard `reporte-consolidado-crm.html`: 83 columnas ordenables, totales campaña P+FUP+Total+Qcart, paleta morado/rosa, Gotham/Montserrat, timestamp dinámico, filtro Quincena, badge v1
+- **Regla de orden de ejecución:** `catalogo.dig` siempre primero — `tabla_piezas` stale rompe tipo_envio en todos los `rpt_*`
