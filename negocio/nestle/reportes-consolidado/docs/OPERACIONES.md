@@ -1,6 +1,6 @@
 # OPERACIONES: Reporte Consolidado Nestlé México
 
-> Runbook del flujo de actualización de datos. Versión operativa — Etapas 0–5 implementadas.
+> Runbook del flujo de actualización de datos. Versión operativa — Etapas 0–6 implementadas.
 
 ---
 
@@ -21,7 +21,7 @@ Qcart CSVs (carritos/    ──→                  nmx_insumos.land_qcart_carri
                                                nmx_reporte.rpt_qcart
 ```
 
-Dimensiones compartidas: `dim_marca`, `dim_bu`, `dim_campana`, `dim_objetivo`, `dim_shortlink`.
+Dimensiones compartidas: `dim_marca`, `dim_bu`, `dim_campana`, `dim_objetivo`, `dim_shortlink`, `dim_touchpoint_brief`, `dim_segmento`, `pieza_segmento`.
 
 ---
 
@@ -78,13 +78,6 @@ Si se agregaron nuevas piezas, journeys de WA, o shortlinks:
 | Shortlinks | nmx_insumos.dim_shortlink |
 | Marcas | nmx_insumos.dim_marca |
 | BU | nmx_insumos.dim_bu |
-| Campañas | nmx_insumos.dim_campana |
-| Objetivos | nmx_insumos.dim_objetivo |
-| Config | nmx_insumos.dim_config |
-
-> **OI-09/15**: 7 journeys de WA aún no están en la hoja Nombres.
-> Hasta que Rick los agregue, esas piezas de WA no tendrán `pieza_id` en `rpt_whatsapp`.
-> Ver `docs/ESTADO.md` para los nombres exactos.
 
 ---
 
@@ -94,14 +87,9 @@ Si se agregaron nuevas piezas, journeys de WA, o shortlinks:
 tdx wf run nmx_crm_reporte.nmx_crm_reporte
 ```
 
-El workflow ID es `2105350` en la carpeta `CRM` de TD.
-
-**Duración esperada:** 90–120 segundos (sin recarga de Qcart desde cero).
-
-**Estructura del workflow:**
-
+El pipeline corre en orden:
 ```
-nmx_crm_reporte.dig
+catalogo.dig → hechos.dig → reporte.dig
 ├── catalogo.dig     # recarga las 10 tablas de dimensiones
 ├── hechos.dig       # reconstruye fact_envio_email, _whatsapp, fact_evento_qcart_*
 └── reporte.dig      # reconstruye rpt_email, rpt_whatsapp, rpt_qcart
@@ -117,19 +105,27 @@ tdx wf attempts nmx_crm_reporte.nmx_crm_reporte --limit 1
 ### Paso 3 — Validar resultados
 
 ```sql
--- Email: grain (pieza_id, mes)
+-- Email: grain (pieza_id, mes) — solo Principals, FUP al lado como columnas
 SELECT COUNT(*) cnt, COUNT(DISTINCT pieza_id) piezas,
-       MIN(mes) min_mes, MAX(mes) max_mes
+       MIN(mes) min_mes, MAX(mes) max_mes,
+       COUNT(DISTINCT fup_pieza_id) piezas_con_fup
 FROM nmx_reporte.rpt_email;
+
+-- Verificar columnas clave de Etapa 6 (subject + clicks breakdown)
+SELECT pieza_id, subject_principal, p_clicks_cta, p_clicks_baja, p_clicks_medidos,
+       fup_pieza_id, fup_sends, tot_open_rate, tot_ctor
+FROM nmx_reporte.rpt_email LIMIT 5;
 
 -- WhatsApp: grain (pieza_id, quincena)
 SELECT COUNT(*) cnt, COUNT(DISTINCT pieza_id) piezas,
        MIN(quincena) min_q, MAX(quincena) max_q
 FROM nmx_reporte.rpt_whatsapp;
 
--- Qcart: grain (pieza_id, quincena)
+-- Qcart: grain (pieza_id) — una fila por pieza con rango completo
 SELECT COUNT(*) cnt, COUNT(DISTINCT pieza_id) piezas,
-       MIN(quincena) min_q, MAX(quincena) max_q
+       MIN(fecha_desde) min_fecha, MAX(fecha_hasta) max_fecha,
+       SUM(carritos_total) total_carritos,
+       ROUND(SUM(intencion_nestle_mxn) / 1000, 0) AS intencion_nestle_k
 FROM nmx_reporte.rpt_qcart;
 ```
 
@@ -137,9 +133,11 @@ FROM nmx_reporte.rpt_qcart;
 
 | Tabla | Filas | Piezas | Rango |
 |---|---|---|---|
-| rpt_email | ~140 | ~135 | 2026-03 → 2026-10 |
+| rpt_email | ~115 | ~115 Principals | 2026-03 → 2026-10 |
 | rpt_whatsapp | ~18 | ~18 | 2026-Q2-1 → 2026-Q4-2 |
-| rpt_qcart | pendiente | pendiente | — |
+| rpt_qcart | ~42 | ~42 | 2026-03 → 2026-11 |
+
+> rpt_email contará solo Principals (no FUPs independientes). Los FUPs aparecen como columnas en su fila Principal.
 
 ---
 
@@ -165,15 +163,52 @@ uv run --with openpyxl /home/agent/work/2026-09-10_gp5b06/my/scripts/_reload_wa_
 
 ---
 
+## Esquema de las tablas de reporte (referencia v8)
+
+### nmx_reporte.rpt_email (formato wide Principal + FUP)
+
+| Grupo | Columnas |
+|-------|----------|
+| Dimensiones | `campana`, `medio`, `objetivo`, `touchpoint_brief`, `tipo_email`, `tipo_envio`, `segmento_nombre`, `tiene_qcart`, `quincena_principal`, `mes`, `marca`, `bu` |
+| IDs Principal | `pieza_id`, `email_name_principal`, `subject_principal`, `fecha_envio_principal`, `jobs_principal` |
+| Métricas Principal | `p_sends`, `p_deliveries`, `p_opens`, `p_clicks`, `p_clicks_cta`, `p_clicks_baja`, `p_clicks_medidos`, `p_unsubs`, `p_open_rate`, `p_ctor`, `p_click_rate`, `p_utor` |
+| IDs FUP | `fup_pieza_id`, `email_name_fup`, `subject_fup`, `quincena_fup`, `fecha_envio_fup` |
+| Métricas FUP | `fup_sends`, `fup_deliveries`, `fup_opens`, `fup_clicks`, `fup_clicks_cta`, `fup_clicks_baja`, `fup_clicks_medidos`, `fup_unsubs`, `fup_open_rate`, `fup_ctor`, `fup_click_rate`, `fup_utor` |
+| Totales P+FUP | `tot_sends`, `tot_deliveries`, `tot_opens`, `tot_clicks`, `tot_clicks_cta`, `tot_clicks_baja`, `tot_clicks_medidos`, `tot_unsubs`, `tot_open_rate`, `tot_ctor`, `tot_click_rate`, `tot_utor` |
+
+### nmx_reporte.rpt_whatsapp
+
+| Columnas |
+|----------|
+| `pieza_id`, `marca`, `bu`, `campana`, `objetivo`, `touchpoint_brief`, `segmento_nombre`, `nombre_wa`, `quincena`, `mes` |
+| `sends`, `deliveries`, `no_entregados`, `opens_read`, `clicks`, `errores` |
+| `wa_pct_entrega`, `wa_pct_no_entrega`, `wa_pct_read_vs_entrega`, `wa_pct_click_vs_read` |
+
+### nmx_reporte.rpt_qcart
+
+| Columnas |
+|----------|
+| `pieza_id`, `marca`, `bu`, `campana`, `objetivo`, `segmento_nombre` |
+| `fecha_desde`, `fecha_hasta` |
+| `carritos_walmart`, `carritos_chedraui`, `carritos_total`, `views_carrito` |
+| `views_productos_nestle`, `intencion_total_mxn`, `intencion_nestle_mxn` |
+| `pct_penetracion_nestle`, `ticket_carrito_mxn`, `ticket_producto_mxn`, `receta_representativa` |
+
+---
+
 ## Troubleshooting
 
 ### `QUERY_TEXT_TOO_LARGE`
 - Causa: batch con filas de UTMs largos supera 1M chars
-- Fix: en `_load_qcart_only.py`, reducir `BATCH_SIZE` a 2000 y relanzar desde el offset que falló (ver `_resume_qcart_63k.py` como referencia)
+- Fix: en `_load_qcart_only.py`, reducir `BATCH_SIZE` a 2000 y relanzar desde el offset que falló
 
 ### WA journey sin pieza_id en rpt_whatsapp
 - Causa: nombre del journey no está en `tabla_nombres` del catálogo
 - Fix: Rick agrega el journey a `catalogo/Catalogo-Nestle-MX.xlsx` hoja `Nombres`, re-push, recorrer pipeline
+
+### rpt_email tiene menos filas de las esperadas
+- Causa: piezas FUP (con pieza_principal_id) no se muestran como filas independientes
+- Esto es normal: las FUPs aparecen como columnas de su Principal correspondiente
 
 ### Pipeline falla en <5 segundos
 - Causa: error de sintaxis en un .dig o SQL transient
@@ -200,4 +235,4 @@ uv run --with openpyxl /home/agent/work/2026-09-10_gp5b06/my/scripts/_reload_wa_
 
 ---
 
-*Última actualización: 2026-11-11 — Etapas 0–5 implementadas. Pendiente: Etapa 6 (dashboard) y Etapa 7 (schedule automático).*
+*Última actualización: 2026-11-11 — Etapas 0–6 SQLs completos. Pendiente: cargar Qcart + run pipeline final + dashboard TD Studio.*
