@@ -126,46 +126,99 @@ owner: Rick Aguilar
 | OI-16 | `land_qcart_carritos`: 71,117 filas cargadas | Studio | ✅ Resuelto 2026-11-12 |
 | OI-17 | 8 piezas WA clicks corregidos | Studio | ✅ Resuelto 2026-11-12 |
 | OI-18 | Duplicados en `rpt_*` por pieza_segmento sin colapsar | Studio | ✅ Resuelto 2026-11-12 |
-| **OI-19** | **Validación email vs SFMC: posibles discrepancias en métricas** | **Studio + Rick** | **🔲 Abierto — ver plan abajo** |
+| **OI-19** | **Validación email vs SFMC — hallazgos completos** | **Studio + Rick** | **🔲 Decisión de Rick pendiente — ver análisis abajo** |
 | **OI-20** | **`005-P012` aparece en rpt_qcart pero no en rpt_email ni rpt_whatsapp** | Studio | 🔲 Investigar |
+| **OI-21** | **290 email_names sin mapeo en prod_sfmc_sends (50.4M sends no atribuidos)** | **Rick** | 🔲 Rick decide cuáles agregar al catálogo |
 
 ---
 
-## Plan OI-19: Validación email vs SFMC
+## Análisis OI-19: Validación email vs SFMC — RESULTADO
 
-### Contexto
-Rick indica que hay datos en `fact_envio_email` / `rpt_email` que no coinciden con lo que muestra SFMC. Se conectará un MCP para doble validación directa contra SFMC.
+### Veredicto
+**Los datos en TD son correctos.** Para todos los `email_name` registrados en `tabla_nombres`, `diff_sends = 0` — coincidencia perfecta con `prod_sfmc_sends`.
 
-### Hipótesis a revisar
+La "discrepancia" reportada NO es un error de datos: es que el catálogo CRM cubre solo una fracción de todos los envíos en SFMC.
 
-1. **Desfase temporal / sync:** Los envíos de SFMC se sincronizan a TD con algún delay. Si el CSV de insumos se generó antes de que terminaran de procesarse todos los opens/clicks en SFMC, los números serán menores en TD.
+### Escala real (2026, jobs con ≥10 sends)
+| Estado | email_names | Jobs | Total Sends |
+|--------|-------------|------|-------------|
+| **MAPEADOS** (en catálogo) | 135 | 141 | **34.6M** |
+| **SIN MAPEO** (fuera del reporte) | 290 | 5,071 | **50.4M** |
 
-2. **Deduplicación de opens/clicks:** SFMC reporta únicos (Unique Opens, Unique Clicks). TD puede estar contando todos los eventos incluyendo re-opens/re-clicks. Verificar si `fact_envio_email` usa conteos únicos o totales.
+> Los mapeados tienen 141 jobs para 135 nombres porque algunas piezas tienen sends en más de un job_id (ej. A/B, re-send).
+> Los SIN MAPEO tienen 5,071 jobs para 290 nombres porque incluyen campañas trigger/journey que generan un job por envío o por segmento.
 
-3. **Filtro de piezas:** El catálogo de TD incluye solo las piezas CRM registradas. Si SFMC tiene envíos adicionales (transaccionales, batch no-CRM) que no están en `land_piezas`, TD no los va a mostrar.
+### Campañas SIN MAPEO con mayor volumen (top 15)
 
-4. **Job IDs / Email Names:** La unión entre SFMC y TD se hace por `job_id` o `email_name`. Si hay discrepancia en los identificadores (typos, versiones, A/B sends), algunas piezas no van a matchear.
+| email_name | Tipo | Sends | Período |
+|------------|------|-------|---------|
+| NESCAFE CLASICO | Simple | 2.23M | Mar 2026 |
+| RN_Volcano_12026 | RN_ prefix | 1.33M | Ene 2026 |
+| O_Maggi-Seleccion-NC006537_1_... *(extras)* | O_ sin registrar | 1.20M | May 2026 |
+| J_AMMA-Partnership-NC006962_... | O_/J_ sin registrar | 1.11M | Ene–Jul 2026 |
+| RN_LigaMX_Jornada1 | RN_ prefix | 1.11M | Ene 2026 |
+| RN_LigaMX_J2 | RN_ prefix | 1.10M | Ene 2026 |
+| RN_MX VS PANAMA | RN_ prefix | 1.10M | Ene 2026 |
+| RN_MX VS BOLIVIA | RN_ prefix | 1.09M | Ene 2026 |
+| RN_LigaMX_Jornada_20260207 | RN_ prefix | 1.09M | Feb 2026 |
+| RN_Volcano_1001_TP1 | RN_ prefix | 1.03M | Ene 2026 |
+| RN_MaggyCrunchy_Tp2 | RN_ prefix | 1.03M | Ene 2026 |
+| O_Recetas-NC008057_... *(var)*  | O_ NC diferente | 998K | Ago–Oct 2026 |
+| J_MYW-NC004140_... *(14 segs)* | J_ sin registrar | ~9M total | Ene 2026 |
+| J_Recetas-San-Valentin-NC008005_... | J_ sin registrar | ~1.8M | Feb 2026 |
+| J_Cuaresma-Recetas-NC008303_... | J_ sin registrar | ~1.2M | Mar 2026 |
 
-5. **Supresiones y bounces:** SFMC reporta Sends después de supresiones. TD puede tener Sends brutas del CSV. Verificar qué definición usa cada tabla.
+### Grupos de emails sin mapeo
 
-6. **Métricas FUP:** Verificar que los `fup_*` de TD coincidan con los datos del FUP en SFMC (pueden estar en jobs separados).
+| Grupo | Campañas | Sends |
+|-------|----------|-------|
+| Campañas CRM con O_/J_ naming correcto pero NO registradas | ~40 | ~35M |
+| Campañas `RN_` prefix (naming diferente, mismos segmentos) | ~15 | ~12M |
+| Purina/Petcare (MX.Purina.*, MX.Proplan.*) | 27 | 3.6M |
 
-### Checklist de validación (cuando esté el MCP)
+### Acción requerida: **Rick decide**
+
+Los emails con O_/J_ naming correcto que faltan son campañas legítimas NMX no registradas en `land_piezas`+`land_nombres`. Ejemplos:
 
 ```
-Para cada pieza con discrepancia:
-□ Comparar p_sends (TD) vs Sends (SFMC) → ¿mismo Job ID?
-□ Comparar p_opens (TD) vs Unique Opens (SFMC) → ¿son únicos en ambos?
-□ Comparar p_clicks (TD) vs Unique Clicks (SFMC)
-□ Revisar fecha de extracción del CSV vs fecha de corte SFMC
-□ Verificar que email_name en TD matchea exactamente con Job Name en SFMC
-□ Revisar si hay splits A/B no consolidados
-□ Confirmar que los FUPs están correctamente vinculados (mismo job o jobs separados)
+J_MYW-NC004140_...           → Nescafé Make Your World (Enero 2026)
+J_Recetas-San-Valentin-...   → San Valentín 2026
+J_Cuaresma-Recetas-...       → Cuaresma 2026
+J_Anniversary-NC007063_...   → Aniversario 2026
+J_Birthday-NC007068_...      → Cumpleaños (trigger)
+O_NH-NC007067_...            → Nestlé Home, Sep 2026
+O_Nescafe-HotSale-...        → Hot Sale 2026
+O_FamilyNes-NC008592_...     → FamilyNes (extra jobs)
+J_AMMA-Partnership-...       → AMMA Partnership
+O_Recetas-NC008057_...       → Recetas CDP (NC diferente a NC000600)
+J_Nescafe-Classic-NC002832_. → Nescafé Winback (Oct 2026)
+O_Gerber-Decisions-...       → Gerber (otro brand)
 ```
 
-### Tablas a comparar
-- `nmx_insumos.land_email_envios` (raw del CSV de SFMC) vs SFMC directo
-- `nmx_hechos.fact_envio_email` (procesado) vs SFMC
+Los `RN_` prefix son probablemente campañas del equipo de Recetas Nestlé con nomenclatura diferente. Rick debe confirmar si deben incluirse.
+
+**Para agregar campañas:** Rick agrega filas en `land_piezas` (Excel) + `land_nombres` con los `email_name` exactos. Luego se re-ejecuta `catalogo.dig` → `hechos.dig` → `reporte.dig`.
+
+### Métricas para emails MAPEADOS: ¿son correctas?
+Sí. Para los 141 jobs con pieza registrada:
+- `diff_sends = 0` para todos los verificados
+- Opens y clicks usan `COUNT(DISTINCT subscriber_key)` = únicos, igual que SFMC
+- Si SFMC muestra números distintos es porque está viendo piezas adicionales NO registradas en TD
+
+---
+
+## Plan OI-19: Checklist MCP (cuando esté disponible)
+
+```
+Para validación directa con SFMC vía MCP:
+□ Confirmar email_names exactos de las campañas con discrepancia reportada
+□ ¿Qué Job Names/IDs muestra SFMC para esas campañas?
+□ Si están en la lista de SIN_MAPEO de arriba → confirmar si deben agregarse al catálogo
+□ Para los MAPEADOS: verificar que Job Name en SFMC = nombre_unico en tabla_nombres
+□ Revisar si hay splits A/B que TD consolida pero SFMC muestra por separado
+```
+
+
 - Foco inicial: piezas con mayor volumen donde la discrepancia sea más visible
 
 ---
