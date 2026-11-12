@@ -9,6 +9,6 @@ _export:
 # WA envíos y Qcart: pendiente implementar con td_load> (Etapa 4)
 
 +placeholder:
-  td>: queries/landing_check.sql
+  td>: queries/catalogo/landing_check.sql
   database: nmx_insumos
   store_last_results: true

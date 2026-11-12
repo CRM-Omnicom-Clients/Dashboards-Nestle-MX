@@ -1,6 +1,6 @@
 # ESTADO · Dashboard Liga MX 2026
 
-> Documento vivo. Última actualización: 2026-10-30 (v4 · nueva iteración: notas internas eliminadas, columnas sticky, top-3 verde, flechas ↑↓, S4 removida).
+> Documento vivo. Última actualización: 2026-11-11 (exec-v1 · dashboard ejecutivo con storytelling Pyramid Principle · 6 slides 100vh · SVG charts · push a Pages).
 
 ---
 
@@ -25,7 +25,34 @@ Más una síntesis **📋 Accionables** con 5 bullets.
 
 ---
 
-## Commits en producción
+## Dashboard ejecutivo (exec-v1)
+
+**Entrega pública:**
+`https://crm-omnicom-clients.github.io/Dashboards-Nestle-MX/negocio/nestle/rn/maggi/liga-mx/dashboard-maggi-liga-mx-exec-v1.html`
+
+**Script**: `my/build_exec_v1.py` → `my/dashboard_maggi_exec_v1.html` (0.25 MB)
+
+### Estructura (6 slides × 100vh, Pyramid Principle / SCQA)
+
+| Slide | ID | Contenido |
+|---|---|---|
+| 0 | `s0` | Portada · Logo + headline + 3 KPI chips (1.29% CTOR · 16 piezas · 316 clicks QCart) |
+| 1a | `s1a` | Divergent bar · SNM/SNF vs jornadas regulares · +117% WA-SNF-1 · −31% E-SNM-3 (video) |
+| 1b | `s1b` | Grouped bars · Clásicos J7–J10 · por qué no se pueden juzgar todavía · rec. test limpio 2027 |
+| 2 | `s2` | KPI strip intención de compra · horizontal bars QCart clicks por pieza WA |
+| 3a | `s3a` | 3 decisiones creativas: atleta (+63%/+117%) · MAGGI protagonista (0.997% vs 0.722%) · un canal un objetivo |
+| 3b | `s3b` | 2 decisiones audiencia: no video como destino único · ampliar base WA (misma pool −29%) |
+
+---
+
+## Commits en producción — exec-v1
+
+| Hash | Descripción |
+|---|---|
+| `5374ee2` | **fix**: eliminar `.slide-question` duplicado (CSS cascade bug) · labels S3b sin encimes |
+| `28d2dfe` | **style(exec-v1)**: question 72px, accionables 24px+glow, S1a imágenes debajo de gráfica, S3b decisiones Bebas Neue 30px gold |
+
+## Commits en producción — V4
 
 | Hash | Descripción |
 |---|---|

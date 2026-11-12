@@ -11,6 +11,9 @@ _export:
 +hechos:
   call>: hechos.dig
 
++reporte:
+  call>: reporte.dig
+
 _error:
   mail>: Reporte Consolidado — pipeline falló
   subject: "[nmx_crm_reporte] nmx_crm_reporte.dig FALLÓ — ${session_date}"
