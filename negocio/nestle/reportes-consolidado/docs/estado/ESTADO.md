@@ -1,7 +1,7 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12T20:40
-status: "Etapas 1-6 completas. Bloqueante: OI-13 (329 shortlinks sin mapeo). Pendiente: Etapa 7 (schedule)."
+updated: 2026-11-12T21:00
+status: "Etapas 1-6 completas + validación Qcart. Bloqueante: OI-13 (329 shortlinks sin mapeo). Pendiente: Etapa 7 (schedule)."
 owner: Rick Aguilar
 ---
 
@@ -16,9 +16,9 @@ owner: Rick Aguilar
 
 | Canal | Tabla fact | Estado | Tabla rpt | Notas |
 |-------|-----------|--------|-----------|-------|
-| Email | `fact_envio_email` | ✓ | `rpt_email` | AON 39 piezas · OS 99 piezas · ⚠️ 2× rows para 009-P015/016/017 (OI-18) |
-| WhatsApp | `fact_envio_whatsapp` | ✓ datos corregidos | `rpt_whatsapp` | ⚠️ 3× rows para 004-P010/013/017/018/019 (OI-18) |
-| Qcart | `fact_evento_qcart_*` | 🔄 rebuild en curso | `rpt_qcart` | 71K filas land ✓ · cobertura shortlinks 4.64% (OI-13 bloqueante) |
+| Email | `fact_envio_email` | ✓ | `rpt_email` | AON 19 rows · OS 86 rows (105 total) |
+| WhatsApp | `fact_envio_whatsapp` | ✓ datos corregidos | `rpt_whatsapp` | 24 rows · 0 duplicados |
+| Qcart | `fact_evento_qcart_*` | ✓ validado | `rpt_qcart` | 2,991 eventos · 15 piezas email con Qcart · ticket avg \$281-\$461 MXN |
 
 > **Dashboard v1 publicado:** https://crm-omnicom-clients.github.io/Dashboards-Nestle-MX/dashboards/reporte-consolidado-crm.html
 >
