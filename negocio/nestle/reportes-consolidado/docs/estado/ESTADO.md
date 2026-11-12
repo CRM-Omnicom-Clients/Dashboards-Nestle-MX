@@ -1,13 +1,13 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12T21:30
-status: "Pipeline completo ✓. Dashboard live. OI-13 (shortlinks) pendiente Rick. OI-19 (validación email vs SFMC) abierto."
+updated: 2026-11-12T23:00
+status: "Pipeline completo ✓. Dashboard live. Auditoría Qcart BUG-05/06/07 resuelta. OI-13 (shortlinks) pendiente Rick."
 owner: Rick Aguilar
 ---
 
 # ESTADO: Reporte Consolidado Nestlé México en TD
 
-> Fuente de verdad del proyecto — actualizado 2026-11-12T21:30.
+> Fuente de verdad del proyecto — actualizado 2026-11-12T23:00.
 > Para la arquitectura del sistema, ver `ARQUITECTURA.md`. Para correr, ver `OPERACIONES.md`.
 
 ---
@@ -18,7 +18,7 @@ owner: Rick Aguilar
 |-------|-----------|--------|-----------|-----------------|
 | Email | `fact_envio_email` | ✓ | `rpt_email` | 105 rows · 100 piezas únicas · AON 19 rows · OS 86 rows |
 | WhatsApp | `fact_envio_whatsapp` | ✓ corregido | `rpt_whatsapp` | 24 rows · 18 piezas · OI-15+17 resueltos |
-| Qcart | `fact_evento_qcart_*` | ✓ validado | `rpt_qcart` | 183 rows · 37 piezas · 7,185 carritos · $2.69M intención |
+| Qcart | `fact_evento_qcart_*` | ✓ auditado | `rpt_qcart` | 183 rows · 37 piezas · **7,185 carritos** · $2.69M intención total · **$279.7K intención Nestlé** · **pct 10.4%** · tkt_c $374 · tkt_p $26.94 |
 
 **Cobertura Qcart en dashboard:**
 - Email con Qcart: **28 piezas** (8 AON + 20 OS) — antes se reportaron 15/26 por archivo truncado
@@ -27,7 +27,7 @@ owner: Rick Aguilar
 
 > **Dashboard v1 publicado:** https://crm-omnicom-clients.github.io/Dashboards-Nestle-MX/dashboards/reporte-consolidado-crm.html
 >
-> Última actualización: 2026-11-12 — datos pipeline completo, Qcart 183 rows, fórmulas validadas.
+> Última actualización: 2026-11-12 — auditoría Qcart completa (BUG-05/06/07 resueltos), intencion_nestle corregida de $66K → $279.7K.
 
 ---
 
@@ -40,11 +40,11 @@ owner: Rick Aguilar
 | 3 | Workflow Digdag: `hechos.dig` | ✓ COMPLETA |
 | 4a | `fact_envio_email` | ✓ 105 filas · 100 piezas |
 | 4b | `fact_envio_whatsapp` | ✓ 24 filas corregidas |
-| 4c | `fact_evento_qcart_*` | ✓ 2,991 carritos · 37 piezas atribuidas |
+| 4c | `fact_evento_qcart_*` | ✓ **7,185 carritos** · 37 piezas atribuidas (BUG-05/06/07 resueltos) |
 | 5a | `rpt_email` | ✓ OI-18 resuelto · 105 filas · 0 duplicados |
 | 5b | `rpt_whatsapp` | ✓ OI-18 resuelto · 24 filas · 0 duplicados |
-| 5c | `rpt_qcart` | ✓ 183 filas · 37 piezas · totales validados |
-| 6 | Dashboard HTML v1 | ✓ Publicado · datos reales · Qcart 28E+8WA piezas |
+| 5c | `rpt_qcart` | ✓ 183 filas · 37 piezas · totales auditados · **BUG-05/06/07 resueltos** |
+| 6 | Dashboard HTML v1 | ✓ Publicado · datos reales · Qcart 28E+8WA piezas · intencion_nestle corregida |
 | **P1** | **Catálogo rebuild (AON/OS verificado, 157 piezas)** | **✓ COMPLETA 2026-11-12** |
 | **P2** | **WA insumos corregidos (OI-15+17)** | **✓ COMPLETA 2026-11-12** |
 | **P3** | **Pipeline final + dashboard refrescado** | **✓ COMPLETA 2026-11-12** |
@@ -112,6 +112,28 @@ owner: Rick Aguilar
 - **Causa:** `hechos.dig` + `reporte.dig` corrieron antes de `catalogo.dig` → `tabla_piezas` stale
 - **Fix:** Correr `catalogo.dig` primero (Attempt 1424125690), luego `reporte.dig` (Attempt 1424125825)
 - **Regla permanente:** Siempre `catalogo.dig` → `hechos.dig` → `reporte.dig`
+
+### BUG-05: `intencion_nestle` subestimada — $66K en lugar de $279.7K
+- **Síntoma:** `rpt_qcart` reportaba solo $66,360 intención Nestlé; pct_penetracion=2.5%
+- **Causa:** CTE `nestle_productos` en `rebuild_rpt_qcart.sql` tenía `WHERE LOWER(brand) LIKE '%nestle%' OR LOWER(brand) LIKE '%nestlé%'`. Solo matcheaba la marca literal "nestle", ignorando Maggi ($18.9M+ en raw), La Lechera, Carnation, Nescafé, Nido, Nesquik, etc.
+- **Raíz confirmada:** `land_qcart_productos` contiene SOLO marcas Nestlé — las 12 marcas distintas son todas del portfolio. No hay productos de competidores en esta tabla.
+- **Fix:** Se eliminó el `WHERE` completamente de `nestle_productos`. Comentario explicativo agregado.
+- **Resultado:** intencion_nestle corregida a **$279,728**; pct_global=**10.4%**; tkt_producto=**$26.94**
+- **Workflow re-run:** Attempt 1424132257 ✅ · **Commit:** `3310f29` + `e787520`
+
+### BUG-06: `pct_penetracion_nestle > 100%` en 29 rows
+- **Síntoma:** Filas con pct como 2,216%, 1,691%, 658%, etc.
+- **Causa (grain mismatch):** `views` en `land_qcart_carritos` ≠ `views` en `land_qcart_productos`. En carritos = cart sessions (deduplicadas); en productos = impresiones individuales por SKU. Un shortlink×fecha puede tener 1 cart session ($367.90) pero 174 impresiones de producto ($8,154), haciendo que `inn > itn`.
+- **Impacto:** 29 rows afectadas, 102 carritos (1.4% del total 7,185)
+- **Fix:** `CASE WHEN inn > itn THEN NULL ELSE pct END` — mostrar NULL en lugar de % imposible. El `pct_global` agregado (10.4%) no se ve afectado (se calcula de SUM(inn)/SUM(itn)).
+- **Commit:** `f918371`
+
+### BUG-07: `carritos_walmart + carritos_chedraui > carritos_total`
+- **Síntoma:** Muchas filas donde la suma de splits Walmart+Chedraui excedía el total de carritos
+- **Causa:** 712 filas en `land_qcart_carritos` tienen `store = 'chedraui-com-mx, walmart-com-mx'` o `'walmart-com-mx, chedraui-com-mx'` (valor combinado). Ambas condiciones LIKE matcheaban → 3,074 views contados doble.
+- **Fix:** `NOT LIKE '%chedraui%'` agregado al CASE walmart; `NOT LIKE '%walmart%'` al CASE chedraui.
+- **Verificación:** `rows_wm+ched>total = 0` post-fix.
+- **Workflow re-run:** Attempt 1424132696 ✅ · **Commit:** `f918371`
 
 ---
 
@@ -247,6 +269,11 @@ tdx wf schedule nmx_crm_reporte.nmx_crm_reporte \
 | `77a8de9` | fix tipo_envio: 100años/Hotcakes/Checo → One-Shot |
 | `493efee` | refresh dashboard datos reales post-pipeline |
 | `6d6ab24` | fix OI-18: 0 duplicados en rpt_* |
+| `3310f29` | **fix BUG-05: intencion_nestle subestimada — filtro brand incorrecto en rpt_qcart** |
+| `e787520` | **fix BUG-05 + dashboard: intencion_nestle corregida ($66K→$280K, pct 2.5%→10.4%)** |
+| `f918371` | **fix BUG-06+07: pct_penetracion NULL cuando inn>itn, store dual excluido de w/c** |
+| `919bcca` | **dashboard: refresh datos con BUG-05/06/07 corregidos** |
+| `ff60fa8` | chore: update tdx.json revision stamp |
 
 ---
 
