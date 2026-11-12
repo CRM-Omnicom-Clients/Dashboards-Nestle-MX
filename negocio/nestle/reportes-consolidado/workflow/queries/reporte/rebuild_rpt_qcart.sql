@@ -53,7 +53,7 @@ SELECT
     dc.campana_nombre                                                     AS campana,
     do_.objetivo_nombre                                                   AS objetivo,
     dtp.touchpoint_brief                                                  AS touchpoint_brief,
-    COALESCE(ds.segmento_nombre, '—')                                    AS segmento_nombre,
+    COALESCE(seg.segmento_nombre, '—')                                    AS segmento_nombre,
 
     -- Rango temporal de la quincena
     c.fecha_desde,
@@ -95,8 +95,12 @@ JOIN nmx_catalogo.dim_bu               db    ON db.bu_id        = p.bu_id
 JOIN nmx_catalogo.dim_campana          dc    ON dc.campana_id   = p.campana_id
 JOIN nmx_catalogo.dim_objetivo         do_   ON do_.objetivo_id = p.objetivo_id
 LEFT JOIN nmx_catalogo.dim_touchpoint_brief dtp ON dtp.touchpoint_id = p.touchpoint_id
-LEFT JOIN nmx_catalogo.pieza_segmento  ps    ON ps.pieza_id     = c.pieza_id
-LEFT JOIN nmx_catalogo.dim_segmento    ds    ON ds.segmento_id  = ps.segmento_id
+LEFT JOIN (
+    SELECT ps.pieza_id, MIN(ds2.segmento_nombre) AS segmento_nombre
+    FROM nmx_catalogo.pieza_segmento ps
+    JOIN nmx_catalogo.dim_segmento ds2 ON ds2.segmento_id = ps.segmento_id
+    GROUP BY ps.pieza_id
+) seg ON seg.pieza_id = c.pieza_id
 LEFT JOIN nestle_productos             np    ON np.pieza_id     = c.pieza_id
                                             AND np.quincena     = c.quincena
 LEFT JOIN receta                        r    ON r.pieza_id      = c.pieza_id

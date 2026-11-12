@@ -9,7 +9,7 @@ SELECT
     dc.campana_nombre                                          AS campana,
     do_.objetivo_nombre                                        AS objetivo,
     dt.touchpoint_brief,
-    COALESCE(ds.segmento_nombre, '—')                          AS segmento_nombre,
+    COALESCE(seg.segmento_nombre, '—')                         AS segmento_nombre,
     w.nombre_wa,
     w.quincena,
     w.mes,
@@ -37,7 +37,11 @@ JOIN nmx_catalogo.dim_bu               db  ON db.bu_id        = p.bu_id
 JOIN nmx_catalogo.dim_campana          dc  ON dc.campana_id   = p.campana_id
 JOIN nmx_catalogo.dim_objetivo         do_ ON do_.objetivo_id = p.objetivo_id
 JOIN nmx_catalogo.dim_touchpoint_brief dt  ON dt.touchpoint_id = p.touchpoint_id
-LEFT JOIN nmx_catalogo.pieza_segmento  ps  ON ps.pieza_id     = w.pieza_id
-LEFT JOIN nmx_catalogo.dim_segmento    ds  ON ds.segmento_id  = ps.segmento_id
+LEFT JOIN (
+    SELECT ps.pieza_id, MIN(ds2.segmento_nombre) AS segmento_nombre
+    FROM nmx_catalogo.pieza_segmento ps
+    JOIN nmx_catalogo.dim_segmento ds2 ON ds2.segmento_id = ps.segmento_id
+    GROUP BY ps.pieza_id
+) seg ON seg.pieza_id = w.pieza_id
 
 GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
