@@ -1,7 +1,7 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12
-status: "Dashboard v1 publicado con datos reales. Pipeline con correcciones SQL pendientes + Qcart sin carga completa."
+updated: 2026-11-12T19:35
+status: "Catálogo reconstruido ✓ (AON/OS correcto, 157 piezas). Etapa 2 pendiente: fix WA insumos. Qcart sin carga completa."
 owner: Rick Aguilar
 ---
 
@@ -41,17 +41,24 @@ owner: Rick Aguilar
 | 5c | rpt_qcart | ⚠️ SQL OK · fix pieza_segmento pendiente (ver OI-18) |
 | 6a–d | Formato v8 completo (fact + rpt) | ✓ COMPLETO |
 | **6e** | **Dashboard HTML v1** | **✓ Publicado — mejoras UI 2026-11-12** |
-| **7** | **Pipeline final con datos reales** | **🔲 BLOQUEADO — ver OIs abiertos** |
+| **1-extra** | **Catálogo rebuild (AON/OS verificado)** | **✓ COMPLETA 2026-11-12** |
+| **7** | **Pipeline final con datos reales** | **🔲 EN CURSO — Etapa 2 siguiente** |
 | 8 | Schedule semanal martes 22h | 🔲 PENDIENTE — después de Etapa 7 |
 
 ---
 
 ## Plan completo para pipeline final
 
-### ETAPA 1 — Catálogo (en curso)
-- [x] Verificar tipo_envio AON/OS en `land_piezas` y rebuild catalog chain
+### ETAPA 1 — Catálogo (✓ COMPLETA 2026-11-12)
+- [x] Gate 1 = 0 errores — vocabularios y llaves sin inconsistencias
+- [x] Verificar tipo_envio AON/OS en `land_piezas`: correcto, sin piezas inesperadas
+- [x] Rebuild catalog chain ejecutado y verificado (nmx_crm_reporte.catalogo):
+  - `tabla_piezas`: 157 piezas (Email AON 39 · Email OS 99 · WA 19)
+  - `dim_campana`: 13 · `dim_marca`: 11 · `dim_bu`: 5 · `dim_objetivo`: 11
+  - `dim_segmento`: 52 · `dim_touchpoint_brief`: 79
+  - `pieza_segmento`: 169 (12 piezas con múltiples segmentos — ver OI-18)
+  - `tabla_nombres`: 158 · `dim_shortlink`: 82
 - [ ] Alta piezas nuevas CRM HIVE (si las hay — Rick confirma)
-- [ ] Verificar que `dim_shortlink` cubre todas las piezas con `tiene_qcart = Sí`
 
 ### ETAPA 2 — Insumos WA
 - [ ] **2A** DELETE 6 filas `WA-MUNDIAL-CRM-HIVE` de `land_wa_envios` (sesiones GA, no envíos reales — ver OI-15)
