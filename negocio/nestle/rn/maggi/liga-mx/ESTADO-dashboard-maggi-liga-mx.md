@@ -49,6 +49,7 @@ Más una síntesis **📋 Accionables** con 5 bullets.
 
 | Hash | Descripción |
 |---|---|
+| `c830eee` | **feat(exec-v1)**: S2 QCart completo — $338K intención total · $38.7K Nestlé · gráfica penetración WA por pieza |
 | `5374ee2` | **fix**: eliminar `.slide-question` duplicado (CSS cascade bug) · labels S3b sin encimes |
 | `28d2dfe` | **style(exec-v1)**: question 72px, accionables 24px+glow, S1a imágenes debajo de gráfica, S3b decisiones Bebas Neue 30px gold |
 
