@@ -1,18 +1,18 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12
+updated: 2026-11-11
 status: "Etapas 4+5 completas (parcial Qcart). rpt_email/rpt_whatsapp listos. rpt_qcart pendiente recarga Qcart. 7 nombres WA sin pieza (Rick)."
 owner: Rick Aguilar
 ---
 
 # ESTADO: Reporte Consolidado Nestlé México en TD
 
-> Fuente de verdad del proyecto — actualizado 2026-11-12.
+> Fuente de verdad del proyecto — actualizado 2026-11-11.
 > Para la arquitectura del sistema, ver `ARQUITECTURA.md`. Para correr, ver `OPERACIONES.md`.
 
 ---
 
-## Resumen ejecutivo (2026-11-12)
+## Resumen ejecutivo (2026-11-11)
 
 | Canal | Tabla fact | Filas | Rango fechas | Tabla rpt |
 |-------|-----------|-------|-------------|-----------|
@@ -37,7 +37,7 @@ owner: Rick Aguilar
 | 5b | rpt_whatsapp | ✓ COMPLETA — 18 filas, 18 piezas, Jun–Oct 2026 |
 | 5c | rpt_qcart | ⏳ pendiente: re-correr pipeline cuando termine carga Qcart |
 | 6 | Dashboard (TD Studio) | 🔲 PENDIENTE — requiere OI-12 (diseño) |
-| 7 | OPERACIONES.md runbook | 🔲 PENDIENTE |
+| 7 | OPERACIONES.md runbook | ✓ COMPLETA — proceso completo documentado |
 
 ---
 
