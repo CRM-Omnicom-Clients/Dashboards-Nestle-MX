@@ -1,0 +1,41 @@
+timezone: America/Mexico_City
+
+_export:
+  td:
+    engine: presto
+
+# reporte.dig — construye nmx_reporte (rpt_*) desde nmx_hechos + nmx_catalogo
+# Prerequisito: hechos.dig debe haber corrido exitosamente
+
+# ── rpt_email ──────────────────────────────────────────────
++drop_rpt_email:
+  td_ddl>:
+  drop_tables: [rpt_email]
+  database: nmx_reporte
+
++rebuild_rpt_email:
+  td>: queries/reporte/rebuild_rpt_email.sql
+  database: nmx_reporte
+  create_table: rpt_email
+
+# ── rpt_whatsapp ──────────────────────────────────────────────
++drop_rpt_whatsapp:
+  td_ddl>:
+  drop_tables: [rpt_whatsapp]
+  database: nmx_reporte
+
++rebuild_rpt_whatsapp:
+  td>: queries/reporte/rebuild_rpt_whatsapp.sql
+  database: nmx_reporte
+  create_table: rpt_whatsapp
+
+# ── rpt_qcart ──────────────────────────────────────────────
++drop_rpt_qcart:
+  td_ddl>:
+  drop_tables: [rpt_qcart]
+  database: nmx_reporte
+
++rebuild_rpt_qcart:
+  td>: queries/reporte/rebuild_rpt_qcart.sql
+  database: nmx_reporte
+  create_table: rpt_qcart
