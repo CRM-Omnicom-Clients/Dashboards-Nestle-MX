@@ -1,7 +1,7 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-11
-status: "Etapa 6 estructuras completas. SQLs fact+rpt reescritos al formato v8. Pendiente: recarga datos + run pipeline."
+updated: 2026-11-12
+status: "Catálogo completo: 7 WA faltantes agregados (OI-09/OI-15 ✓). Qcart 71K filas cargadas. Pendiente: tipo_envio AON (Rick revisa) → reload_catalog → pipeline."
 owner: Rick Aguilar
 ---
 
@@ -12,15 +12,15 @@ owner: Rick Aguilar
 
 ---
 
-## Resumen ejecutivo (2026-11-11)
+## Resumen ejecutivo (2026-11-12)
 
 | Canal | Tabla fact | Estado | Tabla rpt | Estado |
 |-------|-----------|--------|-----------|--------|
 | Email | `fact_envio_email` | ✓ SQL actualizado | `rpt_email` | ✓ SQL v8 completo |
 | WhatsApp | `fact_envio_whatsapp` | ✓ sin cambios | `rpt_whatsapp` | ✓ SQL v8 completo |
-| Qcart | `fact_evento_qcart_*` | ⏳ pendiente carga datos | `rpt_qcart` | ✓ SQL v8 completo |
+| Qcart | `fact_evento_qcart_*` | ✓ 71,117 filas cargadas | `rpt_qcart` | ✓ SQL v8 completo |
 
-> **Siguiente paso:** cargar datos Qcart (71K filas), luego correr pipeline completo.
+> **Siguiente paso:** Rick confirma `tipo_envio` de 5 piezas AON → reload_catalog → correr pipeline.
 
 ---
 
