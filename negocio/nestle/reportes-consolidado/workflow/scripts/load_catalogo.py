@@ -128,7 +128,7 @@ def list_insumos() -> list:
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-BATCH_SIZE = 3000
+BATCH_SIZE = 2500  # 3000 causaba QUERY_TEXT_TOO_LARGE en filas con UTMs largos
 
 def _ctas_insert(table: str, db: str, headers: list, padded: list):
     cols_sql = ", ".join(headers)
