@@ -13,8 +13,10 @@ Uso:
 # dependencies = ["openpyxl"]
 # ///
 import csv
+import datetime
 import io
 import json
+import re
 import subprocess
 import sys
 import urllib.request
@@ -57,10 +59,25 @@ def _wa_key(s: str) -> str:
     """Sanitize to ASCII uppercase for WA shortcode keys (WA-HOTCAKES-C1-SALUDABLES)."""
     return s.strip().upper().translate(_TRANS).replace(" ", "-")
 
-def _quincena(date_val) -> str | None:
-    if not date_val:
+def _parse_date(val) -> str | None:
+    """Normalize any date to YYYY-MM-DD. Handles datetime objects and D/M/YYYY strings."""
+    if val is None:
         return None
-    s = str(date_val)[:10]
+    if isinstance(val, (datetime.date, datetime.datetime)):
+        return val.strftime("%Y-%m-%d")
+    s = str(val).strip()
+    if not s or s.lower() in ("none", "nan"):
+        return None
+    m = re.match(r"^(\d{1,2})/(\d{1,2})/(\d{4})$", s)
+    if m:
+        d, mo, y = m.groups()
+        return f"{y}-{int(mo):02d}-{int(d):02d}"
+    return s[:10]
+
+def _quincena(date_val) -> str | None:
+    s = _parse_date(date_val)
+    if not s:
+        return None
     try:
         day = int(s[8:10])
     except (ValueError, IndexError):
@@ -68,9 +85,8 @@ def _quincena(date_val) -> str | None:
     return f"{s[:7]}-Q1" if day <= 15 else f"{s[:7]}-Q2"
 
 def _mes(date_val) -> str | None:
-    if not date_val:
-        return None
-    return str(date_val)[:7]
+    s = _parse_date(date_val)
+    return s[:7] if s else None
 
 def _safe_int(v) -> int | None:
     if v is None:
@@ -187,7 +203,7 @@ def _parse_wa_hotcakes(ws) -> list:
             continue
         result.append({
             "nombre_wa":    f"WA-HOTCAKES-{str(utm).strip().upper()}-{_wa_key(str(segmento))}",
-            "send_date":    str(fecha)[:10] if fecha else None,
+            "send_date":    _parse_date(fecha),
             "quincena":     _quincena(fecha),
             "mes":          _mes(fecha),
             "sends":        sends,
@@ -241,15 +257,18 @@ def _parse_wa_sfmc(ws) -> list:
             continue
         # Take the first journey name when multiple are separated by newlines
         journey = str(journey_raw).split("\n")[0].strip()
+        if journey.strip().upper() in ("TOTAL", "TOTALES", "TOTALS"):
+            continue
         date_val = _get(row, hmap, "date")
         if not journey or str(date_val).strip().lower() in ("totales", "totals", "total"):
             continue
         sends = _safe_int(row[hmap[sends_key]] if sends_key else None)
         if sends is None:
             continue
+        parsed_date = _parse_date(date_val)
         result.append({
             "nombre_wa":    journey,
-            "send_date":    str(date_val)[:10] if date_val else None,
+            "send_date":    parsed_date,
             "quincena":     _quincena(date_val),
             "mes":          _mes(date_val),
             "sends":        sends,
