@@ -27,3 +27,4 @@ FROM nmx_insumos.land_qcart_carritos c
 JOIN nmx_catalogo.dim_shortlink s
     ON s.shortlink = c.shortlink_code
 WHERE c.shortlink_code IS NOT NULL AND c.shortlink_code <> ''
+  AND (s.fecha_activacion IS NULL OR SUBSTR(c.fecha_hora, 1, 10) >= s.fecha_activacion)
