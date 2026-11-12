@@ -49,6 +49,7 @@ Más una síntesis **📋 Accionables** con 5 bullets.
 
 | Hash | Descripción |
 |---|---|
+| `5374ee2` | **fix**: eliminar `.slide-question` duplicado (CSS cascade bug) · labels S3b sin encimes |
 | `28d2dfe` | **style(exec-v1)**: question 72px, accionables 24px+glow, S1a imágenes debajo de gráfica, S3b decisiones Bebas Neue 30px gold |
 
 ## Commits en producción — V4
