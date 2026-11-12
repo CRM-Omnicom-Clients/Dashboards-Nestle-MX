@@ -6,7 +6,7 @@ _export:
 
 # ── Gate 1: validar insumos antes de reconstruir ──────
 +gate1:
-  td>: queries/gate1_catalogo.sql
+  td>: queries/catalogo/gate1_catalogo.sql
   database: nmx_insumos
   store_last_results: true
 
@@ -25,7 +25,7 @@ _export:
     drop_tables: [dim_bu]
     database: nmx_catalogo
   +dim_bu_create:
-    td>: queries/rebuild_dim_bu.sql
+    td>: queries/catalogo/rebuild_dim_bu.sql
     database: nmx_catalogo
     create_table: dim_bu
 
@@ -34,7 +34,7 @@ _export:
     drop_tables: [dim_campana]
     database: nmx_catalogo
   +dim_campana_create:
-    td>: queries/rebuild_dim_campana.sql
+    td>: queries/catalogo/rebuild_dim_campana.sql
     database: nmx_catalogo
     create_table: dim_campana
 
@@ -43,7 +43,7 @@ _export:
     drop_tables: [dim_objetivo]
     database: nmx_catalogo
   +dim_objetivo_create:
-    td>: queries/rebuild_dim_objetivo.sql
+    td>: queries/catalogo/rebuild_dim_objetivo.sql
     database: nmx_catalogo
     create_table: dim_objetivo
 
@@ -52,7 +52,7 @@ _export:
     drop_tables: [dim_touchpoint_brief]
     database: nmx_catalogo
   +dim_touchpoint_brief_create:
-    td>: queries/rebuild_dim_touchpoint_brief.sql
+    td>: queries/catalogo/rebuild_dim_touchpoint_brief.sql
     database: nmx_catalogo
     create_table: dim_touchpoint_brief
 
@@ -61,7 +61,7 @@ _export:
     drop_tables: [dim_segmento]
     database: nmx_catalogo
   +dim_segmento_create:
-    td>: queries/rebuild_dim_segmento.sql
+    td>: queries/catalogo/rebuild_dim_segmento.sql
     database: nmx_catalogo
     create_table: dim_segmento
 
@@ -71,7 +71,7 @@ _export:
   drop_tables: [dim_marca]
   database: nmx_catalogo
 +rebuild_dim_marca_create:
-  td>: queries/rebuild_dim_marca.sql
+  td>: queries/catalogo/rebuild_dim_marca.sql
   database: nmx_catalogo
   create_table: dim_marca
 
@@ -81,7 +81,7 @@ _export:
   drop_tables: [tabla_piezas]
   database: nmx_catalogo
 +rebuild_tabla_piezas_create:
-  td>: queries/rebuild_tabla_piezas.sql
+  td>: queries/catalogo/rebuild_tabla_piezas.sql
   database: nmx_catalogo
   create_table: tabla_piezas
 
@@ -90,7 +90,7 @@ _export:
   drop_tables: [pieza_segmento]
   database: nmx_catalogo
 +rebuild_pieza_segmento_create:
-  td>: queries/rebuild_pieza_segmento.sql
+  td>: queries/catalogo/rebuild_pieza_segmento.sql
   database: nmx_catalogo
   create_table: pieza_segmento
 
@@ -99,7 +99,7 @@ _export:
   drop_tables: [tabla_nombres]
   database: nmx_catalogo
 +rebuild_tabla_nombres_create:
-  td>: queries/rebuild_tabla_nombres.sql
+  td>: queries/catalogo/rebuild_tabla_nombres.sql
   database: nmx_catalogo
   create_table: tabla_nombres
 
@@ -108,7 +108,7 @@ _export:
   drop_tables: [dim_shortlink]
   database: nmx_catalogo
 +rebuild_dim_shortlink_create:
-  td>: queries/rebuild_dim_shortlink.sql
+  td>: queries/catalogo/rebuild_dim_shortlink.sql
   database: nmx_catalogo
   create_table: dim_shortlink
 
