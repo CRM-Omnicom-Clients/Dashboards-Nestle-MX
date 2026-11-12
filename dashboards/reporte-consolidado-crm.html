@@ -223,7 +223,7 @@ function eTotRow(rows){
     <td class="r gt">${fmt(tun)}</td><td class="gt">${rp(tun,tsn)}</td>
     <td class="r gt">${fmt(tcta)}</td><td class="gt">${rp(tcta,tcl)}</td>
     <td class="r gt">${fmt(tbj)}</td><td class="gt sxp">${rp(tbj,tcl)}</td>
-    <td colspan="13"></td>
+    ${(()=>{const qr=rows.filter(r=>r._qc);if(!qr.length)return'<td class="na" colspan="13">\u2014</td>';const QS=f=>qr.reduce((a,r)=>a+(+(r._qc[f]||0)),0);const qcw=QS('cw'),qcc=QS('cc'),qct=QS('ct'),qvc=QS('vc'),qvpn=QS('vpn'),qitn=QS('itn'),qinn=QS('inn');const qpct=qitn?(qinn/qitn*100).toFixed(1):null;const qtktc=qct?(qitn/qct):null;const qtktp=qvpn?(qinn/qvpn):null;return`<td class="gq" colspan="3">\u2014</td><td class="r gq">${fmt(qcw)}</td><td class="r gq">${fmt(qcc)}</td><td class="r gq" style="font-weight:700">${fmt(qct)}</td><td class="r gq">${fmt(qvc)}</td><td class="r gq">${fmt(qvpn)}</td><td class="r gq">${mxn(qitn)}</td><td class="r gq">${mxn(qinn)}</td><td class="mu gq">${qpct!=null?qpct+'%':'\u2014'}</td><td class="r gq">${qtktc!=null?mxn(qtktc):'\u2014'}</td><td class="r gq">${qtktp!=null?mxn(qtktp):'\u2014'}</td>`;})()}
   </tr>`;
 }
 function wTotRow(rows,hq){
@@ -240,7 +240,8 @@ function wTotRow(rows,hq){
     <td class="r gw">${fmt(nd)}</td><td class="gw">${rp(nd,sn)}</td>
     <td class="r gw">${fmt(rd)}</td><td class="gw">${rp(rd,dl)}</td>
     <td class="r gw">${fmt(cl)}</td><td class="gw${hq?' sxp':''}">${rp(cl,rd)}</td>
-    ${hq?'<td colspan="13"></td>':''}
+    ${hq?(()=>{const qr=rows.filter(r=>r._qc);if(!qr.length)return'<td class="na" colspan="13">\u2014</td>';const QS=f=>qr.reduce((a,r)=>a+(+(r._qc[f]||0)),0);const qcw=QS('cw'),qcc=QS('cc'),qct=QS('ct'),qvc=QS('vc'),qvpn=QS('vpn'),qitn=QS('itn'),qinn=QS('inn');const qpct=qitn?(qinn/qitn*100).toFixed(1):null;const qtktc=qct?(qitn/qct):null;const qtktp=qvpn?(qinn/qvpn):null;return`<td class="gq" colspan="3">\u2014</td><td class="r gq">${fmt(qcw)}</td><td class="r gq">${fmt(qcc)}</td><td class="r gq" style="font-weight:700">${fmt(qct)}</td><td class="r gq">${fmt(qvc)}</td><td class="r gq">${fmt(qvpn)}</td><td class="r gq">${mxn(qitn)}</td><td class="r gq">${mxn(qinn)}</td><td class="mu gq">${qpct!=null?qpct+'%':'\u2014'}</td><td class="r gq">${qtktc!=null?mxn(qtktc):'\u2014'}</td><td class="r gq">${qtktp!=null?mxn(qtktp):'\u2014'}</td>`;})():''
+  }
   </tr>`;
 }
 /* 11 metric cols */
@@ -280,7 +281,9 @@ function qcCols(q){
 }
 
 const QCG = `<th class="gq" colspan="13">Qcart</th>`;
-const QCC = `<th class="gq">Receta</th><th class="gq r">Desde</th><th class="gq r">Hasta</th><th class="gq r">Walmart</th><th class="gq r">Chedraui</th><th class="gq r">Total</th><th class="gq r">Views Carr.</th><th class="gq r">Views Nestlé</th><th class="gq r">Int.Total</th><th class="gq r">Int.Nestlé</th><th class="gq r">%Nestlé</th><th class="gq r">Tkt.Carrito</th><th class="gq r">Tkt.Producto</th>`;
+function qccHead(pnl){
+  return `<th class="gq${sc(pnl,'_qc_rec')}" data-srt onclick="srt('${pnl}','_qc_rec')">Receta</th><th class="gq r${sc(pnl,'_qc_fd')}" data-srt onclick="srt('${pnl}','_qc_fd')">Desde</th><th class="gq r${sc(pnl,'_qc_fh')}" data-srt onclick="srt('${pnl}','_qc_fh')">Hasta</th><th class="gq r${sc(pnl,'_qc_cw')}" data-srt onclick="srt('${pnl}','_qc_cw')">Walmart</th><th class="gq r${sc(pnl,'_qc_cc')}" data-srt onclick="srt('${pnl}','_qc_cc')">Chedraui</th><th class="gq r${sc(pnl,'_qc_ct')}" data-srt onclick="srt('${pnl}','_qc_ct')">Total</th><th class="gq r${sc(pnl,'_qc_vc')}" data-srt onclick="srt('${pnl}','_qc_vc')">Views Carr.</th><th class="gq r${sc(pnl,'_qc_vpn')}" data-srt onclick="srt('${pnl}','_qc_vpn')">Views Nestlé</th><th class="gq r${sc(pnl,'_qc_itn')}" data-srt onclick="srt('${pnl}','_qc_itn')">Int.Total</th><th class="gq r${sc(pnl,'_qc_inn')}" data-srt onclick="srt('${pnl}','_qc_inn')">Int.Nestlé</th><th class="gq r${sc(pnl,'_qc_pct')}" data-srt onclick="srt('${pnl}','_qc_pct')">%Nestlé</th><th class="gq r${sc(pnl,'_qc_tkt_c')}" data-srt onclick="srt('${pnl}','_qc_tkt_c')">Tkt.Carrito</th><th class="gq r${sc(pnl,'_qc_tkt_p')}" data-srt onclick="srt('${pnl}','_qc_tkt_p')">Tkt.Producto</th>`;
+}
 
 function eHead(pnl){
   return `<thead>
@@ -301,7 +304,7 @@ function eHead(pnl){
   <th class="gp r${sc(pnl,'p_sends')}" data-srt onclick="srt('${pnl}','p_sends')">Sends</th><th class="gp r${sc(pnl,'p_opens')}" data-srt onclick="srt('${pnl}','p_opens')">Opens</th><th class="gp r${sc(pnl,'p_open_rate')}" data-srt onclick="srt('${pnl}','p_open_rate')">Open%</th><th class="gp r${sc(pnl,'p_clicks')}" data-srt onclick="srt('${pnl}','p_clicks')">Clicks</th><th class="gp r${sc(pnl,'p_ctor')}" data-srt onclick="srt('${pnl}','p_ctor')">CTOR%</th><th class="gp r${sc(pnl,'p_unsubs')}" data-srt onclick="srt('${pnl}','p_unsubs')">Unsubs</th><th class="gp r${sc(pnl,'p_utor')}" data-srt onclick="srt('${pnl}','p_utor')">UTOR%</th><th class="gp r${sc(pnl,'p_clicks_cta')}" data-srt onclick="srt('${pnl}','p_clicks_cta')">CTA</th><th class="gp r${sc(pnl,'p_clicks_cta')}" data-srt onclick="srt('${pnl}','p_clicks_cta')">%CTA/U</th><th class="gp r${sc(pnl,'p_clicks_baja')}" data-srt onclick="srt('${pnl}','p_clicks_baja')">Baja</th><th class="gp sxp r${sc(pnl,'p_clicks_baja')}" data-srt onclick="srt('${pnl}','p_clicks_baja')">%Baja/U</th>
   <th class="gf${sc(pnl,'email_name_fup')}" style="min-width:108px" data-srt onclick="srt('${pnl}','email_name_fup')">Email Name FUP</th><th class="gf${sc(pnl,'subject_fup')}" style="min-width:100px" data-srt onclick="srt('${pnl}','subject_fup')">Subject FUP</th><th class="gf${sc(pnl,'quincena_fup')}" data-srt onclick="srt('${pnl}','quincena_fup')">Q.FUP</th><th class="gf r${sc(pnl,'fup_sends')}" data-srt onclick="srt('${pnl}','fup_sends')">Sends</th><th class="gf r${sc(pnl,'fup_opens')}" data-srt onclick="srt('${pnl}','fup_opens')">Opens</th><th class="gf r${sc(pnl,'fup_open_rate')}" data-srt onclick="srt('${pnl}','fup_open_rate')">Open%</th><th class="gf r${sc(pnl,'fup_clicks')}" data-srt onclick="srt('${pnl}','fup_clicks')">Clicks</th><th class="gf r${sc(pnl,'fup_ctor')}" data-srt onclick="srt('${pnl}','fup_ctor')">CTOR%</th><th class="gf r${sc(pnl,'fup_unsubs')}" data-srt onclick="srt('${pnl}','fup_unsubs')">Unsubs</th><th class="gf r${sc(pnl,'fup_utor')}" data-srt onclick="srt('${pnl}','fup_utor')">UTOR%</th><th class="gf r${sc(pnl,'fup_clicks_cta')}" data-srt onclick="srt('${pnl}','fup_clicks_cta')">CTA</th><th class="gf r${sc(pnl,'fup_clicks_cta')}" data-srt onclick="srt('${pnl}','fup_clicks_cta')">%CTA/U</th><th class="gf r${sc(pnl,'fup_clicks_baja')}" data-srt onclick="srt('${pnl}','fup_clicks_baja')">Baja</th><th class="gf sxp r${sc(pnl,'fup_clicks_baja')}" data-srt onclick="srt('${pnl}','fup_clicks_baja')">%Baja/U</th>
   <th class="gt r${sc(pnl,'tot_sends')}" data-srt onclick="srt('${pnl}','tot_sends')">Sends</th><th class="gt r${sc(pnl,'tot_opens')}" data-srt onclick="srt('${pnl}','tot_opens')">Opens</th><th class="gt r${sc(pnl,'tot_open_rate')}" data-srt onclick="srt('${pnl}','tot_open_rate')">Open%</th><th class="gt r${sc(pnl,'tot_clicks')}" data-srt onclick="srt('${pnl}','tot_clicks')">Clicks</th><th class="gt r${sc(pnl,'tot_ctor')}" data-srt onclick="srt('${pnl}','tot_ctor')">CTOR%</th><th class="gt r${sc(pnl,'tot_unsubs')}" data-srt onclick="srt('${pnl}','tot_unsubs')">Unsubs</th><th class="gt r${sc(pnl,'tot_utor')}" data-srt onclick="srt('${pnl}','tot_utor')">UTOR%</th><th class="gt r${sc(pnl,'tot_clicks_cta')}" data-srt onclick="srt('${pnl}','tot_clicks_cta')">CTA</th><th class="gt r${sc(pnl,'tot_clicks_cta')}" data-srt onclick="srt('${pnl}','tot_clicks_cta')">%CTA/U</th><th class="gt r${sc(pnl,'tot_clicks_baja')}" data-srt onclick="srt('${pnl}','tot_clicks_baja')">Baja</th><th class="gt sxp r${sc(pnl,'tot_clicks_baja')}" data-srt onclick="srt('${pnl}','tot_clicks_baja')">%Baja/U</th>
-  ${QCC}
+  ${qccHead(pnl)}
 </tr></thead>`;
 }
 
@@ -349,7 +352,7 @@ function wHead(hq, pnl='wa'){
   <th class="gd${sc(pnl,'mes')}" style="min-width:48px;text-align:center" data-srt onclick="srt('${pnl}','mes')">Mes</th>
   <th class="gd sep${sc(pnl,'quincena')}" style="min-width:68px" data-srt onclick="srt('${pnl}','quincena')">Quincena</th>
   <th class="gw r${sc(pnl,'sends')}" data-srt onclick="srt('${pnl}','sends')">Sends</th><th class="gw r${sc(pnl,'deliveries')}" data-srt onclick="srt('${pnl}','deliveries')">Deliveries</th><th class="gw r${sc(pnl,'wa_pct_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_entrega')">Delivery%</th><th class="gw r${sc(pnl,'no_entregados')}" data-srt onclick="srt('${pnl}','no_entregados')">No Ent.</th><th class="gw r${sc(pnl,'wa_pct_no_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_no_entrega')">No Ent%</th><th class="gw r${sc(pnl,'opens_read')}" data-srt onclick="srt('${pnl}','opens_read')">Reads</th><th class="gw r${sc(pnl,'wa_pct_read_vs_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_read_vs_entrega')">Read%</th><th class="gw r${sc(pnl,'clicks')}" data-srt onclick="srt('${pnl}','clicks')">Clicks</th><th class="gw${hq?' sxp':''} r${sc(pnl,'clicks')}" data-srt onclick="srt('${pnl}','clicks')">CTR/Read</th>
-  ${hq?QCC:''}
+  ${hq?qccHead(pnl):''}
 </tr></thead>`;
 }
 
@@ -381,7 +384,8 @@ function wRow(r,hq){
 function eTbl(rows, pnl='aon'){
   if(!rows.length) return '<p style="padding:20px;color:#9ca3af">Sin datos.</p>';
   const camps=[...new Set(rows.map(r=>r.campana||'Sin campaña'))];
-  const sr=srtRows(rows,pnl);
+  const flat=rows.map(r=>({...r,_qc_rec:r._qc?.rec,_qc_fd:r._qc?.fd,_qc_fh:r._qc?.fh,_qc_cw:r._qc?.cw,_qc_cc:r._qc?.cc,_qc_ct:r._qc?.ct,_qc_vc:r._qc?.vc,_qc_vpn:r._qc?.vpn,_qc_itn:r._qc?.itn,_qc_inn:r._qc?.inn,_qc_pct:r._qc?.pct,_qc_tkt_c:r._qc?.tkt_c,_qc_tkt_p:r._qc?.tkt_p}));
+  const sr=srtRows(flat,pnl);
   let tb='';
   for(const c of camps){
     const cr=sr.filter(r=>(r.campana||'Sin campaña')===c);
@@ -396,7 +400,8 @@ function wTbl(rows, pnl='wa'){
   if(!rows.length) return '<p style="padding:20px;color:#9ca3af">Sin datos.</p>';
   const hq=rows.some(r=>r._qc);
   const camps=[...new Set(rows.map(r=>r.campana||'Sin campaña'))];
-  const sr=srtRows(rows,pnl);
+  const flat=rows.map(r=>({...r,_qc_rec:r._qc?.rec,_qc_fd:r._qc?.fd,_qc_fh:r._qc?.fh,_qc_cw:r._qc?.cw,_qc_cc:r._qc?.cc,_qc_ct:r._qc?.ct,_qc_vc:r._qc?.vc,_qc_vpn:r._qc?.vpn,_qc_itn:r._qc?.itn,_qc_inn:r._qc?.inn,_qc_pct:r._qc?.pct,_qc_tkt_c:r._qc?.tkt_c,_qc_tkt_p:r._qc?.tkt_p}));
+  const sr=srtRows(flat,pnl);
   let tb='';
   for(const c of camps){
     const cr=sr.filter(r=>(r.campana||'Sin campaña')===c);
