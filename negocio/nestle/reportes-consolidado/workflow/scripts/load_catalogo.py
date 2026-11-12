@@ -51,6 +51,25 @@ SHEET_TABLE = {
     "Shortlinks":        ("land_shortlinks",              "nmx_insumos"),
 }
 
+# ── Correcciones manuales WA (validadas contra v8, 2026-11-12) ────────────────
+# Piezas cuyo XLSX raw no traía columna clicks; valores tomados del v8.
+WA_CLICKS_OVERRIDE = {
+    "WA-MUNDIAL-SEMIFINAL-A": "289",
+    "WA-MUNDIAL-SEMIFINAL-B": "369",
+    "WA-MUNDIAL-FINALES":     "616",
+    # Liga MX — nombres completos tal como llegan del SFMC Journey Name
+    "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-JORNADA-4PM_CN_WA_A_V1_065900": "53",
+    "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-J9-4PM_CN_WA_A_V1_074969":     "53",
+    "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_LALIGA-J10-JUE_CN_WA_A_V1_089419":    "42",
+    "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_MEXVSPER-2PM_CN_WA_A_V1_097964":      "59",
+    "O_Maggi-Seleccion-NC006537_1_IBS_FOOD_MAGG_MGG_AMPZ_MX_ES_CDP-RN-LMXF_CN_WA_A_V1_0311029":     "109",
+}
+
+# Nombres que NO deben cargarse. WA-MUNDIAL-CRM-HIVE son filas de sesiones
+# de Google Analytics (tabla secundaria en la hoja Maggi Mundial, fila 47+)
+# que el cargador interpreta como envíos. No corresponden a ninguna pieza.
+WA_SKIP_NOMBRES = {"WA-MUNDIAL-CRM-HIVE"}
+
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
 _TRANS = str.maketrans("áéíóúüñÁÉÍÓÚÜÑ", "aeiouunAEIOUUN")
@@ -226,8 +245,11 @@ def _parse_wa_mundial(ws) -> list:
             continue
         if sends is None:
             continue
+        nombre_wa = f"WA-MUNDIAL-{_wa_key(str(journey))}"
+        if nombre_wa in WA_SKIP_NOMBRES:
+            continue
         result.append({
-            "nombre_wa":    f"WA-MUNDIAL-{_wa_key(str(journey))}",
+            "nombre_wa":    nombre_wa,
             "send_date":    None,
             "quincena":     None,
             "mes":          None,
@@ -311,6 +333,10 @@ def load_wa_xlsx(fname: str):
     wb = openpyxl.load_workbook(io.BytesIO(raw), read_only=True, data_only=True)
     rows = _parse_wa_xlsx(wb)
     wb.close()
+    # Aplicar correcciones manuales de clicks validadas contra v8
+    for r in rows:
+        if r["nombre_wa"] in WA_CLICKS_OVERRIDE and not r.get("clicks"):
+            r["clicks"] = WA_CLICKS_OVERRIDE[r["nombre_wa"]]
     if not rows:
         print("  AVISO: sin datos WA, tabla no actualizada.")
         return
