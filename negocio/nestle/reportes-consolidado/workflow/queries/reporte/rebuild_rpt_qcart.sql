@@ -52,7 +52,7 @@ SELECT
     db.bu_nombre                                                          AS bu,
     dc.campana_nombre                                                     AS campana,
     do_.objetivo_nombre                                                   AS objetivo,
-    dtp.touchpoint_nombre                                                 AS touchpoint_brief,
+    dtp.touchpoint_brief                                                  AS touchpoint_brief,
     COALESCE(ds.segmento_nombre, '—')                                    AS segmento_nombre,
 
     -- Rango temporal de la quincena
