@@ -112,7 +112,7 @@ def list_insumos() -> list:
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-BATCH_SIZE = 800
+BATCH_SIZE = 3000
 
 def _ctas_insert(table: str, db: str, headers: list, padded: list):
     cols_sql = ", ".join(headers)
