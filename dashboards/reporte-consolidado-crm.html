@@ -195,19 +195,31 @@ function srtRows(rows,p){
 function eTotRow(rows){
   if(rows.length<2)return'';
   const S=f=>rows.reduce((a,r)=>a+(+(r[f]||0)),0);
-  const sn=S('tot_sends'),op=S('tot_opens'),cl=S('tot_clicks'),
-        un=S('tot_unsubs'),cta=S('tot_clicks_cta'),bj=S('tot_clicks_baja');
   const rp=(n,d)=>d?(n/d*100).toFixed(1)+'%':'—';
+  const psn=S('p_sends'),pop=S('p_opens'),pcl=S('p_clicks'),
+        pun=S('p_unsubs'),pcta=S('p_clicks_cta'),pbj=S('p_clicks_baja');
+  const fRows=rows.filter(r=>r.fup_pieza_id!=null), fHas=fRows.length>0;
+  const FS=f=>fRows.reduce((a,r)=>a+(+(r[f]||0)),0);
+  const fsn=FS('fup_sends'),fop=FS('fup_opens'),fcl=FS('fup_clicks'),
+        fun=FS('fup_unsubs'),fcta=FS('fup_clicks_cta'),fbj=FS('fup_clicks_baja');
+  const tsn=S('tot_sends'),top=S('tot_opens'),tcl=S('tot_clicks'),
+        tun=S('tot_unsubs'),tcta=S('tot_clicks_cta'),tbj=S('tot_clicks_baja');
   return`<tr class="tot-row">
     <td class="e0"></td><td class="e1"></td><td class="e2"></td><td class="e3"></td><td class="e4"></td><td class="e5"></td>
     <td class="e6 sep"></td>
     <td colspan="4" style="text-align:right;font-size:9px;color:#3b5a8a;padding-right:8px;font-style:italic">∑ campaña</td>
-    <td colspan="25"></td>
-    <td class="r gt">${fmt(sn)}</td><td class="r gt">${fmt(op)}</td><td class="gt">${rp(op,sn)}</td>
-    <td class="r gt">${fmt(cl)}</td><td class="gt">${rp(cl,op)}</td>
-    <td class="r gt">${fmt(un)}</td><td class="gt">${rp(un,sn)}</td>
-    <td class="r gt">${fmt(cta)}</td><td class="gt">${rp(cta,cl)}</td>
-    <td class="r gt">${fmt(bj)}</td><td class="gt sxp">${rp(bj,cl)}</td>
+    <td class="r gp">${fmt(psn)}</td><td class="r gp">${fmt(pop)}</td><td class="gp">${rp(pop,psn)}</td>
+    <td class="r gp">${fmt(pcl)}</td><td class="gp">${rp(pcl,pop)}</td>
+    <td class="r gp">${fmt(pun)}</td><td class="gp">${rp(pun,psn)}</td>
+    <td class="r gp">${fmt(pcta)}</td><td class="gp">${rp(pcta,pcl)}</td>
+    <td class="r gp">${fmt(pbj)}</td><td class="gp sxp">${rp(pbj,pcl)}</td>
+    <td class="na gf" colspan="3">—</td>
+    ${fHas?`<td class="r gf">${fmt(fsn)}</td><td class="r gf">${fmt(fop)}</td><td class="gf">${rp(fop,fsn)}</td><td class="r gf">${fmt(fcl)}</td><td class="gf">${rp(fcl,fop)}</td><td class="r gf">${fmt(fun)}</td><td class="gf">${rp(fun,fsn)}</td><td class="r gf">${fmt(fcta)}</td><td class="gf">${rp(fcta,fcl)}</td><td class="r gf">${fmt(fbj)}</td><td class="gf sxp">${rp(fbj,fcl)}</td>`:'<td class="na gf sxp" colspan="11">—</td>'}
+    <td class="r gt">${fmt(tsn)}</td><td class="r gt">${fmt(top)}</td><td class="gt">${rp(top,tsn)}</td>
+    <td class="r gt">${fmt(tcl)}</td><td class="gt">${rp(tcl,top)}</td>
+    <td class="r gt">${fmt(tun)}</td><td class="gt">${rp(tun,tsn)}</td>
+    <td class="r gt">${fmt(tcta)}</td><td class="gt">${rp(tcta,tcl)}</td>
+    <td class="r gt">${fmt(tbj)}</td><td class="gt sxp">${rp(tbj,tcl)}</td>
     <td colspan="13"></td>
   </tr>`;
 }
@@ -278,14 +290,14 @@ function eHead(pnl){
   ${QCG}
 </tr>
 <tr class="gc">
-  <th class="gd e0">BU</th><th class="gd e1">Marca</th><th class="gd e2">Campaña</th><th class="gd e3">TP</th><th class="gd e4">Objetivo</th><th class="gd e5">Segmento</th><th class="gd sep e6">QC?</th>
-  <th class="gd" style="min-width:108px;max-width:108px">Email Name</th>
-  <th class="gd" style="min-width:100px;max-width:100px">Subject</th>
-  <th class="gd" style="min-width:48px;max-width:48px;text-align:center">Mes</th>
-  <th class="gd sep" style="min-width:68px;max-width:68px">Quincena</th>
-  <th class="gp r${sc(pnl,'p_sends')}" data-srt onclick="srt('${pnl}','p_sends')">Sends</th><th class="gp r${sc(pnl,'p_opens')}" data-srt onclick="srt('${pnl}','p_opens')">Opens</th><th class="gp r${sc(pnl,'p_open_rate')}" data-srt onclick="srt('${pnl}','p_open_rate')">Open%</th><th class="gp r${sc(pnl,'p_clicks')}" data-srt onclick="srt('${pnl}','p_clicks')">Clicks</th><th class="gp r${sc(pnl,'p_ctor')}" data-srt onclick="srt('${pnl}','p_ctor')">CTOR%</th><th class="gp r">Unsubs</th><th class="gp r">UTOR%</th><th class="gp r">CTA</th><th class="gp r">%CTA/U</th><th class="gp r">Baja</th><th class="gp sxp r">%Baja/U</th>
-  <th class="gf" style="min-width:108px">Email Name FUP</th><th class="gf" style="min-width:100px">Subject FUP</th><th class="gf">Q.FUP</th><th class="gf r${sc(pnl,'fup_sends')}" data-srt onclick="srt('${pnl}','fup_sends')">Sends</th><th class="gf r${sc(pnl,'fup_opens')}" data-srt onclick="srt('${pnl}','fup_opens')">Opens</th><th class="gf r${sc(pnl,'fup_open_rate')}" data-srt onclick="srt('${pnl}','fup_open_rate')">Open%</th><th class="gf r${sc(pnl,'fup_clicks')}" data-srt onclick="srt('${pnl}','fup_clicks')">Clicks</th><th class="gf r${sc(pnl,'fup_ctor')}" data-srt onclick="srt('${pnl}','fup_ctor')">CTOR%</th><th class="gf r">Unsubs</th><th class="gf r">UTOR%</th><th class="gf r">CTA</th><th class="gf r">%CTA/U</th><th class="gf r">Baja</th><th class="gf sxp r">%Baja/U</th>
-  <th class="gt r${sc(pnl,'tot_sends')}" data-srt onclick="srt('${pnl}','tot_sends')">Sends</th><th class="gt r${sc(pnl,'tot_opens')}" data-srt onclick="srt('${pnl}','tot_opens')">Opens</th><th class="gt r${sc(pnl,'tot_open_rate')}" data-srt onclick="srt('${pnl}','tot_open_rate')">Open%</th><th class="gt r${sc(pnl,'tot_clicks')}" data-srt onclick="srt('${pnl}','tot_clicks')">Clicks</th><th class="gt r${sc(pnl,'tot_ctor')}" data-srt onclick="srt('${pnl}','tot_ctor')">CTOR%</th><th class="gt r">Unsubs</th><th class="gt r">UTOR%</th><th class="gt r">CTA</th><th class="gt r">%CTA/U</th><th class="gt r">Baja</th><th class="gt sxp r">%Baja/U</th>
+  <th class="gd e0${sc(pnl,'bu')}" data-srt onclick="srt('${pnl}','bu')">BU</th><th class="gd e1${sc(pnl,'marca')}" data-srt onclick="srt('${pnl}','marca')">Marca</th><th class="gd e2${sc(pnl,'campana')}" data-srt onclick="srt('${pnl}','campana')">Campaña</th><th class="gd e3${sc(pnl,'touchpoint_brief')}" data-srt onclick="srt('${pnl}','touchpoint_brief')">TP</th><th class="gd e4${sc(pnl,'objetivo')}" data-srt onclick="srt('${pnl}','objetivo')">Objetivo</th><th class="gd e5${sc(pnl,'segmento_nombre')}" data-srt onclick="srt('${pnl}','segmento_nombre')">Segmento</th><th class="gd sep e6${sc(pnl,'tiene_qcart')}" data-srt onclick="srt('${pnl}','tiene_qcart')">QC?</th>
+  <th class="gd${sc(pnl,'email_name_principal')}" style="min-width:108px;max-width:108px" data-srt onclick="srt('${pnl}','email_name_principal')">Email Name</th>
+  <th class="gd${sc(pnl,'subject_principal')}" style="min-width:100px;max-width:100px" data-srt onclick="srt('${pnl}','subject_principal')">Subject</th>
+  <th class="gd${sc(pnl,'mes')}" style="min-width:48px;max-width:48px;text-align:center" data-srt onclick="srt('${pnl}','mes')">Mes</th>
+  <th class="gd sep${sc(pnl,'quincena_principal')}" style="min-width:68px;max-width:68px" data-srt onclick="srt('${pnl}','quincena_principal')">Quincena</th>
+  <th class="gp r${sc(pnl,'p_sends')}" data-srt onclick="srt('${pnl}','p_sends')">Sends</th><th class="gp r${sc(pnl,'p_opens')}" data-srt onclick="srt('${pnl}','p_opens')">Opens</th><th class="gp r${sc(pnl,'p_open_rate')}" data-srt onclick="srt('${pnl}','p_open_rate')">Open%</th><th class="gp r${sc(pnl,'p_clicks')}" data-srt onclick="srt('${pnl}','p_clicks')">Clicks</th><th class="gp r${sc(pnl,'p_ctor')}" data-srt onclick="srt('${pnl}','p_ctor')">CTOR%</th><th class="gp r${sc(pnl,'p_unsubs')}" data-srt onclick="srt('${pnl}','p_unsubs')">Unsubs</th><th class="gp r${sc(pnl,'p_utor')}" data-srt onclick="srt('${pnl}','p_utor')">UTOR%</th><th class="gp r${sc(pnl,'p_clicks_cta')}" data-srt onclick="srt('${pnl}','p_clicks_cta')">CTA</th><th class="gp r${sc(pnl,'p_clicks_cta')}" data-srt onclick="srt('${pnl}','p_clicks_cta')">%CTA/U</th><th class="gp r${sc(pnl,'p_clicks_baja')}" data-srt onclick="srt('${pnl}','p_clicks_baja')">Baja</th><th class="gp sxp r${sc(pnl,'p_clicks_baja')}" data-srt onclick="srt('${pnl}','p_clicks_baja')">%Baja/U</th>
+  <th class="gf${sc(pnl,'email_name_fup')}" style="min-width:108px" data-srt onclick="srt('${pnl}','email_name_fup')">Email Name FUP</th><th class="gf${sc(pnl,'subject_fup')}" style="min-width:100px" data-srt onclick="srt('${pnl}','subject_fup')">Subject FUP</th><th class="gf${sc(pnl,'quincena_fup')}" data-srt onclick="srt('${pnl}','quincena_fup')">Q.FUP</th><th class="gf r${sc(pnl,'fup_sends')}" data-srt onclick="srt('${pnl}','fup_sends')">Sends</th><th class="gf r${sc(pnl,'fup_opens')}" data-srt onclick="srt('${pnl}','fup_opens')">Opens</th><th class="gf r${sc(pnl,'fup_open_rate')}" data-srt onclick="srt('${pnl}','fup_open_rate')">Open%</th><th class="gf r${sc(pnl,'fup_clicks')}" data-srt onclick="srt('${pnl}','fup_clicks')">Clicks</th><th class="gf r${sc(pnl,'fup_ctor')}" data-srt onclick="srt('${pnl}','fup_ctor')">CTOR%</th><th class="gf r${sc(pnl,'fup_unsubs')}" data-srt onclick="srt('${pnl}','fup_unsubs')">Unsubs</th><th class="gf r${sc(pnl,'fup_utor')}" data-srt onclick="srt('${pnl}','fup_utor')">UTOR%</th><th class="gf r${sc(pnl,'fup_clicks_cta')}" data-srt onclick="srt('${pnl}','fup_clicks_cta')">CTA</th><th class="gf r${sc(pnl,'fup_clicks_cta')}" data-srt onclick="srt('${pnl}','fup_clicks_cta')">%CTA/U</th><th class="gf r${sc(pnl,'fup_clicks_baja')}" data-srt onclick="srt('${pnl}','fup_clicks_baja')">Baja</th><th class="gf sxp r${sc(pnl,'fup_clicks_baja')}" data-srt onclick="srt('${pnl}','fup_clicks_baja')">%Baja/U</th>
+  <th class="gt r${sc(pnl,'tot_sends')}" data-srt onclick="srt('${pnl}','tot_sends')">Sends</th><th class="gt r${sc(pnl,'tot_opens')}" data-srt onclick="srt('${pnl}','tot_opens')">Opens</th><th class="gt r${sc(pnl,'tot_open_rate')}" data-srt onclick="srt('${pnl}','tot_open_rate')">Open%</th><th class="gt r${sc(pnl,'tot_clicks')}" data-srt onclick="srt('${pnl}','tot_clicks')">Clicks</th><th class="gt r${sc(pnl,'tot_ctor')}" data-srt onclick="srt('${pnl}','tot_ctor')">CTOR%</th><th class="gt r${sc(pnl,'tot_unsubs')}" data-srt onclick="srt('${pnl}','tot_unsubs')">Unsubs</th><th class="gt r${sc(pnl,'tot_utor')}" data-srt onclick="srt('${pnl}','tot_utor')">UTOR%</th><th class="gt r${sc(pnl,'tot_clicks_cta')}" data-srt onclick="srt('${pnl}','tot_clicks_cta')">CTA</th><th class="gt r${sc(pnl,'tot_clicks_cta')}" data-srt onclick="srt('${pnl}','tot_clicks_cta')">%CTA/U</th><th class="gt r${sc(pnl,'tot_clicks_baja')}" data-srt onclick="srt('${pnl}','tot_clicks_baja')">Baja</th><th class="gt sxp r${sc(pnl,'tot_clicks_baja')}" data-srt onclick="srt('${pnl}','tot_clicks_baja')">%Baja/U</th>
   ${QCC}
 </tr></thead>`;
 }
@@ -329,11 +341,11 @@ function wHead(hq, pnl='wa'){
   ${hq?QCG:''}
 </tr>
 <tr class="gc">
-  <th class="gd w0">BU</th><th class="gd w1">Marca</th><th class="gd w2">Campaña</th><th class="gd w3">TP</th><th class="gd w4">Objetivo</th><th class="gd sep w5">Segmento</th>
-  <th class="gd" style="min-width:130px;max-width:130px">Nombre WA</th>
-  <th class="gd" style="min-width:48px;text-align:center">Mes</th>
-  <th class="gd sep" style="min-width:68px">Quincena</th>
-  <th class="gw r${sc(pnl,'sends')}" data-srt onclick="srt('${pnl}','sends')">Sends</th><th class="gw r${sc(pnl,'deliveries')}" data-srt onclick="srt('${pnl}','deliveries')">Deliveries</th><th class="gw r${sc(pnl,'wa_pct_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_entrega')">Delivery%</th><th class="gw r">No Ent.</th><th class="gw r">No Ent%</th><th class="gw r${sc(pnl,'opens_read')}" data-srt onclick="srt('${pnl}','opens_read')">Reads</th><th class="gw r${sc(pnl,'wa_pct_read_vs_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_read_vs_entrega')">Read%</th><th class="gw r${sc(pnl,'clicks')}" data-srt onclick="srt('${pnl}','clicks')">Clicks</th><th class="gw${hq?' sxp':''} r">CTR/Read</th>
+  <th class="gd w0${sc(pnl,'bu')}" data-srt onclick="srt('${pnl}','bu')">BU</th><th class="gd w1${sc(pnl,'marca')}" data-srt onclick="srt('${pnl}','marca')">Marca</th><th class="gd w2${sc(pnl,'campana')}" data-srt onclick="srt('${pnl}','campana')">Campaña</th><th class="gd w3${sc(pnl,'touchpoint_brief')}" data-srt onclick="srt('${pnl}','touchpoint_brief')">TP</th><th class="gd w4${sc(pnl,'objetivo')}" data-srt onclick="srt('${pnl}','objetivo')">Objetivo</th><th class="gd sep w5${sc(pnl,'segmento_nombre')}" data-srt onclick="srt('${pnl}','segmento_nombre')">Segmento</th>
+  <th class="gd${sc(pnl,'nombre_wa')}" style="min-width:130px;max-width:130px" data-srt onclick="srt('${pnl}','nombre_wa')">Nombre WA</th>
+  <th class="gd${sc(pnl,'mes')}" style="min-width:48px;text-align:center" data-srt onclick="srt('${pnl}','mes')">Mes</th>
+  <th class="gd sep${sc(pnl,'quincena')}" style="min-width:68px" data-srt onclick="srt('${pnl}','quincena')">Quincena</th>
+  <th class="gw r${sc(pnl,'sends')}" data-srt onclick="srt('${pnl}','sends')">Sends</th><th class="gw r${sc(pnl,'deliveries')}" data-srt onclick="srt('${pnl}','deliveries')">Deliveries</th><th class="gw r${sc(pnl,'wa_pct_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_entrega')">Delivery%</th><th class="gw r${sc(pnl,'no_entregados')}" data-srt onclick="srt('${pnl}','no_entregados')">No Ent.</th><th class="gw r${sc(pnl,'wa_pct_no_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_no_entrega')">No Ent%</th><th class="gw r${sc(pnl,'opens_read')}" data-srt onclick="srt('${pnl}','opens_read')">Reads</th><th class="gw r${sc(pnl,'wa_pct_read_vs_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_read_vs_entrega')">Read%</th><th class="gw r${sc(pnl,'clicks')}" data-srt onclick="srt('${pnl}','clicks')">Clicks</th><th class="gw${hq?' sxp':''} r${sc(pnl,'clicks')}" data-srt onclick="srt('${pnl}','clicks')">CTR/Read</th>
   ${hq?QCC:''}
 </tr></thead>`;
 }
