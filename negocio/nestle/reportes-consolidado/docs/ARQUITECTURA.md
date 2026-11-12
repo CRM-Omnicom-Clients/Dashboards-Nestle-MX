@@ -241,3 +241,4 @@ nmx_crm_reporte.dig
 | `Catalogo-Nestle-MX.xlsx` | Catálogo operativo — Rick lo edita | `catalogo/` |
 | `(Interno-Copy))-Reporte-Consolidado-Nestle-2026-v8.xlsx` | Reporte interno v8 — referencia solo lectura | `referencia/` |
 | `(Interno) Envios sin CDP _ Hive.xlsx` | Envíos email históricos ene–ago 2026 | `referencia/` |
+| `Copia-111126Qcart-Links Mails-Hive- MX.xlsx` | Mapping interno Qcart shortlinks → piezas (export Hive) | `referencia/` |
