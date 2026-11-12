@@ -115,6 +115,17 @@ tbody tr:hover td.w0,tbody tr:hover td.w1,tbody tr:hover td.w2,tbody tr:hover td
 .camp-row td.w0,.camp-row td.w1,.camp-row td.w2,.camp-row td.w3,.camp-row td.w4,.camp-row td.w5{background:#e3ebf6!important;}
 thead .w0,thead .w1,thead .w2,thead .w3,thead .w4,thead .w5{background:#f0f4f8!important;}
 
+/* Sort */
+th[data-srt]{cursor:pointer;user-select:none;}
+th[data-srt]:hover{background:#dce6f4!important;}
+th[data-srt]:not(.sa):not(.sd)::after{content:' ⇅';font-size:8px;opacity:.3;}
+th[data-srt].sa::after{content:' ↑';font-size:8px;opacity:.85;}
+th[data-srt].sd::after{content:' ↓';font-size:8px;opacity:.85;}
+/* Totals per campaign */
+.tot-row td{background:#eaf1fb!important;font-weight:700;font-size:10px;border-top:2px solid #7a9cc4;border-bottom:2px solid #7a9cc4;}
+.tot-row td.e0,.tot-row td.e1,.tot-row td.e2,.tot-row td.e3,.tot-row td.e4,.tot-row td.e5,.tot-row td.e6{background:#ddeaf8!important;}
+.tot-row td.w0,.tot-row td.w1,.tot-row td.w2,.tot-row td.w3,.tot-row td.w4,.tot-row td.w5{background:#ddeaf8!important;}
+
 </style>
 </head>
 <body>
@@ -167,6 +178,56 @@ const rC   = (v,hi,lo) => v==null?'na':v>=hi?'hi':v<=lo?'lo':'mu';
 const rP   = (n,d) => (n==null||!d)?null:+(n/d*100).toFixed(1);
 const tr   = (s,n) => s?(s.length>n?s.slice(0,n)+'…':s):'—';
 
+const SRT={aon:{f:null,d:1},os:{f:null,d:1},wa:{f:null,d:1}};
+function srt(p,f){const s=SRT[p];s.d=s.f===f?-s.d:1;s.f=f;go();}
+function sc(p,f){const s=SRT[p];return s.f===f?(s.d===1?' sa':' sd'):'';}
+function srtRows(rows,p){
+  const s=SRT[p];if(!s.f)return rows;
+  return[...rows].sort((a,b)=>{
+    const av=a[s.f],bv=b[s.f];
+    if(av==null&&bv==null)return 0;
+    if(av==null)return 1*s.d;if(bv==null)return -1*s.d;
+    const an=+av,bn=+bv;
+    if(!isNaN(an)&&!isNaN(bn))return(an-bn)*s.d;
+    return String(av).localeCompare(String(bv),'es')*s.d;
+  });
+}
+function eTotRow(rows){
+  if(rows.length<2)return'';
+  const S=f=>rows.reduce((a,r)=>a+(+(r[f]||0)),0);
+  const sn=S('tot_sends'),op=S('tot_opens'),cl=S('tot_clicks'),
+        un=S('tot_unsubs'),cta=S('tot_clicks_cta'),bj=S('tot_clicks_baja');
+  const rp=(n,d)=>d?(n/d*100).toFixed(1)+'%':'—';
+  return`<tr class="tot-row">
+    <td class="e0"></td><td class="e1"></td><td class="e2"></td><td class="e3"></td><td class="e4"></td><td class="e5"></td>
+    <td class="e6 sep"></td>
+    <td colspan="4" style="text-align:right;font-size:9px;color:#3b5a8a;padding-right:8px;font-style:italic">∑ campaña</td>
+    <td colspan="25"></td>
+    <td class="r gt">${fmt(sn)}</td><td class="r gt">${fmt(op)}</td><td class="gt">${rp(op,sn)}</td>
+    <td class="r gt">${fmt(cl)}</td><td class="gt">${rp(cl,op)}</td>
+    <td class="r gt">${fmt(un)}</td><td class="gt">${rp(un,sn)}</td>
+    <td class="r gt">${fmt(cta)}</td><td class="gt">${rp(cta,cl)}</td>
+    <td class="r gt">${fmt(bj)}</td><td class="gt sxp">${rp(bj,cl)}</td>
+    <td colspan="13"></td>
+  </tr>`;
+}
+function wTotRow(rows,hq){
+  if(rows.length<2)return'';
+  const S=f=>rows.reduce((a,r)=>a+(+(r[f]||0)),0);
+  const sn=S('sends'),dl=S('deliveries'),nd=S('no_entregados'),rd=S('opens_read'),cl=S('clicks');
+  const rp=(n,d)=>d?(n/d*100).toFixed(1)+'%':'—';
+  return`<tr class="tot-row">
+    <td class="w0"></td><td class="w1"></td><td class="w2"></td><td class="w3"></td><td class="w4"></td>
+    <td class="w5 sep"></td>
+    <td colspan="2" style="text-align:right;font-size:9px;color:#3b5a8a;padding-right:8px;font-style:italic">∑ campaña</td>
+    <td class="sep"></td>
+    <td class="r gw">${fmt(sn)}</td><td class="r gw">${fmt(dl)}</td><td class="gw">${rp(dl,sn)}</td>
+    <td class="r gw">${fmt(nd)}</td><td class="gw">${rp(nd,sn)}</td>
+    <td class="r gw">${fmt(rd)}</td><td class="gw">${rp(rd,dl)}</td>
+    <td class="r gw">${fmt(cl)}</td><td class="gw${hq?' sxp':''}">${rp(cl,rd)}</td>
+    ${hq?'<td colspan="13"></td>':''}
+  </tr>`;
+}
 /* 11 metric cols */
 function mc(sn,op,or_,cl,ct,un,ut,cta,bja,g,sep){
   if(sn==null) return `<td class="na" colspan="11">—</td>`;
@@ -206,7 +267,7 @@ function qcCols(q){
 const QCG = `<th class="gq" colspan="13">Qcart</th>`;
 const QCC = `<th class="gq">Receta</th><th class="gq r">Desde</th><th class="gq r">Hasta</th><th class="gq r">Walmart</th><th class="gq r">Chedraui</th><th class="gq r">Total</th><th class="gq r">Views Carr.</th><th class="gq r">Views Nestlé</th><th class="gq r">Int.Total</th><th class="gq r">Int.Nestlé</th><th class="gq r">%Nestlé</th><th class="gq r">Tkt.Carrito</th><th class="gq r">Tkt.Producto</th>`;
 
-function eHead(){
+function eHead(pnl){
   return `<thead>
 <tr class="gr">
   <th class="gd sep e0" colspan="7">Dimensiones</th>
@@ -222,9 +283,9 @@ function eHead(){
   <th class="gd" style="min-width:100px;max-width:100px">Subject</th>
   <th class="gd" style="min-width:48px;max-width:48px;text-align:center">Mes</th>
   <th class="gd sep" style="min-width:68px;max-width:68px">Quincena</th>
-  <th class="gp r">Sends</th><th class="gp r">Opens</th><th class="gp r">Open%</th><th class="gp r">Clicks</th><th class="gp r">CTOR%</th><th class="gp r">Unsubs</th><th class="gp r">UTOR%</th><th class="gp r">CTA</th><th class="gp r">%CTA/U</th><th class="gp r">Baja</th><th class="gp sxp r">%Baja/U</th>
-  <th class="gf" style="min-width:108px">Email Name FUP</th><th class="gf" style="min-width:100px">Subject FUP</th><th class="gf">Q.FUP</th><th class="gf r">Sends</th><th class="gf r">Opens</th><th class="gf r">Open%</th><th class="gf r">Clicks</th><th class="gf r">CTOR%</th><th class="gf r">Unsubs</th><th class="gf r">UTOR%</th><th class="gf r">CTA</th><th class="gf r">%CTA/U</th><th class="gf r">Baja</th><th class="gf sxp r">%Baja/U</th>
-  <th class="gt r">Sends</th><th class="gt r">Opens</th><th class="gt r">Open%</th><th class="gt r">Clicks</th><th class="gt r">CTOR%</th><th class="gt r">Unsubs</th><th class="gt r">UTOR%</th><th class="gt r">CTA</th><th class="gt r">%CTA/U</th><th class="gt r">Baja</th><th class="gt sxp r">%Baja/U</th>
+  <th class="gp r${sc(pnl,'p_sends')}" data-srt onclick="srt('${pnl}','p_sends')">Sends</th><th class="gp r${sc(pnl,'p_opens')}" data-srt onclick="srt('${pnl}','p_opens')">Opens</th><th class="gp r${sc(pnl,'p_open_rate')}" data-srt onclick="srt('${pnl}','p_open_rate')">Open%</th><th class="gp r${sc(pnl,'p_clicks')}" data-srt onclick="srt('${pnl}','p_clicks')">Clicks</th><th class="gp r${sc(pnl,'p_ctor')}" data-srt onclick="srt('${pnl}','p_ctor')">CTOR%</th><th class="gp r">Unsubs</th><th class="gp r">UTOR%</th><th class="gp r">CTA</th><th class="gp r">%CTA/U</th><th class="gp r">Baja</th><th class="gp sxp r">%Baja/U</th>
+  <th class="gf" style="min-width:108px">Email Name FUP</th><th class="gf" style="min-width:100px">Subject FUP</th><th class="gf">Q.FUP</th><th class="gf r${sc(pnl,'fup_sends')}" data-srt onclick="srt('${pnl}','fup_sends')">Sends</th><th class="gf r${sc(pnl,'fup_opens')}" data-srt onclick="srt('${pnl}','fup_opens')">Opens</th><th class="gf r${sc(pnl,'fup_open_rate')}" data-srt onclick="srt('${pnl}','fup_open_rate')">Open%</th><th class="gf r${sc(pnl,'fup_clicks')}" data-srt onclick="srt('${pnl}','fup_clicks')">Clicks</th><th class="gf r${sc(pnl,'fup_ctor')}" data-srt onclick="srt('${pnl}','fup_ctor')">CTOR%</th><th class="gf r">Unsubs</th><th class="gf r">UTOR%</th><th class="gf r">CTA</th><th class="gf r">%CTA/U</th><th class="gf r">Baja</th><th class="gf sxp r">%Baja/U</th>
+  <th class="gt r${sc(pnl,'tot_sends')}" data-srt onclick="srt('${pnl}','tot_sends')">Sends</th><th class="gt r${sc(pnl,'tot_opens')}" data-srt onclick="srt('${pnl}','tot_opens')">Opens</th><th class="gt r${sc(pnl,'tot_open_rate')}" data-srt onclick="srt('${pnl}','tot_open_rate')">Open%</th><th class="gt r${sc(pnl,'tot_clicks')}" data-srt onclick="srt('${pnl}','tot_clicks')">Clicks</th><th class="gt r${sc(pnl,'tot_ctor')}" data-srt onclick="srt('${pnl}','tot_ctor')">CTOR%</th><th class="gt r">Unsubs</th><th class="gt r">UTOR%</th><th class="gt r">CTA</th><th class="gt r">%CTA/U</th><th class="gt r">Baja</th><th class="gt sxp r">%Baja/U</th>
   ${QCC}
 </tr></thead>`;
 }
@@ -259,7 +320,7 @@ function eRow(r){
   </tr>`;
 }
 
-function wHead(hq){
+function wHead(hq, pnl='wa'){
   return `<thead>
 <tr class="gr">
   <th class="gd sep w0" colspan="6">Dimensiones</th>
@@ -272,7 +333,7 @@ function wHead(hq){
   <th class="gd" style="min-width:130px;max-width:130px">Nombre WA</th>
   <th class="gd" style="min-width:48px;text-align:center">Mes</th>
   <th class="gd sep" style="min-width:68px">Quincena</th>
-  <th class="gw r">Sends</th><th class="gw r">Deliveries</th><th class="gw r">Delivery%</th><th class="gw r">No Ent.</th><th class="gw r">No Ent%</th><th class="gw r">Reads</th><th class="gw r">Read%</th><th class="gw r">Clicks</th><th class="gw${hq?' sxp':''} r">CTR/Read</th>
+  <th class="gw r${sc(pnl,'sends')}" data-srt onclick="srt('${pnl}','sends')">Sends</th><th class="gw r${sc(pnl,'deliveries')}" data-srt onclick="srt('${pnl}','deliveries')">Deliveries</th><th class="gw r${sc(pnl,'wa_pct_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_entrega')">Delivery%</th><th class="gw r">No Ent.</th><th class="gw r">No Ent%</th><th class="gw r${sc(pnl,'opens_read')}" data-srt onclick="srt('${pnl}','opens_read')">Reads</th><th class="gw r${sc(pnl,'wa_pct_read_vs_entrega')}" data-srt onclick="srt('${pnl}','wa_pct_read_vs_entrega')">Read%</th><th class="gw r${sc(pnl,'clicks')}" data-srt onclick="srt('${pnl}','clicks')">Clicks</th><th class="gw${hq?' sxp':''} r">CTR/Read</th>
   ${hq?QCC:''}
 </tr></thead>`;
 }
@@ -302,29 +363,33 @@ function wRow(r,hq){
   </tr>`;
 }
 
-function eTbl(rows){
+function eTbl(rows, pnl='aon'){
   if(!rows.length) return '<p style="padding:20px;color:#9ca3af">Sin datos.</p>';
   const camps=[...new Set(rows.map(r=>r.campana||'Sin campaña'))];
+  const sr=srtRows(rows,pnl);
   let tb='';
   for(const c of camps){
-    const cr=rows.filter(r=>(r.campana||'Sin campaña')===c);
+    const cr=sr.filter(r=>(r.campana||'Sin campaña')===c);
     tb+=`<tr class="cr"><td colspan="62">${c} <span style="font-weight:400;text-transform:none;font-size:10px;color:var(--fa)">${cr.length} piezas</span></td></tr>`;
     tb+=cr.map(eRow).join('');
+    tb+=eTotRow(cr);
   }
-  return `<div class="tw"><table>${eHead()}<tbody>${tb}</tbody></table></div>`;
+  return `<div class="tw"><table>${eHead(pnl)}<tbody>${tb}</tbody></table></div>`;
 }
 
-function wTbl(rows){
+function wTbl(rows, pnl='wa'){
   if(!rows.length) return '<p style="padding:20px;color:#9ca3af">Sin datos.</p>';
   const hq=rows.some(r=>r._qc);
   const camps=[...new Set(rows.map(r=>r.campana||'Sin campaña'))];
+  const sr=srtRows(rows,pnl);
   let tb='';
   for(const c of camps){
-    const cr=rows.filter(r=>(r.campana||'Sin campaña')===c);
+    const cr=sr.filter(r=>(r.campana||'Sin campaña')===c);
     tb+=`<tr class="cr"><td colspan="${hq?31:18}">${c} <span style="font-weight:400;text-transform:none;font-size:10px;color:var(--fa)">${cr.length} envíos</span></td></tr>`;
     tb+=cr.map(r=>wRow(r,hq)).join('');
+    tb+=wTotRow(cr,hq);
   }
-  return `<div class="tw"><table>${wHead(hq)}<tbody>${tb}</tbody></table></div>`;
+  return `<div class="tw"><table>${wHead(hq,pnl)}<tbody>${tb}</tbody></table></div>`;
 }
 
 function getF(){return{m:fm.value,b:fb.value,c:fc.value,x:fx.value};}
@@ -351,9 +416,9 @@ function setSH(){
 function go(){
   const f=getF();
   const aF=apF(AON,f),oF=apF(OS,f),wF=apF(WA,f);
-  document.getElementById('pao').innerHTML=eTbl(aF);
-  document.getElementById('pos').innerHTML=eTbl(oF);
-  document.getElementById('pwa').innerHTML=wTbl(wF);
+  document.getElementById('pao').innerHTML=eTbl(aF,'aon');
+  document.getElementById('pos').innerHTML=eTbl(oF,'os');
+  document.getElementById('pwa').innerHTML=wTbl(wF,'wa');
   document.getElementById('prs').innerHTML=rsm(aF,oF,wF);
   document.getElementById('nao').textContent=aF.length;
   document.getElementById('nos').textContent=oF.length;
