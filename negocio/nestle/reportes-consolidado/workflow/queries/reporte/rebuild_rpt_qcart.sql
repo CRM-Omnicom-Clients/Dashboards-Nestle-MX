@@ -22,14 +22,14 @@ carritos AS (
 ),
 
 nestle_productos AS (
+    -- land_qcart_productos contiene SOLO marcas Nestlé (maggi, nestle, la lechera,
+    -- carnation, nescafe, nido, nesquik, etc.) — no filtrar por brand.
     SELECT
         pieza_id,
         quincena,
         SUM(views)                                                        AS views_productos_nestle,
         SUM(total_shown_price)                                            AS intencion_nestle_mxn
     FROM nmx_hechos.fact_evento_qcart_productos
-    WHERE LOWER(brand) LIKE '%nestle%'
-       OR LOWER(brand) LIKE '%nestlé%'
     GROUP BY pieza_id, quincena
 ),
 
