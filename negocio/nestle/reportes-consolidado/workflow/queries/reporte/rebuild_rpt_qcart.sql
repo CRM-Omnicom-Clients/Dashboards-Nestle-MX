@@ -12,8 +12,10 @@ carritos AS (
         quincena,
         MIN(fecha)                                                        AS fecha_desde,
         MAX(fecha)                                                        AS fecha_hasta,
-        SUM(CASE WHEN LOWER(store) LIKE '%walmart%'  THEN views ELSE 0 END) AS carritos_walmart,
-        SUM(CASE WHEN LOWER(store) LIKE '%chedraui%' THEN views ELSE 0 END) AS carritos_chedraui,
+        SUM(CASE WHEN LOWER(store) LIKE '%walmart%'
+                       AND LOWER(store) NOT LIKE '%chedraui%' THEN views ELSE 0 END) AS carritos_walmart,
+        SUM(CASE WHEN LOWER(store) LIKE '%chedraui%'
+                       AND LOWER(store) NOT LIKE '%walmart%'  THEN views ELSE 0 END) AS carritos_chedraui,
         SUM(views)                                                        AS carritos_total,
         SUM(impressions)                                                  AS views_carrito,
         SUM(total_shown_price)                                            AS intencion_total_mxn
@@ -22,14 +24,14 @@ carritos AS (
 ),
 
 nestle_productos AS (
+    -- land_qcart_productos contiene SOLO marcas Nestlé (maggi, nestle, la lechera,
+    -- carnation, nescafe, nido, nesquik, etc.) — no filtrar por brand.
     SELECT
         pieza_id,
         quincena,
         SUM(views)                                                        AS views_productos_nestle,
         SUM(total_shown_price)                                            AS intencion_nestle_mxn
     FROM nmx_hechos.fact_evento_qcart_productos
-    WHERE LOWER(brand) LIKE '%nestle%'
-       OR LOWER(brand) LIKE '%nestlé%'
     GROUP BY pieza_id, quincena
 ),
 
@@ -72,8 +74,10 @@ SELECT
     ROUND(c.intencion_total_mxn, 2)                                      AS intencion_total_mxn,
     ROUND(COALESCE(np.intencion_nestle_mxn, 0.0), 2)                     AS intencion_nestle_mxn,
     ROUND(
-        CAST(COALESCE(np.intencion_nestle_mxn, 0) AS DOUBLE)
-        / NULLIF(c.intencion_total_mxn, 0) * 100, 2
+        CASE WHEN COALESCE(np.intencion_nestle_mxn, 0) > c.intencion_total_mxn THEN NULL
+             ELSE CAST(COALESCE(np.intencion_nestle_mxn, 0) AS DOUBLE)
+                  / NULLIF(c.intencion_total_mxn, 0) * 100
+        END, 2
     )                                                                     AS pct_penetracion_nestle,
 
     -- Tickets promedio

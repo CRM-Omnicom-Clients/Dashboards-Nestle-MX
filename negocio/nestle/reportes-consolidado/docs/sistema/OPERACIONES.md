@@ -133,9 +133,9 @@ FROM nmx_reporte.rpt_qcart;
 
 | Tabla | Filas | Piezas | Rango |
 |---|---|---|---|
-| rpt_email | ~115 | ~115 Principals | 2026-03 → 2026-10 |
-| rpt_whatsapp | ~18 | ~18 | 2026-Q2-1 → 2026-Q4-2 |
-| rpt_qcart | ~42 | ~42 | 2026-03 → 2026-11 |
+| rpt_email | ~105 | ~100 Principals (AON 19 · OS 86) | 2026-03 → 2026-11 |
+| rpt_whatsapp | ~24 | ~18 | 2026-Q2-1 → 2026-Q4-2 |
+| rpt_qcart | ~183 | ~37 | 2026-03 → 2026-11 |
 
 > rpt_email contará solo Principals (no FUPs independientes). Los FUPs aparecen como columnas en su fila Principal.
 
@@ -235,4 +235,37 @@ uv run --with openpyxl /home/agent/work/2026-09-10_gp5b06/my/scripts/_reload_wa_
 
 ---
 
-*Última actualización: 2026-11-11 — Etapas 0–6 SQLs completos. Pendiente: cargar Qcart + run pipeline final + dashboard TD Studio.*
+---
+
+## Paso 5 — Actualizar el dashboard con datos frescos
+
+```bash
+# Genera dashboards/reporte-datos.js desde los rpt_* actuales en TD
+uv run workflow/scripts/build_dashboard_data.py
+
+# Push solo el archivo de datos (el HTML nunca se toca)
+cd /tmp/dashboards-repo
+git add dashboards/reporte-datos.js
+git commit -m "data: refresco dashboard [YYYY-MM-DD]"
+git push "https://x-access-token:${TOKEN}@github.com/CRM-Omnicom-Clients/Dashboards-Nestle-MX.git" main
+```
+
+> **Regla crítica:** `reporte-consolidado-crm.html` contiene SOLO lógica JS (filtros, tablas, estilos). **Nunca** lo edites para actualizar datos — solo escribe en `reporte-datos.js`.
+> Esta separación fue implementada el 2026-11-12 para evitar el BUG-08 (rsm() fusionada con go() por patch accidental del HTML).
+
+---
+
+## Valores de referencia (corte Nov 2026)
+
+| Tabla | Filas | Piezas | Rango |
+|---|---|---|---|
+| rpt_email | 105 | 100 únicas (AON 19 · OS 86) | 2026-03 → 2026-11 |
+| rpt_whatsapp | 24 | 18 | 2026-Q2-1 → 2026-Q4-2 |
+| rpt_qcart | 183 | 37 piezas atribuidas | 2026-03 → 2026-11 |
+
+**Métricas clave Qcart (referencia post-BUG-05/06/07):**
+- 7,185 carritos totales · $2.69M intención total · $279.7K intención Nestlé · 10.4% pct · tkt_c $374 · tkt_p $26.94
+
+---
+
+*Última actualización: 2026-11-12 — Pipeline completo ✓. Dashboard live con datos reales. Paso 5 (dashboard) agregado. BUG-05/06/07/08 resueltos.*

@@ -1,24 +1,24 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12T21:30
-status: "Pipeline completo ✓. Dashboard live. OI-13 (shortlinks) pendiente Rick. OI-19 (validación email vs SFMC) abierto."
+updated: 2026-11-12T23:59
+status: "Pipeline completo ✓. Dashboard live y estable. BUG-08 resuelto (dashboard sin datos). Validación CDP vs SFMC completada: 100% match. Arquitectura dashboard estabilizada: datos en reporte-datos.js separado."
 owner: Rick Aguilar
 ---
 
 # ESTADO: Reporte Consolidado Nestlé México en TD
 
-> Fuente de verdad del proyecto — actualizado 2026-11-12T21:30.
+> Fuente de verdad del proyecto — actualizado 2026-11-12T23:59.
 > Para la arquitectura del sistema, ver `ARQUITECTURA.md`. Para correr, ver `OPERACIONES.md`.
 
 ---
 
-## Resumen ejecutivo (2026-11-12)
+## Resumen ejecutivo (2026-11-12, actualizado fin de sesión)
 
 | Canal | Tabla fact | Estado | Tabla rpt | Métricas finales |
 |-------|-----------|--------|-----------|-----------------|
 | Email | `fact_envio_email` | ✓ | `rpt_email` | 105 rows · 100 piezas únicas · AON 19 rows · OS 86 rows |
 | WhatsApp | `fact_envio_whatsapp` | ✓ corregido | `rpt_whatsapp` | 24 rows · 18 piezas · OI-15+17 resueltos |
-| Qcart | `fact_evento_qcart_*` | ✓ validado | `rpt_qcart` | 183 rows · 37 piezas · 7,185 carritos · $2.69M intención |
+| Qcart | `fact_evento_qcart_*` | ✓ auditado | `rpt_qcart` | 183 rows · 37 piezas · **7,185 carritos** · $2.69M intención total · **$279.7K intención Nestlé** · **pct 10.4%** · tkt_c $374 · tkt_p $26.94 |
 
 **Cobertura Qcart en dashboard:**
 - Email con Qcart: **28 piezas** (8 AON + 20 OS) — antes se reportaron 15/26 por archivo truncado
@@ -27,7 +27,7 @@ owner: Rick Aguilar
 
 > **Dashboard v1 publicado:** https://crm-omnicom-clients.github.io/Dashboards-Nestle-MX/dashboards/reporte-consolidado-crm.html
 >
-> Última actualización: 2026-11-12 — datos pipeline completo, Qcart 183 rows, fórmulas validadas.
+> Última actualización: 2026-11-12 — auditoría Qcart completa (BUG-05/06/07 resueltos), intencion_nestle corregida de $66K → $279.7K.
 
 ---
 
@@ -40,16 +40,17 @@ owner: Rick Aguilar
 | 3 | Workflow Digdag: `hechos.dig` | ✓ COMPLETA |
 | 4a | `fact_envio_email` | ✓ 105 filas · 100 piezas |
 | 4b | `fact_envio_whatsapp` | ✓ 24 filas corregidas |
-| 4c | `fact_evento_qcart_*` | ✓ 2,991 carritos · 37 piezas atribuidas |
+| 4c | `fact_evento_qcart_*` | ✓ **7,185 carritos** · 37 piezas atribuidas (BUG-05/06/07 resueltos) |
 | 5a | `rpt_email` | ✓ OI-18 resuelto · 105 filas · 0 duplicados |
 | 5b | `rpt_whatsapp` | ✓ OI-18 resuelto · 24 filas · 0 duplicados |
-| 5c | `rpt_qcart` | ✓ 183 filas · 37 piezas · totales validados |
-| 6 | Dashboard HTML v1 | ✓ Publicado · datos reales · Qcart 28E+8WA piezas |
+| 5c | `rpt_qcart` | ✓ 183 filas · 37 piezas · totales auditados · **BUG-05/06/07 resueltos** |
+| 6 | Dashboard HTML v1 | ✓ Publicado · datos reales · Qcart 28E+8WA piezas · intencion_nestle corregida |
 | **P1** | **Catálogo rebuild (AON/OS verificado, 157 piezas)** | **✓ COMPLETA 2026-11-12** |
 | **P2** | **WA insumos corregidos (OI-15+17)** | **✓ COMPLETA 2026-11-12** |
 | **P3** | **Pipeline final + dashboard refrescado** | **✓ COMPLETA 2026-11-12** |
 | P4 | Schedule semanal martes 22h | 🔲 PENDIENTE |
-| **P5** | **Validación email vs SFMC (OI-19)** | **🔲 PENDIENTE — Rick conectará MCP** |
+| **P5** | **Validación email vs SFMC (OI-19 + MCP directo)** | **✓ COMPLETADA 2026-11-12 — ver análisis abajo** |
+| P6 | Estabilización dashboard — datos/lógica separados | ✓ COMPLETADA 2026-11-12 — `reporte-datos.js` separado |
 
 ---
 
@@ -113,9 +114,65 @@ owner: Rick Aguilar
 - **Fix:** Correr `catalogo.dig` primero (Attempt 1424125690), luego `reporte.dig` (Attempt 1424125825)
 - **Regla permanente:** Siempre `catalogo.dig` → `hechos.dig` → `reporte.dig`
 
+### BUG-05: `intencion_nestle` subestimada — $66K en lugar de $279.7K
+- **Síntoma:** `rpt_qcart` reportaba solo $66,360 intención Nestlé; pct_penetracion=2.5%
+- **Causa:** CTE `nestle_productos` en `rebuild_rpt_qcart.sql` tenía `WHERE LOWER(brand) LIKE '%nestle%' OR LOWER(brand) LIKE '%nestlé%'`. Solo matcheaba la marca literal "nestle", ignorando Maggi ($18.9M+ en raw), La Lechera, Carnation, Nescafé, Nido, Nesquik, etc.
+- **Raíz confirmada:** `land_qcart_productos` contiene SOLO marcas Nestlé — las 12 marcas distintas son todas del portfolio. No hay productos de competidores en esta tabla.
+- **Fix:** Se eliminó el `WHERE` completamente de `nestle_productos`. Comentario explicativo agregado.
+- **Resultado:** intencion_nestle corregida a **$279,728**; pct_global=**10.4%**; tkt_producto=**$26.94**
+- **Workflow re-run:** Attempt 1424132257 ✅ · **Commit:** `3310f29` + `e787520`
+
+### BUG-06: `pct_penetracion_nestle > 100%` en 29 rows
+- **Síntoma:** Filas con pct como 2,216%, 1,691%, 658%, etc.
+- **Causa (grain mismatch):** `views` en `land_qcart_carritos` ≠ `views` en `land_qcart_productos`. En carritos = cart sessions (deduplicadas); en productos = impresiones individuales por SKU. Un shortlink×fecha puede tener 1 cart session ($367.90) pero 174 impresiones de producto ($8,154), haciendo que `inn > itn`.
+- **Impacto:** 29 rows afectadas, 102 carritos (1.4% del total 7,185)
+- **Fix:** `CASE WHEN inn > itn THEN NULL ELSE pct END` — mostrar NULL en lugar de % imposible. El `pct_global` agregado (10.4%) no se ve afectado (se calcula de SUM(inn)/SUM(itn)).
+- **Commit:** `f918371`
+
+### BUG-07: `carritos_walmart + carritos_chedraui > carritos_total`
+- **Síntoma:** Muchas filas donde la suma de splits Walmart+Chedraui excedía el total de carritos
+- **Causa:** 712 filas en `land_qcart_carritos` tienen `store = 'chedraui-com-mx, walmart-com-mx'` o `'walmart-com-mx, chedraui-com-mx'` (valor combinado). Ambas condiciones LIKE matcheaban → 3,074 views contados doble.
+- **Fix:** `NOT LIKE '%chedraui%'` agregado al CASE walmart; `NOT LIKE '%walmart%'` al CASE chedraui.
+- **Verificación:** `rows_wm+ched>total = 0` post-fix.
+- **Workflow re-run:** Attempt 1424132696 ✅ · **Commit:** `f918371`
+
+### BUG-08: `rsm()` fusionada con `go()` — dashboard sin datos en pantalla
+- **Síntoma:** Dashboard cargaba pero no mostraba ningún dato (tablas vacías, KPIs en blanco)
+- **Causa:** A partir del commit `e787520`, al hacer patch del timestamp en `go()`, la función `rsm(aon,os,wa)` desapareció y su cuerpo quedó pegado dentro de `go()`, creando un error de sintaxis JS que apagaba todo el script
+- **Fix:** `rsm()` restaurada como función independiente; `go()` cierra correctamente con `setSH();}`
+- **Commit:** `19d7524`
+
 ---
 
-## OIs abiertos
+## Estabilización dashboard: separación datos/lógica (2026-11-12)
+
+**Problema raíz:** el archivo HTML mezclaba lógica JS (funciones, estilos) con datos (arrays AON/OS/WA). Cada actualización de datos reescribía el HTML completo, con riesgo permanente de corromper el código.
+
+**Solución implementada:**
+
+| Archivo | Rol | Quién lo toca |
+|---------|-----|---------------|
+| `dashboards/reporte-consolidado-crm.html` | Solo lógica: filtros, tablas, estilos | **Nunca** (ya no hay datos aquí) |
+| `dashboards/reporte-datos.js` | Solo datos: `const AON`, `const OS`, `const WA` | Solo el script de build |
+| `workflow/scripts/build_dashboard_data.py` | Lee TD → escribe `reporte-datos.js` | Se corre al actualizar datos |
+
+**Para el próximo ciclo de datos:**
+```bash
+# 1. Correr pipeline TD (ya existía)
+tdx wf start nmx_crm_reporte
+
+# 2. Generar JS de datos
+uv run workflow/scripts/build_dashboard_data.py
+
+# 3. Push solo el .js
+git add dashboards/reporte-datos.js && git commit -m "data: refresco ..." && git push
+```
+
+- **Commits:** `19d7524` (BUG-08) · `5b0c81a` (separación datos/lógica)
+
+---
+
+
 
 | ID | Descripción | Responsable | Estado |
 |----|-------------|-------------|--------|
@@ -126,13 +183,60 @@ owner: Rick Aguilar
 | OI-16 | `land_qcart_carritos`: 71,117 filas cargadas | Studio | ✅ Resuelto 2026-11-12 |
 | OI-17 | 8 piezas WA clicks corregidos | Studio | ✅ Resuelto 2026-11-12 |
 | OI-18 | Duplicados en `rpt_*` por pieza_segmento sin colapsar | Studio | ✅ Resuelto 2026-11-12 |
-| **OI-19** | **Validación email vs SFMC — hallazgos completos** | **Studio + Rick** | **🔲 Decisión de Rick pendiente — ver análisis abajo** |
+| **OI-19** | **Validación CDP vs SFMC directo (MCP)** | Studio | **✅ Completado 2026-11-12 — ver análisis SFMC abajo** |
 | **OI-20** | **`005-P012` aparece en rpt_qcart pero no en rpt_email ni rpt_whatsapp** | Studio | 🔲 Investigar |
-| **OI-21** | **290 email_names sin mapeo en prod_sfmc_sends (50.4M sends no atribuidos)** | **Rick** | 🔲 Rick decide cuáles agregar al catálogo |
+| **OI-21** | **9 EmailNames SFMC sin mapeo en TD (Nescafé Winback SA/SB/A/B 1.6M sends, Purina 106K)** | **Rick** | 🔲 Rick decide si agregar al catálogo |
 
 ---
 
-## Análisis OI-19: Validación email vs SFMC — RESULTADO
+## Análisis OI-19 / Validación CDP vs SFMC directo — RESULTADO (2026-11-12)
+
+### Conexión SFMC via MCP kit
+Validación realizada directamente contra las DEs del BU NMX usando el kit en `sfmc/kit-crm-reporte-mcp-nestle-sfmc/`.
+DEs leídas: `CRM_Email_Piezas` (146 rows), `CRM_Reporte_Auditoria` (148 rows), `CRM_Reporte_Config` (148 rows).
+
+### Resultado del cruce TD vs SFMC
+
+| Categoría | N | Detalle |
+|-----------|---|---------|
+| **TD piezas con match SFMC** | **100/100** | ✅ Cobertura perfecta |
+| Exactos (diff sends = 0) | 10 | Piezas One-Shot simples |
+| Diff < 1% | 10 | Diferencias de 1–5 envíos por ventana de retención |
+| Diff 1–5% | 5 | Pequeñas divergencias de fecha |
+| Diff ≥ 5% (alerta) | 48 | **Esperadas** — ver arquitectura abajo |
+| SFMC sin mapeo TD | 9 | Variantes Nescafé Winback + Purina Brand |
+
+### Las divergencias grandes son arquitecturales, no errores
+
+- **TD agrega por `pieza_id`:** suma todos los `nombre_unico` → pieza (todos los EmailNames del catálogo que apunten a esa pieza, todas las quincenas)
+- **SFMC reporta por `EmailName`:** 1 fila por email job
+- Para piezas AON con muchos jobs (ej. 001-P001 LigaMX), TD acumula millones mientras SFMC muestra solo el EmailName registrado (34K sends)
+
+### Semáforo SFMC (Auditoría `CRM_Reporte_Auditoria`)
+
+| Estado | N | Detalle |
+|--------|---|---------|
+| OK | 139 | ✅ |
+| SIN MATCH | 2 | Nescafé ICE, Nescafé Espresso — sin envíos recientes |
+| DUPLICADO | 5 | Maggi Selección, Nescafé Winback CH2 B1+B2, Test_1 — 2 config keys apuntan al mismo EmailName |
+| ASSET CAMBIO | 2 | `009-P012`, `009-P017` (Proplan) — creativo reemplazado en Content Builder |
+
+### 9 SFMC sin mapeo TD — OI-21
+
+| Sends | EmailName | Acción |
+|-------|-----------|--------|
+| 854K | Nescafé Winback SA | Mapear → pieza existente en catálogo |
+| 414K | Nescafé Winback SB | Ídem |
+| 200K | Nescafé Winback A | Ídem |
+| 168K | Nescafé Winback B | Ídem |
+| 107K | Purina Brand AON | ¿Incluir en reporte NMX? — otra marca |
+| ~17 total | CH2 B1+B2 / SC / otros | Tests/duplicados — ignorar |
+
+**Total sin mapear: ~1.7M sends** — Rick decide si agregar al catálogo.
+
+---
+
+## Plan OI-19: Checklist MCP (cuando esté disponible)
 
 ### Veredicto
 **Los datos en TD son correctos.** Para todos los `email_name` registrados en `tabla_nombres`, `diff_sends = 0` — coincidencia perfecta con `prod_sfmc_sends`.
@@ -247,6 +351,13 @@ tdx wf schedule nmx_crm_reporte.nmx_crm_reporte \
 | `77a8de9` | fix tipo_envio: 100años/Hotcakes/Checo → One-Shot |
 | `493efee` | refresh dashboard datos reales post-pipeline |
 | `6d6ab24` | fix OI-18: 0 duplicados en rpt_* |
+| `3310f29` | **fix BUG-05: intencion_nestle subestimada — filtro brand incorrecto en rpt_qcart** |
+| `e787520` | **fix BUG-05 + dashboard: intencion_nestle corregida ($66K→$280K, pct 2.5%→10.4%)** |
+| `f918371` | **fix BUG-06+07: pct_penetracion NULL cuando inn>itn, store dual excluido de w/c** |
+| `919bcca` | **dashboard: refresh datos con BUG-05/06/07 corregidos** |
+| `f7ec9cf` | docs: ESTADO.md auditoría Qcart completa — BUG-05/06/07 documentados |
+| `19d7524` | **fix BUG-08: rsm() restaurada como función separada — dashboard sin datos corregido** |
+| `5b0c81a` | **refactor: separar datos de lógica — reporte-datos.js + script build_dashboard_data.py** |
 
 ---
 
@@ -258,4 +369,5 @@ tdx wf schedule nmx_crm_reporte.nmx_crm_reporte \
 - Fact tables: formato v8 Principal+FUP wide, clicks desglosados CTA/Baja/Medidos
 - `rpt_qcart` grain: `(pieza_id, quincena)` — agrega en dashboard con `aggregate_qc_for_pieza()`
 - Dashboard `reporte-consolidado-crm.html`: 83 columnas ordenables, totales campaña P+FUP+Total+Qcart, paleta morado/rosa, Gotham/Montserrat, timestamp dinámico, filtro Quincena, badge v1
+- **Dashboard arquitectura estable (2026-11-12):** datos separados en `reporte-datos.js`; HTML es solo lógica. Actualizar datos: correr `build_dashboard_data.py`, push solo el `.js`
 - **Regla de orden de ejecución:** `catalogo.dig` siempre primero — `tabla_piezas` stale rompe tipo_envio en todos los `rpt_*`

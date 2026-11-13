@@ -56,6 +56,16 @@
 └─────────────────┬───────────────────────────────────────────────┘
                   ▼
              TD Studio Dashboard
+             ↓
+┌─────────────────────────────────────────────────────────────────┐
+│  CAPA 5 — DASHBOARD (GitHub Pages)                              │
+│    dashboards/reporte-datos.js        ← SOLO datos: AON/OS/WA  │
+│    dashboards/reporte-consolidado-crm.html  ← SOLO lógica JS   │
+│                                                                 │
+│    workflow/scripts/build_dashboard_data.py ← genera el .js    │
+│    URL: crm-omnicom-clients.github.io/Dashboards-Nestle-MX/    │
+│         dashboards/reporte-consolidado-crm.html                 │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -266,6 +276,7 @@ nmx_crm_reporte.dig
 | pieza_id se atribuye en hechos.dig vía JOINs | Nunca hardcodeado en los archivos raw |
 | tipo_envio (no campana) separa Always On vs One Shot | campana='AON' incluye piezas con tipo_envio='one-shot' |
 | rpt_email usa formato wide | Principal + FUP en la misma fila, alineado con Excel v8 |
+| Dashboard: datos separados de lógica (desde 2026-11-12) | `reporte-datos.js` = datos; HTML = lógica pura; nunca editar HTML para datos (BUG-08) |
 
 ---
 
