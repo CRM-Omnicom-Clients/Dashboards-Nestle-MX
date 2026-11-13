@@ -74,7 +74,7 @@ SELECT
     dt.touchpoint_brief,
     p_.email_type                                               AS tipo_email,
     p_.tipo_envio,
-    COALESCE(seg.segmento_nombre, '—')                         AS segmento_nombre,
+    COALESCE(ds.segmento_nombre, '—')                          AS segmento_nombre,
     CASE WHEN sl.pieza_id IS NOT NULL THEN 'Sí' ELSE 'No' END  AS tiene_qcart,
     p_.quincena                                                 AS quincena_principal,
     p_.mes,
@@ -169,17 +169,13 @@ JOIN nmx_catalogo.dim_objetivo         do_ ON do_.objetivo_id  = p_.objetivo_id
 JOIN nmx_catalogo.dim_touchpoint_brief dt  ON dt.touchpoint_id = p_.touchpoint_id
 
 -- Segmento (bridge table)
-LEFT JOIN (
-    SELECT ps.pieza_id,
-           ARRAY_JOIN(ARRAY_SORT(ARRAY_AGG(DISTINCT ds2.segmento_nombre)), ' / ') AS segmento_nombre
-    FROM nmx_catalogo.pieza_segmento ps
-    JOIN nmx_catalogo.dim_segmento ds2 ON ds2.segmento_id = ps.segmento_id
-    GROUP BY ps.pieza_id
-) seg ON seg.pieza_id = p_.pieza_id
+LEFT JOIN nmx_catalogo.pieza_segmento  ps  ON ps.pieza_id      = p_.pieza_id
+LEFT JOIN nmx_catalogo.dim_segmento    ds  ON ds.segmento_id   = ps.segmento_id
 
 -- Indicador Qcart
 LEFT JOIN (
     SELECT DISTINCT pieza_id FROM nmx_catalogo.dim_shortlink
+    WHERE estado_link = 'USADO'
 ) sl ON sl.pieza_id = p_.pieza_id
 
 -- FUP correspondiente: mismo Principal, mismo mes
