@@ -1,0 +1,46 @@
+name: xlsx-to-csv
+
+# Convierte XLSX de catálogo y WA a CSVs normalizados en _derived/
+# Dispara en push que modifica XLSX. Los CSVs se commitean de vuelta al repo
+# para que TD Digdag los consuma via td_load> sin apikey.
+
+on:
+  push:
+    paths:
+      - 'negocio/nestle/reportes-consolidado/catalogo/*.xlsx'
+      - 'negocio/nestle/reportes-consolidado/insumos/*.xlsx'
+  workflow_dispatch: {}
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install --quiet 'openpyxl==3.1.5'
+
+      - name: Generate CSVs from XLSX
+        run: python .github/scripts/xlsx_to_csv.py --repo-root "${GITHUB_WORKSPACE}"
+
+      - name: Commit CSV changes
+        run: |
+          cd "${GITHUB_WORKSPACE}"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A \
+            'negocio/nestle/reportes-consolidado/catalogo/_derived/' \
+            'negocio/nestle/reportes-consolidado/insumos/_derived/'
+          if git diff --staged --quiet; then
+            echo "No hay cambios en _derived/, nada que commitear."
+            exit 0
+          fi
+          git commit -m "chore(auto): regen _derived/ CSVs from XLSX"
+          git push
