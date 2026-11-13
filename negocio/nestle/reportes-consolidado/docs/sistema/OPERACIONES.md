@@ -4,37 +4,35 @@
 
 ---
 
-## Arquitectura del pipeline
+## Arquitectura del pipeline (actualizada 2026-11-13)
+
+**El pipeline corre automáticamente L–V 03:33 CDMX (schedule #640115).**
 
 ```
-GitHub (insumos/)              TD Workflow: nmx_crm_reporte
-─────────────────              ──────────────────────────────
-Catalogo-Nestle-MX.xlsx  ──→  catalogo.dig   → nmx_insumos (10 tablas dim/cat)
-Email CSVs (por quincena)──→  hechos.dig     → nmx_hechos.fact_envio_email
-WhatsApp XLSX            ──→                  nmx_hechos.fact_envio_whatsapp
-Qcart CSVs (carritos/    ──→                  nmx_insumos.land_qcart_carritos
-            productos)                         nmx_insumos.land_qcart_productos
-                                               nmx_hechos.fact_evento_qcart_carritos
-                                               nmx_hechos.fact_evento_qcart_productos
-                         ──→  reporte.dig    → nmx_reporte.rpt_email
-                                               nmx_reporte.rpt_whatsapp
-                                               nmx_reporte.rpt_qcart
+GitHub (insumos/_derived/)      TD Workflow: nmx_crm_reporte
+──────────────────────────      ──────────────────────────────────────────
+*.csv (10 archivos catálogo) ─► landing.dig  ← SOLO recarga si hay cambios
+wa_envios.csv                   │  detect.py: SHA GitHub vs sync_markers
+qcart_carritos_*.csv            │  load.py:   catalogo / wa / qcart (paralelo)
+qcart_productos_*.csv           │
+                                ├─► catalogo.dig → nmx_catalogo (dim_* + tabla_*)
+                                ├─► hechos.dig   → nmx_hechos   (fact_*)
+                                └─► reporte.dig  → nmx_reportes (rpt_*)
 ```
 
-Dimensiones compartidas: `dim_marca`, `dim_bu`, `dim_campana`, `dim_objetivo`, `dim_shortlink`, `dim_touchpoint_brief`, `dim_segmento`, `pieza_segmento`.
+> Para el flujo completo con diagramas, ver `ARQUITECTURA.md`.
+> Para los esquemas de cada tabla, ver `ESQUEMA-BASES-DE-DATOS.md`.
 
 ---
 
 ## Proceso de actualización
 
-### Cuándo correr el pipeline
+### Cuándo hace falta intervención manual
 
-Correr después de cualquiera de estos eventos:
+El pipeline corre automáticamente. Solo se requiere acción manual en dos casos:
 
-- Nuevo corte de email: se suben nuevos CSVs a `insumos/` con prefijo `email-`
-- Nuevo corte de WA: se reemplaza el XLSX `insumos/*.whatsapp*.xlsx`
-- Nuevo corte de Qcart: se reemplazan los CSVs `insumos/*carts-raw*.csv` y `*products-raw*.csv`
-- Cambios en el catálogo: se edita `catalogo/Catalogo-Nestle-MX.xlsx`
+1. **Rick sube archivos nuevos al repo** → el pipeline del día siguiente los detecta y carga
+2. **Actualizar el dashboard** → correr `build_dashboard_data.py` y hacer push del `.js` (Paso 5 abajo)
 
 ---
 
@@ -63,28 +61,21 @@ negocio/nestle/reportes-consolidado/insumos/
 Si se agregaron nuevas piezas, journeys de WA, o shortlinks:
 
 1. Rick edita `catalogo/Catalogo-Nestle-MX.xlsx` y hace commit/push al repo
-2. En TD AI Studio, correr en terminal:
-   ```bash
-   uv run --with openpyxl /home/agent/work/2026-09-10_gp5b06/my/scripts/reload_catalog.py
-   ```
-3. Verificar que las 10 tablas se recargaron correctamente
+2. El GitHub Action convierte el XLSX a CSVs automáticamente
+3. El pipeline de la próxima madrugada detecta el cambio (SHA diferente) y recarga
 
-**Hojas que se cargan del catálogo:**
-
-| Hoja Excel | Tabla TD |
-|---|---|
-| Piezas | nmx_insumos.tabla_piezas |
-| Nombres | nmx_insumos.tabla_nombres |
-| Shortlinks | nmx_insumos.dim_shortlink |
-| Marcas | nmx_insumos.dim_marca |
-| BU | nmx_insumos.dim_bu |
+> **Ya no es necesario correr `reload_catalog.py` manualmente** — el landing autónomo lo hace.
+> El script sigue disponible como fallback en `my/scripts/reload_catalog.py`.
 
 ---
 
 ### Paso 2 — Correr el pipeline
 
+**Normalmente no es necesario — corre automático a las 03:33.**
+
+Para forzar una corrida manual:
 ```bash
-tdx wf run nmx_crm_reporte.nmx_crm_reporte
+tdx wf start nmx_crm_reporte.nmx_crm_reporte
 ```
 
 El pipeline corre en orden:
@@ -268,4 +259,4 @@ git push "https://x-access-token:${TOKEN}@github.com/CRM-Omnicom-Clients/Dashboa
 
 ---
 
-*Última actualización: 2026-11-12 — Pipeline completo ✓. Dashboard live con datos reales. Paso 5 (dashboard) agregado. BUG-05/06/07/08 resueltos.*
+*Última actualización: 2026-11-13 — Pipeline autónomo L-V 03:33 CDMX. Pasos 0-4 actualizados para reflejar landing.dig. Para esquemas completos de tablas ver ESQUEMA-BASES-DE-DATOS.md.*
