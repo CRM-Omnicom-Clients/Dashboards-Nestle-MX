@@ -1,7 +1,7 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-12T23:59
-status: "Pipeline completo ✓. Dashboard live y estable. BUG-08 resuelto (dashboard sin datos). Validación CDP vs SFMC completada: 100% match. Arquitectura dashboard estabilizada: datos en reporte-datos.js separado."
+updated: 2026-11-13T05:00
+status: "Pipeline completo ✓. Schedule L-V 03:33 CDMX activo. Landing autónomo en producción desde 2026-11-13. Qcart consolidado con Alianzas+Abuelita: $3.98M total / $344K Nestlé."
 owner: Rick Aguilar
 ---
 
@@ -48,7 +48,7 @@ owner: Rick Aguilar
 | **P1** | **Catálogo rebuild (AON/OS verificado, 157 piezas)** | **✓ COMPLETA 2026-11-12** |
 | **P2** | **WA insumos corregidos (OI-15+17)** | **✓ COMPLETA 2026-11-12** |
 | **P3** | **Pipeline final + dashboard refrescado** | **✓ COMPLETA 2026-11-12** |
-| P4 | Schedule semanal martes 22h | 🔲 PENDIENTE |
+| **P4** | **Schedule L-V 03:33 CDMX + landing autónomo** | **✓ COMPLETA 2026-11-13 · Schedule #640115 activo** |
 | **P5** | **Validación email vs SFMC (OI-19 + MCP directo)** | **✓ COMPLETADA 2026-11-12 — ver análisis abajo** |
 | P6 | Estabilización dashboard — datos/lógica separados | ✓ COMPLETADA 2026-11-12 — `reporte-datos.js` separado |
 
@@ -327,16 +327,39 @@ Para validación directa con SFMC vía MCP:
 
 ---
 
-## Plan ETAPA 7: Schedule semanal
+## Plan ETAPA 7: Schedule semanal → ✅ COMPLETA (2026-11-13)
 
-```bash
-tdx wf schedule nmx_crm_reporte.nmx_crm_reporte \
-  --cron "0 22 * * 2" \
-  --timezone "America/Mexico_City"
+**Pipeline autónomo en producción desde 2026-11-13.**
+
+| Dato | Valor |
+|---|---|
+| Schedule activo | `#640115 nmx_crm_reporte` |
+| Cron | `33 3 * * 1-5` America/Mexico_City (L–V 03:33) |
+| Siguiente run | 2026-11-16 03:33 |
+| Schedule desactivado | `#640484 [.]` — duplicado por segundo upload |
+
+### Arquitectura landing autónomo
+
+```
+nmx_crm_reporte.dig → landing.dig → catalogo.dig → hechos.dig → reporte.dig
 ```
 
-> Martes 22:00h MX. Ejecuta el workflow completo (`catalogo.dig` → `hechos.dig` → `reporte.dig`) en ese orden.
-> **Pendiente:** Confirmar que `nmx_crm_reporte.nmx_crm_reporte` es el workflow master que llama a los 3 en secuencia, o crear uno nuevo.
+`landing.dig` solo recarga insumos si hay cambios en GitHub (`RickAguilarOmnicom/NUBE-CLAUD`):
+- `read_markers` → `detect` → `loads` paralelos (catalogo / wa / qcart) → `persist_markers`
+- Secrets: `github_pat_dashboards` · `td.apikey`
+
+Ver detalles en `HANDOFF-landing-autonomo.md`.
+
+### Qcart consolidado con Alianzas + Abuelita (2026-11-13)
+
+| Canal | Intención Total | Intención Nestlé | Penetración | Carritos | Ticket |
+|-------|----------------|-----------------|-------------|---------|--------|
+| **Total** | **$3,979,765** | **$344,204** | **8.6%** | **10,323** | **$386** |
+| Email (RN + Alianzas) | $3,625,014 | $305,518 | 8.4% | 9,183 | $395 |
+| WhatsApp (RN + Abuelita) | $354,751 | $38,686 | 10.9% | 1,140 | $311 |
+
+> Alianzas: `nMo8xFmB`+`PfmeoFGv`, activación 2026-10-30. Abuelita WA: `gFS7vAke`, activación 2026-10-30.
+> Ponche Navideño (`PfmeoFGv`): excluido — no activado.
 
 ---
 
@@ -358,6 +381,7 @@ tdx wf schedule nmx_crm_reporte.nmx_crm_reporte \
 | `f7ec9cf` | docs: ESTADO.md auditoría Qcart completa — BUG-05/06/07 documentados |
 | `19d7524` | **fix BUG-08: rsm() restaurada como función separada — dashboard sin datos corregido** |
 | `5b0c81a` | **refactor: separar datos de lógica — reporte-datos.js + script build_dashboard_data.py** |
+| *(2026-11-13)* | **feat: landing autónomo en prod — schedule #640115 L-V 03:33 CDMX, duplicate #640484 desactivado** |
 
 ---
 
