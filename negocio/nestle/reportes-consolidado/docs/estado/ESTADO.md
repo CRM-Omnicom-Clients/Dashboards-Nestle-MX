@@ -1,7 +1,7 @@
 ---
 title: "ESTADO: Reporte Consolidado Nestlé México en Treasure Data"
-updated: 2026-11-13T05:00
-status: "Pipeline completo ✓. Schedule L-V 03:33 CDMX activo. Landing autónomo en producción desde 2026-11-13. Qcart consolidado con Alianzas+Abuelita: $3.98M total / $344K Nestlé."
+updated: 2026-11-13T17:30
+status: "Pipeline completo ✓. Schedule L-V 03:33 CDMX activo. Landing autónomo en producción desde 2026-11-13. Qcart consolidado con Alianzas+Abuelita: $3.98M total / $344K Nestlé. BUG-09 resuelto."
 owner: Rick Aguilar
 ---
 
@@ -51,6 +51,7 @@ owner: Rick Aguilar
 | **P4** | **Schedule L-V 03:33 CDMX + landing autónomo** | **✓ COMPLETA 2026-11-13 · Schedule #640115 activo** |
 | **P5** | **Validación email vs SFMC (OI-19 + MCP directo)** | **✓ COMPLETADA 2026-11-12 — ver análisis abajo** |
 | P6 | Estabilización dashboard — datos/lógica separados | ✓ COMPLETADA 2026-11-12 — `reporte-datos.js` separado |
+| **P7** | **BUG-09: tiene_qcart incorrecto para shortlinks no usados** | **✓ COMPLETA 2026-11-13 · 004-P006/P007/P008 corregidos** |
 
 ---
 

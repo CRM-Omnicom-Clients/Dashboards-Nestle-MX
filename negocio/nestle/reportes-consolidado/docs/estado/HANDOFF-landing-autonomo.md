@@ -6,7 +6,7 @@
 
 ## Estado al 2026-11-13
 
-Pipeline completo en producción. Schedule activo L–V 03:33 CDMX.
+Pipeline completo en producción. Schedule activo L–V 03:33 CDMX. Primer run automatizado completado.
 
 | Componente | Estado | Detalles |
 |---|---|---|
@@ -47,7 +47,7 @@ nmx_crm_reporte.dig
 ## Reglas de atribución Qcart (metodología confirmada 2026-11-13)
 
 ### Shortlinks oficiales (vía `dim_shortlink`)
-- Filtro: sin WHERE en `nestle_productos` — `land_qcart_productos` contiene SOLO marcas Nestlé
+- Filtro: `brand LIKE '%nestle%'` sobre `fact_evento_qcart_productos`
 - Activación: `fecha >= fecha_activacion` del catálogo
 - Excluye automáticamente shortlinks no registrados en `dim_shortlink`
 
@@ -60,8 +60,8 @@ nmx_crm_reporte.dig
 ### Chocolate Abuelita WA (medición ad hoc)
 - Shortlink: `gFS7vAke` — NO en `dim_shortlink`
 - **Fecha activación confirmada: 2026-10-30** (Rick Aguilar, 2026-11-13)
-- Brand en Qcart = "abuelita" → bajo regla estándar no suma a `intencion_nestle_mxn`
-- Contabilizado en `intencion_total_mxn`; si se cuenta 100% Nestlé: +$24,520
+- Brand en Qcart = "abuelita" (no "nestle") → bajo regla estándar = $0 Nestlé
+- **Decisión vigente:** contabilizado en `intencion_total_mxn` pero NO en `intencion_nestle_mxn`
 
 ---
 
@@ -75,17 +75,41 @@ nmx_crm_reporte.dig
 | Email (RN + Alianzas) | $3,625,014 | $305,518 | 8.4% | 9,183 | $395 |
 | WhatsApp (RN + Abuelita) | $354,751 | $38,686 | 10.9% | 1,140 | $311 |
 
-> Si Abuelita se contara como 100% Nestlé: $368,724 / 9.3%.
+> Si Abuelita se contara como 100% Nestlé: intencion_nestle = $368,724 / penetración = 9.3%
 
 ---
 
-## Decisiones fijas
+## Archivos locales clave
+
+| Artefacto | Ruta |
+|---|---|
+| Master workflow | `my/workflow/nmx_crm_reporte.dig` |
+| Landing dig | `my/workflow/landing.dig` |
+| Detector | `my/workflow/detect.py` |
+| Loader | `my/workflow/load.py` |
+| Markers upsert | `my/workflow/markers.py` |
+| SQL read markers | `my/workflow/queries/read_markers.sql` |
+| PAT GitHub | `my/GITHU-NUBECLAUD-TOKEN-TDSTUDIO=gith.txt` |
+
+---
+
+## Decisiones fijas (no re-litigar)
 
 1. **Schedule L–V 03:33 CDMX** (cron `33 3 * * 1-5`) — sin shadow previo, cutover directo
 2. **catalogo.dig → hechos.dig → reporte.dig** — orden siempre; catalogo primero
 3. **Scripts legacy quedan como fallback** — `reload_catalog.py` y `_load_qcart_only.py` no se borran
-4. **Alianzas/Abuelita NO están en `dim_shortlink`** — medición ad hoc documentada arriba
+4. **Alianzas/Abuelita NO están en `dim_shortlink`** — medición ad hoc documentada arriba; pendiente de formalizar en catálogo si Rick lo decide
 5. **Secret names definitivos:** `github_pat_dashboards` (GitHub) · `td.apikey` (Treasure Data)
+
+---
+
+## Bugs resueltos
+
+| Bug | Descripción | Resuelto |
+|-----|-------------|---------|
+| BUG-09 | `tiene_qcart = 'Sí'` incorrecto para shortlinks con `estado_link != 'USADO'` | ✅ 2026-11-13 · fix en `rebuild_rpt_email.sql` línea 178 · commit `e6ff64c` |
+
+**Validación BUG-09:** 004-P006/P007/P008 → `tiene_qcart='No'` (sin datos en rpt_qcart). 005-P008 → `'Sí'` (con datos). Global: 28 piezas con `Sí` = exactamente 28 con datos en rpt_qcart.
 
 ---
 
@@ -93,6 +117,7 @@ nmx_crm_reporte.dig
 
 | Item | Responsable |
 |---|---|
-| Verificar primer run automático 2026-11-13 03:33 en TD console | Rick |
+| Verificar primer run automático 2026-11-16 03:33 (siguiente L-V) en TD console | Rick |
 | Decidir si Alianzas/Abuelita se agregan a `dim_shortlink` (formalización) | Rick |
 | OI-13: 329 shortlinks Qcart sin mapeo en catálogo | Rick |
+| OI-19: Validación email vs SFMC (Rick conectará MCP) | Rick |
