@@ -108,8 +108,19 @@ nmx_crm_reporte.dig
 | Bug | Descripción | Resuelto |
 |-----|-------------|---------|
 | BUG-09 | `tiene_qcart = 'Sí'` incorrecto para shortlinks con `estado_link != 'USADO'` | ✅ 2026-11-13 · fix en `rebuild_rpt_email.sql` línea 178 · commit `e6ff64c` |
+| BUG-10 | Filas duplicadas en rpt_qcart y rpt_email por JOIN directo en multi-segmento. 1,220 carritos inflados (×3). | ✅ 2026-11-13 · subquery agregado en rebuild_rpt_email/qcart · commit `6dca60c` |
+| BUG-11 | `intencion_nestle_mxn` filtrada solo a `brand='nestle'`, perdiendo maggi, la lechera, carnation, etc. | ✅ 2026-11-13 · sin filtro brand (todos son portafolio Nestlé) · rebuild_rpt_qcart del repo |
 
-**Validación BUG-09:** 004-P006/P007/P008 → `tiene_qcart='No'` (sin datos en rpt_qcart). 005-P008 → `'Sí'` (con datos). Global: 28 piezas con `Sí` = exactamente 28 con datos en rpt_qcart.
+---
+
+## Cobertura de shortlinks Qcart — decisión de diseño
+
+De 408 shortlinks en `land_qcart_carritos`, solo 65 están mapeados en `dim_shortlink` como `USADO`.
+Los 343 restantes pertenecen a canales fuera del alcance del CRM (recetasnestle.com.mx, campañas de medios, etc.).
+
+**Decisión (Rick Aguilar, 2026-11-13):** el catálogo solo mapea shortlinks de campañas de **email y master CRM**. Los demás no deben mapearse. Esta cobertura parcial es intencional y no es un pendiente.
+
+> OI-13 cerrado — no aplica.
 
 ---
 
@@ -119,5 +130,4 @@ nmx_crm_reporte.dig
 |---|---|
 | Verificar primer run automático 2026-11-16 03:33 (siguiente L-V) en TD console | Rick |
 | Decidir si Alianzas/Abuelita se agregan a `dim_shortlink` (formalización) | Rick |
-| OI-13: 329 shortlinks Qcart sin mapeo en catálogo | Rick |
 | OI-19: Validación email vs SFMC (Rick conectará MCP) | Rick |
