@@ -23,7 +23,7 @@ import sys
 from pathlib import Path
 
 # ── rutas ──────────────────────────────────────────────────────────────────
-REPO_ROOT   = Path(__file__).resolve().parents[4]
+REPO_ROOT   = Path(__file__).resolve().parents[5]
 DATOS_JS    = REPO_ROOT / "dashboards" / "reporte-datos.js"
 
 # ── helpers TD ──────────────────────────────────────────────────────────────
@@ -42,7 +42,17 @@ def tdx(sql, db="nmx_reporte"):
 # ── queries ──────────────────────────────────────────────────────────────────
 SQL_EMAIL = "SELECT * FROM rpt_email ORDER BY tipo_envio, marca, campana, pieza_id"
 SQL_WA    = "SELECT * FROM rpt_whatsapp ORDER BY marca, campana, pieza_id"
-SQL_QCART = "SELECT pieza_id, rec, fd, fh, cw, cc, ct, vc, vpn, itn, inn, pct, tkt_c, tkt_p FROM rpt_qcart"
+SQL_QCART = """
+SELECT pieza_id, quincena,
+  receta_representativa AS rec,
+  fecha_desde  AS fd, fecha_hasta  AS fh,
+  carritos_walmart AS cw, carritos_chedraui AS cc, carritos_total AS ct,
+  views_carrito AS vc, views_productos_nestle AS vpn,
+  intencion_total_mxn AS itn, intencion_nestle_mxn AS inn,
+  pct_penetracion_nestle AS pct,
+  ticket_carrito_mxn AS tkt_c, ticket_producto_mxn AS tkt_p
+FROM rpt_qcart ORDER BY pieza_id, quincena
+"""
 
 def build():
     print("Leyendo rpt_email ...")
@@ -55,12 +65,16 @@ def build():
 
     print("Leyendo rpt_qcart ...")
     qcart_rows = tdx(SQL_QCART)
-    qcart_map = {r["pieza_id"]: {k: v for k, v in r.items() if k != "pieza_id"}
-                 for r in qcart_rows}
-    print(f"  {len(qcart_rows)} filas")
+    # _qc es un dict anidado {pieza_id: {quincena: {...data...}}} para filtrado por período
+    qcart_map = {}
+    for r in qcart_rows:
+        pid = r.pop("pieza_id")
+        q   = r.pop("quincena")
+        qcart_map.setdefault(pid, {})[q] = r
+    print(f"  {len(qcart_rows)} filas — {len(qcart_map)} piezas con Qcart")
 
-    # Adjuntar _qc a cada fila de email
-    for row in email_rows:
+    # Adjuntar _qc a filas de email Y WhatsApp
+    for row in [*email_rows, *wa_rows]:
         row["_qc"] = qcart_map.get(row.get("pieza_id"))
 
     # Separar AON vs OS

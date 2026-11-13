@@ -223,7 +223,7 @@ function eTotRow(rows){
     <td class="r gt">${fmt(tun)}</td><td class="gt">${rp(tun,tsn)}</td>
     <td class="r gt">${fmt(tcta)}</td><td class="gt">${rp(tcta,tcl)}</td>
     <td class="r gt">${fmt(tbj)}</td><td class="gt sxp">${rp(tbj,tcl)}</td>
-    ${(()=>{const qr=rows.filter(r=>r._qc);if(!qr.length)return'<td class="na" colspan="13">\u2014</td>';const QS=f=>qr.reduce((a,r)=>a+(+(r._qc[f]||0)),0);const qcw=QS('cw'),qcc=QS('cc'),qct=QS('ct'),qvc=QS('vc'),qvpn=QS('vpn'),qitn=QS('itn'),qinn=QS('inn');const qpct=qitn?(qinn/qitn*100).toFixed(1):null;const qtktc=qct?(qitn/qct):null;const qtktp=qvpn?(qinn/qvpn):null;return`<td class="gq" colspan="3">\u2014</td><td class="r gq">${fmt(qcw)}</td><td class="r gq">${fmt(qcc)}</td><td class="r gq" style="font-weight:700">${fmt(qct)}</td><td class="r gq">${fmt(qvc)}</td><td class="r gq">${fmt(qvpn)}</td><td class="r gq">${mxn(qitn)}</td><td class="r gq">${mxn(qinn)}</td><td class="mu gq">${qpct!=null?qpct+'%':'\u2014'}</td><td class="r gq">${qtktc!=null?mxn(qtktc):'\u2014'}</td><td class="r gq">${qtktp!=null?mxn(qtktp):'\u2014'}</td>`;})()}
+    ${(()=>{const qr=rows.filter(r=>r._qc_r);if(!qr.length)return'<td class="na" colspan="13">\u2014</td>';const QS=f=>qr.reduce((a,r)=>a+(+(r._qc_r[f]||0)),0);const qcw=QS('cw'),qcc=QS('cc'),qct=QS('ct'),qvc=QS('vc'),qvpn=QS('vpn'),qitn=QS('itn'),qinn=QS('inn');const qpct=qitn?(qinn/qitn*100).toFixed(1):null;const qtktc=qct?(qitn/qct):null;const qtktp=qvpn?(qinn/qvpn):null;return`<td class="gq" colspan="3">\u2014</td><td class="r gq">${fmt(qcw)}</td><td class="r gq">${fmt(qcc)}</td><td class="r gq" style="font-weight:700">${fmt(qct)}</td><td class="r gq">${fmt(qvc)}</td><td class="r gq">${fmt(qvpn)}</td><td class="r gq">${mxn(qitn)}</td><td class="r gq">${mxn(qinn)}</td><td class="mu gq">${qpct!=null?qpct+'%':'\u2014'}</td><td class="r gq">${qtktc!=null?mxn(qtktc):'\u2014'}</td><td class="r gq">${qtktp!=null?mxn(qtktp):'\u2014'}</td>`;})()}
   </tr>`;
 }
 function wTotRow(rows,hq){
@@ -240,7 +240,7 @@ function wTotRow(rows,hq){
     <td class="r gw">${fmt(nd)}</td><td class="gw">${rp(nd,sn)}</td>
     <td class="r gw">${fmt(rd)}</td><td class="gw">${rp(rd,dl)}</td>
     <td class="r gw">${fmt(cl)}</td><td class="gw${hq?' sxp':''}">${rp(cl,rd)}</td>
-    ${hq?(()=>{const qr=rows.filter(r=>r._qc);if(!qr.length)return'<td class="na" colspan="13">\u2014</td>';const QS=f=>qr.reduce((a,r)=>a+(+(r._qc[f]||0)),0);const qcw=QS('cw'),qcc=QS('cc'),qct=QS('ct'),qvc=QS('vc'),qvpn=QS('vpn'),qitn=QS('itn'),qinn=QS('inn');const qpct=qitn?(qinn/qitn*100).toFixed(1):null;const qtktc=qct?(qitn/qct):null;const qtktp=qvpn?(qinn/qvpn):null;return`<td class="gq" colspan="3">\u2014</td><td class="r gq">${fmt(qcw)}</td><td class="r gq">${fmt(qcc)}</td><td class="r gq" style="font-weight:700">${fmt(qct)}</td><td class="r gq">${fmt(qvc)}</td><td class="r gq">${fmt(qvpn)}</td><td class="r gq">${mxn(qitn)}</td><td class="r gq">${mxn(qinn)}</td><td class="mu gq">${qpct!=null?qpct+'%':'\u2014'}</td><td class="r gq">${qtktc!=null?mxn(qtktc):'\u2014'}</td><td class="r gq">${qtktp!=null?mxn(qtktp):'\u2014'}</td>`;})():''
+    ${hq?(()=>{const qr=rows.filter(r=>r._qc_r);if(!qr.length)return'<td class="na" colspan="13">\u2014</td>';const QS=f=>qr.reduce((a,r)=>a+(+(r._qc_r[f]||0)),0);const qcw=QS('cw'),qcc=QS('cc'),qct=QS('ct'),qvc=QS('vc'),qvpn=QS('vpn'),qitn=QS('itn'),qinn=QS('inn');const qpct=qitn?(qinn/qitn*100).toFixed(1):null;const qtktc=qct?(qitn/qct):null;const qtktp=qvpn?(qinn/qvpn):null;return`<td class="gq" colspan="3">\u2014</td><td class="r gq">${fmt(qcw)}</td><td class="r gq">${fmt(qcc)}</td><td class="r gq" style="font-weight:700">${fmt(qct)}</td><td class="r gq">${fmt(qvc)}</td><td class="r gq">${fmt(qvpn)}</td><td class="r gq">${mxn(qitn)}</td><td class="r gq">${mxn(qinn)}</td><td class="mu gq">${qpct!=null?qpct+'%':'\u2014'}</td><td class="r gq">${qtktc!=null?mxn(qtktc):'\u2014'}</td><td class="r gq">${qtktp!=null?mxn(qtktp):'\u2014'}</td>`;})():''
   }
   </tr>`;
 }
@@ -309,7 +309,7 @@ function eHead(pnl){
 }
 
 function eRow(r){
-  const q=r._qc, nm=r.email_name_principal||r.pieza_id, sb=r.subject_principal||'—';
+  const q=r._qc_r, nm=r.email_name_principal||r.pieza_id, sb=r.subject_principal||'—';
   const hF=r.fup_pieza_id!=null;
   const pC=mc(r.p_sends,r.p_opens,r.p_open_rate,r.p_clicks,r.p_ctor,r.p_unsubs,r.p_utor,r.p_clicks_cta,r.p_clicks_baja,'gp',false);
   let fI,fM;
@@ -377,14 +377,40 @@ function wRow(r,hq){
     <td class="${rC(r.wa_pct_read_vs_entrega,60,30)}">${pct(r.wa_pct_read_vs_entrega)}</td>
     <td class="r">${fmt(r.clicks)}</td>
     <td class="${rC(ctr,10,2)}${hq?' sxp':''}">${pct(ctr)}</td>
-    ${hq?qcCols(r._qc||null):''}
+    ${hq?qcCols(r._qc_r||null):''}
   </tr>`;
 }
 
+let CUR_F={};
+function aggQc(entries){
+  if(!entries||!entries.length)return null;
+  const s={cw:0,cc:0,ct:0,vc:0,vpn:0,itn:0,inn:0};
+  let rec=null,fd=null,fh=null;
+  for(const e of entries){
+    s.cw+=e.cw||0;s.cc+=e.cc||0;s.ct+=e.ct||0;
+    s.vc+=e.vc||0;s.vpn+=e.vpn||0;
+    s.itn+=e.itn||0;s.inn+=e.inn||0;
+    if(!rec)rec=e.rec;
+    if(!fd||e.fd<fd)fd=e.fd;
+    if(!fh||e.fh>fh)fh=e.fh;
+  }
+  s.rec=rec;s.fd=fd;s.fh=fh;
+  s.pct=s.itn>0?+((s.inn/s.itn*100).toFixed(2)):null;
+  s.tkt_c=s.ct>0?+((s.itn/s.ct).toFixed(2)):null;
+  s.tkt_p=s.vpn>0?+((s.inn/s.vpn).toFixed(2)):null;
+  return s;
+}
+function resolveQc(row){
+  if(!row._qc)return null;
+  const f=CUR_F;
+  if(f.q)return row._qc[f.q]??null;
+  const keys=f.x?Object.keys(row._qc).filter(q=>q.startsWith(f.x)):Object.keys(row._qc);
+  return aggQc(keys.map(k=>row._qc[k]).filter(Boolean));
+}
 function eTbl(rows, pnl='aon'){
   if(!rows.length) return '<p style="padding:20px;color:#9ca3af">Sin datos.</p>';
   const camps=[...new Set(rows.map(r=>r.campana||'Sin campaña'))];
-  const flat=rows.map(r=>({...r,_qc_rec:r._qc?.rec,_qc_fd:r._qc?.fd,_qc_fh:r._qc?.fh,_qc_cw:r._qc?.cw,_qc_cc:r._qc?.cc,_qc_ct:r._qc?.ct,_qc_vc:r._qc?.vc,_qc_vpn:r._qc?.vpn,_qc_itn:r._qc?.itn,_qc_inn:r._qc?.inn,_qc_pct:r._qc?.pct,_qc_tkt_c:r._qc?.tkt_c,_qc_tkt_p:r._qc?.tkt_p}));
+  const flat=rows.map(r=>{const qr=resolveQc(r);return{...r,_qc_rec:qr?.rec,_qc_fd:qr?.fd,_qc_fh:qr?.fh,_qc_cw:qr?.cw,_qc_cc:qr?.cc,_qc_ct:qr?.ct,_qc_vc:qr?.vc,_qc_vpn:qr?.vpn,_qc_itn:qr?.itn,_qc_inn:qr?.inn,_qc_pct:qr?.pct,_qc_tkt_c:qr?.tkt_c,_qc_tkt_p:qr?.tkt_p,_qc_r:qr};});
   const sr=srtRows(flat,pnl);
   let tb='';
   for(const c of camps){
@@ -398,9 +424,9 @@ function eTbl(rows, pnl='aon'){
 
 function wTbl(rows, pnl='wa'){
   if(!rows.length) return '<p style="padding:20px;color:#9ca3af">Sin datos.</p>';
-  const hq=rows.some(r=>r._qc);
+  const hq=rows.some(r=>resolveQc(r)!=null);
   const camps=[...new Set(rows.map(r=>r.campana||'Sin campaña'))];
-  const flat=rows.map(r=>({...r,_qc_rec:r._qc?.rec,_qc_fd:r._qc?.fd,_qc_fh:r._qc?.fh,_qc_cw:r._qc?.cw,_qc_cc:r._qc?.cc,_qc_ct:r._qc?.ct,_qc_vc:r._qc?.vc,_qc_vpn:r._qc?.vpn,_qc_itn:r._qc?.itn,_qc_inn:r._qc?.inn,_qc_pct:r._qc?.pct,_qc_tkt_c:r._qc?.tkt_c,_qc_tkt_p:r._qc?.tkt_p}));
+  const flat=rows.map(r=>{const qr=resolveQc(r);return{...r,_qc_rec:qr?.rec,_qc_fd:qr?.fd,_qc_fh:qr?.fh,_qc_cw:qr?.cw,_qc_cc:qr?.cc,_qc_ct:qr?.ct,_qc_vc:qr?.vc,_qc_vpn:qr?.vpn,_qc_itn:qr?.itn,_qc_inn:qr?.inn,_qc_pct:qr?.pct,_qc_tkt_c:qr?.tkt_c,_qc_tkt_p:qr?.tkt_p,_qc_r:qr};});
   const sr=srtRows(flat,pnl);
   let tb='';
   for(const c of camps){
@@ -439,7 +465,7 @@ function setSH(){
 }
 
 function go(){
-  const f=getF();
+  CUR_F=getF();const f=CUR_F;
   const aF=apF(AON,f),oF=apF(OS,f),wF=apF(WA,f);
   document.getElementById('pao').innerHTML=eTbl(aF,'aon');
   document.getElementById('pos').innerHTML=eTbl(oF,'os');
