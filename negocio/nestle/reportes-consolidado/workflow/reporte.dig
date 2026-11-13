@@ -39,3 +39,57 @@ _export:
   td>: queries/reporte/rebuild_rpt_qcart.sql
   database: nmx_reporte
   create_table: rpt_qcart
+
+# ── VALIDACIONES POST-BUILD ─────────────────────────────────
+# Si cualquier validación falla, el workflow aborta y NO entrega datos corruptos.
+# Cada query retorna una sola fila; store_last_results la expone como variable.
+
++v01_grain:
+  td>: queries/validate/v01_grain_duplicados.sql
+  database: nmx_reporte
+  store_last_results: true
++v01_fail:
+  if>: ${td.last_results.duplicados > 0}
+  _do:
+    +abort:
+      fail>: "[QC-01] Grain roto: ${td.last_results.dup_rpt_qcart} dups en rpt_qcart, ${td.last_results.dup_rpt_email} dups en rpt_email. Revisar JOIN de segmentos."
+
++v02_balance:
+  td>: queries/validate/v02_carritos_balance.sql
+  database: nmx_reporte
+  store_last_results: true
++v02_fail:
+  if>: ${td.last_results.diferencia > 0}
+  _do:
+    +abort:
+      fail>: "[QC-02] Balance roto: fact_carritos=${td.last_results.fact_carritos} vs rpt_carritos=${td.last_results.rpt_carritos} (diff=${td.last_results.diferencia}). Revisar JOIN de segmentos en rebuild_rpt_qcart."
+
++v03_tiene_qcart:
+  td>: queries/validate/v03_tiene_qcart_consistencia.sql
+  database: nmx_reporte
+  store_last_results: true
++v03_fail:
+  if>: ${td.last_results.violaciones > 0}
+  _do:
+    +abort:
+      fail>: "[QC-03] tiene_qcart inconsistente: ${td.last_results.piezas_si_sin_datos_qcart} piezas Sí sin datos, ${td.last_results.piezas_datos_qcart_sin_si} piezas con datos sin Sí. Revisar WHERE estado_link='USADO'."
+
++v04_pct:
+  td>: queries/validate/v04_pct_penetracion.sql
+  database: nmx_reporte
+  store_last_results: true
++v04_fail:
+  if>: ${td.last_results.violaciones > 0}
+  _do:
+    +abort:
+      fail>: "[QC-04] pct_penetracion invalido: ${td.last_results.pct_mayor_100} filas >100%, ${td.last_results.pct_negativo} filas negativas. Revisar grain mismatch carritos/productos."
+
++v05_tiendas:
+  td>: queries/validate/v05_carritos_tienda.sql
+  database: nmx_reporte
+  store_last_results: true
++v05_fail:
+  if>: ${td.last_results.violaciones > 0}
+  _do:
+    +abort:
+      fail>: "[QC-05] walmart+chedraui > total en ${td.last_results.violaciones} filas (exceso max: ${td.last_results.exceso_maximo}). Revisar filtro de tienda en rebuild_rpt_qcart."
